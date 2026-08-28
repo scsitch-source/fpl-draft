@@ -108,6 +108,11 @@ def build():
     league_entries = details.get("league_entries", [])
     standings_raw = details.get("standings", [])
     matches_raw = details.get("matches", [])
+    if matches_raw:
+        print(f"  matches sample: {json.dumps(matches_raw[0])[:400]}")
+    else:
+        print("  note: 'matches' was empty in league/details response "
+              "(check league.scoring - h2h fixtures only exist for h2h-scored leagues).")
     elements = bootstrap.get("elements", [])
     element_types = bootstrap.get("element_types", [])
     teams_pl = bootstrap.get("teams", [])
@@ -287,16 +292,45 @@ def build():
     previous_fixtures = previous.get("fixtures_by_event", {}) if isinstance(previous, dict) else {}
     live_points_cache = {}
 
+    _live_debug_printed = set()
+
     def live_stats_for_event(ev):
         """{element_id: {'points': int, 'goals': int, 'assists': int}} for one gameweek."""
         if ev in live_points_cache:
             return live_points_cache[ev]
         data = get_json_soft(f"event/{ev}/live")
         out = {}
-        if data and isinstance(data.get("elements"), list):
-            for el in data["elements"]:
+        if not data:
+            live_points_cache[ev] = out
+            return out
+
+        elements = data.get("elements", data)
+        if ev not in _live_debug_printed:
+            _live_debug_printed.add(ev)
+            print(f"  event/{ev}/live: top-level keys={list(data.keys()) if isinstance(data, dict) else type(data).__name__}, "
+                  f"elements type={type(elements).__name__}")
+
+        if isinstance(elements, dict):
+            for key, el in elements.items():
+                if not isinstance(el, dict):
+                    continue
+                stats = el.get("stats", el)
+                try:
+                    el_id = int(key)
+                except (TypeError, ValueError):
+                    el_id = el.get("id") or el.get("element")
+                if el_id is not None:
+                    out[el_id] = {
+                        "points": stats.get("total_points", 0),
+                        "goals": stats.get("goals_scored", 0),
+                        "assists": stats.get("assists", 0),
+                    }
+        elif isinstance(elements, list):
+            for el in elements:
+                if not isinstance(el, dict):
+                    continue
                 el_id = el.get("id") or el.get("element")
-                stats = el.get("stats", {})
+                stats = el.get("stats", el)
                 if el_id is not None:
                     out[el_id] = {
                         "points": stats.get("total_points", 0),
@@ -306,9 +340,19 @@ def build():
         live_points_cache[ev] = out
         return out
 
+    _picks_debug_printed = set()
+
     def build_squad(real_entry_id, ev, live_stats):
         data = get_json_soft(f"entry/{real_entry_id}/event/{ev}")
-        if not data or not isinstance(data.get("picks"), list):
+        if not data:
+            return None
+        if ev not in _picks_debug_printed:
+            _picks_debug_printed.add(ev)
+            print(f"  entry/{real_entry_id}/event/{ev}: top-level keys={list(data.keys())}")
+            picks_preview = data.get("picks")
+            if isinstance(picks_preview, list) and picks_preview:
+                print(f"  first pick sample: {json.dumps(picks_preview[0])[:300]}")
+        if not isinstance(data.get("picks"), list):
             return None
         starting, bench = [], []
         for pick in data["picks"]:
@@ -504,14 +548,22 @@ def build():
     print("Fetching waiver transactions...")
     transactions_raw = get_json_soft(f"draft/league/{LEAGUE_ID}/transactions")
     accepted_transactions = []
+
+    # The transactions endpoint's 'entry' field can be either the league_entry
+    # id (used everywhere else in this script) or the real FPL entry id,
+    # depending on the response - so build a lookup covering both.
+    entry_lookup = dict(entry_by_id)
+    for info in entry_by_id.values():
+        if info.get("entry_id") is not None:
+            entry_lookup[info["entry_id"]] = info
+
     if transactions_raw:
         items = transactions_raw.get("transactions", []) if isinstance(transactions_raw, dict) else transactions_raw
         kind_labels = {"w": "Waiver", "f": "Free agent", "t": "Trade"}
         for t in items or []:
             if t.get("result") != "a":
                 continue
-            le_id = t.get("entry")
-            info = entry_by_id.get(le_id, {})
+            info = entry_lookup.get(t.get("entry"), {})
             player_in = player_by_id.get(t.get("element_in"), {}).get("name") if t.get("element_in") else None
             player_out = player_by_id.get(t.get("element_out"), {}).get("name") if t.get("element_out") else None
             accepted_transactions.append({

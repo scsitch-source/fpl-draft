@@ -236,7 +236,7 @@
   .squad-bench-label{font-size:10px;font-weight:700;color:var(--chalk-dim);margin:8px 0 4px;text-transform:uppercase;}
   .squad-row{
     display:grid;grid-template-columns:32px 1fr auto 30px;align-items:center;gap:6px;
-    font-size:12.5px;padding:3px 0;
+    font-size:12.5px;padding:3px 6px;border-radius:4px;
   }
   .squad-pos{font-size:10px;font-weight:700;color:var(--chalk-dim);}
   .squad-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -700,8 +700,9 @@ function playerRow(p){
   const icons = [];
   if(p.goals > 0) icons.push(`<span class="stat-icon goal" title="${p.goals} goal${p.goals>1?'s':''}">&#9917;${p.goals>1?p.goals:''}</span>`);
   if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">A${p.assists>1?p.assists:''}</span>`);
+  const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
   return `
-    <div class="squad-row">
+    <div class="squad-row" style="background:${colors.bg};border-left:3px solid ${colors.dot};">
       <span class="squad-pos">${p.position}</span>
       <span class="squad-name">${p.name}${badges.join('')}</span>
       <span class="squad-icons">${icons.join('')}</span>
