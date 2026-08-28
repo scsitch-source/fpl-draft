@@ -1,91 +1,190 @@
 {
-  "generated_at": "2026-08-28T11:01:05.804249+00:00",
+  "generated_at": "2026-08-28T12:09:29.427222+00:00",
   "league": {
     "id": 6038,
-    "name": "Test League",
+    "name": "FPL Draft 26/7",
     "scoring": "h",
     "draft_status": "post"
   },
-  "current_event": 2,
-  "next_event": 3,
-  "next_deadline": "2026-08-29T10:00:00Z",
+  "current_event": 1,
+  "next_event": 2,
+  "next_deadline": null,
   "your_entry_id": 27110,
-  "your_league_entry_id": 1,
+  "your_league_entry_id": 27139,
   "your_next_fixture": {
-    "event": 2,
+    "event": 1,
     "home": {
-      "league_entry_id": 1,
-      "team_name": "Your Team",
-      "manager_name": "You Manager",
-      "score": 60
+      "league_entry_id": 31110,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "Eamon Lye",
+      "score": 32
     },
     "away": {
-      "league_entry_id": 3,
-      "team_name": "Third Team",
-      "manager_name": "Third Manager",
-      "score": 50
+      "league_entry_id": 27139,
+      "team_name": "FC Strup",
+      "manager_name": "Sam Sitch",
+      "score": 52
     },
     "finished": true,
     "started": true,
-    "winning_league_entry": 1
+    "winning_league_entry": null
   },
   "standings": [
     {
       "rank": 1,
-      "last_rank": 2,
-      "league_entry_id": 1,
-      "entry_id": 27110,
-      "team_name": "Your Team",
-      "manager_name": "You Manager",
-      "played": 2,
-      "won": 2,
+      "last_rank": null,
+      "league_entry_id": 27143,
+      "entry_id": 27114,
+      "team_name": "Eki-Tiki",
+      "manager_name": "Hugh Chalmers",
+      "played": 38,
+      "won": 1,
       "drawn": 0,
       "lost": 0,
-      "points_for": 120,
-      "points_against": 90,
-      "total": 6,
-      "event_total": 60,
+      "points_for": 52,
+      "points_against": 51,
+      "total": 3,
+      "event_total": 0,
       "form": [
-        "W",
+        "W"
+      ],
+      "is_you": false
+    },
+    {
+      "rank": 1,
+      "last_rank": null,
+      "league_entry_id": 27139,
+      "entry_id": 27110,
+      "team_name": "FC Strup",
+      "manager_name": "Sam Sitch",
+      "played": 38,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "points_for": 52,
+      "points_against": 32,
+      "total": 3,
+      "event_total": 0,
+      "form": [
         "W"
       ],
       "is_you": true
     },
     {
-      "rank": 2,
-      "last_rank": 1,
-      "league_entry_id": 2,
-      "entry_id": 99999,
-      "team_name": "Rival FC",
-      "manager_name": "Rival Manager",
-      "played": 2,
+      "rank": 3,
+      "last_rank": null,
+      "league_entry_id": 27145,
+      "entry_id": 27116,
+      "team_name": ":)",
+      "manager_name": "Charlie Spring",
+      "played": 38,
       "won": 1,
       "drawn": 0,
-      "lost": 1,
-      "points_for": 90,
-      "points_against": 100,
+      "lost": 0,
+      "points_for": 41,
+      "points_against": 26,
       "total": 3,
-      "event_total": 40,
+      "event_total": 0,
+      "form": [
+        "W"
+      ],
+      "is_you": false
+    },
+    {
+      "rank": 3,
+      "last_rank": null,
+      "league_entry_id": 27141,
+      "entry_id": 27112,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "Ben Scotti",
+      "played": 38,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "points_for": 41,
+      "points_against": 31,
+      "total": 3,
+      "event_total": 0,
+      "form": [
+        "W"
+      ],
+      "is_you": false
+    },
+    {
+      "rank": 5,
+      "last_rank": null,
+      "league_entry_id": 226052,
+      "entry_id": 224536,
+      "team_name": "PFC",
+      "manager_name": "Archie Ross",
+      "played": 38,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "points_for": 51,
+      "points_against": 52,
+      "total": 0,
+      "event_total": 0,
       "form": [
         "L"
       ],
       "is_you": false
     },
     {
-      "rank": 3,
-      "last_rank": 3,
-      "league_entry_id": 3,
-      "entry_id": 88888,
-      "team_name": "Third Team",
-      "manager_name": "Third Manager",
-      "played": 2,
+      "rank": 6,
+      "last_rank": null,
+      "league_entry_id": 31110,
+      "entry_id": 31072,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "Eamon Lye",
+      "played": 38,
       "won": 0,
       "drawn": 0,
-      "lost": 2,
-      "points_for": 80,
-      "points_against": 100,
+      "lost": 1,
+      "points_for": 32,
+      "points_against": 52,
       "total": 0,
-      "event_total": 30,
+      "event_total": 0,
+      "form": [
+        "L"
+      ],
+      "is_you": false
+    },
+    {
+      "rank": 7,
+      "last_rank": null,
+      "league_entry_id": 27140,
+      "entry_id": 27111,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "Will Hocking",
+      "played": 38,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "points_for": 31,
+      "points_against": 41,
+      "total": 0,
+      "event_total": 0,
+      "form": [
+        "L"
+      ],
+      "is_you": false
+    },
+    {
+      "rank": 8,
+      "last_rank": null,
+      "league_entry_id": 183812,
+      "entry_id": 182889,
+      "team_name": "Clean Machine FC",
+      "manager_name": "Nick Poole",
+      "played": 38,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "points_for": 26,
+      "points_against": 41,
+      "total": 0,
+      "event_total": 0,
       "form": [
         "L"
       ],
@@ -96,33 +195,67 @@
     "1": [
       {
         "home": {
-          "league_entry_id": 1,
-          "team_name": "Your Team",
-          "manager_name": "You Manager",
-          "score": 60
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 32
         },
         "away": {
-          "league_entry_id": 2,
-          "team_name": "Rival FC",
-          "manager_name": "Rival Manager",
-          "score": 40
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 52
         },
         "finished": true,
         "started": true,
-        "winning_league_entry": 1
+        "winning_league_entry": null
       },
       {
         "home": {
-          "league_entry_id": 3,
-          "team_name": "Third Team",
-          "manager_name": "Third Manager",
-          "score": 30
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 26
         },
         "away": {
-          "league_entry_id": null,
-          "team_name": "TBD",
-          "manager_name": "",
-          "score": null
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 41
+        },
+        "finished": true,
+        "started": true,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 51
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 52
+        },
+        "finished": true,
+        "started": true,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 31
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 41
         },
         "finished": true,
         "started": true,
@@ -132,33 +265,67 @@
     "2": [
       {
         "home": {
-          "league_entry_id": 1,
-          "team_name": "Your Team",
-          "manager_name": "You Manager",
-          "score": 60
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
         },
         "away": {
-          "league_entry_id": 3,
-          "team_name": "Third Team",
-          "manager_name": "Third Manager",
-          "score": 50
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
         },
-        "finished": true,
-        "started": true,
-        "winning_league_entry": 1
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
       },
       {
         "home": {
-          "league_entry_id": 2,
-          "team_name": "Rival FC",
-          "manager_name": "Rival Manager",
-          "score": 50
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
         },
         "away": {
-          "league_entry_id": null,
-          "team_name": "TBD",
-          "manager_name": "",
-          "score": null
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
         },
         "finished": false,
         "started": false,
@@ -168,16 +335,2517 @@
     "3": [
       {
         "home": {
-          "league_entry_id": 2,
-          "team_name": "Rival FC",
-          "manager_name": "Rival Manager",
-          "score": null
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
         },
         "away": {
-          "league_entry_id": 1,
-          "team_name": "Your Team",
-          "manager_name": "You Manager",
-          "score": null
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "4": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "5": [
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "6": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "7": [
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "8": [
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "9": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "10": [
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "11": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "12": [
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "13": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "14": [
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "15": [
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "16": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "17": [
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "18": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "19": [
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "20": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "21": [
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "22": [
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "23": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "24": [
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "25": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "26": [
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "27": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "28": [
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "29": [
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "30": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "31": [
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "32": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "33": [
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "34": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "35": [
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "36": [
+      {
+        "home": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "37": [
+      {
+        "home": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "38": [
+      {
+        "home": {
+          "league_entry_id": 183812,
+          "team_name": "Clean Machine FC",
+          "manager_name": "Nick Poole",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27139,
+          "team_name": "FC Strup",
+          "manager_name": "Sam Sitch",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 226052,
+          "team_name": "PFC",
+          "manager_name": "Archie Ross",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 31110,
+          "team_name": "I am chucky kirkez",
+          "manager_name": "Eamon Lye",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27140,
+          "team_name": "H\u00f6chengladbach",
+          "manager_name": "Will Hocking",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27145,
+          "team_name": ":)",
+          "manager_name": "Charlie Spring",
+          "score": 0
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      },
+      {
+        "home": {
+          "league_entry_id": 27141,
+          "team_name": "Flop Your Gy\u00f6k Out",
+          "manager_name": "Ben Scotti",
+          "score": 0
+        },
+        "away": {
+          "league_entry_id": 27143,
+          "team_name": "Eki-Tiki",
+          "manager_name": "Hugh Chalmers",
+          "score": 0
         },
         "finished": false,
         "started": false,
@@ -187,43 +2855,1418 @@
   },
   "progression": {
     "events": [
-      1,
-      2
+      1
     ],
     "teams": {
-      "1": {
-        "name": "Your Team",
+      "27139": {
+        "name": "FC Strup",
         "weekly": [
-          60,
-          60
+          52
         ],
         "cumulative": [
-          60,
-          120
+          52
         ]
       },
-      "2": {
-        "name": "Rival FC",
+      "27140": {
+        "name": "H\u00f6chengladbach",
         "weekly": [
-          40,
-          50
+          31
         ],
         "cumulative": [
-          40,
-          90
+          31
         ]
       },
-      "3": {
-        "name": "Third Team",
+      "27141": {
+        "name": "Flop Your Gy\u00f6k Out",
         "weekly": [
-          30,
-          50
+          41
         ],
         "cumulative": [
-          30,
-          80
+          41
+        ]
+      },
+      "27143": {
+        "name": "Eki-Tiki",
+        "weekly": [
+          52
+        ],
+        "cumulative": [
+          52
+        ]
+      },
+      "27145": {
+        "name": ":)",
+        "weekly": [
+          41
+        ],
+        "cumulative": [
+          41
+        ]
+      },
+      "31110": {
+        "name": "I am chucky kirkez",
+        "weekly": [
+          32
+        ],
+        "cumulative": [
+          32
+        ]
+      },
+      "183812": {
+        "name": "Clean Machine FC",
+        "weekly": [
+          26
+        ],
+        "cumulative": [
+          26
+        ]
+      },
+      "226052": {
+        "name": "PFC",
+        "weekly": [
+          51
+        ],
+        "cumulative": [
+          51
         ]
       }
     }
-  }
+  },
+  "playoffs": {
+    "semi_gw": 36,
+    "elim_gw": 37,
+    "final_gw": 38,
+    "seeds": [
+      {
+        "league_entry_id": 27143,
+        "team_name": "Eki-Tiki",
+        "manager_name": "Hugh Chalmers"
+      },
+      {
+        "league_entry_id": 27139,
+        "team_name": "FC Strup",
+        "manager_name": "Sam Sitch"
+      },
+      {
+        "league_entry_id": 27145,
+        "team_name": ":)",
+        "manager_name": "Charlie Spring"
+      },
+      {
+        "league_entry_id": 27141,
+        "team_name": "Flop Your Gy\u00f6k Out",
+        "manager_name": "Ben Scotti"
+      }
+    ],
+    "semi_a": {
+      "fixture": null,
+      "team_a": {
+        "league_entry_id": 27143,
+        "team_name": "Eki-Tiki",
+        "manager_name": "Hugh Chalmers"
+      },
+      "team_b": {
+        "league_entry_id": 27139,
+        "team_name": "FC Strup",
+        "manager_name": "Sam Sitch"
+      }
+    },
+    "semi_b": {
+      "fixture": null,
+      "team_a": {
+        "league_entry_id": 27145,
+        "team_name": ":)",
+        "manager_name": "Charlie Spring"
+      },
+      "team_b": {
+        "league_entry_id": 27141,
+        "team_name": "Flop Your Gy\u00f6k Out",
+        "manager_name": "Ben Scotti"
+      }
+    },
+    "semi_a_winner": null,
+    "semi_a_bye_to_final": null,
+    "elim": {
+      "fixture": null,
+      "team_a": null,
+      "team_b": null
+    },
+    "elim_winner": null,
+    "final": {
+      "fixture": null,
+      "team_a": null,
+      "team_b": null
+    },
+    "final_winner": null
+  },
+  "golden_gameweek": {
+    "reg_season_end": 35,
+    "leader": {
+      "league_entry_id": 27139,
+      "points": 52,
+      "event": 1,
+      "team_name": "FC Strup",
+      "manager_name": "Sam Sitch"
+    },
+    "leaderboard": [
+      {
+        "league_entry_id": 27139,
+        "points": 52,
+        "event": 1,
+        "team_name": "FC Strup",
+        "manager_name": "Sam Sitch"
+      },
+      {
+        "league_entry_id": 27143,
+        "points": 52,
+        "event": 1,
+        "team_name": "Eki-Tiki",
+        "manager_name": "Hugh Chalmers"
+      },
+      {
+        "league_entry_id": 226052,
+        "points": 51,
+        "event": 1,
+        "team_name": "PFC",
+        "manager_name": "Archie Ross"
+      },
+      {
+        "league_entry_id": 27141,
+        "points": 41,
+        "event": 1,
+        "team_name": "Flop Your Gy\u00f6k Out",
+        "manager_name": "Ben Scotti"
+      },
+      {
+        "league_entry_id": 27145,
+        "points": 41,
+        "event": 1,
+        "team_name": ":)",
+        "manager_name": "Charlie Spring"
+      },
+      {
+        "league_entry_id": 31110,
+        "points": 32,
+        "event": 1,
+        "team_name": "I am chucky kirkez",
+        "manager_name": "Eamon Lye"
+      },
+      {
+        "league_entry_id": 27140,
+        "points": 31,
+        "event": 1,
+        "team_name": "H\u00f6chengladbach",
+        "manager_name": "Will Hocking"
+      },
+      {
+        "league_entry_id": 183812,
+        "points": 26,
+        "event": 1,
+        "team_name": "Clean Machine FC",
+        "manager_name": "Nick Poole"
+      }
+    ]
+  },
+  "draft_picks": [
+    {
+      "round": 1,
+      "pick": 1,
+      "overall_pick": 1,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Haaland",
+      "position": "FWD",
+      "club": "MCI"
+    },
+    {
+      "round": 1,
+      "pick": 2,
+      "overall_pick": 2,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "B.Fernandes",
+      "position": "MID",
+      "club": "MUN"
+    },
+    {
+      "round": 1,
+      "pick": 3,
+      "overall_pick": 3,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Palmer",
+      "position": "MID",
+      "club": "CHE"
+    },
+    {
+      "round": 1,
+      "pick": 4,
+      "overall_pick": 4,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Isak",
+      "position": "FWD",
+      "club": "LIV"
+    },
+    {
+      "round": 1,
+      "pick": 5,
+      "overall_pick": 5,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Jo\u00e3o Pedro",
+      "position": "FWD",
+      "club": "CHE"
+    },
+    {
+      "round": 1,
+      "pick": 6,
+      "overall_pick": 6,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Semenyo",
+      "position": "MID",
+      "club": "MCI"
+    },
+    {
+      "round": 1,
+      "pick": 7,
+      "overall_pick": 7,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Saka",
+      "position": "MID",
+      "club": "ARS"
+    },
+    {
+      "round": 1,
+      "pick": 8,
+      "overall_pick": 8,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Watkins",
+      "position": "FWD",
+      "club": "AVL"
+    },
+    {
+      "round": 2,
+      "pick": 1,
+      "overall_pick": 9,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Mbeumo",
+      "position": "MID",
+      "club": "MUN"
+    },
+    {
+      "round": 2,
+      "pick": 2,
+      "overall_pick": 10,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Gabriel",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 2,
+      "pick": 3,
+      "overall_pick": 11,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Cunha",
+      "position": "MID",
+      "club": "MUN"
+    },
+    {
+      "round": 2,
+      "pick": 4,
+      "overall_pick": 12,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Thiago",
+      "position": "FWD",
+      "club": "BRE"
+    },
+    {
+      "round": 2,
+      "pick": 5,
+      "overall_pick": 13,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Rice",
+      "position": "MID",
+      "club": "ARS"
+    },
+    {
+      "round": 2,
+      "pick": 6,
+      "overall_pick": 14,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Gy\u00f6keres",
+      "position": "FWD",
+      "club": "ARS"
+    },
+    {
+      "round": 2,
+      "pick": 7,
+      "overall_pick": 15,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Wirtz",
+      "position": "MID",
+      "club": "LIV"
+    },
+    {
+      "round": 2,
+      "pick": 8,
+      "overall_pick": 16,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Szoboszlai",
+      "position": "MID",
+      "club": "LIV"
+    },
+    {
+      "round": 3,
+      "pick": 1,
+      "overall_pick": 17,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Rogers",
+      "position": "MID",
+      "club": "CHE"
+    },
+    {
+      "round": 3,
+      "pick": 2,
+      "overall_pick": 18,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Mateta",
+      "position": "FWD",
+      "club": "CRY"
+    },
+    {
+      "round": 3,
+      "pick": 3,
+      "overall_pick": 19,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Brobbey",
+      "position": "FWD",
+      "club": "SUN"
+    },
+    {
+      "round": 3,
+      "pick": 4,
+      "overall_pick": 20,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Doku",
+      "position": "MID",
+      "club": "MCI"
+    },
+    {
+      "round": 3,
+      "pick": 5,
+      "overall_pick": 21,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Gibbs-White",
+      "position": "MID",
+      "club": "NFO"
+    },
+    {
+      "round": 3,
+      "pick": 6,
+      "overall_pick": 22,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Ndiaye",
+      "position": "MID",
+      "club": "EVE"
+    },
+    {
+      "round": 3,
+      "pick": 7,
+      "overall_pick": 23,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Havertz",
+      "position": "FWD",
+      "club": "ARS"
+    },
+    {
+      "round": 3,
+      "pick": 8,
+      "overall_pick": 24,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Cherki",
+      "position": "MID",
+      "club": "MCI"
+    },
+    {
+      "round": 4,
+      "pick": 1,
+      "overall_pick": 25,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Gakpo",
+      "position": "MID",
+      "club": "LIV"
+    },
+    {
+      "round": 4,
+      "pick": 2,
+      "overall_pick": 26,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Anderson",
+      "position": "MID",
+      "club": "MCI"
+    },
+    {
+      "round": 4,
+      "pick": 3,
+      "overall_pick": 27,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Calvert-Lewin",
+      "position": "FWD",
+      "club": "LEE"
+    },
+    {
+      "round": 4,
+      "pick": 4,
+      "overall_pick": 28,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Foden",
+      "position": "MID",
+      "club": "MCI"
+    },
+    {
+      "round": 4,
+      "pick": 5,
+      "overall_pick": 29,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Virgil",
+      "position": "DEF",
+      "club": "LIV"
+    },
+    {
+      "round": 4,
+      "pick": 6,
+      "overall_pick": 30,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Igor Jesus",
+      "position": "FWD",
+      "club": "NFO"
+    },
+    {
+      "round": 4,
+      "pick": 7,
+      "overall_pick": 31,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "O'Reilly",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 4,
+      "pick": 8,
+      "overall_pick": 32,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Wilson",
+      "position": "MID",
+      "club": "LEE"
+    },
+    {
+      "round": 5,
+      "pick": 1,
+      "overall_pick": 33,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Gu\u00e9hi",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 5,
+      "pick": 2,
+      "overall_pick": 34,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Dewsbury-Hall",
+      "position": "MID",
+      "club": "EVE"
+    },
+    {
+      "round": 5,
+      "pick": 3,
+      "overall_pick": 35,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Bruno G.",
+      "position": "MID",
+      "club": "ARS"
+    },
+    {
+      "round": 5,
+      "pick": 4,
+      "overall_pick": 36,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "\u0160e\u0161ko",
+      "position": "FWD",
+      "club": "MUN"
+    },
+    {
+      "round": 5,
+      "pick": 5,
+      "overall_pick": 37,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Gvardiol",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 5,
+      "pick": 6,
+      "overall_pick": 38,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Calafiori",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 5,
+      "pick": 7,
+      "overall_pick": 39,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Neto",
+      "position": "MID",
+      "club": "CHE"
+    },
+    {
+      "round": 5,
+      "pick": 8,
+      "overall_pick": 40,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Richarlison",
+      "position": "FWD",
+      "club": "TOT"
+    },
+    {
+      "round": 6,
+      "pick": 1,
+      "overall_pick": 41,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "\u00d8degaard",
+      "position": "MID",
+      "club": "ARS"
+    },
+    {
+      "round": 6,
+      "pick": 2,
+      "overall_pick": 42,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Lacroix",
+      "position": "DEF",
+      "club": "CHE"
+    },
+    {
+      "round": 6,
+      "pick": 3,
+      "overall_pick": 43,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Shaw",
+      "position": "DEF",
+      "club": "MUN"
+    },
+    {
+      "round": 6,
+      "pick": 4,
+      "overall_pick": 44,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Mosquera",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 6,
+      "pick": 5,
+      "overall_pick": 45,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Maddison",
+      "position": "MID",
+      "club": "TOT"
+    },
+    {
+      "round": 6,
+      "pick": 6,
+      "overall_pick": 46,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Caicedo",
+      "position": "MID",
+      "club": "CHE"
+    },
+    {
+      "round": 6,
+      "pick": 7,
+      "overall_pick": 47,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Senesi",
+      "position": "DEF",
+      "club": "TOT"
+    },
+    {
+      "round": 6,
+      "pick": 8,
+      "overall_pick": 48,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Sarr",
+      "position": "MID",
+      "club": "CRY"
+    },
+    {
+      "round": 7,
+      "pick": 1,
+      "overall_pick": 49,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Tarkowski",
+      "position": "DEF",
+      "club": "EVE"
+    },
+    {
+      "round": 7,
+      "pick": 2,
+      "overall_pick": 50,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "O.Dango",
+      "position": "MID",
+      "club": "BRE"
+    },
+    {
+      "round": 7,
+      "pick": 3,
+      "overall_pick": 51,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Gallagher",
+      "position": "MID",
+      "club": "TOT"
+    },
+    {
+      "round": 7,
+      "pick": 4,
+      "overall_pick": 52,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Raya",
+      "position": "GKP",
+      "club": "ARS"
+    },
+    {
+      "round": 7,
+      "pick": 5,
+      "overall_pick": 53,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Rayan",
+      "position": "MID",
+      "club": "BOU"
+    },
+    {
+      "round": 7,
+      "pick": 6,
+      "overall_pick": 54,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Matheus N.",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 7,
+      "pick": 7,
+      "overall_pick": 55,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Evanilson",
+      "position": "FWD",
+      "club": "BOU"
+    },
+    {
+      "round": 7,
+      "pick": 8,
+      "overall_pick": 56,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Donnarumma",
+      "position": "GKP",
+      "club": "MCI"
+    },
+    {
+      "round": 8,
+      "pick": 1,
+      "overall_pick": 57,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "James",
+      "position": "DEF",
+      "club": "CHE"
+    },
+    {
+      "round": 8,
+      "pick": 2,
+      "overall_pick": 58,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Mu\u00f1oz",
+      "position": "DEF",
+      "club": "CRY"
+    },
+    {
+      "round": 8,
+      "pick": 3,
+      "overall_pick": 59,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Woltemade",
+      "position": "FWD",
+      "club": "NEW"
+    },
+    {
+      "round": 8,
+      "pick": 4,
+      "overall_pick": 60,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Gro\u00df",
+      "position": "MID",
+      "club": "BHA"
+    },
+    {
+      "round": 8,
+      "pick": 5,
+      "overall_pick": 61,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Enzo",
+      "position": "MID",
+      "club": "CHE"
+    },
+    {
+      "round": 8,
+      "pick": 6,
+      "overall_pick": 62,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Kudus",
+      "position": "MID",
+      "club": "TOT"
+    },
+    {
+      "round": 8,
+      "pick": 7,
+      "overall_pick": 63,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Branthwaite",
+      "position": "DEF",
+      "club": "EVE"
+    },
+    {
+      "round": 8,
+      "pick": 8,
+      "overall_pick": 64,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Pedro Porro",
+      "position": "DEF",
+      "club": "TOT"
+    },
+    {
+      "round": 9,
+      "pick": 1,
+      "overall_pick": 65,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Rashford",
+      "position": "MID",
+      "club": "MUN"
+    },
+    {
+      "round": 9,
+      "pick": 2,
+      "overall_pick": 66,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Pickford",
+      "position": "GKP",
+      "club": "EVE"
+    },
+    {
+      "round": 9,
+      "pick": 3,
+      "overall_pick": 67,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "R\u00faben",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 9,
+      "pick": 4,
+      "overall_pick": 68,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Truffert",
+      "position": "DEF",
+      "club": "BOU"
+    },
+    {
+      "round": 9,
+      "pick": 5,
+      "overall_pick": 69,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "A.Becker",
+      "position": "GKP",
+      "club": "LIV"
+    },
+    {
+      "round": 9,
+      "pick": 6,
+      "overall_pick": 70,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "E.Le F\u00e9e",
+      "position": "MID",
+      "club": "SUN"
+    },
+    {
+      "round": 9,
+      "pick": 7,
+      "overall_pick": 71,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Kerkez",
+      "position": "DEF",
+      "club": "LIV"
+    },
+    {
+      "round": 9,
+      "pick": 8,
+      "overall_pick": 72,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Hall",
+      "position": "DEF",
+      "club": "NEW"
+    },
+    {
+      "round": 10,
+      "pick": 1,
+      "overall_pick": 73,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Barnes",
+      "position": "MID",
+      "club": "NEW"
+    },
+    {
+      "round": 10,
+      "pick": 2,
+      "overall_pick": 74,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Eze",
+      "position": "MID",
+      "club": "ARS"
+    },
+    {
+      "round": 10,
+      "pick": 3,
+      "overall_pick": 75,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Lammens",
+      "position": "GKP",
+      "club": "MUN"
+    },
+    {
+      "round": 10,
+      "pick": 4,
+      "overall_pick": 76,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "J.Timber",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 10,
+      "pick": 5,
+      "overall_pick": 77,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Van Hecke",
+      "position": "DEF",
+      "club": "TOT"
+    },
+    {
+      "round": 10,
+      "pick": 6,
+      "overall_pick": 78,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Vuskovic",
+      "position": "DEF",
+      "club": "BHA"
+    },
+    {
+      "round": 10,
+      "pick": 7,
+      "overall_pick": 79,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Est\u00eav\u00e3o",
+      "position": "MID",
+      "club": "CHE"
+    },
+    {
+      "round": 10,
+      "pick": 8,
+      "overall_pick": 80,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Frimpong",
+      "position": "DEF",
+      "club": "LIV"
+    },
+    {
+      "round": 11,
+      "pick": 1,
+      "overall_pick": 81,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Hincapie",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 11,
+      "pick": 2,
+      "overall_pick": 82,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Milenkovi\u0107",
+      "position": "DEF",
+      "club": "NFO"
+    },
+    {
+      "round": 11,
+      "pick": 3,
+      "overall_pick": 83,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Mukiele",
+      "position": "DEF",
+      "club": "SUN"
+    },
+    {
+      "round": 11,
+      "pick": 4,
+      "overall_pick": 84,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Solanke",
+      "position": "FWD",
+      "club": "TOT"
+    },
+    {
+      "round": 11,
+      "pick": 5,
+      "overall_pick": 85,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Tzolis",
+      "position": "MID",
+      "club": "ARS"
+    },
+    {
+      "round": 11,
+      "pick": 6,
+      "overall_pick": 86,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Van de Ven",
+      "position": "DEF",
+      "club": "TOT"
+    },
+    {
+      "round": 11,
+      "pick": 7,
+      "overall_pick": 87,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Stach",
+      "position": "MID",
+      "club": "LEE"
+    },
+    {
+      "round": 11,
+      "pick": 8,
+      "overall_pick": 88,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Collins",
+      "position": "DEF",
+      "club": "BRE"
+    },
+    {
+      "round": 12,
+      "pick": 1,
+      "overall_pick": 89,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "G.Jesus",
+      "position": "FWD",
+      "club": "ARS"
+    },
+    {
+      "round": 12,
+      "pick": 2,
+      "overall_pick": 90,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Strand Larsen",
+      "position": "FWD",
+      "club": "CRY"
+    },
+    {
+      "round": 12,
+      "pick": 3,
+      "overall_pick": 91,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Kluivert",
+      "position": "MID",
+      "club": "BOU"
+    },
+    {
+      "round": 12,
+      "pick": 4,
+      "overall_pick": 92,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Gonzalo",
+      "position": "FWD",
+      "club": "FUL"
+    },
+    {
+      "round": 12,
+      "pick": 5,
+      "overall_pick": 93,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Murillo",
+      "position": "DEF",
+      "club": "NFO"
+    },
+    {
+      "round": 12,
+      "pick": 6,
+      "overall_pick": 94,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Canvot",
+      "position": "DEF",
+      "club": "CRY"
+    },
+    {
+      "round": 12,
+      "pick": 7,
+      "overall_pick": 95,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Kostoulas",
+      "position": "FWD",
+      "club": "BHA"
+    },
+    {
+      "round": 12,
+      "pick": 8,
+      "overall_pick": 96,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Wissa",
+      "position": "FWD",
+      "club": "NEW"
+    },
+    {
+      "round": 13,
+      "pick": 1,
+      "overall_pick": 97,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Welbeck",
+      "position": "FWD",
+      "club": "CHE"
+    },
+    {
+      "round": 13,
+      "pick": 2,
+      "overall_pick": 98,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Ekitik\u00e9",
+      "position": "FWD",
+      "club": "LIV"
+    },
+    {
+      "round": 13,
+      "pick": 3,
+      "overall_pick": 99,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Sels",
+      "position": "GKP",
+      "club": "NFO"
+    },
+    {
+      "round": 13,
+      "pick": 4,
+      "overall_pick": 100,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Hudson-Odoi",
+      "position": "MID",
+      "club": "NFO"
+    },
+    {
+      "round": 13,
+      "pick": 5,
+      "overall_pick": 101,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Muharemovi\u0107",
+      "position": "DEF",
+      "club": "LEE"
+    },
+    {
+      "round": 13,
+      "pick": 6,
+      "overall_pick": 102,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Palestra",
+      "position": "DEF",
+      "club": "CHE"
+    },
+    {
+      "round": 13,
+      "pick": 7,
+      "overall_pick": 103,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Kelleher",
+      "position": "GKP",
+      "club": "BRE"
+    },
+    {
+      "round": 13,
+      "pick": 8,
+      "overall_pick": 104,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Khusanov",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 14,
+      "pick": 1,
+      "overall_pick": 105,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Saliba",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 14,
+      "pick": 2,
+      "overall_pick": 106,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "A\u00eft-Nouri",
+      "position": "DEF",
+      "club": "MCI"
+    },
+    {
+      "round": 14,
+      "pick": 3,
+      "overall_pick": 107,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Wood",
+      "position": "FWD",
+      "club": "NFO"
+    },
+    {
+      "round": 14,
+      "pick": 4,
+      "overall_pick": 108,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "N.Williams",
+      "position": "DEF",
+      "club": "NFO"
+    },
+    {
+      "round": 14,
+      "pick": 5,
+      "overall_pick": 109,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Konsa",
+      "position": "DEF",
+      "club": "ARS"
+    },
+    {
+      "round": 14,
+      "pick": 6,
+      "overall_pick": 110,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Thiaw",
+      "position": "DEF",
+      "club": "NEW"
+    },
+    {
+      "round": 14,
+      "pick": 7,
+      "overall_pick": 111,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Maguire",
+      "position": "DEF",
+      "club": "MUN"
+    },
+    {
+      "round": 14,
+      "pick": 8,
+      "overall_pick": 112,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "Martinez",
+      "position": "GKP",
+      "club": "AVL"
+    },
+    {
+      "round": 15,
+      "pick": 1,
+      "overall_pick": 113,
+      "team_name": "Eki-Tiki",
+      "manager_name": "",
+      "player_name": "S\u00e1nchez",
+      "position": "GKP",
+      "club": "CHE"
+    },
+    {
+      "round": 15,
+      "pick": 2,
+      "overall_pick": 114,
+      "team_name": "Flop Your Gy\u00f6k Out",
+      "manager_name": "",
+      "player_name": "Roefs",
+      "position": "GKP",
+      "club": "SUN"
+    },
+    {
+      "round": 15,
+      "pick": 3,
+      "overall_pick": 115,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "",
+      "player_name": "Henderson",
+      "position": "GKP",
+      "club": "CRY"
+    },
+    {
+      "round": 15,
+      "pick": 4,
+      "overall_pick": 116,
+      "team_name": "Clean Machine FC",
+      "manager_name": "",
+      "player_name": "Trafford",
+      "position": "GKP",
+      "club": "LEE"
+    },
+    {
+      "round": 15,
+      "pick": 5,
+      "overall_pick": 117,
+      "team_name": "FC Strup",
+      "manager_name": "",
+      "player_name": "Mamardashvili",
+      "position": "GKP",
+      "club": "LIV"
+    },
+    {
+      "round": 15,
+      "pick": 6,
+      "overall_pick": 118,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "",
+      "player_name": "Leno",
+      "position": "GKP",
+      "club": "FUL"
+    },
+    {
+      "round": 15,
+      "pick": 7,
+      "overall_pick": 119,
+      "team_name": ":)",
+      "manager_name": "",
+      "player_name": "Pope",
+      "position": "GKP",
+      "club": "NEW"
+    },
+    {
+      "round": 15,
+      "pick": 8,
+      "overall_pick": 120,
+      "team_name": "PFC",
+      "manager_name": "",
+      "player_name": "Petrovi\u0107",
+      "position": "GKP",
+      "club": "BOU"
+    }
+  ]
 }
