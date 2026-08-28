@@ -65,6 +65,11 @@ def build():
 
     print("Fetching bootstrap-static (players/gameweeks)...")
     bootstrap = get_json("bootstrap-static")
+    print(f"  bootstrap-static keys: {list(bootstrap.keys())}")
+    _events_preview = bootstrap.get("events", [])
+    print(f"  events: type={type(_events_preview).__name__}, len={len(_events_preview) if hasattr(_events_preview, '__len__') else '?'}")
+    if _events_preview:
+        print(f"  events[0] sample: {json.dumps(_events_preview[0])[:400]}")
 
     print("Fetching game state...")
     try:
@@ -89,10 +94,12 @@ def build():
         sys.exit(1)
 
     # Player lookup: element id -> name / position / real-life club
-    pos_by_type = {et.get("id"): et.get("singular_name_short", "?") for et in element_types}
-    club_by_id = {t.get("id"): t.get("short_name", "?") for t in teams_pl}
+    pos_by_type = {et.get("id"): et.get("singular_name_short", "?") for et in element_types if isinstance(et, dict)}
+    club_by_id = {t.get("id"): t.get("short_name", "?") for t in teams_pl if isinstance(t, dict)}
     player_by_id = {}
     for el in elements:
+        if not isinstance(el, dict):
+            continue
         player_by_id[el.get("id")] = {
             "name": el.get("web_name", "Unknown"),
             "position": pos_by_type.get(el.get("element_type"), "?"),
@@ -121,6 +128,8 @@ def build():
     next_event = None
     next_deadline = None
     for ev in events:
+        if not isinstance(ev, dict):
+            continue
         if ev.get("is_current"):
             current_event = ev.get("id")
         if ev.get("is_next"):
