@@ -59,6 +59,17 @@ def get_json_soft(path):
         return None
 
 
+def load_previous_output():
+    """Load the JSON we wrote last run, if any, so we can reuse cached squad
+    data for gameweeks that are already finished (their picks/stats never
+    change once a gameweek is done, so there's no need to re-fetch them)."""
+    try:
+        with open("data/league.json") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
 def build():
     print(f"Fetching league {LEAGUE_ID} details...")
     details = get_json(f"league/{LEAGUE_ID}/details")
@@ -269,6 +280,84 @@ def build():
                     break
             if your_next_fixture:
                 break
+
+    # ---------------- Per-player squads for each fixture (click-to-expand) ----------------
+    # One call per team per gameweek is the priciest part of this script, so we
+    # cache aggressively: any gameweek that finished last run (its picks/stats
+    # never change) is reused rather than re-fetched.
+    previous = load_previous_output()
+    previous_fixtures = previous.get("fixtures_by_event", {}) if isinstance(previous, dict) else {}
+    live_points_cache = {}
+
+    def live_stats_for_event(ev):
+        """{element_id: {'points': int, 'goals': int, 'assists': int}} for one gameweek."""
+        if ev in live_points_cache:
+            return live_points_cache[ev]
+        data = get_json_soft(f"event/{ev}/live")
+        out = {}
+        if data and isinstance(data.get("elements"), list):
+            for el in data["elements"]:
+                el_id = el.get("id") or el.get("element")
+                stats = el.get("stats", {})
+                if el_id is not None:
+                    out[el_id] = {
+                        "points": stats.get("total_points", 0),
+                        "goals": stats.get("goals_scored", 0),
+                        "assists": stats.get("assists", 0),
+                    }
+        live_points_cache[ev] = out
+        return out
+
+    def build_squad(real_entry_id, ev, live_stats):
+        data = get_json_soft(f"entry/{real_entry_id}/event/{ev}")
+        if not data or not isinstance(data.get("picks"), list):
+            return None
+        starting, bench = [], []
+        for pick in data["picks"]:
+            el_id = pick.get("element")
+            info = player_by_id.get(el_id, {"name": f"Player {el_id}", "position": "?", "club": "?"})
+            multiplier = pick.get("multiplier", 1) or 0
+            stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0})
+            row = {
+                "name": info["name"],
+                "position": info["position"],
+                "club": info["club"],
+                "is_captain": bool(pick.get("is_captain")),
+                "is_vice_captain": bool(pick.get("is_vice_captain")),
+                "points": stat["points"] * multiplier if multiplier else stat["points"],
+                "goals": stat["goals"],
+                "assists": stat["assists"],
+            }
+            (starting if multiplier > 0 else bench).append(row)
+        return {"starting": starting, "bench": bench}
+
+    print("Fetching per-gameweek squads (cached where possible)...")
+    for ev_key, fixtures in fixtures_by_event.items():
+        ev = int(ev_key)
+        all_finished = all(f["finished"] for f in fixtures)
+        prev_fixtures_for_ev = previous_fixtures.get(ev_key, [])
+
+        for idx, f in enumerate(fixtures):
+            if all_finished and idx < len(prev_fixtures_for_ev) and prev_fixtures_for_ev[idx].get("squads"):
+                f["squads"] = prev_fixtures_for_ev[idx]["squads"]
+                continue
+            if not f["started"]:
+                continue
+
+            live_stats = live_stats_for_event(ev)
+            squads = {}
+            for side in ("home", "away"):
+                le_id = f[side]["league_entry_id"]
+                if le_id is None:
+                    continue
+                real_entry_id = entry_by_id.get(le_id, {}).get("entry_id")
+                if real_entry_id is None:
+                    continue
+                squad = build_squad(real_entry_id, ev, live_stats)
+                if squad:
+                    squads[str(le_id)] = squad
+            if squads:
+                f["squads"] = squads
 
     # ---------------- Draft recap (draft-day pick order) ----------------
     print("Fetching draft picks...")
