@@ -359,6 +359,19 @@ def build():
             if squads:
                 f["squads"] = squads
 
+    # ---------------- Latest squads per team (for the Squads tab) ----------------
+    latest_squad_event = None
+    for ev_key, fixtures in sorted(fixtures_by_event.items(), key=lambda kv: int(kv[0]), reverse=True):
+        if any(f.get("squads") for f in fixtures):
+            latest_squad_event = int(ev_key)
+            break
+
+    latest_squads = {}
+    if latest_squad_event is not None:
+        for f in fixtures_by_event[str(latest_squad_event)]:
+            for le_id_str, squad in (f.get("squads") or {}).items():
+                latest_squads[le_id_str] = squad
+
     # ---------------- Draft recap (draft-day pick order) ----------------
     print("Fetching draft picks...")
     draft_data = get_json_soft(f"draft/{LEAGUE_ID}/choices")
@@ -373,7 +386,9 @@ def build():
                 "round": pick.get("round"),
                 "pick": pick.get("pick"),
                 "overall_pick": pick.get("index") if pick.get("index") is not None else None,
+                "league_entry_id": le_id,
                 "team_name": pick.get("entry_name") or info.get("team_name", "Unknown"),
+                "short_name": info.get("short_name") or (info.get("team_name", "TEA")[:3].upper()),
                 "manager_name": info.get("manager_name", ""),
                 "player_name": player_info.get("name", f"Player {pick.get('element')}"),
                 "position": player_info.get("position", "?"),
@@ -442,11 +457,11 @@ def build():
             "final_winner": team_ref(final_winner),
         }
 
-    # ---------------- Golden gameweek (best single score, GW1..REG_SEASON_END) ----------------
+    # ---------------- Golden gameweek (best single score, whole season GW1..FINAL_GW) ----------------
     best_per_entry = {}
     for le_id, scores in weekly_scores.items():
         for ev, pts in scores.items():
-            if ev is None or ev > REG_SEASON_END or pts is None:
+            if ev is None or ev > FINAL_GW or pts is None:
                 continue
             if le_id not in best_per_entry or pts > best_per_entry[le_id]["points"]:
                 best_per_entry[le_id] = {"league_entry_id": le_id, "points": pts, "event": ev}
@@ -457,10 +472,61 @@ def build():
         row["team_name"] = info.get("team_name", "Unknown")
         row["manager_name"] = info.get("manager_name", "")
     golden_gameweek = {
-        "reg_season_end": REG_SEASON_END,
+        "season_end": FINAL_GW,
         "leader": golden_leaderboard[0] if golden_leaderboard else None,
         "leaderboard": golden_leaderboard,
     }
+
+    # ---------------- Current streaks (hot/cold), from match results ----------------
+    streaks = []
+    for le_id, results in match_results.items():
+        if not results:
+            continue
+        ordered = sorted(results, key=lambda t: t[0])
+        last_result = ordered[-1][1]
+        streak_len = 0
+        for _, r in reversed(ordered):
+            if r == last_result:
+                streak_len += 1
+            else:
+                break
+        info = entry_by_id.get(le_id, {})
+        streaks.append({
+            "league_entry_id": le_id,
+            "team_name": info.get("team_name", "Unknown"),
+            "manager_name": info.get("manager_name", ""),
+            "result": last_result,
+            "length": streak_len,
+        })
+    hottest = max((s for s in streaks if s["result"] == "W"), key=lambda s: s["length"], default=None)
+    coldest = max((s for s in streaks if s["result"] == "L"), key=lambda s: s["length"], default=None)
+    streaks_summary = {"hottest": hottest, "coldest": coldest, "all": streaks}
+
+    # ---------------- Waiver transactions (accepted only) ----------------
+    print("Fetching waiver transactions...")
+    transactions_raw = get_json_soft(f"draft/league/{LEAGUE_ID}/transactions")
+    accepted_transactions = []
+    if transactions_raw:
+        items = transactions_raw.get("transactions", []) if isinstance(transactions_raw, dict) else transactions_raw
+        kind_labels = {"w": "Waiver", "f": "Free agent", "t": "Trade"}
+        for t in items or []:
+            if t.get("result") != "a":
+                continue
+            le_id = t.get("entry")
+            info = entry_by_id.get(le_id, {})
+            player_in = player_by_id.get(t.get("element_in"), {}).get("name") if t.get("element_in") else None
+            player_out = player_by_id.get(t.get("element_out"), {}).get("name") if t.get("element_out") else None
+            accepted_transactions.append({
+                "event": t.get("event"),
+                "team_name": info.get("team_name", "Unknown"),
+                "manager_name": info.get("manager_name", ""),
+                "player_in": player_in,
+                "player_out": player_out,
+                "kind": kind_labels.get(t.get("kind"), t.get("kind") or "Waiver"),
+            })
+        accepted_transactions.sort(key=lambda x: (x["event"] is None, x["event"] or 0))
+    else:
+        print("  note: could not fetch league transactions; waivers-cleared list will be empty.")
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -485,6 +551,10 @@ def build():
         "playoffs": playoffs,
         "golden_gameweek": golden_gameweek,
         "draft_picks": draft_picks,
+        "streaks": streaks_summary,
+        "accepted_transactions": accepted_transactions,
+        "latest_squad_event": latest_squad_event,
+        "latest_squads": latest_squads,
     }
 
     os.makedirs("data", exist_ok=True)

@@ -328,6 +328,42 @@
     background:var(--card);border:1px solid var(--line);border-radius:8px;
     color:var(--chalk);padding:6px 10px;font-size:13px;font-family:'Inter';
   }
+
+  /* ---------- Streaks ---------- */
+  .streak-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-top:1px solid var(--line);}
+  .streak-row:first-of-type{border-top:none;}
+  .streak-icon{font-size:22px;}
+  .streak-name{font-weight:700;font-size:14px;}
+  .streak-sub{font-size:12px;color:var(--chalk-dim);}
+
+  /* ---------- Prizes ---------- */
+  .prize-list{display:flex;flex-direction:column;gap:2px;}
+  .prize-row{
+    display:flex;align-items:center;gap:14px;padding:12px 0;
+    border-top:1px solid var(--line);
+  }
+  .prize-row:first-child{border-top:none;}
+  .prize-place{
+    font-family:'Manrope';font-weight:800;font-size:16px;color:var(--amber);
+    min-width:78px;
+  }
+  .prize-info{flex:1;}
+  .prize-sub{font-size:12px;color:var(--chalk-dim);}
+  .prize-winner{font-weight:700;font-size:14px;margin-top:2px;}
+  .prize-amount{
+    font-family:'Manrope';font-weight:800;font-size:18px;color:var(--win);
+  }
+
+  /* ---------- Draft recap grid ---------- */
+  .draft-legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:12px;color:var(--chalk-dim);}
+  .draft-legend-item{display:flex;align-items:center;gap:6px;}
+  .draft-dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  table.draft-grid{table-layout:fixed;}
+  table.draft-grid th{white-space:nowrap;padding:6px 8px 10px;}
+  table.draft-grid td{
+    font-size:12.5px;padding:7px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    max-width:120px;
+  }
 </style>
 <script>
 (function(){
@@ -446,9 +482,11 @@ function formChips(form){
 const TABS = [
   { id: 'table',    label: 'Table' },
   { id: 'fixtures', label: 'Fixtures' },
+  { id: 'squads',   label: 'Squads' },
   { id: 'draft',    label: 'Draft Recap' },
   { id: 'playoffs', label: 'Playoffs' },
   { id: 'golden',   label: 'Golden GW' },
+  { id: 'prizes',   label: 'Prizes' },
   { id: 'waivers',  label: 'Waivers' },
 ];
 
@@ -519,13 +557,21 @@ function render(data){
       grid.appendChild(buildSpotlightPanel(data, myId));
       const wrap = document.createElement('div');
       wrap.appendChild(grid);
+      const secondGrid = document.createElement('div');
+      secondGrid.className = 'grid';
+      secondGrid.style.marginTop = '0';
+      secondGrid.appendChild(buildStreaksPanel(data));
+      secondGrid.appendChild(buildWaiversClearedPanel(data));
+      wrap.appendChild(secondGrid);
       wrap.appendChild(buildProgressionPanel(data));
       return wrap;
     },
     fixtures: () => buildFixturesPanel(data),
+    squads: () => buildSquadsPanel(data),
     draft: () => buildDraftRecapPanel(data),
     playoffs: () => buildPlayoffsPanel(data),
     golden: () => buildGoldenPanel(data),
+    prizes: () => buildPrizesPanel(data),
     waivers: () => buildWaiversPanel(),
   };
 
@@ -664,6 +710,11 @@ function playerRow(p){
   `;
 }
 
+const POSITION_ORDER = { GKP: 0, DEF: 1, MID: 2, FWD: 3 };
+function byPosition(list){
+  return [...list].sort((a,b) => (POSITION_ORDER[a.position] ?? 9) - (POSITION_ORDER[b.position] ?? 9));
+}
+
 function squadColumn(label, squad){
   if(!squad){
     return `<div class="squad-col"><div class="squad-col-label">${label}</div><p style="font-size:12px;color:var(--chalk-dim);">No squad data for this gameweek.</p></div>`;
@@ -671,10 +722,136 @@ function squadColumn(label, squad){
   return `
     <div class="squad-col">
       <div class="squad-col-label">${label}</div>
-      ${squad.starting.map(playerRow).join('')}
-      ${squad.bench.length ? `<div class="squad-bench-label">Bench</div>${squad.bench.map(playerRow).join('')}` : ''}
+      ${byPosition(squad.starting).map(playerRow).join('')}
+      ${squad.bench.length ? `<div class="squad-bench-label">Subs</div>${byPosition(squad.bench).map(playerRow).join('')}` : ''}
     </div>
   `;
+}
+
+function buildStreaksPanel(data){
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.innerHTML = `<h2><span class="dot"></span>Streaks</h2>`;
+  const s = data.streaks;
+  if(!s || (!s.hottest && !s.coldest)){
+    panel.innerHTML += `<p style="color:var(--chalk-dim);font-size:13px;">No streaks yet.</p>`;
+    return panel;
+  }
+  const rows = [];
+  if(s.hottest && s.hottest.length > 1){
+    rows.push(`
+      <div class="streak-row">
+        <span class="streak-icon hot">&#128293;</span>
+        <div><div class="streak-name">${s.hottest.team_name}</div>
+        <div class="streak-sub">${s.hottest.length} straight wins</div></div>
+      </div>
+    `);
+  }
+  if(s.coldest && s.coldest.length > 1){
+    rows.push(`
+      <div class="streak-row">
+        <span class="streak-icon cold">&#10052;&#65039;</span>
+        <div><div class="streak-name">${s.coldest.team_name}</div>
+        <div class="streak-sub">${s.coldest.length} straight losses</div></div>
+      </div>
+    `);
+  }
+  panel.innerHTML += rows.length
+    ? rows.join('')
+    : `<p style="color:var(--chalk-dim);font-size:13px;">No streaks of more than one game yet.</p>`;
+  return panel;
+}
+
+function buildWaiversClearedPanel(data){
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.innerHTML = `<h2><span class="dot"></span>Waivers cleared</h2>`;
+  const tx = data.accepted_transactions || [];
+  if(tx.length === 0){
+    panel.innerHTML += `<p style="color:var(--chalk-dim);font-size:13px;">No waiver moves have cleared yet.</p>`;
+    return panel;
+  }
+  const latestEvent = Math.max(...tx.map(t => t.event || 0));
+  const recent = tx.filter(t => t.event === latestEvent);
+  const rows = recent.map(t => `
+    <div class="waiver-item" style="border-top:1px solid var(--line);">
+      <span><b>${t.team_name}</b>${t.player_in ? ` picked up ${t.player_in}` : ''}${t.player_out ? `, dropped ${t.player_out}` : ''}</span>
+      <span class="date">${t.kind}</span>
+    </div>
+  `).join('');
+  panel.innerHTML += `<p style="font-size:11px;color:var(--chalk-dim);margin-top:-8px;">Cleared GW${latestEvent}</p>${rows}`;
+  return panel;
+}
+
+function buildPrizesPanel(data){
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.innerHTML = `<h2><span class="dot"></span>Prizes</h2>`;
+
+  const p = data.playoffs;
+  const g = data.golden_gameweek;
+  const finalWinner = p && p.final_winner ? p.final_winner.team_name : 'TBD';
+  const finalRunnerUp = p && p.final && p.final_winner
+    ? (String(p.final.team_a.league_entry_id) === String(p.final_winner.league_entry_id) ? p.final.team_b.team_name : p.final.team_a.team_name)
+    : 'TBD';
+  let thirdPlace = 'TBD';
+  if(p && p.elim_winner && p.elim && p.elim.team_a && p.elim.team_b){
+    thirdPlace = String(p.elim.team_a.league_entry_id) === String(p.elim_winner.league_entry_id)
+      ? p.elim.team_b.team_name : p.elim.team_a.team_name;
+  }
+  const goldenWinner = g && g.leader ? `${g.leader.team_name} (${g.leader.points} pts, GW${g.leader.event})` : 'TBD';
+
+  const prizes = [
+    { place: '1st', sub: 'Playoff winner', amount: '$150', winner: finalWinner },
+    { place: '2nd', sub: 'Playoff runner-up', amount: '$80', winner: finalRunnerUp },
+    { place: '3rd', sub: 'Loses the second-chance (elimination) match', amount: '$40', winner: thirdPlace },
+    { place: 'Golden GW', sub: 'Best single gameweek score all season', amount: '$50', winner: goldenWinner },
+  ];
+
+  panel.innerHTML += `
+    <div class="prize-list">
+      ${prizes.map(pr => `
+        <div class="prize-row">
+          <div class="prize-place">${pr.place}</div>
+          <div class="prize-info">
+            <div class="prize-sub">${pr.sub}</div>
+            <div class="prize-winner">${pr.winner}</div>
+          </div>
+          <div class="prize-amount">${pr.amount}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+  return panel;
+}
+
+function buildSquadsPanel(data){
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  const gw = data.latest_squad_event;
+  panel.innerHTML = `<h2><span class="dot"></span>Squads${gw ? ` &mdash; as of GW ${gw}` : ''}</h2>`;
+
+  const squads = data.latest_squads || {};
+  const ranked = [...data.standings].sort((a,b) => (a.rank ?? 999) - (b.rank ?? 999));
+
+  if(Object.keys(squads).length === 0){
+    panel.innerHTML += `<p style="color:var(--chalk-dim);font-size:13px;">No squad data available yet.</p>`;
+    return panel;
+  }
+
+  const wrap = document.createElement('div');
+  wrap.style.cssText = 'overflow-x:auto;';
+  const grid = document.createElement('div');
+  grid.style.cssText = `display:grid;grid-template-columns:repeat(${ranked.length},minmax(160px,1fr));gap:14px;`;
+  grid.innerHTML = ranked.map(r => {
+    const squad = squads[String(r.league_entry_id)];
+    const label = `#${r.rank} ${r.team_name}`;
+    return squadColumn(label, squad);
+  }).join('');
+  wrap.appendChild(grid);
+  panel.appendChild(wrap);
+
+  return panel;
 }
 
 function buildFixturesPanel(data){
@@ -684,49 +861,83 @@ function buildFixturesPanel(data){
   panel.innerHTML = `<h2><span class="dot"></span>Fixtures &amp; results</h2>`;
 
   const gwKeys = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
+
+  const modeWrap = document.createElement('div');
+  modeWrap.className = 'gw-pills';
+  modeWrap.style.marginBottom = '12px';
+  const byGwBtn = document.createElement('button');
+  byGwBtn.className = 'gw-pill active';
+  byGwBtn.textContent = 'By gameweek';
+  const byTeamBtn = document.createElement('button');
+  byTeamBtn.className = 'gw-pill';
+  byTeamBtn.textContent = 'By team';
+  modeWrap.appendChild(byGwBtn);
+  modeWrap.appendChild(byTeamBtn);
+
   const pillsWrap = document.createElement('div');
   pillsWrap.className = 'gw-pills';
+  const teamSelectWrap = document.createElement('div');
+  teamSelectWrap.style.cssText = 'margin-bottom:14px;display:none;';
+  const sortedTeams = [...data.standings].sort((a,b) => a.team_name.localeCompare(b.team_name));
+  teamSelectWrap.innerHTML = `
+    <select id="fixtures-team-select" style="background:var(--card);border:1px solid var(--line);border-radius:8px;color:var(--chalk);padding:8px 12px;font-size:13px;">
+      ${sortedTeams.map(t => `<option value="${t.league_entry_id}">${t.team_name}</option>`).join('')}
+    </select>
+  `;
   const listWrap = document.createElement('div');
   listWrap.className = 'fixture-list';
+
+  function fixtureCard(f, showGwLabel){
+    const homeWin = f.finished && f.home.score > f.away.score;
+    const awayWin = f.finished && f.away.score > f.home.score;
+    const hasSquads = !!f.squads;
+    const card = document.createElement('div');
+    card.className = 'fixture-card';
+    card.innerHTML = `
+      ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
+      <div class="fixture-row ${homeWin ? 'winner' : ''}">
+        <div class="side">${f.home.team_name}<span class="m">${f.home.manager_name}</span></div>
+        <div class="score">${f.home.score ?? '–'}</div>
+      </div>
+      <div class="fixture-row ${awayWin ? 'winner' : ''}">
+        <div class="side">${f.away.team_name}<span class="m">${f.away.manager_name}</span></div>
+        <div class="score">${f.away.score ?? '–'}</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
+        <div class="status">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
+        ${hasSquads ? `<button class="expand-btn">+ Players</button>` : ''}
+      </div>
+      ${hasSquads ? `<div class="squad-expand">
+        <div class="squad-grid">
+          ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
+          ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+        </div>
+      </div>` : ''}
+    `;
+    if(hasSquads){
+      const btn = card.querySelector('.expand-btn');
+      const expandArea = card.querySelector('.squad-expand');
+      btn.addEventListener('click', () => {
+        const open = expandArea.classList.toggle('open');
+        btn.textContent = open ? '– Players' : '+ Players';
+      });
+    }
+    return card;
+  }
 
   function renderGw(gw){
     listWrap.innerHTML = '';
     const fixtures = data.fixtures_by_event[String(gw)] || [];
-    fixtures.forEach(f => {
-      const homeWin = f.finished && f.home.score > f.away.score;
-      const awayWin = f.finished && f.away.score > f.home.score;
-      const hasSquads = !!f.squads;
-      const card = document.createElement('div');
-      card.className = 'fixture-card';
-      card.innerHTML = `
-        <div class="fixture-row ${homeWin ? 'winner' : ''}">
-          <div class="side">${f.home.team_name}<span class="m">${f.home.manager_name}</span></div>
-          <div class="score">${f.home.score ?? '–'}</div>
-        </div>
-        <div class="fixture-row ${awayWin ? 'winner' : ''}">
-          <div class="side">${f.away.team_name}<span class="m">${f.away.manager_name}</span></div>
-          <div class="score">${f.away.score ?? '–'}</div>
-        </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
-          <div class="status">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-          ${hasSquads ? `<button class="expand-btn">+ Players</button>` : ''}
-        </div>
-        ${hasSquads ? `<div class="squad-expand">
-          <div class="squad-grid">
-            ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
-            ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
-          </div>
-        </div>` : ''}
-      `;
-      if(hasSquads){
-        const btn = card.querySelector('.expand-btn');
-        const expandArea = card.querySelector('.squad-expand');
-        btn.addEventListener('click', () => {
-          const open = expandArea.classList.toggle('open');
-          btn.textContent = open ? '– Players' : '+ Players';
-        });
-      }
-      listWrap.appendChild(card);
+    fixtures.forEach(f => listWrap.appendChild(fixtureCard(f, false)));
+  }
+
+  function renderTeam(leId){
+    listWrap.innerHTML = '';
+    gwKeys.forEach(gw => {
+      const fixtures = data.fixtures_by_event[String(gw)] || [];
+      const match = fixtures.find(f =>
+        String(f.home.league_entry_id) === String(leId) || String(f.away.league_entry_id) === String(leId));
+      if(match) listWrap.appendChild(fixtureCard({ ...match, event: gw }, true));
     });
   }
 
@@ -742,7 +953,28 @@ function buildFixturesPanel(data){
     pillsWrap.appendChild(pill);
   });
 
+  byGwBtn.addEventListener('click', () => {
+    byGwBtn.classList.add('active');
+    byTeamBtn.classList.remove('active');
+    pillsWrap.style.display = '';
+    teamSelectWrap.style.display = 'none';
+    const activePill = pillsWrap.querySelector('.gw-pill.active') || pillsWrap.firstElementChild;
+    if(activePill) renderGw(Number(activePill.textContent.replace('GW ', '')));
+  });
+  byTeamBtn.addEventListener('click', () => {
+    byTeamBtn.classList.add('active');
+    byGwBtn.classList.remove('active');
+    pillsWrap.style.display = 'none';
+    teamSelectWrap.style.display = '';
+    renderTeam(teamSelectWrap.querySelector('select').value);
+  });
+  teamSelectWrap.querySelector('select').addEventListener('change', (e) => {
+    renderTeam(e.target.value);
+  });
+
+  panel.appendChild(modeWrap);
   panel.appendChild(pillsWrap);
+  panel.appendChild(teamSelectWrap);
   panel.appendChild(listWrap);
 
   const defaultGw = data.current_event && gwKeys.includes(data.current_event)
@@ -838,6 +1070,13 @@ function matchRow({teamA, teamB, fixture, label, byeNote}){
   return div;
 }
 
+const POSITION_COLORS = {
+  FWD: { bg: 'rgba(229,72,77,0.14)', dot: '#E5484D', label: 'Forward' },
+  MID: { bg: 'rgba(23,192,140,0.14)', dot: '#17C08C', label: 'Midfielder' },
+  DEF: { bg: 'rgba(28,99,232,0.14)', dot: '#1C63E8', label: 'Defender' },
+  GKP: { bg: 'rgba(244,180,0,0.16)', dot: '#C99A00', label: 'Goalkeeper' },
+};
+
 function buildDraftRecapPanel(data){
   const panel = document.createElement('div');
   panel.className = 'panel';
@@ -852,37 +1091,56 @@ function buildDraftRecapPanel(data){
     return panel;
   }
 
+  // Fixed column order: whichever team picked in each slot during the
+  // earliest round (falls back to first-seen order for anyone missing it).
+  const firstRound = Math.min(...picks.map(p => p.round ?? 1));
+  const round1 = picks.filter(p => (p.round ?? 1) === firstRound);
+  const columnOrder = [];
+  const seen = new Set();
+  [...round1, ...picks].forEach(p => {
+    const key = String(p.league_entry_id ?? p.team_name);
+    if(!seen.has(key)){ seen.add(key); columnOrder.push({ key, team_name: p.team_name, short_name: p.short_name }); }
+  });
+
   const rounds = {};
   picks.forEach(p => {
     const r = p.round ?? 0;
-    (rounds[r] = rounds[r] || []).push(p);
+    (rounds[r] = rounds[r] || {})[String(p.league_entry_id ?? p.team_name)] = p;
   });
+  const roundKeys = Object.keys(rounds).map(Number).sort((a,b) => a-b);
 
-  Object.keys(rounds).sort((a,b) => a-b).forEach(r => {
-    const label = document.createElement('div');
-    label.className = 'bracket-round-label';
-    label.textContent = 'Round ' + r;
-    panel.appendChild(label);
+  const legend = document.createElement('div');
+  legend.className = 'draft-legend';
+  legend.innerHTML = Object.entries(POSITION_COLORS).map(([code, c]) => `
+    <span class="draft-legend-item"><span class="draft-dot" style="background:${c.dot}"></span>${c.label}</span>
+  `).join('');
+  panel.appendChild(legend);
 
-    const table = document.createElement('table');
-    table.style.marginBottom = '8px';
-    table.innerHTML = `
-      <thead><tr>
-        <th style="width:36px;">#</th><th>Team</th><th>Player</th>
-        <th style="width:60px;">Pos</th><th style="width:60px;">Club</th>
-      </tr></thead>
-      <tbody>${rounds[r].map(p => `
+  const wrap = document.createElement('div');
+  wrap.style.overflowX = 'auto';
+  const table = document.createElement('table');
+  table.className = 'draft-grid';
+  table.innerHTML = `
+    <thead><tr>
+      <th style="width:40px;">Rd</th>
+      ${columnOrder.map(c => `<th>${c.short_name}</th>`).join('')}
+    </tr></thead>
+    <tbody>
+      ${roundKeys.map(r => `
         <tr>
-          <td class="rank">${p.pick ?? '–'}</td>
-          <td class="team-cell"><div class="name">${p.team_name}</div><div class="manager">${p.manager_name}</div></td>
-          <td>${p.player_name}</td>
-          <td>${p.position}</td>
-          <td>${p.club}</td>
+          <td class="rank">${r}</td>
+          ${columnOrder.map(c => {
+            const p = rounds[r][c.key];
+            if(!p) return '<td></td>';
+            const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
+            return `<td style="background:${colors.bg};border-left:3px solid ${colors.dot};">${p.player_name}</td>`;
+          }).join('')}
         </tr>
-      `).join('')}</tbody>
-    `;
-    panel.appendChild(table);
-  });
+      `).join('')}
+    </tbody>
+  `;
+  wrap.appendChild(table);
+  panel.appendChild(wrap);
 
   return panel;
 }
@@ -940,7 +1198,7 @@ function buildGoldenPanel(data){
   const g = data.golden_gameweek;
   panel.innerHTML = `<h2><span class="dot"></span>Golden gameweek prize</h2>
     <p style="font-size:12px;color:var(--chalk-dim);margin-top:-8px;">
-      Highest single-gameweek score across GW1–${g ? g.reg_season_end : '–'}. One score per team, best gameweek only.
+      Highest single-gameweek score across the whole season (GW1–${g ? g.season_end : '–'}). One score per team, best gameweek only.
     </p>`;
 
   if(!g || !g.leader){
