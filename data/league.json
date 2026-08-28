@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T21:57:43.685163+00:00",
+  "generated_at": "2026-08-28T22:08:27.070717+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -17,13 +17,13 @@
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
-      "score": 0
+      "score": 14
     },
     "away": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
-      "score": 0
+      "score": 2
     },
     "finished": false,
     "started": true,
@@ -1516,13 +1516,13 @@
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
-          "score": 0
+          "score": 14
         },
         "away": {
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
-          "score": 0
+          "score": 2
         },
         "finished": false,
         "started": true,
@@ -1845,13 +1845,13 @@
           "league_entry_id": 27141,
           "team_name": "Flop Your Gy\u00f6k Out",
           "manager_name": "Ben Scotti",
-          "score": 0
+          "score": 2
         },
         "away": {
           "league_entry_id": 226052,
           "team_name": "PFC",
           "manager_name": "Archie Ross",
-          "score": 0
+          "score": 16
         },
         "finished": false,
         "started": true,
@@ -2174,7 +2174,7 @@
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
-          "score": 0
+          "score": 15
         },
         "away": {
           "league_entry_id": 183812,
@@ -2503,13 +2503,13 @@
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
-          "score": 0
+          "score": 3
         },
         "away": {
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
-          "score": 0
+          "score": 5
         },
         "finished": false,
         "started": true,
