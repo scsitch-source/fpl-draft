@@ -228,11 +228,9 @@ def build():
             "entry_id": info.get("entry_id"),
             "team_name": info.get("team_name", "Unknown"),
             "manager_name": info.get("manager_name", "Unknown Manager"),
-            "played": s.get("matches_played") if s.get("matches_played") is not None else (
-                (s.get("matches_won", 0) or 0)
-                + (s.get("matches_drawn", 0) or 0)
-                + (s.get("matches_lost", 0) or 0)
-            ),
+            "played": (s.get("matches_won", 0) or 0)
+                      + (s.get("matches_drawn", 0) or 0)
+                      + (s.get("matches_lost", 0) or 0),
             "won": s.get("matches_won", 0),
             "drawn": s.get("matches_drawn", 0),
             "lost": s.get("matches_lost", 0),
