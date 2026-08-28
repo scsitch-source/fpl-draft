@@ -66,10 +66,25 @@ def build():
     print("Fetching bootstrap-static (players/gameweeks)...")
     bootstrap = get_json("bootstrap-static")
     print(f"  bootstrap-static keys: {list(bootstrap.keys())}")
-    _events_preview = bootstrap.get("events", [])
-    print(f"  events: type={type(_events_preview).__name__}, len={len(_events_preview) if hasattr(_events_preview, '__len__') else '?'}")
-    if _events_preview:
-        print(f"  events[0] sample: {json.dumps(_events_preview[0])[:400]}")
+    _events_raw = bootstrap.get("events", [])
+    print(f"  events: type={type(_events_raw).__name__}")
+    if isinstance(_events_raw, dict):
+        print(f"  events dict keys: {list(_events_raw.keys())}")
+        print(f"  events dict sample: {json.dumps(_events_raw)[:600]}")
+        # Some Draft API responses nest the real gameweek list under a key
+        # like 'data' or 'events' inside this dict, rather than being the
+        # list itself. Try the common possibilities; fall back to treating
+        # the dict's values as the event objects.
+        events = (_events_raw.get("data")
+                  or _events_raw.get("events")
+                  or list(_events_raw.values()))
+    elif isinstance(_events_raw, list):
+        events = _events_raw
+        print(f"  events list len: {len(events)}")
+        if events:
+            print(f"  events[0] sample: {json.dumps(events[0])[:400]}")
+    else:
+        events = []
 
     print("Fetching game state...")
     try:
@@ -82,7 +97,6 @@ def build():
     league_entries = details.get("league_entries", [])
     standings_raw = details.get("standings", [])
     matches_raw = details.get("matches", [])
-    events = bootstrap.get("events", [])
     elements = bootstrap.get("elements", [])
     element_types = bootstrap.get("element_types", [])
     teams_pl = bootstrap.get("teams", [])
@@ -111,16 +125,19 @@ def build():
     your_league_entry_id = None
     for e in league_entries:
         le_id = e.get("id")
+        real_entry_id = e.get("entry_id")
+        if real_entry_id is None:
+            real_entry_id = e.get("entry")  # older/alternate field name, just in case
         entry_by_id[le_id] = {
             "league_entry_id": le_id,
-            "entry_id": e.get("entry"),
+            "entry_id": real_entry_id,
             "team_name": e.get("entry_name") or e.get("short_name") or "Unknown",
             "manager_name": " ".join(
                 filter(None, [e.get("player_first_name"), e.get("player_last_name")])
             ).strip() or "Unknown Manager",
             "short_name": e.get("short_name"),
         }
-        if ENTRY_ID and str(e.get("entry")) == str(ENTRY_ID):
+        if ENTRY_ID and str(real_entry_id) == str(ENTRY_ID):
             your_league_entry_id = le_id
 
     # Current / next gameweek
@@ -200,9 +217,11 @@ def build():
             "entry_id": info.get("entry_id"),
             "team_name": info.get("team_name", "Unknown"),
             "manager_name": info.get("manager_name", "Unknown Manager"),
-            "played": (s.get("matches_won", 0) or 0)
-                      + (s.get("matches_drawn", 0) or 0)
-                      + (s.get("matches_lost", 0) or 0),
+            "played": s.get("matches_played") if s.get("matches_played") is not None else (
+                (s.get("matches_won", 0) or 0)
+                + (s.get("matches_drawn", 0) or 0)
+                + (s.get("matches_lost", 0) or 0)
+            ),
             "won": s.get("matches_won", 0),
             "drawn": s.get("matches_drawn", 0),
             "lost": s.get("matches_lost", 0),
@@ -265,7 +284,7 @@ def build():
                 "round": pick.get("round"),
                 "pick": pick.get("pick"),
                 "overall_pick": pick.get("index") if pick.get("index") is not None else None,
-                "team_name": info.get("team_name", "Unknown"),
+                "team_name": pick.get("entry_name") or info.get("team_name", "Unknown"),
                 "manager_name": info.get("manager_name", ""),
                 "player_name": player_info.get("name", f"Player {pick.get('element')}"),
                 "position": player_info.get("position", "?"),
