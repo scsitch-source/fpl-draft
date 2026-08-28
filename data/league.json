@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-08-28T13:16:08.786736+00:00",
+  "generated_at": "2026-08-28T21:57:43.685163+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
     "scoring": "h",
-    "draft_status": "post"
+    "draft_status": "pre"
   },
-  "current_event": 1,
-  "next_event": 2,
+  "current_event": 2,
+  "next_event": 3,
   "next_deadline": null,
   "your_entry_id": 27110,
   "your_league_entry_id": 27139,
   "your_next_fixture": {
-    "event": 1,
+    "event": 2,
     "home": {
-      "league_entry_id": 31110,
-      "team_name": "I am chucky kirkez",
-      "manager_name": "Eamon Lye",
-      "score": 32
-    },
-    "away": {
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
-      "score": 52
+      "score": 0
     },
-    "finished": true,
+    "away": {
+      "league_entry_id": 27140,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "Will Hocking",
+      "score": 0
+    },
+    "finished": false,
     "started": true,
     "winning_league_entry": null
   },
   "standings": [
     {
       "rank": 1,
-      "last_rank": null,
+      "last_rank": 1,
       "league_entry_id": 27143,
       "entry_id": 27114,
       "team_name": "Eki-Tiki",
@@ -52,7 +52,7 @@
     },
     {
       "rank": 1,
-      "last_rank": null,
+      "last_rank": 1,
       "league_entry_id": 27139,
       "entry_id": 27110,
       "team_name": "FC Strup",
@@ -72,7 +72,7 @@
     },
     {
       "rank": 3,
-      "last_rank": null,
+      "last_rank": 3,
       "league_entry_id": 27145,
       "entry_id": 27116,
       "team_name": ":)",
@@ -92,7 +92,7 @@
     },
     {
       "rank": 3,
-      "last_rank": null,
+      "last_rank": 3,
       "league_entry_id": 27141,
       "entry_id": 27112,
       "team_name": "Flop Your Gy\u00f6k Out",
@@ -112,7 +112,7 @@
     },
     {
       "rank": 5,
-      "last_rank": null,
+      "last_rank": 5,
       "league_entry_id": 226052,
       "entry_id": 224536,
       "team_name": "PFC",
@@ -132,7 +132,7 @@
     },
     {
       "rank": 6,
-      "last_rank": null,
+      "last_rank": 6,
       "league_entry_id": 31110,
       "entry_id": 31072,
       "team_name": "I am chucky kirkez",
@@ -152,7 +152,7 @@
     },
     {
       "rank": 7,
-      "last_rank": null,
+      "last_rank": 7,
       "league_entry_id": 27140,
       "entry_id": 27111,
       "team_name": "H\u00f6chengladbach",
@@ -172,7 +172,7 @@
     },
     {
       "rank": 8,
-      "last_rank": null,
+      "last_rank": 8,
       "league_entry_id": 183812,
       "entry_id": 182889,
       "team_name": "Clean Machine FC",
@@ -1525,8 +1525,320 @@
           "score": 0
         },
         "finished": false,
-        "started": false,
-        "winning_league_entry": null
+        "started": true,
+        "winning_league_entry": null,
+        "squads": {
+          "27139": {
+            "starting": [
+              {
+                "name": "A.Becker",
+                "position": "GKP",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "White",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Mosquera",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Silva",
+                "position": "DEF",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Gvardiol",
+                "position": "DEF",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 5,
+                "goals": 0,
+                "assists": 1
+              },
+              {
+                "name": "Rayan",
+                "position": "MID",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Gro\u00df",
+                "position": "MID",
+                "club": "BHA",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Foden",
+                "position": "MID",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 9,
+                "goals": 0,
+                "assists": 2
+              },
+              {
+                "name": "Tzolis",
+                "position": "MID",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Jo\u00e3o Pedro",
+                "position": "FWD",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Thiago",
+                "position": "FWD",
+                "club": "BRE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Mamardashvili",
+                "position": "GKP",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Gibbs-White",
+                "position": "MID",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "N.Jackson",
+                "position": "FWD",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "J.Timber",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          },
+          "27140": {
+            "starting": [
+              {
+                "name": "Sels",
+                "position": "GKP",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "R\u00faben",
+                "position": "DEF",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 2,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Vuskovic",
+                "position": "DEF",
+                "club": "BHA",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Canvot",
+                "position": "DEF",
+                "club": "CRY",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Mukiele",
+                "position": "DEF",
+                "club": "SUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Thiaw",
+                "position": "DEF",
+                "club": "NEW",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Palmer",
+                "position": "MID",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Tavernier",
+                "position": "MID",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Igor Jesus",
+                "position": "FWD",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Gy\u00f6keres",
+                "position": "FWD",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Brobbey",
+                "position": "FWD",
+                "club": "SUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Henderson",
+                "position": "GKP",
+                "club": "CRY",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 1,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Bruno G.",
+                "position": "MID",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Caicedo",
+                "position": "MID",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Kudus",
+                "position": "MID",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          }
+        }
       },
       {
         "home": {
@@ -1542,8 +1854,320 @@
           "score": 0
         },
         "finished": false,
-        "started": false,
-        "winning_league_entry": null
+        "started": true,
+        "winning_league_entry": null,
+        "squads": {
+          "27141": {
+            "starting": [
+              {
+                "name": "Pickford",
+                "position": "GKP",
+                "club": "EVE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "O'Reilly",
+                "position": "DEF",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 2,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Senesi",
+                "position": "DEF",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Branthwaite",
+                "position": "DEF",
+                "club": "EVE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Maguire",
+                "position": "DEF",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "S\u00e1vio",
+                "position": "MID",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "B.Fernandes",
+                "position": "MID",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Wirtz",
+                "position": "MID",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Dewsbury-Hall",
+                "position": "MID",
+                "club": "EVE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "O.Dango",
+                "position": "MID",
+                "club": "BRE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Mateta",
+                "position": "FWD",
+                "club": "CRY",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Roefs",
+                "position": "GKP",
+                "club": "SUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Milenkovi\u0107",
+                "position": "DEF",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Marmoush",
+                "position": "FWD",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Ekitik\u00e9",
+                "position": "FWD",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          },
+          "226052": {
+            "starting": [
+              {
+                "name": "Donnarumma",
+                "position": "GKP",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "James",
+                "position": "DEF",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Khusanov",
+                "position": "DEF",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 2,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Collins",
+                "position": "DEF",
+                "club": "BRE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Hall",
+                "position": "DEF",
+                "club": "NEW",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Mbeumo",
+                "position": "MID",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Cherki",
+                "position": "MID",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 14,
+                "goals": 2,
+                "assists": 0
+              },
+              {
+                "name": "Gakpo",
+                "position": "MID",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "\u00d8degaard",
+                "position": "MID",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Barnes",
+                "position": "MID",
+                "club": "NEW",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Richarlison",
+                "position": "FWD",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Petrovi\u0107",
+                "position": "GKP",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "G.Jesus",
+                "position": "FWD",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Watkins",
+                "position": "FWD",
+                "club": "AVL",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Saliba",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          }
+        }
       },
       {
         "home": {
@@ -1559,8 +2183,320 @@
           "score": 0
         },
         "finished": false,
-        "started": false,
-        "winning_league_entry": null
+        "started": true,
+        "winning_league_entry": null,
+        "squads": {
+          "27143": {
+            "starting": [
+              {
+                "name": "S\u00e1nchez",
+                "position": "GKP",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Gu\u00e9hi",
+                "position": "DEF",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 2,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Tarkowski",
+                "position": "DEF",
+                "club": "EVE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Pedro Porro",
+                "position": "DEF",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Frimpong",
+                "position": "DEF",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Szoboszlai",
+                "position": "MID",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Rogers",
+                "position": "MID",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Wilson",
+                "position": "MID",
+                "club": "LEE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Barry",
+                "position": "FWD",
+                "club": "EVE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Haaland",
+                "position": "FWD",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 13,
+                "goals": 2,
+                "assists": 0
+              },
+              {
+                "name": "Wissa",
+                "position": "FWD",
+                "club": "NEW",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Martinez",
+                "position": "GKP",
+                "club": "AVL",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Rashford",
+                "position": "MID",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Sarr",
+                "position": "MID",
+                "club": "CRY",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Hincapie",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          },
+          "183812": {
+            "starting": [
+              {
+                "name": "Trafford",
+                "position": "GKP",
+                "club": "LEE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Virgil",
+                "position": "DEF",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Murillo",
+                "position": "DEF",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Van Hecke",
+                "position": "DEF",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Konsa",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Truffert",
+                "position": "DEF",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Doku",
+                "position": "MID",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Grealish",
+                "position": "MID",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Enzo",
+                "position": "MID",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Solanke",
+                "position": "FWD",
+                "club": "TOT",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "\u0160e\u0161ko",
+                "position": "FWD",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Raya",
+                "position": "GKP",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Isak",
+                "position": "FWD",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "M.Sangar\u00e9",
+                "position": "MID",
+                "club": "BRE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Rice",
+                "position": "MID",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          }
+        }
       },
       {
         "home": {
@@ -1576,8 +2512,320 @@
           "score": 0
         },
         "finished": false,
-        "started": false,
-        "winning_league_entry": null
+        "started": true,
+        "winning_league_entry": null,
+        "squads": {
+          "27145": {
+            "starting": [
+              {
+                "name": "Kelleher",
+                "position": "GKP",
+                "club": "BRE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Gabriel",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Lacroix",
+                "position": "DEF",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Kerkez",
+                "position": "DEF",
+                "club": "LIV",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Bijol",
+                "position": "DEF",
+                "club": "LEE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Mu\u00f1oz",
+                "position": "DEF",
+                "club": "CRY",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Stach",
+                "position": "MID",
+                "club": "LEE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Saka",
+                "position": "MID",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Anderson",
+                "position": "MID",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 3,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Evanilson",
+                "position": "FWD",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Havertz",
+                "position": "FWD",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Pope",
+                "position": "GKP",
+                "club": "NEW",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Eze",
+                "position": "MID",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Neto",
+                "position": "MID",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Emersonn",
+                "position": "FWD",
+                "club": "IPS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          },
+          "31110": {
+            "starting": [
+              {
+                "name": "Lammens",
+                "position": "GKP",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Calafiori",
+                "position": "DEF",
+                "club": "ARS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Shaw",
+                "position": "DEF",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Matheus N.",
+                "position": "DEF",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Semenyo",
+                "position": "MID",
+                "club": "MCI",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 5,
+                "goals": 0,
+                "assists": 1
+              },
+              {
+                "name": "Cunha",
+                "position": "MID",
+                "club": "MUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Ndiaye",
+                "position": "MID",
+                "club": "EVE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "E.Le F\u00e9e",
+                "position": "MID",
+                "club": "SUN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Kluivert",
+                "position": "MID",
+                "club": "BOU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Calvert-Lewin",
+                "position": "FWD",
+                "club": "LEE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Woltemade",
+                "position": "FWD",
+                "club": "NEW",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Leno",
+                "position": "GKP",
+                "club": "FUL",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Wood",
+                "position": "FWD",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "De Cuyper",
+                "position": "DEF",
+                "club": "BHA",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "name": "Palestra",
+                "position": "DEF",
+                "club": "CHE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "points": 0,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "bench": []
+          }
+        }
       }
     ],
     "3": [
@@ -5937,163 +7185,8 @@
       "kind": "Free agent"
     }
   ],
-  "latest_squad_event": 1,
+  "latest_squad_event": 2,
   "latest_squads": {
-    "31110": {
-      "starting": [
-        {
-          "name": "Lammens",
-          "position": "GKP",
-          "club": "MUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Calafiori",
-          "position": "DEF",
-          "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Shaw",
-          "position": "DEF",
-          "club": "MUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Matheus N.",
-          "position": "DEF",
-          "club": "MCI",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Semenyo",
-          "position": "MID",
-          "club": "MCI",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Cunha",
-          "position": "MID",
-          "club": "MUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Ndiaye",
-          "position": "MID",
-          "club": "EVE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "E.Le F\u00e9e",
-          "position": "MID",
-          "club": "SUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Kluivert",
-          "position": "MID",
-          "club": "BOU",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Calvert-Lewin",
-          "position": "FWD",
-          "club": "LEE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Wood",
-          "position": "FWD",
-          "club": "NFO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Leno",
-          "position": "GKP",
-          "club": "FUL",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Woltemade",
-          "position": "FWD",
-          "club": "NEW",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Van de Ven",
-          "position": "DEF",
-          "club": "TOT",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Palestra",
-          "position": "DEF",
-          "club": "CHE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        }
-      ],
-      "bench": []
-    },
     "27139": {
       "starting": [
         {
@@ -6127,39 +7220,29 @@
           "assists": 0
         },
         {
+          "name": "Silva",
+          "position": "DEF",
+          "club": "BOU",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
           "name": "Gvardiol",
           "position": "DEF",
           "club": "MCI",
           "is_captain": false,
           "is_vice_captain": false,
-          "points": 0,
+          "points": 5,
           "goals": 0,
-          "assists": 0
+          "assists": 1
         },
         {
-          "name": "N.Williams",
-          "position": "DEF",
-          "club": "NFO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Gibbs-White",
+          "name": "Rayan",
           "position": "MID",
-          "club": "NFO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Foden",
-          "position": "MID",
-          "club": "MCI",
+          "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6177,19 +7260,19 @@
           "assists": 0
         },
         {
+          "name": "Foden",
+          "position": "MID",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 9,
+          "goals": 0,
+          "assists": 2
+        },
+        {
           "name": "Tzolis",
           "position": "MID",
           "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Thiago",
-          "position": "FWD",
-          "club": "BRE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6207,6 +7290,16 @@
           "assists": 0
         },
         {
+          "name": "Thiago",
+          "position": "FWD",
+          "club": "BRE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
           "name": "Mamardashvili",
           "position": "GKP",
           "club": "LIV",
@@ -6217,9 +7310,9 @@
           "assists": 0
         },
         {
-          "name": "Rayan",
+          "name": "Gibbs-White",
           "position": "MID",
-          "club": "BOU",
+          "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6227,9 +7320,9 @@
           "assists": 0
         },
         {
-          "name": "Gonzalo",
+          "name": "N.Jackson",
           "position": "FWD",
-          "club": "FUL",
+          "club": "CHE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6249,41 +7342,11 @@
       ],
       "bench": []
     },
-    "183812": {
+    "27140": {
       "starting": [
         {
-          "name": "Raya",
+          "name": "Sels",
           "position": "GKP",
-          "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Virgil",
-          "position": "DEF",
-          "club": "LIV",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Van Hecke",
-          "position": "DEF",
-          "club": "TOT",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Murillo",
-          "position": "DEF",
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
@@ -6292,9 +7355,19 @@
           "assists": 0
         },
         {
-          "name": "Truffert",
+          "name": "R\u00faben",
           "position": "DEF",
-          "club": "BOU",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 2,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Vuskovic",
+          "position": "DEF",
+          "club": "BHA",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6302,9 +7375,9 @@
           "assists": 0
         },
         {
-          "name": "Rice",
-          "position": "MID",
-          "club": "ARS",
+          "name": "Canvot",
+          "position": "DEF",
+          "club": "CRY",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6312,9 +7385,9 @@
           "assists": 0
         },
         {
-          "name": "Munoz",
-          "position": "MID",
-          "club": "LIV",
+          "name": "Mukiele",
+          "position": "DEF",
+          "club": "SUN",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6322,7 +7395,17 @@
           "assists": 0
         },
         {
-          "name": "Enzo",
+          "name": "Thiaw",
+          "position": "DEF",
+          "club": "NEW",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Palmer",
           "position": "MID",
           "club": "CHE",
           "is_captain": false,
@@ -6332,49 +7415,9 @@
           "assists": 0
         },
         {
-          "name": "Solanke",
-          "position": "FWD",
-          "club": "TOT",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Isak",
-          "position": "FWD",
-          "club": "LIV",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "\u0160e\u0161ko",
-          "position": "FWD",
-          "club": "MUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Trafford",
-          "position": "GKP",
-          "club": "LEE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Doku",
+          "name": "Tavernier",
           "position": "MID",
-          "club": "MCI",
+          "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6382,8 +7425,8 @@
           "assists": 0
         },
         {
-          "name": "Hudson-Odoi",
-          "position": "MID",
+          "name": "Igor Jesus",
+          "position": "FWD",
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
@@ -6392,9 +7435,59 @@
           "assists": 0
         },
         {
-          "name": "Konsa",
-          "position": "DEF",
+          "name": "Gy\u00f6keres",
+          "position": "FWD",
           "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Brobbey",
+          "position": "FWD",
+          "club": "SUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Henderson",
+          "position": "GKP",
+          "club": "CRY",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 1,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Bruno G.",
+          "position": "MID",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Caicedo",
+          "position": "MID",
+          "club": "CHE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Kudus",
+          "position": "MID",
+          "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6404,12 +7497,12 @@
       ],
       "bench": []
     },
-    "27145": {
+    "27141": {
       "starting": [
         {
-          "name": "Kelleher",
+          "name": "Pickford",
           "position": "GKP",
-          "club": "BRE",
+          "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6417,9 +7510,19 @@
           "assists": 0
         },
         {
-          "name": "Gabriel",
+          "name": "O'Reilly",
           "position": "DEF",
-          "club": "ARS",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 2,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Senesi",
+          "position": "DEF",
+          "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6427,9 +7530,9 @@
           "assists": 0
         },
         {
-          "name": "Lacroix",
+          "name": "Branthwaite",
           "position": "DEF",
-          "club": "CHE",
+          "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6437,9 +7540,9 @@
           "assists": 0
         },
         {
-          "name": "Mu\u00f1oz",
+          "name": "Maguire",
           "position": "DEF",
-          "club": "CRY",
+          "club": "MUN",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6447,8 +7550,28 @@
           "assists": 0
         },
         {
-          "name": "Kerkez",
-          "position": "DEF",
+          "name": "S\u00e1vio",
+          "position": "MID",
+          "club": "TOT",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "B.Fernandes",
+          "position": "MID",
+          "club": "MUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Wirtz",
+          "position": "MID",
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
@@ -6457,9 +7580,9 @@
           "assists": 0
         },
         {
-          "name": "Saka",
+          "name": "Dewsbury-Hall",
           "position": "MID",
-          "club": "ARS",
+          "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6467,9 +7590,9 @@
           "assists": 0
         },
         {
-          "name": "Anderson",
+          "name": "O.Dango",
           "position": "MID",
-          "club": "MCI",
+          "club": "BRE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6477,79 +7600,49 @@
           "assists": 0
         },
         {
-          "name": "Neto",
-          "position": "MID",
-          "club": "CHE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Eze",
-          "position": "MID",
-          "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Evanilson",
-          "position": "FWD",
-          "club": "BOU",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Havertz",
-          "position": "FWD",
-          "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Pope",
-          "position": "GKP",
-          "club": "NEW",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "A\u00eft-Nouri",
-          "position": "DEF",
-          "club": "MCI",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Stach",
-          "position": "MID",
-          "club": "LEE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Strand Larsen",
+          "name": "Mateta",
           "position": "FWD",
           "club": "CRY",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Roefs",
+          "position": "GKP",
+          "club": "SUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Milenkovi\u0107",
+          "position": "DEF",
+          "club": "NFO",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Marmoush",
+          "position": "FWD",
+          "club": "TOT",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Ekitik\u00e9",
+          "position": "FWD",
+          "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6582,19 +7675,19 @@
           "assists": 0
         },
         {
-          "name": "Collins",
+          "name": "Khusanov",
           "position": "DEF",
-          "club": "BRE",
+          "club": "MCI",
           "is_captain": false,
           "is_vice_captain": false,
-          "points": 0,
+          "points": 2,
           "goals": 0,
           "assists": 0
         },
         {
-          "name": "Khusanov",
+          "name": "Collins",
           "position": "DEF",
-          "club": "MCI",
+          "club": "BRE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6627,8 +7720,8 @@
           "club": "MCI",
           "is_captain": false,
           "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
+          "points": 14,
+          "goals": 2,
           "assists": 0
         },
         {
@@ -6732,7 +7825,7 @@
           "club": "MCI",
           "is_captain": false,
           "is_vice_captain": false,
-          "points": 0,
+          "points": 2,
           "goals": 0,
           "assists": 0
         },
@@ -6740,6 +7833,16 @@
           "name": "Tarkowski",
           "position": "DEF",
           "club": "EVE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Pedro Porro",
+          "position": "DEF",
+          "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6787,9 +7890,9 @@
           "assists": 0
         },
         {
-          "name": "Rashford",
-          "position": "MID",
-          "club": "MUN",
+          "name": "Barry",
+          "position": "FWD",
+          "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6802,24 +7905,14 @@
           "club": "MCI",
           "is_captain": false,
           "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
+          "points": 13,
+          "goals": 2,
           "assists": 0
         },
         {
           "name": "Wissa",
           "position": "FWD",
           "club": "NEW",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Barry",
-          "position": "FWD",
-          "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6837,9 +7930,9 @@
           "assists": 0
         },
         {
-          "name": "Sarr",
+          "name": "Rashford",
           "position": "MID",
-          "club": "CRY",
+          "club": "MUN",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6847,9 +7940,9 @@
           "assists": 0
         },
         {
-          "name": "Pedro Porro",
-          "position": "DEF",
-          "club": "TOT",
+          "name": "Sarr",
+          "position": "MID",
+          "club": "CRY",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6869,12 +7962,12 @@
       ],
       "bench": []
     },
-    "27140": {
+    "183812": {
       "starting": [
         {
-          "name": "Sels",
+          "name": "Trafford",
           "position": "GKP",
-          "club": "NFO",
+          "club": "LEE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -6882,223 +7975,8 @@
           "assists": 0
         },
         {
-          "name": "R\u00faben",
+          "name": "Virgil",
           "position": "DEF",
-          "club": "MCI",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Vuskovic",
-          "position": "DEF",
-          "club": "BHA",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Thiaw",
-          "position": "DEF",
-          "club": "NEW",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Canvot",
-          "position": "DEF",
-          "club": "CRY",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Palmer",
-          "position": "MID",
-          "club": "CHE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Caicedo",
-          "position": "MID",
-          "club": "CHE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Gallagher",
-          "position": "MID",
-          "club": "TOT",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Gy\u00f6keres",
-          "position": "FWD",
-          "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Brobbey",
-          "position": "FWD",
-          "club": "SUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Igor Jesus",
-          "position": "FWD",
-          "club": "NFO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Henderson",
-          "position": "GKP",
-          "club": "CRY",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Bruno G.",
-          "position": "MID",
-          "club": "ARS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Kudus",
-          "position": "MID",
-          "club": "TOT",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Mukiele",
-          "position": "DEF",
-          "club": "SUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        }
-      ],
-      "bench": []
-    },
-    "27141": {
-      "starting": [
-        {
-          "name": "Pickford",
-          "position": "GKP",
-          "club": "EVE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "O'Reilly",
-          "position": "DEF",
-          "club": "MCI",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Senesi",
-          "position": "DEF",
-          "club": "TOT",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Branthwaite",
-          "position": "DEF",
-          "club": "EVE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Milenkovi\u0107",
-          "position": "DEF",
-          "club": "NFO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Maguire",
-          "position": "DEF",
-          "club": "MUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "B.Fernandes",
-          "position": "MID",
-          "club": "MUN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "points": 0,
-          "goals": 0,
-          "assists": 0
-        },
-        {
-          "name": "Wirtz",
-          "position": "MID",
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
@@ -7107,9 +7985,9 @@
           "assists": 0
         },
         {
-          "name": "Dewsbury-Hall",
-          "position": "MID",
-          "club": "EVE",
+          "name": "Murillo",
+          "position": "DEF",
+          "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -7117,7 +7995,107 @@
           "assists": 0
         },
         {
-          "name": "O.Dango",
+          "name": "Van Hecke",
+          "position": "DEF",
+          "club": "TOT",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Konsa",
+          "position": "DEF",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Truffert",
+          "position": "DEF",
+          "club": "BOU",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Doku",
+          "position": "MID",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Grealish",
+          "position": "MID",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Enzo",
+          "position": "MID",
+          "club": "CHE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Solanke",
+          "position": "FWD",
+          "club": "TOT",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "\u0160e\u0161ko",
+          "position": "FWD",
+          "club": "MUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Raya",
+          "position": "GKP",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Isak",
+          "position": "FWD",
+          "club": "LIV",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "M.Sangar\u00e9",
           "position": "MID",
           "club": "BRE",
           "is_captain": false,
@@ -7127,8 +8105,73 @@
           "assists": 0
         },
         {
-          "name": "Mateta",
-          "position": "FWD",
+          "name": "Rice",
+          "position": "MID",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        }
+      ],
+      "bench": []
+    },
+    "27145": {
+      "starting": [
+        {
+          "name": "Kelleher",
+          "position": "GKP",
+          "club": "BRE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Gabriel",
+          "position": "DEF",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Lacroix",
+          "position": "DEF",
+          "club": "CHE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Kerkez",
+          "position": "DEF",
+          "club": "LIV",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Bijol",
+          "position": "DEF",
+          "club": "LEE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Mu\u00f1oz",
+          "position": "DEF",
           "club": "CRY",
           "is_captain": false,
           "is_vice_captain": false,
@@ -7137,8 +8180,173 @@
           "assists": 0
         },
         {
-          "name": "Roefs",
+          "name": "Stach",
+          "position": "MID",
+          "club": "LEE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Saka",
+          "position": "MID",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Anderson",
+          "position": "MID",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 3,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Evanilson",
+          "position": "FWD",
+          "club": "BOU",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Havertz",
+          "position": "FWD",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Pope",
           "position": "GKP",
+          "club": "NEW",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Eze",
+          "position": "MID",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Neto",
+          "position": "MID",
+          "club": "CHE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Emersonn",
+          "position": "FWD",
+          "club": "IPS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        }
+      ],
+      "bench": []
+    },
+    "31110": {
+      "starting": [
+        {
+          "name": "Lammens",
+          "position": "GKP",
+          "club": "MUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Calafiori",
+          "position": "DEF",
+          "club": "ARS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Shaw",
+          "position": "DEF",
+          "club": "MUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Matheus N.",
+          "position": "DEF",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Semenyo",
+          "position": "MID",
+          "club": "MCI",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 5,
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "name": "Cunha",
+          "position": "MID",
+          "club": "MUN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Ndiaye",
+          "position": "MID",
+          "club": "EVE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "E.Le F\u00e9e",
+          "position": "MID",
           "club": "SUN",
           "is_captain": false,
           "is_vice_captain": false,
@@ -7147,9 +8355,9 @@
           "assists": 0
         },
         {
-          "name": "S\u00e1vio",
+          "name": "Kluivert",
           "position": "MID",
-          "club": "TOT",
+          "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
@@ -7157,8 +8365,48 @@
           "assists": 0
         },
         {
-          "name": "Kostoulas",
+          "name": "Calvert-Lewin",
           "position": "FWD",
+          "club": "LEE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Woltemade",
+          "position": "FWD",
+          "club": "NEW",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Leno",
+          "position": "GKP",
+          "club": "FUL",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "Wood",
+          "position": "FWD",
+          "club": "NFO",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "points": 0,
+          "goals": 0,
+          "assists": 0
+        },
+        {
+          "name": "De Cuyper",
+          "position": "DEF",
           "club": "BHA",
           "is_captain": false,
           "is_vice_captain": false,
@@ -7167,9 +8415,9 @@
           "assists": 0
         },
         {
-          "name": "Ekitik\u00e9",
-          "position": "FWD",
-          "club": "LIV",
+          "name": "Palestra",
+          "position": "DEF",
+          "club": "CHE",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
