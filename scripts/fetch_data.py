@@ -23,6 +23,13 @@ BASE = "https://draft.premierleague.com/api"
 LEAGUE_ID = os.environ.get("LEAGUE_ID", "6038")
 ENTRY_ID = os.environ.get("ENTRY_ID", "27110")
 
+# Regular season / playoff structure. Adjust via env vars if your league's
+# schedule differs (e.g. a 20-team league that finishes earlier).
+REG_SEASON_END = int(os.environ.get("REG_SEASON_END", "35"))
+SEMI_GW = int(os.environ.get("SEMI_GW", "36"))
+ELIM_GW = int(os.environ.get("ELIM_GW", "37"))
+FINAL_GW = int(os.environ.get("FINAL_GW", "38"))
+
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "fpl-draft-dashboard/1.0 (+github actions)"})
 
@@ -212,6 +219,80 @@ def build():
             if your_next_fixture:
                 break
 
+    # ---------------- Playoff bracket (top 4 after reg season) ----------------
+    def find_match(gw, le_a, le_b):
+        if le_a is None or le_b is None:
+            return None
+        for f in fixtures_by_event.get(str(gw), []):
+            ids = {f["home"]["league_entry_id"], f["away"]["league_entry_id"]}
+            if ids == {le_a, le_b}:
+                return f
+        return None
+
+    def winner_of(f):
+        if not f or not f["finished"] or f["home"]["score"] is None or f["away"]["score"] is None:
+            return None
+        if f["home"]["score"] == f["away"]["score"]:
+            return None
+        return f["home"]["league_entry_id"] if f["home"]["score"] > f["away"]["score"] else f["away"]["league_entry_id"]
+
+    def loser_of(f):
+        w = winner_of(f)
+        if w is None or not f:
+            return None
+        return f["away"]["league_entry_id"] if w == f["home"]["league_entry_id"] else f["home"]["league_entry_id"]
+
+    def team_ref(le_id):
+        if le_id is None:
+            return None
+        info = entry_by_id.get(le_id, {})
+        return {"league_entry_id": le_id, "team_name": info.get("team_name", "TBD"),
+                "manager_name": info.get("manager_name", "")}
+
+    playoffs = None
+    top4 = [s["league_entry_id"] for s in standings[:4]]
+    if len(top4) == 4:
+        semi_a = find_match(SEMI_GW, top4[0], top4[1])
+        semi_b = find_match(SEMI_GW, top4[2], top4[3])
+        semi_a_winner, semi_a_loser = winner_of(semi_a), loser_of(semi_a)
+        semi_b_winner = winner_of(semi_b)
+        elim = find_match(ELIM_GW, semi_a_loser, semi_b_winner)
+        elim_winner = winner_of(elim)
+        final = find_match(FINAL_GW, semi_a_winner, elim_winner)
+        final_winner = winner_of(final)
+        playoffs = {
+            "semi_gw": SEMI_GW, "elim_gw": ELIM_GW, "final_gw": FINAL_GW,
+            "seeds": [team_ref(le) for le in top4],
+            "semi_a": {"fixture": semi_a, "team_a": team_ref(top4[0]), "team_b": team_ref(top4[1])},
+            "semi_b": {"fixture": semi_b, "team_a": team_ref(top4[2]), "team_b": team_ref(top4[3])},
+            "semi_a_winner": team_ref(semi_a_winner),
+            "semi_a_bye_to_final": team_ref(semi_a_winner) if semi_a_winner else None,
+            "elim": {"fixture": elim, "team_a": team_ref(semi_a_loser), "team_b": team_ref(semi_b_winner)},
+            "elim_winner": team_ref(elim_winner),
+            "final": {"fixture": final, "team_a": team_ref(semi_a_winner), "team_b": team_ref(elim_winner)},
+            "final_winner": team_ref(final_winner),
+        }
+
+    # ---------------- Golden gameweek (best single score, GW1..REG_SEASON_END) ----------------
+    best_per_entry = {}
+    for le_id, scores in weekly_scores.items():
+        for ev, pts in scores.items():
+            if ev is None or ev > REG_SEASON_END or pts is None:
+                continue
+            if le_id not in best_per_entry or pts > best_per_entry[le_id]["points"]:
+                best_per_entry[le_id] = {"league_entry_id": le_id, "points": pts, "event": ev}
+
+    golden_leaderboard = sorted(best_per_entry.values(), key=lambda r: r["points"], reverse=True)[:8]
+    for row in golden_leaderboard:
+        info = entry_by_id.get(row["league_entry_id"], {})
+        row["team_name"] = info.get("team_name", "Unknown")
+        row["manager_name"] = info.get("manager_name", "")
+    golden_gameweek = {
+        "reg_season_end": REG_SEASON_END,
+        "leader": golden_leaderboard[0] if golden_leaderboard else None,
+        "leaderboard": golden_leaderboard,
+    }
+
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "league": {
@@ -232,6 +313,8 @@ def build():
             "events": finished_events,
             "teams": progression_teams,
         },
+        "playoffs": playoffs,
+        "golden_gameweek": golden_gameweek,
     }
 
     os.makedirs("data", exist_ok=True)
