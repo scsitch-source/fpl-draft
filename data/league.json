@@ -1,0 +1,229 @@
+{
+  "generated_at": "2026-08-28T11:01:05.804249+00:00",
+  "league": {
+    "id": 6038,
+    "name": "Test League",
+    "scoring": "h",
+    "draft_status": "post"
+  },
+  "current_event": 2,
+  "next_event": 3,
+  "next_deadline": "2026-08-29T10:00:00Z",
+  "your_entry_id": 27110,
+  "your_league_entry_id": 1,
+  "your_next_fixture": {
+    "event": 2,
+    "home": {
+      "league_entry_id": 1,
+      "team_name": "Your Team",
+      "manager_name": "You Manager",
+      "score": 60
+    },
+    "away": {
+      "league_entry_id": 3,
+      "team_name": "Third Team",
+      "manager_name": "Third Manager",
+      "score": 50
+    },
+    "finished": true,
+    "started": true,
+    "winning_league_entry": 1
+  },
+  "standings": [
+    {
+      "rank": 1,
+      "last_rank": 2,
+      "league_entry_id": 1,
+      "entry_id": 27110,
+      "team_name": "Your Team",
+      "manager_name": "You Manager",
+      "played": 2,
+      "won": 2,
+      "drawn": 0,
+      "lost": 0,
+      "points_for": 120,
+      "points_against": 90,
+      "total": 6,
+      "event_total": 60,
+      "form": [
+        "W",
+        "W"
+      ],
+      "is_you": true
+    },
+    {
+      "rank": 2,
+      "last_rank": 1,
+      "league_entry_id": 2,
+      "entry_id": 99999,
+      "team_name": "Rival FC",
+      "manager_name": "Rival Manager",
+      "played": 2,
+      "won": 1,
+      "drawn": 0,
+      "lost": 1,
+      "points_for": 90,
+      "points_against": 100,
+      "total": 3,
+      "event_total": 40,
+      "form": [
+        "L"
+      ],
+      "is_you": false
+    },
+    {
+      "rank": 3,
+      "last_rank": 3,
+      "league_entry_id": 3,
+      "entry_id": 88888,
+      "team_name": "Third Team",
+      "manager_name": "Third Manager",
+      "played": 2,
+      "won": 0,
+      "drawn": 0,
+      "lost": 2,
+      "points_for": 80,
+      "points_against": 100,
+      "total": 0,
+      "event_total": 30,
+      "form": [
+        "L"
+      ],
+      "is_you": false
+    }
+  ],
+  "fixtures_by_event": {
+    "1": [
+      {
+        "home": {
+          "league_entry_id": 1,
+          "team_name": "Your Team",
+          "manager_name": "You Manager",
+          "score": 60
+        },
+        "away": {
+          "league_entry_id": 2,
+          "team_name": "Rival FC",
+          "manager_name": "Rival Manager",
+          "score": 40
+        },
+        "finished": true,
+        "started": true,
+        "winning_league_entry": 1
+      },
+      {
+        "home": {
+          "league_entry_id": 3,
+          "team_name": "Third Team",
+          "manager_name": "Third Manager",
+          "score": 30
+        },
+        "away": {
+          "league_entry_id": null,
+          "team_name": "TBD",
+          "manager_name": "",
+          "score": null
+        },
+        "finished": true,
+        "started": true,
+        "winning_league_entry": null
+      }
+    ],
+    "2": [
+      {
+        "home": {
+          "league_entry_id": 1,
+          "team_name": "Your Team",
+          "manager_name": "You Manager",
+          "score": 60
+        },
+        "away": {
+          "league_entry_id": 3,
+          "team_name": "Third Team",
+          "manager_name": "Third Manager",
+          "score": 50
+        },
+        "finished": true,
+        "started": true,
+        "winning_league_entry": 1
+      },
+      {
+        "home": {
+          "league_entry_id": 2,
+          "team_name": "Rival FC",
+          "manager_name": "Rival Manager",
+          "score": 50
+        },
+        "away": {
+          "league_entry_id": null,
+          "team_name": "TBD",
+          "manager_name": "",
+          "score": null
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ],
+    "3": [
+      {
+        "home": {
+          "league_entry_id": 2,
+          "team_name": "Rival FC",
+          "manager_name": "Rival Manager",
+          "score": null
+        },
+        "away": {
+          "league_entry_id": 1,
+          "team_name": "Your Team",
+          "manager_name": "You Manager",
+          "score": null
+        },
+        "finished": false,
+        "started": false,
+        "winning_league_entry": null
+      }
+    ]
+  },
+  "progression": {
+    "events": [
+      1,
+      2
+    ],
+    "teams": {
+      "1": {
+        "name": "Your Team",
+        "weekly": [
+          60,
+          60
+        ],
+        "cumulative": [
+          60,
+          120
+        ]
+      },
+      "2": {
+        "name": "Rival FC",
+        "weekly": [
+          40,
+          50
+        ],
+        "cumulative": [
+          40,
+          90
+        ]
+      },
+      "3": {
+        "name": "Third Team",
+        "weekly": [
+          30,
+          50
+        ],
+        "cumulative": [
+          30,
+          80
+        ]
+      }
+    }
+  }
+}
