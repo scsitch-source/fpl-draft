@@ -50,6 +50,15 @@ def safe_get(d, *keys, default=None):
     return cur
 
 
+def get_json_soft(path):
+    """Like get_json but returns None (and prints a warning) instead of raising."""
+    try:
+        return get_json(path)
+    except Exception as exc:  # pragma: no cover - defensive
+        print(f"  warning: GET {path} failed ({exc})")
+        return None
+
+
 def build():
     print(f"Fetching league {LEAGUE_ID} details...")
     details = get_json(f"league/{LEAGUE_ID}/details")
@@ -69,12 +78,26 @@ def build():
     standings_raw = details.get("standings", [])
     matches_raw = details.get("matches", [])
     events = bootstrap.get("events", [])
+    elements = bootstrap.get("elements", [])
+    element_types = bootstrap.get("element_types", [])
+    teams_pl = bootstrap.get("teams", [])
 
     if not league_entries or not standings_raw:
         print("ERROR: league details response did not contain the expected "
               "'league_entries' / 'standings' keys.", file=sys.stderr)
         print(json.dumps(details)[:2000], file=sys.stderr)
         sys.exit(1)
+
+    # Player lookup: element id -> name / position / real-life club
+    pos_by_type = {et.get("id"): et.get("singular_name_short", "?") for et in element_types}
+    club_by_id = {t.get("id"): t.get("short_name", "?") for t in teams_pl}
+    player_by_id = {}
+    for el in elements:
+        player_by_id[el.get("id")] = {
+            "name": el.get("web_name", "Unknown"),
+            "position": pos_by_type.get(el.get("element_type"), "?"),
+            "club": club_by_id.get(el.get("team"), "?"),
+        }
 
     # Map league_entry id -> readable info
     entry_by_id = {}
@@ -219,6 +242,35 @@ def build():
             if your_next_fixture:
                 break
 
+    # ---------------- Draft recap (draft-day pick order) ----------------
+    print("Fetching draft picks...")
+    draft_data = get_json_soft(f"draft/{LEAGUE_ID}/choices")
+    draft_picks = []
+    if draft_data:
+        items = draft_data if isinstance(draft_data, list) else draft_data.get("choices", [])
+        for pick in items or []:
+            le_id = pick.get("entry")
+            info = entry_by_id.get(le_id, {})
+            player_info = player_by_id.get(pick.get("element"), {})
+            draft_picks.append({
+                "round": pick.get("round"),
+                "pick": pick.get("pick"),
+                "overall_pick": pick.get("index") if pick.get("index") is not None else None,
+                "team_name": info.get("team_name", "Unknown"),
+                "manager_name": info.get("manager_name", ""),
+                "player_name": player_info.get("name", f"Player {pick.get('element')}"),
+                "position": player_info.get("position", "?"),
+                "club": player_info.get("club", "?"),
+            })
+        # Sort into draft order: by round then pick-within-round if available,
+        # falling back to whatever order the API returned.
+        draft_picks.sort(key=lambda p: (
+            p["round"] if p["round"] is not None else 0,
+            p["pick"] if p["pick"] is not None else 0,
+        ))
+    else:
+        print("  note: could not fetch draft choices; Draft Recap tab will be empty.")
+
     # ---------------- Playoff bracket (top 4 after reg season) ----------------
     def find_match(gw, le_a, le_b):
         if le_a is None or le_b is None:
@@ -315,6 +367,7 @@ def build():
         },
         "playoffs": playoffs,
         "golden_gameweek": golden_gameweek,
+        "draft_picks": draft_picks,
     }
 
     os.makedirs("data", exist_ok=True)

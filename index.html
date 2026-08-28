@@ -355,6 +355,7 @@ function formChips(form){
 const TABS = [
   { id: 'table',    label: 'Table' },
   { id: 'fixtures', label: 'Fixtures' },
+  { id: 'draft',    label: 'Draft Recap' },
   { id: 'playoffs', label: 'Playoffs' },
   { id: 'golden',   label: 'Golden GW' },
   { id: 'waivers',  label: 'Waivers' },
@@ -389,6 +390,7 @@ function render(data){
       return wrap;
     },
     fixtures: () => buildFixturesPanel(data),
+    draft: () => buildDraftRecapPanel(data),
     playoffs: () => buildPlayoffsPanel(data),
     golden: () => buildGoldenPanel(data),
     waivers: () => buildWaiversPanel(),
@@ -643,6 +645,55 @@ function matchRow({teamA, teamB, fixture, label, byeNote}){
     ${byeNote ? `<div class="bye-note">${byeNote}</div>` : ''}
   `;
   return div;
+}
+
+function buildDraftRecapPanel(data){
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.innerHTML = `<h2><span class="dot"></span>Draft recap</h2>`;
+
+  const picks = data.draft_picks || [];
+  if(picks.length === 0){
+    const msg = document.createElement('p');
+    msg.style.cssText = 'color:var(--chalk-dim);font-size:13px;';
+    msg.textContent = 'No draft data available yet.';
+    panel.appendChild(msg);
+    return panel;
+  }
+
+  const rounds = {};
+  picks.forEach(p => {
+    const r = p.round ?? 0;
+    (rounds[r] = rounds[r] || []).push(p);
+  });
+
+  Object.keys(rounds).sort((a,b) => a-b).forEach(r => {
+    const label = document.createElement('div');
+    label.className = 'bracket-round-label';
+    label.textContent = 'Round ' + r;
+    panel.appendChild(label);
+
+    const table = document.createElement('table');
+    table.style.marginBottom = '8px';
+    table.innerHTML = `
+      <thead><tr>
+        <th style="width:36px;">#</th><th>Team</th><th>Player</th>
+        <th style="width:60px;">Pos</th><th style="width:60px;">Club</th>
+      </tr></thead>
+      <tbody>${rounds[r].map(p => `
+        <tr>
+          <td class="rank">${p.pick ?? '–'}</td>
+          <td class="team-cell"><div class="name">${p.team_name}</div><div class="manager">${p.manager_name}</div></td>
+          <td>${p.player_name}</td>
+          <td>${p.position}</td>
+          <td>${p.club}</td>
+        </tr>
+      `).join('')}</tbody>
+    `;
+    panel.appendChild(table);
+  });
+
+  return panel;
 }
 
 function buildPlayoffsPanel(data){
