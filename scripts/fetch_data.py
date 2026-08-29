@@ -381,6 +381,8 @@ def build():
                 "goals": stats.get("goals_scored", 0),
                 "assists": stats.get("assists", 0),
                 "minutes": stats.get("minutes", 0),
+                "clean_sheets": stats.get("clean_sheets", 0),
+                "defensive_contribution": stats.get("defensive_contribution", 0),
             }
 
         if isinstance(elements, dict):
@@ -425,7 +427,8 @@ def build():
             el_id = pick.get("element")
             info = player_by_id.get(el_id, {"name": f"Player {el_id}", "position": "?", "club": "?"})
             multiplier = pick.get("multiplier", 1) or 0
-            stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0})
+            stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
+                                          "clean_sheets": 0, "defensive_contribution": 0})
             row = {
                 "name": info["name"],
                 "position": info["position"],
@@ -436,6 +439,8 @@ def build():
                 "goals": stat["goals"],
                 "assists": stat["assists"],
                 "minutes": stat["minutes"],
+                "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF", "MID"),
+                "defensive_contribution": bool(stat.get("defensive_contribution")),
             }
             (raw_starting if multiplier > 0 else raw_bench).append(row)
 

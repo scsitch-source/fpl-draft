@@ -253,7 +253,14 @@
   .cap-badge.sub-badge{background:var(--win);}
   .cap-badge.sub-badge.out{background:var(--chalk-dim);}
   .squad-icons{display:flex;gap:4px;white-space:nowrap;}
-  .stat-icon{font-size:12px;}
+  .stat-icon{
+    font-size:9px;font-weight:700;padding:1px 4px;border-radius:4px;color:#fff;
+    background:var(--chalk-dim);
+  }
+  .stat-icon.goal{background:var(--win);}
+  .stat-icon.assist{background:#1C63E8;}
+  .stat-icon.cs{background:#6C3CE9;}
+  .stat-icon.dc{background:#D6409F;}
   .squad-pts{font-weight:700;text-align:right;color:var(--amber);}
   .squad-played-count{font-size:10px;font-weight:600;color:var(--chalk-dim);text-transform:none;letter-spacing:0;margin-left:4px;}
 
@@ -708,8 +715,10 @@ function playerRow(p){
   if(p.subbed_in) badges.push('<span class="cap-badge sub-badge" title="Auto-subbed in">&#8593;</span>');
   if(p.subbed_out) badges.push('<span class="cap-badge sub-badge out" title="Auto-subbed out (did not play)">&#8595;</span>');
   const icons = [];
-  if(p.goals > 0) icons.push(`<span class="stat-icon goal" title="${p.goals} goal${p.goals>1?'s':''}">&#9917;${p.goals>1?'&times;'+p.goals:''}</span>`);
-  if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">&#129918;${p.assists>1?'&times;'+p.assists:''}</span>`);
+  if(p.goals > 0) icons.push(`<span class="stat-icon goal" title="${p.goals} goal${p.goals>1?'s':''}">G${p.goals>1?'&times;'+p.goals:''}</span>`);
+  if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">A${p.assists>1?'&times;'+p.assists:''}</span>`);
+  if(p.clean_sheet) icons.push(`<span class="stat-icon cs" title="Clean sheet">CS</span>`);
+  if(p.defensive_contribution) icons.push(`<span class="stat-icon dc" title="Defensive contribution bonus">DC</span>`);
   const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
   const didNotPlay = p.minutes === 0;
   const ptsDisplay = didNotPlay ? '&ndash;' : p.points;
