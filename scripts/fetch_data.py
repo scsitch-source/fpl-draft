@@ -75,9 +75,11 @@ MIN_BY_POS = {"GKP": 1, "DEF": 3, "MID": 2, "FWD": 1}
 
 
 def apply_autosubs(starting, bench):
-    """Bench players with minutes>0 replace starting players with 0 minutes,
-    without breaking formation minimums (>=3 DEF, >=2 MID, >=1 FWD, =1 GKP).
-    Captaincy passes to the vice-captain if the captain didn't end up playing."""
+    """Bench players with minutes>0 replace starting players with 0 minutes
+    IN A FINISHED MATCH (never sub someone out just because their match
+    hasn't kicked off yet), without breaking formation minimums
+    (>=3 DEF, >=2 MID, >=1 FWD, =1 GKP). Captaincy passes to the
+    vice-captain if the captain didn't end up playing."""
     starting = [dict(p) for p in starting]
     bench = [dict(p) for p in bench]
 
@@ -93,6 +95,8 @@ def apply_autosubs(starting, bench):
     for starter in starting:
         if starter["minutes"] > 0:
             continue  # played, no sub needed
+        if not starter.get("match_finished"):
+            continue  # hasn't kicked off / still in progress - too early to sub
         if starter.get("subbed_out"):
             continue
 
@@ -118,9 +122,12 @@ def apply_autosubs(starting, bench):
     final_starting = [p for p in starting if not p["subbed_out"]] + [b for b in bench if b["subbed_in"]]
     final_bench = [p for p in starting if p["subbed_out"]] + [b for b in bench if not b["subbed_in"]]
 
-    # Captaincy: if the captain didn't end up in the final XI (or didn't play),
-    # the armband passes to the vice-captain, as it does in real FPL.
-    captain_in_final = next((p for p in final_starting if p["is_captain"] and p["minutes"] > 0), None)
+    # Captaincy: only passes to the vice-captain once the captain's own match
+    # has finished with them not playing - not just because they haven't
+    # kicked off yet.
+    captain_row = next((p for p in final_starting if p["is_captain"]), None)
+    captain_confirmed_out = captain_row and captain_row["minutes"] == 0 and captain_row.get("match_finished")
+    captain_in_final = captain_row if (captain_row and not captain_confirmed_out) else None
     if not captain_in_final:
         vc = next((p for p in final_starting if p["is_vice_captain"] and p["minutes"] > 0), None)
         if vc:
@@ -212,8 +219,41 @@ def build():
             "name": el.get("web_name", "Unknown"),
             "position": pos_by_type.get(el.get("element_type"), "?"),
             "club": club_by_id.get(el.get("team"), "?"),
+            "club_id": el.get("team"),
             "season_points": el.get("total_points", 0),
         }
+
+    # Per-gameweek, per-club "has this club's fixture(s) finished" lookup.
+    # Used to gate auto-subs: a player only gets auto-subbed once their own
+    # match has actually finished, not just because they show 0 minutes
+    # while the match simply hasn't kicked off yet.
+    fixtures_raw = bootstrap.get("fixtures", [])
+    club_finished_by_event = {}
+    club_opponent_by_event = {}
+    if isinstance(fixtures_raw, list):
+        for fx in fixtures_raw:
+            if not isinstance(fx, dict):
+                continue
+            ev = fx.get("event")
+            if ev is None:
+                continue
+            finished = bool(fx.get("finished"))
+            bucket = club_finished_by_event.setdefault(ev, {})
+            opp_bucket = club_opponent_by_event.setdefault(ev, {})
+            home_id, away_id = fx.get("team_h"), fx.get("team_a")
+            for club_id in (home_id, away_id):
+                if club_id is None:
+                    continue
+                # If a club has multiple fixtures in one event (rare, DGW),
+                # it only counts as "finished" once ALL of them are.
+                bucket[club_id] = finished and bucket.get(club_id, True)
+            if home_id is not None and away_id is not None:
+                opp_bucket.setdefault(home_id, []).append({
+                    "opponent": club_by_id.get(away_id, "?"), "is_home": True,
+                })
+                opp_bucket.setdefault(away_id, []).append({
+                    "opponent": club_by_id.get(home_id, "?"), "is_home": False,
+                })
 
     # Map league_entry id -> readable info
     entry_by_id = {}
@@ -475,8 +515,10 @@ def build():
                 "goals": stat["goals"],
                 "assists": stat["assists"],
                 "minutes": stat["minutes"],
+                "match_finished": club_finished_by_event.get(ev, {}).get(info.get("club_id"), False),
                 "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF", "MID"),
                 "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), info["position"]),
+                "opponents": club_opponent_by_event.get(ev, {}).get(info.get("club_id"), []),
             }
             (raw_starting if is_starting else raw_bench).append(row)
 
@@ -494,6 +536,16 @@ def build():
             "squad_size": len(final_starting),
         }
 
+    def squad_looks_valid(squads_dict):
+        """A cached squad set is only trusted if at least one player anywhere
+        in it has non-zero minutes or points - an all-zero result almost
+        always means a past fetch failure got cached, not a real outcome."""
+        for squad in squads_dict.values():
+            for p in squad.get("starting", []) + squad.get("bench", []):
+                if p.get("minutes", 0) > 0 or p.get("points", 0) != 0:
+                    return True
+        return False
+
     print("Fetching per-gameweek squads (cached where possible)...")
     for ev_key, fixtures in fixtures_by_event.items():
         ev = int(ev_key)
@@ -501,8 +553,9 @@ def build():
         prev_fixtures_for_ev = previous_fixtures.get(ev_key, [])
 
         for idx, f in enumerate(fixtures):
-            if all_finished and idx < len(prev_fixtures_for_ev) and prev_fixtures_for_ev[idx].get("squads"):
-                f["squads"] = prev_fixtures_for_ev[idx]["squads"]
+            cached_squads = prev_fixtures_for_ev[idx].get("squads") if (all_finished and idx < len(prev_fixtures_for_ev)) else None
+            if cached_squads and squad_looks_valid(cached_squads):
+                f["squads"] = cached_squads
                 continue
             if not f["started"]:
                 continue
@@ -521,6 +574,10 @@ def build():
                     squads[str(le_id)] = squad
             if squads:
                 f["squads"] = squads
+            elif cached_squads:
+                # Refetch attempt also came back empty/invalid - keep the old
+                # cached version rather than losing the data entirely.
+                f["squads"] = cached_squads
 
     # ---------------- Latest squads per team (for the Squads tab) ----------------
     latest_squad_event = None

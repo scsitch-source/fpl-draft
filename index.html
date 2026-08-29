@@ -245,6 +245,10 @@
   }
   .squad-pos{font-size:10px;font-weight:700;color:var(--chalk-dim);}
   .squad-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .opp-tag{
+    display:inline-block;margin-left:5px;font-size:9px;font-weight:700;
+    background:var(--ink);color:var(--chalk-dim);border-radius:4px;padding:0 4px;vertical-align:middle;
+  }
   .cap-badge{
     display:inline-block;margin-left:5px;font-size:9px;font-weight:700;
     background:var(--amber);color:#fff;border-radius:4px;padding:0 4px;vertical-align:middle;
@@ -722,10 +726,19 @@ function playerRow(p){
   const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
   const didNotPlay = p.minutes === 0;
   const ptsDisplay = didNotPlay ? '&ndash;' : p.points;
+  // Only show the upcoming-opponent tag if they haven't played yet -
+  // once real stats exist there's no need for a fixture preview.
+  let oppTag = '';
+  if(didNotPlay && p.opponents && p.opponents.length){
+    oppTag = p.opponents.map(o => {
+      const code = o.is_home ? o.opponent.toUpperCase() : o.opponent.toLowerCase();
+      return `<span class="opp-tag" title="${o.is_home ? 'Home' : 'Away'} vs ${o.opponent}">${code}</span>`;
+    }).join('');
+  }
   return `
-    <div class="squad-row" style="background:${colors.bg};border-left:3px solid ${colors.dot};${didNotPlay ? 'opacity:0.55;' : ''}">
+    <div class="squad-row" style="background:${colors.bg};border-left:3px solid ${colors.dot};${didNotPlay ? 'opacity:0.7;' : ''}">
       <span class="squad-pos">${p.position}</span>
-      <span class="squad-name">${p.name}${badges.join('')}</span>
+      <span class="squad-name">${p.name}${badges.join('')}${oppTag}</span>
       <span class="squad-icons">${icons.join('')}</span>
       <span class="squad-pts">${ptsDisplay}</span>
     </div>
