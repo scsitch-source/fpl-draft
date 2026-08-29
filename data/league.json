@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T18:05:55.529000+00:00",
+  "generated_at": "2026-08-29T20:05:53.319484+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -17,13 +17,13 @@
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
-      "score": 14
+      "score": 20
     },
     "away": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
-      "score": 2
+      "score": 13
     },
     "finished": false,
     "started": true,
@@ -2500,13 +2500,13 @@
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
-          "score": 14
+          "score": 20
         },
         "away": {
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
-          "score": 2
+          "score": 13
         },
         "finished": false,
         "started": true,
@@ -2891,7 +2891,7 @@
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": true,
                 "defensive_contribution": false,
@@ -3055,7 +3055,7 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 22,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3075,13 +3075,13 @@
           "league_entry_id": 27141,
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
-          "score": 2
+          "score": 15
         },
         "away": {
           "league_entry_id": 226052,
           "team_name": "PFC",
           "manager_name": "Archie Ross",
-          "score": 16
+          "score": 35
         },
         "finished": false,
         "started": true,
@@ -3334,7 +3334,7 @@
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3445,17 +3445,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 9,
+                "base_points": 11,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": true,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 9
+                "points": 11
               },
               {
                 "name": "Mbeumo",
@@ -3538,7 +3538,7 @@
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": true,
                 "defensive_contribution": false,
@@ -3650,13 +3650,13 @@
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
-          "score": 15
+          "score": 42
         },
         "away": {
           "league_entry_id": 183812,
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
-          "score": 0
+          "score": 8
         },
         "finished": false,
         "started": true,
@@ -3727,7 +3727,7 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3850,17 +3850,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 8,
+                "base_points": 7,
                 "goals": 1,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 81,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 8
+                "points": 7
               }
             ],
             "bench": [
@@ -4005,7 +4005,7 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 77,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4113,7 +4113,7 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 2,
+                "minutes": 15,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4225,13 +4225,13 @@
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
-          "score": 3
+          "score": 9
         },
         "away": {
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
-          "score": 5
+          "score": 16
         },
         "finished": false,
         "started": true,
@@ -4706,7 +4706,7 @@
                 "base_points": 4,
                 "goals": 0,
                 "assists": 1,
-                "minutes": 6,
+                "minutes": 19,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -8466,7 +8466,7 @@
       "player_name": "Hall",
       "position": "DEF",
       "club": "NEW",
-      "season_points": 12
+      "season_points": 14
     },
     {
       "round": 10,
@@ -8778,7 +8778,7 @@
       "player_name": "Wissa",
       "position": "FWD",
       "club": "NEW",
-      "season_points": 12
+      "season_points": 11
     },
     {
       "round": 13,
@@ -9676,7 +9676,7 @@
           "base_points": 6,
           "goals": 0,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": true,
           "defensive_contribution": false,
@@ -9840,7 +9840,7 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 22,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -10100,7 +10100,7 @@
           "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -10211,17 +10211,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 9,
+          "base_points": 11,
           "goals": 0,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": true,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 9
+          "points": 11
         },
         {
           "name": "Mbeumo",
@@ -10304,7 +10304,7 @@
           "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": true,
           "defensive_contribution": false,
@@ -10474,7 +10474,7 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -10597,17 +10597,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 8,
+          "base_points": 7,
           "goals": 1,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 81,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 8
+          "points": 7
         }
       ],
       "bench": [
@@ -10752,7 +10752,7 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 77,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -10860,7 +10860,7 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 2,
+          "minutes": 15,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11434,7 +11434,7 @@
           "base_points": 4,
           "goals": 0,
           "assists": 1,
-          "minutes": 6,
+          "minutes": 19,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
