@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T20:05:53.319484+00:00",
+  "generated_at": "2026-08-29T22:05:44.601060+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -2924,17 +2924,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 3,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 3
+                "points": 1
               },
               {
                 "name": "Igor Jesus",
@@ -9709,17 +9709,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 3,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
           "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 3
+          "points": 1
         },
         {
           "name": "Igor Jesus",
