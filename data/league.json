@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T16:05:55.547398+00:00",
+  "generated_at": "2026-08-29T18:05:55.529000+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -2888,17 +2888,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 6,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 6
               },
               {
                 "name": "Palmer",
@@ -3052,20 +3052,20 @@
                 "club": "TOT",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 9,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               }
             ],
-            "played_count": 5,
+            "played_count": 6,
             "squad_size": 11
           }
         }
@@ -3331,17 +3331,17 @@
                 "club": "TOT",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 2
               },
               {
                 "name": "Ekitik\u00e9",
@@ -3445,17 +3445,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 9,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 9
               },
               {
                 "name": "Mbeumo",
@@ -3535,17 +3535,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 3
               },
               {
                 "name": "Richarlison",
@@ -3640,7 +3640,7 @@
                 "points": 0
               }
             ],
-            "played_count": 4,
+            "played_count": 6,
             "squad_size": 11
           }
         }
@@ -3724,17 +3724,17 @@
                 "club": "TOT",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Frimpong",
@@ -3850,17 +3850,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
+                "base_points": 8,
+                "goals": 1,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 8
               }
             ],
             "bench": [
@@ -3937,7 +3937,7 @@
                 "points": 0
               }
             ],
-            "played_count": 6,
+            "played_count": 8,
             "squad_size": 11
           },
           "183812": {
@@ -4002,17 +4002,17 @@
                 "club": "TOT",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 77,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Konsa",
@@ -4110,17 +4110,17 @@
                 "club": "TOT",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 2,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "\u0160e\u0161ko",
@@ -4215,7 +4215,7 @@
                 "points": 0
               }
             ],
-            "played_count": 3,
+            "played_count": 5,
             "squad_size": 11
           }
         }
@@ -4703,17 +4703,17 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 4,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 0,
+                "assists": 1,
+                "minutes": 6,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 4
               }
             ],
             "bench": [
@@ -4790,7 +4790,7 @@
                 "points": 0
               }
             ],
-            "played_count": 3,
+            "played_count": 4,
             "squad_size": 11
           }
         }
@@ -8297,7 +8297,7 @@
       "player_name": "Woltemade",
       "position": "FWD",
       "club": "NEW",
-      "season_points": 0
+      "season_points": 4
     },
     {
       "round": 8,
@@ -8336,7 +8336,7 @@
       "player_name": "Kudus",
       "position": "MID",
       "club": "TOT",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 8,
@@ -8362,7 +8362,7 @@
       "player_name": "Pedro Porro",
       "position": "DEF",
       "club": "TOT",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 9,
@@ -8466,7 +8466,7 @@
       "player_name": "Hall",
       "position": "DEF",
       "club": "NEW",
-      "season_points": 3
+      "season_points": 12
     },
     {
       "round": 10,
@@ -8479,7 +8479,7 @@
       "player_name": "Barnes",
       "position": "MID",
       "club": "NEW",
-      "season_points": 2
+      "season_points": 5
     },
     {
       "round": 10,
@@ -8531,7 +8531,7 @@
       "player_name": "Van Hecke",
       "position": "DEF",
       "club": "TOT",
-      "season_points": 1
+      "season_points": 2
     },
     {
       "round": 10,
@@ -8622,7 +8622,7 @@
       "player_name": "Solanke",
       "position": "FWD",
       "club": "TOT",
-      "season_points": 1
+      "season_points": 2
     },
     {
       "round": 11,
@@ -8778,7 +8778,7 @@
       "player_name": "Wissa",
       "position": "FWD",
       "club": "NEW",
-      "season_points": 4
+      "season_points": 12
     },
     {
       "round": 13,
@@ -8960,7 +8960,7 @@
       "player_name": "Thiaw",
       "position": "DEF",
       "club": "NEW",
-      "season_points": 3
+      "season_points": 9
     },
     {
       "round": 14,
@@ -9673,17 +9673,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 6,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 6
         },
         {
           "name": "Palmer",
@@ -9837,20 +9837,20 @@
           "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 9,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         }
       ],
-      "played_count": 5,
+      "played_count": 6,
       "squad_size": 11
     },
     "27141": {
@@ -10097,17 +10097,17 @@
           "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 2
         },
         {
           "name": "Ekitik\u00e9",
@@ -10211,17 +10211,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 9,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 9
         },
         {
           "name": "Mbeumo",
@@ -10301,17 +10301,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 3
         },
         {
           "name": "Richarlison",
@@ -10406,7 +10406,7 @@
           "points": 0
         }
       ],
-      "played_count": 4,
+      "played_count": 6,
       "squad_size": 11
     },
     "27143": {
@@ -10471,17 +10471,17 @@
           "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Frimpong",
@@ -10597,17 +10597,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
+          "base_points": 8,
+          "goals": 1,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 8
         }
       ],
       "bench": [
@@ -10684,7 +10684,7 @@
           "points": 0
         }
       ],
-      "played_count": 6,
+      "played_count": 8,
       "squad_size": 11
     },
     "183812": {
@@ -10749,17 +10749,17 @@
           "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 77,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Konsa",
@@ -10857,17 +10857,17 @@
           "club": "TOT",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 2,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "\u0160e\u0161ko",
@@ -10962,7 +10962,7 @@
           "points": 0
         }
       ],
-      "played_count": 3,
+      "played_count": 5,
       "squad_size": 11
     },
     "27145": {
@@ -11431,17 +11431,17 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 4,
           "goals": 0,
-          "assists": 0,
-          "minutes": 0,
+          "assists": 1,
+          "minutes": 6,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 4
         }
       ],
       "bench": [
@@ -11518,7 +11518,7 @@
           "points": 0
         }
       ],
-      "played_count": 3,
+      "played_count": 4,
       "squad_size": 11
     }
   }
