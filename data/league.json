@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T10:05:46.397381+00:00",
+  "generated_at": "2026-08-29T12:06:59.199345+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -2520,17 +2520,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "White",
@@ -2738,17 +2738,17 @@
                 "club": "NFO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 6,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 0,
+                "assists": 1,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 6
               },
               {
                 "name": "N.Jackson",
@@ -2787,7 +2787,7 @@
                 "points": 0
               }
             ],
-            "played_count": 2,
+            "played_count": 3,
             "squad_size": 11
           },
           "27140": {
@@ -2798,17 +2798,17 @@
                 "club": "NFO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "R\u00faben",
@@ -2942,17 +2942,17 @@
                 "club": "NFO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Gy\u00f6keres",
@@ -3065,7 +3065,7 @@
                 "points": 0
               }
             ],
-            "played_count": 2,
+            "played_count": 4,
             "squad_size": 11
           }
         }
@@ -3221,17 +3221,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Dewsbury-Hall",
@@ -3313,17 +3313,17 @@
                 "club": "NFO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Marmoush",
@@ -3362,7 +3362,7 @@
                 "points": 0
               }
             ],
-            "played_count": 1,
+            "played_count": 2,
             "squad_size": 11
           },
           "226052": {
@@ -3499,17 +3499,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "\u00d8degaard",
@@ -3640,7 +3640,7 @@
                 "points": 0
               }
             ],
-            "played_count": 3,
+            "played_count": 4,
             "squad_size": 11
           }
         }
@@ -3742,17 +3742,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Szoboszlai",
@@ -3760,17 +3760,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Rogers",
@@ -3937,7 +3937,7 @@
                 "points": 0
               }
             ],
-            "played_count": 2,
+            "played_count": 4,
             "squad_size": 11
           },
           "183812": {
@@ -3966,17 +3966,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Murillo",
@@ -3984,17 +3984,17 @@
                 "club": "NFO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Van Hecke",
@@ -4166,17 +4166,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "M.Sangar\u00e9",
@@ -4215,7 +4215,7 @@
                 "points": 0
               }
             ],
-            "played_count": 0,
+            "played_count": 2,
             "squad_size": 11
           }
         }
@@ -4299,17 +4299,17 @@
                 "club": "LIV",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 34,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Bijol",
@@ -4512,7 +4512,7 @@
                 "points": 0
               }
             ],
-            "played_count": 1,
+            "played_count": 2,
             "squad_size": 11
           },
           "31110": {
@@ -7582,7 +7582,7 @@
       "player_name": "Isak",
       "position": "FWD",
       "club": "LIV",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 1,
@@ -7725,7 +7725,7 @@
       "player_name": "Wirtz",
       "position": "MID",
       "club": "LIV",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 2,
@@ -7738,7 +7738,7 @@
       "player_name": "Szoboszlai",
       "position": "MID",
       "club": "LIV",
-      "season_points": 8
+      "season_points": 9
     },
     {
       "round": 3,
@@ -7803,7 +7803,7 @@
       "player_name": "Gibbs-White",
       "position": "MID",
       "club": "NFO",
-      "season_points": 2
+      "season_points": 8
     },
     {
       "round": 3,
@@ -7855,7 +7855,7 @@
       "player_name": "Gakpo",
       "position": "MID",
       "club": "LIV",
-      "season_points": 12
+      "season_points": 13
     },
     {
       "round": 4,
@@ -7907,7 +7907,7 @@
       "player_name": "Virgil",
       "position": "DEF",
       "club": "LIV",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 4,
@@ -7920,7 +7920,7 @@
       "player_name": "Igor Jesus",
       "position": "FWD",
       "club": "NFO",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 4,
@@ -8427,7 +8427,7 @@
       "player_name": "A.Becker",
       "position": "GKP",
       "club": "LIV",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 9,
@@ -8453,7 +8453,7 @@
       "player_name": "Kerkez",
       "position": "DEF",
       "club": "LIV",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 9,
@@ -8570,7 +8570,7 @@
       "player_name": "Frimpong",
       "position": "DEF",
       "club": "LIV",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 11,
@@ -8596,7 +8596,7 @@
       "player_name": "Milenkovi\u0107",
       "position": "DEF",
       "club": "NFO",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 11,
@@ -8739,7 +8739,7 @@
       "player_name": "Murillo",
       "position": "DEF",
       "club": "NFO",
-      "season_points": 4
+      "season_points": 5
     },
     {
       "round": 12,
@@ -8817,7 +8817,7 @@
       "player_name": "Sels",
       "position": "GKP",
       "club": "NFO",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 13,
@@ -8934,7 +8934,7 @@
       "player_name": "N.Williams",
       "position": "DEF",
       "club": "NFO",
-      "season_points": 2
+      "season_points": 3
     },
     {
       "round": 14,
@@ -9305,17 +9305,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "White",
@@ -9523,17 +9523,17 @@
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 6,
           "goals": 0,
-          "assists": 0,
-          "minutes": 0,
+          "assists": 1,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 6
         },
         {
           "name": "N.Jackson",
@@ -9572,7 +9572,7 @@
           "points": 0
         }
       ],
-      "played_count": 2,
+      "played_count": 3,
       "squad_size": 11
     },
     "27140": {
@@ -9583,17 +9583,17 @@
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "R\u00faben",
@@ -9727,17 +9727,17 @@
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Gy\u00f6keres",
@@ -9850,7 +9850,7 @@
           "points": 0
         }
       ],
-      "played_count": 2,
+      "played_count": 4,
       "squad_size": 11
     },
     "27141": {
@@ -9987,17 +9987,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Dewsbury-Hall",
@@ -10079,17 +10079,17 @@
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Marmoush",
@@ -10128,7 +10128,7 @@
           "points": 0
         }
       ],
-      "played_count": 1,
+      "played_count": 2,
       "squad_size": 11
     },
     "226052": {
@@ -10265,17 +10265,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "\u00d8degaard",
@@ -10406,7 +10406,7 @@
           "points": 0
         }
       ],
-      "played_count": 3,
+      "played_count": 4,
       "squad_size": 11
     },
     "27143": {
@@ -10489,17 +10489,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Szoboszlai",
@@ -10507,17 +10507,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Rogers",
@@ -10684,7 +10684,7 @@
           "points": 0
         }
       ],
-      "played_count": 2,
+      "played_count": 4,
       "squad_size": 11
     },
     "183812": {
@@ -10713,17 +10713,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Murillo",
@@ -10731,17 +10731,17 @@
           "club": "NFO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Van Hecke",
@@ -10913,17 +10913,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "M.Sangar\u00e9",
@@ -10962,7 +10962,7 @@
           "points": 0
         }
       ],
-      "played_count": 0,
+      "played_count": 2,
       "squad_size": 11
     },
     "27145": {
@@ -11027,17 +11027,17 @@
           "club": "LIV",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 34,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Bijol",
@@ -11240,7 +11240,7 @@
           "points": 0
         }
       ],
-      "played_count": 1,
+      "played_count": 2,
       "squad_size": 11
     },
     "31110": {
