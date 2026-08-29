@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T03:12:04.244256+00:00",
+  "generated_at": "2026-08-29T04:05:37.857721+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -9224,10 +9224,26 @@
     },
     {
       "event": 2,
+      "team_name": "Clean Machine FC",
+      "manager_name": "Nick Poole",
+      "player_in": "M.Sangar\u00e9",
+      "player_out": "Hudson-Odoi",
+      "kind": "Waiver"
+    },
+    {
+      "event": 2,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
       "player_in": "Tavernier",
       "player_out": "Gallagher",
+      "kind": "Waiver"
+    },
+    {
+      "event": 2,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "Eamon Lye",
+      "player_in": "De Cuyper",
+      "player_out": "Van de Ven",
       "kind": "Waiver"
     },
     {
@@ -9252,22 +9268,6 @@
       "manager_name": "Ben Scotti",
       "player_in": "Marmoush",
       "player_out": "Kostoulas",
-      "kind": "Waiver"
-    },
-    {
-      "event": 2,
-      "team_name": "Clean Machine FC",
-      "manager_name": "Nick Poole",
-      "player_in": "M.Sangar\u00e9",
-      "player_out": "Hudson-Odoi",
-      "kind": "Waiver"
-    },
-    {
-      "event": 2,
-      "team_name": "I am chucky kirkez",
-      "manager_name": "Eamon Lye",
-      "player_in": "De Cuyper",
-      "player_out": "Van de Ven",
       "kind": "Waiver"
     },
     {
