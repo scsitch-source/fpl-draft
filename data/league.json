@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T02:44:10.455744+00:00",
+  "generated_at": "2026-08-29T02:56:13.109458+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -1605,7 +1605,7 @@
                 "assists": 1,
                 "minutes": 74,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -1653,7 +1653,7 @@
                 "assists": 2,
                 "minutes": 90,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -1705,7 +1705,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Mamardashvili",
                 "position": "GKP",
@@ -1718,7 +1720,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -1734,7 +1736,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -1750,7 +1752,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -1766,33 +1768,16 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 2,
-            "squad_size": 15
+            "squad_size": 11
           },
           "27140": {
             "starting": [
-              {
-                "name": "Sels",
-                "position": "GKP",
-                "club": "NFO",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
               {
                 "name": "R\u00faben",
                 "position": "DEF",
@@ -1804,7 +1789,7 @@
                 "assists": 0,
                 "minutes": 90,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1836,7 +1821,7 @@
                 "assists": 0,
                 "minutes": 90,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -1965,9 +1950,27 @@
                 "minutes": 90,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": true,
                 "multiplier": 1,
                 "points": 1
+              }
+            ],
+            "bench": [
+              {
+                "name": "Sels",
+                "position": "GKP",
+                "club": "NFO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
               },
               {
                 "name": "Bruno G.",
@@ -1981,7 +1984,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -1997,7 +2000,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2013,14 +2016,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 3,
-            "squad_size": 15
+            "squad_size": 11
           }
         }
       },
@@ -2070,7 +2072,7 @@
                 "assists": 0,
                 "minutes": 88,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2218,7 +2220,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Roefs",
                 "position": "GKP",
@@ -2231,7 +2235,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2247,7 +2251,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2263,7 +2267,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2279,14 +2283,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 1,
-            "squad_size": 15
+            "squad_size": 11
           },
           "226052": {
             "starting": [
@@ -2333,7 +2336,7 @@
                 "assists": 0,
                 "minutes": 88,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2397,7 +2400,7 @@
                 "assists": 0,
                 "minutes": 81,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 14
@@ -2465,7 +2468,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Petrovi\u0107",
                 "position": "GKP",
@@ -2478,7 +2483,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2494,7 +2499,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2510,7 +2515,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2526,14 +2531,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 3,
-            "squad_size": 15
+            "squad_size": 11
           }
         }
       },
@@ -2583,7 +2587,7 @@
                 "assists": 0,
                 "minutes": 90,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2711,7 +2715,7 @@
                 "assists": 0,
                 "minutes": 90,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 13
@@ -2731,7 +2735,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Martinez",
                 "position": "GKP",
@@ -2744,7 +2750,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2760,7 +2766,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2776,7 +2782,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -2792,14 +2798,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 2,
-            "squad_size": 15
+            "squad_size": 11
           },
           "183812": {
             "starting": [
@@ -2978,7 +2983,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Raya",
                 "position": "GKP",
@@ -2991,7 +2998,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3007,7 +3014,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3023,7 +3030,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3039,14 +3046,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 0,
-            "squad_size": 15
+            "squad_size": 11
           }
         }
       },
@@ -3244,7 +3250,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Pope",
                 "position": "GKP",
@@ -3257,7 +3265,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3273,7 +3281,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3289,7 +3297,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3305,14 +3313,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 1,
-            "squad_size": 15
+            "squad_size": 11
           },
           "31110": {
             "starting": [
@@ -3391,7 +3398,7 @@
                 "assists": 1,
                 "minutes": 90,
                 "clean_sheet": false,
-                "defensive_contribution": true,
+                "defensive_contribution": false,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -3491,7 +3498,9 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              },
+              }
+            ],
+            "bench": [
               {
                 "name": "Leno",
                 "position": "GKP",
@@ -3504,7 +3513,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3520,7 +3529,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3536,7 +3545,7 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               },
@@ -3552,14 +3561,13 @@
                 "minutes": 0,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "subbed_out": false,
+                "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
               }
             ],
-            "bench": [],
             "played_count": 1,
-            "squad_size": 15
+            "squad_size": 11
           }
         }
       }
@@ -8142,7 +8150,7 @@
           "assists": 1,
           "minutes": 74,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -8190,7 +8198,7 @@
           "assists": 2,
           "minutes": 90,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -8242,7 +8250,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Mamardashvili",
           "position": "GKP",
@@ -8255,7 +8265,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8271,7 +8281,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8287,7 +8297,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8303,33 +8313,16 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 2,
-      "squad_size": 15
+      "squad_size": 11
     },
     "27140": {
       "starting": [
-        {
-          "name": "Sels",
-          "position": "GKP",
-          "club": "NFO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
         {
           "name": "R\u00faben",
           "position": "DEF",
@@ -8341,7 +8334,7 @@
           "assists": 0,
           "minutes": 90,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -8373,7 +8366,7 @@
           "assists": 0,
           "minutes": 90,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -8502,9 +8495,27 @@
           "minutes": 90,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": true,
           "multiplier": 1,
           "points": 1
+        }
+      ],
+      "bench": [
+        {
+          "name": "Sels",
+          "position": "GKP",
+          "club": "NFO",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
         },
         {
           "name": "Bruno G.",
@@ -8518,7 +8529,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8534,7 +8545,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8550,14 +8561,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 3,
-      "squad_size": 15
+      "squad_size": 11
     },
     "27141": {
       "starting": [
@@ -8588,7 +8598,7 @@
           "assists": 0,
           "minutes": 88,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -8736,7 +8746,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Roefs",
           "position": "GKP",
@@ -8749,7 +8761,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8765,7 +8777,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8781,7 +8793,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -8797,14 +8809,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 1,
-      "squad_size": 15
+      "squad_size": 11
     },
     "226052": {
       "starting": [
@@ -8851,7 +8862,7 @@
           "assists": 0,
           "minutes": 88,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -8915,7 +8926,7 @@
           "assists": 0,
           "minutes": 81,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 14
@@ -8983,7 +8994,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Petrovi\u0107",
           "position": "GKP",
@@ -8996,7 +9009,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9012,7 +9025,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9028,7 +9041,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9044,14 +9057,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 3,
-      "squad_size": 15
+      "squad_size": 11
     },
     "27143": {
       "starting": [
@@ -9082,7 +9094,7 @@
           "assists": 0,
           "minutes": 90,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -9210,7 +9222,7 @@
           "assists": 0,
           "minutes": 90,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 13
@@ -9230,7 +9242,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Martinez",
           "position": "GKP",
@@ -9243,7 +9257,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9259,7 +9273,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9275,7 +9289,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9291,14 +9305,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 2,
-      "squad_size": 15
+      "squad_size": 11
     },
     "183812": {
       "starting": [
@@ -9477,7 +9490,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Raya",
           "position": "GKP",
@@ -9490,7 +9505,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9506,7 +9521,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9522,7 +9537,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9538,14 +9553,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 0,
-      "squad_size": 15
+      "squad_size": 11
     },
     "27145": {
       "starting": [
@@ -9724,7 +9738,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Pope",
           "position": "GKP",
@@ -9737,7 +9753,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9753,7 +9769,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9769,7 +9785,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -9785,14 +9801,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 1,
-      "squad_size": 15
+      "squad_size": 11
     },
     "31110": {
       "starting": [
@@ -9871,7 +9886,7 @@
           "assists": 1,
           "minutes": 90,
           "clean_sheet": false,
-          "defensive_contribution": true,
+          "defensive_contribution": false,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -9971,7 +9986,9 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        },
+        }
+      ],
+      "bench": [
         {
           "name": "Leno",
           "position": "GKP",
@@ -9984,7 +10001,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -10000,7 +10017,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -10016,7 +10033,7 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         },
@@ -10032,14 +10049,13 @@
           "minutes": 0,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "subbed_out": false,
+          "subbed_in": false,
           "multiplier": 1,
           "points": 0
         }
       ],
-      "bench": [],
       "played_count": 1,
-      "squad_size": 15
+      "squad_size": 11
     }
   }
 }
