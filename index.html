@@ -4,6 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Draft League Dashboard</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192.png">
+<link rel="apple-touch-icon" href="icons/favicon-512.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1C63E8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
@@ -131,7 +136,7 @@
   .panel h2 .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);}
 
   /* ---------- Standings table ---------- */
-  table{width:100%;border-collapse:collapse;}
+  table{width:100%;min-width:520px;border-collapse:collapse;}
   thead th{
     text-align:left;
     font-size:11px;
@@ -308,21 +313,17 @@
   .golden-leader .value{font-family:'Manrope';font-weight:700;font-size:19px;color:var(--amber);}
 
   /* ---------- Waivers ---------- */
-  .waiver-input-row{display:flex;gap:8px;margin-bottom:14px;}
-  .waiver-input-row input{
-    flex:1;background:var(--ink);border:1px solid var(--line);border-radius:8px;
-    color:var(--chalk);padding:9px 12px;font-family:'Inter';font-size:13px;
-  }
-  .waiver-input-row button, .gw-pill.add-btn{
-    background:var(--amber);color:#fff;border:none;border-radius:8px;
-    padding:9px 18px;font-weight:700;font-size:13px;cursor:pointer;
-  }
   .waiver-item{
     display:flex;justify-content:space-between;gap:12px;
-    padding:10px 0;border-top:1px solid var(--line);font-size:13px;
+    padding:10px 0;font-size:13px;
   }
   .waiver-item .date{color:var(--chalk-dim);font-size:11px;white-space:nowrap;}
-  .waiver-item .del{background:none;border:none;color:var(--loss);cursor:pointer;font-size:12px;font-weight:600;}
+  .waiver-kind-tag{
+    display:inline-block;font-size:9px;font-weight:700;text-transform:uppercase;
+    letter-spacing:0.04em;border-radius:4px;padding:2px 6px;margin-right:8px;color:#fff;
+  }
+  .waiver-kind-tag.wa{background:#1C63E8;}
+  .waiver-kind-tag.fa{background:var(--draw);}
 
   footer{
     max-width:1100px;margin:40px auto 0;padding:0 20px;
@@ -591,7 +592,7 @@ function render(data){
     playoffs: () => buildPlayoffsPanel(data),
     golden: () => buildGoldenPanel(data),
     prizes: () => buildPrizesPanel(data),
-    waivers: () => buildWaiversPanel(),
+    waivers: () => buildWaiversPanel(data),
   };
 
   TABS.forEach((t, i) => {
@@ -660,7 +661,10 @@ function buildStandingsPanel(data, myId){
     `;
     tbody.appendChild(tr);
   });
-  panel.appendChild(table);
+  const tableWrap = document.createElement('div');
+  tableWrap.style.cssText = 'overflow-x:auto;';
+  tableWrap.appendChild(table);
+  panel.appendChild(tableWrap);
   const legend = document.createElement('p');
   legend.style.cssText = 'font-size:11px;color:var(--chalk-dim);margin:10px 0 0;';
   legend.textContent = 'Top 2 go straight through to the final four; 3rd–4th also make the playoffs.';
@@ -1311,79 +1315,75 @@ function buildGoldenPanel(data){
   return panel;
 }
 
-const WAIVERS_KEY = 'fpl-draft-waivers';
-
-function loadWaivers(){
-  try{ return JSON.parse(localStorage.getItem(WAIVERS_KEY) || '[]'); }
-  catch(e){ return []; }
-}
-function saveWaivers(list){
-  try{ localStorage.setItem(WAIVERS_KEY, JSON.stringify(list)); }catch(e){}
-}
-
-function buildWaiversPanel(){
+function buildWaiversPanel(data){
   const panel = document.createElement('div');
   panel.className = 'panel';
-  panel.innerHTML = `<h2><span class="dot"></span>Waivers</h2>
-    <p style="font-size:12px;color:var(--chalk-dim);margin-top:-8px;margin-bottom:14px;">
-      The Draft API doesn't expose waiver moves, so log them here manually. Saved in your browser only,
-      on this device.
-    </p>`;
+  panel.innerHTML = `<h2><span class="dot"></span>Waivers</h2>`;
 
-  const row = document.createElement('div');
-  row.className = 'waiver-input-row';
-  const input = document.createElement('input');
-  input.placeholder = 'e.g. Team A dropped X, picked up Y';
-  const addBtn = document.createElement('button');
-  addBtn.textContent = 'Add';
-  row.appendChild(input);
-  row.appendChild(addBtn);
-  panel.appendChild(row);
-
-  const list = document.createElement('div');
-  panel.appendChild(list);
-
-  function renderList(){
-    const items = loadWaivers();
-    list.innerHTML = '';
-    if(items.length === 0){
-      list.innerHTML = '<p style="color:var(--chalk-dim);font-size:13px;">No waiver moves logged yet.</p>';
-      return;
-    }
-    items.forEach((w, idx) => {
-      const el = document.createElement('div');
-      el.className = 'waiver-item';
-      el.innerHTML = `
-        <span>${w.text}</span>
-        <span style="display:flex;align-items:center;gap:10px;">
-          <span class="date">${new Date(w.date).toLocaleDateString()}</span>
-          <button class="del" data-idx="${idx}">Remove</button>
-        </span>
-      `;
-      list.appendChild(el);
-    });
-    list.querySelectorAll('.del').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const items = loadWaivers();
-        items.splice(Number(btn.dataset.idx), 1);
-        saveWaivers(items);
-        renderList();
-      });
-    });
+  const tx = data.accepted_transactions || [];
+  if(tx.length === 0){
+    panel.innerHTML += `<p style="color:var(--chalk-dim);font-size:13px;">No waiver or free agent moves have cleared yet.</p>`;
+    return panel;
   }
 
-  addBtn.addEventListener('click', () => {
-    const text = input.value.trim();
-    if(!text) return;
-    const items = loadWaivers();
-    items.unshift({ text, date: new Date().toISOString() });
-    saveWaivers(items);
-    input.value = '';
-    renderList();
+  const byEvent = {};
+  tx.forEach(t => {
+    const ev = t.event ?? 0;
+    (byEvent[ev] = byEvent[ev] || []).push(t);
   });
-  input.addEventListener('keydown', (e) => { if(e.key === 'Enter') addBtn.click(); });
+  const eventKeys = Object.keys(byEvent).map(Number).sort((a,b) => a-b);
 
-  renderList();
+  function txRow(t){
+    return `
+      <div class="waiver-item" style="border-top:1px solid var(--line);">
+        <span>
+          <span class="waiver-kind-tag ${t.kind === 'Waiver' ? 'wa' : 'fa'}">${t.kind}</span>
+          <b>${t.team_name}</b>${t.player_in ? ` picked up ${t.player_in}` : ''}${t.player_out ? `, dropped ${t.player_out}` : ''}
+        </span>
+      </div>
+    `;
+  }
+
+  function renderGroup(ev){
+    // Within a gameweek, waivers already come first (sorted worst-team-first
+    // by fetch_data.py), with free agent pickups afterward - so no
+    // re-sorting needed here, just render in the order provided.
+    return byEvent[ev].map(txRow).join('');
+  }
+
+  const pillsWrap = document.createElement('div');
+  pillsWrap.className = 'gw-pills';
+  const contentWrap = document.createElement('div');
+
+  const allPill = document.createElement('button');
+  allPill.className = 'gw-pill active';
+  allPill.textContent = 'All';
+  allPill.addEventListener('click', () => {
+    pillsWrap.querySelectorAll('.gw-pill').forEach(p => p.classList.remove('active'));
+    allPill.classList.add('active');
+    contentWrap.innerHTML = [...eventKeys].reverse().map(ev => `
+      <div class="bracket-round-label">Gameweek ${ev}</div>
+      ${renderGroup(ev)}
+    `).join('');
+  });
+  pillsWrap.appendChild(allPill);
+
+  eventKeys.forEach(ev => {
+    const pill = document.createElement('button');
+    pill.className = 'gw-pill';
+    pill.textContent = 'GW ' + ev;
+    pill.addEventListener('click', () => {
+      pillsWrap.querySelectorAll('.gw-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      contentWrap.innerHTML = renderGroup(ev);
+    });
+    pillsWrap.appendChild(pill);
+  });
+
+  panel.appendChild(pillsWrap);
+  panel.appendChild(contentWrap);
+  allPill.click();
+
   return panel;
 }
 

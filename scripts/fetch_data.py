@@ -758,24 +758,49 @@ def build():
         if info.get("entry_id") is not None:
             entry_lookup[info["entry_id"]] = info
 
+    rank_by_le_id = {s["league_entry_id"]: s["rank"] for s in standings if s.get("rank") is not None}
+
     if transactions_raw:
         items = transactions_raw.get("transactions", []) if isinstance(transactions_raw, dict) else transactions_raw
         kind_labels = {"w": "Waiver", "f": "Free agent", "t": "Trade"}
-        for t in items or []:
+        for idx, t in enumerate(items or []):
             if t.get("result") != "a":
                 continue
-            info = entry_lookup.get(t.get("entry"), {})
+            le_id = t.get("entry")
+            info = entry_lookup.get(le_id, {})
+            # Resolve to a league_entry id specifically (entry_lookup may have
+            # matched via the real entry id) so we can look up their rank.
+            resolved_le_id = info.get("league_entry_id", le_id)
             player_in = player_by_id.get(t.get("element_in"), {}).get("name") if t.get("element_in") else None
             player_out = player_by_id.get(t.get("element_out"), {}).get("name") if t.get("element_out") else None
+            kind = kind_labels.get(t.get("kind"), t.get("kind") or "Waiver")
             accepted_transactions.append({
                 "event": t.get("event"),
                 "team_name": info.get("team_name", "Unknown"),
                 "manager_name": info.get("manager_name", ""),
                 "player_in": player_in,
                 "player_out": player_out,
-                "kind": kind_labels.get(t.get("kind"), t.get("kind") or "Waiver"),
+                "kind": kind,
+                "_rank": rank_by_le_id.get(resolved_le_id),
+                "_original_index": idx,
             })
-        accepted_transactions.sort(key=lambda x: (x["event"] is None, x["event"] or 0))
+        # Waiver moves are processed worst-team-first (reverse ladder order,
+        # since that's how waiver priority works) - so sort those by rank
+        # descending. Free agent / trade moves keep their original relative
+        # order, since there's no priority queue for those.
+        num_teams = len(standings) or 1
+
+        def sort_key(t):
+            if t["kind"] == "Waiver" and t["_rank"] is not None:
+                priority = num_teams - t["_rank"]  # worst team (highest rank number) sorts first
+            else:
+                priority = num_teams + t["_original_index"]  # keep original order, after all waivers
+            return (t["event"] is None, t["event"] or 0, priority)
+
+        accepted_transactions.sort(key=sort_key)
+        for t in accepted_transactions:
+            del t["_rank"]
+            del t["_original_index"]
     else:
         print("  note: could not fetch league transactions; waivers-cleared list will be empty.")
 
