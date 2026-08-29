@@ -116,6 +116,7 @@
 
   /* ---------- Layout grid ---------- */
   .grid{display:grid;grid-template-columns:1.7fr 1fr;gap:20px;margin-bottom:24px;}
+  .grid > *{min-width:0;}
   @media (max-width:840px){ .grid{grid-template-columns:1fr;} }
 
   .panel{
@@ -499,7 +500,7 @@ function formChips(form){
 }
 
 const TABS = [
-  { id: 'table',    label: 'Table' },
+  { id: 'table',    label: 'Home' },
   { id: 'fixtures', label: 'Fixtures' },
   { id: 'squads',   label: 'Squads' },
   { id: 'draft',    label: 'Draft Recap' },
@@ -526,6 +527,32 @@ function computeNextFixtureFor(data, leId){
     if(match) return { event: ev, ...match };
   }
   return null;
+}
+
+function computeUpcomingFixturesFor(data, leId, count){
+  if(leId == null) return [];
+  const events = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
+  const from = data.current_event ?? Math.min(...events);
+  const upcomingEvents = events.filter(e => e >= from);
+  const results = [];
+  for(const ev of upcomingEvents){
+    const fixtures = data.fixtures_by_event[String(ev)] || [];
+    const match = fixtures.find(f =>
+      String(f.home.league_entry_id) === String(leId) || String(f.away.league_entry_id) === String(leId));
+    if(match){
+      results.push({ event: ev, ...match });
+      if(results.length >= count) break;
+    }
+  }
+  return results;
+}
+
+function findStarPlayer(data, leId){
+  const squad = data.latest_squads && data.latest_squads[String(leId)];
+  if(!squad) return null;
+  const all = [...squad.starting, ...squad.bench];
+  if(all.length === 0) return null;
+  return all.reduce((best, p) => (p.points > (best ? best.points : -Infinity)) ? p : best, null);
 }
 
 function render(data){
@@ -627,7 +654,7 @@ function buildStandingsPanel(data, myId){
   table.innerHTML = `
     <thead>
       <tr>
-        <th></th><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">D</th>
+        <th></th><th>Team</th><th class="num">W</th><th class="num">D</th>
         <th class="num">L</th><th class="num">PF</th><th class="num">PA</th><th class="num">Pts</th>
         <th style="text-align:right;">Form</th>
       </tr>
@@ -650,7 +677,6 @@ function buildStandingsPanel(data, myId){
         <div class="name">${row.team_name}</div>
         <div class="manager">${row.manager_name}</div>
       </td>
-      <td class="num">${row.played ?? 0}</td>
       <td class="num">${row.won ?? 0}</td>
       <td class="num">${row.drawn ?? 0}</td>
       <td class="num">${row.lost ?? 0}</td>
@@ -678,7 +704,7 @@ function buildSpotlightPanel(data, myId){
   const you = data.standings.find(r => String(r.league_entry_id) === String(myId));
 
   if(!you){
-    panel.innerHTML = `<h2><span class="dot"></span>Your team</h2>
+    panel.innerHTML = `<h2><span class="dot"></span>My team</h2>
       <p style="color:var(--chalk-dim);font-size:13px;">Pick your team from the "Viewing as" dropdown above to spotlight it here.</p>`;
     return panel;
   }
@@ -699,8 +725,33 @@ function buildSpotlightPanel(data, myId){
     `;
   }
 
+  const upcoming = computeUpcomingFixturesFor(data, you.league_entry_id, 3);
+  let upcomingHtml = '';
+  if(upcoming.length){
+    upcomingHtml = `
+      <div class="next-fixture">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--chalk-dim);margin-bottom:6px;">Next 3</div>
+        ${upcoming.map(f => {
+          const isHome = String(f.home.league_entry_id) === String(you.league_entry_id);
+          const opp = isHome ? f.away : f.home;
+          return `<div style="display:flex;justify-content:space-between;font-size:13px;padding:4px 0;border-top:1px solid var(--line);">
+            <span>GW${f.event} <span class="ha-tag">${isHome ? 'H' : 'A'}</span>${opp.team_name}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  const star = findStarPlayer(data, you.league_entry_id);
+  const starHtml = star ? `
+    <div class="stat-box" style="grid-column: span 2;">
+      <div class="v" style="font-size:14px;">${star.name} &middot; ${star.points}pts</div>
+      <div class="l">Star Player (GW${data.latest_squad_event ?? ''})</div>
+    </div>
+  ` : '';
+
   panel.innerHTML = `
-    <h2><span class="dot"></span>Your team</h2>
+    <h2><span class="dot"></span>My team</h2>
     <div class="spot-rank">#${you.rank ?? '–'}</div>
     <div class="spot-name">${you.team_name}</div>
     <div class="spot-manager">${you.manager_name}</div>
@@ -709,9 +760,11 @@ function buildSpotlightPanel(data, myId){
       <div class="stat-box"><div class="v">${you.points_for}</div><div class="l">Pts For</div></div>
       <div class="stat-box"><div class="v">${you.points_against}</div><div class="l">Pts Against</div></div>
       <div class="stat-box"><div class="v">${you.total}</div><div class="l">League Pts</div></div>
+      ${starHtml}
     </div>
     <div style="margin-top:8px;">${formChips(you.form)}</div>
     ${fixtureHtml}
+    ${upcomingHtml}
   `;
   return panel;
 }
