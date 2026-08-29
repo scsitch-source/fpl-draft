@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T14:05:40.518799+00:00",
+  "generated_at": "2026-08-29T16:05:55.547398+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -2574,17 +2574,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 4,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 4
               },
               {
                 "name": "Gvardiol",
@@ -2610,17 +2610,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               },
               {
                 "name": "Gro\u00df",
@@ -2924,17 +2924,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Igor Jesus",
@@ -3095,17 +3095,17 @@
                 "club": "EVE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "O'Reilly",
@@ -3149,17 +3149,17 @@
                 "club": "EVE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 4,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 4
               },
               {
                 "name": "Maguire",
@@ -3239,17 +3239,17 @@
                 "club": "EVE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               },
               {
                 "name": "O.Dango",
@@ -3573,17 +3573,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "G.Jesus",
@@ -3706,17 +3706,17 @@
                 "club": "EVE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
+                "base_points": 12,
+                "goals": 1,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 12
               },
               {
                 "name": "Pedro Porro",
@@ -3814,17 +3814,17 @@
                 "club": "EVE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 69,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               },
               {
                 "name": "Haaland",
@@ -4038,17 +4038,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 4,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 4
               },
               {
                 "name": "Doku",
@@ -4407,17 +4407,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 5,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 4,
+                "assists": 1,
+                "minutes": 80,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 5
               },
               {
                 "name": "Havertz",
@@ -4631,17 +4631,17 @@
                 "club": "EVE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 4,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 4
               },
               {
                 "name": "E.Le F\u00e9e",
@@ -4667,17 +4667,17 @@
                 "club": "BOU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 4,
+                "minutes": 80,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Calvert-Lewin",
@@ -7816,7 +7816,7 @@
       "player_name": "Ndiaye",
       "position": "MID",
       "club": "EVE",
-      "season_points": 10
+      "season_points": 13
     },
     {
       "round": 3,
@@ -7972,7 +7972,7 @@
       "player_name": "Dewsbury-Hall",
       "position": "MID",
       "club": "EVE",
-      "season_points": 12
+      "season_points": 13
     },
     {
       "round": 5,
@@ -8167,7 +8167,7 @@
       "player_name": "Tarkowski",
       "position": "DEF",
       "club": "EVE",
-      "season_points": 7
+      "season_points": 18
     },
     {
       "round": 7,
@@ -8219,7 +8219,7 @@
       "player_name": "Rayan",
       "position": "MID",
       "club": "BOU",
-      "season_points": 3
+      "season_points": 4
     },
     {
       "round": 7,
@@ -8245,7 +8245,7 @@
       "player_name": "Evanilson",
       "position": "FWD",
       "club": "BOU",
-      "season_points": 5
+      "season_points": 9
     },
     {
       "round": 7,
@@ -8349,7 +8349,7 @@
       "player_name": "Branthwaite",
       "position": "DEF",
       "club": "EVE",
-      "season_points": 7
+      "season_points": 10
     },
     {
       "round": 8,
@@ -8388,7 +8388,7 @@
       "player_name": "Pickford",
       "position": "GKP",
       "club": "EVE",
-      "season_points": 8
+      "season_points": 10
     },
     {
       "round": 9,
@@ -8414,7 +8414,7 @@
       "player_name": "Truffert",
       "position": "DEF",
       "club": "BOU",
-      "season_points": 2
+      "season_points": 5
     },
     {
       "round": 9,
@@ -8713,7 +8713,7 @@
       "player_name": "Kluivert",
       "position": "MID",
       "club": "BOU",
-      "season_points": 4
+      "season_points": 6
     },
     {
       "round": 12,
@@ -9090,7 +9090,7 @@
       "player_name": "Petrovi\u0107",
       "position": "GKP",
       "club": "BOU",
-      "season_points": 3
+      "season_points": 5
     }
   ],
   "streaks": {
@@ -9359,17 +9359,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 4,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 4
         },
         {
           "name": "Gvardiol",
@@ -9395,17 +9395,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         },
         {
           "name": "Gro\u00df",
@@ -9709,17 +9709,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Igor Jesus",
@@ -9861,17 +9861,17 @@
           "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "O'Reilly",
@@ -9915,17 +9915,17 @@
           "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 4,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 4
         },
         {
           "name": "Maguire",
@@ -10005,17 +10005,17 @@
           "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         },
         {
           "name": "O.Dango",
@@ -10339,17 +10339,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "G.Jesus",
@@ -10453,17 +10453,17 @@
           "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
+          "base_points": 12,
+          "goals": 1,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 12
         },
         {
           "name": "Pedro Porro",
@@ -10561,17 +10561,17 @@
           "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 69,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         },
         {
           "name": "Haaland",
@@ -10785,17 +10785,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 4,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 4
         },
         {
           "name": "Doku",
@@ -11135,17 +11135,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 5,
           "goals": 0,
-          "assists": 0,
-          "minutes": 4,
+          "assists": 1,
+          "minutes": 80,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 5
         },
         {
           "name": "Havertz",
@@ -11359,17 +11359,17 @@
           "club": "EVE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 4,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 4
         },
         {
           "name": "E.Le F\u00e9e",
@@ -11395,17 +11395,17 @@
           "club": "BOU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 4,
+          "minutes": 80,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Calvert-Lewin",
