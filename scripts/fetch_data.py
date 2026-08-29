@@ -134,6 +134,20 @@ def apply_autosubs(starting, bench):
     return final_starting, final_bench
 
 
+# Defensive Contribution: DEF need combined defensive actions >= 10,
+# MID/FWD need >= 12. The raw count comes from the live-stats endpoint;
+# we apply the position threshold ourselves rather than trusting a
+# pre-computed flag, since that field's exact meaning isn't documented.
+DC_THRESHOLDS = {"DEF": 10, "MID": 12, "FWD": 12}
+
+
+def meets_dc_threshold(raw_count, position):
+    threshold = DC_THRESHOLDS.get(position)
+    if threshold is None:
+        return False
+    return (raw_count or 0) >= threshold
+
+
 def build():
     print(f"Fetching league {LEAGUE_ID} details...")
     details = get_json(f"league/{LEAGUE_ID}/details")
@@ -374,6 +388,18 @@ def build():
             _live_debug_printed.add(ev)
             print(f"  event/{ev}/live: top-level keys={list(data.keys()) if isinstance(data, dict) else type(data).__name__}, "
                   f"elements type={type(elements).__name__}")
+            # One full raw stats blob, to confirm field names like
+            # 'defensive_contribution', 'clean_sheets', 'tackles', etc.
+            sample_stats = None
+            if isinstance(elements, dict):
+                for el in elements.values():
+                    if isinstance(el, dict):
+                        sample_stats = el.get("stats", el)
+                        break
+            elif isinstance(elements, list) and elements:
+                sample_stats = elements[0].get("stats", elements[0])
+            if sample_stats:
+                print(f"  sample raw stats blob: {json.dumps(sample_stats)[:500]}")
 
         def _row(stats):
             return {
@@ -427,6 +453,16 @@ def build():
             el_id = pick.get("element")
             info = player_by_id.get(el_id, {"name": f"Player {el_id}", "position": "?", "club": "?"})
             multiplier = pick.get("multiplier", 1) or 0
+            # 'position' on a pick is the squad SLOT (1-15: 1-11 starting XI
+            # in formation order, 12-15 bench) - not the player's playing
+            # position (GKP/DEF/MID/FWD, which comes from player_by_id above).
+            # This is the authoritative starting/bench signal; multiplier is
+            # only used as a fallback if the slot field isn't present.
+            slot = pick.get("position")
+            if isinstance(slot, int):
+                is_starting = slot <= 11
+            else:
+                is_starting = multiplier > 0
             stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
                                           "clean_sheets": 0, "defensive_contribution": 0})
             row = {
@@ -440,9 +476,9 @@ def build():
                 "assists": stat["assists"],
                 "minutes": stat["minutes"],
                 "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF", "MID"),
-                "defensive_contribution": bool(stat.get("defensive_contribution")),
+                "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), info["position"]),
             }
-            (raw_starting if multiplier > 0 else raw_bench).append(row)
+            (raw_starting if is_starting else raw_bench).append(row)
 
         final_starting, final_bench = apply_autosubs(raw_starting, raw_bench)
         # Anyone left on the bench (not subbed in) just shows their raw points, unmultiplied.
