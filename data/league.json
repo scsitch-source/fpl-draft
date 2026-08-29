@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T00:05:57.589324+00:00",
+  "generated_at": "2026-08-29T02:05:35.061079+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -1663,7 +1663,7 @@
               {
                 "name": "N.Jackson",
                 "position": "FWD",
-                "club": "CHE",
+                "club": "AVL",
                 "is_captain": false,
                 "is_vice_captain": false,
                 "points": 0,
@@ -7322,7 +7322,7 @@
         {
           "name": "N.Jackson",
           "position": "FWD",
-          "club": "CHE",
+          "club": "AVL",
           "is_captain": false,
           "is_vice_captain": false,
           "points": 0,
