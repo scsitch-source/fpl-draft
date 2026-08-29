@@ -70,6 +70,70 @@ def load_previous_output():
         return {}
 
 
+# Standard FPL formation limits, used to keep auto-subs valid.
+MIN_BY_POS = {"GKP": 1, "DEF": 3, "MID": 2, "FWD": 1}
+
+
+def apply_autosubs(starting, bench):
+    """Bench players with minutes>0 replace starting players with 0 minutes,
+    without breaking formation minimums (>=3 DEF, >=2 MID, >=1 FWD, =1 GKP).
+    Captaincy passes to the vice-captain if the captain didn't end up playing."""
+    starting = [dict(p) for p in starting]
+    bench = [dict(p) for p in bench]
+
+    counts = {"GKP": 0, "DEF": 0, "MID": 0, "FWD": 0}
+    for p in starting:
+        counts[p["position"]] = counts.get(p["position"], 0) + 1
+
+    for p in starting:
+        p["subbed_out"] = False
+    for p in bench:
+        p["subbed_in"] = False
+
+    for starter in starting:
+        if starter["minutes"] > 0:
+            continue  # played, no sub needed
+        if starter.get("subbed_out"):
+            continue
+
+        # Goalkeepers can only be replaced by the bench goalkeeper.
+        candidates = [b for b in bench if not b["subbed_in"] and b["minutes"] > 0
+                      and (b["position"] == "GKP") == (starter["position"] == "GKP")]
+
+        chosen = None
+        for cand in candidates:
+            new_counts = dict(counts)
+            new_counts[starter["position"]] -= 1
+            new_counts[cand["position"]] = new_counts.get(cand["position"], 0) + 1
+            if all(new_counts.get(pos, 0) >= minimum for pos, minimum in MIN_BY_POS.items()):
+                chosen = cand
+                break
+
+        if chosen:
+            counts[starter["position"]] -= 1
+            counts[chosen["position"]] = counts.get(chosen["position"], 0) + 1
+            starter["subbed_out"] = True
+            chosen["subbed_in"] = True
+
+    final_starting = [p for p in starting if not p["subbed_out"]] + [b for b in bench if b["subbed_in"]]
+    final_bench = [p for p in starting if p["subbed_out"]] + [b for b in bench if not b["subbed_in"]]
+
+    # Captaincy: if the captain didn't end up in the final XI (or didn't play),
+    # the armband passes to the vice-captain, as it does in real FPL.
+    captain_in_final = next((p for p in final_starting if p["is_captain"] and p["minutes"] > 0), None)
+    if not captain_in_final:
+        vc = next((p for p in final_starting if p["is_vice_captain"] and p["minutes"] > 0), None)
+        if vc:
+            vc["effective_captain"] = True
+
+    for p in final_starting:
+        is_effective_captain = (p["is_captain"] and p is captain_in_final) or p.get("effective_captain")
+        p["multiplier"] = 2 if is_effective_captain else 1
+        p["points"] = p["base_points"] * p["multiplier"]
+
+    return final_starting, final_bench
+
+
 def build():
     print(f"Fetching league {LEAGUE_ID} details...")
     details = get_json(f"league/{LEAGUE_ID}/details")
@@ -134,6 +198,7 @@ def build():
             "name": el.get("web_name", "Unknown"),
             "position": pos_by_type.get(el.get("element_type"), "?"),
             "club": club_by_id.get(el.get("team"), "?"),
+            "season_points": el.get("total_points", 0),
         }
 
     # Map league_entry id -> readable info
@@ -295,7 +360,7 @@ def build():
     _live_debug_printed = set()
 
     def live_stats_for_event(ev):
-        """{element_id: {'points': int, 'goals': int, 'assists': int}} for one gameweek."""
+        """{element_id: {'points': int, 'goals': int, 'assists': int, 'minutes': int}} for one gameweek."""
         if ev in live_points_cache:
             return live_points_cache[ev]
         data = get_json_soft(f"event/{ev}/live")
@@ -310,6 +375,14 @@ def build():
             print(f"  event/{ev}/live: top-level keys={list(data.keys()) if isinstance(data, dict) else type(data).__name__}, "
                   f"elements type={type(elements).__name__}")
 
+        def _row(stats):
+            return {
+                "points": stats.get("total_points", 0),
+                "goals": stats.get("goals_scored", 0),
+                "assists": stats.get("assists", 0),
+                "minutes": stats.get("minutes", 0),
+            }
+
         if isinstance(elements, dict):
             for key, el in elements.items():
                 if not isinstance(el, dict):
@@ -320,11 +393,7 @@ def build():
                 except (TypeError, ValueError):
                     el_id = el.get("id") or el.get("element")
                 if el_id is not None:
-                    out[el_id] = {
-                        "points": stats.get("total_points", 0),
-                        "goals": stats.get("goals_scored", 0),
-                        "assists": stats.get("assists", 0),
-                    }
+                    out[el_id] = _row(stats)
         elif isinstance(elements, list):
             for el in elements:
                 if not isinstance(el, dict):
@@ -332,11 +401,7 @@ def build():
                 el_id = el.get("id") or el.get("element")
                 stats = el.get("stats", el)
                 if el_id is not None:
-                    out[el_id] = {
-                        "points": stats.get("total_points", 0),
-                        "goals": stats.get("goals_scored", 0),
-                        "assists": stats.get("assists", 0),
-                    }
+                    out[el_id] = _row(stats)
         live_points_cache[ev] = out
         return out
 
@@ -354,24 +419,39 @@ def build():
                 print(f"  first pick sample: {json.dumps(picks_preview[0])[:300]}")
         if not isinstance(data.get("picks"), list):
             return None
-        starting, bench = [], []
+
+        raw_starting, raw_bench = [], []
         for pick in data["picks"]:
             el_id = pick.get("element")
             info = player_by_id.get(el_id, {"name": f"Player {el_id}", "position": "?", "club": "?"})
             multiplier = pick.get("multiplier", 1) or 0
-            stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0})
+            stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0})
             row = {
                 "name": info["name"],
                 "position": info["position"],
                 "club": info["club"],
                 "is_captain": bool(pick.get("is_captain")),
                 "is_vice_captain": bool(pick.get("is_vice_captain")),
-                "points": stat["points"] * multiplier if multiplier else stat["points"],
+                "base_points": stat["points"],
                 "goals": stat["goals"],
                 "assists": stat["assists"],
+                "minutes": stat["minutes"],
             }
-            (starting if multiplier > 0 else bench).append(row)
-        return {"starting": starting, "bench": bench}
+            (raw_starting if multiplier > 0 else raw_bench).append(row)
+
+        final_starting, final_bench = apply_autosubs(raw_starting, raw_bench)
+        # Anyone left on the bench (not subbed in) just shows their raw points, unmultiplied.
+        for p in final_bench:
+            p.setdefault("multiplier", 1)
+            p.setdefault("points", p["base_points"])
+
+        played_count = sum(1 for p in final_starting if p["minutes"] > 0)
+        return {
+            "starting": final_starting,
+            "bench": final_bench,
+            "played_count": played_count,
+            "squad_size": len(final_starting),
+        }
 
     print("Fetching per-gameweek squads (cached where possible)...")
     for ev_key, fixtures in fixtures_by_event.items():
@@ -435,6 +515,7 @@ def build():
                 "player_name": player_info.get("name", f"Player {pick.get('element')}"),
                 "position": player_info.get("position", "?"),
                 "club": player_info.get("club", "?"),
+                "season_points": player_info.get("season_points", 0),
             })
         # Sort into draft order: by round then pick-within-round if available,
         # falling back to whatever order the API returned.
@@ -544,6 +625,28 @@ def build():
     coldest = max((s for s in streaks if s["result"] == "L"), key=lambda s: s["length"], default=None)
     streaks_summary = {"hottest": hottest, "coldest": coldest, "all": streaks}
 
+    # ---------------- Most / least in-form (last 3 finished H2H results) ----------------
+    RESULT_POINTS = {"W": 3, "D": 1, "L": 0}
+    form_table = []
+    for le_id, results in match_results.items():
+        ordered = sorted(results, key=lambda t: t[0])
+        last3 = ordered[-3:]
+        if not last3:
+            continue
+        score = sum(RESULT_POINTS[r] for _, r in last3)
+        info = entry_by_id.get(le_id, {})
+        form_table.append({
+            "league_entry_id": le_id,
+            "team_name": info.get("team_name", "Unknown"),
+            "manager_name": info.get("manager_name", ""),
+            "results": [r for _, r in last3],
+            "games_counted": len(last3),
+            "score": score,
+        })
+    most_in_form = max(form_table, key=lambda f: f["score"], default=None) if form_table else None
+    least_in_form = min(form_table, key=lambda f: f["score"], default=None) if form_table else None
+    in_form_summary = {"most": most_in_form, "least": least_in_form}
+
     # ---------------- Waiver transactions (accepted only) ----------------
     print("Fetching waiver transactions...")
     transactions_raw = get_json_soft(f"draft/league/{LEAGUE_ID}/transactions")
@@ -602,6 +705,7 @@ def build():
         "golden_gameweek": golden_gameweek,
         "draft_picks": draft_picks,
         "streaks": streaks_summary,
+        "in_form": in_form_summary,
         "accepted_transactions": accepted_transactions,
         "latest_squad_event": latest_squad_event,
         "latest_squads": latest_squads,

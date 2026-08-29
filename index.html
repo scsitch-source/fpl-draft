@@ -212,6 +212,11 @@
   }
   .fixture-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;}
   .fixture-row .side{font-size:13px;}
+  .ha-tag{
+    display:inline-block;width:16px;height:16px;line-height:16px;text-align:center;
+    font-size:9px;font-weight:700;border-radius:4px;background:var(--ink);color:var(--chalk-dim);
+    margin-right:6px;vertical-align:middle;
+  }
   .fixture-row .side .m{display:block;font-size:11px;color:var(--chalk-dim);}
   .fixture-row .score{
     font-family:'Manrope';font-size:17px;font-weight:700;
@@ -245,14 +250,12 @@
     background:var(--amber);color:#fff;border-radius:4px;padding:0 4px;vertical-align:middle;
   }
   .cap-badge.vc{background:var(--draw);}
+  .cap-badge.sub-badge{background:var(--win);}
+  .cap-badge.sub-badge.out{background:var(--chalk-dim);}
   .squad-icons{display:flex;gap:4px;white-space:nowrap;}
-  .stat-icon{font-size:11px;}
-  .stat-icon.assist{
-    display:inline-flex;align-items:center;justify-content:center;
-    width:14px;height:14px;border-radius:50%;background:var(--draw);color:#fff;
-    font-size:9px;font-weight:700;
-  }
+  .stat-icon{font-size:12px;}
   .squad-pts{font-weight:700;text-align:right;color:var(--amber);}
+  .squad-played-count{font-size:10px;font-weight:600;color:var(--chalk-dim);text-transform:none;letter-spacing:0;margin-left:4px;}
 
   /* ---------- Chart ---------- */
   .chart-wrap{height:340px;}
@@ -363,6 +366,10 @@
   table.draft-grid td{
     font-size:12.5px;padding:7px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
     max-width:120px;
+  }
+  .draft-total-row{
+    display:flex;justify-content:space-between;margin-top:8px;padding-top:8px;
+    border-top:2px solid var(--line);font-weight:800;font-size:13px;color:var(--amber);
   }
 </style>
 <script>
@@ -561,8 +568,9 @@ function render(data){
       secondGrid.className = 'grid';
       secondGrid.style.marginTop = '0';
       secondGrid.appendChild(buildStreaksPanel(data));
-      secondGrid.appendChild(buildWaiversClearedPanel(data));
+      secondGrid.appendChild(buildInFormPanel(data));
       wrap.appendChild(secondGrid);
+      wrap.appendChild(buildWaiversClearedPanel(data));
       wrap.appendChild(buildProgressionPanel(data));
       return wrap;
     },
@@ -697,16 +705,20 @@ function playerRow(p){
   const badges = [];
   if(p.is_captain) badges.push('<span class="cap-badge">C</span>');
   if(p.is_vice_captain) badges.push('<span class="cap-badge vc">VC</span>');
+  if(p.subbed_in) badges.push('<span class="cap-badge sub-badge" title="Auto-subbed in">&#8593;</span>');
+  if(p.subbed_out) badges.push('<span class="cap-badge sub-badge out" title="Auto-subbed out (did not play)">&#8595;</span>');
   const icons = [];
-  if(p.goals > 0) icons.push(`<span class="stat-icon goal" title="${p.goals} goal${p.goals>1?'s':''}">&#9917;${p.goals>1?p.goals:''}</span>`);
-  if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">A${p.assists>1?p.assists:''}</span>`);
+  if(p.goals > 0) icons.push(`<span class="stat-icon goal" title="${p.goals} goal${p.goals>1?'s':''}">&#9917;${p.goals>1?'&times;'+p.goals:''}</span>`);
+  if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">&#129918;${p.assists>1?'&times;'+p.assists:''}</span>`);
   const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
+  const didNotPlay = p.minutes === 0;
+  const ptsDisplay = didNotPlay ? '&ndash;' : p.points;
   return `
-    <div class="squad-row" style="background:${colors.bg};border-left:3px solid ${colors.dot};">
+    <div class="squad-row" style="background:${colors.bg};border-left:3px solid ${colors.dot};${didNotPlay ? 'opacity:0.55;' : ''}">
       <span class="squad-pos">${p.position}</span>
       <span class="squad-name">${p.name}${badges.join('')}</span>
       <span class="squad-icons">${icons.join('')}</span>
-      <span class="squad-pts">${p.points}</span>
+      <span class="squad-pts">${ptsDisplay}</span>
     </div>
   `;
 }
@@ -720,13 +732,49 @@ function squadColumn(label, squad){
   if(!squad){
     return `<div class="squad-col"><div class="squad-col-label">${label}</div><p style="font-size:12px;color:var(--chalk-dim);">No squad data for this gameweek.</p></div>`;
   }
+  const playedLabel = squad.squad_size != null
+    ? `<span class="squad-played-count">${squad.played_count}/${squad.squad_size} played</span>`
+    : '';
   return `
     <div class="squad-col">
-      <div class="squad-col-label">${label}</div>
+      <div class="squad-col-label">${label} ${playedLabel}</div>
       ${byPosition(squad.starting).map(playerRow).join('')}
       ${squad.bench.length ? `<div class="squad-bench-label">Subs</div>${byPosition(squad.bench).map(playerRow).join('')}` : ''}
     </div>
   `;
+}
+
+function buildInFormPanel(data){
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.innerHTML = `<h2><span class="dot"></span>In form</h2>`;
+  const f = data.in_form;
+  if(!f || (!f.most && !f.least)){
+    panel.innerHTML += `<p style="color:var(--chalk-dim);font-size:13px;">Not enough finished gameweeks yet.</p>`;
+    return panel;
+  }
+  const resultChips = (results) => results.map(r => `<span class="chip ${r}" style="width:16px;height:16px;font-size:9px;display:inline-flex;">${r}</span>`).join(' ');
+  const rows = [];
+  if(f.most){
+    rows.push(`
+      <div class="streak-row">
+        <span class="streak-icon hot">&#128293;</span>
+        <div><div class="streak-name">${f.most.team_name}</div>
+        <div class="streak-sub">Last ${f.most.games_counted} games: ${resultChips(f.most.results)}</div></div>
+      </div>
+    `);
+  }
+  if(f.least && f.least.league_entry_id !== (f.most && f.most.league_entry_id)){
+    rows.push(`
+      <div class="streak-row">
+        <span class="streak-icon cold">&#10052;&#65039;</span>
+        <div><div class="streak-name">${f.least.team_name}</div>
+        <div class="streak-sub">Last ${f.least.games_counted} games: ${resultChips(f.least.results)}</div></div>
+      </div>
+    `);
+  }
+  panel.innerHTML += rows.join('') || `<p style="color:var(--chalk-dim);font-size:13px;">Not enough data yet.</p>`;
+  return panel;
 }
 
 function buildStreaksPanel(data){
@@ -897,11 +945,11 @@ function buildFixturesPanel(data){
     card.innerHTML = `
       ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
       <div class="fixture-row ${homeWin ? 'winner' : ''}">
-        <div class="side">${f.home.team_name}<span class="m">${f.home.manager_name}</span></div>
+        <div class="side"><span class="ha-tag">H</span>${f.home.team_name}<span class="m">${f.home.manager_name}</span></div>
         <div class="score">${f.home.score ?? '–'}</div>
       </div>
       <div class="fixture-row ${awayWin ? 'winner' : ''}">
-        <div class="side">${f.away.team_name}<span class="m">${f.away.manager_name}</span></div>
+        <div class="side"><span class="ha-tag">A</span>${f.away.team_name}<span class="m">${f.away.manager_name}</span></div>
         <div class="score">${f.away.score ?? '–'}</div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
@@ -1103,13 +1151,6 @@ function buildDraftRecapPanel(data){
     if(!seen.has(key)){ seen.add(key); columnOrder.push({ key, team_name: p.team_name, short_name: p.short_name }); }
   });
 
-  const rounds = {};
-  picks.forEach(p => {
-    const r = p.round ?? 0;
-    (rounds[r] = rounds[r] || {})[String(p.league_entry_id ?? p.team_name)] = p;
-  });
-  const roundKeys = Object.keys(rounds).map(Number).sort((a,b) => a-b);
-
   const legend = document.createElement('div');
   legend.className = 'draft-legend';
   legend.innerHTML = Object.entries(POSITION_COLORS).map(([code, c]) => `
@@ -1117,30 +1158,41 @@ function buildDraftRecapPanel(data){
   `).join('');
   panel.appendChild(legend);
 
+  const picksByTeam = {};
+  columnOrder.forEach(c => picksByTeam[c.key] = []);
+  picks.forEach(p => {
+    const key = String(p.league_entry_id ?? p.team_name);
+    if(picksByTeam[key]) picksByTeam[key].push(p);
+  });
+  Object.values(picksByTeam).forEach(list => list.sort((a,b) => (a.round ?? 0) - (b.round ?? 0)));
+
   const wrap = document.createElement('div');
-  wrap.style.overflowX = 'auto';
-  const table = document.createElement('table');
-  table.className = 'draft-grid';
-  table.innerHTML = `
-    <thead><tr>
-      <th style="width:40px;">Rd</th>
-      ${columnOrder.map(c => `<th>${c.short_name}</th>`).join('')}
-    </tr></thead>
-    <tbody>
-      ${roundKeys.map(r => `
-        <tr>
-          <td class="rank">${r}</td>
-          ${columnOrder.map(c => {
-            const p = rounds[r][c.key];
-            if(!p) return '<td></td>';
-            const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
-            return `<td style="background:${colors.bg};border-left:3px solid ${colors.dot};">${p.player_name}</td>`;
-          }).join('')}
-        </tr>
-      `).join('')}
-    </tbody>
-  `;
-  wrap.appendChild(table);
+  wrap.style.cssText = 'overflow-x:auto;';
+  const grid = document.createElement('div');
+  grid.style.cssText = `display:grid;grid-template-columns:repeat(${columnOrder.length},minmax(150px,1fr));gap:14px;`;
+  grid.innerHTML = columnOrder.map(c => {
+    const teamPicks = picksByTeam[c.key];
+    const total = teamPicks.reduce((sum, p) => sum + (p.season_points || 0), 0);
+    return `
+      <div class="squad-col">
+        <div class="squad-col-label">${c.team_name}</div>
+        ${teamPicks.map(p => {
+          const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
+          return `
+            <div class="squad-row" style="background:${colors.bg};border-left:3px solid ${colors.dot};grid-template-columns:26px 1fr 34px;">
+              <span class="squad-pos">R${p.round}</span>
+              <span class="squad-name">${p.player_name}</span>
+              <span class="squad-pts">${p.season_points || 0}</span>
+            </div>
+          `;
+        }).join('')}
+        <div class="draft-total-row">
+          <span>Total</span><span>${total}</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+  wrap.appendChild(grid);
   panel.appendChild(wrap);
 
   return panel;
