@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T18:05:45.261393+00:00",
+  "generated_at": "2026-08-30T20:05:41.396088+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -18,13 +18,13 @@
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
-      "score": 20
+      "score": 44
     },
     "away": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
-      "score": 13
+      "score": 31
     },
     "finished": false,
     "started": true,
@@ -46,7 +46,7 @@
       "points_against": 51,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 42,
+      "current_gw_score": 49,
       "form": [
         "W"
       ],
@@ -67,7 +67,7 @@
       "points_against": 32,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 20,
+      "current_gw_score": 44,
       "form": [
         "W"
       ],
@@ -88,7 +88,7 @@
       "points_against": 26,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 9,
+      "current_gw_score": 17,
       "form": [
         "W"
       ],
@@ -109,7 +109,7 @@
       "points_against": 31,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 15,
+      "current_gw_score": 43,
       "form": [
         "W"
       ],
@@ -130,7 +130,7 @@
       "points_against": 52,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 35,
+      "current_gw_score": 50,
       "form": [
         "L"
       ],
@@ -151,7 +151,7 @@
       "points_against": 52,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 16,
+      "current_gw_score": 40,
       "form": [
         "L"
       ],
@@ -172,7 +172,7 @@
       "points_against": 41,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 13,
+      "current_gw_score": 31,
       "form": [
         "L"
       ],
@@ -193,7 +193,7 @@
       "points_against": 41,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 8,
+      "current_gw_score": 12,
       "form": [
         "L"
       ],
@@ -3229,13 +3229,13 @@
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
-          "score": 20
+          "score": 44
         },
         "away": {
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
-          "score": 13
+          "score": 31
         },
         "finished": false,
         "started": true,
@@ -3716,7 +3716,7 @@
                 "initials": "MU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 11,
+                "base_points": 9,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
@@ -3724,12 +3724,12 @@
                 "clean_sheet": true,
                 "defensive_contribution": true,
                 "opponents": [],
-                "bonus": 3,
+                "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 11
+                "points": 9
               },
               {
                 "name": "Thiaw",
@@ -3984,13 +3984,13 @@
           "league_entry_id": 27141,
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
-          "score": 15
+          "score": 43
         },
         "away": {
           "league_entry_id": 226052,
           "team_name": "PFC",
           "manager_name": "Archie Ross",
-          "score": 35
+          "score": 50
         },
         "finished": false,
         "started": true,
@@ -4739,13 +4739,13 @@
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
-          "score": 42
+          "score": 49
         },
         "away": {
           "league_entry_id": 183812,
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
-          "score": 8
+          "score": 12
         },
         "finished": false,
         "started": true,
@@ -5494,13 +5494,13 @@
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
-          "score": 9
+          "score": 17
         },
         "away": {
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
-          "score": 16
+          "score": 40
         },
         "finished": false,
         "started": true,
@@ -8961,8 +8961,8 @@
       },
       {
         "league_entry_id": 27141,
-        "points": 41,
-        "event": 1,
+        "points": 43,
+        "event": 2,
         "team_name": "Hakuna Mateta",
         "manager_name": "Ben Scotti"
       },
@@ -8975,8 +8975,8 @@
       },
       {
         "league_entry_id": 31110,
-        "points": 32,
-        "event": 1,
+        "points": 40,
+        "event": 2,
         "team_name": "I am chucky kirkez",
         "manager_name": "Eamon Lye"
       },
@@ -10074,7 +10074,7 @@
       "player_name": "Mukiele",
       "position": "DEF",
       "club": "SUN",
-      "season_points": 11
+      "season_points": 9
     },
     {
       "round": 11,
@@ -11237,7 +11237,7 @@
           "initials": "MU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 11,
+          "base_points": 9,
           "goals": 0,
           "assists": 0,
           "minutes": 90,
@@ -11245,12 +11245,12 @@
           "clean_sheet": true,
           "defensive_contribution": true,
           "opponents": [],
-          "bonus": 3,
+          "bonus": 1,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 11
+          "points": 9
         },
         {
           "name": "Thiaw",
