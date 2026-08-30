@@ -155,6 +155,31 @@ def meets_dc_threshold(raw_count, position):
     return (raw_count or 0) >= threshold
 
 
+# Fallback shirt colours if a player photo fails to load, keyed by club
+# short_name. Covers recent Premier League clubs; anything unlisted (e.g. a
+# newly promoted club) falls back to a neutral grey.
+CLUB_SHIRT_COLORS = {
+    "ARS": "#EF0107", "AVL": "#670E36", "BOU": "#DA020E", "BRE": "#FFDB00",
+    "BHA": "#0057B8", "BUR": "#6C1D45", "CHE": "#034694", "CRY": "#1B458F",
+    "EVE": "#003399", "FUL": "#000000", "IPS": "#3A64A3", "LEE": "#FFCD00",
+    "LEI": "#003090", "LIV": "#C8102E", "LUT": "#F78F1E", "MCI": "#6CABDD",
+    "MUN": "#DA291C", "NEW": "#241F20", "NFO": "#DD0000", "SHU": "#EE2737",
+    "SOU": "#D71920", "SUN": "#EB172B", "TOT": "#132257", "WAT": "#FBEE23",
+    "WBA": "#122F67", "WHU": "#7A263A", "WOL": "#FDB913",
+}
+DEFAULT_SHIRT_COLOR = "#6B7280"
+PLAYER_PHOTO_BASE = "https://resources.premierleague.com/premierleague25/photos/players/110x140"
+
+
+def player_initials(name):
+    parts = [p for p in name.replace("-", " ").split(" ") if p]
+    if not parts:
+        return "?"
+    if len(parts) == 1:
+        return parts[0][:2].upper()
+    return (parts[0][0] + parts[-1][0]).upper()
+
+
 def build():
     print(f"Fetching league {LEAGUE_ID} details...")
     details = get_json(f"league/{LEAGUE_ID}/details")
@@ -215,12 +240,17 @@ def build():
     for el in elements:
         if not isinstance(el, dict):
             continue
+        club_short = club_by_id.get(el.get("team"), "?")
+        code = el.get("code")
         player_by_id[el.get("id")] = {
             "name": el.get("web_name", "Unknown"),
             "position": pos_by_type.get(el.get("element_type"), "?"),
-            "club": club_by_id.get(el.get("team"), "?"),
+            "club": club_short,
             "club_id": el.get("team"),
             "season_points": el.get("total_points", 0),
+            "photo_url": f"{PLAYER_PHOTO_BASE}/{code}.png" if code else None,
+            "shirt_color": CLUB_SHIRT_COLORS.get(club_short, DEFAULT_SHIRT_COLOR),
+            "initials": player_initials(el.get("web_name", "?")),
         }
 
     # Per-gameweek, per-club "has this club's fixture(s) finished" lookup.
@@ -279,16 +309,19 @@ def build():
     current_event = None
     next_event = None
     next_deadline = None
+    current_event_finished = False
     for ev in events:
         if not isinstance(ev, dict):
             continue
         if ev.get("is_current"):
             current_event = ev.get("id")
+            current_event_finished = bool(ev.get("finished"))
         if ev.get("is_next"):
             next_event = ev.get("id")
             next_deadline = ev.get("deadline_time")
     if current_event is None:
         current_event = game.get("current_event")
+        current_event_finished = bool(game.get("current_event_finished"))
     if next_event is None:
         next_event = game.get("next_event")
 
@@ -449,6 +482,9 @@ def build():
                 "minutes": stats.get("minutes", 0),
                 "clean_sheets": stats.get("clean_sheets", 0),
                 "defensive_contribution": stats.get("defensive_contribution", 0),
+                "bonus": stats.get("bonus", 0),
+                "yellow_cards": stats.get("yellow_cards", 0),
+                "red_cards": stats.get("red_cards", 0),
             }
 
         if isinstance(elements, dict):
@@ -504,11 +540,15 @@ def build():
             else:
                 is_starting = multiplier > 0
             stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
-                                          "clean_sheets": 0, "defensive_contribution": 0})
+                                          "clean_sheets": 0, "defensive_contribution": 0,
+                                          "bonus": 0, "yellow_cards": 0, "red_cards": 0})
             row = {
                 "name": info["name"],
                 "position": info["position"],
                 "club": info["club"],
+                "photo_url": info.get("photo_url"),
+                "shirt_color": info.get("shirt_color", "#6B7280"),
+                "initials": info.get("initials", "?"),
                 "is_captain": bool(pick.get("is_captain")),
                 "is_vice_captain": bool(pick.get("is_vice_captain")),
                 "base_points": stat["points"],
@@ -516,9 +556,12 @@ def build():
                 "assists": stat["assists"],
                 "minutes": stat["minutes"],
                 "match_finished": club_finished_by_event.get(ev, {}).get(info.get("club_id"), False),
-                "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF", "MID"),
+                "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF"),
                 "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), info["position"]),
                 "opponents": club_opponent_by_event.get(ev, {}).get(info.get("club_id"), []),
+                "bonus": stat.get("bonus", 0) or 0,
+                "yellow_card": bool(stat.get("yellow_cards")),
+                "red_card": bool(stat.get("red_cards")),
             }
             (raw_starting if is_starting else raw_bench).append(row)
 
@@ -692,9 +735,12 @@ def build():
         info = entry_by_id.get(row["league_entry_id"], {})
         row["team_name"] = info.get("team_name", "Unknown")
         row["manager_name"] = info.get("manager_name", "")
+    top_score = golden_leaderboard[0]["points"] if golden_leaderboard else None
+    golden_leaders = [r for r in golden_leaderboard if r["points"] == top_score] if golden_leaderboard else []
     golden_gameweek = {
         "season_end": FINAL_GW,
         "leader": golden_leaderboard[0] if golden_leaderboard else None,
+        "leaders": golden_leaders,
         "leaderboard": golden_leaderboard,
     }
 
@@ -813,6 +859,7 @@ def build():
             "draft_status": league.get("draft_status"),
         },
         "current_event": current_event,
+        "current_event_finished": current_event_finished,
         "next_event": next_event,
         "next_deadline": next_deadline,
         "your_entry_id": int(ENTRY_ID) if ENTRY_ID else None,

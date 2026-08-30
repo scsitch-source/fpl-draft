@@ -163,6 +163,48 @@
   .rank{color:var(--chalk-dim);width:26px;font-weight:600;}
   .team-cell .name{font-weight:700;}
   .team-cell .manager{font-size:12px;color:var(--chalk-dim);}
+
+  /* ---------- Standings list (compact, expandable rows) ---------- */
+  .standings-list{display:flex;flex-direction:column;}
+  .standing-row{border-bottom:1px solid var(--line);border-radius:8px;}
+  .standing-row:last-child{border-bottom:none;}
+  .standing-row.you{background:var(--amber-dim);}
+  .standing-row.you .standing-main{box-shadow: inset 3px 0 0 var(--amber);}
+  .standing-row.tier-strong:not(.you){background:rgba(108,60,233,0.10);}
+  .standing-row.tier-soft:not(.you){background:rgba(108,60,233,0.04);}
+  [data-theme="dark"] .standing-row.tier-strong:not(.you){background:rgba(108,60,233,0.22);}
+  [data-theme="dark"] .standing-row.tier-soft:not(.you){background:rgba(108,60,233,0.10);}
+  .standing-main{
+    display:flex;align-items:center;gap:8px;padding:10px 8px;
+  }
+  .standing-main .rank{width:auto;flex-shrink:0;font-size:13px;}
+  .standing-main .team-cell{flex:1;min-width:0;}
+  .standing-main .team-cell .name{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .standing-main .team-cell .manager{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .standing-record{
+    font-size:12.5px;font-weight:600;color:var(--chalk-dim);flex-shrink:0;white-space:nowrap;
+  }
+  .standing-pf{font-size:12.5px;font-weight:700;flex-shrink:0;white-space:nowrap;}
+  .standing-pf .diff{font-size:10.5px;font-weight:600;}
+  .standing-pf .diff.pos{color:var(--win);}
+  .standing-pf .diff.neg{color:var(--loss);}
+  .standing-pts{
+    font-family:'Manrope';font-weight:800;font-size:15px;color:var(--amber);flex-shrink:0;
+    min-width:20px;text-align:right;
+  }
+  .standing-gw{
+    font-size:10px;font-weight:700;color:#fff;background:var(--win);border-radius:4px;
+    padding:2px 5px;flex-shrink:0;white-space:nowrap;
+  }
+  .standing-detail{display:none;padding:0 8px 12px 34px;}
+  .standings-list.expanded .standing-detail{display:block;}
+  .detail-grid{display:flex;gap:20px;flex-wrap:wrap;align-items:center;}
+  .detail-grid > div{display:flex;flex-direction:column;gap:2px;}
+  .detail-grid .l{font-size:10px;text-transform:uppercase;letter-spacing:0.04em;color:var(--chalk-dim);}
+  .detail-grid .v{font-size:14px;font-weight:700;}
+  @media (max-width:420px){
+    .standing-gw{display:none;} /* hide on very narrow screens, still in the expand detail via event_total if needed */
+  }
   .num{
     font-variant-numeric:tabular-nums;
     text-align:right;
@@ -212,6 +254,59 @@
   }
   .gw-pill.active{background:var(--amber);border-color:var(--amber);color:#fff;}
   .fixture-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;}
+  .fixture-list.field-mode{grid-template-columns:1fr;gap:14px;}
+  .fixture-card-field{padding:14px;}
+
+  /* ---------- Field view ---------- */
+  .pitch-container{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px;}
+  @media (max-width:640px){ .pitch-container{grid-template-columns:1fr;} }
+  .pitch-col{min-width:0;}
+  .pitch-team-label{
+    font-size:12px;font-weight:700;text-align:center;margin-bottom:6px;color:var(--chalk);
+  }
+  .pitch{
+    background:repeating-linear-gradient(0deg, #2E7D46, #2E7D46 22px, #34874C 22px, #34874C 44px);
+    border-radius:10px;padding:10px 4px;display:flex;flex-direction:column;justify-content:space-around;gap:8px;
+    min-height:220px;
+  }
+  .pitch-row{display:flex;justify-content:space-evenly;flex-wrap:wrap;gap:4px;}
+  .field-player{display:flex;flex-direction:column;align-items:center;width:54px;}
+  .field-avatar{
+    width:36px;height:36px;border-radius:50%;overflow:hidden;position:relative;
+    border:2px solid rgba(255,255,255,0.85);box-shadow:0 1px 3px rgba(0,0,0,0.3);
+  }
+  .field-avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+  .field-avatar .fallback{
+    width:100%;height:100%;align-items:center;justify-content:center;
+    color:#fff;font-weight:800;font-size:11px;
+  }
+  .field-cap{
+    position:absolute;top:-4px;left:-4px;background:var(--amber);color:#fff;
+    font-size:8px;font-weight:800;border-radius:50%;width:14px;height:14px;
+    display:flex;align-items:center;justify-content:center;border:1px solid #fff;
+  }
+  .field-cap.vc{background:var(--draw);}
+  .field-badges{
+    position:absolute;bottom:-4px;right:-6px;display:flex;flex-wrap:wrap;gap:1px;
+    max-width:34px;justify-content:flex-end;
+  }
+  .field-badge{
+    font-size:6.5px;font-weight:800;color:#fff;border-radius:2px;padding:0 2px;
+    line-height:1.4;background:var(--chalk-dim);
+  }
+  .field-badge.goal{background:var(--win);}
+  .field-badge.assist{background:#1C63E8;}
+  .field-badge.cs{background:#6C3CE9;}
+  .field-badge.dc{background:#D6409F;}
+  .field-badge.bonus{background:#F5A623;}
+  .field-badge.yellow{background:#F5C518;width:6px;height:8px;padding:0;border-radius:1px;}
+  .field-badge.red{background:#E5484D;width:6px;height:8px;padding:0;border-radius:1px;}
+  .field-name{
+    color:#fff;font-size:8.5px;font-weight:700;text-align:center;margin-top:3px;
+    text-shadow:0 1px 2px rgba(0,0,0,0.6);white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;max-width:54px;
+  }
+  .field-pts{color:#FFE270;font-size:10.5px;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,0.6);}
   .fixture-card{
     background:var(--ink);border:1px solid var(--line);border-radius:12px;
     padding:12px 14px;
@@ -275,6 +370,15 @@
   .stat-icon.assist{background:#1C63E8;}
   .stat-icon.cs{background:#6C3CE9;}
   .stat-icon.dc{background:#D6409F;}
+  .stat-icon.bonus{background:#F5A623;color:#1A1400;}
+  .stat-icon.yellow{
+    background:#F5C518;color:#F5C518;width:9px;height:12px;padding:0;border-radius:2px;
+    display:inline-block;
+  }
+  .stat-icon.red{
+    background:#E5484D;color:#E5484D;width:9px;height:12px;padding:0;border-radius:2px;
+    display:inline-block;
+  }
   .squad-pts{font-weight:700;text-align:right;color:var(--amber);}
 
   /* ---------- Chart ---------- */
@@ -314,7 +418,10 @@
     border-radius:12px;margin-bottom:16px;
   }
   .golden-leader .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--chalk-dim);}
-  .golden-leader .value{font-family:'Manrope';font-weight:700;font-size:19px;color:var(--amber);}
+  .golden-leader .value{
+    font-family:'Manrope';font-weight:700;font-size:17px;color:var(--amber);
+    word-wrap:break-word;overflow-wrap:break-word;margin-top:4px;
+  }
 
   /* ---------- Waivers ---------- */
   .waiver-item{
@@ -368,7 +475,7 @@
   }
   .prize-info{flex:1;}
   .prize-sub{font-size:12px;color:var(--chalk-dim);}
-  .prize-winner{font-weight:700;font-size:14px;margin-top:2px;}
+  .prize-winner{font-weight:700;font-size:14px;margin-top:2px;word-wrap:break-word;overflow-wrap:break-word;}
   .prize-amount{
     font-family:'Manrope';font-weight:800;font-size:18px;color:var(--win);
   }
@@ -651,49 +758,62 @@ function render(data){
 function buildStandingsPanel(data, myId){
   const panel = document.createElement('div');
   panel.className = 'panel';
-  panel.innerHTML = `<h2><span class="dot"></span>Standings</h2>`;
-
-  const table = document.createElement('table');
-  table.innerHTML = `
-    <thead>
-      <tr>
-        <th></th><th>Team</th><th class="num">W</th><th class="num">D</th>
-        <th class="num">L</th><th class="num">PF</th><th class="num">PA</th><th class="num">Pts</th>
-        <th style="text-align:right;">Form</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
+  panel.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <h2 style="margin:0;"><span class="dot"></span>Standings</h2>
+      <button class="expand-btn" id="standings-toggle">+ Full table</button>
+    </div>
   `;
-  const tbody = table.querySelector('tbody');
+
   const lastRank = Math.max(...data.standings.map(r => r.rank || 0));
+  const curFixtures = data.fixtures_by_event[String(data.current_event)] || [];
+  const midGameweek = curFixtures.length > 0 && !data.current_event_finished;
+
+  const list = document.createElement('div');
+  list.className = 'standings-list';
+
   data.standings.forEach(row => {
-    const tr = document.createElement('tr');
-    const classes = [];
+    const classes = ['standing-row'];
     if(myId != null && String(row.league_entry_id) === String(myId)) classes.push('you');
     if(row.rank === 1 || row.rank === 2) classes.push('tier-strong');
     else if(row.rank === 3 || row.rank === 4) classes.push('tier-soft');
-    tr.className = classes.join(' ');
     const medal = row.rank === 1 ? ' \u{1F451}' : (row.rank === lastRank ? ' \u{1F4A9}' : '');
-    tr.innerHTML = `
-      <td class="rank">${row.rank ?? '–'}${medal}</td>
-      <td class="team-cell">
-        <div class="name">${row.team_name}</div>
-        <div class="manager">${row.manager_name}</div>
-      </td>
-      <td class="num">${row.won ?? 0}</td>
-      <td class="num">${row.drawn ?? 0}</td>
-      <td class="num">${row.lost ?? 0}</td>
-      <td class="num">${row.points_for ?? 0}</td>
-      <td class="num">${row.points_against ?? 0}</td>
-      <td class="pts">${row.total ?? 0}</td>
-      <td>${formChips(row.form)}</td>
+    const diff = (row.points_for ?? 0) - (row.points_against ?? 0);
+    const diffStr = diff > 0 ? `+${diff}` : `${diff}`;
+
+    const item = document.createElement('div');
+    item.className = classes.join(' ');
+    item.innerHTML = `
+      <div class="standing-main">
+        <span class="rank">${row.rank ?? '–'}${medal}</span>
+        <div class="team-cell">
+          <div class="name">${row.team_name}</div>
+          <div class="manager">${row.manager_name}</div>
+        </div>
+        <span class="standing-record" title="Won-Drawn-Lost">${row.won}-${row.drawn}-${row.lost}</span>
+        <span class="standing-pf" title="Points for (differential)">${row.points_for ?? 0} <span class="diff ${diff>=0?'pos':'neg'}">(${diffStr})</span></span>
+        <span class="standing-pts" title="League points">${row.total ?? 0}</span>
+        ${midGameweek ? `<span class="standing-gw" title="Live GW${data.current_event} score">GW${data.current_event}: +${row.event_total ?? 0}</span>` : ''}
+      </div>
+      <div class="standing-detail">
+        <div class="detail-grid">
+          <div><span class="l">Pts For</span><span class="v">${row.points_for ?? 0}</span></div>
+          <div><span class="l">Pts Against</span><span class="v">${row.points_against ?? 0}</span></div>
+          <div><span class="l">Form</span>${formChips(row.form)}</div>
+        </div>
+      </div>
     `;
-    tbody.appendChild(tr);
+    list.appendChild(item);
   });
-  const tableWrap = document.createElement('div');
-  tableWrap.style.cssText = 'overflow-x:auto;';
-  tableWrap.appendChild(table);
-  panel.appendChild(tableWrap);
+
+  panel.appendChild(list);
+
+  const toggleBtn = panel.querySelector('#standings-toggle');
+  toggleBtn.addEventListener('click', () => {
+    const open = list.classList.toggle('expanded');
+    toggleBtn.textContent = open ? '– Full table' : '+ Full table';
+  });
+
   const legend = document.createElement('p');
   legend.style.cssText = 'font-size:11px;color:var(--chalk-dim);margin:10px 0 0;';
   legend.textContent = 'Top 2 go straight through to the final four; 3rd–4th also make the playoffs.';
@@ -783,6 +903,9 @@ function playerRow(p){
   if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">A${p.assists>1?'&times;'+p.assists:''}</span>`);
   if(p.clean_sheet) icons.push(`<span class="stat-icon cs" title="Clean sheet">CS</span>`);
   if(p.defensive_contribution) icons.push(`<span class="stat-icon dc" title="Defensive contribution bonus">DC</span>`);
+  if(p.bonus > 0) icons.push(`<span class="stat-icon bonus" title="${p.bonus} bonus point${p.bonus>1?'s':''}">B${p.bonus}</span>`);
+  if(p.yellow_card) icons.push(`<span class="stat-icon yellow" title="Yellow card">&#9632;</span>`);
+  if(p.red_card) icons.push(`<span class="stat-icon red" title="Red card">&#9632;</span>`);
   const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
   const didNotPlay = p.minutes === 0;
   const ptsDisplay = didNotPlay ? '&ndash;' : p.points;
@@ -926,7 +1049,10 @@ function buildPrizesPanel(data){
     thirdPlace = String(p.elim.team_a.league_entry_id) === String(p.elim_winner.league_entry_id)
       ? p.elim.team_b.team_name : p.elim.team_a.team_name;
   }
-  const goldenWinner = g && g.leader ? `${g.leader.team_name} (${g.leader.points} pts, GW${g.leader.event})` : 'TBD';
+  const goldenLeaders = (g && g.leaders && g.leaders.length) ? g.leaders : (g && g.leader ? [g.leader] : []);
+  const goldenWinner = goldenLeaders.length
+    ? goldenLeaders.map(l => `${l.team_name} (${l.points} pts, GW${l.event})`).join(', ')
+    : 'TBD';
 
   const prizes = [
     { place: '1st', sub: 'Playoff winner', amount: '$150', winner: finalWinner },
@@ -988,10 +1114,11 @@ function buildFixturesPanel(data){
   panel.innerHTML = `<h2><span class="dot"></span>Fixtures &amp; results</h2>`;
 
   const gwKeys = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
+  let viewMode = 'list'; // 'list' or 'field'
 
   const modeWrap = document.createElement('div');
   modeWrap.className = 'gw-pills';
-  modeWrap.style.marginBottom = '12px';
+  modeWrap.style.marginBottom = '10px';
   const byGwBtn = document.createElement('button');
   byGwBtn.className = 'gw-pill active';
   byGwBtn.textContent = 'By gameweek';
@@ -1000,6 +1127,18 @@ function buildFixturesPanel(data){
   byTeamBtn.textContent = 'By team';
   modeWrap.appendChild(byGwBtn);
   modeWrap.appendChild(byTeamBtn);
+
+  const viewWrap = document.createElement('div');
+  viewWrap.className = 'gw-pills';
+  viewWrap.style.marginBottom = '12px';
+  const listBtn = document.createElement('button');
+  listBtn.className = 'gw-pill active';
+  listBtn.textContent = 'List view';
+  const fieldBtn = document.createElement('button');
+  fieldBtn.className = 'gw-pill';
+  fieldBtn.textContent = 'Field view';
+  viewWrap.appendChild(listBtn);
+  viewWrap.appendChild(fieldBtn);
 
   const pillsWrap = document.createElement('div');
   pillsWrap.className = 'gw-pills';
@@ -1020,12 +1159,84 @@ function buildFixturesPanel(data){
     return `<span class="played-tag">${squad.played_count}/${squad.squad_size} played</span>`;
   }
 
+  function fieldPlayerCard(p){
+    const didNotPlay = p.minutes === 0;
+    const ptsDisplay = didNotPlay ? '–' : p.points;
+    const badges = [];
+    if(p.goals > 0) badges.push(`<span class="field-badge goal">G${p.goals>1?'x'+p.goals:''}</span>`);
+    if(p.assists > 0) badges.push(`<span class="field-badge assist">A${p.assists>1?'x'+p.assists:''}</span>`);
+    if(p.clean_sheet) badges.push(`<span class="field-badge cs">CS</span>`);
+    if(p.defensive_contribution) badges.push(`<span class="field-badge dc">DC</span>`);
+    if(p.bonus > 0) badges.push(`<span class="field-badge bonus">B${p.bonus}</span>`);
+    if(p.yellow_card) badges.push(`<span class="field-badge yellow"></span>`);
+    if(p.red_card) badges.push(`<span class="field-badge red"></span>`);
+    const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
+    return `
+      <div class="field-player" title="${p.name}">
+        <div class="field-avatar" style="background:${p.shirt_color || '#6B7280'};">
+          ${p.photo_url ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` : ''}
+          <div class="fallback" style="display:${p.photo_url ? 'none' : 'flex'};">${p.initials || '?'}</div>
+          ${capTag}
+          ${badges.length ? `<div class="field-badges">${badges.join('')}</div>` : ''}
+        </div>
+        <div class="field-name" style="${didNotPlay ? 'opacity:0.6;' : ''}">${p.name}</div>
+        <div class="field-pts">${ptsDisplay}</div>
+      </div>
+    `;
+  }
+
+  function pitchColumn(teamName, squad){
+    if(!squad){
+      return `<div class="pitch-col"><div class="pitch-team-label">${teamName}</div><p style="color:rgba(255,255,255,0.7);font-size:12px;text-align:center;">No squad data yet.</p></div>`;
+    }
+    const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
+    squad.starting.forEach(p => { (rows[p.position] || rows.MID).push(p); });
+    return `
+      <div class="pitch-col">
+        <div class="pitch-team-label">${teamName}</div>
+        <div class="pitch">
+          ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
+            ? `<div class="pitch-row">${rows[pos].map(fieldPlayerCard).join('')}</div>` : '').join('')}
+        </div>
+        ${squad.bench.length ? `<div class="squad-bench-label">Subs</div>${byPosition(squad.bench).map(playerRow).join('')}` : ''}
+      </div>
+    `;
+  }
+
+  function fieldMatchup(f){
+    return `
+      <div class="pitch-container">
+        ${pitchColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
+        ${pitchColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+      </div>
+    `;
+  }
+
   function fixtureCard(f, showGwLabel){
     const homeWin = f.finished && f.home.score > f.away.score;
     const awayWin = f.finished && f.away.score > f.home.score;
     const hasSquads = !!f.squads;
     const card = document.createElement('div');
     card.className = 'fixture-card';
+
+    if(viewMode === 'field' && hasSquads){
+      card.classList.add('fixture-card-field');
+      card.innerHTML = `
+        ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
+        <div class="fixture-row ${homeWin ? 'winner' : ''}">
+          <div class="side"><span class="ha-tag">H</span>${f.home.team_name}<span class="m">${f.home.manager_name} ${playedCountTag(f, f.home)}</span></div>
+          <div class="score">${f.home.score ?? '–'}</div>
+        </div>
+        <div class="fixture-row ${awayWin ? 'winner' : ''}">
+          <div class="side"><span class="ha-tag">A</span>${f.away.team_name}<span class="m">${f.away.manager_name} ${playedCountTag(f, f.away)}</span></div>
+          <div class="score">${f.away.score ?? '–'}</div>
+        </div>
+        <div class="status" style="margin-bottom:8px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
+        ${fieldMatchup(f)}
+      `;
+      return card;
+    }
+
     card.innerHTML = `
       ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
       <div class="fixture-row ${homeWin ? 'winner' : ''}">
@@ -1086,6 +1297,30 @@ function buildFixturesPanel(data){
     pillsWrap.appendChild(pill);
   });
 
+  function rerenderCurrent(){
+    if(byTeamBtn.classList.contains('active')){
+      renderTeam(teamSelectWrap.querySelector('select').value);
+    }else{
+      const activePill = pillsWrap.querySelector('.gw-pill.active') || pillsWrap.firstElementChild;
+      if(activePill) renderGw(Number(activePill.textContent.replace('GW ', '')));
+    }
+  }
+
+  listBtn.addEventListener('click', () => {
+    viewMode = 'list';
+    listBtn.classList.add('active');
+    fieldBtn.classList.remove('active');
+    listWrap.classList.remove('field-mode');
+    rerenderCurrent();
+  });
+  fieldBtn.addEventListener('click', () => {
+    viewMode = 'field';
+    fieldBtn.classList.add('active');
+    listBtn.classList.remove('active');
+    listWrap.classList.add('field-mode');
+    rerenderCurrent();
+  });
+
   byGwBtn.addEventListener('click', () => {
     byGwBtn.classList.add('active');
     byTeamBtn.classList.remove('active');
@@ -1106,6 +1341,7 @@ function buildFixturesPanel(data){
   });
 
   panel.appendChild(modeWrap);
+  panel.appendChild(viewWrap);
   panel.appendChild(pillsWrap);
   panel.appendChild(teamSelectWrap);
   panel.appendChild(listWrap);
@@ -1351,13 +1587,18 @@ function buildGoldenPanel(data){
 
   const leaderDiv = document.createElement('div');
   leaderDiv.className = 'golden-leader';
+  const leaders = (g.leaders && g.leaders.length) ? g.leaders : [g.leader];
+  const isTie = leaders.length > 1;
   leaderDiv.innerHTML = `
-    <div class="label">Current leader</div>
-    <div class="value">${g.leader.team_name} · ${g.leader.points} pts (GW${g.leader.event})</div>
+    <div class="label">${isTie ? `Tied for the lead (${leaders.length})` : 'Current leader'}</div>
+    ${leaders.map(l => `<div class="value">${l.team_name} &middot; ${l.points} pts (GW${l.event})</div>`).join('')}
   `;
   panel.appendChild(leaderDiv);
 
+  const tableWrap = document.createElement('div');
+  tableWrap.style.cssText = 'overflow-x:auto;';
   const table = document.createElement('table');
+  table.style.minWidth = 'unset';
   table.innerHTML = `
     <thead><tr>
       <th style="width:28px;"></th><th>Team</th>
@@ -1372,7 +1613,8 @@ function buildGoldenPanel(data){
       </tr>
     `).join('')}</tbody>
   `;
-  panel.appendChild(table);
+  tableWrap.appendChild(table);
+  panel.appendChild(tableWrap);
   return panel;
 }
 
