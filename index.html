@@ -224,6 +224,10 @@
     margin-right:6px;vertical-align:middle;
   }
   .fixture-row .side .m{display:block;font-size:11px;color:var(--chalk-dim);}
+  .played-tag{
+    display:inline-block;margin-left:4px;font-size:10px;font-weight:600;
+    color:var(--chalk-dim);background:var(--card);border-radius:4px;padding:0 4px;
+  }
   .fixture-row .score{
     font-family:'Manrope';font-size:17px;font-weight:700;
     min-width:28px;text-align:center;
@@ -1010,6 +1014,12 @@ function buildFixturesPanel(data){
   const listWrap = document.createElement('div');
   listWrap.className = 'fixture-list';
 
+  function playedCountTag(f, side){
+    const squad = f.squads && f.squads[String(side.league_entry_id)];
+    if(!squad || squad.squad_size == null) return '';
+    return `<span class="played-tag">${squad.played_count}/${squad.squad_size} played</span>`;
+  }
+
   function fixtureCard(f, showGwLabel){
     const homeWin = f.finished && f.home.score > f.away.score;
     const awayWin = f.finished && f.away.score > f.home.score;
@@ -1019,11 +1029,11 @@ function buildFixturesPanel(data){
     card.innerHTML = `
       ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
       <div class="fixture-row ${homeWin ? 'winner' : ''}">
-        <div class="side"><span class="ha-tag">H</span>${f.home.team_name}<span class="m">${f.home.manager_name}</span></div>
+        <div class="side"><span class="ha-tag">H</span>${f.home.team_name}<span class="m">${f.home.manager_name} ${playedCountTag(f, f.home)}</span></div>
         <div class="score">${f.home.score ?? '–'}</div>
       </div>
       <div class="fixture-row ${awayWin ? 'winner' : ''}">
-        <div class="side"><span class="ha-tag">A</span>${f.away.team_name}<span class="m">${f.away.manager_name}</span></div>
+        <div class="side"><span class="ha-tag">A</span>${f.away.team_name}<span class="m">${f.away.manager_name} ${playedCountTag(f, f.away)}</span></div>
         <div class="score">${f.away.score ?? '–'}</div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
