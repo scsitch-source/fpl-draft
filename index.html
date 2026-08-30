@@ -267,7 +267,7 @@
     font-size:12px;font-weight:700;text-align:center;margin-bottom:6px;color:var(--chalk);
   }
   .pitch{
-    position:relative;overflow:hidden;aspect-ratio:1/2;
+    position:relative;overflow:hidden;aspect-ratio:1/1.35;
     background:
       radial-gradient(120% 70% at 50% 0%, rgba(60,220,150,0.18), transparent 60%),
       repeating-linear-gradient(0deg, #1E6B3C, #1E6B3C 22px, #237D46 22px, #237D46 44px);
@@ -1168,15 +1168,15 @@ function fieldPlayerCard(p){
 }
 
 const PITCH_LINES_SVG = `
-  <svg class="pitch-lines" viewBox="0 0 100 200" preserveAspectRatio="none">
-    <rect x="2" y="2" width="96" height="196" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
-    <line x1="2" y1="100" x2="98" y2="100" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
-    <circle cx="50" cy="100" r="16" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
-    <circle cx="50" cy="100" r="1.2" fill="rgba(255,255,255,0.32)"/>
-    <rect x="25" y="2" width="50" height="20" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
-    <rect x="38" y="2" width="24" height="8" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
-    <rect x="25" y="178" width="50" height="20" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
-    <rect x="38" y="190" width="24" height="8" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+  <svg class="pitch-lines" viewBox="0 0 100 135" preserveAspectRatio="none">
+    <rect x="2" y="2" width="96" height="131" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <line x1="2" y1="67.5" x2="98" y2="67.5" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <circle cx="50" cy="67.5" r="14" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <circle cx="50" cy="67.5" r="1.2" fill="rgba(255,255,255,0.32)"/>
+    <rect x="25" y="2" width="50" height="15" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <rect x="38" y="2" width="24" height="6" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <rect x="25" y="118" width="50" height="15" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <rect x="38" y="127" width="24" height="6" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
   </svg>
 `;
 
