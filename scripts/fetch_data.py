@@ -395,6 +395,7 @@ def build():
             "points_against": s.get("points_against", 0),
             "total": s.get("total", 0),
             "event_total": s.get("event_total", 0),
+            "current_gw_score": weekly_scores.get(le_id, {}).get(current_event),
             "form": form_last5,
             "is_you": le_id == your_league_entry_id,
         })
@@ -580,14 +581,19 @@ def build():
         }
 
     def squad_looks_valid(squads_dict):
-        """A cached squad set is only trusted if at least one player anywhere
-        in it has non-zero minutes or points - an all-zero result almost
-        always means a past fetch failure got cached, not a real outcome."""
+        """A cached squad set is only trusted if it (a) has real scoring data
+        and (b) matches the current row schema - an older cache from before a
+        field like 'photo_url' existed would otherwise render blank forever
+        in views that depend on it."""
+        REQUIRED_KEYS = {"photo_url", "shirt_color", "initials", "opponents"}
+        found_signal = False
         for squad in squads_dict.values():
             for p in squad.get("starting", []) + squad.get("bench", []):
+                if not REQUIRED_KEYS.issubset(p.keys()):
+                    return False
                 if p.get("minutes", 0) > 0 or p.get("points", 0) != 0:
-                    return True
-        return False
+                    found_signal = True
+        return found_signal
 
     print("Fetching per-gameweek squads (cached where possible)...")
     for ev_key, fixtures in fixtures_by_event.items():

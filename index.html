@@ -183,27 +183,29 @@
   .standing-main .team-cell .manager{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .standing-record{
     font-size:12.5px;font-weight:600;color:var(--chalk-dim);flex-shrink:0;white-space:nowrap;
+    width:48px;text-align:right;
   }
-  .standing-pf{font-size:12.5px;font-weight:700;flex-shrink:0;white-space:nowrap;}
+  .standing-pf{font-size:12.5px;font-weight:700;flex-shrink:0;white-space:nowrap;width:76px;text-align:right;}
   .standing-pf .diff{font-size:10.5px;font-weight:600;}
   .standing-pf .diff.pos{color:var(--win);}
   .standing-pf .diff.neg{color:var(--loss);}
   .standing-pts{
     font-family:'Manrope';font-weight:800;font-size:15px;color:var(--amber);flex-shrink:0;
-    min-width:20px;text-align:right;
+    min-width:24px;text-align:right;
   }
-  .standing-gw{
-    font-size:10px;font-weight:700;color:#fff;background:var(--win);border-radius:4px;
-    padding:2px 5px;flex-shrink:0;white-space:nowrap;
+  .standing-header{
+    display:flex;align-items:center;gap:8px;padding:0 8px 6px;
+    font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--chalk-dim);
+    border-bottom:1px solid var(--line);margin-bottom:2px;
   }
-  .standing-detail{display:none;padding:0 8px 12px 34px;}
-  .standings-list.expanded .standing-detail{display:block;}
-  .detail-grid{display:flex;gap:20px;flex-wrap:wrap;align-items:center;}
-  .detail-grid > div{display:flex;flex-direction:column;gap:2px;}
-  .detail-grid .l{font-size:10px;text-transform:uppercase;letter-spacing:0.04em;color:var(--chalk-dim);}
-  .detail-grid .v{font-size:14px;font-weight:700;}
+  .standing-header span:first-child{width:26px;flex-shrink:0;}
+  .standing-header span:nth-child(2){flex:1;}
+  .standing-header span:nth-child(3){width:48px;text-align:right;flex-shrink:0;}
+  .standing-header span:nth-child(4){width:76px;text-align:right;flex-shrink:0;}
+  .standing-header span:nth-child(5){min-width:24px;text-align:right;flex-shrink:0;}
   @media (max-width:420px){
-    .standing-gw{display:none;} /* hide on very narrow screens, still in the expand detail via event_total if needed */
+    .standing-record{width:40px;font-size:11px;}
+    .standing-pf{width:64px;font-size:11px;}
   }
   .num{
     font-variant-numeric:tabular-nums;
@@ -270,15 +272,16 @@
     min-height:220px;
   }
   .pitch-row{display:flex;justify-content:space-evenly;flex-wrap:wrap;gap:4px;}
+  .pitch-bench-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:8px;}
   .field-player{display:flex;flex-direction:column;align-items:center;width:54px;}
   .field-avatar{
-    width:36px;height:36px;border-radius:50%;overflow:hidden;position:relative;
+    width:38px;height:38px;border-radius:8px;overflow:hidden;position:relative;
     border:2px solid rgba(255,255,255,0.85);box-shadow:0 1px 3px rgba(0,0,0,0.3);
+    background:rgba(255,255,255,0.9);
   }
   .field-avatar img{width:100%;height:100%;object-fit:cover;display:block;}
   .field-avatar .fallback{
-    width:100%;height:100%;align-items:center;justify-content:center;
-    color:#fff;font-weight:800;font-size:11px;
+    width:100%;height:100%;align-items:center;justify-content:center;padding:4px;
   }
   .field-cap{
     position:absolute;top:-4px;left:-4px;background:var(--amber);color:#fff;
@@ -286,27 +289,15 @@
     display:flex;align-items:center;justify-content:center;border:1px solid #fff;
   }
   .field-cap.vc{background:var(--draw);}
-  .field-badges{
-    position:absolute;bottom:-4px;right:-6px;display:flex;flex-wrap:wrap;gap:1px;
-    max-width:34px;justify-content:flex-end;
-  }
-  .field-badge{
-    font-size:6.5px;font-weight:800;color:#fff;border-radius:2px;padding:0 2px;
-    line-height:1.4;background:var(--chalk-dim);
-  }
-  .field-badge.goal{background:var(--win);}
-  .field-badge.assist{background:#1C63E8;}
-  .field-badge.cs{background:#6C3CE9;}
-  .field-badge.dc{background:#D6409F;}
-  .field-badge.bonus{background:#F5A623;}
-  .field-badge.yellow{background:#F5C518;width:6px;height:8px;padding:0;border-radius:1px;}
-  .field-badge.red{background:#E5484D;width:6px;height:8px;padding:0;border-radius:1px;}
   .field-name{
     color:#fff;font-size:8.5px;font-weight:700;text-align:center;margin-top:3px;
     text-shadow:0 1px 2px rgba(0,0,0,0.6);white-space:nowrap;overflow:hidden;
     text-overflow:ellipsis;max-width:54px;
   }
-  .field-pts{color:#FFE270;font-size:10.5px;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,0.6);}
+  .field-pts{
+    color:#FFE270;font-size:10.5px;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,0.6);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:56px;
+  }
   .fixture-card{
     background:var(--ink);border:1px solid var(--line);border-radius:12px;
     padding:12px 14px;
@@ -766,9 +757,18 @@ function buildStandingsPanel(data, myId){
   `;
 
   const lastRank = Math.max(...data.standings.map(r => r.rank || 0));
-  const curFixtures = data.fixtures_by_event[String(data.current_event)] || [];
-  const midGameweek = curFixtures.length > 0 && !data.current_event_finished;
+  const midGameweek = !data.current_event_finished;
 
+  // ---------- Compact view ----------
+  const compactWrap = document.createElement('div');
+  compactWrap.innerHTML = `
+    <div class="standing-header">
+      <span></span><span>Team</span>
+      <span title="Won-Drawn-Lost">W-D-L</span>
+      <span title="Total points scored this season, with this gameweek's live score in brackets">Pts${midGameweek ? ' (this GW)' : ''}</span>
+      <span title="League points">League</span>
+    </div>
+  `;
   const list = document.createElement('div');
   list.className = 'standings-list';
 
@@ -778,8 +778,8 @@ function buildStandingsPanel(data, myId){
     if(row.rank === 1 || row.rank === 2) classes.push('tier-strong');
     else if(row.rank === 3 || row.rank === 4) classes.push('tier-soft');
     const medal = row.rank === 1 ? ' \u{1F451}' : (row.rank === lastRank ? ' \u{1F4A9}' : '');
-    const diff = (row.points_for ?? 0) - (row.points_against ?? 0);
-    const diffStr = diff > 0 ? `+${diff}` : `${diff}`;
+    const gwScore = row.current_gw_score;
+    const gwBracket = (midGameweek && gwScore != null) ? ` <span class="diff pos">(+${gwScore})</span>` : '';
 
     const item = document.createElement('div');
     item.className = classes.join(' ');
@@ -790,28 +790,64 @@ function buildStandingsPanel(data, myId){
           <div class="name">${row.team_name}</div>
           <div class="manager">${row.manager_name}</div>
         </div>
-        <span class="standing-record" title="Won-Drawn-Lost">${row.won}-${row.drawn}-${row.lost}</span>
-        <span class="standing-pf" title="Points for (differential)">${row.points_for ?? 0} <span class="diff ${diff>=0?'pos':'neg'}">(${diffStr})</span></span>
-        <span class="standing-pts" title="League points">${row.total ?? 0}</span>
-        ${midGameweek ? `<span class="standing-gw" title="Live GW${data.current_event} score">GW${data.current_event}: +${row.event_total ?? 0}</span>` : ''}
-      </div>
-      <div class="standing-detail">
-        <div class="detail-grid">
-          <div><span class="l">Pts For</span><span class="v">${row.points_for ?? 0}</span></div>
-          <div><span class="l">Pts Against</span><span class="v">${row.points_against ?? 0}</span></div>
-          <div><span class="l">Form</span>${formChips(row.form)}</div>
-        </div>
+        <span class="standing-record">${row.won}-${row.drawn}-${row.lost}</span>
+        <span class="standing-pf">${row.points_for ?? 0}${gwBracket}</span>
+        <span class="standing-pts">${row.total ?? 0}</span>
       </div>
     `;
     list.appendChild(item);
   });
+  compactWrap.appendChild(list);
+  panel.appendChild(compactWrap);
 
-  panel.appendChild(list);
+  // ---------- Full table (classic layout) ----------
+  const fullWrap = document.createElement('div');
+  fullWrap.className = 'standings-full';
+  fullWrap.style.display = 'none';
+  const tableInner = document.createElement('div');
+  tableInner.style.cssText = 'overflow-x:auto;';
+  const table = document.createElement('table');
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th></th><th>Team</th><th class="num">W</th><th class="num">D</th>
+        <th class="num">L</th><th class="num">PF</th><th class="num">PA</th><th class="num">Pts</th>
+        <th style="text-align:right;">Form</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${data.standings.map(row => {
+        const classes = [];
+        if(myId != null && String(row.league_entry_id) === String(myId)) classes.push('you');
+        if(row.rank === 1 || row.rank === 2) classes.push('tier-strong');
+        else if(row.rank === 3 || row.rank === 4) classes.push('tier-soft');
+        const medal = row.rank === 1 ? ' \u{1F451}' : (row.rank === lastRank ? ' \u{1F4A9}' : '');
+        return `
+          <tr class="${classes.join(' ')}">
+            <td class="rank">${row.rank ?? '–'}${medal}</td>
+            <td class="team-cell"><div class="name">${row.team_name}</div><div class="manager">${row.manager_name}</div></td>
+            <td class="num">${row.won ?? 0}</td>
+            <td class="num">${row.drawn ?? 0}</td>
+            <td class="num">${row.lost ?? 0}</td>
+            <td class="num">${row.points_for ?? 0}</td>
+            <td class="num">${row.points_against ?? 0}</td>
+            <td class="pts">${row.total ?? 0}</td>
+            <td>${formChips(row.form)}</td>
+          </tr>
+        `;
+      }).join('')}
+    </tbody>
+  `;
+  tableInner.appendChild(table);
+  fullWrap.appendChild(tableInner);
+  panel.appendChild(fullWrap);
 
   const toggleBtn = panel.querySelector('#standings-toggle');
   toggleBtn.addEventListener('click', () => {
-    const open = list.classList.toggle('expanded');
-    toggleBtn.textContent = open ? '– Full table' : '+ Full table';
+    const showFull = fullWrap.style.display === 'none';
+    fullWrap.style.display = showFull ? '' : 'none';
+    compactWrap.style.display = showFull ? 'none' : '';
+    toggleBtn.textContent = showFull ? '– Full table' : '+ Full table';
   });
 
   const legend = document.createElement('p');
@@ -1114,7 +1150,7 @@ function buildFixturesPanel(data){
   panel.innerHTML = `<h2><span class="dot"></span>Fixtures &amp; results</h2>`;
 
   const gwKeys = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
-  let viewMode = 'list'; // 'list' or 'field'
+  let viewMode = 'field'; // 'list' or 'field' - field is the default view
 
   const modeWrap = document.createElement('div');
   modeWrap.className = 'gw-pills';
@@ -1132,10 +1168,10 @@ function buildFixturesPanel(data){
   viewWrap.className = 'gw-pills';
   viewWrap.style.marginBottom = '12px';
   const listBtn = document.createElement('button');
-  listBtn.className = 'gw-pill active';
+  listBtn.className = 'gw-pill';
   listBtn.textContent = 'List view';
   const fieldBtn = document.createElement('button');
-  fieldBtn.className = 'gw-pill';
+  fieldBtn.className = 'gw-pill active';
   fieldBtn.textContent = 'Field view';
   viewWrap.appendChild(listBtn);
   viewWrap.appendChild(fieldBtn);
@@ -1151,7 +1187,7 @@ function buildFixturesPanel(data){
     </select>
   `;
   const listWrap = document.createElement('div');
-  listWrap.className = 'fixture-list';
+  listWrap.className = 'fixture-list field-mode';
 
   function playedCountTag(f, side){
     const squad = f.squads && f.squads[String(side.league_entry_id)];
@@ -1161,26 +1197,31 @@ function buildFixturesPanel(data){
 
   function fieldPlayerCard(p){
     const didNotPlay = p.minutes === 0;
-    const ptsDisplay = didNotPlay ? '–' : p.points;
-    const badges = [];
-    if(p.goals > 0) badges.push(`<span class="field-badge goal">G${p.goals>1?'x'+p.goals:''}</span>`);
-    if(p.assists > 0) badges.push(`<span class="field-badge assist">A${p.assists>1?'x'+p.assists:''}</span>`);
-    if(p.clean_sheet) badges.push(`<span class="field-badge cs">CS</span>`);
-    if(p.defensive_contribution) badges.push(`<span class="field-badge dc">DC</span>`);
-    if(p.bonus > 0) badges.push(`<span class="field-badge bonus">B${p.bonus}</span>`);
-    if(p.yellow_card) badges.push(`<span class="field-badge yellow"></span>`);
-    if(p.red_card) badges.push(`<span class="field-badge red"></span>`);
+    let subLabel;
+    if(didNotPlay && p.opponents && p.opponents.length){
+      subLabel = p.opponents.map(o =>
+        `${o.is_home ? o.opponent.toUpperCase() : o.opponent.toLowerCase()} (${o.is_home ? 'H' : 'A'})`
+      ).join(', ');
+    }else if(didNotPlay){
+      subLabel = '–';
+    }else{
+      subLabel = String(p.points);
+    }
     const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
+    const jerseySvg = `
+      <svg viewBox="0 0 40 40" width="100%" height="100%">
+        <path d="M10 4 L4 10 L8 14 L8 36 L32 36 L32 14 L36 10 L30 4 L26 8 Q20 13 14 8 Z" fill="${p.shirt_color || '#6B7280'}"/>
+      </svg>
+    `;
     return `
       <div class="field-player" title="${p.name}">
-        <div class="field-avatar" style="background:${p.shirt_color || '#6B7280'};">
+        <div class="field-avatar">
           ${p.photo_url ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` : ''}
-          <div class="fallback" style="display:${p.photo_url ? 'none' : 'flex'};">${p.initials || '?'}</div>
+          <div class="fallback" style="display:${p.photo_url ? 'none' : 'flex'};">${jerseySvg}</div>
           ${capTag}
-          ${badges.length ? `<div class="field-badges">${badges.join('')}</div>` : ''}
         </div>
-        <div class="field-name" style="${didNotPlay ? 'opacity:0.6;' : ''}">${p.name}</div>
-        <div class="field-pts">${ptsDisplay}</div>
+        <div class="field-name" style="${didNotPlay ? 'opacity:0.75;' : ''}">${p.name}</div>
+        <div class="field-pts">${subLabel}</div>
       </div>
     `;
   }
@@ -1198,7 +1239,10 @@ function buildFixturesPanel(data){
           ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
             ? `<div class="pitch-row">${rows[pos].map(fieldPlayerCard).join('')}</div>` : '').join('')}
         </div>
-        ${squad.bench.length ? `<div class="squad-bench-label">Subs</div>${byPosition(squad.bench).map(playerRow).join('')}` : ''}
+        ${squad.bench.length ? `
+          <div class="squad-bench-label">Subs</div>
+          <div class="pitch-bench-row">${byPosition(squad.bench).map(fieldPlayerCard).join('')}</div>
+        ` : ''}
       </div>
     `;
   }
