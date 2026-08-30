@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T16:05:54.829419+00:00",
+  "generated_at": "2026-08-30T18:05:45.261393+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -3396,20 +3396,20 @@
                 "initials": "GR",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 7,
+                "base_points": 13,
+                "goals": 1,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
-                "bonus": 0,
+                "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 13
               },
               {
                 "name": "Foden",
@@ -3468,20 +3468,20 @@
                 "initials": "JP",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 7,
+                "base_points": 9,
+                "goals": 1,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
-                "bonus": 0,
+                "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 9
               },
               {
                 "name": "Thiago",
@@ -3492,10 +3492,10 @@
                 "initials": "TH",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3505,7 +3505,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               }
             ],
             "bench": [
@@ -3668,10 +3668,10 @@
                 "initials": "VU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 0,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 7,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3681,7 +3681,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 0
               },
               {
                 "name": "Canvot",
@@ -3716,20 +3716,20 @@
                 "initials": "MU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 11,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 10,
+                "minutes": 90,
                 "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
+                "clean_sheet": true,
+                "defensive_contribution": true,
                 "opponents": [],
-                "bonus": 0,
+                "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 11
               },
               {
                 "name": "Thiaw",
@@ -3764,10 +3764,10 @@
                 "initials": "PA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
+                "base_points": 7,
+                "goals": 1,
                 "assists": 0,
-                "minutes": 7,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3777,7 +3777,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 7
               },
               {
                 "name": "Tavernier",
@@ -3860,10 +3860,10 @@
                 "initials": "BR",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 10,
+                "minutes": 63,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3873,7 +3873,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               }
             ],
             "bench": [
@@ -3934,10 +3934,10 @@
                 "initials": "CA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 13,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -3947,7 +3947,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Kudus",
@@ -4103,10 +4103,10 @@
                 "initials": "MA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 4,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 0,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4116,7 +4116,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 4
               },
               {
                 "name": "S\u00e1vio",
@@ -4151,20 +4151,20 @@
                 "initials": "B.",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
+                "base_points": 23,
+                "goals": 3,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
-                "bonus": 0,
+                "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 23
               },
               {
                 "name": "Wirtz",
@@ -4223,10 +4223,10 @@
                 "initials": "O.",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 29,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4236,7 +4236,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Mateta",
@@ -4273,12 +4273,12 @@
                 "initials": "RO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 6,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 10,
+                "minutes": 90,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
                 "opponents": [],
                 "bonus": 0,
@@ -4286,7 +4286,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 6
               },
               {
                 "name": "Milenkovi\u0107",
@@ -4361,7 +4361,7 @@
                 "points": 0
               }
             ],
-            "played_count": 5,
+            "played_count": 8,
             "squad_size": 11
           },
           "226052": {
@@ -4399,10 +4399,10 @@
                 "initials": "JA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 22,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4412,7 +4412,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Khusanov",
@@ -4447,20 +4447,20 @@
                 "initials": "CO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "bonus": 0,
-                "yellow_card": false,
+                "yellow_card": true,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Hall",
@@ -4495,20 +4495,20 @@
                 "initials": "MB",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
+                "base_points": 11,
+                "goals": 1,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
-                "bonus": 0,
-                "yellow_card": false,
+                "bonus": 2,
+                "yellow_card": true,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 11
               },
               {
                 "name": "Cherki",
@@ -4729,7 +4729,7 @@
                 "points": 0
               }
             ],
-            "played_count": 7,
+            "played_count": 9,
             "squad_size": 11
           }
         }
@@ -4906,10 +4906,10 @@
                 "initials": "RO",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 5,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 7,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4919,7 +4919,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 5
               },
               {
                 "name": "Wilson",
@@ -4930,10 +4930,10 @@
                 "initials": "WI",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 45,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -4943,7 +4943,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Barry",
@@ -5022,16 +5022,16 @@
               {
                 "name": "Martinez",
                 "position": "GKP",
-                "club": "AVL",
+                "club": "CHE",
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/98980.png",
-                "shirt_color": "#670E36",
+                "shirt_color": "#034694",
                 "initials": "MA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5041,7 +5041,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 2
               },
               {
                 "name": "Rashford",
@@ -5052,10 +5052,10 @@
                 "initials": "RA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 79,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5065,7 +5065,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 2
               },
               {
                 "name": "Sarr",
@@ -5116,7 +5116,7 @@
                 "points": 0
               }
             ],
-            "played_count": 9,
+            "played_count": 10,
             "squad_size": 11
           },
           "183812": {
@@ -5130,10 +5130,10 @@
                 "initials": "TR",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5143,7 +5143,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Virgil",
@@ -5370,10 +5370,10 @@
                 "initials": "\u0160E",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 10,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5383,7 +5383,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               }
             ],
             "bench": [
@@ -5444,20 +5444,20 @@
                 "initials": "M.",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 4,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 4
               },
               {
                 "name": "Rice",
@@ -5484,7 +5484,7 @@
                 "points": 0
               }
             ],
-            "played_count": 6,
+            "played_count": 7,
             "squad_size": 11
           }
         }
@@ -5517,10 +5517,10 @@
                 "initials": "KE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5530,7 +5530,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               },
               {
                 "name": "Gabriel",
@@ -5568,7 +5568,7 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 7,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5616,7 +5616,7 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 45,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5661,20 +5661,20 @@
                 "initials": "ST",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 4,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
-                "defensive_contribution": false,
+                "defensive_contribution": true,
                 "opponents": [],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 4
               },
               {
                 "name": "Saka",
@@ -5831,10 +5831,10 @@
                 "initials": "NE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
+                "base_points": 7,
+                "goals": 1,
                 "assists": 0,
-                "minutes": 7,
+                "minutes": 67,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5844,7 +5844,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 7
               },
               {
                 "name": "Emersonn",
@@ -5855,10 +5855,10 @@
                 "initials": "EM",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 45,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5868,7 +5868,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               }
             ],
             "played_count": 7,
@@ -5885,10 +5885,10 @@
                 "initials": "LA",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5898,7 +5898,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 2
               },
               {
                 "name": "Calafiori",
@@ -5933,10 +5933,10 @@
                 "initials": "SH",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 72,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -5946,7 +5946,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 2
               },
               {
                 "name": "Matheus N.",
@@ -6005,20 +6005,20 @@
                 "initials": "CU",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 9,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 0,
+                "assists": 2,
+                "minutes": 79,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
-                "bonus": 0,
+                "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 9
               },
               {
                 "name": "Ndiaye",
@@ -6053,10 +6053,10 @@
                 "initials": "EF",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 10,
+                "minutes": 89,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -6066,7 +6066,7 @@
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Kluivert",
@@ -6101,20 +6101,20 @@
                 "initials": "CL",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
+                "base_points": 8,
+                "goals": 1,
                 "assists": 0,
-                "minutes": 9,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "opponents": [],
-                "bonus": 0,
+                "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 8
               },
               {
                 "name": "Woltemade",
@@ -6151,10 +6151,10 @@
                 "initials": "LE",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 10,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -6164,7 +6164,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Wood",
@@ -6199,10 +6199,10 @@
                 "initials": "DC",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 0,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 7,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
@@ -6212,7 +6212,7 @@
                 "red_card": false,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 0
               },
               {
                 "name": "Palestra",
@@ -6239,7 +6239,7 @@
                 "points": 0
               }
             ],
-            "played_count": 6,
+            "played_count": 9,
             "squad_size": 11
           }
         }
@@ -9021,7 +9021,7 @@
       "player_name": "B.Fernandes",
       "position": "MID",
       "club": "MUN",
-      "season_points": 2
+      "season_points": 25
     },
     {
       "round": 1,
@@ -9034,7 +9034,7 @@
       "player_name": "Palmer",
       "position": "MID",
       "club": "CHE",
-      "season_points": 14
+      "season_points": 20
     },
     {
       "round": 1,
@@ -9060,7 +9060,7 @@
       "player_name": "Jo\u00e3o Pedro",
       "position": "FWD",
       "club": "CHE",
-      "season_points": 12
+      "season_points": 20
     },
     {
       "round": 1,
@@ -9112,7 +9112,7 @@
       "player_name": "Mbeumo",
       "position": "MID",
       "club": "MUN",
-      "season_points": 2
+      "season_points": 13
     },
     {
       "round": 2,
@@ -9138,7 +9138,7 @@
       "player_name": "Cunha",
       "position": "MID",
       "club": "MUN",
-      "season_points": 2
+      "season_points": 11
     },
     {
       "round": 2,
@@ -9151,7 +9151,7 @@
       "player_name": "Thiago",
       "position": "FWD",
       "club": "BRE",
-      "season_points": 1
+      "season_points": 2
     },
     {
       "round": 2,
@@ -9216,7 +9216,7 @@
       "player_name": "Rogers",
       "position": "MID",
       "club": "CHE",
-      "season_points": 9
+      "season_points": 13
     },
     {
       "round": 3,
@@ -9242,7 +9242,7 @@
       "player_name": "Brobbey",
       "position": "FWD",
       "club": "SUN",
-      "season_points": 3
+      "season_points": 4
     },
     {
       "round": 3,
@@ -9346,7 +9346,7 @@
       "player_name": "Calvert-Lewin",
       "position": "FWD",
       "club": "LEE",
-      "season_points": 2
+      "season_points": 9
     },
     {
       "round": 4,
@@ -9411,7 +9411,7 @@
       "player_name": "Wilson",
       "position": "MID",
       "club": "LEE",
-      "season_points": 3
+      "season_points": 4
     },
     {
       "round": 5,
@@ -9463,7 +9463,7 @@
       "player_name": "\u0160e\u0161ko",
       "position": "FWD",
       "club": "MUN",
-      "season_points": 1
+      "season_points": 2
     },
     {
       "round": 5,
@@ -9502,7 +9502,7 @@
       "player_name": "Neto",
       "position": "MID",
       "club": "CHE",
-      "season_points": 2
+      "season_points": 8
     },
     {
       "round": 5,
@@ -9554,7 +9554,7 @@
       "player_name": "Shaw",
       "position": "DEF",
       "club": "MUN",
-      "season_points": 1
+      "season_points": 3
     },
     {
       "round": 6,
@@ -9593,7 +9593,7 @@
       "player_name": "Caicedo",
       "position": "MID",
       "club": "CHE",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 6,
@@ -9645,7 +9645,7 @@
       "player_name": "O.Dango",
       "position": "MID",
       "club": "BRE",
-      "season_points": 3
+      "season_points": 4
     },
     {
       "round": 7,
@@ -9736,7 +9736,7 @@
       "player_name": "James",
       "position": "DEF",
       "club": "CHE",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 8,
@@ -9775,7 +9775,7 @@
       "player_name": "Gro\u00df",
       "position": "MID",
       "club": "BHA",
-      "season_points": 3
+      "season_points": 15
     },
     {
       "round": 8,
@@ -9840,7 +9840,7 @@
       "player_name": "Rashford",
       "position": "MID",
       "club": "MUN",
-      "season_points": 1
+      "season_points": 3
     },
     {
       "round": 9,
@@ -9905,7 +9905,7 @@
       "player_name": "E.Le F\u00e9e",
       "position": "MID",
       "club": "SUN",
-      "season_points": 3
+      "season_points": 5
     },
     {
       "round": 9,
@@ -9970,7 +9970,7 @@
       "player_name": "Lammens",
       "position": "GKP",
       "club": "MUN",
-      "season_points": 1
+      "season_points": 3
     },
     {
       "round": 10,
@@ -10009,7 +10009,7 @@
       "player_name": "Vuskovic",
       "position": "DEF",
       "club": "BHA",
-      "season_points": 7
+      "season_points": 6
     },
     {
       "round": 10,
@@ -10074,7 +10074,7 @@
       "player_name": "Mukiele",
       "position": "DEF",
       "club": "SUN",
-      "season_points": 1
+      "season_points": 11
     },
     {
       "round": 11,
@@ -10126,7 +10126,7 @@
       "player_name": "Stach",
       "position": "MID",
       "club": "LEE",
-      "season_points": 14
+      "season_points": 17
     },
     {
       "round": 11,
@@ -10139,7 +10139,7 @@
       "player_name": "Collins",
       "position": "DEF",
       "club": "BRE",
-      "season_points": 7
+      "season_points": 9
     },
     {
       "round": 12,
@@ -10191,7 +10191,7 @@
       "player_name": "Gonzalo",
       "position": "FWD",
       "club": "FUL",
-      "season_points": 7
+      "season_points": 8
     },
     {
       "round": 12,
@@ -10230,7 +10230,7 @@
       "player_name": "Kostoulas",
       "position": "FWD",
       "club": "BHA",
-      "season_points": 2
+      "season_points": 6
     },
     {
       "round": 12,
@@ -10308,7 +10308,7 @@
       "player_name": "Muharemovi\u0107",
       "position": "DEF",
       "club": "LEE",
-      "season_points": 7
+      "season_points": 10
     },
     {
       "round": 13,
@@ -10334,7 +10334,7 @@
       "player_name": "Kelleher",
       "position": "GKP",
       "club": "BRE",
-      "season_points": 8
+      "season_points": 9
     },
     {
       "round": 13,
@@ -10438,7 +10438,7 @@
       "player_name": "Maguire",
       "position": "DEF",
       "club": "MUN",
-      "season_points": 1
+      "season_points": 5
     },
     {
       "round": 14,
@@ -10450,8 +10450,8 @@
       "manager_name": "",
       "player_name": "Martinez",
       "position": "GKP",
-      "club": "AVL",
-      "season_points": 0
+      "club": "CHE",
+      "season_points": 2
     },
     {
       "round": 15,
@@ -10477,7 +10477,7 @@
       "player_name": "Roefs",
       "position": "GKP",
       "club": "SUN",
-      "season_points": 2
+      "season_points": 7
     },
     {
       "round": 15,
@@ -10503,7 +10503,7 @@
       "player_name": "Trafford",
       "position": "GKP",
       "club": "LEE",
-      "season_points": 10
+      "season_points": 12
     },
     {
       "round": 15,
@@ -10529,7 +10529,7 @@
       "player_name": "Leno",
       "position": "GKP",
       "club": "FUL",
-      "season_points": 3
+      "season_points": 5
     },
     {
       "round": 15,
@@ -10917,20 +10917,20 @@
           "initials": "GR",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 7,
+          "base_points": 13,
+          "goals": 1,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
-          "bonus": 0,
+          "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 13
         },
         {
           "name": "Foden",
@@ -10989,20 +10989,20 @@
           "initials": "JP",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 7,
+          "base_points": 9,
+          "goals": 1,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
-          "bonus": 0,
+          "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 9
         },
         {
           "name": "Thiago",
@@ -11013,10 +11013,10 @@
           "initials": "TH",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11026,7 +11026,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         }
       ],
       "bench": [
@@ -11189,10 +11189,10 @@
           "initials": "VU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 0,
           "goals": 0,
           "assists": 0,
-          "minutes": 7,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11202,7 +11202,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 0
         },
         {
           "name": "Canvot",
@@ -11237,20 +11237,20 @@
           "initials": "MU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 11,
           "goals": 0,
           "assists": 0,
-          "minutes": 10,
+          "minutes": 90,
           "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
+          "clean_sheet": true,
+          "defensive_contribution": true,
           "opponents": [],
-          "bonus": 0,
+          "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 11
         },
         {
           "name": "Thiaw",
@@ -11285,10 +11285,10 @@
           "initials": "PA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
+          "base_points": 7,
+          "goals": 1,
           "assists": 0,
-          "minutes": 7,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11298,7 +11298,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 7
         },
         {
           "name": "Tavernier",
@@ -11381,10 +11381,10 @@
           "initials": "BR",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 10,
+          "minutes": 63,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11394,7 +11394,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         }
       ],
       "bench": [
@@ -11455,10 +11455,10 @@
           "initials": "CA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 13,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11468,7 +11468,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Kudus",
@@ -11605,10 +11605,10 @@
           "initials": "MA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 4,
           "goals": 0,
-          "assists": 0,
-          "minutes": 0,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11618,7 +11618,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 4
         },
         {
           "name": "S\u00e1vio",
@@ -11653,20 +11653,20 @@
           "initials": "B.",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
+          "base_points": 23,
+          "goals": 3,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
-          "bonus": 0,
+          "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 23
         },
         {
           "name": "Wirtz",
@@ -11725,10 +11725,10 @@
           "initials": "O.",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 29,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11738,7 +11738,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Mateta",
@@ -11775,12 +11775,12 @@
           "initials": "RO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 6,
           "goals": 0,
           "assists": 0,
-          "minutes": 10,
+          "minutes": 90,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
           "opponents": [],
           "bonus": 0,
@@ -11788,7 +11788,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 6
         },
         {
           "name": "Milenkovi\u0107",
@@ -11863,7 +11863,7 @@
           "points": 0
         }
       ],
-      "played_count": 5,
+      "played_count": 8,
       "squad_size": 11
     },
     "226052": {
@@ -11901,10 +11901,10 @@
           "initials": "JA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 22,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -11914,7 +11914,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Khusanov",
@@ -11949,20 +11949,20 @@
           "initials": "CO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "bonus": 0,
-          "yellow_card": false,
+          "yellow_card": true,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Hall",
@@ -11997,20 +11997,20 @@
           "initials": "MB",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
+          "base_points": 11,
+          "goals": 1,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
-          "bonus": 0,
-          "yellow_card": false,
+          "bonus": 2,
+          "yellow_card": true,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 11
         },
         {
           "name": "Cherki",
@@ -12231,7 +12231,7 @@
           "points": 0
         }
       ],
-      "played_count": 7,
+      "played_count": 9,
       "squad_size": 11
     },
     "27143": {
@@ -12389,10 +12389,10 @@
           "initials": "RO",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 5,
           "goals": 0,
-          "assists": 0,
-          "minutes": 7,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12402,7 +12402,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 5
         },
         {
           "name": "Wilson",
@@ -12413,10 +12413,10 @@
           "initials": "WI",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 45,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12426,7 +12426,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Barry",
@@ -12505,16 +12505,16 @@
         {
           "name": "Martinez",
           "position": "GKP",
-          "club": "AVL",
+          "club": "CHE",
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/98980.png",
-          "shirt_color": "#670E36",
+          "shirt_color": "#034694",
           "initials": "MA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12524,7 +12524,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 2
         },
         {
           "name": "Rashford",
@@ -12535,10 +12535,10 @@
           "initials": "RA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 79,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12548,7 +12548,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 2
         },
         {
           "name": "Sarr",
@@ -12599,7 +12599,7 @@
           "points": 0
         }
       ],
-      "played_count": 9,
+      "played_count": 10,
       "squad_size": 11
     },
     "183812": {
@@ -12613,10 +12613,10 @@
           "initials": "TR",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12626,7 +12626,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Virgil",
@@ -12853,10 +12853,10 @@
           "initials": "\u0160E",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 10,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12866,7 +12866,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         }
       ],
       "bench": [
@@ -12927,20 +12927,20 @@
           "initials": "M.",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 4,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 4
         },
         {
           "name": "Rice",
@@ -12967,7 +12967,7 @@
           "points": 0
         }
       ],
-      "played_count": 6,
+      "played_count": 7,
       "squad_size": 11
     },
     "27145": {
@@ -12981,10 +12981,10 @@
           "initials": "KE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -12994,7 +12994,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         },
         {
           "name": "Gabriel",
@@ -13032,7 +13032,7 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 7,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13080,7 +13080,7 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 45,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13125,20 +13125,20 @@
           "initials": "ST",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 4,
           "goals": 0,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
-          "defensive_contribution": false,
+          "defensive_contribution": true,
           "opponents": [],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 4
         },
         {
           "name": "Saka",
@@ -13295,10 +13295,10 @@
           "initials": "NE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
+          "base_points": 7,
+          "goals": 1,
           "assists": 0,
-          "minutes": 7,
+          "minutes": 67,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13308,7 +13308,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 7
         },
         {
           "name": "Emersonn",
@@ -13319,10 +13319,10 @@
           "initials": "EM",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 45,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13332,7 +13332,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         }
       ],
       "played_count": 7,
@@ -13349,10 +13349,10 @@
           "initials": "LA",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13362,7 +13362,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 2
         },
         {
           "name": "Calafiori",
@@ -13397,10 +13397,10 @@
           "initials": "SH",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 72,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13410,7 +13410,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 2
         },
         {
           "name": "Matheus N.",
@@ -13469,20 +13469,20 @@
           "initials": "CU",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 9,
           "goals": 0,
-          "assists": 0,
-          "minutes": 0,
+          "assists": 2,
+          "minutes": 79,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
-          "bonus": 0,
+          "bonus": 1,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 9
         },
         {
           "name": "Ndiaye",
@@ -13517,10 +13517,10 @@
           "initials": "EF",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 10,
+          "minutes": 89,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13530,7 +13530,7 @@
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Kluivert",
@@ -13565,20 +13565,20 @@
           "initials": "CL",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
+          "base_points": 8,
+          "goals": 1,
           "assists": 0,
-          "minutes": 9,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
           "opponents": [],
-          "bonus": 0,
+          "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 8
         },
         {
           "name": "Woltemade",
@@ -13615,10 +13615,10 @@
           "initials": "LE",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 10,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13628,7 +13628,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Wood",
@@ -13663,10 +13663,10 @@
           "initials": "DC",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 0,
           "goals": 0,
           "assists": 0,
-          "minutes": 7,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
@@ -13676,7 +13676,7 @@
           "red_card": false,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 0
         },
         {
           "name": "Palestra",
@@ -13703,7 +13703,7 @@
           "points": 0
         }
       ],
-      "played_count": 6,
+      "played_count": 9,
       "squad_size": 11
     }
   }
