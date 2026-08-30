@@ -258,6 +258,10 @@
   .fixture-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;}
   .fixture-list.field-mode{grid-template-columns:1fr;gap:14px;}
   .fixture-card-field{padding:14px;}
+  @media (max-width:480px){
+    .fixture-card-field{padding:10px 6px;}
+    .pitch-container{gap:6px;}
+  }
 
   /* ---------- Field view ---------- */
   .matchup-wrap{max-width:640px;margin:0 auto;}
@@ -298,26 +302,35 @@
       radial-gradient(120% 70% at 50% 0%, rgba(60,220,150,0.18), transparent 60%),
       repeating-linear-gradient(0deg, #1E6B3C, #1E6B3C 22px, #237D46 22px, #237D46 44px);
     box-shadow:inset 0 0 40px rgba(0,0,0,0.25);
-    border-radius:10px;padding:10px 4px;
+    border-radius:10px;padding:10px 2px;
   }
   .pitch-lines{position:absolute;inset:0;width:100%;height:100%;}
   .pitch-rows{
     position:relative;z-index:1;height:100%;
-    display:flex;flex-direction:column;justify-content:space-around;gap:8px;
+    display:flex;flex-direction:column;justify-content:space-around;gap:4px;
   }
-  .pitch-row{display:flex;justify-content:space-evenly;flex-wrap:wrap;gap:4px;}
+  /* nowrap is deliberate: a formation row must always fit on one line -
+     wrapping (e.g. a 5-man defence overflowing to 2 lines) breaks the
+     fixed vertical spacing between GKP/DEF/MID/FWD and causes real visual
+     collisions further down the pitch. Cards shrink via min-width:0 on
+     .field-player instead of ever wrapping. */
+  .pitch-row{display:flex;justify-content:space-evenly;flex-wrap:nowrap;gap:2px;}
   .pitch-bench-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:8px;}
   /* Bench sits on the normal panel background, not the green pitch, so it
      needs theme-aware text instead of the pill styling tuned for turf. */
   .pitch-bench-row .field-pill{background:var(--card);border:1px solid var(--line);}
   .pitch-bench-row .field-name{color:var(--chalk);}
   .pitch-bench-row .field-pts{color:var(--chalk-dim);}
-  .field-player{display:flex;flex-direction:column;align-items:center;width:56px;}
+  .field-player{
+    display:flex;flex-direction:column;align-items:center;
+    flex:1 1 0;min-width:0;max-width:64px;
+  }
   .field-photo{
-    position:relative;width:44px;height:44px;display:flex;align-items:flex-end;justify-content:center;
+    position:relative;width:100%;max-width:44px;aspect-ratio:1/1;
+    display:flex;align-items:flex-end;justify-content:center;
   }
   .field-photo img{width:100%;height:auto;max-height:100%;object-fit:contain;display:block;}
-  .field-jersey-fallback{width:36px;height:36px;}
+  .field-jersey-fallback{width:82%;aspect-ratio:1/1;}
   .field-cap{
     position:absolute;top:-2px;left:-2px;background:var(--amber);color:#fff;
     font-size:8px;font-weight:800;border-radius:50%;width:14px;height:14px;
