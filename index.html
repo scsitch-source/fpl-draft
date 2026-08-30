@@ -1400,30 +1400,6 @@ function buildFixturesPanel(data){
     pillsWrap.appendChild(pill);
   });
 
-  function rerenderCurrent(){
-    if(byTeamBtn.classList.contains('active')){
-      renderTeam(teamSelectWrap.querySelector('select').value);
-    }else{
-      const activePill = pillsWrap.querySelector('.gw-pill.active') || pillsWrap.firstElementChild;
-      if(activePill) renderGw(Number(activePill.textContent.replace('GW ', '')));
-    }
-  }
-
-  listBtn.addEventListener('click', () => {
-    viewMode = 'list';
-    listBtn.classList.add('active');
-    fieldBtn.classList.remove('active');
-    listWrap.classList.remove('field-mode');
-    rerenderCurrent();
-  });
-  fieldBtn.addEventListener('click', () => {
-    viewMode = 'field';
-    fieldBtn.classList.add('active');
-    listBtn.classList.remove('active');
-    listWrap.classList.add('field-mode');
-    rerenderCurrent();
-  });
-
   byGwBtn.addEventListener('click', () => {
     byGwBtn.classList.add('active');
     byTeamBtn.classList.remove('active');
