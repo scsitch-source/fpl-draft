@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T22:05:44.601060+00:00",
+  "generated_at": "2026-08-30T00:07:11.279153+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -3850,7 +3850,7 @@
                 "club": "NEW",
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 7,
+                "base_points": 8,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 81,
@@ -3860,7 +3860,7 @@
                 "opponents": [],
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 7
+                "points": 8
               }
             ],
             "bench": [
@@ -8778,7 +8778,7 @@
       "player_name": "Wissa",
       "position": "FWD",
       "club": "NEW",
-      "season_points": 11
+      "season_points": 12
     },
     {
       "round": 13,
@@ -10597,7 +10597,7 @@
           "club": "NEW",
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 7,
+          "base_points": 8,
           "goals": 1,
           "assists": 0,
           "minutes": 81,
@@ -10607,7 +10607,7 @@
           "opponents": [],
           "subbed_out": false,
           "multiplier": 1,
-          "points": 7
+          "points": 8
         }
       ],
       "bench": [
