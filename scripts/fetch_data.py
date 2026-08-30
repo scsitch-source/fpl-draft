@@ -486,6 +486,8 @@ def build():
                 "bonus": stats.get("bonus", 0),
                 "yellow_cards": stats.get("yellow_cards", 0),
                 "red_cards": stats.get("red_cards", 0),
+                "own_goals": stats.get("own_goals", 0),
+                "goals_conceded": stats.get("goals_conceded", 0),
             }
 
         if isinstance(elements, dict):
@@ -542,7 +544,8 @@ def build():
                 is_starting = multiplier > 0
             stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
                                           "clean_sheets": 0, "defensive_contribution": 0,
-                                          "bonus": 0, "yellow_cards": 0, "red_cards": 0})
+                                          "bonus": 0, "yellow_cards": 0, "red_cards": 0,
+                                          "own_goals": 0, "goals_conceded": 0})
             row = {
                 "name": info["name"],
                 "position": info["position"],
@@ -556,13 +559,26 @@ def build():
                 "goals": stat["goals"],
                 "assists": stat["assists"],
                 "minutes": stat["minutes"],
-                "match_finished": club_finished_by_event.get(ev, {}).get(info.get("club_id"), False),
+                # For a gameweek that's fully in the past, the whole real-world
+                # round is definitely over regardless of which club a player
+                # is CURRENTLY registered to - so trust that instead of doing
+                # a club-based fixture lookup, which breaks for anyone who's
+                # transferred clubs since that gameweek (we'd otherwise check
+                # their new club's fixture, not the one they actually played
+                # in). Only the still-in-progress current gameweek needs the
+                # real per-club lookup, since transfers don't happen mid-week.
+                "match_finished": (
+                    True if (current_event is not None and ev < current_event)
+                    else club_finished_by_event.get(ev, {}).get(info.get("club_id"), False)
+                ),
                 "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF"),
                 "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), info["position"]),
                 "opponents": club_opponent_by_event.get(ev, {}).get(info.get("club_id"), []),
                 "bonus": stat.get("bonus", 0) or 0,
                 "yellow_card": bool(stat.get("yellow_cards")),
                 "red_card": bool(stat.get("red_cards")),
+                "own_goals": stat.get("own_goals", 0) or 0,
+                "goals_conceded": stat.get("goals_conceded", 0) or 0,
             }
             (raw_starting if is_starting else raw_bench).append(row)
 
