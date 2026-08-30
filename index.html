@@ -260,19 +260,19 @@
   .fixture-card-field{padding:14px;}
 
   /* ---------- Field view ---------- */
-  .pitch-container{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px;}
+  .pitch-container{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:6px auto 0;max-width:640px;}
   @media (max-width:640px){ .pitch-container{grid-template-columns:1fr;} }
   .pitch-col{min-width:0;}
   .pitch-team-label{
     font-size:12px;font-weight:700;text-align:center;margin-bottom:6px;color:var(--chalk);
   }
   .pitch{
-    position:relative;overflow:hidden;
+    position:relative;overflow:hidden;aspect-ratio:1/2;
     background:
       radial-gradient(120% 70% at 50% 0%, rgba(60,220,150,0.18), transparent 60%),
       repeating-linear-gradient(0deg, #1E6B3C, #1E6B3C 22px, #237D46 22px, #237D46 44px);
     box-shadow:inset 0 0 40px rgba(0,0,0,0.25);
-    border-radius:10px;padding:10px 4px;min-height:220px;
+    border-radius:10px;padding:10px 4px;
   }
   .pitch-lines{position:absolute;inset:0;width:100%;height:100%;}
   .pitch-rows{
@@ -281,6 +281,10 @@
   }
   .pitch-row{display:flex;justify-content:space-evenly;flex-wrap:wrap;gap:4px;}
   .pitch-bench-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:8px;}
+  /* Bench sits on the normal panel background, not the green pitch, so it
+     needs theme-aware text instead of the white/amber tuned for turf. */
+  .pitch-bench-row .field-name{color:var(--chalk);text-shadow:none;}
+  .pitch-bench-row .field-pts{color:var(--chalk-dim);text-shadow:none;}
   .field-player{display:flex;flex-direction:column;align-items:center;width:54px;}
   .field-avatar{
     width:38px;height:38px;border-radius:8px;overflow:hidden;position:relative;
@@ -775,7 +779,7 @@ function buildStandingsPanel(data, myId){
     <div class="standing-header">
       <span></span><span>Team</span>
       <span title="Won-Drawn-Lost">W-D-L</span>
-      <span title="Total points scored this season, with this gameweek's live score in brackets">Pts${midGameweek ? ' (this GW)' : ''}</span>
+      <span title="Total points, including this gameweek's live score so far">Pts</span>
       <span title="League points">League</span>
     </div>
   `;
@@ -789,7 +793,11 @@ function buildStandingsPanel(data, myId){
     else if(row.rank === 3 || row.rank === 4) classes.push('tier-soft');
     const medal = row.rank === 1 ? ' \u{1F451}' : (row.rank === lastRank ? ' \u{1F4A9}' : '');
     const gwScore = row.current_gw_score;
-    const gwBracket = (midGameweek && gwScore != null) ? ` <span class="diff pos">(+${gwScore})</span>` : '';
+    const showGwBracket = midGameweek && gwScore != null;
+    // Fold this gameweek's live score into the headline total once it's
+    // underway, but still flag it separately in the green bracket.
+    const displayTotal = (row.points_for ?? 0) + (showGwBracket ? gwScore : 0);
+    const gwBracket = showGwBracket ? ` <span class="diff pos">(+${gwScore})</span>` : '';
 
     const item = document.createElement('div');
     item.className = classes.join(' ');
@@ -801,7 +809,7 @@ function buildStandingsPanel(data, myId){
           <div class="manager">${row.manager_name}</div>
         </div>
         <span class="standing-record">${row.won}-${row.drawn}-${row.lost}</span>
-        <span class="standing-pf">${row.points_for ?? 0}${gwBracket}</span>
+        <span class="standing-pf">${displayTotal}${gwBracket}</span>
         <span class="standing-pts">${row.total ?? 0}</span>
       </div>
     `;
@@ -1240,7 +1248,7 @@ function buildSquadsPanel(data){
 
   function render(mode){
     grid.style.cssText = mode === 'field'
-      ? `display:grid;grid-template-columns:repeat(${ranked.length},minmax(150px,1fr));gap:12px;`
+      ? `display:grid;grid-template-columns:repeat(${ranked.length},minmax(300px,1fr));gap:12px;`
       : `display:grid;grid-template-columns:repeat(${ranked.length},minmax(160px,1fr));gap:14px;`;
     grid.innerHTML = ranked.map(r => {
       const squad = squads[String(r.league_entry_id)];
