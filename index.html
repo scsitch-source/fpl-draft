@@ -267,9 +267,17 @@
     font-size:12px;font-weight:700;text-align:center;margin-bottom:6px;color:var(--chalk);
   }
   .pitch{
-    background:repeating-linear-gradient(0deg, #2E7D46, #2E7D46 22px, #34874C 22px, #34874C 44px);
-    border-radius:10px;padding:10px 4px;display:flex;flex-direction:column;justify-content:space-around;gap:8px;
-    min-height:220px;
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(120% 70% at 50% 0%, rgba(60,220,150,0.18), transparent 60%),
+      repeating-linear-gradient(0deg, #1E6B3C, #1E6B3C 22px, #237D46 22px, #237D46 44px);
+    box-shadow:inset 0 0 40px rgba(0,0,0,0.25);
+    border-radius:10px;padding:10px 4px;min-height:220px;
+  }
+  .pitch-lines{position:absolute;inset:0;width:100%;height:100%;}
+  .pitch-rows{
+    position:relative;z-index:1;height:100%;
+    display:flex;flex-direction:column;justify-content:space-around;gap:8px;
   }
   .pitch-row{display:flex;justify-content:space-evenly;flex-wrap:wrap;gap:4px;}
   .pitch-bench-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:8px;}
@@ -328,6 +336,8 @@
   }
   .squad-expand{display:none;margin-top:10px;}
   .squad-expand.open{display:block;}
+  .dual-expand{display:flex;gap:12px;}
+  .fixture-card-expanded{grid-column:1 / -1;}
   .squad-grid{
     display:grid;grid-template-columns:1fr 1fr;gap:14px;
     border-top:1px solid var(--line);padding-top:10px;
@@ -944,11 +954,11 @@ function playerRow(p){
   if(p.red_card) icons.push(`<span class="stat-icon red" title="Red card">&#9632;</span>`);
   const colors = POSITION_COLORS[p.position] || { bg: 'transparent', dot: 'var(--chalk-dim)' };
   const didNotPlay = p.minutes === 0;
-  const ptsDisplay = didNotPlay ? '&ndash;' : p.points;
-  // Only show the upcoming-opponent tag if they haven't played yet -
-  // once real stats exist there's no need for a fixture preview.
+  const ptsDisplay = didNotPlay ? (p.match_finished ? 'DNP' : '&ndash;') : p.points;
+  // Only show the upcoming-opponent tag if they haven't played yet AND their
+  // match hasn't finished - once it's over, "DNP" (above) says it plainly.
   let oppTag = '';
-  if(didNotPlay && p.opponents && p.opponents.length){
+  if(didNotPlay && !p.match_finished && p.opponents && p.opponents.length){
     oppTag = p.opponents.map(o => {
       const code = o.is_home ? o.opponent.toUpperCase() : o.opponent.toLowerCase();
       return `<span class="opp-tag" title="${o.is_home ? 'Home' : 'Away'} vs ${o.opponent}">${code}</span>`;
@@ -1114,6 +1124,87 @@ function buildPrizesPanel(data){
   return panel;
 }
 
+function fieldPlayerCard(p){
+  const didNotPlay = p.minutes === 0;
+  let subLabel;
+  if(didNotPlay && !p.match_finished && p.opponents && p.opponents.length){
+    // Hasn't kicked off yet - show their upcoming fixture instead of a blank dash.
+    subLabel = p.opponents.map(o =>
+      `${o.is_home ? o.opponent.toUpperCase() : o.opponent.toLowerCase()} (${o.is_home ? 'H' : 'A'})`
+    ).join(', ');
+  }else if(didNotPlay && p.match_finished){
+    // Match is over and they genuinely didn't feature.
+    subLabel = 'DNP';
+  }else if(didNotPlay){
+    subLabel = '–';
+  }else{
+    subLabel = String(p.points);
+  }
+  const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
+  const jerseySvg = `
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <path d="M10 4 L4 10 L8 14 L8 36 L32 36 L32 14 L36 10 L30 4 L26 8 Q20 13 14 8 Z" fill="${p.shirt_color || '#6B7280'}"/>
+    </svg>
+  `;
+  return `
+    <div class="field-player" title="${p.name}">
+      <div class="field-avatar">
+        ${p.photo_url ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` : ''}
+        <div class="fallback" style="display:${p.photo_url ? 'none' : 'flex'};">${jerseySvg}</div>
+        ${capTag}
+      </div>
+      <div class="field-name" style="${didNotPlay ? 'opacity:0.75;' : ''}">${p.name}</div>
+      <div class="field-pts">${subLabel}</div>
+    </div>
+  `;
+}
+
+const PITCH_LINES_SVG = `
+  <svg class="pitch-lines" viewBox="0 0 100 200" preserveAspectRatio="none">
+    <rect x="2" y="2" width="96" height="196" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <line x1="2" y1="100" x2="98" y2="100" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <circle cx="50" cy="100" r="16" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <circle cx="50" cy="100" r="1.2" fill="rgba(255,255,255,0.32)"/>
+    <rect x="25" y="2" width="50" height="20" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <rect x="38" y="2" width="24" height="8" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <rect x="25" y="178" width="50" height="20" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+    <rect x="38" y="190" width="24" height="8" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1"/>
+  </svg>
+`;
+
+function pitchColumn(teamName, squad){
+  if(!squad){
+    return `<div class="pitch-col"><div class="pitch-team-label">${teamName}</div><p style="color:rgba(255,255,255,0.7);font-size:12px;text-align:center;">No squad data yet.</p></div>`;
+  }
+  const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
+  squad.starting.forEach(p => { (rows[p.position] || rows.MID).push(p); });
+  return `
+    <div class="pitch-col">
+      <div class="pitch-team-label">${teamName}</div>
+      <div class="pitch">
+        ${PITCH_LINES_SVG}
+        <div class="pitch-rows">
+          ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
+            ? `<div class="pitch-row">${rows[pos].map(fieldPlayerCard).join('')}</div>` : '').join('')}
+        </div>
+      </div>
+      ${squad.bench.length ? `
+        <div class="squad-bench-label">Subs</div>
+        <div class="pitch-bench-row">${byPosition(squad.bench).map(fieldPlayerCard).join('')}</div>
+      ` : ''}
+    </div>
+  `;
+}
+
+function fieldMatchup(f){
+  return `
+    <div class="pitch-container">
+      ${pitchColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
+      ${pitchColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+    </div>
+  `;
+}
+
 function buildSquadsPanel(data){
   const panel = document.createElement('div');
   panel.className = 'panel';
@@ -1128,18 +1219,46 @@ function buildSquadsPanel(data){
     return panel;
   }
 
+  const viewWrap = document.createElement('div');
+  viewWrap.className = 'gw-pills';
+  viewWrap.style.marginBottom = '12px';
+  const fieldBtn = document.createElement('button');
+  fieldBtn.className = 'gw-pill active';
+  fieldBtn.textContent = 'Field view';
+  const listBtn = document.createElement('button');
+  listBtn.className = 'gw-pill';
+  listBtn.textContent = 'List view';
+  viewWrap.appendChild(fieldBtn);
+  viewWrap.appendChild(listBtn);
+  panel.appendChild(viewWrap);
+
   const wrap = document.createElement('div');
   wrap.style.cssText = 'overflow-x:auto;';
   const grid = document.createElement('div');
-  grid.style.cssText = `display:grid;grid-template-columns:repeat(${ranked.length},minmax(160px,1fr));gap:14px;`;
-  grid.innerHTML = ranked.map(r => {
-    const squad = squads[String(r.league_entry_id)];
-    const label = `#${r.rank} ${r.team_name}`;
-    return squadColumn(label, squad);
-  }).join('');
-  wrap.appendChild(grid);
   panel.appendChild(wrap);
+  wrap.appendChild(grid);
 
+  function render(mode){
+    grid.style.cssText = mode === 'field'
+      ? `display:grid;grid-template-columns:repeat(${ranked.length},minmax(150px,1fr));gap:12px;`
+      : `display:grid;grid-template-columns:repeat(${ranked.length},minmax(160px,1fr));gap:14px;`;
+    grid.innerHTML = ranked.map(r => {
+      const squad = squads[String(r.league_entry_id)];
+      const label = `#${r.rank} ${r.team_name}`;
+      return mode === 'field' ? pitchColumn(label, squad) : squadColumn(label, squad);
+    }).join('');
+  }
+
+  fieldBtn.addEventListener('click', () => {
+    fieldBtn.classList.add('active'); listBtn.classList.remove('active');
+    render('field');
+  });
+  listBtn.addEventListener('click', () => {
+    listBtn.classList.add('active'); fieldBtn.classList.remove('active');
+    render('list');
+  });
+
+  render('field');
   return panel;
 }
 
@@ -1150,7 +1269,8 @@ function buildFixturesPanel(data){
   panel.innerHTML = `<h2><span class="dot"></span>Fixtures &amp; results</h2>`;
 
   const gwKeys = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
-  let viewMode = 'field'; // 'list' or 'field' - field is the default view
+  // Each fixture card is collapsed by default; the person chooses per-card
+  // whether to expand it as a pitch (Field) or a squad list (List).
 
   const modeWrap = document.createElement('div');
   modeWrap.className = 'gw-pills';
@@ -1164,18 +1284,6 @@ function buildFixturesPanel(data){
   modeWrap.appendChild(byGwBtn);
   modeWrap.appendChild(byTeamBtn);
 
-  const viewWrap = document.createElement('div');
-  viewWrap.className = 'gw-pills';
-  viewWrap.style.marginBottom = '12px';
-  const listBtn = document.createElement('button');
-  listBtn.className = 'gw-pill';
-  listBtn.textContent = 'List view';
-  const fieldBtn = document.createElement('button');
-  fieldBtn.className = 'gw-pill active';
-  fieldBtn.textContent = 'Field view';
-  viewWrap.appendChild(listBtn);
-  viewWrap.appendChild(fieldBtn);
-
   const pillsWrap = document.createElement('div');
   pillsWrap.className = 'gw-pills';
   const teamSelectWrap = document.createElement('div');
@@ -1187,7 +1295,7 @@ function buildFixturesPanel(data){
     </select>
   `;
   const listWrap = document.createElement('div');
-  listWrap.className = 'fixture-list field-mode';
+  listWrap.className = 'fixture-list';
 
   function playedCountTag(f, side){
     const squad = f.squads && f.squads[String(side.league_entry_id)];
@@ -1195,66 +1303,6 @@ function buildFixturesPanel(data){
     return `<span class="played-tag">${squad.played_count}/${squad.squad_size} played</span>`;
   }
 
-  function fieldPlayerCard(p){
-    const didNotPlay = p.minutes === 0;
-    let subLabel;
-    if(didNotPlay && p.opponents && p.opponents.length){
-      subLabel = p.opponents.map(o =>
-        `${o.is_home ? o.opponent.toUpperCase() : o.opponent.toLowerCase()} (${o.is_home ? 'H' : 'A'})`
-      ).join(', ');
-    }else if(didNotPlay){
-      subLabel = '–';
-    }else{
-      subLabel = String(p.points);
-    }
-    const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
-    const jerseySvg = `
-      <svg viewBox="0 0 40 40" width="100%" height="100%">
-        <path d="M10 4 L4 10 L8 14 L8 36 L32 36 L32 14 L36 10 L30 4 L26 8 Q20 13 14 8 Z" fill="${p.shirt_color || '#6B7280'}"/>
-      </svg>
-    `;
-    return `
-      <div class="field-player" title="${p.name}">
-        <div class="field-avatar">
-          ${p.photo_url ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` : ''}
-          <div class="fallback" style="display:${p.photo_url ? 'none' : 'flex'};">${jerseySvg}</div>
-          ${capTag}
-        </div>
-        <div class="field-name" style="${didNotPlay ? 'opacity:0.75;' : ''}">${p.name}</div>
-        <div class="field-pts">${subLabel}</div>
-      </div>
-    `;
-  }
-
-  function pitchColumn(teamName, squad){
-    if(!squad){
-      return `<div class="pitch-col"><div class="pitch-team-label">${teamName}</div><p style="color:rgba(255,255,255,0.7);font-size:12px;text-align:center;">No squad data yet.</p></div>`;
-    }
-    const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
-    squad.starting.forEach(p => { (rows[p.position] || rows.MID).push(p); });
-    return `
-      <div class="pitch-col">
-        <div class="pitch-team-label">${teamName}</div>
-        <div class="pitch">
-          ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
-            ? `<div class="pitch-row">${rows[pos].map(fieldPlayerCard).join('')}</div>` : '').join('')}
-        </div>
-        ${squad.bench.length ? `
-          <div class="squad-bench-label">Subs</div>
-          <div class="pitch-bench-row">${byPosition(squad.bench).map(fieldPlayerCard).join('')}</div>
-        ` : ''}
-      </div>
-    `;
-  }
-
-  function fieldMatchup(f){
-    return `
-      <div class="pitch-container">
-        ${pitchColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
-        ${pitchColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
-      </div>
-    `;
-  }
 
   function fixtureCard(f, showGwLabel){
     const homeWin = f.finished && f.home.score > f.away.score;
@@ -1262,24 +1310,6 @@ function buildFixturesPanel(data){
     const hasSquads = !!f.squads;
     const card = document.createElement('div');
     card.className = 'fixture-card';
-
-    if(viewMode === 'field' && hasSquads){
-      card.classList.add('fixture-card-field');
-      card.innerHTML = `
-        ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
-        <div class="fixture-row ${homeWin ? 'winner' : ''}">
-          <div class="side"><span class="ha-tag">H</span>${f.home.team_name}<span class="m">${f.home.manager_name} ${playedCountTag(f, f.home)}</span></div>
-          <div class="score">${f.home.score ?? '–'}</div>
-        </div>
-        <div class="fixture-row ${awayWin ? 'winner' : ''}">
-          <div class="side"><span class="ha-tag">A</span>${f.away.team_name}<span class="m">${f.away.manager_name} ${playedCountTag(f, f.away)}</span></div>
-          <div class="score">${f.away.score ?? '–'}</div>
-        </div>
-        <div class="status" style="margin-bottom:8px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-        ${fieldMatchup(f)}
-      `;
-      return card;
-    }
 
     card.innerHTML = `
       ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
@@ -1293,21 +1323,50 @@ function buildFixturesPanel(data){
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
         <div class="status">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-        ${hasSquads ? `<button class="expand-btn">+ Players</button>` : ''}
+        ${hasSquads ? `<div class="dual-expand"><button class="expand-btn" data-mode="field">+ Field</button><button class="expand-btn" data-mode="list">+ List</button></div>` : ''}
       </div>
-      ${hasSquads ? `<div class="squad-expand">
+      ${hasSquads ? `<div class="squad-expand" data-mode="field"></div>` : ''}
+      ${hasSquads ? `<div class="squad-expand" data-mode="list">
         <div class="squad-grid">
           ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
           ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
         </div>
       </div>` : ''}
     `;
+
     if(hasSquads){
-      const btn = card.querySelector('.expand-btn');
-      const expandArea = card.querySelector('.squad-expand');
-      btn.addEventListener('click', () => {
-        const open = expandArea.classList.toggle('open');
-        btn.textContent = open ? '– Players' : '+ Players';
+      const fieldExpand = card.querySelector('.squad-expand[data-mode="field"]');
+      const listExpand = card.querySelector('.squad-expand[data-mode="list"]');
+      const fieldBtn = card.querySelector('.expand-btn[data-mode="field"]');
+      const listBtn = card.querySelector('.expand-btn[data-mode="list"]');
+      let fieldBuilt = false;
+
+      function closeAll(){
+        fieldExpand.classList.remove('open');
+        listExpand.classList.remove('open');
+        fieldBtn.textContent = '+ Field';
+        listBtn.textContent = '+ List';
+        card.classList.remove('fixture-card-expanded');
+      }
+
+      fieldBtn.addEventListener('click', () => {
+        const wasOpen = fieldExpand.classList.contains('open');
+        closeAll();
+        if(!wasOpen){
+          if(!fieldBuilt){ fieldExpand.innerHTML = fieldMatchup(f); fieldBuilt = true; }
+          fieldExpand.classList.add('open');
+          fieldBtn.textContent = '– Field';
+          card.classList.add('fixture-card-expanded');
+        }
+      });
+      listBtn.addEventListener('click', () => {
+        const wasOpen = listExpand.classList.contains('open');
+        closeAll();
+        if(!wasOpen){
+          listExpand.classList.add('open');
+          listBtn.textContent = '– List';
+          card.classList.add('fixture-card-expanded');
+        }
       });
     }
     return card;
