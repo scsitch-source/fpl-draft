@@ -339,10 +339,12 @@
   }
   .field-cap.vc{background:var(--draw);}
   .field-sub-tag{
-    position:absolute;bottom:-2px;right:-2px;background:#1C63E8;color:#fff;
+    position:absolute;top:-2px;right:-2px;color:#fff;
     font-size:9px;font-weight:800;border-radius:50%;width:14px;height:14px;
     display:flex;align-items:center;justify-content:center;border:1px solid #fff;z-index:2;
   }
+  .field-sub-tag.on{background:var(--win);}
+  .field-sub-tag.off{background:var(--loss);}
   .field-pill{
     background:#0B0F1A;border-radius:6px;padding:3px 6px;margin-top:4px;text-align:center;
     width:100%;box-sizing:border-box;
@@ -1236,7 +1238,8 @@ function playerDataAttr(p){
     goals_conceded: p.goals_conceded, own_goals: p.own_goals, yellow_card: p.yellow_card,
     red_card: p.red_card, bonus: p.bonus, points: p.points, base_points: p.base_points,
     is_captain: p.is_captain, is_vice_captain: p.is_vice_captain, photo_url: p.photo_url,
-    saves: p.saves, xg: p.xg, xa: p.xa, xgi: p.xgi,
+    saves: p.saves, xg: p.xg, xa: p.xa, xgi: p.xgi, match_finished: p.match_finished,
+    subbed_in: p.subbed_in, subbed_out: p.subbed_out,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1251,7 +1254,13 @@ const CLEAN_SHEET_POINTS = { GKP: 4, DEF: 4, MID: 1, FWD: 0 };
 
 function buildReceiptLines(p){
   const lines = [];
-  lines.push([`Minutes played: ${p.minutes}'`, p.minutes >= 60 ? 2 : (p.minutes > 0 ? 1 : 0)]);
+  if(p.minutes === 0 && !p.match_finished){
+    lines.push([`Hasn't played yet`, 0]);
+  }else if(p.minutes === 0 && p.match_finished){
+    lines.push([`Did not play (match finished)`, 0]);
+  }else{
+    lines.push([`Minutes played: ${p.minutes}'`, p.minutes >= 60 ? 2 : (p.minutes > 0 ? 1 : 0)]);
+  }
   if(p.goals > 0) lines.push([`Goal${p.goals>1?'s':''}: ${p.goals}`, p.goals * (GOAL_POINTS[p.position] ?? 4)]);
   if(p.assists > 0) lines.push([`Assist${p.assists>1?'s':''}: ${p.assists}`, p.assists * 3]);
   if(p.clean_sheet) lines.push([`Clean sheet`, CLEAN_SHEET_POINTS[p.position] ?? 0]);
@@ -1345,7 +1354,9 @@ function fieldPlayerCard(p){
     subLabel = String(p.points);
   }
   const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
-  const subTag = p.subbed_in ? '<span class="field-sub-tag" title="Auto-subbed in">&#8646;</span>' : '';
+  const subTag = p.subbed_in
+    ? '<span class="field-sub-tag on" title="Auto-subbed on">&#8593;</span>'
+    : (p.subbed_out ? '<span class="field-sub-tag off" title="Auto-subbed off">&#8595;</span>' : '');
   return `
     <div class="field-player" title="${p.name}${p.subbed_in ? ' (auto-subbed in)' : ''} - tap for details" ${playerDataAttr(p)}>
       <div class="field-photo">
