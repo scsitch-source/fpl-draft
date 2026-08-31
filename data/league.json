@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T22:06:05.904649+00:00",
+  "generated_at": "2026-08-31T22:57:53.478536+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -7,7 +7,7 @@
     "draft_status": "pre"
   },
   "current_event": 2,
-  "current_event_finished": false,
+  "current_event_finished": true,
   "next_event": 3,
   "next_deadline": "2026-09-04T17:30:00Z",
   "your_entry_id": 27110,
@@ -28,7 +28,7 @@
       "score": 30,
       "api_score": 29
     },
-    "finished": false,
+    "finished": true,
     "started": true,
     "winning_league_entry": null
   },
@@ -50,6 +50,7 @@
       "event_total": 0,
       "current_gw_score": 51,
       "form": [
+        "W",
         "W"
       ],
       "is_you": false
@@ -71,6 +72,7 @@
       "event_total": 0,
       "current_gw_score": 57,
       "form": [
+        "W",
         "W"
       ],
       "is_you": true
@@ -92,7 +94,8 @@
       "event_total": 0,
       "current_gw_score": 39,
       "form": [
-        "W"
+        "W",
+        "L"
       ],
       "is_you": false
     },
@@ -113,7 +116,8 @@
       "event_total": 0,
       "current_gw_score": 48,
       "form": [
-        "W"
+        "W",
+        "L"
       ],
       "is_you": false
     },
@@ -134,7 +138,8 @@
       "event_total": 0,
       "current_gw_score": 53,
       "form": [
-        "L"
+        "L",
+        "W"
       ],
       "is_you": false
     },
@@ -155,7 +160,8 @@
       "event_total": 0,
       "current_gw_score": 51,
       "form": [
-        "L"
+        "L",
+        "W"
       ],
       "is_you": false
     },
@@ -176,6 +182,7 @@
       "event_total": 0,
       "current_gw_score": 30,
       "form": [
+        "L",
         "L"
       ],
       "is_you": false
@@ -197,6 +204,7 @@
       "event_total": 0,
       "current_gw_score": 28,
       "form": [
+        "L",
         "L"
       ],
       "is_you": false
@@ -5773,7 +5781,7 @@
           "score": 30,
           "api_score": 29
         },
-        "finished": false,
+        "finished": true,
         "started": true,
         "winning_league_entry": null,
         "squads": {
@@ -7174,7 +7182,7 @@
           "score": 53,
           "api_score": 53
         },
-        "finished": false,
+        "finished": true,
         "started": true,
         "winning_league_entry": null,
         "squads": {
@@ -8563,7 +8571,7 @@
           "score": 28,
           "api_score": 13
         },
-        "finished": false,
+        "finished": true,
         "started": true,
         "winning_league_entry": null,
         "squads": {
@@ -9966,7 +9974,7 @@
           "score": 51,
           "api_score": 51
         },
-        "finished": false,
+        "finished": true,
         "started": true,
         "winning_league_entry": null,
         "squads": {
@@ -13871,92 +13879,111 @@
   },
   "progression": {
     "events": [
-      1
+      1,
+      2
     ],
     "teams": {
       "27139": {
         "name": "FC Strup",
         "weekly": [
-          52
+          52,
+          57
         ],
         "cumulative": [
-          52
+          52,
+          109
         ]
       },
       "27140": {
         "name": "H\u00f6chengladbach",
         "weekly": [
-          31
+          31,
+          29
         ],
         "cumulative": [
-          31
+          31,
+          60
         ]
       },
       "27141": {
         "name": "Hakuna Mateta",
         "weekly": [
-          41
+          41,
+          43
         ],
         "cumulative": [
-          41
+          41,
+          84
         ]
       },
       "27143": {
         "name": "Eki-Tiki",
         "weekly": [
-          52
+          52,
+          49
         ],
         "cumulative": [
-          52
+          52,
+          101
         ]
       },
       "27145": {
         "name": ":)",
         "weekly": [
-          41
+          41,
+          38
         ],
         "cumulative": [
-          41
+          41,
+          79
         ]
       },
       "31110": {
         "name": "I am chucky kirkez",
         "weekly": [
-          32
+          32,
+          51
         ],
         "cumulative": [
-          32
+          32,
+          83
         ]
       },
       "183812": {
         "name": "Clean Machine FC",
         "weekly": [
-          26
+          26,
+          13
         ],
         "cumulative": [
-          26
+          26,
+          39
         ]
       },
       "226052": {
         "name": "PFC",
         "weekly": [
-          51
+          51,
+          53
         ],
         "cumulative": [
-          51
+          51,
+          104
         ]
       }
     }
   },
   "rank_progression": {
     "events": [
-      1
+      1,
+      2
     ],
     "teams": {
       "27139": {
         "name": "FC Strup",
         "initials": "FS",
         "ranks": [
+          1,
           1
         ]
       },
@@ -13964,6 +13991,7 @@
         "name": "H\u00f6chengladbach",
         "initials": "HC",
         "ranks": [
+          7,
           7
         ]
       },
@@ -13971,13 +13999,15 @@
         "name": "Hakuna Mateta",
         "initials": "HM",
         "ranks": [
-          3
+          3,
+          4
         ]
       },
       "27143": {
         "name": "Eki-Tiki",
         "initials": "ET",
         "ranks": [
+          2,
           2
         ]
       },
@@ -13985,20 +14015,23 @@
         "name": ":)",
         "initials": ":)",
         "ranks": [
-          4
+          4,
+          6
         ]
       },
       "31110": {
         "name": "I am chucky kirkez",
         "initials": "IAC",
         "ranks": [
-          6
+          6,
+          5
         ]
       },
       "183812": {
         "name": "Clean Machine FC",
         "initials": "CMF",
         "ranks": [
+          8,
           8
         ]
       },
@@ -14006,7 +14039,8 @@
         "name": "PFC",
         "initials": "PF",
         "ranks": [
-          5
+          5,
+          3
         ]
       }
     }
@@ -15723,14 +15757,14 @@
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "result": "W",
-      "length": 1
+      "length": 2
     },
     "coldest": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
       "result": "L",
-      "length": 1
+      "length": 2
     },
     "all": [
       {
@@ -15738,20 +15772,20 @@
         "team_name": "FC Strup",
         "manager_name": "Sam Sitch",
         "result": "W",
-        "length": 1
+        "length": 2
       },
       {
         "league_entry_id": 27140,
         "team_name": "H\u00f6chengladbach",
         "manager_name": "Will Hocking",
         "result": "L",
-        "length": 1
+        "length": 2
       },
       {
         "league_entry_id": 27141,
         "team_name": "Hakuna Mateta",
         "manager_name": "Ben Scotti",
-        "result": "W",
+        "result": "L",
         "length": 1
       },
       {
@@ -15759,20 +15793,20 @@
         "team_name": "Eki-Tiki",
         "manager_name": "Hugh Chalmers",
         "result": "W",
-        "length": 1
+        "length": 2
       },
       {
         "league_entry_id": 27145,
         "team_name": ":)",
         "manager_name": "Charlie Spring",
-        "result": "W",
+        "result": "L",
         "length": 1
       },
       {
         "league_entry_id": 31110,
         "team_name": "I am chucky kirkez",
         "manager_name": "Eamon Lye",
-        "result": "L",
+        "result": "W",
         "length": 1
       },
       {
@@ -15780,13 +15814,13 @@
         "team_name": "Clean Machine FC",
         "manager_name": "Nick Poole",
         "result": "L",
-        "length": 1
+        "length": 2
       },
       {
         "league_entry_id": 226052,
         "team_name": "PFC",
         "manager_name": "Archie Ross",
-        "result": "L",
+        "result": "W",
         "length": 1
       }
     ]
@@ -15797,19 +15831,21 @@
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "results": [
+        "W",
         "W"
       ],
-      "games_counted": 1,
-      "score": 3
+      "games_counted": 2,
+      "score": 6
     },
     "least": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
       "results": [
+        "L",
         "L"
       ],
-      "games_counted": 1,
+      "games_counted": 2,
       "score": 0
     }
   },
