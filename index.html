@@ -613,6 +613,7 @@
   .receipt-header{text-align:center;margin:0 0 10px;}
   .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
   .receipt-position{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
+  .receipt-acquisition{font-size:10.5px;color:var(--chalk-dim);margin-top:2px;}
   .receipt-fixture{margin:10px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .receipt-fixture-row{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12.5px;color:var(--chalk-dim);font-weight:700;}
   .receipt-fixture-row strong{color:var(--chalk);font-size:14px;}
@@ -816,6 +817,7 @@ function findStarPlayer(data, leId){
 }
 
 function render(data){
+  DASHBOARD_DATA = data;
   document.getElementById('league-name').textContent = data.league.name || 'Draft League';
   document.getElementById('scoring-format').textContent =
     data.league.scoring === 'c' ? 'Classic scoring draft league' : 'Head-to-head draft league';
@@ -1384,6 +1386,7 @@ function playerDataAttr(p){
     is_captain: p.is_captain, is_vice_captain: p.is_vice_captain, photo_url: p.photo_url,
     saves: p.saves, xg: p.xg, xa: p.xa, xgi: p.xgi, match_finished: p.match_finished,
     subbed_in: p.subbed_in, subbed_out: p.subbed_out, club: p.club, opponents: p.opponents,
+    acquisition: findAcquisitionInfo(p.name),
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1443,6 +1446,15 @@ function buildFixtureResultHTML(p){
   `;
 }
 
+function buildAcquisitionHTML(p){
+  const a = p.acquisition;
+  if(!a) return '';
+  const text = a.type === 'drafted'
+    ? `Drafted R${a.round} P${a.pick} (Overall #${a.overall})`
+    : `Signed GW${a.event ?? '?'} (${a.kind})`;
+  return `<div class="receipt-acquisition">${text}</div>`;
+}
+
 function showPlayerReceipt(p){
   const existing = document.getElementById('player-receipt-modal');
   if(existing) existing.remove();
@@ -1467,6 +1479,7 @@ function showPlayerReceipt(p){
       <div class="receipt-header">
         <div class="receipt-name">${p.name}${capLabel}</div>
         <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
+        ${buildAcquisitionHTML(p)}
       </div>
       ${buildFixtureResultHTML(p)}
       <div class="receipt-lines">
@@ -1491,6 +1504,30 @@ function showPlayerReceipt(p){
   modal.addEventListener('click', (e) => {
     if(e.target === modal || e.target.classList.contains('receipt-close')) modal.remove();
   });
+}
+
+// Set once per render() call so per-player helpers (which only ever receive
+// the player row itself, not the whole dataset) can still cross-reference
+// draft_picks / accepted_transactions for acquisition history.
+let DASHBOARD_DATA = null;
+
+function findAcquisitionInfo(playerName){
+  if(!DASHBOARD_DATA || !playerName) return null;
+  const numTeams = (DASHBOARD_DATA.standings || []).length || 1;
+  const draftPick = (DASHBOARD_DATA.draft_picks || []).find(p => p.player_name === playerName);
+  if(draftPick && draftPick.round != null && draftPick.pick != null){
+    const overall = (draftPick.round - 1) * numTeams + draftPick.pick;
+    return { type: 'drafted', round: draftPick.round, pick: draftPick.pick, overall };
+  }
+  // Not originally drafted (or drafted by a team they've since left) - fall
+  // back to their most recent acquisition via waiver/free agent/trade.
+  const moves = (DASHBOARD_DATA.accepted_transactions || [])
+    .filter(t => t.player_in === playerName)
+    .sort((a,b) => (b.event ?? 0) - (a.event ?? 0));
+  if(moves.length){
+    return { type: 'signed', event: moves[0].event, kind: moves[0].kind };
+  }
+  return null;
 }
 
 function computeTeamDetail(data, leId){

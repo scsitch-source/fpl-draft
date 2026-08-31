@@ -1007,6 +1007,7 @@ def build():
                 "event": t.get("event"),
                 "team_name": info.get("team_name", "Unknown"),
                 "manager_name": info.get("manager_name", ""),
+                "league_entry_id": resolved_le_id,
                 "player_in": player_in,
                 "player_out": player_out,
                 "kind": kind,
