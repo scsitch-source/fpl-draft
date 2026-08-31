@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T10:05:45.965510+00:00",
+  "generated_at": "2026-08-31T12:06:51.723570+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -7388,7 +7388,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 7,
+                "defensive_contribution_count": 8,
                 "opponents": [
                   {
                     "opponent": "IPS",
@@ -7404,9 +7404,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 1.95,
-                "xa": 0.27,
-                "xgi": 2.22,
+                "xg": 2.02,
+                "xa": 0.48,
+                "xgi": 2.5,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 23
@@ -8100,7 +8100,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 6,
+                "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "IPS",
@@ -8116,9 +8116,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 1.63,
+                "xg": 1.76,
                 "xa": 0.21,
-                "xgi": 1.84,
+                "xgi": 1.97,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -17516,7 +17516,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 7,
+          "defensive_contribution_count": 8,
           "opponents": [
             {
               "opponent": "IPS",
@@ -17532,9 +17532,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 1.95,
-          "xa": 0.27,
-          "xgi": 2.22,
+          "xg": 2.02,
+          "xa": 0.48,
+          "xgi": 2.5,
           "subbed_out": false,
           "multiplier": 1,
           "points": 23
@@ -18228,7 +18228,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 6,
+          "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "IPS",
@@ -18244,9 +18244,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 1.63,
+          "xg": 1.76,
           "xa": 0.21,
-          "xgi": 1.84,
+          "xgi": 1.97,
           "subbed_out": false,
           "multiplier": 1,
           "points": 11
