@@ -582,6 +582,9 @@
   .receipt-header{text-align:center;margin:0 0 10px;}
   .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
   .receipt-position{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
+  .receipt-fixture{margin:10px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .receipt-fixture-row{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12.5px;color:var(--chalk-dim);font-weight:700;}
+  .receipt-fixture-row strong{color:var(--chalk);font-size:14px;}
   .receipt-lines{display:flex;flex-direction:column;gap:6px;}
   .receipt-line{
     display:flex;justify-content:space-between;font-size:13px;color:var(--chalk);
@@ -1315,7 +1318,7 @@ function playerDataAttr(p){
     red_card: p.red_card, bonus: p.bonus, points: p.points, base_points: p.base_points,
     is_captain: p.is_captain, is_vice_captain: p.is_vice_captain, photo_url: p.photo_url,
     saves: p.saves, xg: p.xg, xa: p.xa, xgi: p.xgi, match_finished: p.match_finished,
-    subbed_in: p.subbed_in, subbed_out: p.subbed_out,
+    subbed_in: p.subbed_in, subbed_out: p.subbed_out, club: p.club, opponents: p.opponents,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1356,6 +1359,25 @@ function buildReceiptLines(p){
   return lines;
 }
 
+function buildFixtureResultHTML(p){
+  if(!p.opponents || !p.opponents.length) return '';
+  return `
+    <div class="receipt-fixture">
+      ${p.opponents.map(o => {
+        const hasScore = o.team_score != null && o.opponent_score != null;
+        const teamCode = (p.club || '').toUpperCase();
+        const oppCode = (o.opponent || '').toUpperCase();
+        const home = teamCode, away = oppCode;
+        const homeScore = o.is_home ? o.team_score : o.opponent_score;
+        const awayScore = o.is_home ? o.opponent_score : o.team_score;
+        return hasScore
+          ? `<div class="receipt-fixture-row"><span>${home}</span><strong>${homeScore} - ${awayScore}</strong><span>${away}</span></div>`
+          : `<div class="receipt-fixture-row"><span>${teamCode}</span><strong>vs</strong><span>${oppCode} (${o.is_home ? 'H' : 'A'})</span></div>`;
+      }).join('')}
+    </div>
+  `;
+}
+
 function showPlayerReceipt(p){
   const existing = document.getElementById('player-receipt-modal');
   if(existing) existing.remove();
@@ -1381,6 +1403,7 @@ function showPlayerReceipt(p){
         <div class="receipt-name">${p.name}${capLabel}</div>
         <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
       </div>
+      ${buildFixtureResultHTML(p)}
       <div class="receipt-lines">
         ${lines.map(([label, pts]) => `
           <div class="receipt-line">

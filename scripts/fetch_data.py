@@ -15,7 +15,7 @@ bootstrap endpoints are public read-only endpoints.
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import requests
 
@@ -290,6 +290,26 @@ def build():
             print(f"  fallback fixtures fetched OK: {len(fixtures_raw)} entries")
         else:
             print("  fallback fixtures fetch also failed or returned nothing")
+    # A match's own 'finished' flag can occasionally lag behind reality by a
+    # short window even after full-time (stats confirmation, TV coverage
+    # delays, etc). As a dependency-free safety net, also treat a fixture as
+    # finished if its kickoff was long enough ago that it's certainly over -
+    # avoids needing a second external API just to cross-check this.
+    FIXTURE_ASSUMED_DURATION = timedelta(hours=2, minutes=30)
+    now_utc = datetime.now(timezone.utc)
+
+    def _fixture_effectively_finished(fx):
+        if bool(fx.get("finished")):
+            return True
+        kickoff = fx.get("kickoff_time")
+        if not kickoff:
+            return False
+        try:
+            kickoff_dt = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+        except (TypeError, ValueError):
+            return False
+        return now_utc >= kickoff_dt + FIXTURE_ASSUMED_DURATION
+
     club_finished_by_event = {}
     club_opponent_by_event = {}
     if isinstance(fixtures_raw, list):
@@ -299,7 +319,7 @@ def build():
             ev = fx.get("event")
             if ev is None:
                 continue
-            finished = bool(fx.get("finished"))
+            finished = _fixture_effectively_finished(fx)
             bucket = club_finished_by_event.setdefault(ev, {})
             opp_bucket = club_opponent_by_event.setdefault(ev, {})
             home_id, away_id = fx.get("team_h"), fx.get("team_a")
@@ -310,11 +330,16 @@ def build():
                 # it only counts as "finished" once ALL of them are.
                 bucket[club_id] = finished and bucket.get(club_id, True)
             if home_id is not None and away_id is not None:
+                home_score, away_score = fx.get("team_h_score"), fx.get("team_a_score")
                 opp_bucket.setdefault(home_id, []).append({
                     "opponent": club_by_id.get(away_id, "?"), "is_home": True,
+                    "team_score": home_score, "opponent_score": away_score,
+                    "finished": finished,
                 })
                 opp_bucket.setdefault(away_id, []).append({
                     "opponent": club_by_id.get(home_id, "?"), "is_home": False,
+                    "team_score": away_score, "opponent_score": home_score,
+                    "finished": finished,
                 })
 
     # Map league_entry id -> readable info
