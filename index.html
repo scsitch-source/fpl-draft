@@ -1978,7 +1978,7 @@ function buildFixturesPanel(data){
       }
 
       card.addEventListener('click', (e) => {
-        if(e.target.closest('.view-switch-btn')) return;
+        if(e.target.closest('.view-switch-btn, .field-player, .squad-row')) return;
         isOpen ? closeCard() : openCard();
       });
       fieldBtn.addEventListener('click', (e) => {
