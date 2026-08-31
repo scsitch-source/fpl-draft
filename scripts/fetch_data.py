@@ -991,7 +991,7 @@ def build():
 
     if transactions_raw:
         items = transactions_raw.get("transactions", []) if isinstance(transactions_raw, dict) else transactions_raw
-        kind_labels = {"w": "Waiver", "f": "Free agent", "t": "Trade"}
+        kind_labels = {"w": "Waiver", "f": "Free Agent", "t": "Trade"}
         for idx, t in enumerate(items or []):
             if t.get("result") != "a":
                 continue

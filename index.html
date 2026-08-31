@@ -613,7 +613,15 @@
   .receipt-header{text-align:center;margin:0 0 10px;}
   .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
   .receipt-position{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
-  .receipt-acquisition{font-size:10.5px;color:var(--chalk-dim);margin-top:2px;}
+  .receipt-pick-badge{
+    display:inline-block;margin-top:5px;font-size:10.5px;font-weight:800;
+    padding:2px 9px;border-radius:10px;
+  }
+  .receipt-pick-badge.gold{background:#D4AF37;color:#3A2E00;}
+  .receipt-pick-badge.silver{background:#C4C9D2;color:#2B2E33;}
+  .receipt-pick-badge.bronze{background:#B8814F;color:#3A2410;}
+  .receipt-pick-badge.neutral{background:var(--chalk);color:var(--card);}
+  .receipt-pick-detail{font-size:10px;color:var(--chalk-dim);margin-top:2px;}
   .receipt-fixture{margin:10px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .receipt-fixture-row{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12.5px;color:var(--chalk-dim);font-weight:700;}
   .receipt-fixture-row strong{color:var(--chalk);font-size:14px;}
@@ -1449,10 +1457,17 @@ function buildFixtureResultHTML(p){
 function buildAcquisitionHTML(p){
   const a = p.acquisition;
   if(!a) return '';
-  const text = a.type === 'drafted'
-    ? `Drafted R${a.round} P${a.pick} (Overall #${a.overall})`
-    : `Signed GW${a.event ?? '?'} (${a.kind})`;
-  return `<div class="receipt-acquisition">${text}</div>`;
+  if(a.type === 'drafted'){
+    const tier = a.round === 1 ? 'gold' : (a.round === 2 ? 'silver' : (a.round === 3 ? 'bronze' : 'neutral'));
+    return `
+      <div class="receipt-pick-badge ${tier}">Pick ${a.overall}</div>
+      <div class="receipt-pick-detail">Round ${a.round} Pick ${a.pick}</div>
+    `;
+  }
+  return `
+    <div class="receipt-pick-badge neutral">${a.kind}</div>
+    <div class="receipt-pick-detail">Signed GW${a.event ?? '?'}</div>
+  `;
 }
 
 function showPlayerReceipt(p){
