@@ -546,6 +546,10 @@
   }
 
   /* ---------- Player points receipt ---------- */
+  @keyframes receipt-pop-in{
+    from{opacity:0;transform:scale(0.92) translateY(6px);}
+    to{opacity:1;transform:scale(1) translateY(0);}
+  }
   .receipt-backdrop{
     position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;
     display:flex;align-items:center;justify-content:center;padding:20px;
@@ -554,11 +558,12 @@
     position:relative;background:var(--card);border-radius:14px;padding:18px;
     width:100%;max-width:320px;
     box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    animation:receipt-pop-in 0.18s ease-out;
   }
   .receipt-photo-wrap{
     width:84px;height:84px;margin:-40px auto 10px;overflow:hidden;
     border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,0.4);
-    border:2px solid var(--card);
+    border:2px solid var(--chalk-dim);background:var(--ink);
   }
   .receipt-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
   .receipt-close{
@@ -567,6 +572,7 @@
   }
   .receipt-header{text-align:center;margin:0 0 10px;}
   .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
+  .receipt-position{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
   .receipt-lines{display:flex;flex-direction:column;gap:6px;}
   .receipt-line{
     display:flex;justify-content:space-between;font-size:13px;color:var(--chalk);
@@ -1219,9 +1225,11 @@ function playerDataAttr(p){
   const slim = {
     name: p.name, position: p.position, minutes: p.minutes, goals: p.goals,
     assists: p.assists, clean_sheet: p.clean_sheet, defensive_contribution: p.defensive_contribution,
+    defensive_contribution_count: p.defensive_contribution_count,
     goals_conceded: p.goals_conceded, own_goals: p.own_goals, yellow_card: p.yellow_card,
     red_card: p.red_card, bonus: p.bonus, points: p.points, base_points: p.base_points,
     is_captain: p.is_captain, is_vice_captain: p.is_vice_captain, photo_url: p.photo_url,
+    saves: p.saves,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1240,10 +1248,15 @@ function buildReceiptLines(p){
   if(p.goals > 0) lines.push([`Goal${p.goals>1?'s':''}: ${p.goals}`, p.goals * (GOAL_POINTS[p.position] ?? 4)]);
   if(p.assists > 0) lines.push([`Assist${p.assists>1?'s':''}: ${p.assists}`, p.assists * 3]);
   if(p.clean_sheet) lines.push([`Clean sheet`, CLEAN_SHEET_POINTS[p.position] ?? 0]);
-  if(p.goals_conceded > 0 && (p.position === 'GKP' || p.position === 'DEF')){
+  // Only surface goals conceded once it actually costs a point (every 2
+  // conceded = -1) - showing "1 conceded, 0 pts" is just noise.
+  if(p.goals_conceded >= 2 && (p.position === 'GKP' || p.position === 'DEF')){
     lines.push([`Goals conceded: ${p.goals_conceded}`, -Math.floor(p.goals_conceded / 2)]);
   }
-  if(p.defensive_contribution) lines.push([`Defensive contribution`, 2]);
+  if(p.saves > 0 && p.position === 'GKP'){
+    lines.push([`Saves: ${p.saves}`, Math.floor(p.saves / 3)]);
+  }
+  if(p.defensive_contribution) lines.push([`Defensive contribution: ${p.defensive_contribution_count ?? ''}`, 2]);
   if(p.own_goals > 0) lines.push([`Own goal${p.own_goals>1?'s':''}: ${p.own_goals}`, p.own_goals * -2]);
   if(p.red_card) lines.push([`Red card`, -3]);
   else if(p.yellow_card) lines.push([`Yellow card`, -1]);
@@ -1258,6 +1271,7 @@ function showPlayerReceipt(p){
   const lines = buildReceiptLines(p);
   const capLabel = p.is_captain ? ' (C)' : (p.is_vice_captain ? ' (VC)' : '');
   const total = p.points ?? p.base_points ?? 0;
+  const accent = (POSITION_COLORS[p.position] || {}).dot || 'var(--chalk-dim)';
 
   const modal = document.createElement('div');
   modal.id = 'player-receipt-modal';
@@ -1265,7 +1279,7 @@ function showPlayerReceipt(p){
   modal.innerHTML = `
     <div class="receipt-card">
       <button class="receipt-close" aria-label="Close">&times;</button>
-      <div class="receipt-photo-wrap">
+      <div class="receipt-photo-wrap" style="border-color:${accent};">
         ${p.photo_url
           ? `<img src="${p.photo_url}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
           : ''}
@@ -1273,6 +1287,7 @@ function showPlayerReceipt(p){
       </div>
       <div class="receipt-header">
         <div class="receipt-name">${p.name}${capLabel}</div>
+        <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
       </div>
       <div class="receipt-lines">
         ${lines.map(([label, pts]) => `

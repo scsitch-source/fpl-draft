@@ -488,6 +488,7 @@ def build():
                 "red_cards": stats.get("red_cards", 0),
                 "own_goals": stats.get("own_goals", 0),
                 "goals_conceded": stats.get("goals_conceded", 0),
+                "saves": stats.get("saves", 0),
             }
 
         if isinstance(elements, dict):
@@ -545,7 +546,7 @@ def build():
             stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
                                           "clean_sheets": 0, "defensive_contribution": 0,
                                           "bonus": 0, "yellow_cards": 0, "red_cards": 0,
-                                          "own_goals": 0, "goals_conceded": 0})
+                                          "own_goals": 0, "goals_conceded": 0, "saves": 0})
             row = {
                 "name": info["name"],
                 "position": info["position"],
@@ -573,12 +574,14 @@ def build():
                 ),
                 "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF"),
                 "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), info["position"]),
+                "defensive_contribution_count": stat.get("defensive_contribution", 0) or 0,
                 "opponents": club_opponent_by_event.get(ev, {}).get(info.get("club_id"), []),
                 "bonus": stat.get("bonus", 0) or 0,
                 "yellow_card": bool(stat.get("yellow_cards")),
                 "red_card": bool(stat.get("red_cards")),
                 "own_goals": stat.get("own_goals", 0) or 0,
                 "goals_conceded": stat.get("goals_conceded", 0) or 0,
+                "saves": stat.get("saves", 0) or 0,
             }
             (raw_starting if is_starting else raw_bench).append(row)
 
