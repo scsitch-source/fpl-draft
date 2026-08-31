@@ -826,7 +826,15 @@ def build():
         and (b) matches the current row schema - an older cache from before a
         field like 'photo_url' existed would otherwise render blank forever
         in views that depend on it."""
-        REQUIRED_KEYS = {"photo_url", "shirt_color", "initials", "opponents"}
+        # Every persistent per-player field ever added since caching began -
+        # if an older cached gameweek is missing ANY of these, it predates
+        # that field's introduction and needs refetching, not reuse. Keep
+        # this list updated whenever a new field is added to squad rows.
+        REQUIRED_KEYS = {
+            "photo_url", "shirt_color", "initials", "opponents",
+            "season_points", "badges", "form", "xg", "xa", "xgi",
+            "saves", "own_goals", "goals_conceded",
+        }
         found_signal = False
         for squad in squads_dict.values():
             for p in squad.get("starting", []) + squad.get("bench", []):
