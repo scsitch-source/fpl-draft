@@ -116,12 +116,21 @@ def apply_autosubs(starting, bench):
         if starter.get("subbed_out"):
             continue
 
-        # Goalkeepers can only be replaced by the bench goalkeeper.
-        candidates = [b for b in bench if not b["subbed_in"] and b["minutes"] > 0
+        # Walk the bench in real substitute-priority order (GK-for-GK only).
+        # Crucially: if we reach a bench player whose OWN match hasn't
+        # finished yet, we must STOP and wait - not skip past them to a
+        # lower-priority player who merely happened to play earlier. Only a
+        # candidate whose match has genuinely finished with 0 minutes should
+        # be treated as unavailable and skipped.
+        candidates = [b for b in bench if not b["subbed_in"]
                       and (b["position"] == "GKP") == (starter["position"] == "GKP")]
 
         chosen = None
         for cand in candidates:
+            if cand["minutes"] == 0 and not cand.get("match_finished"):
+                break  # still could play - wait, don't consider anyone after them
+            if cand["minutes"] == 0:
+                continue  # confirmed did not play - try the next candidate
             new_counts = dict(counts)
             new_counts[starter["position"]] -= 1
             new_counts[cand["position"]] = new_counts.get(cand["position"], 0) + 1

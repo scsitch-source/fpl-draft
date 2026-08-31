@@ -167,6 +167,11 @@
   /* ---------- Standings list (compact, expandable rows) ---------- */
   .standings-list{display:flex;flex-direction:column;}
   .standing-row{border-bottom:1px solid var(--line);border-radius:8px;cursor:pointer;}
+  .standing-row.expanded{background:var(--ink);}
+  .team-detail-dropdown{
+    background:var(--ink);border-radius:8px;padding:10px 12px 12px;margin:2px 0 8px;
+    animation:receipt-pop-in 0.15s ease-out;
+  }
   .standing-row:last-child{border-bottom:none;}
   .standing-row.you{background:var(--amber-dim);}
   .standing-row.you .standing-main{box-shadow: inset 3px 0 0 var(--amber);}
@@ -1523,47 +1528,49 @@ function computeTeamDetailSlim(data, leId){
   };
 }
 
-function showTeamDetail(t){
-  const existing = document.getElementById('team-detail-modal');
-  if(existing) existing.remove();
-
-  const modal = document.createElement('div');
-  modal.id = 'team-detail-modal';
-  modal.className = 'receipt-backdrop';
-  modal.innerHTML = `
-    <div class="receipt-card" style="max-width:340px;">
-      <button class="receipt-close" aria-label="Close">&times;</button>
-      <div class="receipt-header" style="margin-top:4px;">
-        <div class="receipt-name">${t.team_name}</div>
-        <div class="receipt-position" style="color:var(--chalk-dim);text-transform:none;letter-spacing:0;">${t.manager_name} &middot; #${t.rank ?? '–'}</div>
-      </div>
-      <div class="team-detail-lines">
-        <div class="receipt-line"><span>W-D-L</span><strong>${t.won}-${t.drawn}-${t.lost}</strong></div>
-        ${t.mid_gameweek && t.current_gw_score != null ? `<div class="receipt-line"><span>GW${t.current_event} score so far</span><strong class="pos">${t.current_gw_score}</strong></div>` : ''}
-        ${t.season_star_name ? `<div class="receipt-line"><span>Star player (season)</span><strong>${t.season_star_name} &middot; ${t.season_star_points}</strong></div>` : ''}
-        ${t.captain_name ? `<div class="receipt-line"><span>Captain (this GW)</span><strong>${t.captain_name} &middot; ${t.captain_points}</strong></div>` : ''}
-        ${t.first_pick_name ? `<div class="receipt-line"><span>First pick still owned</span><strong>${t.first_pick_name} (R${t.first_pick_round})</strong></div>` : ''}
-      </div>
-      ${t.upcoming.length ? `
-        <div class="squad-bench-label" style="margin-top:12px;">Next ${t.upcoming.length} fixtures</div>
-        <div class="team-detail-upcoming">
-          ${t.upcoming.map(u => `
-            <div class="receipt-line"><span>GW${u.event}</span><strong>${u.is_home ? 'vs' : '@'} ${u.opponent}</strong></div>
-          `).join('')}
-        </div>
-      ` : ''}
+function teamDetailContentHTML(t){
+  return `
+    <div class="team-detail-lines">
+      <div class="receipt-line"><span>W-D-L</span><strong>${t.won}-${t.drawn}-${t.lost}</strong></div>
+      ${t.mid_gameweek && t.current_gw_score != null ? `<div class="receipt-line"><span>GW${t.current_event} score so far</span><strong class="pos">${t.current_gw_score}</strong></div>` : ''}
+      ${t.season_star_name ? `<div class="receipt-line"><span>Star player (season)</span><strong>${t.season_star_name} &middot; ${t.season_star_points}</strong></div>` : ''}
+      ${t.captain_name ? `<div class="receipt-line"><span>Captain (this GW)</span><strong>${t.captain_name} &middot; ${t.captain_points}</strong></div>` : ''}
+      ${t.first_pick_name ? `<div class="receipt-line"><span>First pick still owned</span><strong>${t.first_pick_name} (R${t.first_pick_round})</strong></div>` : ''}
     </div>
+    ${t.upcoming.length ? `
+      <div class="squad-bench-label" style="margin-top:10px;">Next ${t.upcoming.length} fixtures</div>
+      <div class="team-detail-upcoming">
+        ${t.upcoming.map(u => `
+          <div class="receipt-line"><span>GW${u.event}</span><strong>${u.is_home ? 'vs' : '@'} ${u.opponent}</strong></div>
+        `).join('')}
+      </div>
+    ` : ''}
   `;
-  document.body.appendChild(modal);
-  modal.addEventListener('click', (e) => {
-    if(e.target === modal || e.target.classList.contains('receipt-close')) modal.remove();
-  });
+}
+
+function toggleTeamDetailDropdown(row, t){
+  const existingNext = row.nextElementSibling;
+  if(existingNext && existingNext.classList.contains('team-detail-dropdown')){
+    // Already open for this row - toggle closed.
+    existingNext.remove();
+    row.classList.remove('expanded');
+    return;
+  }
+  // Close any other open dropdown before opening this one.
+  document.querySelectorAll('.team-detail-dropdown').forEach(el => el.remove());
+  document.querySelectorAll('.standing-row.expanded').forEach(el => el.classList.remove('expanded'));
+
+  const dropdown = document.createElement('div');
+  dropdown.className = 'team-detail-dropdown';
+  dropdown.innerHTML = teamDetailContentHTML(t);
+  row.after(dropdown);
+  row.classList.add('expanded');
 }
 
 document.addEventListener('click', (e) => {
   const teamRow = e.target.closest('.standing-row');
   if(teamRow && teamRow.dataset.team){
-    try{ showTeamDetail(JSON.parse(teamRow.dataset.team)); }catch(err){ /* ignore */ }
+    try{ toggleTeamDetailDropdown(teamRow, JSON.parse(teamRow.dataset.team)); }catch(err){ /* ignore */ }
     return;
   }
   const card = e.target.closest('.field-player, .squad-row');
