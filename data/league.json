@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T09:31:32.444396+00:00",
+  "generated_at": "2026-08-31T09:40:08.794332+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -232,19 +232,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465247.png",
                 "shirt_color": "#DA291C",
                 "initials": "LA",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 2,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -256,19 +276,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466075.png",
                 "shirt_color": "#EF0107",
                 "initials": "CA",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  9
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 9,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 80,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.04,
+                "xa": 0.09,
+                "xgi": 0.13,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -280,19 +320,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/106760.png",
                 "shirt_color": "#DA291C",
                 "initials": "SH",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.26,
+                "xgi": 0.26,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -304,19 +364,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465351.png",
                 "shirt_color": "#6CABDD",
                 "initials": "MN",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 33,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.04,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -328,19 +408,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/437730.png",
                 "shirt_color": "#6CABDD",
                 "initials": "SE",
+                "season_points": 7,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.06,
+                "xa": 0.02,
+                "xgi": 0.08,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -352,19 +452,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/430871.png",
                 "shirt_color": "#DA291C",
                 "initials": "CU",
+                "season_points": 11,
+                "badges": [
+                  {
+                    "code": "most_assists",
+                    "label": "Most assists",
+                    "icon": "\ud83c\udfaf"
+                  }
+                ],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 79,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.24,
+                "xa": 0.21,
+                "xgi": 0.45,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -376,19 +502,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/440993.png",
                 "shirt_color": "#003399",
                 "initials": "ND",
+                "season_points": 13,
+                "badges": [],
+                "form": [
+                  9
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 9,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 12,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.24,
+                "xa": 0.32,
+                "xgi": 0.56,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -400,19 +546,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/484420.png",
                 "shirt_color": "#EB172B",
                 "initials": "EF",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 79,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.03,
+                "xgi": 0.03,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -424,19 +590,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/222683.png",
                 "shirt_color": "#DA020E",
                 "initials": "KL",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 74,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 9,
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.11,
+                "xa": 0.0,
+                "xgi": 0.11,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -448,19 +634,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/177815.png",
                 "shirt_color": "#FFCD00",
                 "initials": "CL",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.13,
+                "xa": 0.0,
+                "xgi": 0.13,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -472,19 +678,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/60689.png",
                 "shirt_color": "#DD0000",
                 "initials": "WO",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 28,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.12,
+                "xa": 0.01,
+                "xgi": 0.13,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -498,19 +724,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/80201.png",
                 "shirt_color": "#000000",
                 "initials": "LE",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "CHE",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 3,
+                "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -522,19 +768,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/470313.png",
                 "shirt_color": "#241F20",
                 "initials": "WO",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -546,19 +812,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/491279.png",
                 "shirt_color": "#132257",
                 "initials": "VV",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -570,19 +856,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/620109.png",
                 "shirt_color": "#034694",
                 "initials": "PA",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -600,19 +906,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/116535.png",
                 "shirt_color": "#C8102E",
                 "initials": "A.",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -624,19 +950,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/198869.png",
                 "shirt_color": "#EF0107",
                 "initials": "WH",
+                "season_points": 11,
+                "badges": [],
+                "form": [
+                  11
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 11,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.18,
+                "xa": 0.21,
+                "xgi": 0.39,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -648,19 +994,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/500040.png",
                 "shirt_color": "#EF0107",
                 "initials": "MO",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -672,19 +1038,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/477424.png",
                 "shirt_color": "#6CABDD",
                 "initials": "GV",
+                "season_points": 14,
+                "badges": [],
+                "form": [
+                  9
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 9,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.19,
+                "xa": 0.05,
+                "xgi": 0.24,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -696,19 +1082,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215136.png",
                 "shirt_color": "#DD0000",
                 "initials": "N.",
+                "season_points": 8,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -720,19 +1126,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/222531.png",
                 "shirt_color": "#DD0000",
                 "initials": "GW",
+                "season_points": 15,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.13,
+                "xa": 0.06,
+                "xgi": 0.19,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -744,19 +1170,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/209244.png",
                 "shirt_color": "#6CABDD",
                 "initials": "FO",
+                "season_points": 10,
+                "badges": [
+                  {
+                    "code": "most_assists",
+                    "label": "Most assists",
+                    "icon": "\ud83c\udfaf"
+                  }
+                ],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 81,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.12,
+                "xa": 0.4,
+                "xgi": 0.52,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -768,19 +1220,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/60307.png",
                 "shirt_color": "#0057B8",
                 "initials": "GR",
+                "season_points": 15,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.27,
+                "xgi": 0.27,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -792,19 +1264,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
                 "shirt_color": "#EF0107",
                 "initials": "TZ",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 75,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.19,
+                "xa": 0.14,
+                "xgi": 0.33,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -816,19 +1308,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/502500.png",
                 "shirt_color": "#FFDB00",
                 "initials": "TH",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 82,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 1.0,
+                "xa": 0.08,
+                "xgi": 1.08,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -840,19 +1352,55 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/475168.png",
                 "shirt_color": "#034694",
                 "initials": "JP",
+                "season_points": 20,
+                "badges": [
+                  {
+                    "code": "most_assists",
+                    "label": "Most assists",
+                    "icon": "\ud83c\udfaf"
+                  },
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_fwd",
+                    "label": "Top 3 FWD",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  11
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 11,
                 "goals": 1,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.63,
+                "xa": 0.06,
+                "xgi": 0.69,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -866,19 +1414,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/449027.png",
                 "shirt_color": "#C8102E",
                 "initials": "MA",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -890,19 +1458,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/499604.png",
                 "shirt_color": "#DA020E",
                 "initials": "RA",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 88,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.04,
+                "xa": 0.03,
+                "xgi": 0.07,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -914,19 +1502,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/551466.png",
                 "shirt_color": "#000000",
                 "initials": "GO",
+                "season_points": 8,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "CHE",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 3,
+                "saves": 0,
+                "xg": 0.73,
+                "xa": 0.01,
+                "xgi": 0.74,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 6
@@ -938,19 +1546,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/445122.png",
                 "shirt_color": "#EF0107",
                 "initials": "J.",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -989,19 +1617,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/154561.png",
                 "shirt_color": "#EF0107",
                 "initials": "RA",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 1,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -1013,19 +1661,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/97032.png",
                 "shirt_color": "#C8102E",
                 "initials": "VI",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 11,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.25,
+                "xa": 0.01,
+                "xgi": 0.26,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1037,19 +1705,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/469142.png",
                 "shirt_color": "#132257",
                 "initials": "VH",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 9,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 3,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.03,
+                "xgi": 0.03,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1061,19 +1749,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/575476.png",
                 "shirt_color": "#DD0000",
                 "initials": "MU",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  4
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 4,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 14,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.28,
+                "xgi": 0.28,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -1085,19 +1793,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/494521.png",
                 "shirt_color": "#DA020E",
                 "initials": "TR",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1109,19 +1837,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 67,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.07,
+                "xa": 0.08,
+                "xgi": 0.15,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -1133,19 +1881,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/551499.png",
                 "shirt_color": "#C8102E",
                 "initials": "MU",
+                "season_points": 10,
+                "badges": [],
+                "form": [
+                  4
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 4,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 27,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.1,
+                "xa": 0.04,
+                "xgi": 0.14,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -1157,19 +1925,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/448047.png",
                 "shirt_color": "#034694",
                 "initials": "EN",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 25,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1181,19 +1969,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/154566.png",
                 "shirt_color": "#132257",
                 "initials": "SO",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 22,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.07,
+                "xa": 0.0,
+                "xgi": 0.07,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1205,19 +2013,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219168.png",
                 "shirt_color": "#C8102E",
                 "initials": "IS",
+                "season_points": 10,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 1.09,
+                "xa": 0.01,
+                "xgi": 1.1,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1229,19 +2057,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/485711.png",
                 "shirt_color": "#DA291C",
                 "initials": "\u0160E",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 23,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.04,
+                "xa": 0.0,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1255,19 +2103,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/432720.png",
                 "shirt_color": "#FFCD00",
                 "initials": "TR",
+                "season_points": 12,
+                "badges": [
+                  {
+                    "code": "best_gkp",
+                    "label": "Top 3 GKP",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  9
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 9,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 9
@@ -1279,19 +2153,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/248875.png",
                 "shirt_color": "#6CABDD",
                 "initials": "DO",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -1303,19 +2197,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/209046.png",
                 "shirt_color": "#DD0000",
                 "initials": "HO",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -1327,19 +2241,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/199798.png",
                 "shirt_color": "#EF0107",
                 "initials": "KO",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -1357,19 +2291,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/200720.png",
                 "shirt_color": "#FFDB00",
                 "initials": "KE",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  7
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 7,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 4,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 7
@@ -1381,19 +2335,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/226597.png",
                 "shirt_color": "#EF0107",
                 "initials": "GA",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  5
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 5,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.05,
+                "xa": 0.01,
+                "xgi": 0.06,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -1405,19 +2379,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/437499.png",
                 "shirt_color": "#034694",
                 "initials": "LA",
+                "season_points": 7,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 12,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.2,
+                "xgi": 0.2,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -1429,19 +2423,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247348.png",
                 "shirt_color": "#1B458F",
                 "initials": "MU",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 54,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.23,
+                "xa": 0.01,
+                "xgi": 0.24,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -1453,19 +2467,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/544877.png",
                 "shirt_color": "#C8102E",
                 "initials": "KE",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.02,
+                "xa": 0.02,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -1477,19 +2511,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/223340.png",
                 "shirt_color": "#EF0107",
                 "initials": "SA",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  9
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 9,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 67,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.64,
+                "xa": 0.08,
+                "xgi": 0.72,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -1501,19 +2555,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215379.png",
                 "shirt_color": "#6CABDD",
                 "initials": "AN",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 62,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.25,
+                "xgi": 0.25,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1525,19 +2599,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247632.png",
                 "shirt_color": "#034694",
                 "initials": "NE",
+                "season_points": 8,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 14,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.03,
+                "xa": 0.07,
+                "xgi": 0.1,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1549,19 +2643,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/232413.png",
                 "shirt_color": "#EF0107",
                 "initials": "EZ",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 14,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.04,
+                "xa": 0.0,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -1573,19 +2687,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/444102.png",
                 "shirt_color": "#DA020E",
                 "initials": "EV",
+                "season_points": 9,
+                "badges": [
+                  {
+                    "code": "most_assists",
+                    "label": "Most assists",
+                    "icon": "\ud83c\udfaf"
+                  }
+                ],
+                "form": [
+                  4
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 4,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 74,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.21,
+                "xgi": 0.21,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -1597,19 +2737,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219847.png",
                 "shirt_color": "#EF0107",
                 "initials": "HA",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.26,
+                "xa": 0.03,
+                "xgi": 0.29,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -1623,19 +2783,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/98747.png",
                 "shirt_color": "#241F20",
                 "initials": "PO",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -1647,19 +2827,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/448514.png",
                 "shirt_color": "#6CABDD",
                 "initials": "AN",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -1671,19 +2871,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466525.png",
                 "shirt_color": "#FFCD00",
                 "initials": "ST",
+                "season_points": 17,
+                "badges": [
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  }
+                ],
+                "form": [
+                  13
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 13,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 16,
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.1,
+                "xa": 0.05,
+                "xgi": 0.15,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 13
@@ -1695,19 +2921,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247412.png",
                 "shirt_color": "#1B458F",
                 "initials": "SL",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 27,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.25,
+                "xa": 0.01,
+                "xgi": 0.26,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -1746,19 +2992,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204936.png",
                 "shirt_color": "#6CABDD",
                 "initials": "DO",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -1770,19 +3036,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/225796.png",
                 "shirt_color": "#034694",
                 "initials": "JA",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.1,
+                "xa": 0.07,
+                "xgi": 0.17,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -1794,19 +3080,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/432830.png",
                 "shirt_color": "#FFDB00",
                 "initials": "CO",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.34,
+                "xa": 0.04,
+                "xgi": 0.38,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -1818,19 +3124,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/578153.png",
                 "shirt_color": "#6CABDD",
                 "initials": "KH",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1842,19 +3168,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/487838.png",
                 "shirt_color": "#241F20",
                 "initials": "HA",
+                "season_points": 14,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 11,
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.35,
+                "xgi": 0.35,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -1866,19 +3212,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/446008.png",
                 "shirt_color": "#DA291C",
                 "initials": "MB",
+                "season_points": 13,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.5,
+                "xa": 0.23,
+                "xgi": 0.73,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1890,19 +3256,55 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466052.png",
                 "shirt_color": "#6CABDD",
                 "initials": "CH",
+                "season_points": 22,
+                "badges": [
+                  {
+                    "code": "most_assists",
+                    "label": "Most assists",
+                    "icon": "\ud83c\udfaf"
+                  },
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_mid",
+                    "label": "Top 3 MID",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  8
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 8,
                 "goals": 0,
                 "assists": 2,
                 "minutes": 27,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.5,
+                "xgi": 0.5,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -1914,19 +3316,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/243298.png",
                 "shirt_color": "#C8102E",
                 "initials": "GA",
+                "season_points": 17,
+                "badges": [
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  }
+                ],
+                "form": [
+                  12
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 12,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 12,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.3,
+                "xa": 0.15,
+                "xgi": 0.45,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 12
@@ -1938,19 +3366,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/184029.png",
                 "shirt_color": "#EF0107",
                 "initials": "\u00d8D",
+                "season_points": 11,
+                "badges": [],
+                "form": [
+                  11
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 11,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 75,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.21,
+                "xa": 0.1,
+                "xgi": 0.31,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -1962,19 +3410,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/201666.png",
                 "shirt_color": "#241F20",
                 "initials": "BA",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.07,
+                "xa": 0.02,
+                "xgi": 0.09,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -1986,19 +3454,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/212319.png",
                 "shirt_color": "#132257",
                 "initials": "RI",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 67,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 3,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2012,19 +3500,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/457569.png",
                 "shirt_color": "#DA020E",
                 "initials": "PE",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 4,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -2036,19 +3544,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/205651.png",
                 "shirt_color": "#EF0107",
                 "initials": "G.",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2060,19 +3588,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/178301.png",
                 "shirt_color": "#670E36",
                 "initials": "WA",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 4,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2084,19 +3632,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/462424.png",
                 "shirt_color": "#EF0107",
                 "initials": "SA",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2114,19 +3682,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215059.png",
                 "shirt_color": "#034694",
                 "initials": "S\u00c1",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 4,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2138,19 +3726,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/209036.png",
                 "shirt_color": "#6CABDD",
                 "initials": "GU",
+                "season_points": 12,
+                "badges": [],
+                "form": [
+                  10
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 10,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.89,
+                "xa": 0.32,
+                "xgi": 1.21,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 10
@@ -2162,19 +3770,50 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/17761.png",
                 "shirt_color": "#003399",
                 "initials": "TA",
+                "season_points": 18,
+                "badges": [
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_def",
+                    "label": "Top 3 DEF",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 9,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.05,
+                "xa": 0.0,
+                "xgi": 0.05,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -2186,19 +3825,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/216094.png",
                 "shirt_color": "#C8102E",
                 "initials": "FR",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.01,
+                "xa": 0.09,
+                "xgi": 0.1,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -2210,19 +3869,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/424876.png",
                 "shirt_color": "#C8102E",
                 "initials": "SZ",
+                "season_points": 12,
+                "badges": [],
+                "form": [
+                  8
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 8,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.85,
+                "xa": 0.27,
+                "xgi": 1.12,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -2234,19 +3913,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/244850.png",
                 "shirt_color": "#034694",
                 "initials": "RO",
+                "season_points": 13,
+                "badges": [],
+                "form": [
+                  8
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 8,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 81,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.96,
+                "xa": 0.1,
+                "xgi": 1.06,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -2258,19 +3957,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/153682.png",
                 "shirt_color": "#FFCD00",
                 "initials": "WI",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 65,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -2282,19 +4001,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
                 "shirt_color": "#DA291C",
                 "initials": "RA",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.1,
+                "xgi": 0.1,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -2306,19 +4045,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/223094.png",
                 "shirt_color": "#6CABDD",
                 "initials": "HA",
+                "season_points": 15,
+                "badges": [
+                  {
+                    "code": "best_fwd",
+                    "label": "Top 3 FWD",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.74,
+                "xa": 0.02,
+                "xgi": 0.76,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2330,19 +4095,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/216646.png",
                 "shirt_color": "#241F20",
                 "initials": "WI",
+                "season_points": 12,
+                "badges": [
+                  {
+                    "code": "best_fwd",
+                    "label": "Top 3 FWD",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  4
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 4,
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 1.0,
+                "xa": 0.02,
+                "xgi": 1.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -2354,19 +4145,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/586309.png",
                 "shirt_color": "#003399",
                 "initials": "BA",
+                "season_points": 10,
+                "badges": [],
+                "form": [
+                  8
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 8,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 78,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.45,
+                "xa": 0.09,
+                "xgi": 0.54,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -2376,23 +4187,43 @@
               {
                 "name": "Martinez",
                 "position": "GKP",
-                "club": "AVL",
+                "club": "CHE",
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/98980.png",
-                "shirt_color": "#670E36",
+                "shirt_color": "#034694",
                 "initials": "MA",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2404,19 +4235,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/232185.png",
                 "shirt_color": "#1B458F",
                 "initials": "SA",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2428,19 +4279,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/441164.png",
                 "shirt_color": "#132257",
                 "initials": "PP",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2452,19 +4323,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/448104.png",
                 "shirt_color": "#EF0107",
                 "initials": "HI",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 9,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -2503,19 +4394,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/85633.png",
                 "shirt_color": "#DD0000",
                 "initials": "SE",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 2,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2527,19 +4438,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/171314.png",
                 "shirt_color": "#6CABDD",
                 "initials": "R\u00da",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.14,
+                "xgi": 0.14,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2551,19 +4482,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/610799.png",
                 "shirt_color": "#0057B8",
                 "initials": "VU",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.13,
+                "xa": 0.03,
+                "xgi": 0.16,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -2575,19 +4526,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465642.png",
                 "shirt_color": "#241F20",
                 "initials": "TH",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 15,
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -2599,19 +4570,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/651426.png",
                 "shirt_color": "#1B458F",
                 "initials": "CA",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.05,
+                "xa": 0.01,
+                "xgi": 0.06,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -2623,19 +4614,50 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/244851.png",
                 "shirt_color": "#034694",
                 "initials": "PA",
+                "season_points": 20,
+                "badges": [
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_mid",
+                    "label": "Top 3 MID",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  13
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 13,
                 "goals": 1,
                 "assists": 1,
                 "minutes": 82,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 9,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.28,
+                "xa": 0.19,
+                "xgi": 0.47,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 13
@@ -2647,19 +4669,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/486672.png",
                 "shirt_color": "#034694",
                 "initials": "CA",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -2671,19 +4713,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/232787.png",
                 "shirt_color": "#132257",
                 "initials": "GA",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.02,
+                "xa": 0.06,
+                "xgi": 0.08,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -2695,19 +4757,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/224117.png",
                 "shirt_color": "#EF0107",
                 "initials": "GY",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -2719,19 +4801,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/441264.png",
                 "shirt_color": "#EB172B",
                 "initials": "BR",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 66,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.3,
+                "xa": 0.0,
+                "xgi": 0.3,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2743,19 +4845,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/482973.png",
                 "shirt_color": "#DD0000",
                 "initials": "IJ",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.22,
+                "xa": 0.02,
+                "xgi": 0.24,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2769,19 +4891,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/172649.png",
                 "shirt_color": "#1B458F",
                 "initials": "HE",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -2793,19 +4935,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
                 "shirt_color": "#EF0107",
                 "initials": "BG",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "COV",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2817,19 +4979,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/460842.png",
                 "shirt_color": "#132257",
                 "initials": "KU",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2841,19 +5023,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/200834.png",
                 "shirt_color": "#EB172B",
                 "initials": "MU",
+                "season_points": 9,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -2871,19 +5073,45 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/111234.png",
                 "shirt_color": "#003399",
                 "initials": "PI",
+                "season_points": 10,
+                "badges": [
+                  {
+                    "code": "best_gkp",
+                    "label": "Top 3 GKP",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  7
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 7,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 4,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 7
@@ -2895,19 +5123,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/472769.png",
                 "shirt_color": "#6CABDD",
                 "initials": "O'",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 62,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.07,
+                "xa": 0.41,
+                "xgi": 0.48,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2919,19 +5167,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/221466.png",
                 "shirt_color": "#132257",
                 "initials": "SE",
+                "season_points": 3,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "opponents": [],
+                "defensive_contribution_count": 16,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 3,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -2943,19 +5211,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/480455.png",
                 "shirt_color": "#003399",
                 "initials": "BR",
+                "season_points": 10,
+                "badges": [],
+                "form": [
+                  6
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 6,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -2967,19 +5255,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/227444.png",
                 "shirt_color": "#DD0000",
                 "initials": "MI",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 7,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.11,
+                "xa": 0.02,
+                "xgi": 0.13,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -2991,19 +5299,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/95658.png",
                 "shirt_color": "#DA291C",
                 "initials": "MA",
+                "season_points": 5,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.04,
+                "xa": 0.4,
+                "xgi": 0.44,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -3015,19 +5343,55 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/141746.png",
                 "shirt_color": "#DA291C",
                 "initials": "B.",
+                "season_points": 25,
+                "badges": [
+                  {
+                    "code": "golden_boot",
+                    "label": "Golden Boot (most goals)",
+                    "icon": "\u26bd"
+                  },
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_mid",
+                    "label": "Top 3 MID",
+                    "icon": "\u2b50"
+                  }
+                ],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "HUL",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.08,
+                "xa": 0.26,
+                "xgi": 0.34,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3039,19 +5403,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/494595.png",
                 "shirt_color": "#C8102E",
                 "initials": "WI",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 62,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.26,
+                "xa": 0.04,
+                "xgi": 0.3,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3063,19 +5447,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215413.png",
                 "shirt_color": "#003399",
                 "initials": "DH",
+                "season_points": 13,
+                "badges": [],
+                "form": [
+                  11
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 11,
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 8,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.12,
+                "xa": 0.17,
+                "xgi": 0.29,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -3087,19 +5491,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/533463.png",
                 "shirt_color": "#FFDB00",
                 "initials": "O.",
+                "season_points": 4,
+                "badges": [],
+                "form": [
+                  3
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 66,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 6,
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": true,
+                    "team_score": 3,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.05,
+                "xa": 0.29,
+                "xgi": 0.34,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -3111,19 +5535,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/231747.png",
                 "shirt_color": "#1B458F",
                 "initials": "MA",
+                "season_points": 2,
+                "badges": [],
+                "form": [
+                  2
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 2,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 62,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 5,
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.7,
+                "xa": 0.02,
+                "xgi": 0.72,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3137,19 +5581,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/498016.png",
                 "shirt_color": "#EB172B",
                 "initials": "RO",
+                "season_points": 7,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 1,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -3161,19 +5625,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/510281.png",
                 "shirt_color": "#132257",
                 "initials": "S\u00c1",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -3185,19 +5669,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/647850.png",
                 "shirt_color": "#0057B8",
                 "initials": "KO",
+                "season_points": 6,
+                "badges": [],
+                "form": [
+                  1
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 26,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.18,
+                "xa": 0.0,
+                "xgi": 0.18,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -3209,19 +5713,39 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/510663.png",
                 "shirt_color": "#C8102E",
                 "initials": "EK",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
                 "is_captain": false,
                 "is_vice_captain": false,
                 "base_points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "opponents": [],
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
