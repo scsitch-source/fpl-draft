@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T02:24:09.271002+00:00",
+  "generated_at": "2026-08-31T02:56:17.634559+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -18,13 +18,15 @@
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
-      "score": 44
+      "score": 44,
+      "api_score": 44
     },
     "away": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
-      "score": 31
+      "score": 29,
+      "api_score": 31
     },
     "finished": false,
     "started": true,
@@ -46,7 +48,7 @@
       "points_against": 51,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 49,
+      "current_gw_score": 51,
       "form": [
         "W"
       ],
@@ -88,7 +90,7 @@
       "points_against": 26,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 17,
+      "current_gw_score": 24,
       "form": [
         "W"
       ],
@@ -109,7 +111,7 @@
       "points_against": 31,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 43,
+      "current_gw_score": 48,
       "form": [
         "W"
       ],
@@ -172,7 +174,7 @@
       "points_against": 41,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 31,
+      "current_gw_score": 29,
       "form": [
         "L"
       ],
@@ -193,7 +195,7 @@
       "points_against": 41,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 12,
+      "current_gw_score": 24,
       "form": [
         "L"
       ],
@@ -207,13 +209,15 @@
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
-          "score": 32
+          "score": 32,
+          "api_score": 32
         },
         "away": {
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
-          "score": 52
+          "score": 52,
+          "api_score": 52
         },
         "finished": true,
         "started": true,
@@ -962,13 +966,15 @@
           "league_entry_id": 183812,
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
-          "score": 26
+          "score": 26,
+          "api_score": 26
         },
         "away": {
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
-          "score": 41
+          "score": 41,
+          "api_score": 41
         },
         "finished": true,
         "started": true,
@@ -1717,13 +1723,15 @@
           "league_entry_id": 226052,
           "team_name": "PFC",
           "manager_name": "Archie Ross",
-          "score": 51
+          "score": 51,
+          "api_score": 51
         },
         "away": {
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
-          "score": 52
+          "score": 52,
+          "api_score": 52
         },
         "finished": true,
         "started": true,
@@ -2472,13 +2480,15 @@
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
-          "score": 31
+          "score": 31,
+          "api_score": 31
         },
         "away": {
           "league_entry_id": 27141,
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
-          "score": 41
+          "score": 41,
+          "api_score": 41
         },
         "finished": true,
         "started": true,
@@ -3229,13 +3239,15 @@
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
-          "score": 44
+          "score": 44,
+          "api_score": 44
         },
         "away": {
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
-          "score": 31
+          "score": 29,
+          "api_score": 31
         },
         "finished": false,
         "started": true,
@@ -4434,13 +4446,15 @@
           "league_entry_id": 27141,
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
-          "score": 43
+          "score": 48,
+          "api_score": 43
         },
         "away": {
           "league_entry_id": 226052,
           "team_name": "PFC",
           "manager_name": "Archie Ross",
-          "score": 50
+          "score": 50,
+          "api_score": 50
         },
         "finished": false,
         "started": true,
@@ -5639,13 +5653,15 @@
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
-          "score": 49
+          "score": 51,
+          "api_score": 49
         },
         "away": {
           "league_entry_id": 183812,
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
-          "score": 12
+          "score": 24,
+          "api_score": 12
         },
         "finished": false,
         "started": true,
@@ -6844,13 +6860,15 @@
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
-          "score": 17
+          "score": 24,
+          "api_score": 17
         },
         "away": {
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
-          "score": 40
+          "score": 40,
+          "api_score": 40
         },
         "finished": false,
         "started": true,
