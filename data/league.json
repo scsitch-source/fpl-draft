@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T04:33:50.198542+00:00",
+  "generated_at": "2026-08-31T04:43:00.631060+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -12609,7 +12609,7 @@
       "league_entry_id": 27141,
       "player_in": "S\u00e1vio",
       "player_out": "Est\u00eav\u00e3o",
-      "kind": "Free agent"
+      "kind": "Free Agent"
     },
     {
       "event": 1,
@@ -12618,7 +12618,7 @@
       "league_entry_id": 27139,
       "player_in": "White",
       "player_out": "Muharemovi\u0107",
-      "kind": "Free agent"
+      "kind": "Free Agent"
     },
     {
       "event": 1,
@@ -12627,7 +12627,7 @@
       "league_entry_id": 27143,
       "player_in": "Barry",
       "player_out": "Welbeck",
-      "kind": "Free agent"
+      "kind": "Free Agent"
     },
     {
       "event": 2,
@@ -12699,7 +12699,7 @@
       "league_entry_id": 183812,
       "player_in": "Grealish",
       "player_out": "Munoz",
-      "kind": "Free agent"
+      "kind": "Free Agent"
     },
     {
       "event": 2,
@@ -12708,7 +12708,7 @@
       "league_entry_id": 27139,
       "player_in": "Silva",
       "player_out": "N.Williams",
-      "kind": "Free agent"
+      "kind": "Free Agent"
     }
   ],
   "latest_squad_event": 2,
