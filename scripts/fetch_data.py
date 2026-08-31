@@ -41,6 +41,22 @@ def get_json(path):
     return resp.json()
 
 
+def get_json_absolute(url):
+    """Like get_json but for a full URL outside the Draft API base - used for
+    the classic FPL fixtures fallback below."""
+    resp = SESSION.get(url, timeout=30)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def get_json_soft_absolute(url):
+    try:
+        return get_json_absolute(url)
+    except Exception as exc:  # pragma: no cover - defensive
+        print(f"  warning: GET {url} failed ({exc})")
+        return None
+
+
 def safe_get(d, *keys, default=None):
     cur = d
     for k in keys:
@@ -258,6 +274,22 @@ def build():
     # match has actually finished, not just because they show 0 minutes
     # while the match simply hasn't kicked off yet.
     fixtures_raw = bootstrap.get("fixtures", [])
+    print(f"  bootstrap 'fixtures' key: type={type(fixtures_raw).__name__}, "
+          f"len={len(fixtures_raw) if isinstance(fixtures_raw, (list, dict)) else 'n/a'}")
+    if not isinstance(fixtures_raw, list) or len(fixtures_raw) == 0:
+        # The Draft API's bootstrap-static has been quirky about several
+        # fields in the past (e.g. 'events' being a dict, not a list) - if
+        # 'fixtures' is missing/empty here, fall back to the classic FPL
+        # API's own fixtures endpoint, which carries the same team IDs and
+        # is a stable, public, unauthenticated endpoint.
+        print("  'fixtures' missing/empty from Draft bootstrap-static - "
+              "falling back to fantasy.premierleague.com/api/fixtures/")
+        fallback = get_json_soft_absolute("https://fantasy.premierleague.com/api/fixtures/")
+        if isinstance(fallback, list) and fallback:
+            fixtures_raw = fallback
+            print(f"  fallback fixtures fetched OK: {len(fixtures_raw)} entries")
+        else:
+            print("  fallback fixtures fetch also failed or returned nothing")
     club_finished_by_event = {}
     club_opponent_by_event = {}
     if isinstance(fixtures_raw, list):
@@ -305,25 +337,46 @@ def build():
         if ENTRY_ID and str(real_entry_id) == str(ENTRY_ID):
             your_league_entry_id = le_id
 
-    # Current / next gameweek
+    # Current / next gameweek.
+    # CONFIRMED from real Draft API log output: individual gameweek objects
+    # do NOT have 'is_current'/'is_next' flags at all (only id/name/finished/
+    # deadline_time) - the loop below relying on those never matched
+    # anything. The real, reliable source is the top-level events dict's own
+    # 'current'/'next' integer fields (e.g. {"current": 2, "data": [...],
+    # "next": ...}), which is checked first now.
     current_event = None
     next_event = None
     next_deadline = None
     current_event_finished = False
+    if isinstance(_events_raw, dict):
+        current_event = _events_raw.get("current")
+        next_event = _events_raw.get("next")
+
     for ev in events:
         if not isinstance(ev, dict):
             continue
+        # Still respect is_current/is_next if a Draft API variant DOES
+        # provide them (belt and braces), but don't rely on it exclusively.
         if ev.get("is_current"):
             current_event = ev.get("id")
-            current_event_finished = bool(ev.get("finished"))
         if ev.get("is_next"):
             next_event = ev.get("id")
             next_deadline = ev.get("deadline_time")
+        # Once we know which id is current, pull ITS real 'finished' flag.
+        if current_event is not None and ev.get("id") == current_event:
+            current_event_finished = bool(ev.get("finished"))
+        if next_event is not None and ev.get("id") == next_event and not next_deadline:
+            next_deadline = ev.get("deadline_time")
+
     if current_event is None:
         current_event = game.get("current_event")
         current_event_finished = bool(game.get("current_event_finished"))
     if next_event is None:
         next_event = game.get("next_event")
+
+    print(f"  current_event={current_event}, current_event_finished={current_event_finished}")
+    print(f"  club_finished_by_event[current_event] = "
+          f"{club_finished_by_event.get(current_event, '(no entry at all for this event)')}")
 
     # Per-entry weekly scores + form, derived from finished matches
     weekly_scores = {le_id: {} for le_id in entry_by_id}
@@ -475,6 +528,12 @@ def build():
             if sample_stats:
                 print(f"  sample raw stats blob: {json.dumps(sample_stats)[:500]}")
 
+        def _to_float(v):
+            try:
+                return round(float(v), 2)
+            except (TypeError, ValueError):
+                return 0.0
+
         def _row(stats):
             return {
                 "points": stats.get("total_points", 0),
@@ -489,6 +548,11 @@ def build():
                 "own_goals": stats.get("own_goals", 0),
                 "goals_conceded": stats.get("goals_conceded", 0),
                 "saves": stats.get("saves", 0),
+                # These arrive as strings (e.g. "0.35") from the live-stats
+                # endpoint, hence the explicit float conversion.
+                "xg": _to_float(stats.get("expected_goals")),
+                "xa": _to_float(stats.get("expected_assists")),
+                "xgi": _to_float(stats.get("expected_goal_involvements")),
             }
 
         if isinstance(elements, dict):
@@ -546,7 +610,8 @@ def build():
             stat = live_stats.get(el_id, {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
                                           "clean_sheets": 0, "defensive_contribution": 0,
                                           "bonus": 0, "yellow_cards": 0, "red_cards": 0,
-                                          "own_goals": 0, "goals_conceded": 0, "saves": 0})
+                                          "own_goals": 0, "goals_conceded": 0, "saves": 0,
+                                          "xg": 0.0, "xa": 0.0, "xgi": 0.0})
             row = {
                 "name": info["name"],
                 "position": info["position"],
@@ -570,7 +635,14 @@ def build():
                 # real per-club lookup, since transfers don't happen mid-week.
                 "match_finished": (
                     True if (current_event is not None and ev < current_event)
-                    else club_finished_by_event.get(ev, {}).get(info.get("club_id"), False)
+                    # Safety net: if the per-club fixture lookup somehow says
+                    # not-finished but we've independently confirmed (via the
+                    # gameweek's own finished flag) that the whole round is
+                    # over, trust that rather than blocking a valid auto-sub.
+                    else (
+                        club_finished_by_event.get(ev, {}).get(info.get("club_id"), False)
+                        or (ev == current_event and bool(current_event_finished))
+                    )
                 ),
                 "clean_sheet": bool(stat.get("clean_sheets")) and info["position"] in ("GKP", "DEF"),
                 "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), info["position"]),
@@ -582,6 +654,9 @@ def build():
                 "own_goals": stat.get("own_goals", 0) or 0,
                 "goals_conceded": stat.get("goals_conceded", 0) or 0,
                 "saves": stat.get("saves", 0) or 0,
+                "xg": stat.get("xg", 0.0),
+                "xa": stat.get("xa", 0.0),
+                "xgi": stat.get("xgi", 0.0),
             }
             (raw_starting if is_starting else raw_bench).append(row)
 
@@ -590,6 +665,17 @@ def build():
         for p in final_bench:
             p.setdefault("multiplier", 1)
             p.setdefault("points", p["base_points"])
+
+        if ev == current_event:
+            dnp_starters = [p for p in final_starting if p["minutes"] == 0]
+            if dnp_starters:
+                print(f"  [autosub check] GW{ev} entry {real_entry_id}: "
+                      f"{len(dnp_starters)} starting XI player(s) with 0 minutes NOT subbed out -> "
+                      + ", ".join(f"{p['name']} (match_finished={p['match_finished']})" for p in dnp_starters))
+            promoted = [p for p in final_starting if p.get("subbed_in")]
+            if promoted:
+                print(f"  [autosub check] GW{ev} entry {real_entry_id}: "
+                      f"auto-subbed in -> {', '.join(p['name'] for p in promoted)}")
 
         played_count = sum(1 for p in final_starting if p["minutes"] > 0)
         return {

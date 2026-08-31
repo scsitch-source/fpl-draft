@@ -233,6 +233,13 @@
   .spot-manager{color:var(--chalk-dim);font-size:13px;margin-bottom:14px;}
   .spot-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0;}
   .stat-box{background:var(--ink);border-radius:10px;padding:8px 6px;text-align:center;}
+  .star-box{display:flex;align-items:center;gap:10px;text-align:left;padding:8px 10px;}
+  .star-photo{
+    position:relative;width:36px;height:36px;flex-shrink:0;overflow:hidden;
+    border-radius:8px;background:var(--card);
+  }
+  .star-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+  .star-photo-fallback{object-fit:contain;padding:2px;box-sizing:border-box;}
   .stat-box .v{font-family:'Manrope';font-weight:700;font-size:17px;color:var(--amber);}
   .stat-box .l{font-size:10px;color:var(--chalk-dim);text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
   .next-fixture{
@@ -807,11 +814,13 @@ function render(data){
 
   const panelBuilders = {
     table: () => {
+      const wrap = document.createElement('div');
+      const currentFixturePanel = buildCurrentFixturePanel(data, myId);
+      if(currentFixturePanel) wrap.appendChild(currentFixturePanel);
       const grid = document.createElement('div');
       grid.className = 'grid';
       grid.appendChild(buildStandingsPanel(data, myId));
       grid.appendChild(buildSpotlightPanel(data, myId));
-      const wrap = document.createElement('div');
       wrap.appendChild(grid);
       const secondGrid = document.createElement('div');
       secondGrid.className = 'grid';
@@ -853,6 +862,65 @@ function render(data){
 
   app.appendChild(tabsWrap);
   app.appendChild(panelsWrap);
+}
+
+function buildCurrentFixturePanel(data, myId){
+  if(myId == null || !data.current_event) return null;
+  const fixtures = data.fixtures_by_event[String(data.current_event)] || [];
+  const f = fixtures.find(fx =>
+    String(fx.home.league_entry_id) === String(myId) || String(fx.away.league_entry_id) === String(myId));
+  if(!f) return null;
+
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.style.marginBottom = '16px';
+  const hasSquads = !!f.squads;
+  panel.innerHTML = `
+    <h2><span class="dot"></span>Your GW${data.current_event} fixture</h2>
+    ${matchupHeaderHTML(f)}
+    ${hasSquads ? `<div class="dual-expand" style="margin-bottom:6px;"><button class="expand-btn" data-mode="field">+ Field</button><button class="expand-btn" data-mode="list">+ List</button></div>` : ''}
+    ${hasSquads ? `<div class="squad-expand" data-mode="field"></div>` : ''}
+    ${hasSquads ? `<div class="squad-expand" data-mode="list">
+      <div class="squad-grid">
+        ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
+        ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+      </div>
+    </div>` : ''}
+  `;
+
+  if(hasSquads){
+    const fieldExpand = panel.querySelector('.squad-expand[data-mode="field"]');
+    const listExpand = panel.querySelector('.squad-expand[data-mode="list"]');
+    const fieldBtn = panel.querySelector('.expand-btn[data-mode="field"]');
+    const listBtn = panel.querySelector('.expand-btn[data-mode="list"]');
+    let fieldBuilt = false;
+
+    function closeAll(){
+      fieldExpand.classList.remove('open');
+      listExpand.classList.remove('open');
+      fieldBtn.textContent = '+ Field';
+      listBtn.textContent = '+ List';
+    }
+    fieldBtn.addEventListener('click', () => {
+      const wasOpen = fieldExpand.classList.contains('open');
+      closeAll();
+      if(!wasOpen){
+        if(!fieldBuilt){ fieldExpand.innerHTML = fieldMatchup(f); fieldBuilt = true; }
+        fieldExpand.classList.add('open');
+        fieldBtn.textContent = '– Field';
+      }
+    });
+    listBtn.addEventListener('click', () => {
+      const wasOpen = listExpand.classList.contains('open');
+      closeAll();
+      if(!wasOpen){
+        listExpand.classList.add('open');
+        listBtn.textContent = '– List';
+      }
+    });
+  }
+
+  return panel;
 }
 
 function buildStandingsPanel(data, myId){
@@ -1016,9 +1084,17 @@ function buildSpotlightPanel(data, myId){
 
   const star = findStarPlayer(data, you.league_entry_id);
   const starHtml = star ? `
-    <div class="stat-box" style="grid-column: span 2;">
-      <div class="v" style="font-size:14px;">${star.name} &middot; ${star.points}pts</div>
-      <div class="l">Star Player (GW${data.latest_squad_event ?? ''})</div>
+    <div class="stat-box star-box" style="grid-column: span 2;">
+      <div class="star-photo">
+        ${star.photo_url
+          ? `<img src="${star.photo_url}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
+          : ''}
+        <img class="star-photo-fallback" src="icons/player-placeholder.png" alt="" style="display:${star.photo_url ? 'none' : 'block'};">
+      </div>
+      <div>
+        <div class="v" style="font-size:14px;">${star.name} &middot; ${star.points}pts</div>
+        <div class="l">Star Player (GW${data.latest_squad_event ?? ''})</div>
+      </div>
     </div>
   ` : '';
 
