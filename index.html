@@ -323,6 +323,10 @@
   .pitch-team-label{
     font-size:12px;font-weight:700;text-align:center;margin-bottom:6px;color:var(--chalk);
   }
+  .pitch-team-score{
+    display:inline-block;background:var(--ink);color:var(--amber);font-weight:800;
+    border-radius:6px;padding:1px 7px;margin-left:4px;font-size:12px;
+  }
   .pitch{
     position:relative;overflow:hidden;aspect-ratio:1/1.35;
     background:
@@ -425,6 +429,11 @@
     font-size:12px;font-weight:700;padding:5px 16px;border-radius:16px;cursor:pointer;
   }
   .view-switch-btn.active{background:var(--win);border-color:var(--win);color:#fff;}
+  .fixture-close-btn{
+    display:block;margin:14px auto 2px;background:var(--card);border:1px solid var(--line);
+    color:var(--chalk-dim);font-size:12px;font-weight:700;padding:7px 20px;
+    border-radius:16px;cursor:pointer;
+  }
   .dual-expand{display:flex;gap:12px;justify-content:flex-end;margin-top:-6px;margin-bottom:4px;}
   .fixture-card-expanded{grid-column:1 / -1;}
   .squad-grid{
@@ -486,6 +495,21 @@
   .tab-btn.active{color:#fff;background:var(--amber);border-color:var(--amber);}
   .tab-panel{display:none;}
   .tab-panel.active{display:block;}
+  .more-tab-wrap{position:relative;display:inline-block;}
+  .more-tab-btn{white-space:nowrap;}
+  .more-menu{
+    display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:50;
+    background:var(--card);border:1px solid var(--line);border-radius:10px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.2);padding:6px;min-width:150px;
+    flex-direction:column;gap:2px;
+  }
+  .more-menu.open{display:flex;}
+  .more-menu-item{
+    background:none;border:none;text-align:left;padding:8px 10px;border-radius:6px;
+    font-size:13px;font-weight:600;color:var(--chalk);cursor:pointer;
+  }
+  .more-menu-item:hover{background:var(--ink);}
+  .more-menu-item.active{color:var(--amber);}
 
   /* ---------- Bracket ---------- */
   .bracket-round-label{
@@ -622,6 +646,13 @@
   .receipt-pick-badge.bronze{background:#B8814F;color:#3A2410;}
   .receipt-pick-badge.neutral{background:var(--chalk);color:var(--card);}
   .receipt-pick-detail{font-size:10px;color:var(--chalk-dim);margin-top:2px;}
+  .receipt-badges{display:inline-flex;gap:3px;margin-left:5px;vertical-align:middle;}
+  .receipt-badge-icon{font-size:12px;cursor:default;}
+  .receipt-form{display:flex;justify-content:center;gap:4px;margin-top:6px;}
+  .receipt-form-dot{
+    width:9px;height:9px;border-radius:50%;background:var(--amber);
+    display:inline-block;cursor:default;
+  }
   .receipt-fixture{margin:10px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .receipt-fixture-row{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12.5px;color:var(--chalk-dim);font-weight:700;}
   .receipt-fixture-row strong{color:var(--chalk);font-size:14px;}
@@ -899,18 +930,64 @@ function render(data){
     waivers: () => buildWaiversPanel(data),
   };
 
-  TABS.forEach((t, i) => {
+  // On narrow screens the full tab bar wraps awkwardly, so only these show
+  // directly; everything else collapses into a "More" dropdown. Desktop
+  // still shows all tabs inline via the media query in the CSS.
+  const PRIMARY_TAB_IDS = ['table', 'fixtures', 'squads', 'golden'];
+  const primaryTabs = TABS.filter(t => PRIMARY_TAB_IDS.includes(t.id));
+  const moreTabs = TABS.filter(t => !PRIMARY_TAB_IDS.includes(t.id));
+
+  function activateTab(tabId){
+    tabsWrap.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    const directBtn = tabsWrap.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+    if(directBtn) directBtn.classList.add('active');
+    moreMenu.querySelectorAll('.more-menu-item').forEach(b => b.classList.remove('active'));
+    const moreItem = moreMenu.querySelector(`.more-menu-item[data-tab="${tabId}"]`);
+    if(moreItem){
+      moreItem.classList.add('active');
+      moreBtn.classList.add('active');
+    }else{
+      moreBtn.classList.remove('active');
+    }
+    panelsWrap.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('panel-' + tabId).classList.add('active');
+    moreMenu.classList.remove('open');
+  }
+
+  primaryTabs.forEach((t, i) => {
     const btn = document.createElement('button');
     btn.className = 'tab-btn' + (i === 0 ? ' active' : '');
     btn.textContent = t.label;
-    btn.addEventListener('click', () => {
-      tabsWrap.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      panelsWrap.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-      document.getElementById('panel-' + t.id).classList.add('active');
-    });
+    btn.dataset.tab = t.id;
+    btn.addEventListener('click', () => activateTab(t.id));
     tabsWrap.appendChild(btn);
+  });
 
+  const moreWrap = document.createElement('div');
+  moreWrap.className = 'more-tab-wrap';
+  const moreBtn = document.createElement('button');
+  moreBtn.className = 'tab-btn more-tab-btn';
+  moreBtn.textContent = 'More \u25be';
+  const moreMenu = document.createElement('div');
+  moreMenu.className = 'more-menu';
+  moreTabs.forEach(t => {
+    const item = document.createElement('button');
+    item.className = 'more-menu-item';
+    item.textContent = t.label;
+    item.dataset.tab = t.id;
+    item.addEventListener('click', () => activateTab(t.id));
+    moreMenu.appendChild(item);
+  });
+  moreBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    moreMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', () => moreMenu.classList.remove('open'));
+  moreWrap.appendChild(moreBtn);
+  moreWrap.appendChild(moreMenu);
+  tabsWrap.appendChild(moreWrap);
+
+  TABS.forEach((t, i) => {
     const panel = document.createElement('div');
     panel.className = 'tab-panel' + (i === 0 ? ' active' : '');
     panel.id = 'panel-' + t.id;
@@ -932,52 +1009,11 @@ function buildCurrentFixturePanel(data, myId){
   const panel = document.createElement('div');
   panel.className = 'panel';
   panel.style.marginBottom = '16px';
-  const hasSquads = !!f.squads;
-  panel.innerHTML = `
-    <h2><span class="dot"></span>Your GW${data.current_event} fixture</h2>
-    ${matchupHeaderHTML(f)}
-    ${hasSquads ? `<div class="dual-expand" style="margin-bottom:6px;"><button class="expand-btn" data-mode="field">+ Field</button><button class="expand-btn" data-mode="list">+ List</button></div>` : ''}
-    ${hasSquads ? `<div class="squad-expand" data-mode="field"></div>` : ''}
-    ${hasSquads ? `<div class="squad-expand" data-mode="list">
-      <div class="squad-grid">
-        ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
-        ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
-      </div>
-    </div>` : ''}
-  `;
-
-  if(hasSquads){
-    const fieldExpand = panel.querySelector('.squad-expand[data-mode="field"]');
-    const listExpand = panel.querySelector('.squad-expand[data-mode="list"]');
-    const fieldBtn = panel.querySelector('.expand-btn[data-mode="field"]');
-    const listBtn = panel.querySelector('.expand-btn[data-mode="list"]');
-    let fieldBuilt = false;
-
-    function closeAll(){
-      fieldExpand.classList.remove('open');
-      listExpand.classList.remove('open');
-      fieldBtn.textContent = '+ Field';
-      listBtn.textContent = '+ List';
-    }
-    fieldBtn.addEventListener('click', () => {
-      const wasOpen = fieldExpand.classList.contains('open');
-      closeAll();
-      if(!wasOpen){
-        if(!fieldBuilt){ fieldExpand.innerHTML = fieldMatchup(f); fieldBuilt = true; }
-        fieldExpand.classList.add('open');
-        fieldBtn.textContent = '– Field';
-      }
-    });
-    listBtn.addEventListener('click', () => {
-      const wasOpen = listExpand.classList.contains('open');
-      closeAll();
-      if(!wasOpen){
-        listExpand.classList.add('open');
-        listBtn.textContent = '– List';
-      }
-    });
-  }
-
+  panel.innerHTML = `<h2><span class="dot"></span>Your GW${data.current_event} fixture</h2>`;
+  const card = fixtureCard(f, false);
+  card.style.background = 'transparent';
+  card.style.padding = '0';
+  panel.appendChild(card);
   return panel;
 }
 
@@ -1395,6 +1431,7 @@ function playerDataAttr(p){
     saves: p.saves, xg: p.xg, xa: p.xa, xgi: p.xgi, match_finished: p.match_finished,
     subbed_in: p.subbed_in, subbed_out: p.subbed_out, club: p.club, opponents: p.opponents,
     acquisition: findAcquisitionInfo(p.name),
+    badges: p.badges, form: p.form,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1454,6 +1491,28 @@ function buildFixtureResultHTML(p){
   `;
 }
 
+function buildBadgesHTML(p){
+  if(!p.badges || !p.badges.length) return '';
+  return `
+    <div class="receipt-badges">
+      ${p.badges.map(b => `<span class="receipt-badge-icon" title="${b.label}">${b.icon}</span>`).join('')}
+    </div>
+  `;
+}
+
+function buildFormHTML(p){
+  if(!p.form || !p.form.length) return '';
+  const max = Math.max(...p.form, 1);
+  return `
+    <div class="receipt-form" title="Last ${p.form.length} gameweeks">
+      ${p.form.map(pts => {
+        const intensity = Math.max(0.15, pts / max);
+        return `<span class="receipt-form-dot" style="opacity:${intensity.toFixed(2)};" title="${pts} pts"></span>`;
+      }).join('')}
+    </div>
+  `;
+}
+
 function buildAcquisitionHTML(p){
   const a = p.acquisition;
   if(!a) return '';
@@ -1492,9 +1551,10 @@ function showPlayerReceipt(p){
         <img class="receipt-photo-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
       </div>
       <div class="receipt-header">
-        <div class="receipt-name">${p.name}${capLabel}</div>
+        <div class="receipt-name">${p.name}${capLabel}${buildBadgesHTML(p)}</div>
         <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
         ${buildAcquisitionHTML(p)}
+        ${buildFormHTML(p)}
       </div>
       ${buildFixtureResultHTML(p)}
       <div class="receipt-lines">
@@ -1752,16 +1812,19 @@ const PITCH_LINES_SVG = `
   </svg>
 `;
 
-function pitchColumn(teamName, squad, showLabel){
+function pitchColumn(teamName, squad, showLabel, score){
   if(showLabel === undefined) showLabel = true;
+  const labelHTML = score != null
+    ? `<div class="pitch-team-label">${teamName} <span class="pitch-team-score">${score}</span></div>`
+    : `<div class="pitch-team-label">${teamName}</div>`;
   if(!squad){
-    return `<div class="pitch-col">${showLabel ? `<div class="pitch-team-label">${teamName}</div>` : ''}<p style="color:rgba(255,255,255,0.7);font-size:12px;text-align:center;">No squad data yet.</p></div>`;
+    return `<div class="pitch-col">${showLabel ? labelHTML : ''}<p style="color:rgba(255,255,255,0.7);font-size:12px;text-align:center;">No squad data yet.</p></div>`;
   }
   const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
   squad.starting.forEach(p => { (rows[p.position] || rows.MID).push(p); });
   return `
     <div class="pitch-col">
-      ${showLabel ? `<div class="pitch-team-label">${teamName}</div>` : ''}
+      ${showLabel ? labelHTML : ''}
       <div class="pitch">
         ${PITCH_LINES_SVG}
         <div class="pitch-rows">
@@ -1809,8 +1872,8 @@ function fieldMatchup(f){
   return `
     <div class="matchup-wrap">
       <div class="pitch-container">
-        ${pitchColumn(f.home.team_name, homeSquad, false)}
-        ${pitchColumn(f.away.team_name, awaySquad, false)}
+        ${pitchColumn(f.home.team_name, homeSquad, true, f.home.score)}
+        ${pitchColumn(f.away.team_name, awaySquad, true, f.away.score)}
       </div>
     </div>
   `;
@@ -1873,6 +1936,92 @@ function buildSquadsPanel(data){
   return panel;
 }
 
+// Tracks whichever fixture card is currently expanded (across the Fixtures
+// tab AND the Home tab's own fixture panel) so opening a new one collapses
+// whatever was open before it - a global accordion, not per-panel.
+let openCardCloser = null;
+
+function fixtureCard(f, showGwLabel){
+  const hasSquads = !!f.squads;
+  const card = document.createElement('div');
+  card.className = 'fixture-card';
+
+  card.innerHTML = `
+    ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
+    ${matchupHeaderHTML(f)}
+    <div class="status" style="text-align:center;margin:2px 0 2px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
+    ${hasSquads ? `<div class="fixture-expand-hint">&#9662; Expand</div>` : ''}
+    ${hasSquads ? `
+      <div class="squad-expand-area">
+        <div class="view-switch">
+          <button class="view-switch-btn active" data-mode="field">Field</button>
+          <button class="view-switch-btn" data-mode="list">List</button>
+        </div>
+        <div class="squad-expand-content"></div>
+        <button class="fixture-close-btn">&#9652; Close</button>
+      </div>
+    ` : ''}
+  `;
+
+  if(hasSquads){
+    const hint = card.querySelector('.fixture-expand-hint');
+    const area = card.querySelector('.squad-expand-area');
+    const content = card.querySelector('.squad-expand-content');
+    const fieldBtn = card.querySelector('.view-switch-btn[data-mode="field"]');
+    const listBtn = card.querySelector('.view-switch-btn[data-mode="list"]');
+    const closeBtn = card.querySelector('.fixture-close-btn');
+    let mode = 'field';
+    let isOpen = false;
+
+    function renderContent(){
+      content.innerHTML = mode === 'field'
+        ? fieldMatchup(f)
+        : `<div class="squad-grid">
+            ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
+            ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+          </div>`;
+      fieldBtn.classList.toggle('active', mode === 'field');
+      listBtn.classList.toggle('active', mode === 'list');
+    }
+
+    function closeCard(){
+      isOpen = false;
+      area.classList.remove('open');
+      card.classList.remove('fixture-card-expanded');
+      hint.innerHTML = '&#9662; Expand';
+      if(openCardCloser === closeCard) openCardCloser = null;
+    }
+
+    function openCard(){
+      if(openCardCloser && openCardCloser !== closeCard) openCardCloser();
+      isOpen = true;
+      area.classList.add('open');
+      card.classList.add('fixture-card-expanded');
+      hint.innerHTML = '&#9652; Collapse';
+      renderContent();
+      openCardCloser = closeCard;
+    }
+
+    card.addEventListener('click', (e) => {
+      if(e.target.closest('.view-switch-btn, .field-player, .squad-row, .fixture-close-btn')) return;
+      isOpen ? closeCard() : openCard();
+    });
+    fieldBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if(mode !== 'field'){ mode = 'field'; renderContent(); }
+    });
+    listBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if(mode !== 'list'){ mode = 'list'; renderContent(); }
+    });
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeCard();
+    });
+  }
+  return card;
+}
+
 function buildFixturesPanel(data){
   const panel = document.createElement('div');
   panel.className = 'panel';
@@ -1882,9 +2031,9 @@ function buildFixturesPanel(data){
   const gwKeys = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
   // Whole card is clickable, opens straight to Field view by default; an
   // internal switch lets you flip to List without collapsing. Only one card
-  // is open at a time (accordion) - openCardCloser tracks whichever card is
-  // currently expanded so a newly-opened card can collapse it first.
-  let openCardCloser = null;
+  // is open at a time (accordion) - openCardCloser (module-level, defined
+  // above) tracks whichever card is currently expanded so a newly-opened
+  // card can collapse it first.
 
   const modeWrap = document.createElement('div');
   modeWrap.className = 'gw-pills';
@@ -1915,82 +2064,6 @@ function buildFixturesPanel(data){
     const squad = f.squads && f.squads[String(side.league_entry_id)];
     if(!squad || squad.squad_size == null) return '';
     return `<span class="played-tag">${squad.played_count}/${squad.squad_size}</span>`;
-  }
-
-
-  function fixtureCard(f, showGwLabel){
-    const hasSquads = !!f.squads;
-    const card = document.createElement('div');
-    card.className = 'fixture-card';
-
-    card.innerHTML = `
-      ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
-      ${matchupHeaderHTML(f)}
-      <div class="status" style="text-align:center;margin:2px 0 2px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-      ${hasSquads ? `<div class="fixture-expand-hint">+ Expand</div>` : ''}
-      ${hasSquads ? `
-        <div class="squad-expand-area">
-          <div class="view-switch">
-            <button class="view-switch-btn active" data-mode="field">Field</button>
-            <button class="view-switch-btn" data-mode="list">List</button>
-          </div>
-          <div class="squad-expand-content"></div>
-        </div>
-      ` : ''}
-    `;
-
-    if(hasSquads){
-      const hint = card.querySelector('.fixture-expand-hint');
-      const area = card.querySelector('.squad-expand-area');
-      const content = card.querySelector('.squad-expand-content');
-      const fieldBtn = card.querySelector('.view-switch-btn[data-mode="field"]');
-      const listBtn = card.querySelector('.view-switch-btn[data-mode="list"]');
-      let mode = 'field';
-      let isOpen = false;
-
-      function renderContent(){
-        content.innerHTML = mode === 'field'
-          ? fieldMatchup(f)
-          : `<div class="squad-grid">
-              ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
-              ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
-            </div>`;
-        fieldBtn.classList.toggle('active', mode === 'field');
-        listBtn.classList.toggle('active', mode === 'list');
-      }
-
-      function closeCard(){
-        isOpen = false;
-        area.classList.remove('open');
-        card.classList.remove('fixture-card-expanded');
-        hint.textContent = '+ Expand';
-        if(openCardCloser === closeCard) openCardCloser = null;
-      }
-
-      function openCard(){
-        if(openCardCloser && openCardCloser !== closeCard) openCardCloser();
-        isOpen = true;
-        area.classList.add('open');
-        card.classList.add('fixture-card-expanded');
-        hint.textContent = '– Collapse';
-        renderContent();
-        openCardCloser = closeCard;
-      }
-
-      card.addEventListener('click', (e) => {
-        if(e.target.closest('.view-switch-btn, .field-player, .squad-row')) return;
-        isOpen ? closeCard() : openCard();
-      });
-      fieldBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if(mode !== 'field'){ mode = 'field'; renderContent(); }
-      });
-      listBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if(mode !== 'list'){ mode = 'list'; renderContent(); }
-      });
-    }
-    return card;
   }
 
   function renderGw(gw){
