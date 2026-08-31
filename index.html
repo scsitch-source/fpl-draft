@@ -585,6 +585,13 @@
     display:flex;justify-content:space-between;margin-top:10px;padding-top:10px;
     border-top:2px solid var(--line);font-weight:800;font-size:15px;color:var(--amber);
   }
+  .receipt-xstats{
+    display:flex;justify-content:space-around;margin-top:12px;padding-top:10px;
+    border-top:1px solid var(--line);
+  }
+  .receipt-xstats div{display:flex;flex-direction:column;align-items:center;gap:2px;}
+  .receipt-xstats span{font-size:10px;font-weight:700;color:var(--chalk-dim);text-transform:uppercase;letter-spacing:0.04em;}
+  .receipt-xstats strong{font-size:14px;font-weight:800;color:var(--chalk);}
 </style>
 <script>
 (function(){
@@ -1229,7 +1236,7 @@ function playerDataAttr(p){
     goals_conceded: p.goals_conceded, own_goals: p.own_goals, yellow_card: p.yellow_card,
     red_card: p.red_card, bonus: p.bonus, points: p.points, base_points: p.base_points,
     is_captain: p.is_captain, is_vice_captain: p.is_vice_captain, photo_url: p.photo_url,
-    saves: p.saves,
+    saves: p.saves, xg: p.xg, xa: p.xa, xgi: p.xgi,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1298,6 +1305,13 @@ function showPlayerReceipt(p){
         `).join('')}
       </div>
       <div class="receipt-total"><span>Total</span><span>${total}</span></div>
+      ${(p.xg || p.xa || p.xgi) ? `
+        <div class="receipt-xstats">
+          <div><span>xG</span><strong>${(p.xg ?? 0).toFixed(2)}</strong></div>
+          <div><span>xA</span><strong>${(p.xa ?? 0).toFixed(2)}</strong></div>
+          <div><span>xGI</span><strong>${(p.xgi ?? 0).toFixed(2)}</strong></div>
+        </div>
+      ` : ''}
     </div>
   `;
   document.body.appendChild(modal);
