@@ -346,10 +346,9 @@
   }
   .field-cap.vc{background:var(--draw);}
   .field-sub-tag{
-    position:absolute;top:-3px;right:-4px;color:#fff;
-    font-size:8.5px;font-weight:800;border-radius:8px;min-width:16px;height:14px;
-    padding:0 3px;display:flex;align-items:center;justify-content:center;
-    border:1px solid #fff;z-index:2;white-space:nowrap;
+    position:absolute;top:-2px;right:-2px;color:#fff;
+    font-size:9px;font-weight:800;border-radius:50%;width:14px;height:14px;
+    display:flex;align-items:center;justify-content:center;border:1px solid #fff;z-index:2;
   }
   .field-sub-tag.on{background:var(--win);}
   .field-sub-tag.off{background:var(--loss);}
@@ -1125,8 +1124,8 @@ function playerRow(p){
   const badges = [];
   if(p.is_captain) badges.push('<span class="cap-badge">C</span>');
   if(p.is_vice_captain) badges.push('<span class="cap-badge vc">VC</span>');
-  if(p.subbed_in) badges.push(`<span class="cap-badge sub-badge" title="Auto-subbed in, scored ${p.points}">&#8593;${p.points}</span>`);
-  if(p.subbed_out) badges.push(`<span class="cap-badge sub-badge out" title="Auto-subbed out (did not play)">&#8595;${p.points}</span>`);
+  if(p.subbed_in) badges.push('<span class="cap-badge sub-badge" title="Auto-subbed in">&#8593;</span>');
+  if(p.subbed_out) badges.push('<span class="cap-badge sub-badge out" title="Auto-subbed out (did not play)">&#8595;</span>');
   const icons = [];
   if(p.goals > 0) icons.push(`<span class="stat-icon goal" title="${p.goals} goal${p.goals>1?'s':''}">G${p.goals>1?'&times;'+p.goals:''}</span>`);
   if(p.assists > 0) icons.push(`<span class="stat-icon assist" title="${p.assists} assist${p.assists>1?'s':''}">A${p.assists>1?'&times;'+p.assists:''}</span>`);
@@ -1168,6 +1167,15 @@ function benchOrder(list){
   return [...list.filter(p => p.position === 'GKP'), ...list.filter(p => p.position !== 'GKP')];
 }
 
+// Net points the auto-subbed-in players contributed, shown on the "Subs"
+// heading itself (e.g. "Subs +12") rather than on each individual card.
+function benchLabel(squad){
+  const subsPoints = squad.starting
+    .filter(p => p.subbed_in)
+    .reduce((sum, p) => sum + (p.points || 0), 0);
+  return subsPoints > 0 ? `Subs +${subsPoints}` : 'Subs';
+}
+
 function squadColumn(label, squad){
   if(!squad){
     return `<div class="squad-col"><div class="squad-col-label">${label}</div><p style="font-size:12px;color:var(--chalk-dim);">No squad data for this gameweek.</p></div>`;
@@ -1176,7 +1184,7 @@ function squadColumn(label, squad){
     <div class="squad-col">
       <div class="squad-col-label">${label}</div>
       ${byPosition(squad.starting).map(playerRow).join('')}
-      ${squad.bench.length ? `<div class="squad-bench-label">Subs</div>${benchOrder(squad.bench).map(playerRow).join('')}` : ''}
+      ${squad.bench.length ? `<div class="squad-bench-label">${benchLabel(squad)}</div>${benchOrder(squad.bench).map(playerRow).join('')}` : ''}
     </div>
   `;
 }
@@ -1462,8 +1470,8 @@ function fieldPlayerCard(p){
   }
   const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
   const subTag = p.subbed_in
-    ? `<span class="field-sub-tag on" title="Auto-subbed on, scored ${p.points}">&#8593;${p.points}</span>`
-    : (p.subbed_out ? `<span class="field-sub-tag off" title="Auto-subbed off">&#8595;${p.points}</span>` : '');
+    ? '<span class="field-sub-tag on" title="Auto-subbed on">&#8593;</span>'
+    : (p.subbed_out ? '<span class="field-sub-tag off" title="Auto-subbed off">&#8595;</span>' : '');
   return `
     <div class="field-player" title="${p.name}${p.subbed_in ? ' (auto-subbed in)' : ''} - tap for details" ${playerDataAttr(p)}>
       <div class="field-photo">
@@ -1513,7 +1521,7 @@ function pitchColumn(teamName, squad, showLabel){
         </div>
       </div>
       ${squad.bench.length ? `
-        <div class="squad-bench-label">Subs</div>
+        <div class="squad-bench-label">${benchLabel(squad)}</div>
         <div class="pitch-bench-row">${benchOrder(squad.bench).map(fieldPlayerCard).join('')}</div>
       ` : ''}
     </div>

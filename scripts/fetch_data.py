@@ -725,6 +725,27 @@ def build():
                     found_signal = True
         return found_signal
 
+    def _apply_squad_based_score(f):
+        """Overwrite the fixture's score with the sum of each side's actual
+        (post-auto-sub) starting XI points. The Draft API's own match score
+        appears NOT to reflect auto-substitutions in this league - it stays
+        as whatever the nominal starting XI scored, understating a team that
+        had a sub come on and contribute. Since our own squad data already
+        correctly resolves auto-subs, use that as the real source of truth
+        everywhere a score is shown, rather than the raw API figure. The
+        original API score is kept alongside as 'api_score' for reference.
+        """
+        squads = f.get("squads")
+        if not squads:
+            return
+        for side in ("home", "away"):
+            le_id = f[side]["league_entry_id"]
+            squad = squads.get(str(le_id)) if le_id is not None else None
+            if not squad:
+                continue
+            f[side]["api_score"] = f[side].get("score")
+            f[side]["score"] = sum(p.get("points", 0) for p in squad.get("starting", []))
+
     print("Fetching per-gameweek squads (cached where possible)...")
     for ev_key, fixtures in fixtures_by_event.items():
         ev = int(ev_key)
@@ -735,6 +756,7 @@ def build():
             cached_squads = prev_fixtures_for_ev[idx].get("squads") if (all_finished and idx < len(prev_fixtures_for_ev)) else None
             if cached_squads and squad_looks_valid(cached_squads):
                 f["squads"] = cached_squads
+                _apply_squad_based_score(f)
                 continue
             if not f["started"]:
                 continue
@@ -757,6 +779,21 @@ def build():
                 # Refetch attempt also came back empty/invalid - keep the old
                 # cached version rather than losing the data entirely.
                 f["squads"] = cached_squads
+            _apply_squad_based_score(f)
+
+    # Keep the standings' live "current GW score" bracket consistent with the
+    # same auto-sub-corrected total now used for the fixture scoreboard,
+    # rather than the raw (pre-sub) figure computed earlier from matches_raw.
+    current_fixtures = fixtures_by_event.get(str(current_event), []) if current_event is not None else []
+    corrected_gw_scores = {}
+    for f in current_fixtures:
+        for side in ("home", "away"):
+            le_id = f[side]["league_entry_id"]
+            if le_id is not None and f[side].get("score") is not None:
+                corrected_gw_scores[le_id] = f[side]["score"]
+    for row in standings:
+        if row["league_entry_id"] in corrected_gw_scores:
+            row["current_gw_score"] = corrected_gw_scores[row["league_entry_id"]]
 
     # ---------------- Latest squads per team (for the Squads tab) ----------------
     latest_squad_event = None
