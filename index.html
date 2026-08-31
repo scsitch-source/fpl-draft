@@ -331,7 +331,7 @@
     display:flex;align-items:flex-end;justify-content:center;
   }
   .field-photo img{width:100%;height:auto;max-height:100%;object-fit:contain;display:block;}
-  .field-jersey-fallback{width:82%;aspect-ratio:1/1;}
+  .field-jersey-fallback{width:82%;aspect-ratio:1/1;object-fit:contain;}
   .field-cap{
     position:absolute;top:-2px;left:-2px;background:var(--amber);color:#fff;
     font-size:8px;font-weight:800;border-radius:50%;width:14px;height:14px;
@@ -551,15 +551,21 @@
     display:flex;align-items:center;justify-content:center;padding:20px;
   }
   .receipt-card{
-    background:var(--card);border-radius:14px;padding:18px;width:100%;max-width:320px;
+    position:relative;background:var(--card);border-radius:14px;padding:18px;
+    width:100%;max-width:320px;margin-top:44px;
     box-shadow:0 10px 40px rgba(0,0,0,0.3);
   }
-  .receipt-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
-  .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
-  .receipt-close{
-    background:none;border:none;color:var(--chalk-dim);font-size:20px;line-height:1;
-    cursor:pointer;padding:0 4px;
+  .receipt-photo-wrap{
+    position:absolute;top:-44px;left:50%;transform:translateX(-50%);
+    width:88px;height:88px;overflow:hidden;
   }
+  .receipt-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+  .receipt-close{
+    position:absolute;top:8px;right:10px;background:none;border:none;color:var(--chalk-dim);
+    font-size:20px;line-height:1;cursor:pointer;padding:0 4px;z-index:1;
+  }
+  .receipt-header{text-align:center;margin:0 0 10px;}
+  .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
   .receipt-lines{display:flex;flex-direction:column;gap:6px;}
   .receipt-line{
     display:flex;justify-content:space-between;font-size:13px;color:var(--chalk);
@@ -572,7 +578,6 @@
     display:flex;justify-content:space-between;margin-top:10px;padding-top:10px;
     border-top:2px solid var(--line);font-weight:800;font-size:15px;color:var(--amber);
   }
-  .receipt-note{font-size:10.5px;color:var(--chalk-dim);margin-top:10px;line-height:1.4;}
 </style>
 <script>
 (function(){
@@ -1206,14 +1211,6 @@ function buildPrizesPanel(data){
   return panel;
 }
 
-// Most Premier League shirts are a solid colour, but a few clubs are
-// genuinely known for stripes - render those properly instead of flattening
-// them to one colour. Add more here if a club's kit is misrepresented.
-const STRIPE_CLUBS = {
-  BOU: ['#8A1220', '#000000'],
-  NEW: ['#000000', '#FFFFFF'],
-};
-
 // Embeds the subset of a player's stats needed for the points-receipt
 // popover as a safely-escaped HTML attribute, so a single delegated click
 // listener can read it back out regardless of which view rendered the card.
@@ -1223,7 +1220,7 @@ function playerDataAttr(p){
     assists: p.assists, clean_sheet: p.clean_sheet, defensive_contribution: p.defensive_contribution,
     goals_conceded: p.goals_conceded, own_goals: p.own_goals, yellow_card: p.yellow_card,
     red_card: p.red_card, bonus: p.bonus, points: p.points, base_points: p.base_points,
-    is_captain: p.is_captain, is_vice_captain: p.is_vice_captain,
+    is_captain: p.is_captain, is_vice_captain: p.is_vice_captain, photo_url: p.photo_url,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1266,9 +1263,15 @@ function showPlayerReceipt(p){
   modal.className = 'receipt-backdrop';
   modal.innerHTML = `
     <div class="receipt-card">
+      <button class="receipt-close" aria-label="Close">&times;</button>
+      <div class="receipt-photo-wrap">
+        ${p.photo_url
+          ? `<img src="${p.photo_url}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
+          : ''}
+        <img class="receipt-photo-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
+      </div>
       <div class="receipt-header">
         <div class="receipt-name">${p.name}${capLabel}</div>
-        <button class="receipt-close" aria-label="Close">&times;</button>
       </div>
       <div class="receipt-lines">
         ${lines.map(([label, pts]) => `
@@ -1279,7 +1282,6 @@ function showPlayerReceipt(p){
         `).join('')}
       </div>
       <div class="receipt-total"><span>Total</span><span>${total}</span></div>
-      <div class="receipt-note">Breakdown estimated from standard FPL scoring rules - the total above is the confirmed figure.</div>
     </div>
   `;
   document.body.appendChild(modal);
@@ -1314,23 +1316,13 @@ function fieldPlayerCard(p){
   }
   const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
   const subTag = p.subbed_in ? '<span class="field-sub-tag" title="Auto-subbed in">&#8646;</span>' : '';
-  const stripe = STRIPE_CLUBS[p.club];
-  const jerseyFill = stripe ? `url(#stripe-${p.club})` : (p.shirt_color || '#6B7280');
-  const jerseySvg = `
-    <svg viewBox="0 0 40 40" width="100%" height="100%">
-      ${stripe ? `<defs><pattern id="stripe-${p.club}" width="8" height="40" patternUnits="userSpaceOnUse">
-        <rect width="4" height="40" fill="${stripe[0]}"/><rect x="4" width="4" height="40" fill="${stripe[1]}"/>
-      </pattern></defs>` : ''}
-      <path d="M11 6 L3 12 L7 19 L11 16 L11 37 L29 37 L29 16 L33 19 L37 12 L29 6 L25 9 Q20 14 15 9 Z" fill="${jerseyFill}"/>
-    </svg>
-  `;
   return `
     <div class="field-player" title="${p.name}${p.subbed_in ? ' (auto-subbed in)' : ''} - tap for details" ${playerDataAttr(p)}>
       <div class="field-photo">
         ${p.photo_url
           ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
           : ''}
-        <div class="field-jersey-fallback" style="display:${p.photo_url ? 'none' : 'block'};">${jerseySvg}</div>
+        <img class="field-jersey-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
         ${capTag}
         ${subTag}
       </div>
