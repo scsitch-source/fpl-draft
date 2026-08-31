@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T20:05:48.458226+00:00",
+  "generated_at": "2026-08-31T21:02:14.763976+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -18,7 +18,7 @@
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
-      "score": 47,
+      "score": 57,
       "api_score": 44
     },
     "away": {
@@ -69,7 +69,7 @@
       "points_against": 32,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 47,
+      "current_gw_score": 57,
       "form": [
         "W"
       ],
@@ -90,7 +90,7 @@
       "points_against": 26,
       "total": 3,
       "event_total": 0,
-      "current_gw_score": 21,
+      "current_gw_score": 39,
       "form": [
         "W"
       ],
@@ -132,7 +132,7 @@
       "points_against": 52,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 51,
+      "current_gw_score": 53,
       "form": [
         "L"
       ],
@@ -153,7 +153,7 @@
       "points_against": 52,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 41,
+      "current_gw_score": 51,
       "form": [
         "L"
       ],
@@ -5763,7 +5763,7 @@
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
-          "score": 47,
+          "score": 57,
           "api_score": 44
         },
         "away": {
@@ -5830,70 +5830,37 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/198869.png",
                 "shirt_color": "#EF0107",
                 "initials": "WH",
-                "season_points": 12,
-                "badges": [],
+                "season_points": 18,
+                "badges": [
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_def",
+                    "label": "Top 3 DEF",
+                    "icon": "\u2b50"
+                  }
+                ],
                 "form": [
                   11
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 7,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 90,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 2,
+                "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
-                    "opponent_score": 0,
-                    "finished": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.05,
-                "xgi": 0.05,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 1
-              },
-              {
-                "name": "Mosquera",
-                "position": "DEF",
-                "club": "ARS",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/500040.png",
-                "shirt_color": "#EF0107",
-                "initials": "MO",
-                "season_points": 8,
-                "badges": [],
-                "form": [
-                  6
-                ],
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 2,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 47,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 1,
-                "opponents": [
-                  {
-                    "opponent": "AVL",
-                    "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -5905,11 +5872,55 @@
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
+                "xa": 0.05,
+                "xgi": 0.05,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 2
+                "points": 7
+              },
+              {
+                "name": "Mosquera",
+                "position": "DEF",
+                "club": "ARS",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/500040.png",
+                "shirt_color": "#EF0107",
+                "initials": "MO",
+                "season_points": 12,
+                "badges": [],
+                "form": [
+                  6
+                ],
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 6,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 78,
+                "match_finished": false,
+                "clean_sheet": true,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": false
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
+                "subbed_out": false,
+                "multiplier": 1,
+                "points": 6
               },
               {
                 "name": "Silva",
@@ -6163,7 +6174,7 @@
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -6402,7 +6413,7 @@
                     "opponent": "ARS",
                     "is_home": true,
                     "team_score": 0,
-                    "opponent_score": 0,
+                    "opponent_score": 1,
                     "finished": false
                   }
                 ],
@@ -6445,7 +6456,7 @@
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -6902,7 +6913,7 @@
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -7017,26 +7028,26 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
                 "shirt_color": "#EF0107",
                 "initials": "BG",
-                "season_points": 0,
+                "season_points": 1,
                 "badges": [],
                 "form": [
                   0
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 19,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 0,
+                "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -7048,11 +7059,11 @@
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Caicedo",
@@ -7160,7 +7171,7 @@
           "league_entry_id": 226052,
           "team_name": "PFC",
           "manager_name": "Archie Ross",
-          "score": 51,
+          "score": 53,
           "api_score": 50
         },
         "finished": false,
@@ -7177,13 +7188,7 @@
                 "shirt_color": "#003399",
                 "initials": "PI",
                 "season_points": 10,
-                "badges": [
-                  {
-                    "code": "best_gkp",
-                    "label": "Top 3 GKP",
-                    "icon": "\u2b50"
-                  }
-                ],
+                "badges": [],
                 "form": [
                   7
                 ],
@@ -8191,13 +8196,7 @@
                 "shirt_color": "#C8102E",
                 "initials": "GA",
                 "season_points": 17,
-                "badges": [
-                  {
-                    "code": "top10",
-                    "label": "Top 10 points overall",
-                    "icon": "\ud83c\udfc6"
-                  }
-                ],
+                "badges": [],
                 "form": [
                   12
                 ],
@@ -8240,26 +8239,26 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/184029.png",
                 "shirt_color": "#EF0107",
                 "initials": "\u00d8D",
-                "season_points": 12,
+                "season_points": 14,
                 "badges": [],
                 "form": [
                   11
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 70,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 4,
+                "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -8270,12 +8269,12 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.0,
-                "xa": 0.03,
-                "xgi": 0.03,
+                "xg": 0.08,
+                "xa": 0.07,
+                "xgi": 0.15,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "Barnes",
@@ -8437,7 +8436,7 @@
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -8482,7 +8481,7 @@
                     "opponent": "ARS",
                     "is_home": true,
                     "team_score": 0,
-                    "opponent_score": 0,
+                    "opponent_score": 1,
                     "finished": false
                   }
                 ],
@@ -8525,7 +8524,7 @@
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -9237,7 +9236,7 @@
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -9450,26 +9449,26 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/199798.png",
                 "shirt_color": "#EF0107",
                 "initials": "KO",
-                "season_points": 0,
+                "season_points": 1,
                 "badges": [],
                 "form": [
                   0
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
+                "minutes": 11,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 0,
+                "defensive_contribution_count": 1,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -9485,7 +9484,7 @@
                 "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 1
               },
               {
                 "name": "Truffert",
@@ -9725,42 +9724,42 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 7,
+                "season_points": 6,
                 "badges": [],
                 "form": [
                   3
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 4,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 84,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 3,
+                "defensive_contribution_count": 11,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
                 ],
-                "bonus": 3,
+                "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.09,
-                "xgi": 0.09,
+                "xa": 0.1,
+                "xgi": 0.1,
                 "subbed_in": true,
                 "multiplier": 1,
-                "points": 4
+                "points": 3
               }
             ],
             "bench": [
@@ -9903,26 +9902,32 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/154561.png",
                 "shirt_color": "#EF0107",
                 "initials": "RA",
-                "season_points": 7,
-                "badges": [],
+                "season_points": 12,
+                "badges": [
+                  {
+                    "code": "best_gkp",
+                    "label": "Top 3 GKP",
+                    "icon": "\u2b50"
+                  }
+                ],
                 "form": [
                   6
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 6,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 90,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -9938,10 +9943,10 @@
                 "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 6
               }
             ],
-            "played_count": 10,
+            "played_count": 11,
             "squad_size": 11
           }
         }
@@ -9951,14 +9956,14 @@
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
-          "score": 21,
+          "score": 39,
           "api_score": 17
         },
         "away": {
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
-          "score": 41,
+          "score": 51,
           "api_score": 40
         },
         "finished": false,
@@ -10018,26 +10023,26 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/226597.png",
                 "shirt_color": "#EF0107",
                 "initials": "GA",
-                "season_points": 6,
+                "season_points": 13,
                 "badges": [],
                 "form": [
                   5
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 8,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 90,
                 "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 4,
+                "clean_sheet": true,
+                "defensive_contribution": true,
+                "defensive_contribution_count": 10,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -10049,11 +10054,11 @@
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.13,
-                "xa": 0.01,
-                "xgi": 0.14,
+                "xa": 0.02,
+                "xgi": 0.15,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 8
               },
               {
                 "name": "Lacroix",
@@ -10195,13 +10200,7 @@
                 "shirt_color": "#FFCD00",
                 "initials": "ST",
                 "season_points": 17,
-                "badges": [
-                  {
-                    "code": "top10",
-                    "label": "Top 10 points overall",
-                    "icon": "\ud83c\udfc6"
-                  }
-                ],
+                "badges": [],
                 "form": [
                   13
                 ],
@@ -10244,42 +10243,53 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/223340.png",
                 "shirt_color": "#EF0107",
                 "initials": "SA",
-                "season_points": 10,
-                "badges": [],
+                "season_points": 20,
+                "badges": [
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_mid",
+                    "label": "Top 3 MID",
+                    "icon": "\u2b50"
+                  }
+                ],
                 "form": [
                   9
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
+                "base_points": 11,
+                "goals": 1,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 6,
+                "defensive_contribution_count": 11,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
                 ],
-                "bonus": 0,
+                "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.05,
-                "xa": 0.01,
-                "xgi": 0.06,
+                "xg": 0.63,
+                "xa": 0.04,
+                "xgi": 0.67,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 11
               },
               {
                 "name": "Anderson",
@@ -10382,26 +10392,26 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219847.png",
                 "shirt_color": "#EF0107",
                 "initials": "HA",
-                "season_points": 7,
+                "season_points": 8,
                 "badges": [],
                 "form": [
                   6
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 47,
+                "minutes": 90,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 1,
+                "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -10412,12 +10422,12 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
+                "xg": 0.04,
+                "xa": 0.03,
+                "xgi": 0.07,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 2
               },
               {
                 "name": "Eze",
@@ -10436,16 +10446,16 @@
                 "base_points": 1,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 2,
+                "minutes": 45,
                 "match_finished": false,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 0,
+                "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
@@ -10457,8 +10467,8 @@
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
+                "xa": 0.07,
+                "xgi": 0.07,
                 "subbed_in": true,
                 "multiplier": 1,
                 "points": 1
@@ -10698,42 +10708,58 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466075.png",
                 "shirt_color": "#EF0107",
                 "initials": "CA",
-                "season_points": 10,
-                "badges": [],
+                "season_points": 20,
+                "badges": [
+                  {
+                    "code": "most_assists",
+                    "label": "Most assists",
+                    "icon": "\ud83c\udfaf"
+                  },
+                  {
+                    "code": "top10",
+                    "label": "Top 10 points overall",
+                    "icon": "\ud83c\udfc6"
+                  },
+                  {
+                    "code": "best_def",
+                    "label": "Top 3 DEF",
+                    "icon": "\u2b50"
+                  }
+                ],
                 "form": [
                   9
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 11,
                 "goals": 0,
-                "assists": 0,
-                "minutes": 47,
+                "assists": 1,
+                "minutes": 90,
                 "match_finished": false,
-                "clean_sheet": false,
+                "clean_sheet": true,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 1,
+                "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "AVL",
                     "is_home": false,
-                    "team_score": 0,
+                    "team_score": 1,
                     "opponent_score": 0,
                     "finished": false
                   }
                 ],
-                "bonus": 0,
+                "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.11,
-                "xa": 0.01,
-                "xgi": 0.12,
+                "xa": 0.46,
+                "xgi": 0.57,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 11
               },
               {
                 "name": "Shaw",
@@ -11101,18 +11127,7 @@
                 "shirt_color": "#0057B8",
                 "initials": "DC",
                 "season_points": 17,
-                "badges": [
-                  {
-                    "code": "top10",
-                    "label": "Top 10 points overall",
-                    "icon": "\ud83c\udfc6"
-                  },
-                  {
-                    "code": "best_def",
-                    "label": "Top 3 DEF",
-                    "icon": "\u2b50"
-                  }
-                ],
+                "badges": [],
                 "form": [
                   17
                 ],
@@ -14237,7 +14252,7 @@
       "player_name": "Saka",
       "position": "MID",
       "club": "ARS",
-      "season_points": 10
+      "season_points": 20
     },
     {
       "round": 1,
@@ -14276,7 +14291,7 @@
       "player_name": "Gabriel",
       "position": "DEF",
       "club": "ARS",
-      "season_points": 6
+      "season_points": 13
     },
     {
       "round": 2,
@@ -14315,7 +14330,7 @@
       "player_name": "Rice",
       "position": "MID",
       "club": "ARS",
-      "season_points": 7
+      "season_points": 6
     },
     {
       "round": 2,
@@ -14445,7 +14460,7 @@
       "player_name": "Havertz",
       "position": "FWD",
       "club": "ARS",
-      "season_points": 7
+      "season_points": 8
     },
     {
       "round": 3,
@@ -14601,7 +14616,7 @@
       "player_name": "Bruno G.",
       "position": "MID",
       "club": "ARS",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 5,
@@ -14640,7 +14655,7 @@
       "player_name": "Calafiori",
       "position": "DEF",
       "club": "ARS",
-      "season_points": 10
+      "season_points": 20
     },
     {
       "round": 5,
@@ -14679,7 +14694,7 @@
       "player_name": "\u00d8degaard",
       "position": "MID",
       "club": "ARS",
-      "season_points": 12
+      "season_points": 14
     },
     {
       "round": 6,
@@ -14718,7 +14733,7 @@
       "player_name": "Mosquera",
       "position": "DEF",
       "club": "ARS",
-      "season_points": 8
+      "season_points": 12
     },
     {
       "round": 6,
@@ -14822,7 +14837,7 @@
       "player_name": "Raya",
       "position": "GKP",
       "club": "ARS",
-      "season_points": 7
+      "season_points": 12
     },
     {
       "round": 7,
@@ -15563,7 +15578,7 @@
       "player_name": "Konsa",
       "position": "DEF",
       "club": "ARS",
-      "season_points": 0
+      "season_points": 1
     },
     {
       "round": 14,
@@ -15979,70 +15994,37 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/198869.png",
           "shirt_color": "#EF0107",
           "initials": "WH",
-          "season_points": 12,
-          "badges": [],
+          "season_points": 18,
+          "badges": [
+            {
+              "code": "top10",
+              "label": "Top 10 points overall",
+              "icon": "\ud83c\udfc6"
+            },
+            {
+              "code": "best_def",
+              "label": "Top 3 DEF",
+              "icon": "\u2b50"
+            }
+          ],
           "form": [
             11
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 7,
           "goals": 0,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 90,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
-          "defensive_contribution_count": 2,
+          "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
-              "opponent_score": 0,
-              "finished": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.05,
-          "xgi": 0.05,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 1
-        },
-        {
-          "name": "Mosquera",
-          "position": "DEF",
-          "club": "ARS",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/500040.png",
-          "shirt_color": "#EF0107",
-          "initials": "MO",
-          "season_points": 8,
-          "badges": [],
-          "form": [
-            6
-          ],
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 2,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 47,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 1,
-          "opponents": [
-            {
-              "opponent": "AVL",
-              "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -16054,11 +16036,55 @@
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
+          "xa": 0.05,
+          "xgi": 0.05,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 2
+          "points": 7
+        },
+        {
+          "name": "Mosquera",
+          "position": "DEF",
+          "club": "ARS",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/500040.png",
+          "shirt_color": "#EF0107",
+          "initials": "MO",
+          "season_points": 12,
+          "badges": [],
+          "form": [
+            6
+          ],
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 6,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 78,
+          "match_finished": false,
+          "clean_sheet": true,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 3,
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": false
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
+          "subbed_out": false,
+          "multiplier": 1,
+          "points": 6
         },
         {
           "name": "Silva",
@@ -16312,7 +16338,7 @@
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -16551,7 +16577,7 @@
               "opponent": "ARS",
               "is_home": true,
               "team_score": 0,
-              "opponent_score": 0,
+              "opponent_score": 1,
               "finished": false
             }
           ],
@@ -16594,7 +16620,7 @@
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -17051,7 +17077,7 @@
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -17166,26 +17192,26 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
           "shirt_color": "#EF0107",
           "initials": "BG",
-          "season_points": 0,
+          "season_points": 1,
           "badges": [],
           "form": [
             0
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 19,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 0,
+          "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -17197,11 +17223,11 @@
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Caicedo",
@@ -17305,13 +17331,7 @@
           "shirt_color": "#003399",
           "initials": "PI",
           "season_points": 10,
-          "badges": [
-            {
-              "code": "best_gkp",
-              "label": "Top 3 GKP",
-              "icon": "\u2b50"
-            }
-          ],
+          "badges": [],
           "form": [
             7
           ],
@@ -18319,13 +18339,7 @@
           "shirt_color": "#C8102E",
           "initials": "GA",
           "season_points": 17,
-          "badges": [
-            {
-              "code": "top10",
-              "label": "Top 10 points overall",
-              "icon": "\ud83c\udfc6"
-            }
-          ],
+          "badges": [],
           "form": [
             12
           ],
@@ -18368,26 +18382,26 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/184029.png",
           "shirt_color": "#EF0107",
           "initials": "\u00d8D",
-          "season_points": 12,
+          "season_points": 14,
           "badges": [],
           "form": [
             11
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 70,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 4,
+          "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -18398,12 +18412,12 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.0,
-          "xa": 0.03,
-          "xgi": 0.03,
+          "xg": 0.08,
+          "xa": 0.07,
+          "xgi": 0.15,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Barnes",
@@ -18565,7 +18579,7 @@
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -18610,7 +18624,7 @@
               "opponent": "ARS",
               "is_home": true,
               "team_score": 0,
-              "opponent_score": 0,
+              "opponent_score": 1,
               "finished": false
             }
           ],
@@ -18653,7 +18667,7 @@
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -19344,7 +19358,7 @@
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -19557,26 +19571,26 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/199798.png",
           "shirt_color": "#EF0107",
           "initials": "KO",
-          "season_points": 0,
+          "season_points": 1,
           "badges": [],
           "form": [
             0
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
+          "minutes": 11,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 0,
+          "defensive_contribution_count": 1,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -19592,7 +19606,7 @@
           "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 0
+          "points": 1
         },
         {
           "name": "Truffert",
@@ -19832,42 +19846,42 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
           "shirt_color": "#EF0107",
           "initials": "RI",
-          "season_points": 7,
+          "season_points": 6,
           "badges": [],
           "form": [
             3
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 4,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 84,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 3,
+          "defensive_contribution_count": 11,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
           ],
-          "bonus": 3,
+          "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.09,
-          "xgi": 0.09,
+          "xa": 0.1,
+          "xgi": 0.1,
           "subbed_in": true,
           "multiplier": 1,
-          "points": 4
+          "points": 3
         }
       ],
       "bench": [
@@ -20010,26 +20024,32 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/154561.png",
           "shirt_color": "#EF0107",
           "initials": "RA",
-          "season_points": 7,
-          "badges": [],
+          "season_points": 12,
+          "badges": [
+            {
+              "code": "best_gkp",
+              "label": "Top 3 GKP",
+              "icon": "\u2b50"
+            }
+          ],
           "form": [
             6
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 6,
           "goals": 0,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 90,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -20045,10 +20065,10 @@
           "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 1
+          "points": 6
         }
       ],
-      "played_count": 10,
+      "played_count": 11,
       "squad_size": 11
     },
     "27145": {
@@ -20104,26 +20124,26 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/226597.png",
           "shirt_color": "#EF0107",
           "initials": "GA",
-          "season_points": 6,
+          "season_points": 13,
           "badges": [],
           "form": [
             5
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 8,
           "goals": 0,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 90,
           "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 4,
+          "clean_sheet": true,
+          "defensive_contribution": true,
+          "defensive_contribution_count": 10,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -20135,11 +20155,11 @@
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.13,
-          "xa": 0.01,
-          "xgi": 0.14,
+          "xa": 0.02,
+          "xgi": 0.15,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 8
         },
         {
           "name": "Lacroix",
@@ -20281,13 +20301,7 @@
           "shirt_color": "#FFCD00",
           "initials": "ST",
           "season_points": 17,
-          "badges": [
-            {
-              "code": "top10",
-              "label": "Top 10 points overall",
-              "icon": "\ud83c\udfc6"
-            }
-          ],
+          "badges": [],
           "form": [
             13
           ],
@@ -20330,42 +20344,53 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/223340.png",
           "shirt_color": "#EF0107",
           "initials": "SA",
-          "season_points": 10,
-          "badges": [],
+          "season_points": 20,
+          "badges": [
+            {
+              "code": "top10",
+              "label": "Top 10 points overall",
+              "icon": "\ud83c\udfc6"
+            },
+            {
+              "code": "best_mid",
+              "label": "Top 3 MID",
+              "icon": "\u2b50"
+            }
+          ],
           "form": [
             9
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
+          "base_points": 11,
+          "goals": 1,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 6,
+          "defensive_contribution_count": 11,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
           ],
-          "bonus": 0,
+          "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.05,
-          "xa": 0.01,
-          "xgi": 0.06,
+          "xg": 0.63,
+          "xa": 0.04,
+          "xgi": 0.67,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 11
         },
         {
           "name": "Anderson",
@@ -20468,26 +20493,26 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219847.png",
           "shirt_color": "#EF0107",
           "initials": "HA",
-          "season_points": 7,
+          "season_points": 8,
           "badges": [],
           "form": [
             6
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 47,
+          "minutes": 90,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 1,
+          "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -20498,12 +20523,12 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
+          "xg": 0.04,
+          "xa": 0.03,
+          "xgi": 0.07,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 2
         },
         {
           "name": "Eze",
@@ -20522,16 +20547,16 @@
           "base_points": 1,
           "goals": 0,
           "assists": 0,
-          "minutes": 2,
+          "minutes": 45,
           "match_finished": false,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 0,
+          "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
@@ -20543,8 +20568,8 @@
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
+          "xa": 0.07,
+          "xgi": 0.07,
           "subbed_in": true,
           "multiplier": 1,
           "points": 1
@@ -20784,42 +20809,58 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466075.png",
           "shirt_color": "#EF0107",
           "initials": "CA",
-          "season_points": 10,
-          "badges": [],
+          "season_points": 20,
+          "badges": [
+            {
+              "code": "most_assists",
+              "label": "Most assists",
+              "icon": "\ud83c\udfaf"
+            },
+            {
+              "code": "top10",
+              "label": "Top 10 points overall",
+              "icon": "\ud83c\udfc6"
+            },
+            {
+              "code": "best_def",
+              "label": "Top 3 DEF",
+              "icon": "\u2b50"
+            }
+          ],
           "form": [
             9
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 11,
           "goals": 0,
-          "assists": 0,
-          "minutes": 47,
+          "assists": 1,
+          "minutes": 90,
           "match_finished": false,
-          "clean_sheet": false,
+          "clean_sheet": true,
           "defensive_contribution": false,
-          "defensive_contribution_count": 1,
+          "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "AVL",
               "is_home": false,
-              "team_score": 0,
+              "team_score": 1,
               "opponent_score": 0,
               "finished": false
             }
           ],
-          "bonus": 0,
+          "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.11,
-          "xa": 0.01,
-          "xgi": 0.12,
+          "xa": 0.46,
+          "xgi": 0.57,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 11
         },
         {
           "name": "Shaw",
@@ -21187,18 +21228,7 @@
           "shirt_color": "#0057B8",
           "initials": "DC",
           "season_points": 17,
-          "badges": [
-            {
-              "code": "top10",
-              "label": "Top 10 points overall",
-              "icon": "\ud83c\udfc6"
-            },
-            {
-              "code": "best_def",
-              "label": "Top 3 DEF",
-              "icon": "\u2b50"
-            }
-          ],
+          "badges": [],
           "form": [
             17
           ],
