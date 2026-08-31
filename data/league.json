@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T21:02:14.763976+00:00",
+  "generated_at": "2026-08-31T22:06:05.904649+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19,14 +19,14 @@
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "score": 57,
-      "api_score": 44
+      "api_score": 57
     },
     "away": {
       "league_entry_id": 27140,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
-      "score": 29,
-      "api_score": 31
+      "score": 30,
+      "api_score": 29
     },
     "finished": false,
     "started": true,
@@ -174,7 +174,7 @@
       "points_against": 41,
       "total": 0,
       "event_total": 0,
-      "current_gw_score": 29,
+      "current_gw_score": 30,
       "form": [
         "L"
       ],
@@ -5764,14 +5764,14 @@
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
           "score": 57,
-          "api_score": 44
+          "api_score": 57
         },
         "away": {
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
-          "score": 29,
-          "api_score": 31
+          "score": 30,
+          "api_score": 29
         },
         "finished": false,
         "started": true,
@@ -5852,7 +5852,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
@@ -5862,7 +5862,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 1,
@@ -5896,7 +5896,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 78,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -5906,7 +5906,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6166,7 +6166,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -6176,7 +6176,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6393,42 +6393,42 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/517052.png",
                 "shirt_color": "#670E36",
                 "initials": "N.",
-                "season_points": 0,
+                "season_points": 2,
                 "badges": [],
                 "form": [
                   0
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 0,
+                "base_points": 2,
                 "goals": 0,
                 "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
+                "minutes": 70,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 0,
+                "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "ARS",
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
-                "goals_conceded": 0,
+                "goals_conceded": 1,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
+                "xa": 0.1,
+                "xgi": 0.1,
                 "subbed_in": false,
                 "multiplier": 1,
-                "points": 0
+                "points": 2
               },
               {
                 "name": "J.Timber",
@@ -6448,7 +6448,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -6458,7 +6458,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6888,50 +6888,6 @@
                 "points": 1
               },
               {
-                "name": "Gy\u00f6keres",
-                "position": "FWD",
-                "club": "ARS",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/224117.png",
-                "shirt_color": "#EF0107",
-                "initials": "GY",
-                "season_points": 0,
-                "badges": [],
-                "form": [
-                  0
-                ],
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "AVL",
-                    "is_home": false,
-                    "team_score": 1,
-                    "opponent_score": 0,
-                    "finished": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "Brobbey",
                 "position": "FWD",
                 "club": "SUN",
@@ -6974,9 +6930,97 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
+              },
+              {
+                "name": "Bruno G.",
+                "position": "MID",
+                "club": "ARS",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
+                "shirt_color": "#EF0107",
+                "initials": "BG",
+                "season_points": 1,
+                "badges": [],
+                "form": [
+                  0
+                ],
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 1,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 19,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 3,
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
+                "subbed_in": true,
+                "multiplier": 1,
+                "points": 1
               }
             ],
             "bench": [
+              {
+                "name": "Gy\u00f6keres",
+                "position": "FWD",
+                "club": "ARS",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/224117.png",
+                "shirt_color": "#EF0107",
+                "initials": "GY",
+                "season_points": 0,
+                "badges": [],
+                "form": [
+                  0
+                ],
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
               {
                 "name": "Henderson",
                 "position": "GKP",
@@ -7017,50 +7061,6 @@
                 "xg": 0.0,
                 "xa": 0.0,
                 "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 1
-              },
-              {
-                "name": "Bruno G.",
-                "position": "MID",
-                "club": "ARS",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
-                "shirt_color": "#EF0107",
-                "initials": "BG",
-                "season_points": 1,
-                "badges": [],
-                "form": [
-                  0
-                ],
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 1,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 19,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 3,
-                "opponents": [
-                  {
-                    "opponent": "AVL",
-                    "is_home": false,
-                    "team_score": 1,
-                    "opponent_score": 0,
-                    "finished": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.01,
-                "xgi": 0.01,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -7154,7 +7154,7 @@
                 "points": 1
               }
             ],
-            "played_count": 10,
+            "played_count": 11,
             "squad_size": 11
           }
         }
@@ -7172,7 +7172,7 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 53,
-          "api_score": 50
+          "api_score": 53
         },
         "finished": false,
         "started": true,
@@ -8250,7 +8250,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 70,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
@@ -8260,7 +8260,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -8428,7 +8428,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -8438,7 +8438,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -8472,7 +8472,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -8482,7 +8482,7 @@
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -8516,7 +8516,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -8526,7 +8526,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -8561,7 +8561,7 @@
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 28,
-          "api_score": 12
+          "api_score": 13
         },
         "finished": false,
         "started": true,
@@ -9228,7 +9228,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -9238,7 +9238,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -9460,7 +9460,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 11,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 1,
@@ -9470,7 +9470,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -9735,7 +9735,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 84,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 11,
@@ -9745,7 +9745,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -9919,7 +9919,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -9929,7 +9929,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -9957,14 +9957,14 @@
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 39,
-          "api_score": 17
+          "api_score": 38
         },
         "away": {
           "league_entry_id": 31110,
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
           "score": 51,
-          "api_score": 40
+          "api_score": 51
         },
         "finished": false,
         "started": true,
@@ -10034,7 +10034,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 10,
@@ -10044,7 +10044,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -10265,7 +10265,7 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 11,
@@ -10275,7 +10275,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -10403,7 +10403,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
@@ -10413,7 +10413,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -10447,7 +10447,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -10457,7 +10457,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -10735,7 +10735,7 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -10745,7 +10745,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -14082,34 +14082,34 @@
     "season_end": 38,
     "leader": {
       "league_entry_id": 27139,
-      "points": 52,
-      "event": 1,
+      "points": 57,
+      "event": 2,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch"
     },
     "leaders": [
       {
         "league_entry_id": 27139,
-        "points": 52,
-        "event": 1,
+        "points": 57,
+        "event": 2,
         "team_name": "FC Strup",
         "manager_name": "Sam Sitch"
-      },
-      {
-        "league_entry_id": 27143,
-        "points": 52,
-        "event": 1,
-        "team_name": "Eki-Tiki",
-        "manager_name": "Hugh Chalmers"
       }
     ],
     "leaderboard": [
       {
         "league_entry_id": 27139,
-        "points": 52,
-        "event": 1,
+        "points": 57,
+        "event": 2,
         "team_name": "FC Strup",
         "manager_name": "Sam Sitch"
+      },
+      {
+        "league_entry_id": 226052,
+        "points": 53,
+        "event": 2,
+        "team_name": "PFC",
+        "manager_name": "Archie Ross"
       },
       {
         "league_entry_id": 27143,
@@ -14119,11 +14119,11 @@
         "manager_name": "Hugh Chalmers"
       },
       {
-        "league_entry_id": 226052,
+        "league_entry_id": 31110,
         "points": 51,
-        "event": 1,
-        "team_name": "PFC",
-        "manager_name": "Archie Ross"
+        "event": 2,
+        "team_name": "I am chucky kirkez",
+        "manager_name": "Eamon Lye"
       },
       {
         "league_entry_id": 27141,
@@ -14138,13 +14138,6 @@
         "event": 1,
         "team_name": ":)",
         "manager_name": "Charlie Spring"
-      },
-      {
-        "league_entry_id": 31110,
-        "points": 40,
-        "event": 2,
-        "team_name": "I am chucky kirkez",
-        "manager_name": "Eamon Lye"
       },
       {
         "league_entry_id": 27140,
@@ -16016,7 +16009,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
@@ -16026,7 +16019,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 1,
@@ -16060,7 +16053,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 78,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -16070,7 +16063,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16330,7 +16323,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 45,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -16340,7 +16333,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16557,42 +16550,42 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/517052.png",
           "shirt_color": "#670E36",
           "initials": "N.",
-          "season_points": 0,
+          "season_points": 2,
           "badges": [],
           "form": [
             0
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 0,
+          "base_points": 2,
           "goals": 0,
           "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
+          "minutes": 70,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 0,
+          "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "ARS",
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
-          "goals_conceded": 0,
+          "goals_conceded": 1,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
+          "xa": 0.1,
+          "xgi": 0.1,
           "subbed_in": false,
           "multiplier": 1,
-          "points": 0
+          "points": 2
         },
         {
           "name": "J.Timber",
@@ -16612,7 +16605,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -16622,7 +16615,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -17052,50 +17045,6 @@
           "points": 1
         },
         {
-          "name": "Gy\u00f6keres",
-          "position": "FWD",
-          "club": "ARS",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/224117.png",
-          "shirt_color": "#EF0107",
-          "initials": "GY",
-          "season_points": 0,
-          "badges": [],
-          "form": [
-            0
-          ],
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "AVL",
-              "is_home": false,
-              "team_score": 1,
-              "opponent_score": 0,
-              "finished": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "Brobbey",
           "position": "FWD",
           "club": "SUN",
@@ -17138,9 +17087,97 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
+        },
+        {
+          "name": "Bruno G.",
+          "position": "MID",
+          "club": "ARS",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
+          "shirt_color": "#EF0107",
+          "initials": "BG",
+          "season_points": 1,
+          "badges": [],
+          "form": [
+            0
+          ],
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 1,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 19,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 3,
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
+          "subbed_in": true,
+          "multiplier": 1,
+          "points": 1
         }
       ],
       "bench": [
+        {
+          "name": "Gy\u00f6keres",
+          "position": "FWD",
+          "club": "ARS",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/224117.png",
+          "shirt_color": "#EF0107",
+          "initials": "GY",
+          "season_points": 0,
+          "badges": [],
+          "form": [
+            0
+          ],
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
         {
           "name": "Henderson",
           "position": "GKP",
@@ -17181,50 +17218,6 @@
           "xg": 0.0,
           "xa": 0.0,
           "xgi": 0.0,
-          "subbed_in": false,
-          "multiplier": 1,
-          "points": 1
-        },
-        {
-          "name": "Bruno G.",
-          "position": "MID",
-          "club": "ARS",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/208706.png",
-          "shirt_color": "#EF0107",
-          "initials": "BG",
-          "season_points": 1,
-          "badges": [],
-          "form": [
-            0
-          ],
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 1,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 19,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 3,
-          "opponents": [
-            {
-              "opponent": "AVL",
-              "is_home": false,
-              "team_score": 1,
-              "opponent_score": 0,
-              "finished": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.01,
-          "xgi": 0.01,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -17318,7 +17311,7 @@
           "points": 1
         }
       ],
-      "played_count": 10,
+      "played_count": 11,
       "squad_size": 11
     },
     "27141": {
@@ -18393,7 +18386,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 70,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
@@ -18403,7 +18396,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -18571,7 +18564,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -18581,7 +18574,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -18615,7 +18608,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -18625,7 +18618,7 @@
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -18659,7 +18652,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -18669,7 +18662,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -19350,7 +19343,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -19360,7 +19353,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -19582,7 +19575,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 11,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 1,
@@ -19592,7 +19585,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -19857,7 +19850,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 84,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 11,
@@ -19867,7 +19860,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -20041,7 +20034,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -20051,7 +20044,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -20135,7 +20128,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
@@ -20145,7 +20138,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -20366,7 +20359,7 @@
           "goals": 1,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 11,
@@ -20376,7 +20369,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -20504,7 +20497,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
@@ -20514,7 +20507,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -20548,7 +20541,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 45,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -20558,7 +20551,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -20836,7 +20829,7 @@
           "goals": 0,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -20846,7 +20839,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false
+              "finished": true
             }
           ],
           "bonus": 2,
