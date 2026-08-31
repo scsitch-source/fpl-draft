@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T04:06:12.801389+00:00",
+  "generated_at": "2026-08-31T04:33:50.198542+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -12597,6 +12597,7 @@
       "event": 1,
       "team_name": "Clean Machine FC",
       "manager_name": "Nick Poole",
+      "league_entry_id": 183812,
       "player_in": "Munoz",
       "player_out": "Maddison",
       "kind": "Waiver"
@@ -12605,6 +12606,7 @@
       "event": 1,
       "team_name": "Hakuna Mateta",
       "manager_name": "Ben Scotti",
+      "league_entry_id": 27141,
       "player_in": "S\u00e1vio",
       "player_out": "Est\u00eav\u00e3o",
       "kind": "Free agent"
@@ -12613,6 +12615,7 @@
       "event": 1,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
+      "league_entry_id": 27139,
       "player_in": "White",
       "player_out": "Muharemovi\u0107",
       "kind": "Free agent"
@@ -12621,6 +12624,7 @@
       "event": 1,
       "team_name": "Eki-Tiki",
       "manager_name": "Hugh Chalmers",
+      "league_entry_id": 27143,
       "player_in": "Barry",
       "player_out": "Welbeck",
       "kind": "Free agent"
@@ -12629,6 +12633,7 @@
       "event": 2,
       "team_name": "Clean Machine FC",
       "manager_name": "Nick Poole",
+      "league_entry_id": 183812,
       "player_in": "M.Sangar\u00e9",
       "player_out": "Hudson-Odoi",
       "kind": "Waiver"
@@ -12637,6 +12642,7 @@
       "event": 2,
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
+      "league_entry_id": 27140,
       "player_in": "Tavernier",
       "player_out": "Gallagher",
       "kind": "Waiver"
@@ -12645,6 +12651,7 @@
       "event": 2,
       "team_name": "I am chucky kirkez",
       "manager_name": "Eamon Lye",
+      "league_entry_id": 31110,
       "player_in": "De Cuyper",
       "player_out": "Van de Ven",
       "kind": "Waiver"
@@ -12653,6 +12660,7 @@
       "event": 2,
       "team_name": ":)",
       "manager_name": "Charlie Spring",
+      "league_entry_id": 27145,
       "player_in": "Bijol",
       "player_out": "A\u00eft-Nouri",
       "kind": "Waiver"
@@ -12661,6 +12669,7 @@
       "event": 2,
       "team_name": ":)",
       "manager_name": "Charlie Spring",
+      "league_entry_id": 27145,
       "player_in": "Emersonn",
       "player_out": "Strand Larsen",
       "kind": "Waiver"
@@ -12669,6 +12678,7 @@
       "event": 2,
       "team_name": "Hakuna Mateta",
       "manager_name": "Ben Scotti",
+      "league_entry_id": 27141,
       "player_in": "Marmoush",
       "player_out": "Kostoulas",
       "kind": "Waiver"
@@ -12677,6 +12687,7 @@
       "event": 2,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
+      "league_entry_id": 27139,
       "player_in": "N.Jackson",
       "player_out": "Gonzalo",
       "kind": "Waiver"
@@ -12685,6 +12696,7 @@
       "event": 2,
       "team_name": "Clean Machine FC",
       "manager_name": "Nick Poole",
+      "league_entry_id": 183812,
       "player_in": "Grealish",
       "player_out": "Munoz",
       "kind": "Free agent"
@@ -12693,6 +12705,7 @@
       "event": 2,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
+      "league_entry_id": 27139,
       "player_in": "Silva",
       "player_out": "N.Williams",
       "kind": "Free agent"
