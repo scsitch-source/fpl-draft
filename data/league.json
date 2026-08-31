@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T02:05:55.022264+00:00",
+  "generated_at": "2026-08-31T02:14:44.050404+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -9,7 +9,7 @@
   "current_event": 2,
   "current_event_finished": false,
   "next_event": 3,
-  "next_deadline": null,
+  "next_deadline": "2026-09-04T17:30:00Z",
   "your_entry_id": 27110,
   "your_league_entry_id": 27139,
   "your_next_fixture": {
@@ -3260,13 +3260,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 1,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3288,13 +3296,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3316,13 +3332,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3344,13 +3368,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 10,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.25,
+                "xa": 0.03,
+                "xgi": 0.28,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -3372,13 +3404,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.04,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -3400,13 +3440,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.4,
+                "xa": 0.02,
+                "xgi": 0.42,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3428,13 +3476,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CHE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 0,
+                "xg": 0.05,
+                "xa": 0.11,
+                "xgi": 0.16,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 13
@@ -3456,13 +3512,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.87,
+                "xa": 0.45,
+                "xgi": 1.32,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -3484,13 +3548,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3512,13 +3584,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 1,
                 "goals_conceded": 3,
                 "saves": 0,
+                "xg": 1.23,
+                "xa": 0.04,
+                "xgi": 1.27,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -3540,13 +3620,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.8,
+                "xa": 0.01,
+                "xgi": 0.81,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3570,13 +3658,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -3598,13 +3694,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.79,
+                "xa": 0.04,
+                "xgi": 0.83,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 13
@@ -3626,13 +3730,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "ARS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -3654,13 +3766,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -3688,13 +3808,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 2,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -3716,13 +3844,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.09,
+                "xa": 0.57,
+                "xgi": 0.66,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3744,13 +3880,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CHE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 0,
+                "xg": 0.03,
+                "xa": 0.02,
+                "xgi": 0.05,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3772,13 +3916,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3800,13 +3952,21 @@
                 "clean_sheet": true,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 19,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -3828,13 +3988,21 @@
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -3856,13 +4024,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 3,
                 "saves": 0,
+                "xg": 0.66,
+                "xa": 0.13,
+                "xgi": 0.79,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 7
@@ -3884,13 +4060,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 11,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.09,
+                "xa": 0.21,
+                "xgi": 0.3,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -3912,13 +4096,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.74,
+                "xa": 0.04,
+                "xgi": 0.78,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -3940,13 +4132,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -3968,13 +4168,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.03,
+                "xa": 0.0,
+                "xgi": 0.03,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -3998,13 +4206,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 4,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -4026,13 +4242,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -4054,13 +4278,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -4082,13 +4314,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.04,
+                "xa": 0.01,
+                "xgi": 0.05,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -4135,13 +4375,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 4,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -4163,13 +4411,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 1,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.02,
+                "xa": 0.02,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -4191,13 +4447,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -4219,13 +4483,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 12,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.09,
+                "xa": 0.01,
+                "xgi": 0.1,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -4247,13 +4519,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.03,
+                "xa": 0.01,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -4275,13 +4555,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -4303,13 +4591,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 1.95,
+                "xa": 0.27,
+                "xgi": 2.22,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 23
@@ -4331,13 +4627,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 10,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.23,
+                "xa": 0.2,
+                "xgi": 0.43,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -4359,13 +4663,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 10,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.06,
+                "xa": 0.16,
+                "xgi": 0.22,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -4387,13 +4699,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.02,
+                "xa": 0.08,
+                "xgi": 0.1,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -4415,13 +4735,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -4445,13 +4773,21 @@
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 6
@@ -4473,13 +4809,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 3
@@ -4501,13 +4845,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.17,
+                "xa": 0.07,
+                "xgi": 0.24,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -4529,13 +4881,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -4563,13 +4923,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 1,
                 "goals_conceded": 1,
                 "saves": 1,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -4591,13 +4959,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -4619,13 +4995,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -4647,13 +5031,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.17,
+                "xa": 0.01,
+                "xgi": 0.18,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -4675,13 +5067,21 @@
                 "clean_sheet": true,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.03,
+                "xa": 0.31,
+                "xgi": 0.34,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -4703,13 +5103,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 1.63,
+                "xa": 0.21,
+                "xgi": 1.84,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 11
@@ -4731,13 +5139,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.35,
+                "xa": 0.55,
+                "xgi": 0.9,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 14
@@ -4759,13 +5175,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.65,
+                "xgi": 0.65,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -4787,13 +5211,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -4815,13 +5247,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.04,
+                "xa": 0.01,
+                "xgi": 0.05,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -4843,13 +5283,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -4873,13 +5321,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 5,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 3
@@ -4901,13 +5357,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -4929,13 +5393,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "ARS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -4957,13 +5429,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -5010,13 +5490,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -5038,13 +5526,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.04,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -5066,13 +5562,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 10,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.1,
+                "xa": 0.01,
+                "xgi": 0.11,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 12
@@ -5094,13 +5598,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.33,
+                "xa": 0.1,
+                "xgi": 0.43,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5122,13 +5634,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5150,13 +5670,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.16,
+                "xa": 0.17,
+                "xgi": 0.33,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -5178,13 +5706,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 3,
                 "saves": 0,
+                "xg": 0.14,
+                "xa": 1.01,
+                "xgi": 1.15,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -5206,13 +5742,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.01,
+                "xa": 0.04,
+                "xgi": 0.05,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5234,13 +5778,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 1.48,
+                "xa": 0.0,
+                "xgi": 1.48,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -5262,13 +5814,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 3,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.66,
+                "xa": 0.0,
+                "xgi": 0.66,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 13
@@ -5290,13 +5850,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.35,
+                "xa": 0.0,
+                "xgi": 0.35,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -5320,13 +5888,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 3,
                 "saves": 4,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -5348,13 +5924,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.26,
+                "xa": 0.05,
+                "xgi": 0.31,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 2
@@ -5376,13 +5960,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -5404,13 +5996,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -5438,13 +6038,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 4,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -5466,13 +6074,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.03,
+                "xgi": 0.03,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5494,13 +6110,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.18,
+                "xa": 0.0,
+                "xgi": 0.18,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5522,13 +6146,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.11,
+                "xa": 0.03,
+                "xgi": 0.14,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5550,13 +6182,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -5578,13 +6218,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 9,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.07,
+                "xgi": 0.07,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -5606,13 +6254,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -5634,13 +6290,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -5662,13 +6326,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -5690,13 +6362,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.2,
+                "xa": 0.0,
+                "xgi": 0.2,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5718,13 +6398,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5748,13 +6436,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -5776,13 +6472,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 1,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.99,
+                "xa": 0.0,
+                "xgi": 0.99,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 8
@@ -5804,13 +6508,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 14,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.21,
+                "xa": 0.03,
+                "xgi": 0.24,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 4
@@ -5832,13 +6544,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -5885,13 +6605,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 1,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -5913,13 +6641,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -5941,13 +6677,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 9,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 3,
                 "saves": 0,
+                "xg": 0.02,
+                "xa": 0.0,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5969,13 +6713,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.01,
+                "xgi": 0.01,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -5997,13 +6749,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -6025,13 +6785,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -6053,13 +6821,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 16,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.07,
+                "xa": 0.01,
+                "xgi": 0.08,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -6081,13 +6857,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -6109,13 +6893,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 14,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": true,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.07,
+                "xa": 0.22,
+                "xgi": 0.29,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -6137,13 +6929,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.58,
+                "xa": 0.04,
+                "xgi": 0.62,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -6165,13 +6965,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -6195,13 +7003,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -6223,13 +7039,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -6251,13 +7075,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
+                "xg": 0.41,
+                "xa": 0.33,
+                "xgi": 0.74,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 7
@@ -6279,13 +7111,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 1,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "MUN",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -6313,13 +7153,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -6341,13 +7189,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "AVL",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -6369,13 +7225,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.02,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -6397,13 +7261,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -6425,13 +7297,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.06,
+                "xa": 0.57,
+                "xgi": 0.63,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -6453,13 +7333,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "IPS",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 1,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.11,
+                "xa": 0.15,
+                "xgi": 0.26,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -6481,13 +7369,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BOU",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.02,
+                "xa": 0.07,
+                "xgi": 0.09,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -6509,13 +7405,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.37,
+                "xa": 0.17,
+                "xgi": 0.54,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -6537,13 +7441,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "EVE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.61,
+                "xa": 0.05,
+                "xgi": 0.66,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -6565,13 +7477,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BRE",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 2,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
+                "xg": 0.92,
+                "xa": 0.02,
+                "xgi": 0.94,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -6593,13 +7513,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "TOT",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.02,
+                "xa": 0.01,
+                "xgi": 0.03,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -6623,13 +7551,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "SUN",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 3,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 3
@@ -6651,13 +7587,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "LIV",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -6679,13 +7623,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "CHE",
+                    "is_home": false
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 0,
+                "xg": 0.03,
+                "xa": 0.05,
+                "xgi": 0.08,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -6707,13 +7659,21 @@
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
-                "opponents": [],
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true
+                  }
+                ],
                 "bonus": 0,
                 "yellow_card": false,
                 "red_card": false,
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -11261,13 +12221,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 1,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11289,13 +12257,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11317,13 +12293,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11345,13 +12329,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.25,
+          "xa": 0.03,
+          "xgi": 0.28,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -11373,13 +12365,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.04,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -11401,13 +12401,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.4,
+          "xa": 0.02,
+          "xgi": 0.42,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -11429,13 +12437,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CHE",
+              "is_home": false
+            }
+          ],
           "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 0,
+          "xg": 0.05,
+          "xa": 0.11,
+          "xgi": 0.16,
           "subbed_out": false,
           "multiplier": 1,
           "points": 13
@@ -11457,13 +12473,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 1,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.87,
+          "xa": 0.45,
+          "xgi": 1.32,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -11485,13 +12509,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11513,13 +12545,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 1,
           "goals_conceded": 3,
           "saves": 0,
+          "xg": 1.23,
+          "xa": 0.04,
+          "xgi": 1.27,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -11541,13 +12581,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LEE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.8,
+          "xa": 0.01,
+          "xgi": 0.81,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -11571,13 +12619,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -11599,13 +12655,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LIV",
+              "is_home": false
+            }
+          ],
           "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.79,
+          "xa": 0.04,
+          "xgi": 0.83,
           "subbed_in": false,
           "multiplier": 1,
           "points": 13
@@ -11627,13 +12691,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "ARS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -11655,13 +12727,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -11689,13 +12769,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LIV",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 2,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -11717,13 +12805,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.09,
+          "xa": 0.57,
+          "xgi": 0.66,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -11745,13 +12841,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CHE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 0,
+          "xg": 0.03,
+          "xa": 0.02,
+          "xgi": 0.05,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11773,13 +12877,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "MCI",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11801,13 +12913,21 @@
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 19,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "FUL",
+              "is_home": true
+            }
+          ],
           "bonus": 1,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -11829,13 +12949,21 @@
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "TOT",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.02,
+          "xgi": 0.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 6
@@ -11857,13 +12985,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
+          "xg": 0.66,
+          "xa": 0.13,
+          "xgi": 0.79,
           "subbed_out": false,
           "multiplier": 1,
           "points": 7
@@ -11885,13 +13021,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 11,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.09,
+          "xa": 0.21,
+          "xgi": 0.3,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -11913,13 +13057,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LIV",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.74,
+          "xa": 0.04,
+          "xgi": 0.78,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -11941,13 +13093,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -11969,13 +13129,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "FUL",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.03,
+          "xa": 0.0,
+          "xgi": 0.03,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -11999,13 +13167,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "MCI",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 4,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -12027,13 +13203,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -12055,13 +13239,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -12083,13 +13275,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.04,
+          "xa": 0.01,
+          "xgi": 0.05,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -12117,13 +13317,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BOU",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 4,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -12145,13 +13353,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 1,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.02,
+          "xa": 0.02,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -12173,13 +13389,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -12201,13 +13425,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 12,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BOU",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.09,
+          "xa": 0.01,
+          "xgi": 0.1,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -12229,13 +13461,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.03,
+          "xa": 0.01,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -12257,13 +13497,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -12285,13 +13533,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 1.95,
+          "xa": 0.27,
+          "xgi": 2.22,
           "subbed_out": false,
           "multiplier": 1,
           "points": 23
@@ -12313,13 +13569,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 10,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.23,
+          "xa": 0.2,
+          "xgi": 0.43,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -12341,13 +13605,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 10,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BOU",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.06,
+          "xa": 0.16,
+          "xgi": 0.22,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -12369,13 +13641,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LEE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.02,
+          "xa": 0.08,
+          "xgi": 0.1,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -12397,13 +13677,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "MCI",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -12427,13 +13715,21 @@
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "FUL",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 6
@@ -12455,13 +13751,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LIV",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 3
@@ -12483,13 +13787,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.17,
+          "xa": 0.07,
+          "xgi": 0.24,
           "subbed_in": false,
           "multiplier": 1,
           "points": 2
@@ -12511,13 +13823,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -12545,13 +13865,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 1,
           "goals_conceded": 1,
           "saves": 1,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -12573,13 +13901,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -12601,13 +13937,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.02,
+          "xgi": 0.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -12629,13 +13973,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LEE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.17,
+          "xa": 0.01,
+          "xgi": 0.18,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -12657,13 +14009,21 @@
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "TOT",
+              "is_home": false
+            }
+          ],
           "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.03,
+          "xa": 0.31,
+          "xgi": 0.34,
           "subbed_out": false,
           "multiplier": 1,
           "points": 11
@@ -12685,13 +14045,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 2,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 1.63,
+          "xa": 0.21,
+          "xgi": 1.84,
           "subbed_out": false,
           "multiplier": 1,
           "points": 11
@@ -12713,13 +14081,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 3,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.35,
+          "xa": 0.55,
+          "xgi": 0.9,
           "subbed_out": false,
           "multiplier": 1,
           "points": 14
@@ -12741,13 +14117,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.65,
+          "xgi": 0.65,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -12769,13 +14153,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -12797,13 +14189,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "TOT",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.04,
+          "xa": 0.01,
+          "xgi": 0.05,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -12825,13 +14225,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -12855,13 +14263,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 5,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 3
@@ -12883,13 +14299,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -12911,13 +14335,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "ARS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -12939,13 +14371,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -12973,13 +14413,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13001,13 +14449,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.04,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -13029,13 +14485,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BOU",
+              "is_home": false
+            }
+          ],
           "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.1,
+          "xa": 0.01,
+          "xgi": 0.11,
           "subbed_out": false,
           "multiplier": 1,
           "points": 12
@@ -13057,13 +14521,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.33,
+          "xa": 0.1,
+          "xgi": 0.43,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13085,13 +14557,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.02,
+          "xgi": 0.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13113,13 +14593,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.16,
+          "xa": 0.17,
+          "xgi": 0.33,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -13141,13 +14629,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
+          "xg": 0.14,
+          "xa": 1.01,
+          "xgi": 1.15,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -13169,13 +14665,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BRE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.01,
+          "xa": 0.04,
+          "xgi": 0.05,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13197,13 +14701,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BOU",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 1.48,
+          "xa": 0.0,
+          "xgi": 1.48,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -13225,13 +14737,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 3,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.66,
+          "xa": 0.0,
+          "xgi": 0.66,
           "subbed_out": false,
           "multiplier": 1,
           "points": 13
@@ -13253,13 +14773,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "TOT",
+              "is_home": false
+            }
+          ],
           "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.35,
+          "xa": 0.0,
+          "xgi": 0.35,
           "subbed_out": false,
           "multiplier": 1,
           "points": 8
@@ -13283,13 +14811,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 4,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
           "subbed_in": false,
           "multiplier": 1,
           "points": 2
@@ -13311,13 +14847,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.26,
+          "xa": 0.05,
+          "xgi": 0.31,
           "subbed_in": false,
           "multiplier": 1,
           "points": 2
@@ -13339,13 +14883,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "MCI",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -13367,13 +14919,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -13401,13 +14961,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BRE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 4,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -13429,13 +14997,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.03,
+          "xgi": 0.03,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13457,13 +15033,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LIV",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.18,
+          "xa": 0.0,
+          "xgi": 0.18,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13485,13 +15069,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.11,
+          "xa": 0.03,
+          "xgi": 0.14,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13513,13 +15105,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13541,13 +15141,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.07,
+          "xgi": 0.07,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -13569,13 +15177,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13597,13 +15213,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13625,13 +15249,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13653,13 +15285,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.2,
+          "xa": 0.0,
+          "xgi": 0.2,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13681,13 +15321,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13711,13 +15359,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -13739,13 +15395,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 1,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.99,
+          "xa": 0.0,
+          "xgi": 0.99,
           "subbed_in": false,
           "multiplier": 1,
           "points": 8
@@ -13767,13 +15431,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 14,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LEE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.21,
+          "xa": 0.03,
+          "xgi": 0.24,
           "subbed_in": false,
           "multiplier": 1,
           "points": 4
@@ -13795,13 +15467,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -13829,13 +15509,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LEE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 1,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -13857,13 +15545,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13885,13 +15581,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
+          "xg": 0.02,
+          "xa": 0.0,
+          "xgi": 0.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13913,13 +15617,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.01,
+          "xgi": 0.01,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13941,13 +15653,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BRE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -13969,13 +15689,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "MCI",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -13997,13 +15725,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 16,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BRE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.07,
+          "xa": 0.01,
+          "xgi": 0.08,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -14025,13 +15761,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -14053,13 +15797,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 14,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": true,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.07,
+          "xa": 0.22,
+          "xgi": 0.29,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -14081,13 +15833,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.58,
+          "xa": 0.04,
+          "xgi": 0.62,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -14109,13 +15869,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -14139,13 +15907,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "TOT",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -14167,13 +15943,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -14195,13 +15979,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
+          "xg": 0.41,
+          "xa": 0.33,
+          "xgi": 0.74,
           "subbed_in": false,
           "multiplier": 1,
           "points": 7
@@ -14223,13 +16015,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 1,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "MUN",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -14257,13 +16057,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 3,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -14285,13 +16093,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "AVL",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -14313,13 +16129,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.02,
+          "xgi": 0.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -14341,13 +16165,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -14369,13 +16201,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.06,
+          "xa": 0.57,
+          "xgi": 0.63,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -14397,13 +16237,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "IPS",
+              "is_home": true
+            }
+          ],
           "bonus": 1,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.11,
+          "xa": 0.15,
+          "xgi": 0.26,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -14425,13 +16273,21 @@
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BOU",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.02,
+          "xa": 0.07,
+          "xgi": 0.09,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -14453,13 +16309,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "FUL",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.37,
+          "xa": 0.17,
+          "xgi": 0.54,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -14481,13 +16345,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "EVE",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.61,
+          "xa": 0.05,
+          "xgi": 0.66,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -14509,13 +16381,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BRE",
+              "is_home": true
+            }
+          ],
           "bonus": 2,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
+          "xg": 0.92,
+          "xa": 0.02,
+          "xgi": 0.94,
           "subbed_out": false,
           "multiplier": 1,
           "points": 8
@@ -14537,13 +16417,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "TOT",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.02,
+          "xa": 0.01,
+          "xgi": 0.03,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -14567,13 +16455,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "SUN",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 3,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 3
@@ -14595,13 +16491,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "LIV",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -14623,13 +16527,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "CHE",
+              "is_home": false
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 0,
+          "xg": 0.03,
+          "xa": 0.05,
+          "xgi": 0.08,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -14651,13 +16563,21 @@
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
-          "opponents": [],
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true
+            }
+          ],
           "bonus": 0,
           "yellow_card": false,
           "red_card": false,
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
