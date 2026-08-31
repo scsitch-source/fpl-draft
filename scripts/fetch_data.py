@@ -481,6 +481,7 @@ def build():
     # Per-entry weekly scores + form, derived from finished matches
     weekly_scores = {le_id: {} for le_id in entry_by_id}
     match_results = {le_id: [] for le_id in entry_by_id}  # list of (event, result) W/D/L
+    points_against_by_entry = {le_id: [] for le_id in entry_by_id}  # list of opponent scores, finished matches only
     fixtures_by_event = {}
 
     for m in matches_raw:
@@ -496,6 +497,8 @@ def build():
 
         if finished and le1 in entry_by_id and le2 in entry_by_id:
             if p1 is not None and p2 is not None:
+                points_against_by_entry[le1].append(p2)
+                points_against_by_entry[le2].append(p1)
                 if p1 > p2:
                     match_results[le1].append((event, "W"))
                     match_results[le2].append((event, "L"))
@@ -529,8 +532,22 @@ def build():
     for s in standings_raw:
         le_id = s.get("league_entry")
         info = entry_by_id.get(le_id, {})
-        form_sorted = sorted(match_results.get(le_id, []), key=lambda t: t[0])
-        form_last5 = [r for _, r in form_sorted[-5:]]
+        own_results = sorted(match_results.get(le_id, []), key=lambda t: t[0])
+        form_last5 = [r for _, r in own_results[-5:]]
+
+        # Recomputed from our OWN match results (which already reflect the
+        # kickoff-time safety net above) rather than trusting the API's raw
+        # won/drawn/lost/points_for numbers directly - those can lag behind
+        # by a gameweek if the platform's own backend hasn't caught up yet,
+        # which would otherwise put the ladder out of sync with everything
+        # else on the dashboard that already uses the corrected data.
+        own_won = sum(1 for _, r in own_results if r == "W")
+        own_drawn = sum(1 for _, r in own_results if r == "D")
+        own_lost = sum(1 for _, r in own_results if r == "L")
+        own_points_for = sum(weekly_scores.get(le_id, {}).get(ev, 0) or 0 for ev, _ in own_results)
+        own_points_against = sum(points_against_by_entry.get(le_id, []))
+        own_total = own_won * 3 + own_drawn
+
         standings.append({
             "rank": s.get("rank"),
             "last_rank": s.get("last_rank"),
@@ -538,20 +555,27 @@ def build():
             "entry_id": info.get("entry_id"),
             "team_name": info.get("team_name", "Unknown"),
             "manager_name": info.get("manager_name", "Unknown Manager"),
-            "played": (s.get("matches_won", 0) or 0)
-                      + (s.get("matches_drawn", 0) or 0)
-                      + (s.get("matches_lost", 0) or 0),
-            "won": s.get("matches_won", 0),
-            "drawn": s.get("matches_drawn", 0),
-            "lost": s.get("matches_lost", 0),
-            "points_for": s.get("points_for", 0),
-            "points_against": s.get("points_against", 0),
-            "total": s.get("total", 0),
+            "played": own_won + own_drawn + own_lost,
+            "won": own_won,
+            "drawn": own_drawn,
+            "lost": own_lost,
+            "points_for": own_points_for,
+            "points_against": own_points_against,
+            "total": own_total,
             "event_total": s.get("event_total", 0),
             "current_gw_score": weekly_scores.get(le_id, {}).get(current_event),
             "form": form_last5,
             "is_you": le_id == your_league_entry_id,
         })
+
+    # Rank (and last_rank) also need recomputing to match the corrected
+    # totals above - otherwise a team's points can visibly overtake another
+    # team's while the API's own (now-stale) rank number hasn't caught up.
+    # Same sort criteria used everywhere else here: league points desc, then
+    # points-for as the tiebreaker.
+    standings.sort(key=lambda r: (-r["total"], -r["points_for"]))
+    for i, row in enumerate(standings, start=1):
+        row["rank"] = i
 
     standings.sort(key=lambda r: (r["rank"] is None, r["rank"] if r["rank"] is not None else 0))
 
@@ -611,11 +635,18 @@ def build():
     rank_progression = {
         str(le_id): {
             "name": info["team_name"],
-            "initials": _team_initials(info["team_name"]),
+            "initials": _team_initials(info["manager_name"]),
             "ranks": rank_history[str(le_id)],
         }
         for le_id, info in entry_by_id.items()
     }
+
+    # Now that rank history exists, backfill last_rank on the standings rows
+    # too (rank as of the end of the previous gameweek), rather than trusting
+    # the API's own last_rank which is subject to the same staleness issue.
+    for row in standings:
+        history = rank_progression.get(str(row["league_entry_id"]), {}).get("ranks", [])
+        row["last_rank"] = history[-2] if len(history) >= 2 else row["rank"]
 
     # Your team spotlight: find next fixture (current or next event)
     your_next_fixture = None
