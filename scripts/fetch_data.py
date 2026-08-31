@@ -401,6 +401,16 @@ def build():
                     "finished": finished,
                 })
 
+    # Whether EVERY real Premier League fixture in a gameweek is over
+    # (reusing the same kickoff-time safety net above) - lets us confidently
+    # treat our own H2H match / the whole gameweek as finished even if the
+    # platform's own flags are slow to update, while still requiring every
+    # single real fixture to have concluded before doing so.
+    real_gw_effectively_finished = {
+        ev: bool(bucket) and all(bucket.values())
+        for ev, bucket in club_finished_by_event.items()
+    }
+
     # Map league_entry id -> readable info
     entry_by_id = {}
     your_league_entry_id = None
@@ -458,6 +468,12 @@ def build():
     if next_event is None:
         next_event = game.get("next_event")
 
+    # Same safety net as individual fixtures: if every real-world match in
+    # the current gameweek is well past its assumed finish time, trust that
+    # over a possibly-slow-to-update official flag.
+    if current_event is not None and real_gw_effectively_finished.get(current_event):
+        current_event_finished = True
+
     print(f"  current_event={current_event}, current_event_finished={current_event_finished}")
     print(f"  club_finished_by_event[current_event] = "
           f"{club_finished_by_event.get(current_event, '(no entry at all for this event)')}")
@@ -471,7 +487,7 @@ def build():
         event = m.get("event")
         le1, le2 = m.get("league_entry_1"), m.get("league_entry_2")
         p1, p2 = m.get("league_entry_1_points"), m.get("league_entry_2_points")
-        finished = bool(m.get("finished"))
+        finished = bool(m.get("finished")) or real_gw_effectively_finished.get(event, False)
 
         if le1 in entry_by_id and p1 is not None:
             weekly_scores[le1][event] = p1
