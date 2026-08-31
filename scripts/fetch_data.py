@@ -644,6 +644,7 @@ def build():
                 "photo_url": info.get("photo_url"),
                 "shirt_color": info.get("shirt_color", "#6B7280"),
                 "initials": info.get("initials", "?"),
+                "season_points": info.get("season_points", 0),
                 "is_captain": bool(pick.get("is_captain")),
                 "is_vice_captain": bool(pick.get("is_vice_captain")),
                 "base_points": stat["points"],
