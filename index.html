@@ -192,6 +192,11 @@
   .rank-change.same{color:var(--chalk-dim);}
   .team-detail-lines{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
   .team-detail-upcoming{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
+  .team-detail-result{border-radius:6px;padding:6px 8px;margin:0 -8px;}
+  .team-detail-result.win{background:rgba(29,158,117,0.14);}
+  .team-detail-result.loss{background:rgba(224,72,72,0.12);}
+  .team-detail-result.win strong{color:var(--win);}
+  .team-detail-result.loss strong{color:var(--loss);}
   .standing-main .team-cell{flex:1;min-width:0;}
   .standing-main .team-cell .name{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .standing-main .team-cell .manager{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -380,8 +385,9 @@
   }
   .fixture-card{
     background:var(--ink);border:1px solid var(--line);border-radius:12px;
-    padding:12px 14px;
+    padding:12px 14px;cursor:pointer;transition:border-color 0.15s;
   }
+  .fixture-card:hover{border-color:var(--win);}
   .fixture-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;}
   .fixture-row .side{font-size:13px;}
   .ha-tag{
@@ -400,6 +406,9 @@
   }
   .fixture-row.winner .score{color:var(--amber);}
   .fixture-card .status{font-size:10px;text-transform:uppercase;letter-spacing:0.06em;color:var(--chalk-dim);margin-top:6px;}
+  .fixture-expand-hint{
+    text-align:center;font-size:11px;font-weight:700;color:var(--win);margin-bottom:2px;
+  }
 
   /* ---------- Squad expand ---------- */
   .expand-btn{
@@ -408,6 +417,14 @@
   }
   .squad-expand{display:none;margin-top:10px;}
   .squad-expand.open{display:block;}
+  .squad-expand-area{display:none;margin-top:8px;cursor:default;}
+  .squad-expand-area.open{display:block;}
+  .view-switch{display:flex;justify-content:center;gap:8px;margin-bottom:10px;}
+  .view-switch-btn{
+    background:var(--card);border:1px solid var(--line);color:var(--chalk-dim);
+    font-size:12px;font-weight:700;padding:5px 16px;border-radius:16px;cursor:pointer;
+  }
+  .view-switch-btn.active{background:var(--win);border-color:var(--win);color:#fff;}
   .dual-expand{display:flex;gap:12px;justify-content:flex-end;margin-top:-6px;margin-bottom:4px;}
   .fixture-card-expanded{grid-column:1 / -1;}
   .squad-grid{
@@ -1482,6 +1499,51 @@ function computeTeamDetail(data, leId){
   const squad = data.latest_squads && data.latest_squads[String(leId)];
   const allPlayers = squad ? [...squad.starting, ...squad.bench] : [];
 
+  // Current gameweek's H2H fixture (both scores + opponent), so the score
+  // line can show the actual matchup and be colour-coded by result. If the
+  // current gameweek's own fixture hasn't started yet, fall back to the
+  // most recently FINISHED gameweek instead, labelled as "Last result"
+  // rather than an in-progress "current" score.
+  function fixtureInfoFor(f, leId, ev){
+    const isHome = String(f.home.league_entry_id) === String(leId);
+    const own = isHome ? f.home : f.away;
+    const opp = isHome ? f.away : f.home;
+    if(own.score == null || opp.score == null) return null;
+    return {
+      event: ev,
+      opponent: opp.team_name,
+      own_score: own.score, opp_score: opp.score,
+      result: own.score > opp.score ? 'win' : (own.score < opp.score ? 'loss' : 'draw'),
+    };
+  }
+
+  let currentFixtureInfo = null;
+  let isLastResult = false;
+  const currentFixtures = data.fixtures_by_event[String(data.current_event)] || [];
+  const currentFixture = currentFixtures.find(f =>
+    String(f.home.league_entry_id) === String(leId) || String(f.away.league_entry_id) === String(leId));
+
+  if(currentFixture && currentFixture.started){
+    currentFixtureInfo = fixtureInfoFor(currentFixture, leId, data.current_event);
+    isLastResult = !!currentFixture.finished;
+  }else{
+    // Current gameweek hasn't kicked off yet - look backwards for the most
+    // recent gameweek that has actually finished.
+    const events = Object.keys(data.fixtures_by_event).map(Number)
+      .filter(e => data.current_event == null || e < data.current_event)
+      .sort((a,b) => b - a);
+    for(const ev of events){
+      const fixtures = data.fixtures_by_event[String(ev)] || [];
+      const match = fixtures.find(f =>
+        String(f.home.league_entry_id) === String(leId) || String(f.away.league_entry_id) === String(leId));
+      if(match && match.finished){
+        currentFixtureInfo = fixtureInfoFor(match, leId, ev);
+        isLastResult = true;
+        break;
+      }
+    }
+  }
+
   const seasonStar = allPlayers.length
     ? allPlayers.reduce((best, p) => (p.season_points || 0) > (best.season_points || 0) ? p : best)
     : null;
@@ -1496,7 +1558,7 @@ function computeTeamDetail(data, leId){
 
   const upcoming = computeUpcomingFixturesFor(data, leId, 4).slice(1);
 
-  return { row, seasonStar, captain, firstPickStillOwned, upcoming };
+  return { row, seasonStar, captain, firstPickStillOwned, upcoming, currentFixtureInfo, isLastResult };
 }
 
 // Same pattern as the player receipt: compute everything needed while `data`
@@ -1515,11 +1577,13 @@ function computeTeamDetailSlim(data, leId){
     current_event: data.current_event,
     current_gw_score: detail.row.current_gw_score,
     season_star_name: detail.seasonStar ? detail.seasonStar.name : null,
-    season_star_points: detail.seasonStar ? detail.seasonStar.season_points : null,
+    season_star_points: detail.seasonStar ? (detail.seasonStar.season_points ?? 0) : null,
     captain_name: detail.captain ? detail.captain.name : null,
     captain_points: detail.captain ? detail.captain.points : null,
     first_pick_name: detail.firstPickStillOwned ? detail.firstPickStillOwned.player_name : null,
     first_pick_round: detail.firstPickStillOwned ? detail.firstPickStillOwned.round : null,
+    current_fixture: detail.currentFixtureInfo,
+    is_last_result: detail.isLastResult,
     upcoming: detail.upcoming.map(f => {
       const isHome = String(f.home.league_entry_id) === String(leId);
       const opp = isHome ? f.away : f.home;
@@ -1532,7 +1596,12 @@ function teamDetailContentHTML(t){
   return `
     <div class="team-detail-lines">
       <div class="receipt-line"><span>W-D-L</span><strong>${t.won}-${t.drawn}-${t.lost}</strong></div>
-      ${t.mid_gameweek && t.current_gw_score != null ? `<div class="receipt-line"><span>GW${t.current_event} score so far</span><strong class="pos">${t.current_gw_score}</strong></div>` : ''}
+      ${t.current_fixture ? `
+        <div class="receipt-line team-detail-result ${t.current_fixture.result}">
+          <span>${t.is_last_result ? 'Last result' : `GW${t.current_fixture.event}`} vs ${t.current_fixture.opponent}</span>
+          <strong>${t.current_fixture.own_score} - ${t.current_fixture.opp_score}</strong>
+        </div>
+      ` : (t.mid_gameweek && t.current_gw_score != null ? `<div class="receipt-line"><span>GW${t.current_event} score so far</span><strong class="pos">${t.current_gw_score}</strong></div>` : '')}
       ${t.season_star_name ? `<div class="receipt-line"><span>Star player (season)</span><strong>${t.season_star_name} &middot; ${t.season_star_points}</strong></div>` : ''}
       ${t.captain_name ? `<div class="receipt-line"><span>Captain (this GW)</span><strong>${t.captain_name} &middot; ${t.captain_points}</strong></div>` : ''}
       ${t.first_pick_name ? `<div class="receipt-line"><span>First pick still owned</span><strong>${t.first_pick_name} (R${t.first_pick_round})</strong></div>` : ''}
@@ -1660,7 +1729,7 @@ function matchupHeaderHTML(f){
   const homeSquad = f.squads && f.squads[String(f.home.league_entry_id)];
   const awaySquad = f.squads && f.squads[String(f.away.league_entry_id)];
   const playedTag = squad => (squad && squad.squad_size != null)
-    ? `<div class="matchup-played">${squad.played_count}/${squad.squad_size} played</div>` : '';
+    ? `<div class="matchup-played">${squad.played_count}/${squad.squad_size}</div>` : '';
   return `
     <div class="matchup-header">
       <div class="matchup-side">
@@ -1759,8 +1828,11 @@ function buildFixturesPanel(data){
   panel.innerHTML = `<h2><span class="dot"></span>Fixtures &amp; results</h2>`;
 
   const gwKeys = Object.keys(data.fixtures_by_event).map(Number).sort((a,b) => a-b);
-  // Each fixture card is collapsed by default; the person chooses per-card
-  // whether to expand it as a pitch (Field) or a squad list (List).
+  // Whole card is clickable, opens straight to Field view by default; an
+  // internal switch lets you flip to List without collapsing. Only one card
+  // is open at a time (accordion) - openCardCloser tracks whichever card is
+  // currently expanded so a newly-opened card can collapse it first.
+  let openCardCloser = null;
 
   const modeWrap = document.createElement('div');
   modeWrap.className = 'gw-pills';
@@ -1790,7 +1862,7 @@ function buildFixturesPanel(data){
   function playedCountTag(f, side){
     const squad = f.squads && f.squads[String(side.league_entry_id)];
     if(!squad || squad.squad_size == null) return '';
-    return `<span class="played-tag">${squad.played_count}/${squad.squad_size} played</span>`;
+    return `<span class="played-tag">${squad.played_count}/${squad.squad_size}</span>`;
   }
 
 
@@ -1802,50 +1874,68 @@ function buildFixturesPanel(data){
     card.innerHTML = `
       ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
       ${matchupHeaderHTML(f)}
-      <div class="status" style="text-align:center;margin:2px 0 8px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-      ${hasSquads ? `<div class="dual-expand"><button class="expand-btn" data-mode="field">+ Field</button><button class="expand-btn" data-mode="list">+ List</button></div>` : ''}
-      ${hasSquads ? `<div class="squad-expand" data-mode="field"></div>` : ''}
-      ${hasSquads ? `<div class="squad-expand" data-mode="list">
-        <div class="squad-grid">
-          ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
-          ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+      <div class="status" style="text-align:center;margin:2px 0 2px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
+      ${hasSquads ? `<div class="fixture-expand-hint">+ Expand</div>` : ''}
+      ${hasSquads ? `
+        <div class="squad-expand-area">
+          <div class="view-switch">
+            <button class="view-switch-btn active" data-mode="field">Field</button>
+            <button class="view-switch-btn" data-mode="list">List</button>
+          </div>
+          <div class="squad-expand-content"></div>
         </div>
-      </div>` : ''}
+      ` : ''}
     `;
 
     if(hasSquads){
-      const fieldExpand = card.querySelector('.squad-expand[data-mode="field"]');
-      const listExpand = card.querySelector('.squad-expand[data-mode="list"]');
-      const fieldBtn = card.querySelector('.expand-btn[data-mode="field"]');
-      const listBtn = card.querySelector('.expand-btn[data-mode="list"]');
-      let fieldBuilt = false;
+      const hint = card.querySelector('.fixture-expand-hint');
+      const area = card.querySelector('.squad-expand-area');
+      const content = card.querySelector('.squad-expand-content');
+      const fieldBtn = card.querySelector('.view-switch-btn[data-mode="field"]');
+      const listBtn = card.querySelector('.view-switch-btn[data-mode="list"]');
+      let mode = 'field';
+      let isOpen = false;
 
-      function closeAll(){
-        fieldExpand.classList.remove('open');
-        listExpand.classList.remove('open');
-        fieldBtn.textContent = '+ Field';
-        listBtn.textContent = '+ List';
-        card.classList.remove('fixture-card-expanded');
+      function renderContent(){
+        content.innerHTML = mode === 'field'
+          ? fieldMatchup(f)
+          : `<div class="squad-grid">
+              ${squadColumn(f.home.team_name, f.squads[String(f.home.league_entry_id)])}
+              ${squadColumn(f.away.team_name, f.squads[String(f.away.league_entry_id)])}
+            </div>`;
+        fieldBtn.classList.toggle('active', mode === 'field');
+        listBtn.classList.toggle('active', mode === 'list');
       }
 
-      fieldBtn.addEventListener('click', () => {
-        const wasOpen = fieldExpand.classList.contains('open');
-        closeAll();
-        if(!wasOpen){
-          if(!fieldBuilt){ fieldExpand.innerHTML = fieldMatchup(f); fieldBuilt = true; }
-          fieldExpand.classList.add('open');
-          fieldBtn.textContent = '– Field';
-          card.classList.add('fixture-card-expanded');
-        }
+      function closeCard(){
+        isOpen = false;
+        area.classList.remove('open');
+        card.classList.remove('fixture-card-expanded');
+        hint.textContent = '+ Expand';
+        if(openCardCloser === closeCard) openCardCloser = null;
+      }
+
+      function openCard(){
+        if(openCardCloser && openCardCloser !== closeCard) openCardCloser();
+        isOpen = true;
+        area.classList.add('open');
+        card.classList.add('fixture-card-expanded');
+        hint.textContent = '– Collapse';
+        renderContent();
+        openCardCloser = closeCard;
+      }
+
+      card.addEventListener('click', (e) => {
+        if(e.target.closest('.view-switch-btn')) return;
+        isOpen ? closeCard() : openCard();
       });
-      listBtn.addEventListener('click', () => {
-        const wasOpen = listExpand.classList.contains('open');
-        closeAll();
-        if(!wasOpen){
-          listExpand.classList.add('open');
-          listBtn.textContent = '– List';
-          card.classList.add('fixture-card-expanded');
-        }
+      fieldBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if(mode !== 'field'){ mode = 'field'; renderContent(); }
+      });
+      listBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if(mode !== 'list'){ mode = 'list'; renderContent(); }
       });
     }
     return card;
