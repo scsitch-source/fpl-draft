@@ -11,7 +11,6 @@
 <meta name="theme-color" content="#1C63E8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css">
 <style>.ti{font-family:'tabler-icons';font-style:normal;}</style>
 <style>
@@ -258,7 +257,7 @@
     border-radius:8px;background:var(--card);
   }
   .star-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
-  .star-photo-fallback{object-fit:contain;padding:2px;box-sizing:border-box;}
+  .star-photo-fallback{width:100%;height:auto;max-height:100%;object-fit:contain;}
   .stat-box .v{font-family:'Manrope';font-weight:700;font-size:17px;color:var(--amber);}
   .stat-box .l{font-size:10px;color:var(--chalk-dim);text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
   .next-fixture{
@@ -317,6 +316,7 @@
   }
   .matchup-score{color:#fff;font-size:17px;font-weight:800;font-family:'Manrope';}
   .matchup-status{color:rgba(255,255,255,0.5);font-size:10px;font-weight:700;}
+  .matchup-status.live{color:var(--win);}
   .pitch-container{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 auto;max-width:640px;}
   @media (max-width:640px){ .pitch-container{grid-template-columns:1fr;} }
   .pitch-col{min-width:0;}
@@ -913,7 +913,7 @@ function render(data){
       secondGrid.appendChild(buildInFormPanel(data));
       wrap.appendChild(secondGrid);
       wrap.appendChild(buildWaiversClearedPanel(data));
-      wrap.appendChild(buildProgressionPanel(data));
+      wrap.appendChild(buildRankProgressionPanel(data));
       return wrap;
     },
     standings: () => {
@@ -1012,6 +1012,7 @@ function buildCurrentFixturePanel(data, myId){
   panel.innerHTML = `<h2><span class="dot"></span>Your GW${data.current_event} fixture</h2>`;
   const card = fixtureCard(f, false);
   card.style.background = 'transparent';
+  card.style.border = 'none';
   card.style.padding = '0';
   panel.appendChild(card);
   return panel;
@@ -1854,7 +1855,7 @@ function matchupHeaderHTML(f){
       </div>
       <div class="matchup-scoreboard">
         <span class="matchup-score">${f.home.score ?? '–'}</span>
-        <span class="matchup-status">${f.finished ? 'FT' : (f.started ? 'LIVE' : 'vs')}</span>
+        <span class="matchup-status${f.started && !f.finished ? ' live' : ''}">${f.finished ? 'FT' : (f.started ? 'LIVE' : 'vs')}</span>
         <span class="matchup-score">${f.away.score ?? '–'}</span>
       </div>
       <div class="matchup-side">
@@ -2128,56 +2129,68 @@ function buildFixturesPanel(data){
   return panel;
 }
 
-function buildProgressionPanel(data){
+function buildRankProgressionPanel(data){
   const panel = document.createElement('div');
   panel.className = 'panel';
-  panel.innerHTML = `<h2><span class="dot"></span>Points progression</h2>
-    <div class="chart-wrap"><canvas id="progression-chart"></canvas></div>`;
+  panel.innerHTML = `<h2><span class="dot"></span>Rank progression</h2>`;
 
-  requestAnimationFrame(() => {
-    const ctx = document.getElementById('progression-chart');
-    const events = data.progression.events;
-    const teamsObj = data.progression.teams;
-    const yourLeId = data.your_league_entry_id;
+  const events = data.rank_progression.events;
+  const teamsObj = data.rank_progression.teams;
+  const yourLeId = data.your_league_entry_id;
+  const numTeams = Object.keys(teamsObj).length;
 
-    const palette = ['#6C3CE9','#E5484D','#F5A623','#1C63E8','#D6409F','#7A8C9E','#A67CF0','#2FA5A0','#C77DFF','#9C9BC0'];
-    let colorIdx = 0;
+  if(!events.length || numTeams === 0){
+    panel.innerHTML += `<p style="color:var(--chalk-dim);font-size:13px;">Not enough completed gameweeks yet.</p>`;
+    return panel;
+  }
 
-    const datasets = Object.entries(teamsObj).map(([leId, t]) => {
-      const isYou = String(yourLeId) === String(leId);
-      const color = isYou ? '#F4B400' : palette[(colorIdx++) % palette.length];
-      return {
-        label: t.name,
-        data: t.cumulative,
-        borderColor: color,
-        backgroundColor: color,
-        borderWidth: isYou ? 3 : 1.5,
-        pointRadius: isYou ? 3 : 0,
-        tension: 0.25,
-      };
-    });
+  const palette = ['#6C3CE9','#E5484D','#F5A623','#1C63E8','#D6409F','#7A8C9E','#A67CF0','#2FA5A0','#C77DFF','#9C9BC0'];
+  let colorIdx = 0;
 
-    const dimColor = getComputedStyle(document.documentElement).getPropertyValue('--chalk-dim').trim();
-    const gridColor = getComputedStyle(document.documentElement).getPropertyValue('--line').trim();
+  const width = 680, height = Math.max(220, numTeams * 34 + 50);
+  const padLeft = 24, padRight = 34, padTop = 20, padBottom = 26;
+  const plotW = width - padLeft - padRight;
+  const plotH = height - padTop - padBottom;
 
-    new Chart(ctx, {
-      type: 'line',
-      data: { labels: events.map(e => 'GW' + e), datasets },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        interaction: { mode: 'nearest', intersect: false },
-        plugins: {
-          legend: { labels: { color: dimColor, font: { size: 11 } } },
-        },
-        scales: {
-          x: { ticks: { color:dimColor }, grid: { color:gridColor } },
-          y: { ticks: { color:dimColor }, grid: { color:gridColor } },
-        }
-      }
-    });
+  const xFor = (i) => padLeft + (events.length === 1 ? plotW / 2 : (i / (events.length - 1)) * plotW);
+  const yFor = (rank) => padTop + (numTeams === 1 ? plotH / 2 : ((rank - 1) / (numTeams - 1)) * plotH);
+
+  let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" style="overflow:visible;">`;
+
+  // Faint horizontal guide line per rank, with the rank number on the left.
+  for(let r = 1; r <= numTeams; r++){
+    svg += `<line x1="${padLeft}" y1="${yFor(r)}" x2="${width - padRight}" y2="${yFor(r)}" stroke="var(--line)" stroke-width="1"/>`;
+    svg += `<text x="${padLeft - 6}" y="${yFor(r) + 3}" font-size="9" fill="var(--chalk-dim)" text-anchor="end">${r}</text>`;
+  }
+  // Gameweek labels along the bottom.
+  events.forEach((ev, i) => {
+    svg += `<text x="${xFor(i)}" y="${height - 8}" font-size="9" fill="var(--chalk-dim)" text-anchor="middle">GW${ev}</text>`;
   });
 
+  // Each team's line uses smooth "bump chart" S-curves between rank changes
+  // (horizontal-offset bezier control points) rather than sharp zigzags,
+  // with a colour-coded, initialed circle marking their current rank.
+  Object.entries(teamsObj).forEach(([leId, t]) => {
+    const isYou = String(yourLeId) === String(leId);
+    const color = isYou ? '#F4B400' : palette[(colorIdx++) % palette.length];
+    const pts = t.ranks.map((r, i) => [xFor(i), yFor(r)]);
+    let path = `M ${pts[0][0]},${pts[0][1]}`;
+    for(let i = 1; i < pts.length; i++){
+      const [x0, y0] = pts[i - 1], [x1, y1] = pts[i];
+      const midX = (x0 + x1) / 2;
+      path += ` C ${midX},${y0} ${midX},${y1} ${x1},${y1}`;
+    }
+    svg += `<path d="${path}" fill="none" stroke="${color}" stroke-width="${isYou ? 3 : 2}" stroke-linecap="round" opacity="${isYou ? 1 : 0.85}"/>`;
+    const [lastX, lastY] = pts[pts.length - 1];
+    svg += `
+      <circle cx="${lastX}" cy="${lastY}" r="11" fill="${color}" stroke="var(--card)" stroke-width="2"/>
+      <text x="${lastX}" y="${lastY + 3.5}" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">${t.initials}</text>
+    `;
+  });
+
+  svg += `</svg>`;
+  panel.innerHTML += `<div style="overflow-x:auto;">${svg}</div>`;
+  panel.innerHTML += `<p style="font-size:10.5px;color:var(--chalk-dim);margin:8px 0 0;">Rank 1 at top. Reconstructed from match results - may not exactly match the platform's own tiebreaker rules in rare cases.</p>`;
   return panel;
 }
 

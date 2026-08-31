@@ -278,7 +278,57 @@ def build():
             "initials": player_initials(el.get("web_name", "?")),
         }
 
-    # Per-gameweek, per-club "has this club's fixture(s) finished" lookup.
+    # ---------------- Season-long achievement badges ----------------
+    # Computed once across EVERY real Premier League player (not just those
+    # on a fantasy roster here), since bootstrap-static's elements list
+    # already covers the whole league - no extra API calls needed.
+    real_players = [el for el in elements if isinstance(el, dict)]
+    if real_players:
+        sample = real_players[0]
+        print(f"  badge diagnostic - sample element keys: {list(sample.keys())}")
+        print(f"  badge diagnostic - sample goals_scored={sample.get('goals_scored')!r}, "
+              f"assists={sample.get('assists')!r}, total_points={sample.get('total_points')!r}")
+        nonzero_goals = sum(1 for el in real_players if (el.get("goals_scored") or 0) > 0)
+        nonzero_assists = sum(1 for el in real_players if (el.get("assists") or 0) > 0)
+        print(f"  badge diagnostic - players with goals_scored>0: {nonzero_goals}, "
+              f"with assists>0: {nonzero_assists}, total real_players: {len(real_players)}")
+
+    def _top_ids(key, n=1):
+        """Element ids at/above the n-th highest value for `key`, ties included."""
+        valued = [(el.get(key) or 0, el.get("id")) for el in real_players if el.get(key) is not None]
+        valued.sort(reverse=True)
+        if not valued:
+            return set()
+        cutoff = valued[min(n, len(valued)) - 1][0]
+        return {eid for val, eid in valued if val >= cutoff}
+
+    golden_boot_ids = _top_ids("goals_scored", 1)
+    most_assists_ids = _top_ids("assists", 1)
+    top10_overall_ids = _top_ids("total_points", 10)
+    best_by_position_ids = {}  # position code -> set of element ids in the top 3
+    for pos_code, pos_label in pos_by_type.items():
+        pos_players = [el for el in real_players if el.get("element_type") == pos_code]
+        valued = sorted(((el.get("total_points") or 0, el.get("id")) for el in pos_players), reverse=True)
+        if valued:
+            cutoff = valued[min(3, len(valued)) - 1][0]
+            best_by_position_ids[pos_label] = {eid for val, eid in valued if val >= cutoff}
+
+    for el in real_players:
+        eid = el.get("id")
+        badges = []
+        if eid in golden_boot_ids:
+            badges.append({"code": "golden_boot", "label": "Golden Boot (most goals)", "icon": "\u26bd"})
+        if eid in most_assists_ids:
+            badges.append({"code": "most_assists", "label": "Most assists", "icon": "\U0001F3AF"})
+        if eid in top10_overall_ids:
+            badges.append({"code": "top10", "label": "Top 10 points overall", "icon": "\U0001F3C6"})
+        pos_label = pos_by_type.get(el.get("element_type"))
+        if pos_label and eid in best_by_position_ids.get(pos_label, set()):
+            badges.append({"code": f"best_{pos_label.lower()}", "label": f"Top 3 {pos_label}", "icon": "\u2b50"})
+        if eid in player_by_id:
+            player_by_id[eid]["badges"] = badges
+
+
     # Used to gate auto-subs: a player only gets auto-subbed once their own
     # match has actually finished, not just because they show 0 minutes
     # while the match simply hasn't kicked off yet.
@@ -511,6 +561,46 @@ def build():
             "cumulative": cumulative,
         }
 
+    # Rank history: each team's standings position at the end of every
+    # finished gameweek, for the rank-over-time chart. Reconstructed from
+    # match results rather than pulled from the API, since the Draft API
+    # only exposes the LATEST cumulative rank, not a per-gameweek history.
+    # Uses the standard 3/1/0 win/draw/loss scoring with points-for as the
+    # tiebreaker - this is a close approximation of the real standings sort,
+    # not a guaranteed exact match to any head-to-head tiebreaker the
+    # platform might apply.
+    import re as _re
+
+    def _team_initials(name):
+        words = _re.findall(r"[A-Za-z0-9]+", name)
+        if not words:
+            return (name[:2] or "??").upper()
+        if len(words) == 1:
+            return words[0][:2].upper()
+        return "".join(w[0] for w in words[:3]).upper()
+
+    rank_history = {str(le_id): [] for le_id in entry_by_id}
+    for ev in finished_events:
+        snapshot = []
+        for le_id in entry_by_id:
+            results_so_far = [r for e, r in match_results[le_id] if e <= ev]
+            w = results_so_far.count("W")
+            d = results_so_far.count("D")
+            pf = sum((weekly_scores.get(le_id, {}).get(e) or 0) for e in finished_events if e <= ev)
+            snapshot.append((le_id, w * 3 + d, pf))
+        snapshot.sort(key=lambda x: (-x[1], -x[2]))
+        for rank, (le_id, _, _) in enumerate(snapshot, start=1):
+            rank_history[str(le_id)].append(rank)
+
+    rank_progression = {
+        str(le_id): {
+            "name": info["team_name"],
+            "initials": _team_initials(info["team_name"]),
+            "ranks": rank_history[str(le_id)],
+        }
+        for le_id, info in entry_by_id.items()
+    }
+
     # Your team spotlight: find next fixture (current or next event)
     your_next_fixture = None
     if your_league_entry_id is not None:
@@ -626,6 +716,15 @@ def build():
         if not isinstance(data.get("picks"), list):
             return None
 
+        # Last 5 FINISHED gameweeks up to and including this one, for the
+        # per-player form strip. Computed once per build_squad call; the
+        # actual live-stats lookups it triggers are cheap since
+        # live_stats_for_event() memoizes per event already.
+        form_events = sorted(
+            e.get("id") for e in events
+            if isinstance(e, dict) and e.get("finished") and e.get("id") is not None and e.get("id") <= ev
+        )[-5:]
+
         raw_starting, raw_bench = [], []
         for pick in data["picks"]:
             el_id = pick.get("element")
@@ -654,6 +753,8 @@ def build():
                 "shirt_color": info.get("shirt_color", "#6B7280"),
                 "initials": info.get("initials", "?"),
                 "season_points": info.get("season_points", 0),
+                "badges": info.get("badges", []),
+                "form": [live_stats_for_event(fev).get(el_id, {"points": 0}).get("points", 0) for fev in form_events],
                 "is_captain": bool(pick.get("is_captain")),
                 "is_vice_captain": bool(pick.get("is_vice_captain")),
                 "base_points": stat["points"],
@@ -1054,6 +1155,10 @@ def build():
         "progression": {
             "events": finished_events,
             "teams": progression_teams,
+        },
+        "rank_progression": {
+            "events": finished_events,
+            "teams": rank_progression,
         },
         "playoffs": playoffs,
         "golden_gameweek": golden_gameweek,
