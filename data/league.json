@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T02:14:44.050404+00:00",
+  "generated_at": "2026-08-31T02:24:09.271002+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -3256,14 +3256,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3299,7 +3302,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -3335,7 +3341,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -3364,14 +3373,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 10,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3400,14 +3412,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 74,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3436,14 +3451,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3472,14 +3490,17 @@
                 "goals": 1,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "CHE",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 4,
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -3508,14 +3529,17 @@
                 "goals": 0,
                 "assists": 2,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 1,
@@ -3551,7 +3575,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -3580,14 +3607,17 @@
                 "goals": 1,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -3616,14 +3646,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "LEE",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3654,14 +3687,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3690,14 +3726,17 @@
                 "goals": 1,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "LIV",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -3733,7 +3772,10 @@
                 "opponents": [
                   {
                     "opponent": "ARS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -3769,7 +3811,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -3804,14 +3849,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "LIV",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3840,14 +3888,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3876,14 +3927,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
                 "opponents": [
                   {
                     "opponent": "CHE",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 4,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3912,14 +3966,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "MCI",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 4,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -3948,14 +4005,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 19,
                 "opponents": [
                   {
                     "opponent": "FUL",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 1,
@@ -3984,14 +4044,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "TOT",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4020,14 +4083,17 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4056,14 +4122,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 11,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4092,14 +4161,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "LIV",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4135,7 +4207,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -4164,14 +4239,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 63,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "FUL",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4202,14 +4280,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "MCI",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 4,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4245,7 +4326,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -4274,14 +4358,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 13,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4310,14 +4397,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 22,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
                 "opponents": [
                   {
                     "opponent": "NEW",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4371,14 +4461,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BOU",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4407,14 +4500,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 88,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 1,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4431,42 +4527,6 @@
                 "points": 2
               },
               {
-                "name": "Senesi",
-                "position": "DEF",
-                "club": "TOT",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/221466.png",
-                "shirt_color": "#132257",
-                "initials": "SE",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "NEW",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "Branthwaite",
                 "position": "DEF",
                 "club": "EVE",
@@ -4479,14 +4539,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 12,
                 "opponents": [
                   {
                     "opponent": "BOU",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4515,14 +4578,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4539,42 +4605,6 @@
                 "points": 4
               },
               {
-                "name": "S\u00e1vio",
-                "position": "MID",
-                "club": "TOT",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/510281.png",
-                "shirt_color": "#132257",
-                "initials": "S\u00c1",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "NEW",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "B.Fernandes",
                 "position": "MID",
                 "club": "MUN",
@@ -4587,14 +4617,17 @@
                 "goals": 3,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -4623,14 +4656,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 10,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4659,14 +4695,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 10,
                 "opponents": [
                   {
                     "opponent": "BOU",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4695,14 +4734,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 29,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "LEE",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4731,14 +4773,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "MCI",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 4,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4753,44 +4798,6 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
-              }
-            ],
-            "bench": [
-              {
-                "name": "Roefs",
-                "position": "GKP",
-                "club": "SUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/498016.png",
-                "shirt_color": "#EB172B",
-                "initials": "RO",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 6,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 90,
-                "match_finished": false,
-                "clean_sheet": true,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "FUL",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 6
               },
               {
                 "name": "Milenkovi\u0107",
@@ -4805,14 +4812,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
                 "opponents": [
                   {
                     "opponent": "LIV",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4824,7 +4834,7 @@
                 "xg": 0.0,
                 "xa": 0.0,
                 "xgi": 0.0,
-                "subbed_in": false,
+                "subbed_in": true,
                 "multiplier": 1,
                 "points": 3
               },
@@ -4841,14 +4851,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "NEW",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4860,9 +4873,128 @@
                 "xg": 0.17,
                 "xa": 0.07,
                 "xgi": 0.24,
-                "subbed_in": false,
+                "subbed_in": true,
                 "multiplier": 1,
                 "points": 2
+              }
+            ],
+            "bench": [
+              {
+                "name": "Senesi",
+                "position": "DEF",
+                "club": "TOT",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/221466.png",
+                "shirt_color": "#132257",
+                "initials": "SE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
+              {
+                "name": "S\u00e1vio",
+                "position": "MID",
+                "club": "TOT",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/510281.png",
+                "shirt_color": "#132257",
+                "initials": "S\u00c1",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "NEW",
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
+              {
+                "name": "Roefs",
+                "position": "GKP",
+                "club": "SUN",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/498016.png",
+                "shirt_color": "#EB172B",
+                "initials": "RO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 6,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 90,
+                "match_finished": true,
+                "clean_sheet": true,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "FUL",
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_in": false,
+                "multiplier": 1,
+                "points": 6
               },
               {
                 "name": "Ekitik\u00e9",
@@ -4877,14 +5009,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4901,7 +5036,7 @@
                 "points": 0
               }
             ],
-            "played_count": 8,
+            "played_count": 10,
             "squad_size": 11
           },
           "226052": {
@@ -4919,14 +5054,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4955,14 +5093,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 22,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -4991,14 +5132,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 88,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5027,14 +5171,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
                 "opponents": [
                   {
                     "opponent": "LEE",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5063,14 +5210,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
                 "opponents": [
                   {
                     "opponent": "TOT",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -5099,14 +5249,17 @@
                 "goals": 1,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -5135,14 +5288,17 @@
                 "goals": 2,
                 "assists": 0,
                 "minutes": 81,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -5171,14 +5327,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 70,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5214,7 +5373,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -5243,14 +5405,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "TOT",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5279,14 +5444,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "NEW",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5317,14 +5485,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5360,7 +5531,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -5396,7 +5570,10 @@
                 "opponents": [
                   {
                     "opponent": "ARS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -5432,7 +5609,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -5474,42 +5654,6 @@
           "27143": {
             "starting": [
               {
-                "name": "S\u00e1nchez",
-                "position": "GKP",
-                "club": "CHE",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215059.png",
-                "shirt_color": "#034694",
-                "initials": "S\u00c1",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "BHA",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "Gu\u00e9hi",
                 "position": "DEF",
                 "club": "MCI",
@@ -5522,14 +5666,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5558,14 +5705,17 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 10,
                 "opponents": [
                   {
                     "opponent": "BOU",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -5594,14 +5744,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "NEW",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5630,14 +5783,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 70,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5666,14 +5822,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5702,14 +5861,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5738,14 +5900,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "BRE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5774,14 +5939,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 69,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "BOU",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5810,14 +5978,17 @@
                 "goals": 2,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 3,
@@ -5846,14 +6017,17 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 81,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "TOT",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -5868,9 +6042,7 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
-              }
-            ],
-            "bench": [
+              },
               {
                 "name": "Martinez",
                 "position": "GKP",
@@ -5884,14 +6056,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5903,9 +6078,50 @@
                 "xg": 0.0,
                 "xa": 0.01,
                 "xgi": 0.01,
-                "subbed_in": false,
+                "subbed_in": true,
                 "multiplier": 1,
                 "points": 2
+              }
+            ],
+            "bench": [
+              {
+                "name": "S\u00e1nchez",
+                "position": "GKP",
+                "club": "CHE",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215059.png",
+                "shirt_color": "#034694",
+                "initials": "S\u00c1",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
               },
               {
                 "name": "Rashford",
@@ -5920,14 +6136,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 79,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5956,14 +6175,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "MCI",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 4,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -5999,7 +6221,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6016,7 +6241,7 @@
                 "points": 0
               }
             ],
-            "played_count": 10,
+            "played_count": 11,
             "squad_size": 11
           },
           "183812": {
@@ -6034,14 +6259,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BRE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6070,14 +6298,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6106,14 +6337,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "LIV",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6142,14 +6376,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
                 "opponents": [
                   {
                     "opponent": "NEW",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6185,7 +6422,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6214,14 +6454,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 9,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -6238,78 +6481,6 @@
                 "points": 4
               },
               {
-                "name": "Doku",
-                "position": "MID",
-                "club": "MCI",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/248875.png",
-                "shirt_color": "#6CABDD",
-                "initials": "DO",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "CRY",
-                    "is_home": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
-                "name": "Grealish",
-                "position": "MID",
-                "club": "MCI",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/114283.png",
-                "shirt_color": "#6CABDD",
-                "initials": "GR",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "CRY",
-                    "is_home": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "Enzo",
                 "position": "MID",
                 "club": "CHE",
@@ -6322,14 +6493,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6358,14 +6532,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 15,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "NEW",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 0,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6394,14 +6571,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 10,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6416,9 +6596,165 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
+              },
+              {
+                "name": "Isak",
+                "position": "FWD",
+                "club": "LIV",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219168.png",
+                "shirt_color": "#C8102E",
+                "initials": "IS",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 8,
+                "goals": 1,
+                "assists": 0,
+                "minutes": 90,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 1,
+                "opponents": [
+                  {
+                    "opponent": "NFO",
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
+                  }
+                ],
+                "bonus": 2,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.99,
+                "xa": 0.0,
+                "xgi": 0.99,
+                "subbed_in": true,
+                "multiplier": 1,
+                "points": 8
+              },
+              {
+                "name": "M.Sangar\u00e9",
+                "position": "MID",
+                "club": "BRE",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/513545.png",
+                "shirt_color": "#FFDB00",
+                "initials": "M.",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 4,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 90,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": true,
+                "defensive_contribution_count": 14,
+                "opponents": [
+                  {
+                    "opponent": "LEE",
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 1,
+                "saves": 0,
+                "xg": 0.21,
+                "xa": 0.03,
+                "xgi": 0.24,
+                "subbed_in": true,
+                "multiplier": 1,
+                "points": 4
               }
             ],
             "bench": [
+              {
+                "name": "Doku",
+                "position": "MID",
+                "club": "MCI",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/248875.png",
+                "shirt_color": "#6CABDD",
+                "initials": "DO",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
+              {
+                "name": "Grealish",
+                "position": "MID",
+                "club": "MCI",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/114283.png",
+                "shirt_color": "#6CABDD",
+                "initials": "GR",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
               {
                 "name": "Raya",
                 "position": "GKP",
@@ -6439,7 +6775,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6454,78 +6793,6 @@
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
-              },
-              {
-                "name": "Isak",
-                "position": "FWD",
-                "club": "LIV",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219168.png",
-                "shirt_color": "#C8102E",
-                "initials": "IS",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 8,
-                "goals": 1,
-                "assists": 0,
-                "minutes": 90,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 1,
-                "opponents": [
-                  {
-                    "opponent": "NFO",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 2,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 2,
-                "saves": 0,
-                "xg": 0.99,
-                "xa": 0.0,
-                "xgi": 0.99,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 8
-              },
-              {
-                "name": "M.Sangar\u00e9",
-                "position": "MID",
-                "club": "BRE",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/513545.png",
-                "shirt_color": "#FFDB00",
-                "initials": "M.",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 4,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 90,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": true,
-                "defensive_contribution_count": 14,
-                "opponents": [
-                  {
-                    "opponent": "LEE",
-                    "is_home": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 1,
-                "saves": 0,
-                "xg": 0.21,
-                "xa": 0.03,
-                "xgi": 0.24,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 4
               },
               {
                 "name": "Rice",
@@ -6547,7 +6814,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6564,7 +6834,7 @@
                 "points": 0
               }
             ],
-            "played_count": 7,
+            "played_count": 9,
             "squad_size": 11
           }
         }
@@ -6601,14 +6871,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "LEE",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6644,7 +6917,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6673,14 +6949,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 9,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6709,14 +6988,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 70,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
                 "opponents": [
                   {
                     "opponent": "NFO",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6745,14 +7027,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "BRE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6769,42 +7054,6 @@
                 "points": 1
               },
               {
-                "name": "Mu\u00f1oz",
-                "position": "DEF",
-                "club": "CRY",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247348.png",
-                "shirt_color": "#1B458F",
-                "initials": "MU",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "MCI",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "Stach",
                 "position": "MID",
                 "club": "LEE",
@@ -6817,14 +7066,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 16,
                 "opponents": [
                   {
                     "opponent": "BRE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6860,7 +7112,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6889,14 +7144,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 81,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 14,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6925,14 +7183,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 80,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -6968,7 +7229,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -6983,9 +7247,87 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
+              },
+              {
+                "name": "Neto",
+                "position": "MID",
+                "club": "CHE",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247632.png",
+                "shirt_color": "#034694",
+                "initials": "NE",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 7,
+                "goals": 1,
+                "assists": 0,
+                "minutes": 67,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 4,
+                "opponents": [
+                  {
+                    "opponent": "BHA",
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 2,
+                "saves": 0,
+                "xg": 0.41,
+                "xa": 0.33,
+                "xgi": 0.74,
+                "subbed_in": true,
+                "multiplier": 1,
+                "points": 7
               }
             ],
             "bench": [
+              {
+                "name": "Mu\u00f1oz",
+                "position": "DEF",
+                "club": "CRY",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247348.png",
+                "shirt_color": "#1B458F",
+                "initials": "MU",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "MCI",
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 4,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
               {
                 "name": "Pope",
                 "position": "GKP",
@@ -6999,14 +7341,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "TOT",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7042,7 +7387,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -7059,42 +7407,6 @@
                 "points": 0
               },
               {
-                "name": "Neto",
-                "position": "MID",
-                "club": "CHE",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247632.png",
-                "shirt_color": "#034694",
-                "initials": "NE",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 7,
-                "goals": 1,
-                "assists": 0,
-                "minutes": 67,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 4,
-                "opponents": [
-                  {
-                    "opponent": "BHA",
-                    "is_home": true
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 2,
-                "saves": 0,
-                "xg": 0.41,
-                "xa": 0.33,
-                "xgi": 0.74,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 7
-              },
-              {
                 "name": "Emersonn",
                 "position": "FWD",
                 "club": "IPS",
@@ -7107,14 +7419,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 45,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 1,
                 "opponents": [
                   {
                     "opponent": "MUN",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 5,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7131,7 +7446,7 @@
                 "points": 1
               }
             ],
-            "played_count": 7,
+            "played_count": 8,
             "squad_size": 11
           },
           "31110": {
@@ -7149,14 +7464,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7192,7 +7510,10 @@
                 "opponents": [
                   {
                     "opponent": "AVL",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false
                   }
                 ],
                 "bonus": 0,
@@ -7221,14 +7542,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 72,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 8,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7245,42 +7569,6 @@
                 "points": 2
               },
               {
-                "name": "Matheus N.",
-                "position": "DEF",
-                "club": "MCI",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465351.png",
-                "shirt_color": "#6CABDD",
-                "initials": "MN",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 0,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 0,
-                "opponents": [
-                  {
-                    "opponent": "CRY",
-                    "is_home": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 0,
-                "saves": 0,
-                "xg": 0.0,
-                "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_out": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
                 "name": "Semenyo",
                 "position": "MID",
                 "club": "MCI",
@@ -7293,14 +7581,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "CRY",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7329,14 +7620,17 @@
                 "goals": 0,
                 "assists": 2,
                 "minutes": 79,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
                 "opponents": [
                   {
                     "opponent": "IPS",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 5,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 1,
@@ -7365,14 +7659,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 13,
                 "opponents": [
                   {
                     "opponent": "BOU",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7401,14 +7698,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 89,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 6,
                 "opponents": [
                   {
                     "opponent": "FUL",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7437,14 +7737,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 80,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "EVE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7473,14 +7776,17 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "BRE",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 1,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 2,
@@ -7509,14 +7815,17 @@
                 "goals": 0,
                 "assists": 1,
                 "minutes": 19,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "TOT",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 0,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7531,9 +7840,87 @@
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
+              },
+              {
+                "name": "De Cuyper",
+                "position": "DEF",
+                "club": "BHA",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465730.png",
+                "shirt_color": "#0057B8",
+                "initials": "DC",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 90,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 2,
+                "opponents": [
+                  {
+                    "opponent": "CHE",
+                    "is_home": false,
+                    "team_score": 3,
+                    "opponent_score": 4,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 4,
+                "saves": 0,
+                "xg": 0.03,
+                "xa": 0.05,
+                "xgi": 0.08,
+                "subbed_in": true,
+                "multiplier": 1,
+                "points": 0
               }
             ],
             "bench": [
+              {
+                "name": "Matheus N.",
+                "position": "DEF",
+                "club": "MCI",
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465351.png",
+                "shirt_color": "#6CABDD",
+                "initials": "MN",
+                "is_captain": false,
+                "is_vice_captain": false,
+                "base_points": 0,
+                "goals": 0,
+                "assists": 0,
+                "minutes": 0,
+                "match_finished": true,
+                "clean_sheet": false,
+                "defensive_contribution": false,
+                "defensive_contribution_count": 0,
+                "opponents": [
+                  {
+                    "opponent": "CRY",
+                    "is_home": false,
+                    "team_score": 4,
+                    "opponent_score": 1,
+                    "finished": true
+                  }
+                ],
+                "bonus": 0,
+                "yellow_card": false,
+                "red_card": false,
+                "own_goals": 0,
+                "goals_conceded": 0,
+                "saves": 0,
+                "xg": 0.0,
+                "xa": 0.0,
+                "xgi": 0.0,
+                "subbed_out": true,
+                "multiplier": 1,
+                "points": 0
+              },
               {
                 "name": "Leno",
                 "position": "GKP",
@@ -7547,14 +7934,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "SUN",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 0,
+                    "opponent_score": 1,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7583,14 +7973,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "LIV",
-                    "is_home": false
+                    "is_home": false,
+                    "team_score": 2,
+                    "opponent_score": 2,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7602,42 +7995,6 @@
                 "xg": 0.0,
                 "xa": 0.0,
                 "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0
-              },
-              {
-                "name": "De Cuyper",
-                "position": "DEF",
-                "club": "BHA",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465730.png",
-                "shirt_color": "#0057B8",
-                "initials": "DC",
-                "is_captain": false,
-                "is_vice_captain": false,
-                "base_points": 0,
-                "goals": 0,
-                "assists": 0,
-                "minutes": 90,
-                "match_finished": false,
-                "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 2,
-                "opponents": [
-                  {
-                    "opponent": "CHE",
-                    "is_home": false
-                  }
-                ],
-                "bonus": 0,
-                "yellow_card": false,
-                "red_card": false,
-                "own_goals": 0,
-                "goals_conceded": 4,
-                "saves": 0,
-                "xg": 0.03,
-                "xa": 0.05,
-                "xgi": 0.08,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 0
@@ -7655,14 +8012,17 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
                     "opponent": "BHA",
-                    "is_home": true
+                    "is_home": true,
+                    "team_score": 4,
+                    "opponent_score": 3,
+                    "finished": true
                   }
                 ],
                 "bonus": 0,
@@ -7679,7 +8039,7 @@
                 "points": 0
               }
             ],
-            "played_count": 9,
+            "played_count": 10,
             "squad_size": 11
           }
         }
@@ -12217,14 +12577,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12260,7 +12623,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -12296,7 +12662,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -12325,14 +12694,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12361,14 +12733,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 74,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12397,14 +12772,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12433,14 +12811,17 @@
           "goals": 1,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "CHE",
-              "is_home": false
+              "is_home": false,
+              "team_score": 3,
+              "opponent_score": 4,
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -12469,14 +12850,17 @@
           "goals": 0,
           "assists": 2,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 1,
@@ -12512,7 +12896,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -12541,14 +12928,17 @@
           "goals": 1,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 2,
@@ -12577,14 +12967,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "LEE",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12615,14 +13008,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12651,14 +13047,17 @@
           "goals": 1,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "LIV",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -12694,7 +13093,10 @@
           "opponents": [
             {
               "opponent": "ARS",
-              "is_home": true
+              "is_home": true,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -12730,7 +13132,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -12765,14 +13170,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "LIV",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12801,14 +13209,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12837,14 +13248,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
           "opponents": [
             {
               "opponent": "CHE",
-              "is_home": false
+              "is_home": false,
+              "team_score": 3,
+              "opponent_score": 4,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12873,14 +13287,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "MCI",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 4,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12909,14 +13326,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 19,
           "opponents": [
             {
               "opponent": "FUL",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 1,
@@ -12945,14 +13365,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "TOT",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -12981,14 +13404,17 @@
           "goals": 1,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13017,14 +13443,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 11,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13053,14 +13482,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "LIV",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13096,7 +13528,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -13125,14 +13560,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 63,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "FUL",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13163,14 +13601,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "MCI",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 4,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13206,7 +13647,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -13235,14 +13679,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 13,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13271,14 +13718,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 22,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
           "opponents": [
             {
               "opponent": "NEW",
-              "is_home": true
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13313,14 +13763,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BOU",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13349,14 +13802,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 88,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 1,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13373,42 +13829,6 @@
           "points": 2
         },
         {
-          "name": "Senesi",
-          "position": "DEF",
-          "club": "TOT",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/221466.png",
-          "shirt_color": "#132257",
-          "initials": "SE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "NEW",
-              "is_home": true
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "Branthwaite",
           "position": "DEF",
           "club": "EVE",
@@ -13421,14 +13841,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 12,
           "opponents": [
             {
               "opponent": "BOU",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13457,14 +13880,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13481,42 +13907,6 @@
           "points": 4
         },
         {
-          "name": "S\u00e1vio",
-          "position": "MID",
-          "club": "TOT",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/510281.png",
-          "shirt_color": "#132257",
-          "initials": "S\u00c1",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "NEW",
-              "is_home": true
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "B.Fernandes",
           "position": "MID",
           "club": "MUN",
@@ -13529,14 +13919,17 @@
           "goals": 3,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -13565,14 +13958,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 10,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13601,14 +13997,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 10,
           "opponents": [
             {
               "opponent": "BOU",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13637,14 +14036,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 29,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "LEE",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13673,14 +14075,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "MCI",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 4,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13695,44 +14100,6 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
-        }
-      ],
-      "bench": [
-        {
-          "name": "Roefs",
-          "position": "GKP",
-          "club": "SUN",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/498016.png",
-          "shirt_color": "#EB172B",
-          "initials": "RO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 6,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 90,
-          "match_finished": false,
-          "clean_sheet": true,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "FUL",
-              "is_home": true
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_in": false,
-          "multiplier": 1,
-          "points": 6
         },
         {
           "name": "Milenkovi\u0107",
@@ -13747,14 +14114,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
           "opponents": [
             {
               "opponent": "LIV",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13766,7 +14136,7 @@
           "xg": 0.0,
           "xa": 0.0,
           "xgi": 0.0,
-          "subbed_in": false,
+          "subbed_in": true,
           "multiplier": 1,
           "points": 3
         },
@@ -13783,14 +14153,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "NEW",
-              "is_home": true
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13802,9 +14175,128 @@
           "xg": 0.17,
           "xa": 0.07,
           "xgi": 0.24,
-          "subbed_in": false,
+          "subbed_in": true,
           "multiplier": 1,
           "points": 2
+        }
+      ],
+      "bench": [
+        {
+          "name": "Senesi",
+          "position": "DEF",
+          "club": "TOT",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/221466.png",
+          "shirt_color": "#132257",
+          "initials": "SE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
+        {
+          "name": "S\u00e1vio",
+          "position": "MID",
+          "club": "TOT",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/510281.png",
+          "shirt_color": "#132257",
+          "initials": "S\u00c1",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "NEW",
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
+        {
+          "name": "Roefs",
+          "position": "GKP",
+          "club": "SUN",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/498016.png",
+          "shirt_color": "#EB172B",
+          "initials": "RO",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 6,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 90,
+          "match_finished": true,
+          "clean_sheet": true,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "FUL",
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_in": false,
+          "multiplier": 1,
+          "points": 6
         },
         {
           "name": "Ekitik\u00e9",
@@ -13819,14 +14311,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13843,7 +14338,7 @@
           "points": 0
         }
       ],
-      "played_count": 8,
+      "played_count": 10,
       "squad_size": 11
     },
     "226052": {
@@ -13861,14 +14356,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13897,14 +14395,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 22,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13933,14 +14434,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 88,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -13969,14 +14473,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
           "opponents": [
             {
               "opponent": "LEE",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14005,14 +14512,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
           "opponents": [
             {
               "opponent": "TOT",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -14041,14 +14551,17 @@
           "goals": 1,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 2,
@@ -14077,14 +14590,17 @@
           "goals": 2,
           "assists": 0,
           "minutes": 81,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -14113,14 +14629,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 70,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14156,7 +14675,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -14185,14 +14707,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "TOT",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14221,14 +14746,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "NEW",
-              "is_home": true
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14259,14 +14787,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14302,7 +14833,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -14338,7 +14872,10 @@
           "opponents": [
             {
               "opponent": "ARS",
-              "is_home": true
+              "is_home": true,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -14374,7 +14911,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -14397,42 +14937,6 @@
     "27143": {
       "starting": [
         {
-          "name": "S\u00e1nchez",
-          "position": "GKP",
-          "club": "CHE",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215059.png",
-          "shirt_color": "#034694",
-          "initials": "S\u00c1",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "BHA",
-              "is_home": true
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "Gu\u00e9hi",
           "position": "DEF",
           "club": "MCI",
@@ -14445,14 +14949,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14481,14 +14988,17 @@
           "goals": 1,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
           "opponents": [
             {
               "opponent": "BOU",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 2,
@@ -14517,14 +15027,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "NEW",
-              "is_home": true
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14553,14 +15066,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 70,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14589,14 +15105,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14625,14 +15144,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14661,14 +15183,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 45,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "BRE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14697,14 +15222,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 69,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "BOU",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14733,14 +15261,17 @@
           "goals": 2,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 3,
@@ -14769,14 +15300,17 @@
           "goals": 1,
           "assists": 0,
           "minutes": 81,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "TOT",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 2,
@@ -14791,9 +15325,7 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 8
-        }
-      ],
-      "bench": [
+        },
         {
           "name": "Martinez",
           "position": "GKP",
@@ -14807,14 +15339,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14826,9 +15361,50 @@
           "xg": 0.0,
           "xa": 0.01,
           "xgi": 0.01,
-          "subbed_in": false,
+          "subbed_in": true,
           "multiplier": 1,
           "points": 2
+        }
+      ],
+      "bench": [
+        {
+          "name": "S\u00e1nchez",
+          "position": "GKP",
+          "club": "CHE",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/215059.png",
+          "shirt_color": "#034694",
+          "initials": "S\u00c1",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
         },
         {
           "name": "Rashford",
@@ -14843,14 +15419,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 79,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14879,14 +15458,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "MCI",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 4,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14922,7 +15504,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -14939,7 +15524,7 @@
           "points": 0
         }
       ],
-      "played_count": 10,
+      "played_count": 11,
       "squad_size": 11
     },
     "183812": {
@@ -14957,14 +15542,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BRE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -14993,14 +15581,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15029,14 +15620,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "LIV",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15065,14 +15659,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
           "opponents": [
             {
               "opponent": "NEW",
-              "is_home": true
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15108,7 +15705,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15137,14 +15737,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 2,
@@ -15161,78 +15764,6 @@
           "points": 4
         },
         {
-          "name": "Doku",
-          "position": "MID",
-          "club": "MCI",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/248875.png",
-          "shirt_color": "#6CABDD",
-          "initials": "DO",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "CRY",
-              "is_home": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
-          "name": "Grealish",
-          "position": "MID",
-          "club": "MCI",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/114283.png",
-          "shirt_color": "#6CABDD",
-          "initials": "GR",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "CRY",
-              "is_home": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "Enzo",
           "position": "MID",
           "club": "CHE",
@@ -15245,14 +15776,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15281,14 +15815,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 15,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "NEW",
-              "is_home": true
+              "is_home": true,
+              "team_score": 0,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15317,14 +15854,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 10,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15339,9 +15879,165 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
+        },
+        {
+          "name": "Isak",
+          "position": "FWD",
+          "club": "LIV",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219168.png",
+          "shirt_color": "#C8102E",
+          "initials": "IS",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 8,
+          "goals": 1,
+          "assists": 0,
+          "minutes": 90,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 1,
+          "opponents": [
+            {
+              "opponent": "NFO",
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
+            }
+          ],
+          "bonus": 2,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 2,
+          "saves": 0,
+          "xg": 0.99,
+          "xa": 0.0,
+          "xgi": 0.99,
+          "subbed_in": true,
+          "multiplier": 1,
+          "points": 8
+        },
+        {
+          "name": "M.Sangar\u00e9",
+          "position": "MID",
+          "club": "BRE",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/513545.png",
+          "shirt_color": "#FFDB00",
+          "initials": "M.",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 4,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 90,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": true,
+          "defensive_contribution_count": 14,
+          "opponents": [
+            {
+              "opponent": "LEE",
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 1,
+          "saves": 0,
+          "xg": 0.21,
+          "xa": 0.03,
+          "xgi": 0.24,
+          "subbed_in": true,
+          "multiplier": 1,
+          "points": 4
         }
       ],
       "bench": [
+        {
+          "name": "Doku",
+          "position": "MID",
+          "club": "MCI",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/248875.png",
+          "shirt_color": "#6CABDD",
+          "initials": "DO",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
+        {
+          "name": "Grealish",
+          "position": "MID",
+          "club": "MCI",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/114283.png",
+          "shirt_color": "#6CABDD",
+          "initials": "GR",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
         {
           "name": "Raya",
           "position": "GKP",
@@ -15362,7 +16058,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15377,78 +16076,6 @@
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
-        },
-        {
-          "name": "Isak",
-          "position": "FWD",
-          "club": "LIV",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/219168.png",
-          "shirt_color": "#C8102E",
-          "initials": "IS",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 8,
-          "goals": 1,
-          "assists": 0,
-          "minutes": 90,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 1,
-          "opponents": [
-            {
-              "opponent": "NFO",
-              "is_home": true
-            }
-          ],
-          "bonus": 2,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 2,
-          "saves": 0,
-          "xg": 0.99,
-          "xa": 0.0,
-          "xgi": 0.99,
-          "subbed_in": false,
-          "multiplier": 1,
-          "points": 8
-        },
-        {
-          "name": "M.Sangar\u00e9",
-          "position": "MID",
-          "club": "BRE",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/513545.png",
-          "shirt_color": "#FFDB00",
-          "initials": "M.",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 4,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 90,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": true,
-          "defensive_contribution_count": 14,
-          "opponents": [
-            {
-              "opponent": "LEE",
-              "is_home": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 1,
-          "saves": 0,
-          "xg": 0.21,
-          "xa": 0.03,
-          "xgi": 0.24,
-          "subbed_in": false,
-          "multiplier": 1,
-          "points": 4
         },
         {
           "name": "Rice",
@@ -15470,7 +16097,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15487,7 +16117,7 @@
           "points": 0
         }
       ],
-      "played_count": 7,
+      "played_count": 9,
       "squad_size": 11
     },
     "27145": {
@@ -15505,14 +16135,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "LEE",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15548,7 +16181,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15577,14 +16213,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15613,14 +16252,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 70,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
           "opponents": [
             {
               "opponent": "NFO",
-              "is_home": true
+              "is_home": true,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15649,14 +16291,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 45,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "BRE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15673,42 +16318,6 @@
           "points": 1
         },
         {
-          "name": "Mu\u00f1oz",
-          "position": "DEF",
-          "club": "CRY",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247348.png",
-          "shirt_color": "#1B458F",
-          "initials": "MU",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "MCI",
-              "is_home": true
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "Stach",
           "position": "MID",
           "club": "LEE",
@@ -15721,14 +16330,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 16,
           "opponents": [
             {
               "opponent": "BRE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15764,7 +16376,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15793,14 +16408,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 81,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 14,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15829,14 +16447,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 80,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15872,7 +16493,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15887,9 +16511,87 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
+        },
+        {
+          "name": "Neto",
+          "position": "MID",
+          "club": "CHE",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247632.png",
+          "shirt_color": "#034694",
+          "initials": "NE",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 7,
+          "goals": 1,
+          "assists": 0,
+          "minutes": 67,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 4,
+          "opponents": [
+            {
+              "opponent": "BHA",
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 2,
+          "saves": 0,
+          "xg": 0.41,
+          "xa": 0.33,
+          "xgi": 0.74,
+          "subbed_in": true,
+          "multiplier": 1,
+          "points": 7
         }
       ],
       "bench": [
+        {
+          "name": "Mu\u00f1oz",
+          "position": "DEF",
+          "club": "CRY",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247348.png",
+          "shirt_color": "#1B458F",
+          "initials": "MU",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "MCI",
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 4,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
         {
           "name": "Pope",
           "position": "GKP",
@@ -15903,14 +16605,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "TOT",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -15946,7 +16651,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -15963,42 +16671,6 @@
           "points": 0
         },
         {
-          "name": "Neto",
-          "position": "MID",
-          "club": "CHE",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/247632.png",
-          "shirt_color": "#034694",
-          "initials": "NE",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 7,
-          "goals": 1,
-          "assists": 0,
-          "minutes": 67,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 4,
-          "opponents": [
-            {
-              "opponent": "BHA",
-              "is_home": true
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 2,
-          "saves": 0,
-          "xg": 0.41,
-          "xa": 0.33,
-          "xgi": 0.74,
-          "subbed_in": false,
-          "multiplier": 1,
-          "points": 7
-        },
-        {
           "name": "Emersonn",
           "position": "FWD",
           "club": "IPS",
@@ -16011,14 +16683,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 45,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 1,
           "opponents": [
             {
               "opponent": "MUN",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 5,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16035,7 +16710,7 @@
           "points": 1
         }
       ],
-      "played_count": 7,
+      "played_count": 8,
       "squad_size": 11
     },
     "31110": {
@@ -16053,14 +16728,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16096,7 +16774,10 @@
           "opponents": [
             {
               "opponent": "AVL",
-              "is_home": false
+              "is_home": false,
+              "team_score": null,
+              "opponent_score": null,
+              "finished": false
             }
           ],
           "bonus": 0,
@@ -16125,14 +16806,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 72,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16149,42 +16833,6 @@
           "points": 2
         },
         {
-          "name": "Matheus N.",
-          "position": "DEF",
-          "club": "MCI",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465351.png",
-          "shirt_color": "#6CABDD",
-          "initials": "MN",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 0,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 0,
-          "opponents": [
-            {
-              "opponent": "CRY",
-              "is_home": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 0,
-          "saves": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "xgi": 0.0,
-          "subbed_out": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
           "name": "Semenyo",
           "position": "MID",
           "club": "MCI",
@@ -16197,14 +16845,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "CRY",
-              "is_home": false
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16233,14 +16884,17 @@
           "goals": 0,
           "assists": 2,
           "minutes": 79,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
           "opponents": [
             {
               "opponent": "IPS",
-              "is_home": true
+              "is_home": true,
+              "team_score": 5,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 1,
@@ -16269,14 +16923,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
           "opponents": [
             {
               "opponent": "BOU",
-              "is_home": false
+              "is_home": false,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16305,14 +16962,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 89,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 6,
           "opponents": [
             {
               "opponent": "FUL",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16341,14 +17001,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 80,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "EVE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16377,14 +17040,17 @@
           "goals": 1,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "BRE",
-              "is_home": true
+              "is_home": true,
+              "team_score": 1,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 2,
@@ -16413,14 +17079,17 @@
           "goals": 0,
           "assists": 1,
           "minutes": 19,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "TOT",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 0,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16435,9 +17104,87 @@
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
+        },
+        {
+          "name": "De Cuyper",
+          "position": "DEF",
+          "club": "BHA",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465730.png",
+          "shirt_color": "#0057B8",
+          "initials": "DC",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 90,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 2,
+          "opponents": [
+            {
+              "opponent": "CHE",
+              "is_home": false,
+              "team_score": 3,
+              "opponent_score": 4,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 4,
+          "saves": 0,
+          "xg": 0.03,
+          "xa": 0.05,
+          "xgi": 0.08,
+          "subbed_in": true,
+          "multiplier": 1,
+          "points": 0
         }
       ],
       "bench": [
+        {
+          "name": "Matheus N.",
+          "position": "DEF",
+          "club": "MCI",
+          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465351.png",
+          "shirt_color": "#6CABDD",
+          "initials": "MN",
+          "is_captain": false,
+          "is_vice_captain": false,
+          "base_points": 0,
+          "goals": 0,
+          "assists": 0,
+          "minutes": 0,
+          "match_finished": true,
+          "clean_sheet": false,
+          "defensive_contribution": false,
+          "defensive_contribution_count": 0,
+          "opponents": [
+            {
+              "opponent": "CRY",
+              "is_home": false,
+              "team_score": 4,
+              "opponent_score": 1,
+              "finished": true
+            }
+          ],
+          "bonus": 0,
+          "yellow_card": false,
+          "red_card": false,
+          "own_goals": 0,
+          "goals_conceded": 0,
+          "saves": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "xgi": 0.0,
+          "subbed_out": true,
+          "multiplier": 1,
+          "points": 0
+        },
         {
           "name": "Leno",
           "position": "GKP",
@@ -16451,14 +17198,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "SUN",
-              "is_home": false
+              "is_home": false,
+              "team_score": 0,
+              "opponent_score": 1,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16487,14 +17237,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "LIV",
-              "is_home": false
+              "is_home": false,
+              "team_score": 2,
+              "opponent_score": 2,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16506,42 +17259,6 @@
           "xg": 0.0,
           "xa": 0.0,
           "xgi": 0.0,
-          "subbed_in": false,
-          "multiplier": 1,
-          "points": 0
-        },
-        {
-          "name": "De Cuyper",
-          "position": "DEF",
-          "club": "BHA",
-          "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465730.png",
-          "shirt_color": "#0057B8",
-          "initials": "DC",
-          "is_captain": false,
-          "is_vice_captain": false,
-          "base_points": 0,
-          "goals": 0,
-          "assists": 0,
-          "minutes": 90,
-          "match_finished": false,
-          "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 2,
-          "opponents": [
-            {
-              "opponent": "CHE",
-              "is_home": false
-            }
-          ],
-          "bonus": 0,
-          "yellow_card": false,
-          "red_card": false,
-          "own_goals": 0,
-          "goals_conceded": 4,
-          "saves": 0,
-          "xg": 0.03,
-          "xa": 0.05,
-          "xgi": 0.08,
           "subbed_in": false,
           "multiplier": 1,
           "points": 0
@@ -16559,14 +17276,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
           "opponents": [
             {
               "opponent": "BHA",
-              "is_home": true
+              "is_home": true,
+              "team_score": 4,
+              "opponent_score": 3,
+              "finished": true
             }
           ],
           "bonus": 0,
@@ -16583,7 +17303,7 @@
           "points": 0
         }
       ],
-      "played_count": 9,
+      "played_count": 10,
       "squad_size": 11
     }
   }
