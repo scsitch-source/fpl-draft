@@ -649,6 +649,31 @@
     padding:2px 9px;border-radius:10px;
   }
   .receipt-pick-badge.gold{background:#D4AF37;color:#3A2E00;}
+  .top-scorers-label{
+    font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;
+    color:var(--chalk-dim);margin:16px 0 8px;text-align:center;
+  }
+  .top-scorers-list{display:flex;flex-direction:column;gap:5px;max-width:360px;margin:0 auto;}
+  .top-scorer-row{
+    display:flex;align-items:center;gap:8px;background:var(--ink);border-radius:8px;
+    padding:5px 10px;
+  }
+  .top-scorer-row.gold{background:rgba(212,175,55,0.16);}
+  .top-scorer-row.silver{background:rgba(196,201,210,0.14);}
+  .top-scorer-row.bronze{background:rgba(184,129,79,0.14);}
+  .top-scorer-rank{font-size:12px;font-weight:800;color:var(--chalk-dim);width:16px;flex-shrink:0;}
+  .top-scorer-row.gold .top-scorer-rank{color:#D4AF37;}
+  .top-scorer-row.silver .top-scorer-rank{color:#C4C9D2;}
+  .top-scorer-row.bronze .top-scorer-rank{color:#B8814F;}
+  .top-scorer-photo{
+    width:26px;height:26px;border-radius:6px;overflow:hidden;flex-shrink:0;background:var(--card);
+    display:flex;align-items:flex-end;justify-content:center;
+  }
+  .top-scorer-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+  .top-scorer-info{flex:1;min-width:0;}
+  .top-scorer-name{font-size:12.5px;font-weight:700;color:var(--chalk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .top-scorer-owner{font-size:9.5px;color:var(--chalk-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .top-scorer-pts{font-family:'Manrope';font-weight:800;font-size:14px;color:var(--amber);flex-shrink:0;}
   .receipt-pick-badge.silver{background:#C4C9D2;color:#2B2E33;}
   .receipt-pick-badge.bronze{background:#B8814F;color:#3A2410;}
   .receipt-pick-badge.neutral{background:var(--chalk);color:var(--card);}
@@ -1211,8 +1236,36 @@ function buildTeamOfSeasonPanel(data){
         <div class="pitch-bench-row">${tos.bench.map(seasonPlayerCard).join('')}</div>
       ` : ''}
     </div>
+    ${buildTopScorersHTML(data)}
   `;
   return panel;
+}
+
+function buildTopScorersHTML(data){
+  const scorers = data.top_scorers;
+  if(!scorers || !scorers.length) return '';
+  const tierClass = rank => rank === 1 ? 'gold' : (rank === 2 ? 'silver' : (rank === 3 ? 'bronze' : ''));
+  return `
+    <div class="top-scorers-label">Top ${scorers.length} points scorers</div>
+    <div class="top-scorers-list">
+      ${scorers.map(s => `
+        <div class="top-scorer-row ${tierClass(s.rank)}">
+          <span class="top-scorer-rank">${s.rank}</span>
+          <div class="top-scorer-photo">
+            ${s.photo_url
+              ? `<img src="${s.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
+              : ''}
+            <img class="field-jersey-fallback" src="icons/player-placeholder.png" alt="" style="display:${s.photo_url ? 'none' : 'block'};">
+          </div>
+          <div class="top-scorer-info">
+            <div class="top-scorer-name">${s.name}</div>
+            <div class="top-scorer-owner">${s.owner_team_name || 'Free agent'}</div>
+          </div>
+          <span class="top-scorer-pts">${s.points}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
 }
 
 function buildSpotlightPanel(data, myId){

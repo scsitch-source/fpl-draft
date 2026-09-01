@@ -1093,6 +1093,28 @@ def build():
 
     team_of_season = {"starting": tos_starting, "bench": tos_bench}
 
+    # Top overall scorers league-wide, for the leaderboard alongside Team of
+    # the Season - same owner-lookup as above so it can show who has them.
+    top_scorers_sorted = sorted(real_players, key=lambda el: -(el.get("total_points") or 0))[:15]
+    top_scorers = []
+    for rank, el in enumerate(top_scorers_sorted, start=1):
+        info = player_by_id.get(el.get("id"), {})
+        player_name = info.get("name", el.get("web_name"))
+        owner_team = None
+        for le_id_str, squad in latest_squads.items():
+            names_here = {p["name"] for p in squad.get("starting", []) + squad.get("bench", [])}
+            if player_name in names_here:
+                owner_team = entry_by_id.get(int(le_id_str), {}).get("team_name")
+                break
+        top_scorers.append({
+            "rank": rank,
+            "name": player_name,
+            "points": info.get("season_points", 0),
+            "photo_url": info.get("photo_url"),
+            "shirt_color": info.get("shirt_color", "#6B7280"),
+            "owner_team_name": owner_team,
+        })
+
     # ---------------- Draft recap (draft-day pick order) ----------------
     print("Fetching draft picks...")
     draft_data = get_json_soft(f"draft/{LEAGUE_ID}/choices")
@@ -1342,6 +1364,7 @@ def build():
         "accepted_transactions": accepted_transactions,
         "latest_squad_event": latest_squad_event,
         "team_of_season": team_of_season,
+        "top_scorers": top_scorers,
         "latest_squads": latest_squads,
     }
 
