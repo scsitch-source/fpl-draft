@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T06:05:31.829535+00:00",
+  "generated_at": "2026-09-01T06:14:42.954424+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19330,7 +19330,7 @@
         "shirt_color": "#DA291C",
         "initials": "B.",
         "season_points": 25,
-        "is_captain": false,
+        "is_captain": true,
         "is_vice_captain": false,
         "subbed_in": false,
         "subbed_out": false,
@@ -19372,7 +19372,7 @@
         "initials": "CH",
         "season_points": 22,
         "is_captain": false,
-        "is_vice_captain": false,
+        "is_vice_captain": true,
         "subbed_in": false,
         "subbed_out": false,
         "base_points": 14,
