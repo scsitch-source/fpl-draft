@@ -1023,6 +1023,76 @@ def build():
             for le_id_str, squad in (f.get("squads") or {}).items():
                 latest_squads[le_id_str] = squad
 
+    # ---------------- Team of the season ----------------
+    # Best real-world XI across the WHOLE Premier League (not just players
+    # drafted here), using season-long points. Squad of 15 (2 GKP, 5 DEF,
+    # 5 MID, 3 FWD) selected purely by total_points, then the best possible
+    # starting XI from those 15 (1 GK + 10 outfield, respecting the same
+    # min 3 DEF / min 2 MID / min 1 FWD formation rule used for auto-subs).
+    # Recomputed fresh from current totals every run - if someone gets
+    # overtaken, a new player simply appears in that spot next time.
+    TOS_SQUAD_SIZE = {"GKP": 2, "DEF": 5, "MID": 5, "FWD": 3}
+    TOS_MIN_OUTFIELD = {"DEF": 3, "MID": 2, "FWD": 1}
+
+    tos_squad_by_pos = {}
+    for pos_code, pos_label in pos_by_type.items():
+        pos_players = sorted(
+            (el for el in real_players if el.get("element_type") == pos_code),
+            key=lambda el: -(el.get("total_points") or 0),
+        )
+        tos_squad_by_pos[pos_label] = pos_players[:TOS_SQUAD_SIZE.get(pos_label, 0)]
+
+    outfield_pool = [
+        (pos_label, el)
+        for pos_label in ("DEF", "MID", "FWD")
+        for el in tos_squad_by_pos.get(pos_label, [])
+    ]
+    outfield_pool.sort(key=lambda t: (t[1].get("total_points") or 0))  # ascending - drop from the front
+    outfield_counts = {pos: len(tos_squad_by_pos.get(pos, [])) for pos in ("DEF", "MID", "FWD")}
+    dropped_ids = set()
+    i = 0
+    while len(dropped_ids) < 3 and i < len(outfield_pool):
+        pos_label, el = outfield_pool[i]
+        if outfield_counts[pos_label] - 1 >= TOS_MIN_OUTFIELD[pos_label]:
+            dropped_ids.add(el.get("id"))
+            outfield_counts[pos_label] -= 1
+        i += 1
+
+    gk_list = tos_squad_by_pos.get("GKP", [])
+
+    def _tos_player(el, pos_label):
+        eid = el.get("id")
+        info = player_by_id.get(eid, {})
+        player_name = info.get("name", el.get("web_name"))
+        owner_team = None
+        for le_id_str, squad in latest_squads.items():
+            names_here = {p["name"] for p in squad.get("starting", []) + squad.get("bench", [])}
+            if player_name in names_here:
+                owner_team = entry_by_id.get(int(le_id_str), {}).get("team_name")
+                break
+        return {
+            "name": player_name,
+            "position": pos_label,
+            "points": info.get("season_points", 0),
+            "photo_url": info.get("photo_url"),
+            "shirt_color": info.get("shirt_color", "#6B7280"),
+            "initials": info.get("initials", "?"),
+            "club": info.get("club", "?"),
+            "owner_team_name": owner_team,
+        }
+
+    tos_starting, tos_bench = [], []
+    if gk_list:
+        tos_starting.append(_tos_player(gk_list[0], "GKP"))
+    if len(gk_list) > 1:
+        tos_bench.append(_tos_player(gk_list[1], "GKP"))
+    for pos_label in ("DEF", "MID", "FWD"):
+        for el in tos_squad_by_pos.get(pos_label, []):
+            target = tos_bench if el.get("id") in dropped_ids else tos_starting
+            target.append(_tos_player(el, pos_label))
+
+    team_of_season = {"starting": tos_starting, "bench": tos_bench}
+
     # ---------------- Draft recap (draft-day pick order) ----------------
     print("Fetching draft picks...")
     draft_data = get_json_soft(f"draft/{LEAGUE_ID}/choices")
@@ -1271,6 +1341,7 @@ def build():
         "in_form": in_form_summary,
         "accepted_transactions": accepted_transactions,
         "latest_squad_event": latest_squad_event,
+        "team_of_season": team_of_season,
         "latest_squads": latest_squads,
     }
 

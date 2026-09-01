@@ -354,6 +354,7 @@
   .pitch-bench-row .field-pill{background:var(--card);border:1px solid var(--line);}
   .pitch-bench-row .field-name{color:var(--chalk);}
   .pitch-bench-row .field-pts{color:var(--chalk-dim);}
+  .pitch-bench-row .field-owner{color:var(--chalk-dim);opacity:0.8;}
   .field-player{
     display:flex;flex-direction:column;align-items:center;cursor:pointer;
     flex:1 1 0;min-width:0;max-width:64px;
@@ -387,6 +388,10 @@
   }
   .field-pts{
     color:#5DCAA5;font-size:11px;font-weight:800;font-family:'Manrope';
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .field-owner{
+    color:rgba(255,255,255,0.7);font-size:7.5px;font-weight:600;margin-top:1px;
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
   }
   .fixture-card{
@@ -927,6 +932,8 @@ function render(data){
       grid.appendChild(buildStandingsPanel(data, myId));
       grid.appendChild(buildSpotlightPanel(data, myId));
       wrap.appendChild(grid);
+      const teamOfSeasonPanel = buildTeamOfSeasonPanel(data);
+      if(teamOfSeasonPanel) wrap.appendChild(teamOfSeasonPanel);
       const secondGrid = document.createElement('div');
       secondGrid.className = 'grid';
       secondGrid.style.marginTop = '0';
@@ -1155,6 +1162,56 @@ function buildStandingsPanel(data, myId){
   legend.style.cssText = 'font-size:11px;color:var(--chalk-dim);margin:10px 0 0;';
   legend.textContent = 'Top 2 go straight through to the final four; 3rd–4th also make the playoffs.';
   panel.appendChild(legend);
+  return panel;
+}
+
+function seasonPlayerCard(p){
+  const ownerLabel = p.owner_team_name || 'Free agent';
+  return `
+    <div class="field-player" title="${p.name} - ${p.points} season pts">
+      <div class="field-photo">
+        ${p.photo_url
+          ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
+          : ''}
+        <img class="field-jersey-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
+      </div>
+      <div class="field-pill">
+        <div class="field-name">${p.name}</div>
+        <div class="field-pts">${p.points}</div>
+        <div class="field-owner">${ownerLabel}</div>
+      </div>
+    </div>
+  `;
+}
+
+function buildTeamOfSeasonPanel(data){
+  const tos = data.team_of_season;
+  if(!tos || !tos.starting || !tos.starting.length) return null;
+
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.style.marginBottom = '16px';
+
+  const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
+  tos.starting.forEach(p => { (rows[p.position] || rows.MID).push(p); });
+
+  panel.innerHTML = `
+    <h2><span class="dot"></span>Team of the season</h2>
+    <p style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;">Best real XI in the Premier League right now, by season points.</p>
+    <div class="pitch-col" style="max-width:360px;margin:0 auto;">
+      <div class="pitch">
+        ${PITCH_LINES_SVG}
+        <div class="pitch-rows">
+          ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
+            ? `<div class="pitch-row">${rows[pos].map(seasonPlayerCard).join('')}</div>` : '').join('')}
+        </div>
+      </div>
+      ${tos.bench.length ? `
+        <div class="squad-bench-label">Bench</div>
+        <div class="pitch-bench-row">${tos.bench.map(seasonPlayerCard).join('')}</div>
+      ` : ''}
+    </div>
+  `;
   return panel;
 }
 
