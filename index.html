@@ -1623,7 +1623,10 @@ function showPlayerReceipt(p){
         <div class="receipt-name">${p.name}${capLabel}</div>
         <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
         ${buildAcquisitionHTML(p)}
-        ${buildFormHTML(p)}
+      </div>
+      <div class="gw-points-box">
+        <div class="stat-box-value">${total}</div>
+        <div class="stat-box-label">GW${DASHBOARD_DATA && DASHBOARD_DATA.current_event ? DASHBOARD_DATA.current_event : ''} points</div>
       </div>
       ${buildFixtureResultHTML(p)}
       <div class="receipt-lines">
@@ -1633,10 +1636,6 @@ function showPlayerReceipt(p){
             <span class="${pts > 0 ? 'pos' : (pts < 0 ? 'neg' : '')}">${pts > 0 ? '+' : ''}${pts}</span>
           </div>
         `).join('')}
-      </div>
-      <div class="gw-points-box">
-        <div class="stat-box-value">${total}</div>
-        <div class="stat-box-label">GW${DASHBOARD_DATA && DASHBOARD_DATA.current_event ? DASHBOARD_DATA.current_event : ''} points</div>
       </div>
       ${(p.xg || p.xa || p.xgi) ? `
         <div class="receipt-xstats">
