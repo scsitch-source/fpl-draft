@@ -1034,6 +1034,69 @@ def build():
     TOS_SQUAD_SIZE = {"GKP": 2, "DEF": 5, "MID": 5, "FWD": 3}
     TOS_MIN_OUTFIELD = {"DEF": 3, "MID": 2, "FWD": 1}
 
+    def _owner_lookup(player_name):
+        for le_id_str, squad in latest_squads.items():
+            names_here = {p["name"] for p in squad.get("starting", []) + squad.get("bench", [])}
+            if player_name in names_here:
+                return entry_by_id.get(int(le_id_str), {}).get("team_name")
+        return None
+
+    def _full_receipt_row(el_id, ev):
+        """Same per-gameweek stat shape used for real fantasy squad rows
+        (minutes, goals, points, match_finished, etc.), but for an
+        arbitrary real player who isn't necessarily on anyone's roster -
+        used so Team of the Season / top scorers can open the same
+        points-receipt popover as everywhere else on the dashboard."""
+        info = player_by_id.get(el_id, {})
+        if ev is None:
+            stat = {}
+        else:
+            stat = live_stats_for_event(ev).get(el_id, {})
+        stat = stat or {"points": 0, "goals": 0, "assists": 0, "minutes": 0,
+                         "clean_sheets": 0, "defensive_contribution": 0,
+                         "bonus": 0, "yellow_cards": 0, "red_cards": 0,
+                         "own_goals": 0, "goals_conceded": 0, "saves": 0,
+                         "xg": 0.0, "xa": 0.0, "xgi": 0.0}
+        position = info.get("position", "?")
+        club_id = info.get("club_id")
+        match_finished = (
+            True if (ev is not None and current_event is not None and ev < current_event)
+            else (
+                club_finished_by_event.get(ev, {}).get(club_id, False)
+                or (ev == current_event and bool(current_event_finished))
+            )
+        ) if ev is not None else False
+        return {
+            "name": info.get("name", "Unknown"),
+            "position": position,
+            "club": info.get("club", "?"),
+            "photo_url": info.get("photo_url"),
+            "shirt_color": info.get("shirt_color", "#6B7280"),
+            "initials": info.get("initials", "?"),
+            "season_points": info.get("season_points", 0),
+            "is_captain": False, "is_vice_captain": False,
+            "subbed_in": False, "subbed_out": False,
+            "base_points": stat.get("points", 0),
+            "points": stat.get("points", 0),
+            "goals": stat.get("goals", 0),
+            "assists": stat.get("assists", 0),
+            "minutes": stat.get("minutes", 0),
+            "match_finished": match_finished,
+            "clean_sheet": bool(stat.get("clean_sheets")) and position in ("GKP", "DEF"),
+            "defensive_contribution": meets_dc_threshold(stat.get("defensive_contribution"), position),
+            "defensive_contribution_count": stat.get("defensive_contribution", 0) or 0,
+            "opponents": club_opponent_by_event.get(ev, {}).get(club_id, []) if ev is not None else [],
+            "bonus": stat.get("bonus", 0) or 0,
+            "yellow_card": bool(stat.get("yellow_cards")),
+            "red_card": bool(stat.get("red_cards")),
+            "own_goals": stat.get("own_goals", 0) or 0,
+            "goals_conceded": stat.get("goals_conceded", 0) or 0,
+            "saves": stat.get("saves", 0) or 0,
+            "xg": stat.get("xg", 0.0),
+            "xa": stat.get("xa", 0.0),
+            "xgi": stat.get("xgi", 0.0),
+        }
+
     tos_squad_by_pos = {}
     for pos_code, pos_label in pos_by_type.items():
         pos_players = sorted(
@@ -1062,24 +1125,9 @@ def build():
 
     def _tos_player(el, pos_label):
         eid = el.get("id")
-        info = player_by_id.get(eid, {})
-        player_name = info.get("name", el.get("web_name"))
-        owner_team = None
-        for le_id_str, squad in latest_squads.items():
-            names_here = {p["name"] for p in squad.get("starting", []) + squad.get("bench", [])}
-            if player_name in names_here:
-                owner_team = entry_by_id.get(int(le_id_str), {}).get("team_name")
-                break
-        return {
-            "name": player_name,
-            "position": pos_label,
-            "points": info.get("season_points", 0),
-            "photo_url": info.get("photo_url"),
-            "shirt_color": info.get("shirt_color", "#6B7280"),
-            "initials": info.get("initials", "?"),
-            "club": info.get("club", "?"),
-            "owner_team_name": owner_team,
-        }
+        row = _full_receipt_row(eid, latest_squad_event)
+        row["owner_team_name"] = _owner_lookup(row["name"])
+        return row
 
     tos_starting, tos_bench = [], []
     if gk_list:
@@ -1093,27 +1141,25 @@ def build():
 
     team_of_season = {"starting": tos_starting, "bench": tos_bench}
 
-    # Top overall scorers league-wide, for the leaderboard alongside Team of
-    # the Season - same owner-lookup as above so it can show who has them.
-    top_scorers_sorted = sorted(real_players, key=lambda el: -(el.get("total_points") or 0))[:15]
-    top_scorers = []
-    for rank, el in enumerate(top_scorers_sorted, start=1):
-        info = player_by_id.get(el.get("id"), {})
-        player_name = info.get("name", el.get("web_name"))
-        owner_team = None
-        for le_id_str, squad in latest_squads.items():
-            names_here = {p["name"] for p in squad.get("starting", []) + squad.get("bench", [])}
-            if player_name in names_here:
-                owner_team = entry_by_id.get(int(le_id_str), {}).get("team_name")
-                break
-        top_scorers.append({
-            "rank": rank,
-            "name": player_name,
-            "points": info.get("season_points", 0),
-            "photo_url": info.get("photo_url"),
-            "shirt_color": info.get("shirt_color", "#6B7280"),
-            "owner_team_name": owner_team,
-        })
+    # Top scorers league-wide (overall, and per position for the tabs),
+    # each with the same full receipt row so these are clickable too.
+    TOP_SCORERS_N = 10
+
+    def _top_scorers_list(pool):
+        ranked = sorted(pool, key=lambda el: -(el.get("total_points") or 0))[:TOP_SCORERS_N]
+        out = []
+        for rank, el in enumerate(ranked, start=1):
+            row = _full_receipt_row(el.get("id"), latest_squad_event)
+            row["rank"] = rank
+            row["owner_team_name"] = _owner_lookup(row["name"])
+            out.append(row)
+        return out
+
+    top_scorers_by_tab = {"all": _top_scorers_list(real_players)}
+    for pos_code, pos_label in pos_by_type.items():
+        top_scorers_by_tab[pos_label] = _top_scorers_list(
+            [el for el in real_players if el.get("element_type") == pos_code]
+        )
 
     # ---------------- Draft recap (draft-day pick order) ----------------
     print("Fetching draft picks...")
@@ -1364,7 +1410,7 @@ def build():
         "accepted_transactions": accepted_transactions,
         "latest_squad_event": latest_squad_event,
         "team_of_season": team_of_season,
-        "top_scorers": top_scorers,
+        "top_scorers": top_scorers_by_tab,
         "latest_squads": latest_squads,
     }
 

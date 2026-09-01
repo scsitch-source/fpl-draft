@@ -383,16 +383,16 @@
     width:100%;box-sizing:border-box;
   }
   .field-name{
-    color:#fff;font-size:8.5px;font-weight:700;white-space:nowrap;overflow:hidden;
-    text-overflow:ellipsis;
+    color:#fff;font-size:8.5px;font-weight:700;line-height:1.2;
+    word-break:break-word;overflow-wrap:break-word;
   }
   .field-pts{
     color:#5DCAA5;font-size:11px;font-weight:800;font-family:'Manrope';
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
   }
   .field-owner{
-    color:rgba(255,255,255,0.7);font-size:7.5px;font-weight:600;margin-top:1px;
-    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    color:rgba(255,255,255,0.7);font-size:7.5px;font-weight:600;margin-top:1px;line-height:1.2;
+    word-break:break-word;overflow-wrap:break-word;
   }
   .fixture-card{
     background:var(--ink);border:1px solid var(--line);border-radius:12px;
@@ -653,10 +653,16 @@
     font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;
     color:var(--chalk-dim);margin:16px 0 8px;text-align:center;
   }
+  .top-scorers-tab-row{display:flex;justify-content:center;gap:6px;margin-bottom:10px;flex-wrap:wrap;}
+  .top-scorers-tab-btn{
+    background:var(--ink);border:1px solid var(--line);color:var(--chalk-dim);
+    font-size:11px;font-weight:700;padding:5px 12px;border-radius:14px;cursor:pointer;
+  }
+  .top-scorers-tab-btn.active{background:var(--win);border-color:var(--win);color:#fff;}
   .top-scorers-list{display:flex;flex-direction:column;gap:5px;max-width:360px;margin:0 auto;}
   .top-scorer-row{
     display:flex;align-items:center;gap:8px;background:var(--ink);border-radius:8px;
-    padding:5px 10px;
+    padding:5px 10px;cursor:pointer;
   }
   .top-scorer-row.gold{background:rgba(212,175,55,0.16);}
   .top-scorer-row.silver{background:rgba(196,201,210,0.14);}
@@ -671,8 +677,8 @@
   }
   .top-scorer-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
   .top-scorer-info{flex:1;min-width:0;}
-  .top-scorer-name{font-size:12.5px;font-weight:700;color:var(--chalk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .top-scorer-owner{font-size:9.5px;color:var(--chalk-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .top-scorer-name{font-size:12px;font-weight:700;color:var(--chalk);line-height:1.25;word-break:break-word;overflow-wrap:break-word;}
+  .top-scorer-owner{font-size:9.5px;color:var(--chalk-dim);line-height:1.25;word-break:break-word;overflow-wrap:break-word;}
   .top-scorer-pts{font-family:'Manrope';font-weight:800;font-size:14px;color:var(--amber);flex-shrink:0;}
   .receipt-pick-badge.silver{background:#C4C9D2;color:#2B2E33;}
   .receipt-pick-badge.bronze{background:#B8814F;color:#3A2410;}
@@ -1193,7 +1199,7 @@ function buildStandingsPanel(data, myId){
 function seasonPlayerCard(p){
   const ownerLabel = p.owner_team_name || 'Free agent';
   return `
-    <div class="field-player" title="${p.name} - ${p.points} season pts">
+    <div class="field-player" title="${p.name} - ${p.season_points} season pts - tap for GW details" ${playerDataAttr(p)}>
       <div class="field-photo">
         ${p.photo_url
           ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
@@ -1202,7 +1208,7 @@ function seasonPlayerCard(p){
       </div>
       <div class="field-pill">
         <div class="field-name">${p.name}</div>
-        <div class="field-pts">${p.points}</div>
+        <div class="field-pts">${p.season_points}</div>
         <div class="field-owner">${ownerLabel}</div>
       </div>
     </div>
@@ -1236,36 +1242,58 @@ function buildTeamOfSeasonPanel(data){
         <div class="pitch-bench-row">${tos.bench.map(seasonPlayerCard).join('')}</div>
       ` : ''}
     </div>
-    ${buildTopScorersHTML(data)}
+    <div class="top-scorers-tabs"></div>
+    <div class="top-scorers-list"></div>
   `;
+
+  const scorersByTab = data.top_scorers || {};
+  const tabDefs = [
+    { id: 'all', label: 'All' }, { id: 'GKP', label: 'GK' }, { id: 'DEF', label: 'Def' },
+    { id: 'MID', label: 'Mid' }, { id: 'FWD', label: 'Fwd' },
+  ].filter(t => scorersByTab[t.id] && scorersByTab[t.id].length);
+
+  const tabsWrap = panel.querySelector('.top-scorers-tabs');
+  const listWrap = panel.querySelector('.top-scorers-list');
+
+  function renderTab(tabId){
+    tabsWrap.querySelectorAll('.top-scorers-tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tabId));
+    listWrap.innerHTML = buildTopScorersListHTML(scorersByTab[tabId] || []);
+  }
+
+  tabsWrap.innerHTML = `
+    <div class="top-scorers-label">Top ${TOP_SCORERS_DISPLAY_N} points scorers</div>
+    <div class="top-scorers-tab-row">
+      ${tabDefs.map(t => `<button class="top-scorers-tab-btn" data-tab="${t.id}">${t.label}</button>`).join('')}
+    </div>
+  `;
+  tabsWrap.querySelectorAll('.top-scorers-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => renderTab(btn.dataset.tab));
+  });
+  if(tabDefs.length) renderTab(tabDefs[0].id);
+
   return panel;
 }
 
-function buildTopScorersHTML(data){
-  const scorers = data.top_scorers;
-  if(!scorers || !scorers.length) return '';
+const TOP_SCORERS_DISPLAY_N = 10;
+
+function buildTopScorersListHTML(scorers){
   const tierClass = rank => rank === 1 ? 'gold' : (rank === 2 ? 'silver' : (rank === 3 ? 'bronze' : ''));
-  return `
-    <div class="top-scorers-label">Top ${scorers.length} points scorers</div>
-    <div class="top-scorers-list">
-      ${scorers.map(s => `
-        <div class="top-scorer-row ${tierClass(s.rank)}">
-          <span class="top-scorer-rank">${s.rank}</span>
-          <div class="top-scorer-photo">
-            ${s.photo_url
-              ? `<img src="${s.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
-              : ''}
-            <img class="field-jersey-fallback" src="icons/player-placeholder.png" alt="" style="display:${s.photo_url ? 'none' : 'block'};">
-          </div>
-          <div class="top-scorer-info">
-            <div class="top-scorer-name">${s.name}</div>
-            <div class="top-scorer-owner">${s.owner_team_name || 'Free agent'}</div>
-          </div>
-          <span class="top-scorer-pts">${s.points}</span>
-        </div>
-      `).join('')}
+  return scorers.map(s => `
+    <div class="top-scorer-row ${tierClass(s.rank)}" ${playerDataAttr(s)}>
+      <span class="top-scorer-rank">${s.rank}</span>
+      <div class="top-scorer-photo">
+        ${s.photo_url
+          ? `<img src="${s.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
+          : ''}
+        <img class="field-jersey-fallback" src="icons/player-placeholder.png" alt="" style="display:${s.photo_url ? 'none' : 'block'};">
+      </div>
+      <div class="top-scorer-info">
+        <div class="top-scorer-name">${s.name}</div>
+        <div class="top-scorer-owner">${s.owner_team_name || 'Free agent'}</div>
+      </div>
+      <span class="top-scorer-pts">${s.season_points}</span>
     </div>
-  `;
+  `).join('');
 }
 
 function buildSpotlightPanel(data, myId){
@@ -1935,7 +1963,7 @@ document.addEventListener('click', (e) => {
     try{ toggleTeamDetailDropdown(teamRow, JSON.parse(teamRow.dataset.team)); }catch(err){ /* ignore */ }
     return;
   }
-  const card = e.target.closest('.field-player, .squad-row');
+  const card = e.target.closest('.field-player, .squad-row, .top-scorer-row');
   if(!card || !card.dataset.player) return;
   try{
     showPlayerReceipt(JSON.parse(card.dataset.player));
@@ -2327,8 +2355,8 @@ function buildRankProgressionPanel(data){
   const palette = ['#6C3CE9','#E5484D','#F5A623','#1C63E8','#D6409F','#7A8C9E','#A67CF0','#2FA5A0','#C77DFF','#9C9BC0'];
   let colorIdx = 0;
 
-  const width = 680, height = Math.max(220, numTeams * 34 + 50);
-  const padLeft = 24, padRight = 34, padTop = 20, padBottom = 26;
+  const width = 420, height = Math.max(240, numTeams * 40 + 56);
+  const padLeft = 28, padRight = 36, padTop = 26, padBottom = 32;
   const plotW = width - padLeft - padRight;
   const plotH = height - padTop - padBottom;
 
@@ -2340,11 +2368,11 @@ function buildRankProgressionPanel(data){
   // Faint horizontal guide line per rank, with the rank number on the left.
   for(let r = 1; r <= numTeams; r++){
     svg += `<line x1="${padLeft}" y1="${yFor(r)}" x2="${width - padRight}" y2="${yFor(r)}" stroke="var(--line)" stroke-width="1"/>`;
-    svg += `<text x="${padLeft - 6}" y="${yFor(r) + 3}" font-size="9" fill="var(--chalk-dim)" text-anchor="end">${r}</text>`;
+    svg += `<text x="${padLeft - 8}" y="${yFor(r) + 3.5}" font-size="10.5" fill="var(--chalk-dim)" text-anchor="end">${r}</text>`;
   }
   // Gameweek labels along the bottom.
   events.forEach((ev, i) => {
-    svg += `<text x="${xFor(i)}" y="${height - 8}" font-size="9" fill="var(--chalk-dim)" text-anchor="middle">GW${ev}</text>`;
+    svg += `<text x="${xFor(i)}" y="${height - 10}" font-size="10" fill="var(--chalk-dim)" text-anchor="middle">GW${ev}</text>`;
   });
 
   // Each team's line uses smooth "bump chart" S-curves between rank changes
@@ -2360,16 +2388,16 @@ function buildRankProgressionPanel(data){
       const midX = (x0 + x1) / 2;
       path += ` C ${midX},${y0} ${midX},${y1} ${x1},${y1}`;
     }
-    svg += `<path d="${path}" fill="none" stroke="${color}" stroke-width="${isYou ? 3 : 2}" stroke-linecap="round" opacity="${isYou ? 1 : 0.85}"/>`;
+    svg += `<path d="${path}" fill="none" stroke="${color}" stroke-width="${isYou ? 3.5 : 2.5}" stroke-linecap="round" opacity="${isYou ? 1 : 0.85}"/>`;
     const [lastX, lastY] = pts[pts.length - 1];
     svg += `
-      <circle cx="${lastX}" cy="${lastY}" r="11" fill="${color}" stroke="var(--card)" stroke-width="2"/>
-      <text x="${lastX}" y="${lastY + 3.5}" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">${t.initials}</text>
+      <circle cx="${lastX}" cy="${lastY}" r="14" fill="${color}" stroke="var(--card)" stroke-width="2.5"/>
+      <text x="${lastX}" y="${lastY + 4.5}" font-size="10.5" font-weight="700" fill="#fff" text-anchor="middle">${t.initials}</text>
     `;
   });
 
   svg += `</svg>`;
-  panel.innerHTML += `<div style="overflow-x:auto;">${svg}</div>`;
+  panel.innerHTML += `<div style="overflow-x:auto;padding:6px 4px 2px;">${svg}</div>`;
   panel.innerHTML += `<p style="font-size:10.5px;color:var(--chalk-dim);margin:8px 0 0;">Rank 1 at top. Reconstructed from match results - may not exactly match the platform's own tiebreaker rules in rare cases.</p>`;
   return panel;
 }
