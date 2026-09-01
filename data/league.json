@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T08:17:13.141015+00:00",
+  "generated_at": "2026-09-01T10:11:21.260496+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -26,7 +26,7 @@
       "team_name": "H\u00f6chengladbach",
       "manager_name": "Will Hocking",
       "score": 30,
-      "api_score": 29
+      "api_score": 30
     },
     "finished": true,
     "started": true,
@@ -45,7 +45,7 @@
       "drawn": 0,
       "lost": 0,
       "points_for": 109,
-      "points_against": 61,
+      "points_against": 62,
       "total": 6,
       "event_total": 0,
       "current_gw_score": 57,
@@ -66,8 +66,8 @@
       "won": 2,
       "drawn": 0,
       "lost": 0,
-      "points_for": 101,
-      "points_against": 64,
+      "points_for": 103,
+      "points_against": 81,
       "total": 6,
       "event_total": 0,
       "current_gw_score": 51,
@@ -89,7 +89,7 @@
       "drawn": 0,
       "lost": 1,
       "points_for": 104,
-      "points_against": 95,
+      "points_against": 100,
       "total": 3,
       "event_total": 0,
       "current_gw_score": 53,
@@ -110,7 +110,7 @@
       "won": 1,
       "drawn": 0,
       "lost": 1,
-      "points_for": 84,
+      "points_for": 89,
       "points_against": 84,
       "total": 3,
       "event_total": 0,
@@ -133,7 +133,7 @@
       "drawn": 0,
       "lost": 1,
       "points_for": 83,
-      "points_against": 90,
+      "points_against": 91,
       "total": 3,
       "event_total": 0,
       "current_gw_score": 51,
@@ -154,7 +154,7 @@
       "won": 1,
       "drawn": 0,
       "lost": 1,
-      "points_for": 79,
+      "points_for": 80,
       "points_against": 77,
       "total": 3,
       "event_total": 0,
@@ -176,7 +176,7 @@
       "won": 0,
       "drawn": 0,
       "lost": 2,
-      "points_for": 60,
+      "points_for": 61,
       "points_against": 98,
       "total": 0,
       "event_total": 0,
@@ -198,8 +198,8 @@
       "won": 0,
       "drawn": 0,
       "lost": 2,
-      "points_for": 39,
-      "points_against": 90,
+      "points_for": 56,
+      "points_against": 92,
       "total": 0,
       "event_total": 0,
       "current_gw_score": 30,
@@ -7365,7 +7365,7 @@
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
           "score": 30,
-          "api_score": 29
+          "api_score": 30
         },
         "finished": true,
         "started": true,
@@ -9149,7 +9149,7 @@
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 48,
-          "api_score": 43
+          "api_score": 48
         },
         "away": {
           "league_entry_id": 226052,
@@ -10928,14 +10928,14 @@
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 51,
-          "api_score": 49
+          "api_score": 51
         },
         "away": {
           "league_entry_id": 183812,
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 30,
-          "api_score": 13
+          "api_score": 30
         },
         "finished": true,
         "started": true,
@@ -12721,7 +12721,7 @@
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 39,
-          "api_score": 38
+          "api_score": 39
         },
         "away": {
           "league_entry_id": 31110,
@@ -24241,44 +24241,44 @@
         "name": "H\u00f6chengladbach",
         "weekly": [
           31,
-          29
+          30
         ],
         "cumulative": [
           31,
-          60
+          61
         ]
       },
       "27141": {
         "name": "Hakuna Mateta",
         "weekly": [
           41,
-          43
+          48
         ],
         "cumulative": [
           41,
-          84
+          89
         ]
       },
       "27143": {
         "name": "Eki-Tiki",
         "weekly": [
           52,
-          49
+          51
         ],
         "cumulative": [
           52,
-          101
+          103
         ]
       },
       "27145": {
         "name": ":)",
         "weekly": [
           41,
-          38
+          39
         ],
         "cumulative": [
           41,
-          79
+          80
         ]
       },
       "31110": {
@@ -24296,11 +24296,11 @@
         "name": "Clean Machine FC",
         "weekly": [
           26,
-          13
+          30
         ],
         "cumulative": [
           26,
-          39
+          56
         ]
       },
       "226052": {
@@ -24504,7 +24504,7 @@
       },
       {
         "league_entry_id": 27141,
-        "points": 43,
+        "points": 48,
         "event": 2,
         "team_name": "Hakuna Mateta",
         "manager_name": "Ben Scotti"
@@ -24525,8 +24525,8 @@
       },
       {
         "league_entry_id": 183812,
-        "points": 26,
-        "event": 1,
+        "points": 30,
+        "event": 2,
         "team_name": "Clean Machine FC",
         "manager_name": "Nick Poole"
       }
