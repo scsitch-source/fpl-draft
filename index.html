@@ -181,7 +181,7 @@
   .standing-main{
     display:flex;align-items:center;gap:8px;padding:10px 8px;
   }
-  .standing-main .rank{width:auto;flex-shrink:0;font-size:13px;}
+  .standing-main .rank{width:38px;flex-shrink:0;font-size:13px;}
   .rank-change{
     display:inline-block;margin-left:3px;font-size:9px;font-weight:700;
     vertical-align:middle;
@@ -216,7 +216,7 @@
     font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--chalk-dim);
     border-bottom:1px solid var(--line);margin-bottom:2px;
   }
-  .standing-header span:first-child{width:26px;flex-shrink:0;}
+  .standing-header span:first-child{width:38px;flex-shrink:0;}
   .standing-header span:nth-child(2){flex:1;}
   .standing-header span:nth-child(3){width:48px;text-align:right;flex-shrink:0;}
   .standing-header span:nth-child(4){width:76px;text-align:right;flex-shrink:0;}
@@ -224,6 +224,8 @@
   @media (max-width:420px){
     .standing-record{width:40px;font-size:11px;}
     .standing-pf{width:64px;font-size:11px;}
+    .standing-header span:nth-child(3){width:40px;}
+    .standing-header span:nth-child(4){width:64px;}
   }
   .num{
     font-variant-numeric:tabular-nums;
@@ -654,6 +656,16 @@
     display:inline-block;cursor:default;
   }
   .receipt-fixture{margin:10px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .player-stat-boxes{margin:10px 0;}
+  .season-pts-box{
+    background:var(--ink);border-radius:10px;padding:8px;text-align:center;margin-bottom:6px;
+  }
+  .season-pts-box .stat-box-value{font-size:22px;}
+  .player-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+  .player-stat-box{background:var(--ink);border-radius:10px;padding:8px 4px;text-align:center;}
+  .stat-box-value{font-family:'Manrope';font-weight:800;font-size:17px;color:var(--chalk);}
+  .stat-box-label{font-size:9.5px;color:var(--chalk-dim);margin-top:2px;}
+  .stat-box-rank{font-size:9.5px;font-weight:700;margin-top:3px;}
   .receipt-fixture-row{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12.5px;color:var(--chalk-dim);font-weight:700;}
   .receipt-fixture-row strong{color:var(--chalk);font-size:14px;}
   .receipt-lines{display:flex;flex-direction:column;gap:6px;}
@@ -860,7 +872,11 @@ function render(data){
   document.getElementById('league-name').textContent = data.league.name || 'Draft League';
   document.getElementById('scoring-format').textContent =
     data.league.scoring === 'c' ? 'Classic scoring draft league' : 'Head-to-head draft league';
-  document.getElementById('gw-value').textContent = data.current_event ? 'GW ' + data.current_event : '–';
+  // Once the current gameweek is finished, the countdown/deadline below is
+  // actually for the NEXT gameweek - the label needs to match that, or it
+  // reads as "GW2" while counting down to a date that's really GW3's.
+  const headerGw = (data.current_event_finished && data.next_event) ? data.next_event : data.current_event;
+  document.getElementById('gw-value').textContent = headerGw ? 'GW ' + headerGw : '–';
   document.getElementById('gw-sub').textContent = data.next_deadline
     ? formatMelbourne(data.next_deadline)
     : '';
@@ -1433,6 +1449,10 @@ function playerDataAttr(p){
     subbed_in: p.subbed_in, subbed_out: p.subbed_out, club: p.club, opponents: p.opponents,
     acquisition: findAcquisitionInfo(p.name),
     badges: p.badges, form: p.form,
+    season_points: p.season_points, position_ranks: p.position_ranks,
+    season_goals: p.season_goals, season_assists: p.season_assists,
+    season_clean_sheets: p.season_clean_sheets, season_bonus: p.season_bonus,
+    season_defcon: p.season_defcon,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -1514,6 +1534,49 @@ function buildFormHTML(p){
   `;
 }
 
+function ordinal(n){
+  const s = ((n % 100) >= 11 && (n % 100) <= 13) ? 'th' : (['th','st','nd','rd'][n % 10] || 'th');
+  return n + s;
+}
+
+function statBox(label, value, rank){
+  const rankHtml = rank != null
+    ? `<div class="stat-box-rank" style="color:${rank <= 3 ? 'var(--amber)' : 'var(--chalk-dim)'};">${ordinal(rank)} in position</div>`
+    : '';
+  return `
+    <div class="player-stat-box">
+      <div class="stat-box-value">${value}</div>
+      <div class="stat-box-label">${label}</div>
+      ${rankHtml}
+    </div>
+  `;
+}
+
+function buildStatBoxesHTML(p){
+  const pr = p.position_ranks || {};
+  const isDefGk = p.position === 'DEF' || p.position === 'GKP';
+  const positionRow = isDefGk
+    ? [
+        statBox('Clean sheets', p.season_clean_sheets ?? 0, pr.clean_sheets),
+        statBox('G+A', (p.season_goals ?? 0) + (p.season_assists ?? 0), pr.ga),
+        statBox('Def con', p.season_defcon ?? 0, pr.defcon),
+      ]
+    : [
+        statBox('Goals', p.season_goals ?? 0, pr.goals),
+        statBox('Assists', p.season_assists ?? 0, pr.assists),
+        statBox('Bonus', p.season_bonus ?? 0, pr.bonus),
+      ];
+  return `
+    <div class="player-stat-boxes">
+      <div class="season-pts-box">
+        <div class="stat-box-value">${p.season_points ?? 0}</div>
+        <div class="stat-box-label">Season points</div>
+      </div>
+      <div class="player-stat-row">${positionRow.join('')}</div>
+    </div>
+  `;
+}
+
 function buildAcquisitionHTML(p){
   const a = p.acquisition;
   if(!a) return '';
@@ -1552,11 +1615,12 @@ function showPlayerReceipt(p){
         <img class="receipt-photo-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
       </div>
       <div class="receipt-header">
-        <div class="receipt-name">${p.name}${capLabel}${buildBadgesHTML(p)}</div>
+        <div class="receipt-name">${p.name}${capLabel}</div>
         <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
         ${buildAcquisitionHTML(p)}
         ${buildFormHTML(p)}
       </div>
+      ${buildStatBoxesHTML(p)}
       ${buildFixtureResultHTML(p)}
       <div class="receipt-lines">
         ${lines.map(([label, pts]) => `

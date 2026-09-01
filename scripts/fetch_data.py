@@ -273,6 +273,11 @@ def build():
             "club": club_short,
             "club_id": el.get("team"),
             "season_points": el.get("total_points", 0),
+            "season_goals": el.get("goals_scored", 0) or 0,
+            "season_assists": el.get("assists", 0) or 0,
+            "season_clean_sheets": el.get("clean_sheets", 0) or 0,
+            "season_bonus": el.get("bonus", 0) or 0,
+            "season_defcon": el.get("defensive_contribution", 0) or 0,
             "photo_url": f"{PLAYER_PHOTO_BASE}/{code}.png" if code else None,
             "shirt_color": CLUB_SHIRT_COLORS.get(club_short, DEFAULT_SHIRT_COLOR),
             "initials": player_initials(el.get("web_name", "?")),
@@ -313,6 +318,41 @@ def build():
             cutoff = valued[min(3, len(valued)) - 1][0]
             best_by_position_ids[pos_label] = {eid for val, eid in valued if val >= cutoff}
 
+    def _position_rank_map(pos_players_list, stat_key, combine_keys=None):
+        """Standard competition ranking (ties share a rank, e.g. 1,1,3) of
+        every player in this position group by a given season-aggregate
+        stat, or the sum of two stats if combine_keys is given (used for
+        defenders/keepers' combined goals+assists)."""
+        def _val(el):
+            if combine_keys:
+                return sum(el.get(k) or 0 for k in combine_keys)
+            return el.get(stat_key) or 0
+        ranked = sorted(pos_players_list, key=lambda el: -_val(el))
+        ranks, prev_val, prev_rank = {}, None, 0
+        for i, el in enumerate(ranked, start=1):
+            v = _val(el)
+            if v != prev_val:
+                prev_rank = i
+                prev_val = v
+            ranks[el.get("id")] = prev_rank
+        return ranks
+
+    position_ranks = {}  # element id -> {"goals":, "assists":, "bonus":, "clean_sheets":, "ga":, "defcon":}
+    for pos_code, pos_label in pos_by_type.items():
+        pos_players = [el for el in real_players if el.get("element_type") == pos_code]
+        goals_r = _position_rank_map(pos_players, "goals_scored")
+        assists_r = _position_rank_map(pos_players, "assists")
+        bonus_r = _position_rank_map(pos_players, "bonus")
+        cs_r = _position_rank_map(pos_players, "clean_sheets")
+        ga_r = _position_rank_map(pos_players, "goals_scored", combine_keys=["goals_scored", "assists"])
+        defcon_r = _position_rank_map(pos_players, "defensive_contribution")
+        for el in pos_players:
+            eid = el.get("id")
+            position_ranks[eid] = {
+                "goals": goals_r.get(eid), "assists": assists_r.get(eid), "bonus": bonus_r.get(eid),
+                "clean_sheets": cs_r.get(eid), "ga": ga_r.get(eid), "defcon": defcon_r.get(eid),
+            }
+
     for el in real_players:
         eid = el.get("id")
         badges = []
@@ -327,6 +367,7 @@ def build():
             badges.append({"code": f"best_{pos_label.lower()}", "label": f"Top 3 {pos_label}", "icon": "\u2b50"})
         if eid in player_by_id:
             player_by_id[eid]["badges"] = badges
+            player_by_id[eid]["position_ranks"] = position_ranks.get(eid, {})
 
 
     # Used to gate auto-subs: a player only gets auto-subbed once their own
@@ -800,7 +841,13 @@ def build():
                 "shirt_color": info.get("shirt_color", "#6B7280"),
                 "initials": info.get("initials", "?"),
                 "season_points": info.get("season_points", 0),
+                "season_goals": info.get("season_goals", 0),
+                "season_assists": info.get("season_assists", 0),
+                "season_clean_sheets": info.get("season_clean_sheets", 0),
+                "season_bonus": info.get("season_bonus", 0),
+                "season_defcon": info.get("season_defcon", 0),
                 "badges": info.get("badges", []),
+                "position_ranks": info.get("position_ranks", {}),
                 "form": [live_stats_for_event(fev).get(el_id, {"points": 0}).get("points", 0) for fev in form_events],
                 "is_captain": bool(pick.get("is_captain")),
                 "is_vice_captain": bool(pick.get("is_vice_captain")),
@@ -880,7 +927,9 @@ def build():
         REQUIRED_KEYS = {
             "photo_url", "shirt_color", "initials", "opponents",
             "season_points", "badges", "form", "xg", "xa", "xgi",
-            "saves", "own_goals", "goals_conceded",
+            "saves", "own_goals", "goals_conceded", "position_ranks",
+            "season_goals", "season_assists", "season_clean_sheets",
+            "season_bonus", "season_defcon",
         }
         found_signal = False
         for squad in squads_dict.values():
