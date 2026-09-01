@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:14:44.215337+00:00",
+  "generated_at": "2026-09-01T14:11:16.439515+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19751,8 +19751,8 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "FUL",
-                    "is_home": false,
+                    "opponent": "TOT",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false
@@ -25284,7 +25284,7 @@
       "manager_name": "",
       "player_name": "Mu\u00f1oz",
       "position": "DEF",
-      "club": "CRY",
+      "club": "NFO",
       "season_points": 0
     },
     {
