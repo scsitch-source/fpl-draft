@@ -329,6 +329,19 @@
     display:inline-block;background:var(--ink);color:var(--amber);font-weight:800;
     border-radius:6px;padding:1px 7px;margin-left:4px;font-size:12px;
   }
+  .swap-toggle-row{text-align:center;margin-bottom:10px;}
+  .swap-wrapper{position:relative;padding-top:16px;}
+  .swap-arrow-btn{
+    position:absolute;top:-2px;left:50%;transform:translateX(-50%);z-index:3;
+    width:20px;height:20px;border-radius:50%;background:var(--card);border:1px solid var(--line);
+    color:var(--chalk);font-size:11px;line-height:1;cursor:pointer;padding:0;
+  }
+  .swap-wrapper.selected .swap-arrow-btn{background:var(--amber);border-color:var(--amber);color:#fff;}
+  .swap-wrapper.selected .field-photo{box-shadow:0 0 0 2px var(--amber);border-radius:8px;}
+  .swap-error{
+    font-size:11.5px;color:var(--loss);text-align:center;margin:8px 0 0;
+    background:rgba(224,72,72,0.1);border-radius:8px;padding:6px 10px;
+  }
   .pitch{
     position:relative;overflow:hidden;aspect-ratio:1/1.35;
     background:
@@ -964,6 +977,8 @@ function render(data){
       const wrap = document.createElement('div');
       const currentFixturePanel = buildCurrentFixturePanel(data, myId);
       if(currentFixturePanel) wrap.appendChild(currentFixturePanel);
+      const nextFixturePreviewPanel = buildNextFixturePreviewPanel(data, myId);
+      if(nextFixturePreviewPanel) wrap.appendChild(nextFixturePreviewPanel);
       const grid = document.createElement('div');
       grid.className = 'grid';
       grid.appendChild(buildStandingsPanel(data, myId));
@@ -1081,6 +1096,145 @@ function buildCurrentFixturePanel(data, myId){
   card.style.padding = '0';
   panel.appendChild(card);
   return panel;
+}
+
+function buildNextFixturePreviewPanel(data, myId){
+  if(myId == null || !data.next_event) return null;
+  const fixtures = data.fixtures_by_event[String(data.next_event)] || [];
+  const f = fixtures.find(fx =>
+    String(fx.home.league_entry_id) === String(myId) || String(fx.away.league_entry_id) === String(myId));
+  if(!f || !f.preview_squads) return null;
+
+  const panel = document.createElement('div');
+  panel.className = 'panel';
+  panel.style.marginBottom = '16px';
+  panel.innerHTML = `
+    <h2><span class="dot"></span>Next up: GW${data.next_event}</h2>
+    <p style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;">
+      Preview based on each team's most recently rostered squad - picks for this gameweek aren't in yet.
+    </p>
+    <div class="swap-toggle-row">
+      <button class="expand-btn" id="swap-mode-toggle">Try a different lineup</button>
+    </div>
+    <div class="view-mode-normal"></div>
+    <div class="view-mode-swap" style="display:none;"></div>
+  `;
+
+  const normalWrap = panel.querySelector('.view-mode-normal');
+  const swapWrap = panel.querySelector('.view-mode-swap');
+  const toggleBtn = panel.querySelector('#swap-mode-toggle');
+
+  // fixtureCard reads from f.squads - preview_squads is deliberately a
+  // separate key upstream so it's never mistaken for a real fetched squad,
+  // so just map it across for display purposes here.
+  const displayFixture = { ...f, squads: f.preview_squads };
+  const card = fixtureCard(displayFixture, false);
+  card.style.background = 'transparent';
+  card.style.border = 'none';
+  card.style.padding = '0';
+  normalWrap.appendChild(card);
+
+  const myOriginalSquad = f.preview_squads[String(myId)];
+  buildSwapLineupEditor(swapWrap, myOriginalSquad);
+
+  toggleBtn.addEventListener('click', () => {
+    const showingSwap = swapWrap.style.display !== 'none';
+    swapWrap.style.display = showingSwap ? 'none' : 'block';
+    normalWrap.style.display = showingSwap ? 'block' : 'none';
+    toggleBtn.textContent = showingSwap ? 'Try a different lineup' : 'Back to actual preview';
+  });
+
+  return panel;
+}
+
+function formationIsValid(startingList){
+  const counts = { GKP: 0, DEF: 0, MID: 0, FWD: 0 };
+  startingList.forEach(p => { counts[p.position] = (counts[p.position] || 0) + 1; });
+  return startingList.length === 11 && counts.GKP === 1 && counts.DEF >= 3 && counts.MID >= 2 && counts.FWD >= 1;
+}
+
+function buildSwapLineupEditor(container, originalSquad){
+  if(!originalSquad) return;
+  let currentStarting = originalSquad.starting.map(p => ({ ...p }));
+  let currentBench = originalSquad.bench.map(p => ({ ...p }));
+  let selected = null; // { source: 'starting'|'bench', index }
+  let errorMsg = '';
+
+  function swapWrapper(p, source, index){
+    const isSelected = selected && selected.source === source && selected.index === index;
+    return `
+      <div class="swap-wrapper ${isSelected ? 'selected' : ''}" data-source="${source}" data-index="${index}">
+        <button class="swap-arrow-btn" title="${isSelected ? 'Cancel' : 'Select to swap'}">${isSelected ? '&#10005;' : '&#8645;'}</button>
+        ${fieldPlayerCard(p)}
+      </div>
+    `;
+  }
+
+  function render(){
+    const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
+    currentStarting.forEach((p, i) => { (rows[p.position] || rows.MID).push(swapWrapper(p, 'starting', i)); });
+    container.innerHTML = `
+      <div class="pitch-col" style="max-width:360px;margin:0 auto;">
+        <div class="pitch">
+          ${PITCH_LINES_SVG}
+          <div class="pitch-rows">
+            ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
+              ? `<div class="pitch-row">${rows[pos].join('')}</div>` : '').join('')}
+          </div>
+        </div>
+        <div class="squad-bench-label">Bench</div>
+        <div class="pitch-bench-row">
+          ${currentBench.map((p, i) => swapWrapper(p, 'bench', i)).join('')}
+        </div>
+      </div>
+      ${errorMsg ? `<p class="swap-error">${errorMsg}</p>` : ''}
+      <button class="expand-btn" id="swap-reset-btn" style="display:block;margin:10px auto 0;">Reset to actual lineup</button>
+    `;
+    container.querySelectorAll('.swap-arrow-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const wrap = btn.closest('.swap-wrapper');
+        handleSelect(wrap.dataset.source, Number(wrap.dataset.index));
+      });
+    });
+    container.querySelector('#swap-reset-btn').addEventListener('click', () => {
+      currentStarting = originalSquad.starting.map(p => ({ ...p }));
+      currentBench = originalSquad.bench.map(p => ({ ...p }));
+      selected = null;
+      errorMsg = '';
+      render();
+    });
+  }
+
+  function handleSelect(source, index){
+    errorMsg = '';
+    if(!selected){
+      selected = { source, index };
+    }else if(selected.source === source && selected.index === index){
+      selected = null; // clicked the same player again - cancel
+    }else if(selected.source === source){
+      selected = { source, index }; // both from the same group - just re-select this one
+    }else{
+      // One from starting, one from bench - attempt the actual swap.
+      const startingIdx = source === 'starting' ? index : selected.index;
+      const benchIdx = source === 'bench' ? index : selected.index;
+      const newStarting = [...currentStarting];
+      const newBench = [...currentBench];
+      const temp = newStarting[startingIdx];
+      newStarting[startingIdx] = newBench[benchIdx];
+      newBench[benchIdx] = temp;
+      if(formationIsValid(newStarting)){
+        currentStarting = newStarting;
+        currentBench = newBench;
+      }else{
+        errorMsg = "That swap would break the formation - needs at least 3 DEF, 2 MID and 1 FWD.";
+      }
+      selected = null;
+    }
+    render();
+  }
+
+  render();
 }
 
 function buildStandingsPanel(data, myId){

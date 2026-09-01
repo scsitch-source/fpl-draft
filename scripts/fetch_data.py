@@ -1023,6 +1023,50 @@ def build():
             for le_id_str, squad in (f.get("squads") or {}).items():
                 latest_squads[le_id_str] = squad
 
+    # ---------------- Next gameweek preview ----------------
+    # Picks for a future gameweek don't exist yet, so there's no real squad
+    # to show. As a preview, reuse each team's most recently rolled-out
+    # roster and recompute every player's real-life opponent for the
+    # UPCOMING gameweek instead of the one that roster actually played -
+    # letting someone see roughly how their next matchup shapes up before
+    # it starts. All scoring fields reset to zero/not-played, since nothing
+    # has happened yet.
+    _name_to_player_info = {info.get("name"): info for info in player_by_id.values() if info.get("name")}
+
+    def _preview_row(row):
+        info = _name_to_player_info.get(row.get("name"), {})
+        club_id = info.get("club_id")
+        preview = dict(row)
+        preview.update({
+            "minutes": 0, "points": 0, "base_points": 0, "goals": 0, "assists": 0,
+            "clean_sheet": False, "defensive_contribution": False, "defensive_contribution_count": 0,
+            "bonus": 0, "yellow_card": False, "red_card": False, "own_goals": 0,
+            "goals_conceded": 0, "saves": 0, "xg": 0.0, "xa": 0.0, "xgi": 0.0,
+            "match_finished": False, "subbed_in": False, "subbed_out": False,
+            "opponents": club_opponent_by_event.get(next_event, {}).get(club_id, []) if next_event is not None else [],
+        })
+        return preview
+
+    if next_event is not None and str(next_event) in fixtures_by_event:
+        for f in fixtures_by_event[str(next_event)]:
+            if f.get("squads"):
+                continue  # a real squad already exists (shouldn't happen for a future GW, but just in case)
+            preview_squads = {}
+            for side in ("home", "away"):
+                le_id_str = str(f[side]["league_entry_id"])
+                base_squad = latest_squads.get(le_id_str)
+                if not base_squad:
+                    continue
+                preview_squads[le_id_str] = {
+                    "starting": [_preview_row(p) for p in base_squad.get("starting", [])],
+                    "bench": [_preview_row(p) for p in base_squad.get("bench", [])],
+                    "played_count": 0,
+                    "squad_size": len(base_squad.get("starting", [])) + len(base_squad.get("bench", [])),
+                }
+            if preview_squads:
+                f["preview_squads"] = preview_squads
+                f["is_preview"] = True
+
     # ---------------- Team of the season ----------------
     # Best real-world XI across the WHOLE Premier League (not just players
     # drafted here), using season-long points. Squad of 15 (2 GKP, 5 DEF,
