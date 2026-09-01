@@ -1139,6 +1139,14 @@ def build():
             target = tos_bench if el.get("id") in dropped_ids else tos_starting
             target.append(_tos_player(el, pos_label))
 
+    # Mark the two highest season-points scorers in the STARTING XI (fun
+    # "who'd you captain" touch, not a real fantasy captaincy) as C and VC.
+    ranked_starting = sorted(tos_starting, key=lambda p: -(p.get("season_points") or 0))
+    if len(ranked_starting) > 0:
+        ranked_starting[0]["is_captain"] = True
+    if len(ranked_starting) > 1:
+        ranked_starting[1]["is_vice_captain"] = True
+
     team_of_season = {"starting": tos_starting, "bench": tos_bench}
 
     # Top scorers league-wide (overall, and per position for the tabs),

@@ -383,16 +383,16 @@
     width:100%;box-sizing:border-box;
   }
   .field-name{
-    color:#fff;font-size:8.5px;font-weight:700;line-height:1.2;
-    word-break:break-word;overflow-wrap:break-word;
+    color:#fff;font-size:8px;font-weight:700;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;max-width:100%;
   }
   .field-pts{
     color:#5DCAA5;font-size:11px;font-weight:800;font-family:'Manrope';
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
   }
   .field-owner{
-    color:rgba(255,255,255,0.7);font-size:7.5px;font-weight:600;margin-top:1px;line-height:1.2;
-    word-break:break-word;overflow-wrap:break-word;
+    color:rgba(255,255,255,0.7);font-size:7px;font-weight:600;margin-top:1px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
   }
   .fixture-card{
     background:var(--ink);border:1px solid var(--line);border-radius:12px;
@@ -659,6 +659,12 @@
     font-size:11px;font-weight:700;padding:5px 12px;border-radius:14px;cursor:pointer;
   }
   .top-scorers-tab-btn.active{background:var(--win);border-color:var(--win);color:#fff;}
+  .tos-layout{display:grid;grid-template-columns:1fr;gap:8px;}
+  .tos-scorers-col{width:100%;}
+  @media (min-width:820px){
+    .tos-layout{grid-template-columns:1fr 1fr;align-items:start;gap:24px;}
+    .tos-scorers-col{max-width:400px;}
+  }
   .top-scorers-list{display:flex;flex-direction:column;gap:5px;max-width:360px;margin:0 auto;}
   .top-scorer-row{
     display:flex;align-items:center;gap:8px;background:var(--ink);border-radius:8px;
@@ -677,8 +683,8 @@
   }
   .top-scorer-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
   .top-scorer-info{flex:1;min-width:0;}
-  .top-scorer-name{font-size:12px;font-weight:700;color:var(--chalk);line-height:1.25;word-break:break-word;overflow-wrap:break-word;}
-  .top-scorer-owner{font-size:9.5px;color:var(--chalk-dim);line-height:1.25;word-break:break-word;overflow-wrap:break-word;}
+  .top-scorer-name{font-size:12px;font-weight:700;color:var(--chalk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .top-scorer-owner{font-size:9.5px;color:var(--chalk-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .top-scorer-pts{font-family:'Manrope';font-weight:800;font-size:14px;color:var(--amber);flex-shrink:0;}
   .receipt-pick-badge.silver{background:#C4C9D2;color:#2B2E33;}
   .receipt-pick-badge.bronze{background:#B8814F;color:#3A2410;}
@@ -1198,6 +1204,7 @@ function buildStandingsPanel(data, myId){
 
 function seasonPlayerCard(p){
   const ownerLabel = p.owner_team_name || 'Free agent';
+  const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
   return `
     <div class="field-player" title="${p.name} - ${p.season_points} season pts - tap for GW details" ${playerDataAttr(p)}>
       <div class="field-photo">
@@ -1205,6 +1212,7 @@ function seasonPlayerCard(p){
           ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
           : ''}
         <img class="field-jersey-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
+        ${capTag}
       </div>
       <div class="field-pill">
         <div class="field-name">${p.name}</div>
@@ -1229,21 +1237,25 @@ function buildTeamOfSeasonPanel(data){
   panel.innerHTML = `
     <h2><span class="dot"></span>Team of the season</h2>
     <p style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;">Best real XI in the Premier League right now, by season points.</p>
-    <div class="pitch-col" style="max-width:360px;margin:0 auto;">
-      <div class="pitch">
-        ${PITCH_LINES_SVG}
-        <div class="pitch-rows">
-          ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
-            ? `<div class="pitch-row">${rows[pos].map(seasonPlayerCard).join('')}</div>` : '').join('')}
+    <div class="tos-layout">
+      <div class="pitch-col" style="max-width:360px;margin:0 auto;">
+        <div class="pitch">
+          ${PITCH_LINES_SVG}
+          <div class="pitch-rows">
+            ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
+              ? `<div class="pitch-row">${rows[pos].map(seasonPlayerCard).join('')}</div>` : '').join('')}
+          </div>
         </div>
+        ${tos.bench.length ? `
+          <div class="squad-bench-label">Bench</div>
+          <div class="pitch-bench-row">${tos.bench.map(seasonPlayerCard).join('')}</div>
+        ` : ''}
       </div>
-      ${tos.bench.length ? `
-        <div class="squad-bench-label">Bench</div>
-        <div class="pitch-bench-row">${tos.bench.map(seasonPlayerCard).join('')}</div>
-      ` : ''}
+      <div class="tos-scorers-col">
+        <div class="top-scorers-tabs"></div>
+        <div class="top-scorers-list"></div>
+      </div>
     </div>
-    <div class="top-scorers-tabs"></div>
-    <div class="top-scorers-list"></div>
   `;
 
   const scorersByTab = data.top_scorers || {};
@@ -1261,7 +1273,7 @@ function buildTeamOfSeasonPanel(data){
   }
 
   tabsWrap.innerHTML = `
-    <div class="top-scorers-label">Top ${TOP_SCORERS_DISPLAY_N} points scorers</div>
+    <div class="top-scorers-label">Top scorers</div>
     <div class="top-scorers-tab-row">
       ${tabDefs.map(t => `<button class="top-scorers-tab-btn" data-tab="${t.id}">${t.label}</button>`).join('')}
     </div>
