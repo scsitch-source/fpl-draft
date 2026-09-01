@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T05:16:18.231956+00:00",
+  "generated_at": "2026-09-01T05:46:02.155589+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19271,6 +19271,128 @@
       }
     ]
   },
+  "top_scorers": [
+    {
+      "rank": 1,
+      "name": "B.Fernandes",
+      "points": 25,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/141746.png",
+      "shirt_color": "#DA291C",
+      "owner_team_name": "Hakuna Mateta"
+    },
+    {
+      "rank": 2,
+      "name": "Cherki",
+      "points": 22,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466052.png",
+      "shirt_color": "#6CABDD",
+      "owner_team_name": "PFC"
+    },
+    {
+      "rank": 3,
+      "name": "Calafiori",
+      "points": 20,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466075.png",
+      "shirt_color": "#EF0107",
+      "owner_team_name": "I am chucky kirkez"
+    },
+    {
+      "rank": 4,
+      "name": "Saka",
+      "points": 20,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/223340.png",
+      "shirt_color": "#EF0107",
+      "owner_team_name": ":)"
+    },
+    {
+      "rank": 5,
+      "name": "Palmer",
+      "points": 20,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/244851.png",
+      "shirt_color": "#034694",
+      "owner_team_name": "H\u00f6chengladbach"
+    },
+    {
+      "rank": 6,
+      "name": "Jo\u00e3o Pedro",
+      "points": 20,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/475168.png",
+      "shirt_color": "#034694",
+      "owner_team_name": "FC Strup"
+    },
+    {
+      "rank": 7,
+      "name": "Ajayi",
+      "points": 20,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/146426.png",
+      "shirt_color": "#6B7280",
+      "owner_team_name": null
+    },
+    {
+      "rank": 8,
+      "name": "Tzolakis",
+      "points": 20,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/473284.png",
+      "shirt_color": "#6B7280",
+      "owner_team_name": null
+    },
+    {
+      "rank": 9,
+      "name": "White",
+      "points": 18,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/198869.png",
+      "shirt_color": "#EF0107",
+      "owner_team_name": "FC Strup"
+    },
+    {
+      "rank": 10,
+      "name": "Tarkowski",
+      "points": 18,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/17761.png",
+      "shirt_color": "#003399",
+      "owner_team_name": "Eki-Tiki"
+    },
+    {
+      "rank": 11,
+      "name": "M.Sangar\u00e9",
+      "points": 18,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/513545.png",
+      "shirt_color": "#FFDB00",
+      "owner_team_name": "Clean Machine FC"
+    },
+    {
+      "rank": 12,
+      "name": "De Cuyper",
+      "points": 17,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/465730.png",
+      "shirt_color": "#0057B8",
+      "owner_team_name": "I am chucky kirkez"
+    },
+    {
+      "rank": 13,
+      "name": "Egan",
+      "points": 17,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/108416.png",
+      "shirt_color": "#6B7280",
+      "owner_team_name": null
+    },
+    {
+      "rank": 14,
+      "name": "Stach",
+      "points": 17,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/466525.png",
+      "shirt_color": "#FFCD00",
+      "owner_team_name": ":)"
+    },
+    {
+      "rank": 15,
+      "name": "Gakpo",
+      "points": 17,
+      "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/243298.png",
+      "shirt_color": "#C8102E",
+      "owner_team_name": "PFC"
+    }
+  ],
   "latest_squads": {
     "27139": {
       "starting": [
