@@ -675,10 +675,10 @@
   }
   .top-scorers-tab-row{display:flex;justify-content:center;gap:6px;margin-bottom:10px;flex-wrap:wrap;}
   .players-search{
-    width:100%;box-sizing:border-box;background:var(--ink);border:1px solid var(--line);
-    color:var(--chalk);font-size:14px;padding:10px 14px;border-radius:20px;margin:4px 0 12px;
+    width:100%;box-sizing:border-box;background:#fff;border:2px solid var(--win);
+    color:#16152B;font-size:14px;padding:10px 14px;border-radius:20px;margin:4px 0 12px;
   }
-  .players-search::placeholder{color:var(--chalk-dim);}
+  .players-search::placeholder{color:#8A8A9A;}
   .players-toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
   .players-pos-tabs{display:flex;gap:6px;flex-wrap:wrap;}
   .players-pos-btn{
@@ -701,8 +701,8 @@
   .squad-available-col{background:var(--ink);border-radius:12px;padding:12px;}
   .squad-available-search{margin:4px 0 8px;}
   .squad-available-pos-select{
-    width:100%;box-sizing:border-box;background:var(--card);border:1px solid var(--line);
-    color:var(--chalk);font-size:13px;padding:8px 10px;border-radius:10px;margin-bottom:10px;
+    width:100%;box-sizing:border-box;background:var(--ink);border:1px solid var(--line);
+    color:var(--chalk-dim);font-size:13px;padding:8px 10px;border-radius:10px;margin-bottom:10px;
   }
   .squad-available-list{display:flex;flex-direction:column;gap:5px;max-height:520px;overflow-y:auto;}
   .available-player-row{
@@ -1865,11 +1865,13 @@ function buildStandingsPanel(data, myId){
   return panel;
 }
 
-function seasonPlayerCard(p){
+function seasonPlayerCard(p, pointsField){
+  pointsField = pointsField || 'season_points';
   const ownerLabel = p.owner_team_name || 'Free agent';
   const capTag = p.is_captain ? '<span class="field-cap">C</span>' : (p.is_vice_captain ? '<span class="field-cap vc">VC</span>' : '');
+  const displayPts = pointsField === 'points' ? (p.points ?? 0) : (p.season_points ?? 0);
   return `
-    <div class="field-player" title="${p.name} - ${p.season_points} season pts - tap for GW details" ${playerDataAttr(p)}>
+    <div class="field-player" title="${p.name} - ${displayPts} pts - tap for GW details" ${playerDataAttr(p)}>
       <div class="field-photo">
         ${p.photo_url
           ? `<img src="${p.photo_url}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">`
@@ -1879,7 +1881,7 @@ function seasonPlayerCard(p){
       </div>
       <div class="field-pill">
         <div class="field-name">${p.name}</div>
-        <div class="field-pts">${p.season_points}</div>
+        <div class="field-pts">${displayPts}</div>
         <div class="field-owner">${ownerLabel}</div>
       </div>
     </div>
@@ -1896,11 +1898,11 @@ function buildTeamOfSeasonPanel(data){
   panel.style.marginBottom = '16px';
 
   panel.innerHTML = `
-    <h2><span class="dot"></span>Team of the <span id="tow-title-word">week</span></h2>
+    <h2><span class="dot"></span>Best XI</h2>
     <p id="tow-subtitle" style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;"></p>
     <div class="tow-tab-row">
-      <button class="tow-tab-btn active" data-scope="week">This week</button>
-      <button class="tow-tab-btn" data-scope="season">All season</button>
+      <button class="tow-tab-btn active" data-scope="week">Week</button>
+      <button class="tow-tab-btn" data-scope="season">The season</button>
     </div>
     <div class="tow-gw-row"></div>
     <div class="tos-layout">
@@ -1913,7 +1915,7 @@ function buildTeamOfSeasonPanel(data){
   `;
 
   const pitchWrap = panel.querySelector('.tow-pitch-wrap');
-  const titleWord = panel.querySelector('#tow-title-word');
+
   const subtitle = panel.querySelector('#tow-subtitle');
   const scopeBtns = panel.querySelectorAll('.tow-tab-btn');
   const gwRow = panel.querySelector('.tow-gw-row');
@@ -1925,10 +1927,10 @@ function buildTeamOfSeasonPanel(data){
   function renderGwPitch(){
     const xi = weekByGw[String(selectedWeekGw)];
     subtitle.textContent = `Best real XI in the Premier League for GW${selectedWeekGw ?? ''}, by points that gameweek.`;
-    renderPitch(xi);
+    renderPitch(xi, 'points');
   }
 
-  function renderPitch(xi){
+  function renderPitch(xi, pointsField){
     if(!xi || !xi.starting || !xi.starting.length){
       pitchWrap.innerHTML = `<p style="color:var(--chalk-dim);font-size:13px;text-align:center;">Not available yet.</p>`;
       return;
@@ -1941,12 +1943,12 @@ function buildTeamOfSeasonPanel(data){
           ${PITCH_LINES_SVG}
           <div class="pitch-rows">
             ${['GKP','DEF','MID','FWD'].map(pos => rows[pos].length
-              ? `<div class="pitch-row">${rows[pos].map(seasonPlayerCard).join('')}</div>` : '').join('')}
+              ? `<div class="pitch-row">${rows[pos].map(p => seasonPlayerCard(p, pointsField)).join('')}</div>` : '').join('')}
           </div>
         </div>
         ${xi.bench.length ? `
           <div class="squad-bench-label">Bench</div>
-          <div class="pitch-bench-row">${xi.bench.map(seasonPlayerCard).join('')}</div>
+          <div class="pitch-bench-row">${xi.bench.map(p => seasonPlayerCard(p, pointsField)).join('')}</div>
         ` : ''}
       </div>
     `;
@@ -1954,7 +1956,7 @@ function buildTeamOfSeasonPanel(data){
 
   function renderScope(scope){
     scopeBtns.forEach(b => b.classList.toggle('active', b.dataset.scope === scope));
-    titleWord.textContent = scope === 'week' ? 'the week' : 'the season';
+    // Heading is now a static "Best XI" - no title word to switch anymore.
     if(scope === 'week'){
       gwRow.innerHTML = availableWeeks.length > 1 ? `
         <div class="tow-gw-pills">
@@ -3048,6 +3050,10 @@ function fixtureCard(f, showGwLabel, expandLabel){
     }
 
     card.addEventListener('click', (e) => {
+      // Once expanded, a missed tap anywhere inside the expanded content
+      // (e.g. near a sub arrow) should never collapse the whole card - only
+      // the hint text itself or the explicit Close button should do that.
+      if(isOpen && e.target.closest('.squad-expand-area') && !e.target.closest('.fixture-close-btn')) return;
       if(e.target.closest('.view-switch-btn, .field-player, .squad-row, .fixture-close-btn, .swap-arrow-btn, .swap-actions')) return;
       isOpen ? closeCard() : openCard();
     });
