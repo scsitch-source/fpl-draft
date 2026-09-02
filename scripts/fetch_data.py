@@ -442,6 +442,20 @@ def build():
                     "finished": finished,
                 })
 
+    # Club-name-keyed version, for the frontend's squad planner - player
+    # rows only carry the club's short name, not its numeric id, so this
+    # lets it look up "who does this player's club play in gameweek N" for
+    # ANY player (rostered or a free agent), without needing to pre-compute
+    # a preview row for every player/gameweek pair.
+    fixtures_by_club_and_gw = {}
+    for ev, bucket in club_opponent_by_event.items():
+        ev_out = {}
+        for club_id, opp_list in bucket.items():
+            club_name = club_by_id.get(club_id)
+            if club_name:
+                ev_out[club_name] = opp_list
+        fixtures_by_club_and_gw[ev] = ev_out
+
     # Whether EVERY real Premier League fixture in a gameweek is over
     # (reusing the same kickoff-time safety net above) - lets us confidently
     # treat our own H2H match / the whole gameweek as finished even if the
@@ -1119,6 +1133,7 @@ def build():
             "name": info.get("name", "Unknown"),
             "position": position,
             "club": info.get("club", "?"),
+            "club_id": club_id,
             "photo_url": info.get("photo_url"),
             "shirt_color": info.get("shirt_color", "#6B7280"),
             "initials": info.get("initials", "?"),
@@ -1509,6 +1524,15 @@ def build():
     else:
         print("  note: could not fetch league transactions; waivers-cleared list will be empty.")
 
+    # Remapped by club short name (not id) - the frontend's players_directory
+    # rows carry a readable club short name, so this is the more convenient
+    # key for recomputing a waiver-in player's fixture for an arbitrary
+    # future gameweek.
+    fixtures_by_club_and_gw = {
+        ev: {club_by_id.get(club_id, "?"): fixtures for club_id, fixtures in by_club.items()}
+        for ev, by_club in club_opponent_by_event.items()
+    }
+
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "league": {
@@ -1544,6 +1568,8 @@ def build():
         "team_of_season": team_of_season,
         "team_of_week": team_of_week,
         "team_of_week_by_gw": team_of_week_by_gw,
+        "fixtures_by_club_and_gw": fixtures_by_club_and_gw,
+        "fixtures_by_club_and_gw": fixtures_by_club_and_gw,
         "default_week_gw": default_week_gw,
         "top_scorers": top_scorers_by_tab,
         "players_directory": players_directory,

@@ -719,6 +719,17 @@
     padding:6px 10px;font-size:12px;font-weight:600;color:var(--chalk);margin-bottom:5px;
   }
   .transfer-arrow{color:var(--amber);font-weight:800;}
+  .transfer-gw-tag{
+    background:var(--card);color:var(--chalk-dim);font-size:9.5px;font-weight:700;
+    padding:2px 6px;border-radius:6px;flex-shrink:0;
+  }
+  .squad-gw-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:14px;}
+  .squad-gw-arrow{
+    background:var(--ink);border:1px solid var(--line);color:var(--chalk);
+    width:32px;height:32px;border-radius:50%;font-size:15px;cursor:pointer;
+  }
+  .squad-gw-arrow:disabled{opacity:0.35;cursor:default;}
+  .squad-gw-current{font-size:15px;font-weight:800;color:var(--chalk);min-width:56px;text-align:center;}
   .transfer-undo-btn{
     margin-left:auto;background:none;border:none;color:var(--chalk-dim);cursor:pointer;font-size:12px;
   }
@@ -1200,8 +1211,20 @@ function buildPlayerNameLookup(data){
   return lookup;
 }
 
-function waiverStorageKey(myId, gw){
-  return `fpl-draft-waivers:${myId}:${gw}`;
+function waiverStorageKey(myId){
+  return `fpl-draft-waivers:${myId}`;
+}
+
+function previewRowForGw(baseRow, gw, data){
+  const clubFixtures = ((data.fixtures_by_club_and_gw || {})[String(gw)] || {})[baseRow.club] || [];
+  return {
+    ...baseRow,
+    minutes: 0, points: 0, base_points: 0, goals: 0, assists: 0,
+    clean_sheet: false, defensive_contribution: false, defensive_contribution_count: 0,
+    bonus: 0, yellow_card: false, red_card: false, own_goals: 0, goals_conceded: 0,
+    saves: 0, xg: 0.0, xa: 0.0, xgi: 0.0, match_finished: false, subbed_in: false, subbed_out: false,
+    opponents: clubFixtures,
+  };
 }
 
 function showReplaceModal(incomingPlayer, candidates, onSelect){
@@ -1247,16 +1270,20 @@ function showReplaceModal(incomingPlayer, candidates, onSelect){
 function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
   const nameLookup = buildPlayerNameLookup(data);
   const lineupKey = lineupStorageKey(myId, gw);
-  const transferKey = waiverStorageKey(myId, gw);
+  const transferKey = waiverStorageKey(myId);
 
-  // Layer 1: apply any saved waiver transfers on top of the ORIGINAL roster
-  // (who's on the 15-man squad at all), then layer 2: apply any saved sub
-  // arrangement on top of THAT (who's starting from those 15).
-  let transfers = [];
+  // Waivers are CUMULATIVE across gameweeks - a transfer made for GW3 still
+  // applies when you look ahead to GW4, GW5, etc. Each transfer is tagged
+  // with the gameweek it was made for; only ones at-or-before the gameweek
+  // currently being viewed apply. Sub arrangements (who starts vs bench)
+  // stay per-gameweek, since you might pick a different XI each week even
+  // from the same 15-man roster.
+  let allTransfers = [];
   try{
     const raw = localStorage.getItem(transferKey);
-    if(raw) transfers = JSON.parse(raw);
-  }catch(e){ transfers = []; }
+    if(raw) allTransfers = JSON.parse(raw);
+  }catch(e){ allTransfers = []; }
+  let transfers = allTransfers.filter(t => t.gw <= gw);
 
   function applyTransfers(squad, transferList){
     const starting = squad.starting.map(p => ({ ...p }));
@@ -1264,10 +1291,11 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
     transferList.forEach(t => {
       const replacement = nameLookup[t.in];
       if(!replacement) return;
+      const previewed = previewRowForGw(replacement, gw, data);
       let idx = starting.findIndex(p => p.name === t.out);
-      if(idx !== -1){ starting[idx] = { ...replacement }; return; }
+      if(idx !== -1){ starting[idx] = previewed; return; }
       idx = bench.findIndex(p => p.name === t.out);
-      if(idx !== -1){ bench[idx] = { ...replacement }; }
+      if(idx !== -1){ bench[idx] = previewed; }
     });
     return { starting, bench };
   }
@@ -1350,11 +1378,12 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
 
   function renderTransfers(){
     const wrap = container.querySelector('.transfers-list');
-    if(!transfers.length){ wrap.innerHTML = ''; return; }
+    if(!allTransfers.length){ wrap.innerHTML = ''; return; }
     wrap.innerHTML = `
-      <div class="top-scorers-label">Your waivers this session</div>
-      ${transfers.map((t, i) => `
+      <div class="top-scorers-label">Your waivers (carry forward to future gameweeks)</div>
+      ${allTransfers.map((t, i) => `
         <div class="transfer-row">
+          <span class="transfer-gw-tag">GW${t.gw}</span>
           <span>${t.out}</span>
           <span class="transfer-arrow">&#8596;</span>
           <span>${t.in}</span>
@@ -1364,15 +1393,16 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
     `;
     wrap.querySelectorAll('.transfer-undo-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const t = transfers[Number(btn.dataset.idx)];
-        transfers = transfers.filter((_, i) => i !== Number(btn.dataset.idx));
+        const idx = Number(btn.dataset.idx);
+        allTransfers = allTransfers.filter((_, i) => i !== idx);
+        try{ localStorage.setItem(transferKey, JSON.stringify(allTransfers)); }catch(e){}
+        transfers = allTransfers.filter(t => t.gw <= gw);
         const rebuilt = applyTransfers(originalSquad, transfers);
-        // Try to keep whatever's currently starting where it is; if the
-        // undone player's old slot doesn't exist anymore, fall back cleanly.
         currentStarting = rebuilt.starting;
         currentBench = rebuilt.bench;
         renderPitch();
         renderTransfers();
+        renderAvailable();
       });
     });
   }
@@ -1387,7 +1417,12 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
       .filter(p => !p.owner_team_name && !rosterNames.has(p.name));
     if(q) available = available.filter(p => p.name.toLowerCase().includes(q));
     available = available.slice(0, 50);
-    wrap.innerHTML = available.length ? available.map(p => `
+    wrap.innerHTML = available.length ? available.map(p => {
+      const fixtures = ((data.fixtures_by_club_and_gw || {})[String(gw)] || {})[p.club] || [];
+      const fixtureTag = fixtures.length
+        ? fixtures.map(o => `${o.is_home ? o.opponent.toUpperCase() : o.opponent.toLowerCase()} (${o.is_home ? 'H' : 'A'})`).join(', ')
+        : 'No fixture';
+      return `
       <div class="available-player-row" data-name="${p.name.replace(/"/g, '&quot;')}">
         <div class="top-scorer-photo">
           ${p.photo_url
@@ -1397,11 +1432,12 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
         </div>
         <div class="top-scorer-info">
           <div class="top-scorer-name">${p.name}</div>
-          <div class="top-scorer-owner">${p.position} &middot; ${p.season_points ?? 0} pts</div>
+          <div class="top-scorer-owner">${p.position} &middot; GW${gw}: ${fixtureTag}</div>
         </div>
         <button class="available-plus-btn" title="Bring in ${p.name}">+</button>
       </div>
-    `).join('') : `<p style="color:var(--chalk-dim);font-size:12px;text-align:center;padding:10px 0;">No available players match.</p>`;
+    `;
+    }).join('') : `<p style="color:var(--chalk-dim);font-size:12px;text-align:center;padding:10px 0;">No available players match.</p>`;
 
     wrap.querySelectorAll('.available-player-row').forEach(row => {
       const name = row.dataset.name;
@@ -1417,9 +1453,12 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
           .filter(c => c.p.position === incoming.position);
         if(!candidates.length) return;
         showReplaceModal(incoming, candidates, (chosen) => {
-          if(chosen.source === 'starting') currentStarting[chosen.index] = { ...incoming };
-          else currentBench[chosen.index] = { ...incoming };
-          transfers = [...transfers, { out: chosen.p.name, in: incoming.name }];
+          const previewedIncoming = previewRowForGw(incoming, gw, data);
+          if(chosen.source === 'starting') currentStarting[chosen.index] = previewedIncoming;
+          else currentBench[chosen.index] = previewedIncoming;
+          const newTransfer = { gw, out: chosen.p.name, in: incoming.name };
+          transfers = [...transfers, newTransfer];
+          allTransfers = [...allTransfers, newTransfer];
           renderPitch();
           renderTransfers();
           renderAvailable();
@@ -1458,7 +1497,7 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
   container.querySelector('#squad-save-btn').addEventListener('click', () => {
     try{
       localStorage.setItem(lineupKey, JSON.stringify(currentStarting.map(p => p.name)));
-      localStorage.setItem(transferKey, JSON.stringify(transfers));
+      localStorage.setItem(transferKey, JSON.stringify(allTransfers));
       savedMsg = "Saved - your subs and waivers will still be here next time you visit.";
     }catch(e){
       savedMsg = '';
@@ -1467,7 +1506,9 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
     renderPitch();
   });
   container.querySelector('#squad-reset-btn').addEventListener('click', () => {
+    if(!confirm('This clears your saved subs for GW' + gw + ' AND all your waivers across every gameweek. Continue?')) return;
     try{ localStorage.removeItem(lineupKey); localStorage.removeItem(transferKey); }catch(e){}
+    allTransfers = [];
     transfers = [];
     currentStarting = originalSquad.starting.map(p => ({ ...p }));
     currentBench = originalSquad.bench.map(p => ({ ...p }));
@@ -1484,6 +1525,13 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
   renderAvailable();
 }
 
+function findMySquadForGw(data, myId, gw){
+  const fixtures = data.fixtures_by_event[String(gw)] || [];
+  const f = fixtures.find(fx =>
+    String(fx.home.league_entry_id) === String(myId) || String(fx.away.league_entry_id) === String(myId));
+  return f && f.preview_squads ? f.preview_squads[String(myId)] : null;
+}
+
 function buildMySquadPanel(data, myId){
   const panel = document.createElement('div');
   panel.className = 'panel';
@@ -1497,25 +1545,47 @@ function buildMySquadPanel(data, myId){
     return panel;
   }
 
-  const fixtures = data.fixtures_by_event[String(data.next_event)] || [];
-  const f = fixtures.find(fx =>
-    String(fx.home.league_entry_id) === String(myId) || String(fx.away.league_entry_id) === String(myId));
-  const squad = f && f.preview_squads ? f.preview_squads[String(myId)] : null;
+  // Only gameweeks that both exist as a fixture AND have a squad to plan
+  // with are navigable - capped at GW38, the last of a standard PL season.
+  const allGws = Object.keys(data.fixtures_by_event).map(Number).sort((a, b) => a - b);
+  const navigableGws = allGws.filter(gw => gw >= data.next_event && gw <= 38 && findMySquadForGw(data, myId, gw));
 
-  if(!squad){
+  if(!navigableGws.length){
     panel.innerHTML = `<h2><span class="dot"></span>Squad</h2><p style="color:var(--chalk-dim);font-size:13px;">No squad to plan with yet for GW${data.next_event}.</p>`;
     return panel;
   }
 
   panel.innerHTML = `
-    <h2><span class="dot"></span>Squad &mdash; plan for GW${data.next_event}</h2>
+    <h2><span class="dot"></span>Squad &mdash; plan ahead</h2>
     <p style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;">
-      Tap the arrow above a player to sub them, or bring in an available player on the right - this is just a local planning tool and doesn't change your real lineup.
+      Tap the arrow above a player to sub them, or bring in an available player on the right - this is just a local planning tool and doesn't change your real lineup. Waivers carry forward to future gameweeks.
     </p>
+    <div class="squad-gw-nav">
+      <button class="squad-gw-arrow" id="squad-gw-prev">&#8592;</button>
+      <span class="squad-gw-current" id="squad-gw-label">GW${navigableGws[0]}</span>
+      <button class="squad-gw-arrow" id="squad-gw-next">&#8594;</button>
+    </div>
     <div class="squad-editor"></div>
   `;
+
   const editorWrap = panel.querySelector('.squad-editor');
-  buildSquadPlannerWithWaivers(editorWrap, squad, data, myId, data.next_event);
+  const label = panel.querySelector('#squad-gw-label');
+  const prevBtn = panel.querySelector('#squad-gw-prev');
+  const nextBtn = panel.querySelector('#squad-gw-next');
+  let gwIdx = 0;
+
+  function renderForGw(){
+    const gw = navigableGws[gwIdx];
+    label.textContent = 'GW' + gw;
+    prevBtn.disabled = gwIdx === 0;
+    nextBtn.disabled = gwIdx === navigableGws.length - 1;
+    const squad = findMySquadForGw(data, myId, gw);
+    buildSquadPlannerWithWaivers(editorWrap, squad, data, myId, gw);
+  }
+  prevBtn.addEventListener('click', () => { if(gwIdx > 0){ gwIdx--; renderForGw(); } });
+  nextBtn.addEventListener('click', () => { if(gwIdx < navigableGws.length - 1){ gwIdx++; renderForGw(); } });
+
+  renderForGw();
   return panel;
 }
 
@@ -2875,12 +2945,13 @@ function buildSquadsPanel(data){
 let openCardCloser = null;
 
 function fixtureCard(f, showGwLabel, expandLabel){
-  expandLabel = expandLabel || { open: 'Expand', close: 'Collapse' };
   // A future gameweek has no real squads yet - fall back to the preview
   // (built from each team's most recently rostered squad) so the Fixtures
   // tab can still show something useful for gameweeks that haven't started.
+  const usingPreviewForLabel = !f.squads && !!f.preview_squads;
+  expandLabel = expandLabel || (usingPreviewForLabel ? { open: 'Preview', close: 'Hide preview' } : { open: 'Expand', close: 'Collapse' });
   const effectiveSquads = f.squads || f.preview_squads;
-  const usingPreview = !f.squads && !!f.preview_squads;
+  const usingPreview = usingPreviewForLabel;
   const displayF = effectiveSquads ? { ...f, squads: effectiveSquads } : f;
   const hasSquads = !!effectiveSquads;
   const card = document.createElement('div');
@@ -2890,7 +2961,7 @@ function fixtureCard(f, showGwLabel, expandLabel){
     ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
     ${matchupHeaderHTML(displayF)}
     <div class="status" style="text-align:center;margin:2px 0 2px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-    ${usingPreview ? `<div class="preview-tag">Preview - try subs for either team below, based on their last rostered squad</div>` : ''}
+    ${usingPreview ? `<div class="preview-tag">Preview</div>` : ''}
     ${hasSquads ? `<div class="fixture-expand-hint">&#9662; ${expandLabel.open}</div>` : ''}
     ${hasSquads ? `
       <div class="squad-expand-area">
