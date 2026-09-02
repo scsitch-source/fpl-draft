@@ -1023,17 +1023,19 @@ def build():
             for le_id_str, squad in (f.get("squads") or {}).items():
                 latest_squads[le_id_str] = squad
 
-    # ---------------- Next gameweek preview ----------------
+    # ---------------- Future gameweek previews ----------------
     # Picks for a future gameweek don't exist yet, so there's no real squad
     # to show. As a preview, reuse each team's most recently rolled-out
-    # roster and recompute every player's real-life opponent for the
-    # UPCOMING gameweek instead of the one that roster actually played -
-    # letting someone see roughly how their next matchup shapes up before
-    # it starts. All scoring fields reset to zero/not-played, since nothing
-    # has happened yet.
+    # roster and recompute every player's real-life opponent for THAT
+    # specific gameweek instead of the one that roster actually played -
+    # letting someone see roughly how a future matchup shapes up before it
+    # starts. All scoring fields reset to zero/not-played, since nothing has
+    # happened yet. Built for every future gameweek (not just the next one)
+    # so the Fixtures tab can preview any of them, not only the immediate
+    # next fixture.
     _name_to_player_info = {info.get("name"): info for info in player_by_id.values() if info.get("name")}
 
-    def _preview_row(row):
+    def _preview_row(row, ev):
         info = _name_to_player_info.get(row.get("name"), {})
         club_id = info.get("club_id")
         preview = dict(row)
@@ -1043,12 +1045,15 @@ def build():
             "bonus": 0, "yellow_card": False, "red_card": False, "own_goals": 0,
             "goals_conceded": 0, "saves": 0, "xg": 0.0, "xa": 0.0, "xgi": 0.0,
             "match_finished": False, "subbed_in": False, "subbed_out": False,
-            "opponents": club_opponent_by_event.get(next_event, {}).get(club_id, []) if next_event is not None else [],
+            "opponents": club_opponent_by_event.get(ev, {}).get(club_id, []),
         })
         return preview
 
-    if next_event is not None and str(next_event) in fixtures_by_event:
-        for f in fixtures_by_event[str(next_event)]:
+    for ev_key, fixtures in fixtures_by_event.items():
+        ev = int(ev_key)
+        if current_event is not None and ev <= current_event:
+            continue  # only genuinely future gameweeks get a preview
+        for f in fixtures:
             if f.get("squads"):
                 continue  # a real squad already exists (shouldn't happen for a future GW, but just in case)
             preview_squads = {}
@@ -1058,8 +1063,8 @@ def build():
                 if not base_squad:
                     continue
                 preview_squads[le_id_str] = {
-                    "starting": [_preview_row(p) for p in base_squad.get("starting", [])],
-                    "bench": [_preview_row(p) for p in base_squad.get("bench", [])],
+                    "starting": [_preview_row(p, ev) for p in base_squad.get("starting", [])],
+                    "bench": [_preview_row(p, ev) for p in base_squad.get("bench", [])],
                     "played_count": 0,
                     "squad_size": len(base_squad.get("starting", [])) + len(base_squad.get("bench", [])),
                 }
@@ -1141,57 +1146,112 @@ def build():
             "xgi": stat.get("xgi", 0.0),
         }
 
-    tos_squad_by_pos = {}
-    for pos_code, pos_label in pos_by_type.items():
-        pos_players = sorted(
-            (el for el in real_players if el.get("element_type") == pos_code),
-            key=lambda el: -(el.get("total_points") or 0),
-        )
-        tos_squad_by_pos[pos_label] = pos_players[:TOS_SQUAD_SIZE.get(pos_label, 0)]
+    def _build_best_xi(point_getter, receipt_ev, rank_field):
+        """Selects a 15-player squad (2 GKP/5 DEF/5 MID/3 FWD) by whatever
+        point_getter ranks players on, then the best 11 from those 15 (1 GK
+        + 10 outfield, min 3 DEF/2 MID/1 FWD) - same shape used for both
+        Team of the Week (this gameweek's points) and Team of the Season
+        (season totals), just fed a different ranking."""
+        squad_by_pos = {}
+        for pos_code, pos_label in pos_by_type.items():
+            pos_players = sorted(
+                (el for el in real_players if el.get("element_type") == pos_code),
+                key=lambda el: -(point_getter(el) or 0),
+            )
+            squad_by_pos[pos_label] = pos_players[:TOS_SQUAD_SIZE.get(pos_label, 0)]
 
-    outfield_pool = [
-        (pos_label, el)
-        for pos_label in ("DEF", "MID", "FWD")
-        for el in tos_squad_by_pos.get(pos_label, [])
-    ]
-    outfield_pool.sort(key=lambda t: (t[1].get("total_points") or 0))  # ascending - drop from the front
-    outfield_counts = {pos: len(tos_squad_by_pos.get(pos, [])) for pos in ("DEF", "MID", "FWD")}
-    dropped_ids = set()
-    i = 0
-    while len(dropped_ids) < 3 and i < len(outfield_pool):
-        pos_label, el = outfield_pool[i]
-        if outfield_counts[pos_label] - 1 >= TOS_MIN_OUTFIELD[pos_label]:
-            dropped_ids.add(el.get("id"))
-            outfield_counts[pos_label] -= 1
-        i += 1
+        outfield_pool = [
+            (pos_label, el)
+            for pos_label in ("DEF", "MID", "FWD")
+            for el in squad_by_pos.get(pos_label, [])
+        ]
+        outfield_pool.sort(key=lambda t: (point_getter(t[1]) or 0))  # ascending - drop from the front
+        outfield_counts = {pos: len(squad_by_pos.get(pos, [])) for pos in ("DEF", "MID", "FWD")}
+        dropped_ids = set()
+        i = 0
+        while len(dropped_ids) < 3 and i < len(outfield_pool):
+            pos_label, el = outfield_pool[i]
+            if outfield_counts[pos_label] - 1 >= TOS_MIN_OUTFIELD[pos_label]:
+                dropped_ids.add(el.get("id"))
+                outfield_counts[pos_label] -= 1
+            i += 1
 
-    gk_list = tos_squad_by_pos.get("GKP", [])
+        gk_list = squad_by_pos.get("GKP", [])
 
-    def _tos_player(el, pos_label):
-        eid = el.get("id")
-        row = _full_receipt_row(eid, latest_squad_event)
-        row["owner_team_name"] = _owner_lookup(row["name"])
-        return row
+        def _player_row(el):
+            eid = el.get("id")
+            row = _full_receipt_row(eid, receipt_ev)
+            row["owner_team_name"] = _owner_lookup(row["name"])
+            return row
 
-    tos_starting, tos_bench = [], []
-    if gk_list:
-        tos_starting.append(_tos_player(gk_list[0], "GKP"))
-    if len(gk_list) > 1:
-        tos_bench.append(_tos_player(gk_list[1], "GKP"))
-    for pos_label in ("DEF", "MID", "FWD"):
-        for el in tos_squad_by_pos.get(pos_label, []):
-            target = tos_bench if el.get("id") in dropped_ids else tos_starting
-            target.append(_tos_player(el, pos_label))
+        starting, bench = [], []
+        if gk_list:
+            starting.append(_player_row(gk_list[0]))
+        if len(gk_list) > 1:
+            bench.append(_player_row(gk_list[1]))
+        for pos_label in ("DEF", "MID", "FWD"):
+            for el in squad_by_pos.get(pos_label, []):
+                target = bench if el.get("id") in dropped_ids else starting
+                target.append(_player_row(el))
 
-    # Mark the two highest season-points scorers in the STARTING XI (fun
-    # "who'd you captain" touch, not a real fantasy captaincy) as C and VC.
-    ranked_starting = sorted(tos_starting, key=lambda p: -(p.get("season_points") or 0))
-    if len(ranked_starting) > 0:
-        ranked_starting[0]["is_captain"] = True
-    if len(ranked_starting) > 1:
-        ranked_starting[1]["is_vice_captain"] = True
+        # Mark the two highest scorers in the STARTING XI (fun "who'd you
+        # captain" touch, not a real fantasy captaincy) as C and VC.
+        ranked_starting = sorted(starting, key=lambda p: -(p.get(rank_field) or 0))
+        if len(ranked_starting) > 0:
+            ranked_starting[0]["is_captain"] = True
+        if len(ranked_starting) > 1:
+            ranked_starting[1]["is_vice_captain"] = True
 
-    team_of_season = {"starting": tos_starting, "bench": tos_bench}
+        return {"starting": starting, "bench": bench}
+
+    team_of_season = _build_best_xi(
+        point_getter=lambda el: el.get("total_points"),
+        receipt_ev=latest_squad_event,
+        rank_field="season_points",
+    )
+
+    def _fixture_started(fx):
+        if bool(fx.get("started")) or bool(fx.get("finished")):
+            return True
+        kickoff = fx.get("kickoff_time")
+        if not kickoff:
+            return False
+        try:
+            kickoff_dt = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+        except (TypeError, ValueError):
+            return False
+        return now_utc >= kickoff_dt
+
+    def _any_fixture_started(ev):
+        if ev is None or not isinstance(fixtures_raw, list):
+            return False
+        return any(_fixture_started(fx) for fx in fixtures_raw if fx.get("event") == ev)
+
+    def _gw_points_getter(ev):
+        def _getter(el):
+            return live_stats_for_event(ev).get(el.get("id"), {}).get("points", 0)
+        return _getter
+
+    # Team of the Week, computed for every gameweek that's actually begun
+    # (not ones still in the future - nothing's happened there yet).
+    team_of_week_by_gw = {}
+    for ev in sorted(set(finished_events) | ({current_event} if current_event is not None else set())):
+        if _any_fixture_started(ev):
+            team_of_week_by_gw[ev] = _build_best_xi(
+                point_getter=_gw_points_getter(ev), receipt_ev=ev, rank_field="points",
+            )
+
+    # Which gameweek to show by default: the current one once its first
+    # match has kicked off, otherwise fall back to the last one that has
+    # actually started (so it's never an empty, all-zero "in progress"
+    # gameweek with nothing to show yet).
+    default_week_gw = None
+    if current_event is not None and _any_fixture_started(current_event):
+        default_week_gw = current_event
+    elif team_of_week_by_gw:
+        default_week_gw = max(team_of_week_by_gw.keys())
+
+    team_of_week = team_of_week_by_gw.get(default_week_gw, {"starting": [], "bench": []})
 
     # Top scorers league-wide (overall, and per position for the tabs),
     # each with the same full receipt row so these are clickable too.
@@ -1210,6 +1270,26 @@ def build():
     top_scorers_by_tab = {"all": _top_scorers_list(real_players)}
     for pos_code, pos_label in pos_by_type.items():
         top_scorers_by_tab[pos_label] = _top_scorers_list(
+            [el for el in real_players if el.get("element_type") == pos_code]
+        )
+
+    # ---------------- Players directory (Players tab) ----------------
+    # Every real Premier League player, not just a top-N cut, for a
+    # searchable/browsable directory. Same full receipt row as everywhere
+    # else so these are clickable too.
+    def _all_players_list(pool):
+        ranked = sorted(pool, key=lambda el: -(el.get("total_points") or 0))
+        out = []
+        for rank, el in enumerate(ranked, start=1):
+            row = _full_receipt_row(el.get("id"), latest_squad_event)
+            row["rank"] = rank
+            row["owner_team_name"] = _owner_lookup(row["name"])
+            out.append(row)
+        return out
+
+    players_directory = {"all": _all_players_list(real_players)}
+    for pos_code, pos_label in pos_by_type.items():
+        players_directory[pos_label] = _all_players_list(
             [el for el in real_players if el.get("element_type") == pos_code]
         )
 
@@ -1462,7 +1542,11 @@ def build():
         "accepted_transactions": accepted_transactions,
         "latest_squad_event": latest_squad_event,
         "team_of_season": team_of_season,
+        "team_of_week": team_of_week,
+        "team_of_week_by_gw": team_of_week_by_gw,
+        "default_week_gw": default_week_gw,
         "top_scorers": top_scorers_by_tab,
+        "players_directory": players_directory,
         "latest_squads": latest_squads,
     }
 
