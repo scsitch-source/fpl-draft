@@ -278,6 +278,11 @@ def build():
             "season_clean_sheets": el.get("clean_sheets", 0) or 0,
             "season_bonus": el.get("bonus", 0) or 0,
             "season_defcon": el.get("defensive_contribution", 0) or 0,
+            "season_xg": float(el.get("expected_goals") or 0),
+            "season_xa": float(el.get("expected_assists") or 0),
+            "season_xgi": float(el.get("expected_goal_involvements") or 0),
+            "season_minutes": el.get("minutes", 0) or 0,
+            "api_rank": el.get("points_per_game_rank"),
             "photo_url": f"{PLAYER_PHOTO_BASE}/{code}.png" if code else None,
             "shirt_color": CLUB_SHIRT_COLORS.get(club_short, DEFAULT_SHIRT_COLOR),
             "initials": player_initials(el.get("web_name", "?")),
@@ -291,6 +296,7 @@ def build():
     if real_players:
         sample = real_players[0]
         print(f"  badge diagnostic - sample element keys: {list(sample.keys())}")
+        print(f"  rank diagnostic - points_per_game_rank={sample.get('points_per_game_rank')!r}")
         print(f"  badge diagnostic - sample goals_scored={sample.get('goals_scored')!r}, "
               f"assists={sample.get('assists')!r}, total_points={sample.get('total_points')!r}")
         nonzero_goals = sum(1 for el in real_players if (el.get("goals_scored") or 0) > 0)
@@ -390,6 +396,13 @@ def build():
             print(f"  fallback fixtures fetched OK: {len(fixtures_raw)} entries")
         else:
             print("  fallback fixtures fetch also failed or returned nothing")
+
+    if fixtures_raw:
+        sample_fx = fixtures_raw[0]
+        print(f"  FDR diagnostic - sample fixture keys: {list(sample_fx.keys())}")
+        print(f"  FDR diagnostic - team_h_difficulty={sample_fx.get('team_h_difficulty')!r}, "
+              f"team_a_difficulty={sample_fx.get('team_a_difficulty')!r}")
+
     # A match's own 'finished' flag can occasionally lag behind reality by a
     # short window even after full-time (stats confirmation, TV coverage
     # delays, etc). As a dependency-free safety net, also treat a fixture as
@@ -431,30 +444,46 @@ def build():
                 bucket[club_id] = finished and bucket.get(club_id, True)
             if home_id is not None and away_id is not None:
                 home_score, away_score = fx.get("team_h_score"), fx.get("team_a_score")
+                kickoff_time = fx.get("kickoff_time")
                 opp_bucket.setdefault(home_id, []).append({
                     "opponent": club_by_id.get(away_id, "?"), "is_home": True,
                     "team_score": home_score, "opponent_score": away_score,
-                    "finished": finished,
+                    "finished": finished, "difficulty": fx.get("team_h_difficulty"),
+                    "kickoff_time": kickoff_time,
                 })
                 opp_bucket.setdefault(away_id, []).append({
                     "opponent": club_by_id.get(home_id, "?"), "is_home": False,
                     "team_score": away_score, "opponent_score": home_score,
-                    "finished": finished,
+                    "finished": finished, "difficulty": fx.get("team_a_difficulty"),
+                    "kickoff_time": kickoff_time,
                 })
 
-    # Club-name-keyed version, for the frontend's squad planner - player
-    # rows only carry the club's short name, not its numeric id, so this
-    # lets it look up "who does this player's club play in gameweek N" for
-    # ANY player (rostered or a free agent), without needing to pre-compute
-    # a preview row for every player/gameweek pair.
-    fixtures_by_club_and_gw = {}
-    for ev, bucket in club_opponent_by_event.items():
-        ev_out = {}
-        for club_id, opp_list in bucket.items():
-            club_name = club_by_id.get(club_id)
-            if club_name:
-                ev_out[club_name] = opp_list
-        fixtures_by_club_and_gw[ev] = ev_out
+    # (fixtures_by_club_and_gw computed later, right before output, once all
+    # club-name lookups are finalized)
+
+    # Real Premier League games per gameweek (one entry per MATCH, not
+    # duplicated per club like club_opponent_by_event above) - for showing
+    # the actual real-world fixture list under each gameweek on the
+    # Fixtures tab, sorted by kickoff time.
+    real_games_by_event = {}
+    if isinstance(fixtures_raw, list):
+        for fx in fixtures_raw:
+            ev = fx.get("event")
+            home_id, away_id = fx.get("team_h"), fx.get("team_a")
+            if ev is None or home_id is None or away_id is None:
+                continue
+            real_games_by_event.setdefault(ev, []).append({
+                "home": club_by_id.get(home_id, "?"),
+                "away": club_by_id.get(away_id, "?"),
+                "home_score": fx.get("team_h_score"),
+                "away_score": fx.get("team_a_score"),
+                "kickoff_time": fx.get("kickoff_time"),
+                "finished": _fixture_effectively_finished(fx),
+                "home_difficulty": fx.get("team_h_difficulty"),
+                "away_difficulty": fx.get("team_a_difficulty"),
+            })
+        for ev in real_games_by_event:
+            real_games_by_event[ev].sort(key=lambda g: g.get("kickoff_time") or "")
 
     # Whether EVERY real Premier League fixture in a gameweek is over
     # (reusing the same kickoff-time safety net above) - lets us confidently
@@ -1104,6 +1133,19 @@ def build():
                 return entry_by_id.get(int(le_id_str), {}).get("team_name")
         return None
 
+    def _next_fixtures_for_club(club_id, count=5):
+        if club_id is None or next_event is None or not club_opponent_by_event:
+            return []
+        out = []
+        for ev in sorted(int(e) for e in club_opponent_by_event.keys()):
+            if ev < next_event:
+                continue
+            for fx in club_opponent_by_event.get(ev, {}).get(club_id, []):
+                out.append({"event": ev, **fx})
+            if len(out) >= count:
+                break
+        return out[:count]
+
     def _full_receipt_row(el_id, ev):
         """Same per-gameweek stat shape used for real fantasy squad rows
         (minutes, goals, points, match_finished, etc.), but for an
@@ -1122,6 +1164,8 @@ def build():
                          "xg": 0.0, "xa": 0.0, "xgi": 0.0}
         position = info.get("position", "?")
         club_id = info.get("club_id")
+        form_events = finished_events[-5:] if finished_events else []
+        form_points = sum(live_stats_for_event(fev).get(el_id, {}).get("points", 0) for fev in form_events)
         match_finished = (
             True if (ev is not None and current_event is not None and ev < current_event)
             else (
@@ -1138,6 +1182,13 @@ def build():
             "shirt_color": info.get("shirt_color", "#6B7280"),
             "initials": info.get("initials", "?"),
             "season_points": info.get("season_points", 0),
+            "next_fixtures": _next_fixtures_for_club(club_id),
+            "form": form_points,
+            "season_xg": info.get("season_xg", 0.0),
+            "season_xa": info.get("season_xa", 0.0),
+            "season_xgi": info.get("season_xgi", 0.0),
+            "season_minutes": info.get("season_minutes", 0),
+            "api_rank": info.get("api_rank"),
             "is_captain": False, "is_vice_captain": False,
             "subbed_in": False, "subbed_out": False,
             "base_points": stat.get("points", 0),
@@ -1569,7 +1620,7 @@ def build():
         "team_of_week": team_of_week,
         "team_of_week_by_gw": team_of_week_by_gw,
         "fixtures_by_club_and_gw": fixtures_by_club_and_gw,
-        "fixtures_by_club_and_gw": fixtures_by_club_and_gw,
+        "real_games_by_event": real_games_by_event,
         "default_week_gw": default_week_gw,
         "top_scorers": top_scorers_by_tab,
         "players_directory": players_directory,
