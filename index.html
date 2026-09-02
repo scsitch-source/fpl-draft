@@ -330,16 +330,16 @@
     border-radius:6px;padding:1px 7px;margin-left:4px;font-size:12px;
   }
   .swap-toggle-row{text-align:center;margin-bottom:10px;}
-  .swap-wrapper{position:relative;padding-top:20px;margin-bottom:6px;}
+  .swap-wrapper{position:relative;margin-bottom:4px;}
   .swap-arrow-btn{
-    position:absolute;top:0;right:0;z-index:3;
-    width:20px;height:20px;border-radius:50%;background:var(--card);border:1px solid var(--line);
-    color:var(--chalk);font-size:11px;line-height:1;cursor:pointer;padding:0;
+    position:absolute;top:18px;right:-4px;z-index:3;
+    width:16px;height:16px;border-radius:50%;background:var(--card);border:1px solid var(--line);
+    color:var(--chalk);font-size:9px;line-height:1;cursor:pointer;padding:0;
   }
   .remove-player-btn{
-    position:absolute;top:0;right:22px;z-index:3;
-    width:20px;height:20px;border-radius:50%;background:var(--loss);border:1px solid var(--loss);
-    color:#fff;font-size:13px;line-height:1;cursor:pointer;padding:0;font-weight:800;
+    position:absolute;top:18px;left:-4px;z-index:3;
+    width:16px;height:16px;border-radius:50%;background:var(--loss);border:1px solid var(--loss);
+    color:#fff;font-size:11px;line-height:1;cursor:pointer;padding:0;font-weight:800;
   }
   .swap-wrapper.selected .swap-arrow-btn{background:var(--amber);border-color:var(--amber);color:#fff;}
   .swap-wrapper.selected .field-photo{box-shadow:0 0 0 2px var(--amber);border-radius:8px;}
@@ -358,7 +358,7 @@
   .pitch-lines{position:absolute;inset:0;width:100%;height:100%;}
   .pitch-rows{
     position:relative;z-index:1;height:100%;
-    display:flex;flex-direction:column;justify-content:space-around;gap:14px;
+    display:flex;flex-direction:column;justify-content:space-around;gap:8px;
   }
   /* nowrap is deliberate: a formation row must always fit on one line -
      wrapping (e.g. a 5-man defence overflowing to 2 lines) breaks the
@@ -1381,6 +1381,7 @@ function showFindReplacementModal(outgoingPlayer, data, rosterNames, gw, onSelec
       .filter(p => !p.owner_team_name && !rosterNames.has(p.name));
     if(query) pool = pool.filter(p => p.name.toLowerCase().includes(query));
     pool = sortPlayersBy(pool, sortId).slice(0, 50);
+    const sortLabel = (PLAYER_SORT_OPTIONS.find(o => o.id === sortId) || PLAYER_SORT_OPTIONS[0]).label;
     listWrap.innerHTML = pool.length ? pool.map(p => `
       <div class="available-player-row" data-name="${p.name.replace(/"/g, '&quot;')}">
         <div class="top-scorer-photo">
@@ -1391,8 +1392,9 @@ function showFindReplacementModal(outgoingPlayer, data, rosterNames, gw, onSelec
         </div>
         <div class="top-scorer-info">
           <div class="top-scorer-name">${p.name}</div>
-          <div class="top-scorer-owner">${p.season_points ?? 0} pts &middot; form ${p.form ?? 0}</div>
+          <div class="top-scorer-owner">${sortLabel}</div>
         </div>
+        <span class="top-scorer-pts">${sortValueDisplay(p, sortId)}</span>
       </div>
     `).join('') : `<p style="color:var(--chalk-dim);font-size:12px;text-align:center;padding:10px 0;">No available players match.</p>`;
     listWrap.querySelectorAll('.available-player-row').forEach(row => {
@@ -1509,7 +1511,7 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
     const rows = { GKP: [], DEF: [], MID: [], FWD: [] };
     currentStarting.forEach((p, i) => { (rows[p.position] || rows.MID).push(swapWrapper(p, 'starting', i)); });
     pitchWrap.innerHTML = `
-      <div class="pitch-col" style="max-width:360px;margin:0 auto;">
+      <div class="pitch-col" style="max-width:400px;margin:0 auto;">
         <div class="pitch">
           ${PITCH_LINES_SVG}
           <div class="pitch-rows">
@@ -1651,6 +1653,7 @@ function buildSquadPlannerWithWaivers(container, originalSquad, data, myId, gw){
           <div class="top-scorer-name">${p.name}</div>
           <div class="top-scorer-owner">${p.position} &middot; GW${gw}: ${fixtureTag}</div>
         </div>
+        <span class="top-scorer-pts">${sortValueDisplay(p, sortId)}</span>
         <button class="available-plus-btn" title="Bring in ${p.name}">+</button>
       </div>
     `;
@@ -1846,7 +1849,7 @@ function buildNextFixturePreviewPanel(data, myId){
 const PLAYER_SORT_OPTIONS = [
   { id: 'points', label: 'Points', get: p => p.season_points ?? 0 },
   { id: 'api_rank', label: 'Rank', get: p => p.api_rank ?? Infinity, ascending: true },
-  { id: 'form', label: 'Form (last 5 GWs)', get: p => p.form ?? 0 },
+  { id: 'form', label: 'Form (pts/game)', get: p => p.form ?? 0 },
   { id: 'xg', label: 'xG (total)', get: p => p.season_xg ?? 0 },
   { id: 'xa', label: 'xA (total)', get: p => p.season_xa ?? 0 },
   { id: 'xgi', label: 'xGI (total)', get: p => p.season_xgi ?? 0 },
@@ -1854,6 +1857,13 @@ const PLAYER_SORT_OPTIONS = [
   { id: 'xa90', label: 'xA (per 90)', get: p => (p.season_minutes > 0 ? (p.season_xa ?? 0) / (p.season_minutes / 90) : 0) },
   { id: 'xgi90', label: 'xGI (per 90)', get: p => (p.season_minutes > 0 ? (p.season_xgi ?? 0) / (p.season_minutes / 90) : 0) },
 ];
+
+function sortValueDisplay(p, sortId){
+  const opt = PLAYER_SORT_OPTIONS.find(o => o.id === sortId) || PLAYER_SORT_OPTIONS[0];
+  const val = opt.get(p);
+  if(val === Infinity) return '-';
+  return Number.isInteger(val) ? String(val) : val.toFixed(2);
+}
 
 function sortPlayersBy(list, sortId){
   const opt = PLAYER_SORT_OPTIONS.find(o => o.id === sortId) || PLAYER_SORT_OPTIONS[0];
@@ -2269,7 +2279,8 @@ function buildTeamOfSeasonPanel(data){
 
 const TOP_SCORERS_DISPLAY_N = 10;
 
-function buildTopScorersListHTML(scorers){
+function buildTopScorersListHTML(scorers, sortId){
+  sortId = sortId || 'points';
   const tierClass = rank => rank === 1 ? 'gold' : (rank === 2 ? 'silver' : (rank === 3 ? 'bronze' : ''));
   return scorers.map(s => `
     <div class="top-scorer-row ${tierClass(s.rank)}" ${playerDataAttr(s)}>
@@ -2284,7 +2295,7 @@ function buildTopScorersListHTML(scorers){
         <div class="top-scorer-name">${s.name}</div>
         <div class="top-scorer-owner">${s.owner_team_name || 'Free agent'}</div>
       </div>
-      <span class="top-scorer-pts">${s.season_points}</span>
+      <span class="top-scorer-pts">${sortValueDisplay(s, sortId)}</span>
     </div>
   `).join('');
 }
@@ -2387,7 +2398,7 @@ function buildPlayersPanel(data){
     // rather than the backend's default points-based rank.
     players = players.map((p, i) => ({ ...p, rank: i + 1 }));
     listWrap.innerHTML = players.length
-      ? buildTopScorersListHTML(players)
+      ? buildTopScorersListHTML(players, sortSelect.value)
       : `<p style="color:var(--chalk-dim);font-size:13px;text-align:center;padding:16px 0;">No players match.</p>`;
   }
 

@@ -1165,7 +1165,12 @@ def build():
         position = info.get("position", "?")
         club_id = info.get("club_id")
         form_events = finished_events[-5:] if finished_events else []
-        form_points = sum(live_stats_for_event(fev).get(el_id, {}).get("points", 0) for fev in form_events)
+        # Points PER GAME over up to the last 5 finished gameweeks (not a raw
+        # sum), so "form" reads as a rate throughout the season rather than
+        # just matching season points until 5 gameweeks have actually
+        # happened.
+        form_points_total = sum(live_stats_for_event(fev).get(el_id, {}).get("points", 0) for fev in form_events)
+        form_points = round(form_points_total / len(form_events), 1) if form_events else 0
         match_finished = (
             True if (ev is not None and current_event is not None and ev < current_event)
             else (
