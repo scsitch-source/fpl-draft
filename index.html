@@ -968,7 +968,7 @@ function formChips(form){
 const TABS = [
   { id: 'table',    label: 'Home' },
   { id: 'standings',label: 'Table' },
-  { id: 'mysquad',  label: 'Squad' },
+  { id: 'mysquad',  label: 'Team Planner' },
   { id: 'fixtures', label: 'Fixtures' },
   { id: 'squads',   label: 'Squads' },
   { id: 'players',  label: 'Players' },
@@ -1537,11 +1537,11 @@ function buildMySquadPanel(data, myId){
   panel.className = 'panel';
 
   if(myId == null){
-    panel.innerHTML = `<h2><span class="dot"></span>Squad</h2><p style="color:var(--chalk-dim);font-size:13px;">Pick your team from "Viewing as" at the top to see this.</p>`;
+    panel.innerHTML = `<h2><span class="dot"></span>Team Planner</h2><p style="color:var(--chalk-dim);font-size:13px;">Pick your team from "Viewing as" at the top to see this.</p>`;
     return panel;
   }
   if(!data.next_event){
-    panel.innerHTML = `<h2><span class="dot"></span>Squad</h2><p style="color:var(--chalk-dim);font-size:13px;">No upcoming gameweek to plan for right now.</p>`;
+    panel.innerHTML = `<h2><span class="dot"></span>Team Planner</h2><p style="color:var(--chalk-dim);font-size:13px;">No upcoming gameweek to plan for right now.</p>`;
     return panel;
   }
 
@@ -1551,12 +1551,12 @@ function buildMySquadPanel(data, myId){
   const navigableGws = allGws.filter(gw => gw >= data.next_event && gw <= 38 && findMySquadForGw(data, myId, gw));
 
   if(!navigableGws.length){
-    panel.innerHTML = `<h2><span class="dot"></span>Squad</h2><p style="color:var(--chalk-dim);font-size:13px;">No squad to plan with yet for GW${data.next_event}.</p>`;
+    panel.innerHTML = `<h2><span class="dot"></span>Team Planner</h2><p style="color:var(--chalk-dim);font-size:13px;">No squad to plan with yet for GW${data.next_event}.</p>`;
     return panel;
   }
 
   panel.innerHTML = `
-    <h2><span class="dot"></span>Squad &mdash; plan ahead</h2>
+    <h2><span class="dot"></span>Team Planner</h2>
     <p style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;">
       Tap the arrow above a player to sub them, or bring in an available player on the right - this is just a local planning tool and doesn't change your real lineup. Waivers carry forward to future gameweeks.
     </p>
@@ -1601,9 +1601,6 @@ function buildNextFixturePreviewPanel(data, myId){
   panel.style.marginBottom = '16px';
   panel.innerHTML = `
     <h2><span class="dot"></span>Next up: GW${data.next_event}</h2>
-    <p style="font-size:11px;color:var(--chalk-dim);margin:-6px 0 10px;">
-      Preview based on each team's most recently rostered squad - picks for this gameweek aren't in yet.
-    </p>
   `;
   const displayFixture = { ...f, squads: f.preview_squads };
   const card = fixtureCard(displayFixture, false, { open: 'Preview', close: 'Hide preview' });
@@ -2961,7 +2958,6 @@ function fixtureCard(f, showGwLabel, expandLabel){
     ${showGwLabel ? `<div style="font-size:11px;color:var(--chalk-dim);margin-bottom:6px;">GW ${f.event}</div>` : ''}
     ${matchupHeaderHTML(displayF)}
     <div class="status" style="text-align:center;margin:2px 0 2px;">${f.finished ? 'Final' : (f.started ? 'Live' : 'Not started')}</div>
-    ${usingPreview ? `<div class="preview-tag">Preview</div>` : ''}
     ${hasSquads ? `<div class="fixture-expand-hint">&#9662; ${expandLabel.open}</div>` : ''}
     ${hasSquads ? `
       <div class="squad-expand-area">
