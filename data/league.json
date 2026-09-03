@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:12:18.032359+00:00",
+  "generated_at": "2026-09-03T18:13:08.882519+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -286844,6 +286844,114 @@
       "player_in": "Silva",
       "player_out": "N.Williams",
       "kind": "Free Agent"
+    },
+    {
+      "event": 3,
+      "team_name": "Clean Machine FC",
+      "manager_name": "Nick Poole",
+      "league_entry_id": 183812,
+      "player_in": "Barcola",
+      "player_out": "Doku",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "H\u00f6chengladbach",
+      "manager_name": "Will Hocking",
+      "league_entry_id": 27140,
+      "player_in": "Xhaka",
+      "player_out": "Kudus",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": ":)",
+      "manager_name": "Charlie Spring",
+      "league_entry_id": 27145,
+      "player_in": "Tzolakis",
+      "player_out": "Pope",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": ":)",
+      "manager_name": "Charlie Spring",
+      "league_entry_id": 27145,
+      "player_in": "McBurnie",
+      "player_out": "Emersonn",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "Eamon Lye",
+      "league_entry_id": 31110,
+      "player_in": "Ajayi",
+      "player_out": "Matheus N.",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "Eamon Lye",
+      "league_entry_id": 31110,
+      "player_in": "Gonzalo",
+      "player_out": "Woltemade",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "I am chucky kirkez",
+      "manager_name": "Eamon Lye",
+      "league_entry_id": 31110,
+      "player_in": "Strand Larsen",
+      "player_out": "Wood",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "Hakuna Mateta",
+      "manager_name": "Ben Scotti",
+      "league_entry_id": 27141,
+      "player_in": "Elanga",
+      "player_out": "O.Dango",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "PFC",
+      "manager_name": "Archie Ross",
+      "league_entry_id": 226052,
+      "player_in": "Delap",
+      "player_out": "G.Jesus",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "Eki-Tiki",
+      "manager_name": "Hugh Chalmers",
+      "league_entry_id": 27143,
+      "player_in": "Gomez",
+      "player_out": "Wilson",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "Eki-Tiki",
+      "manager_name": "Hugh Chalmers",
+      "league_entry_id": 27143,
+      "player_in": "Penders",
+      "player_out": "S\u00e1nchez",
+      "kind": "Waiver"
+    },
+    {
+      "event": 3,
+      "team_name": "FC Strup",
+      "manager_name": "Sam Sitch",
+      "league_entry_id": 27139,
+      "player_in": "Ajer",
+      "player_out": "Silva",
+      "kind": "Waiver"
     }
   ],
   "latest_squad_event": 2,
