@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T12:15:59.343874+00:00",
+  "generated_at": "2026-09-03T14:11:53.584620+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -377425,6 +377425,109 @@
         "owner_team_name": null
       },
       {
+        "name": "Azeez",
+        "position": "MID",
+        "club": "BHA",
+        "club_id": 5,
+        "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/471551.png",
+        "shirt_color": "#0057B8",
+        "initials": "AZ",
+        "season_points": 0,
+        "next_fixtures": [
+          {
+            "event": 3,
+            "opponent": "LEE",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 2,
+            "kickoff_time": "2026-09-05T14:00:00Z"
+          },
+          {
+            "event": 4,
+            "opponent": "COV",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 2,
+            "kickoff_time": "2026-09-13T13:00:00Z"
+          },
+          {
+            "event": 5,
+            "opponent": "ARS",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 4,
+            "kickoff_time": "2026-09-19T14:00:00Z"
+          },
+          {
+            "event": 6,
+            "opponent": "SUN",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-10-10T14:00:00Z"
+          },
+          {
+            "event": 7,
+            "opponent": "CRY",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-10-18T13:00:00Z"
+          }
+        ],
+        "form": 0.0,
+        "season_xg": 0.0,
+        "season_xa": 0.0,
+        "season_xgi": 0.0,
+        "season_minutes": 0,
+        "api_rank": null,
+        "is_captain": false,
+        "is_vice_captain": false,
+        "subbed_in": false,
+        "subbed_out": false,
+        "base_points": 0,
+        "points": 0,
+        "goals": 0,
+        "assists": 0,
+        "minutes": 0,
+        "match_finished": true,
+        "clean_sheet": false,
+        "defensive_contribution": false,
+        "defensive_contribution_count": 0,
+        "opponents": [
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "team_score": 3,
+            "opponent_score": 4,
+            "finished": true,
+            "difficulty": 4,
+            "kickoff_time": "2026-08-30T13:00:00Z"
+          }
+        ],
+        "bonus": 0,
+        "yellow_card": false,
+        "red_card": false,
+        "own_goals": 0,
+        "goals_conceded": 0,
+        "saves": 0,
+        "xg": 0.0,
+        "xa": 0.0,
+        "xgi": 0.0,
+        "rank": 651,
+        "owner_team_name": null
+      },
+      {
         "name": "Gomes",
         "position": "MID",
         "club": "AVL",
@@ -377524,7 +377627,7 @@
         "xg": 0.0,
         "xa": 0.0,
         "xgi": 0.0,
-        "rank": 651,
+        "rank": 652,
         "owner_team_name": null
       }
     ],
@@ -436450,6 +436553,109 @@
         "owner_team_name": null
       },
       {
+        "name": "Azeez",
+        "position": "MID",
+        "club": "BHA",
+        "club_id": 5,
+        "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/471551.png",
+        "shirt_color": "#0057B8",
+        "initials": "AZ",
+        "season_points": 0,
+        "next_fixtures": [
+          {
+            "event": 3,
+            "opponent": "LEE",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 2,
+            "kickoff_time": "2026-09-05T14:00:00Z"
+          },
+          {
+            "event": 4,
+            "opponent": "COV",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 2,
+            "kickoff_time": "2026-09-13T13:00:00Z"
+          },
+          {
+            "event": 5,
+            "opponent": "ARS",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 4,
+            "kickoff_time": "2026-09-19T14:00:00Z"
+          },
+          {
+            "event": 6,
+            "opponent": "SUN",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-10-10T14:00:00Z"
+          },
+          {
+            "event": 7,
+            "opponent": "CRY",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-10-18T13:00:00Z"
+          }
+        ],
+        "form": 0.0,
+        "season_xg": 0.0,
+        "season_xa": 0.0,
+        "season_xgi": 0.0,
+        "season_minutes": 0,
+        "api_rank": null,
+        "is_captain": false,
+        "is_vice_captain": false,
+        "subbed_in": false,
+        "subbed_out": false,
+        "base_points": 0,
+        "points": 0,
+        "goals": 0,
+        "assists": 0,
+        "minutes": 0,
+        "match_finished": true,
+        "clean_sheet": false,
+        "defensive_contribution": false,
+        "defensive_contribution_count": 0,
+        "opponents": [
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "team_score": 3,
+            "opponent_score": 4,
+            "finished": true,
+            "difficulty": 4,
+            "kickoff_time": "2026-08-30T13:00:00Z"
+          }
+        ],
+        "bonus": 0,
+        "yellow_card": false,
+        "red_card": false,
+        "own_goals": 0,
+        "goals_conceded": 0,
+        "saves": 0,
+        "xg": 0.0,
+        "xa": 0.0,
+        "xgi": 0.0,
+        "rank": 288,
+        "owner_team_name": null
+      },
+      {
         "name": "Gomes",
         "position": "MID",
         "club": "AVL",
@@ -436549,7 +436755,7 @@
         "xg": 0.0,
         "xa": 0.0,
         "xgi": 0.0,
-        "rank": 288,
+        "rank": 289,
         "owner_team_name": null
       }
     ],
