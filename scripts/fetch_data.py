@@ -834,6 +834,24 @@ def build():
 
     _picks_debug_printed = set()
 
+    def _next_fixtures_for_club(club_id, count=5):
+        """A club's next `count` real fixtures from next_event onward. Defined
+        here (before build_squad) so BOTH rostered squad rows and the
+        arbitrary-player rows further down can attach the same data - the
+        Team Planner needs fixtures on rostered players too, not just on
+        free agents."""
+        if club_id is None or next_event is None or not club_opponent_by_event:
+            return []
+        out = []
+        for ev in sorted(int(e) for e in club_opponent_by_event.keys()):
+            if ev < next_event:
+                continue
+            for fx in club_opponent_by_event.get(ev, {}).get(club_id, []):
+                out.append({"event": ev, **fx})
+            if len(out) >= count:
+                break
+        return out[:count]
+
     def build_squad(real_entry_id, ev, live_stats):
         data = get_json_soft(f"entry/{real_entry_id}/event/{ev}")
         if not data:
@@ -884,6 +902,7 @@ def build():
                 "shirt_color": info.get("shirt_color", "#6B7280"),
                 "initials": info.get("initials", "?"),
                 "season_points": info.get("season_points", 0),
+                "next_fixtures": _next_fixtures_for_club(info.get("club_id")),
                 "season_goals": info.get("season_goals", 0),
                 "season_assists": info.get("season_assists", 0),
                 "season_clean_sheets": info.get("season_clean_sheets", 0),
@@ -972,7 +991,7 @@ def build():
             "season_points", "badges", "form", "xg", "xa", "xgi",
             "saves", "own_goals", "goals_conceded", "position_ranks",
             "season_goals", "season_assists", "season_clean_sheets",
-            "season_bonus", "season_defcon",
+            "season_bonus", "season_defcon", "next_fixtures",
         }
         found_signal = False
         for squad in squads_dict.values():
@@ -1132,19 +1151,6 @@ def build():
             if player_name in names_here:
                 return entry_by_id.get(int(le_id_str), {}).get("team_name")
         return None
-
-    def _next_fixtures_for_club(club_id, count=5):
-        if club_id is None or next_event is None or not club_opponent_by_event:
-            return []
-        out = []
-        for ev in sorted(int(e) for e in club_opponent_by_event.keys()):
-            if ev < next_event:
-                continue
-            for fx in club_opponent_by_event.get(ev, {}).get(club_id, []):
-                out.append({"event": ev, **fx})
-            if len(out) >= count:
-                break
-        return out[:count]
 
     def _full_receipt_row(el_id, ev):
         """Same per-gameweek stat shape used for real fantasy squad rows
@@ -1579,6 +1585,64 @@ def build():
             del t["_original_index"]
     else:
         print("  note: could not fetch league transactions; waivers-cleared list will be empty.")
+
+    # ---------- Apply post-squad transfers to the future previews ----------
+    # Previews above were built from each team's most recent ACTUAL squad
+    # (latest_squad_event). Any waiver or free-agent move that cleared after
+    # that gameweek isn't reflected there yet, so the preview would still
+    # show the player who's since been dropped. Replay those later moves
+    # onto the preview squads so future gameweeks show the real current
+    # roster. Runs here (not with the preview build) because transactions
+    # aren't fetched until this point.
+    _name_to_el_id = {info.get("name"): eid for eid, info in player_by_id.items() if info.get("name")}
+    # >= not > : picks for latest_squad_event were locked at that gameweek's
+    # deadline, so a transaction tagged with the SAME event number still
+    # happened after those picks were set. Applying an already-reflected
+    # move is a harmless no-op anyway, since the outgoing player simply
+    # won't be found in the squad.
+    post_squad_moves = [
+        t for t in accepted_transactions
+        if t.get("event") is not None
+        and latest_squad_event is not None
+        and t["event"] >= latest_squad_event
+        and t.get("player_in") and t.get("player_out")
+    ]
+    print(f"  transfer-to-preview: latest_squad_event={latest_squad_event}, "
+          f"{len(accepted_transactions)} accepted transaction(s), "
+          f"{len(post_squad_moves)} eligible to apply")
+    if accepted_transactions and not post_squad_moves:
+        print(f"    (sample transaction events: "
+              f"{[t.get('event') for t in accepted_transactions[:5]]})")
+    if post_squad_moves:
+        applied = 0
+        unmatched = set()
+        for ev_key, fixtures in fixtures_by_event.items():
+            ev = int(ev_key)
+            for f in fixtures:
+                preview = f.get("preview_squads")
+                if not preview:
+                    continue
+                for t in post_squad_moves:
+                    # A move only applies to gameweeks at or after it cleared.
+                    if ev < t["event"]:
+                        continue
+                    squad = preview.get(str(t["league_entry_id"]))
+                    if not squad:
+                        continue
+                    in_el_id = _name_to_el_id.get(t["player_in"])
+                    if in_el_id is None:
+                        unmatched.add(t["player_in"])
+                        continue
+                    for bucket in ("starting", "bench"):
+                        rows = squad.get(bucket, [])
+                        for i, row in enumerate(rows):
+                            if row.get("name") == t["player_out"]:
+                                rows[i] = _preview_row(_full_receipt_row(in_el_id, None), ev)
+                                applied += 1
+                                break
+        print(f"  applied {applied} post-squad transfer(s) to future gameweek previews")
+        if unmatched:
+            print(f"    warning: could not match incoming player name(s): {sorted(unmatched)[:5]}")
 
     # Remapped by club short name (not id) - the frontend's players_directory
     # rows carry a readable club short name, so this is the more convenient

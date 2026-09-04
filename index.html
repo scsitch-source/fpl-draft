@@ -3498,11 +3498,32 @@ function buildFixturesPanel(data){
   panel.appendChild(teamSelectWrap);
   panel.appendChild(listWrap);
 
-  const defaultGw = data.current_event && gwKeys.includes(data.current_event)
-    ? data.current_event
-    : gwKeys[gwKeys.length - 1];
+  // Default to the current gameweek, but roll forward to the NEXT one once
+  // it's close (within 2 days of its deadline) or once the current one has
+  // finished - by then the upcoming fixtures are what you actually want to
+  // see, not the one that's already done.
+  function shouldShowNextGw(){
+    if(!data.next_event || !gwKeys.includes(data.next_event)) return false;
+    if(data.current_event_finished) return true;
+    if(!data.next_deadline) return false;
+    const msUntil = new Date(data.next_deadline).getTime() - Date.now();
+    return msUntil > 0 && msUntil <= 2 * 24 * 60 * 60 * 1000;
+  }
+
+  const defaultGw = shouldShowNextGw()
+    ? data.next_event
+    : (data.current_event && gwKeys.includes(data.current_event)
+        ? data.current_event
+        : gwKeys[gwKeys.length - 1]);
   const defaultPill = [...pillsWrap.children].find(p => p.textContent === 'GW ' + defaultGw);
-  if(defaultPill){ defaultPill.classList.add('active'); }
+  if(defaultPill){
+    defaultPill.classList.add('active');
+    // The pill row scrolls horizontally, so make sure the active one is
+    // actually visible rather than off to the right.
+    requestAnimationFrame(() => {
+      try{ defaultPill.scrollIntoView({ inline: 'center', block: 'nearest' }); }catch(e){}
+    });
+  }
   if(defaultGw !== undefined) renderGw(defaultGw);
 
   return panel;
