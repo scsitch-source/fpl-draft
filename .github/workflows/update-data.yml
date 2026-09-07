@@ -2,9 +2,10 @@ name: Update league data
 
 on:
   schedule:
-    # Every 2 hours, year round. FPL gameweeks mostly fall on weekends/midweek
-    # evenings, so this keeps things reasonably fresh without hammering the API.
-    - cron: "0 */2 * * *"
+    # Every 10 minutes, year round. Note: GitHub's scheduled runs are
+    # best-effort and can be delayed or skipped when their infrastructure is
+    # busy, so treat this as "roughly every 10 minutes", not a guarantee.
+    - cron: "*/10 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -12,14 +13,23 @@ permissions:
 
 concurrency:
   group: update-data
-  cancel-in-progress: true
+  # Let an in-flight run finish rather than killing it just before it commits;
+  # the timeout below stops it overrunning the next scheduled slot anyway.
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 9
     env:
       LEAGUE_ID: "6038"
       ENTRY_ID: "27110"
+      # Regular season GW1-35, playoffs: semis GW36, elimination GW37, final GW38.
+      # Adjust if your league's schedule differs.
+      REG_SEASON_END: "35"
+      SEMI_GW: "36"
+      ELIM_GW: "37"
+      FINAL_GW: "38"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
