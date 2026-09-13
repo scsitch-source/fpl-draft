@@ -608,6 +608,7 @@ def build():
             },
             "finished": finished,
             "started": bool(m.get("started")),
+            "event": event,
             "winning_league_entry": m.get("winning_league_entry"),
         })
 
@@ -1002,6 +1003,30 @@ def build():
                     found_signal = True
         return found_signal
 
+    SETTLED_AFTER = timedelta(hours=24)
+
+    def _gw_fully_settled(ev):
+        """True once every real fixture in a gameweek kicked off more than 24
+        hours ago. By then the official data has had ample time to finalise
+        (bonus points confirmed, stats corrections applied), so the API's own
+        match score is the most trustworthy figure available."""
+        if ev is None or not isinstance(fixtures_raw, list):
+            return False
+        evs = [fx for fx in fixtures_raw if fx.get("event") == ev]
+        if not evs:
+            return False
+        for fx in evs:
+            kickoff = fx.get("kickoff_time")
+            if not kickoff:
+                return False
+            try:
+                ko = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+            except (TypeError, ValueError):
+                return False
+            if now_utc < ko + SETTLED_AFTER:
+                return False
+        return True
+
     def _apply_squad_based_score(f):
         """Overwrite the fixture's score with the sum of each side's actual
         (post-auto-sub) starting XI points. The Draft API's own match score
@@ -1009,19 +1034,32 @@ def build():
         as whatever the nominal starting XI scored, understating a team that
         had a sub come on and contribute. Since our own squad data already
         correctly resolves auto-subs, use that as the real source of truth
-        everywhere a score is shown, rather than the raw API figure. The
-        original API score is kept alongside as 'api_score' for reference.
+        while a gameweek is live or freshly finished.
+
+        Once the gameweek is fully settled (24h+ past every kickoff), flip
+        back to trusting the API's own score: by then it's final and
+        authoritative, whereas our computed figure depends on squad data that
+        could have been captured at an awkward moment. The unused figure is
+        kept alongside for reference either way.
         """
         squads = f.get("squads")
         if not squads:
             return
+        settled = _gw_fully_settled(f.get("event"))
         for side in ("home", "away"):
             le_id = f[side]["league_entry_id"]
             squad = squads.get(str(le_id)) if le_id is not None else None
             if not squad:
                 continue
-            f[side]["api_score"] = f[side].get("score")
-            f[side]["score"] = sum(p.get("points", 0) for p in squad.get("starting", []))
+            computed = sum(p.get("points", 0) for p in squad.get("starting", []))
+            api_score = f[side].get("score")
+            if settled and api_score is not None:
+                f[side]["computed_score"] = computed
+                f[side]["api_score"] = api_score
+                # leave f[side]["score"] as the API's own final figure
+            else:
+                f[side]["api_score"] = api_score
+                f[side]["score"] = computed
 
     print("Fetching per-gameweek squads (cached where possible)...")
     for ev_key, fixtures in fixtures_by_event.items():
@@ -1030,7 +1068,22 @@ def build():
         prev_fixtures_for_ev = previous_fixtures.get(ev_key, [])
 
         for idx, f in enumerate(fixtures):
-            cached_squads = prev_fixtures_for_ev[idx].get("squads") if (all_finished and idx < len(prev_fixtures_for_ev)) else None
+            # Only trust cached squads for a gameweek that is genuinely in the
+            # PAST (ev < current_event). Caching as soon as a gameweek looks
+            # finished is unsafe: the moment the "finished" flag flips, we'd
+            # freeze whatever was last fetched - which can be a mid-game
+            # snapshot if the final live refresh hadn't landed yet, leaving
+            # scores permanently stuck partway through the last match.
+            is_settled_past_gw = (
+                all_finished
+                and current_event is not None
+                and ev < current_event
+            )
+            cached_squads = (
+                prev_fixtures_for_ev[idx].get("squads")
+                if (is_settled_past_gw and idx < len(prev_fixtures_for_ev))
+                else None
+            )
             if cached_squads and squad_looks_valid(cached_squads):
                 f["squads"] = cached_squads
                 _apply_squad_based_score(f)
