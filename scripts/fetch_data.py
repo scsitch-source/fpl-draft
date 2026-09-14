@@ -835,6 +835,18 @@ def build():
 
     _picks_debug_printed = set()
 
+    def _recent_scores(el_id, count=3):
+        """That player's points in each of the last `count` FINISHED
+        gameweeks, most recent last. Shared by both rostered squad rows and
+        the arbitrary-player rows further down so the info popover can show
+        recent form as actual per-gameweek numbers, not just an average."""
+        if el_id is None or not finished_events:
+            return []
+        return [
+            {"event": ev, "points": live_stats_for_event(ev).get(el_id, {}).get("points", 0)}
+            for ev in finished_events[-count:]
+        ]
+
     def _next_fixtures_for_club(club_id, count=5):
         """A club's next `count` real fixtures from next_event onward. Defined
         here (before build_squad) so BOTH rostered squad rows and the
@@ -904,6 +916,7 @@ def build():
                 "initials": info.get("initials", "?"),
                 "season_points": info.get("season_points", 0),
                 "next_fixtures": _next_fixtures_for_club(info.get("club_id")),
+                "recent_scores": _recent_scores(el_id),
                 "season_goals": info.get("season_goals", 0),
                 "season_assists": info.get("season_assists", 0),
                 "season_clean_sheets": info.get("season_clean_sheets", 0),
@@ -992,7 +1005,7 @@ def build():
             "season_points", "badges", "form", "xg", "xa", "xgi",
             "saves", "own_goals", "goals_conceded", "position_ranks",
             "season_goals", "season_assists", "season_clean_sheets",
-            "season_bonus", "season_defcon", "next_fixtures",
+            "season_bonus", "season_defcon", "next_fixtures", "recent_scores",
         }
         found_signal = False
         for squad in squads_dict.values():
@@ -1247,6 +1260,7 @@ def build():
             "initials": info.get("initials", "?"),
             "season_points": info.get("season_points", 0),
             "next_fixtures": _next_fixtures_for_club(club_id),
+            "recent_scores": _recent_scores(el_id),
             "form": form_points,
             "season_xg": info.get("season_xg", 0.0),
             "season_xa": info.get("season_xa", 0.0),

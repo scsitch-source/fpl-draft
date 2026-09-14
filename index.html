@@ -670,6 +670,20 @@
   }
   .receipt-header{text-align:center;margin:0 0 10px;}
   .receipt-name{font-size:15px;font-weight:800;color:var(--chalk);}
+  .player-info-btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:17px;height:17px;margin-left:6px;vertical-align:middle;
+    border-radius:50%;background:var(--ink);border:1px solid var(--line);
+    color:var(--chalk-dim);font-size:10px;font-weight:800;font-style:italic;
+    font-family:Georgia,serif;cursor:pointer;padding:0;line-height:1;
+  }
+  .player-info-btn:hover{background:var(--win);border-color:var(--win);color:#fff;}
+  .recent-scores-row{display:flex;gap:6px;justify-content:center;}
+  .recent-score-cell{
+    flex:1;background:var(--ink);border-radius:8px;padding:6px 2px;text-align:center;
+  }
+  .recent-score-val{font-family:'Manrope';font-weight:800;font-size:16px;color:var(--chalk);}
+  .recent-score-gw{font-size:9px;color:var(--chalk-dim);margin-top:1px;}
   .receipt-position{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;}
   .receipt-pick-badge{
     display:inline-block;margin-top:5px;font-size:10.5px;font-weight:800;
@@ -1320,9 +1334,20 @@ function showPlayerFixturesPopup(p, canAdd, onAdd){
         <div class="stat-box-value">${p.season_points ?? 0}</div>
         <div class="stat-box-label">Season points so far</div>
       </div>
-      <div class="top-scorers-label" style="margin-top:14px;">Next ${fixtures.length} fixtures</div>
+      ${(p.recent_scores && p.recent_scores.length) ? `
+        <div class="top-scorers-label" style="margin-top:14px;">Last ${p.recent_scores.length} gameweeks</div>
+        <div class="recent-scores-row">
+          ${p.recent_scores.map(r => `
+            <div class="recent-score-cell">
+              <div class="recent-score-val">${r.points}</div>
+              <div class="recent-score-gw">GW${r.event}</div>
+            </div>
+          `).join('')}
+        </div>
+      ` : ''}
+      <div class="top-scorers-label" style="margin-top:14px;">Next ${Math.min(fixtures.length, 3)} fixtures</div>
       <div class="receipt-lines">
-        ${fixtures.length ? fixtures.map(fx => `
+        ${fixtures.length ? fixtures.slice(0, 3).map(fx => `
           <div class="receipt-line">
             <span>GW${fx.event} &middot; ${fx.opponent} ${fx.is_home ? '(H)' : '(A)'}</span>
             <span class="fdr-dot" style="background:${difficultyColor(fx.difficulty)};display:inline-block;width:10px;height:10px;border-radius:50%;" title="Difficulty ${fx.difficulty ?? '?'}"></span>
@@ -2716,6 +2741,9 @@ function playerDataAttr(p){
     season_goals: p.season_goals, season_assists: p.season_assists,
     season_clean_sheets: p.season_clean_sheets, season_bonus: p.season_bonus,
     season_defcon: p.season_defcon,
+    next_fixtures: p.next_fixtures, recent_scores: p.recent_scores,
+    season_xg: p.season_xg, season_xa: p.season_xa, season_xgi: p.season_xgi,
+    season_minutes: p.season_minutes, api_rank: p.api_rank,
   };
   return `data-player="${JSON.stringify(slim).replace(/"/g, '&quot;')}"`;
 }
@@ -2878,7 +2906,7 @@ function showPlayerReceipt(p){
         <img class="receipt-photo-fallback" src="icons/player-placeholder.png" alt="" style="display:${p.photo_url ? 'none' : 'block'};">
       </div>
       <div class="receipt-header">
-        <div class="receipt-name">${p.name}${capLabel}</div>
+        <div class="receipt-name">${p.name}${capLabel}<button class="player-info-btn" title="Season form and upcoming fixtures" aria-label="More info">i</button></div>
         <div class="receipt-position" style="color:${accent};">${p.position || ''}</div>
         ${buildAcquisitionHTML(p)}
       </div>
@@ -2906,6 +2934,12 @@ function showPlayerReceipt(p){
   `;
   document.body.appendChild(modal);
   modal.addEventListener('click', (e) => {
+    if(e.target.closest('.player-info-btn')){
+      // Swap the gameweek breakdown for the season/fixtures view.
+      modal.remove();
+      showPlayerFixturesPopup(p, false, () => {});
+      return;
+    }
     if(e.target === modal || e.target.classList.contains('receipt-close')) modal.remove();
   });
 }
