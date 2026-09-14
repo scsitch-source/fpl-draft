@@ -30,6 +30,15 @@ SEMI_GW = int(os.environ.get("SEMI_GW", "36"))
 ELIM_GW = int(os.environ.get("ELIM_GW", "37"))
 FINAL_GW = int(os.environ.get("FINAL_GW", "38"))
 
+# Adaptive refresh: the workflow runs on a fixed short cron, but doing the
+# full (expensive) refresh every time is wasteful when no football is being
+# played. When no match is in progress we only do the full run if the last
+# one was more than IDLE_REFRESH_MINUTES ago; otherwise we exit early having
+# made just a couple of cheap API calls. Set FORCE_REFRESH=1 (or trigger the
+# workflow manually) to always do the full run.
+IDLE_REFRESH_MINUTES = int(os.environ.get("IDLE_REFRESH_MINUTES", "60"))
+FORCE_REFRESH = os.environ.get("FORCE_REFRESH", "").strip().lower() in ("1", "true", "yes")
+
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "fpl-draft-dashboard/1.0 (+github actions)"})
 
@@ -411,6 +420,58 @@ def build():
     FIXTURE_ASSUMED_DURATION = timedelta(hours=2, minutes=30)
     now_utc = datetime.now(timezone.utc)
 
+    # Loaded here (rather than just before the squad fetching further down)
+    # because the adaptive-refresh check below needs to know how old the
+    # existing data is.
+    previous = load_previous_output()
+
+    # ---------- Adaptive refresh: skip expensive work when nothing's on ----------
+    def _any_match_in_progress():
+        """True if any real fixture is currently within its playing window
+        (kicked off, and not yet past the assumed full-time). Uses the same
+        2.5h window as the finished-detection above so the two agree."""
+        if not isinstance(fixtures_raw, list):
+            return False
+        for fx in fixtures_raw:
+            if bool(fx.get("finished")):
+                continue
+            kickoff = fx.get("kickoff_time")
+            if not kickoff:
+                continue
+            try:
+                ko = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+            except (TypeError, ValueError):
+                continue
+            if ko <= now_utc <= ko + FIXTURE_ASSUMED_DURATION:
+                return True
+        return False
+
+    matches_live = _any_match_in_progress()
+    if FORCE_REFRESH:
+        print("  FORCE_REFRESH set - doing a full refresh.")
+    elif matches_live:
+        print("  match(es) in progress - doing a full refresh.")
+    else:
+        prev_generated = (previous or {}).get("generated_at") if isinstance(previous, dict) else None
+        age_minutes = None
+        if prev_generated:
+            try:
+                prev_dt = datetime.fromisoformat(prev_generated.replace("Z", "+00:00"))
+                age_minutes = (now_utc - prev_dt).total_seconds() / 60
+            except (TypeError, ValueError):
+                age_minutes = None
+        if age_minutes is not None and age_minutes < IDLE_REFRESH_MINUTES:
+            print(
+                f"  no matches in progress and existing data is {age_minutes:.0f} min old "
+                f"(< {IDLE_REFRESH_MINUTES} min) - skipping this run."
+            )
+            return
+        print(
+            f"  no matches in progress, but data is "
+            f"{'missing' if age_minutes is None else f'{age_minutes:.0f} min old'} "
+            f"- doing a full refresh."
+        )
+
     def _fixture_effectively_finished(fx):
         if bool(fx.get("finished")):
             return True
@@ -750,7 +811,6 @@ def build():
     # One call per team per gameweek is the priciest part of this script, so we
     # cache aggressively: any gameweek that finished last run (its picks/stats
     # never change) is reused rather than re-fetched.
-    previous = load_previous_output()
     previous_fixtures = previous.get("fixtures_by_event", {}) if isinstance(previous, dict) else {}
     live_points_cache = {}
 
