@@ -37,6 +37,11 @@ FINAL_GW = int(os.environ.get("FINAL_GW", "38"))
 # made just a couple of cheap API calls. Set FORCE_REFRESH=1 (or trigger the
 # workflow manually) to always do the full run.
 IDLE_REFRESH_MINUTES = int(os.environ.get("IDLE_REFRESH_MINUTES", "60"))
+
+# Bump when the SHAPE of a cached squad row changes (not just when a new key
+# is added - new keys are caught by REQUIRED_KEYS). Forces cached gameweeks
+# to be refetched rather than served with an outdated structure.
+SQUAD_ROW_SCHEMA_V = 2
 FORCE_REFRESH = os.environ.get("FORCE_REFRESH", "").strip().lower() in ("1", "true", "yes")
 
 SESSION = requests.Session()
@@ -902,10 +907,22 @@ def build():
         recent form as actual per-gameweek numbers, not just an average."""
         if el_id is None or not finished_events:
             return []
-        return [
-            {"event": ev, "points": live_stats_for_event(ev).get(el_id, {}).get("points", 0)}
-            for ev in finished_events[-count:]
-        ]
+        club_id = player_by_id.get(el_id, {}).get("club_id")
+        out = []
+        for ev in finished_events[-count:]:
+            opps = club_opponent_by_event.get(ev, {}).get(club_id, [])
+            # A club can very occasionally have two fixtures in one gameweek;
+            # join them so the label still reads sensibly.
+            label = " / ".join(
+                (o["opponent"].upper() if o.get("is_home") else o["opponent"].lower())
+                for o in opps
+            ) if opps else ""
+            out.append({
+                "event": ev,
+                "points": live_stats_for_event(ev).get(el_id, {}).get("points", 0),
+                "opponent_label": label,
+            })
+        return out
 
     def _next_fixtures_for_club(club_id, count=5):
         """A club's next `count` real fixtures from next_event onward. Defined
@@ -977,6 +994,7 @@ def build():
                 "season_points": info.get("season_points", 0),
                 "next_fixtures": _next_fixtures_for_club(info.get("club_id")),
                 "recent_scores": _recent_scores(el_id),
+                "schema_v": SQUAD_ROW_SCHEMA_V,
                 "season_goals": info.get("season_goals", 0),
                 "season_assists": info.get("season_assists", 0),
                 "season_clean_sheets": info.get("season_clean_sheets", 0),
@@ -1066,6 +1084,7 @@ def build():
             "saves", "own_goals", "goals_conceded", "position_ranks",
             "season_goals", "season_assists", "season_clean_sheets",
             "season_bonus", "season_defcon", "next_fixtures", "recent_scores",
+            "schema_v",
         }
         found_signal = False
         for squad in squads_dict.values():
@@ -1713,6 +1732,98 @@ def build():
     else:
         print("  note: could not fetch league transactions; waivers-cleared list will be empty.")
 
+    # ---------------- Best signings ----------------
+    # Rank every completed signing (waiver, free agent or trade) by what the
+    # player actually produced for the team that signed them, counted only
+    # for the gameweeks they were genuinely owned: from the gameweek they
+    # came in, up to (but not including) the gameweek they were dropped
+    # again, if they were.
+    #
+    # Three different measures, since they answer different questions:
+    #   total_points  - everything they scored while owned (the headline)
+    #   team_points   - only what counted, i.e. while in the starting XI
+    #   ppg_started   - team_points per gameweek actually started
+    squad_lookup = {}  # event -> league_entry_id(str) -> name -> (points, started)
+    for ev_key, fixtures in fixtures_by_event.items():
+        ev = int(ev_key)
+        bucket = squad_lookup.setdefault(ev, {})
+        for f in fixtures:
+            for le_id_str, squad in (f.get("squads") or {}).items():
+                by_name = bucket.setdefault(le_id_str, {})
+                for p in squad.get("starting", []):
+                    by_name[p.get("name")] = (p.get("points", 0), True)
+                for p in squad.get("bench", []):
+                    by_name[p.get("name")] = (p.get("points", 0), False)
+
+    def _drop_event_for(le_id, player_name, signed_ev):
+        """The gameweek this team dropped that player again, if they did."""
+        later = [
+            t["event"] for t in accepted_transactions
+            if t.get("league_entry_id") == le_id
+            and t.get("player_out") == player_name
+            and t.get("event") is not None
+            and t["event"] > signed_ev
+        ]
+        return min(later) if later else None
+
+    best_signings = []
+    for t in accepted_transactions:
+        signed_ev, le_id, name = t.get("event"), t.get("league_entry_id"), t.get("player_in")
+        if signed_ev is None or le_id is None or not name:
+            continue
+        drop_ev = _drop_event_for(le_id, name, signed_ev)
+        total_points = team_points = starts = owned_gws = 0
+        games = []
+        info = _name_to_player_info.get(name, {})
+        club_id = info.get("club_id")
+        for ev in finished_events:
+            if ev < signed_ev:
+                continue
+            if drop_ev is not None and ev >= drop_ev:
+                continue
+            entry = squad_lookup.get(ev, {}).get(str(le_id), {}).get(name)
+            if entry is None:
+                continue
+            pts, started = entry
+            owned_gws += 1
+            total_points += pts
+            if started:
+                team_points += pts
+                starts += 1
+            opps = club_opponent_by_event.get(ev, {}).get(club_id, [])
+            games.append({
+                "event": ev,
+                "points": pts,
+                "started": started,
+                "opponent_label": " / ".join(
+                    (o["opponent"].upper() if o.get("is_home") else o["opponent"].lower())
+                    for o in opps
+                ) if opps else "",
+            })
+        if owned_gws == 0:
+            continue  # signed too recently to have been owned for a finished GW
+        best_signings.append({
+            "player_name": name,
+            "position": info.get("position", "?"),
+            "club": info.get("club", "?"),
+            "photo_url": info.get("photo_url"),
+            "team_name": t.get("team_name"),
+            "manager_name": t.get("manager_name"),
+            "league_entry_id": le_id,
+            "kind": t.get("kind"),
+            "signed_event": signed_ev,
+            "dropped_event": drop_ev,
+            "still_owned": drop_ev is None,
+            "gameweeks_owned": owned_gws,
+            "total_points": total_points,
+            "team_points": team_points,
+            "starts": starts,
+            "ppg_started": round(team_points / starts, 1) if starts else 0,
+            "games": games,
+        })
+    best_signings.sort(key=lambda s: -s["total_points"])
+    print(f"  best signings: ranked {len(best_signings)} completed signing(s)")
+
     # ---------- Apply post-squad transfers to the future previews ----------
     # Previews above were built from each team's most recent ACTUAL squad
     # (latest_squad_event). Any waiver or free-agent move that cleared after
@@ -1811,6 +1922,7 @@ def build():
         "streaks": streaks_summary,
         "in_form": in_form_summary,
         "accepted_transactions": accepted_transactions,
+        "best_signings": best_signings,
         "latest_squad_event": latest_squad_event,
         "team_of_season": team_of_season,
         "team_of_week": team_of_week,
