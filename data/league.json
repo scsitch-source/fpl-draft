@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T01:41:33.197631+00:00",
+  "generated_at": "2026-10-12T08:01:09.552202+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -86856,9 +86856,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.07,
+                "xg": 0.05,
                 "xa": 0.02,
-                "xgi": 0.09,
+                "xgi": 0.07,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -90210,7 +90210,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -92352,7 +92352,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -102425,7 +102425,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -112758,7 +112758,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -114687,7 +114687,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -127087,7 +127087,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -133214,7 +133214,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -145340,7 +145340,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -153534,7 +153534,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -155713,7 +155713,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -170025,7 +170025,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -176026,7 +176026,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -184338,7 +184338,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -190324,7 +190324,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -204668,7 +204668,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -206826,7 +206826,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -216931,7 +216931,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -227264,7 +227264,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -229193,7 +229193,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -241593,7 +241593,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -247720,7 +247720,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -259846,7 +259846,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -268040,7 +268040,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -270219,7 +270219,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -284531,7 +284531,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -290532,7 +290532,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -298844,7 +298844,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -304830,7 +304830,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -319174,7 +319174,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -321332,7 +321332,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -331437,7 +331437,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -341770,7 +341770,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -343699,7 +343699,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -356099,7 +356099,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -362226,7 +362226,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -374352,7 +374352,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -382546,7 +382546,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -384725,7 +384725,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -399037,7 +399037,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -405038,7 +405038,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -413350,7 +413350,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -419336,7 +419336,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -433680,7 +433680,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -435838,7 +435838,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -445943,7 +445943,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -456276,7 +456276,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -458205,7 +458205,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -470605,7 +470605,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -476732,7 +476732,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -488858,7 +488858,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -497052,7 +497052,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -499231,7 +499231,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -513543,7 +513543,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -519544,7 +519544,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -527856,7 +527856,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -533842,7 +533842,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -548186,7 +548186,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -550344,7 +550344,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -560449,7 +560449,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -570782,7 +570782,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -572711,7 +572711,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -585111,7 +585111,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -591238,7 +591238,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -603364,7 +603364,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -611558,7 +611558,7 @@
                   "bonus": 45,
                   "clean_sheets": 21,
                   "ga": 25,
-                  "defcon": 29
+                  "defcon": 30
                 },
                 "form": [
                   9,
@@ -613737,7 +613737,7 @@
                   "bonus": 59,
                   "clean_sheets": 98,
                   "ga": 91,
-                  "defcon": 135
+                  "defcon": 134
                 },
                 "form": [
                   0,
@@ -625433,9 +625433,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 0.93,
+        "season_xg": 0.89,
         "season_xa": 0.47,
-        "season_xgi": 1.4,
+        "season_xgi": 1.36,
         "season_minutes": 420,
         "api_rank": null,
         "is_captain": false,
@@ -625450,7 +625450,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 1,
+        "defensive_contribution_count": 2,
         "opponents": [
           {
             "opponent": "EVE",
@@ -625468,9 +625468,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.17,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.21,
         "owner_team_name": null
       },
       {
@@ -630689,8 +630689,8 @@
           ],
           "form": 5.2,
           "season_xg": 0.09,
-          "season_xa": 0.17,
-          "season_xgi": 0.26,
+          "season_xa": 0.16,
+          "season_xgi": 0.25,
           "season_minutes": 527,
           "api_rank": null,
           "is_captain": false,
@@ -633792,9 +633792,9 @@
             }
           ],
           "form": 6.2,
-          "season_xg": 0.93,
+          "season_xg": 0.89,
           "season_xa": 0.47,
-          "season_xgi": 1.4,
+          "season_xgi": 1.36,
           "season_minutes": 420,
           "api_rank": null,
           "is_captain": false,
@@ -654015,9 +654015,9 @@
           }
         ],
         "form": 5.4,
-        "season_xg": 0.24,
+        "season_xg": 0.22,
         "season_xa": 0.04,
-        "season_xgi": 0.28,
+        "season_xgi": 0.26,
         "season_minutes": 540,
         "api_rank": null,
         "is_captain": false,
@@ -654050,9 +654050,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.05,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.07,
         "rank": 10,
         "owner_team_name": "Hakuna Mateta"
       }
@@ -654617,9 +654617,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 0.93,
+        "season_xg": 0.89,
         "season_xa": 0.47,
-        "season_xgi": 1.4,
+        "season_xgi": 1.36,
         "season_minutes": 420,
         "api_rank": null,
         "is_captain": false,
@@ -654634,7 +654634,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 1,
+        "defensive_contribution_count": 2,
         "opponents": [
           {
             "opponent": "EVE",
@@ -654652,9 +654652,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.17,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.21,
         "rank": 5,
         "owner_team_name": null
       },
@@ -657983,9 +657983,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 0.93,
+        "season_xg": 0.89,
         "season_xa": 0.47,
-        "season_xgi": 1.4,
+        "season_xgi": 1.36,
         "season_minutes": 420,
         "api_rank": null,
         "is_captain": false,
@@ -658000,7 +658000,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 1,
+        "defensive_contribution_count": 2,
         "opponents": [
           {
             "opponent": "EVE",
@@ -658018,9 +658018,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.17,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.21,
         "rank": 13,
         "owner_team_name": null
       },
@@ -660383,9 +660383,9 @@
           }
         ],
         "form": 5.4,
-        "season_xg": 0.24,
+        "season_xg": 0.22,
         "season_xa": 0.04,
-        "season_xgi": 0.28,
+        "season_xgi": 0.26,
         "season_minutes": 540,
         "api_rank": null,
         "is_captain": false,
@@ -660418,9 +660418,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.05,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.07,
         "rank": 33,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -662904,8 +662904,8 @@
         ],
         "form": 5.2,
         "season_xg": 0.09,
-        "season_xa": 0.17,
-        "season_xgi": 0.26,
+        "season_xa": 0.16,
+        "season_xgi": 0.25,
         "season_minutes": 527,
         "api_rank": null,
         "is_captain": false,
@@ -662939,8 +662939,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.04,
-        "xa": 0.17,
-        "xgi": 0.21,
+        "xa": 0.16,
+        "xgi": 0.2,
         "rank": 54,
         "owner_team_name": null
       },
@@ -681400,7 +681400,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "EVE",
@@ -683783,9 +683783,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.88,
+        "season_xg": 0.9,
         "season_xa": 0.06,
-        "season_xgi": 0.94,
+        "season_xgi": 0.96,
         "season_minutes": 71,
         "api_rank": null,
         "is_captain": false,
@@ -683800,7 +683800,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 11,
+        "defensive_contribution_count": 10,
         "opponents": [
           {
             "opponent": "EVE",
@@ -683818,9 +683818,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.78,
+        "xg": 0.8,
         "xa": 0.04,
-        "xgi": 0.82,
+        "xgi": 0.84,
         "rank": 228,
         "owner_team_name": null
       },
@@ -746427,9 +746427,9 @@
           }
         ],
         "form": 5.4,
-        "season_xg": 0.24,
+        "season_xg": 0.22,
         "season_xa": 0.04,
-        "season_xgi": 0.28,
+        "season_xgi": 0.26,
         "season_minutes": 540,
         "api_rank": null,
         "is_captain": false,
@@ -746462,9 +746462,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.05,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.07,
         "rank": 10,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -747508,8 +747508,8 @@
         ],
         "form": 5.2,
         "season_xg": 0.09,
-        "season_xa": 0.17,
-        "season_xgi": 0.26,
+        "season_xa": 0.16,
+        "season_xgi": 0.25,
         "season_minutes": 527,
         "api_rank": null,
         "is_captain": false,
@@ -747543,8 +747543,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.04,
-        "xa": 0.17,
-        "xgi": 0.21,
+        "xa": 0.16,
+        "xgi": 0.2,
         "rank": 19,
         "owner_team_name": null
       },
@@ -771869,9 +771869,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 0.93,
+        "season_xg": 0.89,
         "season_xa": 0.47,
-        "season_xgi": 1.4,
+        "season_xgi": 1.36,
         "season_minutes": 420,
         "api_rank": null,
         "is_captain": false,
@@ -771886,7 +771886,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 1,
+        "defensive_contribution_count": 2,
         "opponents": [
           {
             "opponent": "EVE",
@@ -771904,9 +771904,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.17,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.21,
         "rank": 5,
         "owner_team_name": null
       },
@@ -782806,7 +782806,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "EVE",
@@ -784109,9 +784109,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.88,
+        "season_xg": 0.9,
         "season_xa": 0.06,
-        "season_xgi": 0.94,
+        "season_xgi": 0.96,
         "season_minutes": 71,
         "api_rank": null,
         "is_captain": false,
@@ -784126,7 +784126,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 11,
+        "defensive_contribution_count": 10,
         "opponents": [
           {
             "opponent": "EVE",
@@ -784144,9 +784144,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.78,
+        "xg": 0.8,
         "xa": 0.04,
-        "xgi": 0.82,
+        "xgi": 0.84,
         "rank": 107,
         "owner_team_name": null
       },
@@ -823024,9 +823024,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.07,
+          "xg": 0.05,
           "xa": 0.02,
-          "xgi": 0.09,
+          "xgi": 0.07,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -826356,7 +826356,7 @@
             "bonus": 45,
             "clean_sheets": 21,
             "ga": 25,
-            "defcon": 29
+            "defcon": 30
           },
           "form": [
             9,
@@ -828498,7 +828498,7 @@
             "bonus": 59,
             "clean_sheets": 98,
             "ga": 91,
-            "defcon": 135
+            "defcon": 134
           },
           "form": [
             0,
