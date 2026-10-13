@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T23:46:02.447560+00:00",
+  "generated_at": "2026-10-13T03:54:18.550663+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -83620,9 +83620,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.12,
+                "xg": 0.15,
                 "xa": 0.01,
-                "xgi": 0.13,
+                "xgi": 0.16,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -83850,7 +83850,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -86687,7 +86687,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -95229,9 +95229,9 @@
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 0,
-                "xg": 0.03,
+                "xg": 0.02,
                 "xa": 0.04,
-                "xgi": 0.07,
+                "xgi": 0.06,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -95772,9 +95772,9 @@
                 "own_goals": 0,
                 "goals_conceded": 4,
                 "saves": 0,
-                "xg": 0.38,
-                "xa": 0.11,
-                "xgi": 0.49,
+                "xg": 0.35,
+                "xa": 0.35,
+                "xgi": 0.7,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -104200,7 +104200,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -107063,7 +107063,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -124638,7 +124638,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -127495,7 +127495,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -133643,7 +133643,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -138955,7 +138955,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -158166,7 +158166,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -161428,7 +161428,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -164314,7 +164314,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -167597,7 +167597,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -186797,7 +186797,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -192120,7 +192120,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -198263,7 +198263,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -201120,7 +201120,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -218706,7 +218706,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -221569,7 +221569,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -239144,7 +239144,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -242001,7 +242001,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -248149,7 +248149,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -253461,7 +253461,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -272672,7 +272672,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -275934,7 +275934,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -278820,7 +278820,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -282103,7 +282103,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -301303,7 +301303,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -306626,7 +306626,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -312769,7 +312769,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -315626,7 +315626,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -333212,7 +333212,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -336075,7 +336075,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -353650,7 +353650,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -356507,7 +356507,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -362655,7 +362655,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -367967,7 +367967,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -387178,7 +387178,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -390440,7 +390440,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -393326,7 +393326,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -396609,7 +396609,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -415809,7 +415809,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -421132,7 +421132,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -427275,7 +427275,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -430132,7 +430132,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -447718,7 +447718,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -450581,7 +450581,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -468156,7 +468156,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -471013,7 +471013,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -477161,7 +477161,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -482473,7 +482473,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -501684,7 +501684,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -504946,7 +504946,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -507832,7 +507832,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -511115,7 +511115,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -530315,7 +530315,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -535638,7 +535638,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -541781,7 +541781,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -544638,7 +544638,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -562224,7 +562224,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -565087,7 +565087,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -582662,7 +582662,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -585519,7 +585519,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -591667,7 +591667,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -596979,7 +596979,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -616190,7 +616190,7 @@
                   "bonus": 44,
                   "clean_sheets": 37,
                   "ga": 47,
-                  "defcon": 116
+                  "defcon": 117
                 },
                 "form": [
                   2,
@@ -619452,7 +619452,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 26
+                  "defcon": 25
                 },
                 "form": [
                   1,
@@ -627269,9 +627269,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 0.26,
+        "season_xg": 0.33,
         "season_xa": 0.0,
-        "season_xgi": 0.26,
+        "season_xgi": 0.33,
         "season_minutes": 107,
         "api_rank": null,
         "is_captain": false,
@@ -627304,9 +627304,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.26,
+        "xg": 0.33,
         "xa": 0.0,
-        "xgi": 0.26,
+        "xgi": 0.33,
         "owner_team_name": null
       }
     ],
@@ -630019,9 +630019,9 @@
             }
           ],
           "form": 5.6,
-          "season_xg": 0.28,
+          "season_xg": 0.27,
           "season_xa": 0.83,
-          "season_xgi": 1.11,
+          "season_xgi": 1.1,
           "season_minutes": 539,
           "api_rank": null,
           "is_captain": false,
@@ -630139,8 +630139,8 @@
           ],
           "form": 2.4,
           "season_xg": 0.16,
-          "season_xa": 0.09,
-          "season_xgi": 0.25,
+          "season_xa": 0.1,
+          "season_xgi": 0.26,
           "season_minutes": 358,
           "api_rank": null,
           "is_captain": false,
@@ -631929,9 +631929,9 @@
             }
           ],
           "form": 5.6,
-          "season_xg": 1.0,
-          "season_xa": 0.59,
-          "season_xgi": 1.59,
+          "season_xg": 0.97,
+          "season_xa": 0.83,
+          "season_xgi": 1.8,
           "season_minutes": 540,
           "api_rank": null,
           "is_captain": false,
@@ -635511,9 +635511,9 @@
             }
           ],
           "form": 5.6,
-          "season_xg": 0.28,
+          "season_xg": 0.27,
           "season_xa": 0.83,
-          "season_xgi": 1.11,
+          "season_xgi": 1.1,
           "season_minutes": 539,
           "api_rank": null,
           "is_captain": false,
@@ -638016,9 +638016,9 @@
             }
           ],
           "form": 2.6,
-          "season_xg": 0.26,
+          "season_xg": 0.33,
           "season_xa": 0.0,
-          "season_xgi": 0.26,
+          "season_xgi": 0.33,
           "season_minutes": 107,
           "api_rank": null,
           "is_captain": false,
@@ -638051,9 +638051,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.26,
+          "xg": 0.33,
           "xa": 0.0,
-          "xgi": 0.26,
+          "xgi": 0.33,
           "owner_team_name": null
         }
       ],
@@ -654299,9 +654299,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 0.28,
+        "season_xg": 0.27,
         "season_xa": 0.83,
-        "season_xgi": 1.11,
+        "season_xgi": 1.1,
         "season_minutes": 539,
         "api_rank": null,
         "is_captain": false,
@@ -654334,9 +654334,9 @@
         "own_goals": 0,
         "goals_conceded": 4,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.02,
         "xa": 0.04,
-        "xgi": 0.07,
+        "xgi": 0.06,
         "rank": 9,
         "owner_team_name": "PFC"
       },
@@ -660427,9 +660427,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 0.28,
+        "season_xg": 0.27,
         "season_xa": 0.83,
-        "season_xgi": 1.11,
+        "season_xgi": 1.1,
         "season_minutes": 539,
         "api_rank": null,
         "is_captain": false,
@@ -660462,9 +660462,9 @@
         "own_goals": 0,
         "goals_conceded": 4,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.02,
         "xa": 0.04,
-        "xgi": 0.07,
+        "xgi": 0.06,
         "rank": 30,
         "owner_team_name": "PFC"
       },
@@ -661027,9 +661027,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 1.0,
-        "season_xa": 0.59,
-        "season_xgi": 1.59,
+        "season_xg": 0.97,
+        "season_xa": 0.83,
+        "season_xgi": 1.8,
         "season_minutes": 540,
         "api_rank": null,
         "is_captain": false,
@@ -661062,9 +661062,9 @@
         "own_goals": 0,
         "goals_conceded": 4,
         "saves": 0,
-        "xg": 0.38,
-        "xa": 0.11,
-        "xgi": 0.49,
+        "xg": 0.35,
+        "xa": 0.35,
+        "xgi": 0.7,
         "rank": 35,
         "owner_team_name": "PFC"
       },
@@ -666428,8 +666428,8 @@
         ],
         "form": 3.4,
         "season_xg": 1.12,
-        "season_xa": 0.35,
-        "season_xgi": 1.47,
+        "season_xa": 0.36,
+        "season_xgi": 1.48,
         "season_minutes": 342,
         "api_rank": null,
         "is_captain": false,
@@ -666463,8 +666463,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.31,
-        "xa": 0.05,
-        "xgi": 0.36,
+        "xa": 0.06,
+        "xgi": 0.37,
         "rank": 80,
         "owner_team_name": null
       },
@@ -672307,9 +672307,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 2.47,
+        "season_xg": 2.5,
         "season_xa": 0.07,
-        "season_xgi": 2.54,
+        "season_xgi": 2.57,
         "season_minutes": 518,
         "api_rank": null,
         "is_captain": false,
@@ -672342,9 +672342,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.12,
+        "xg": 0.15,
         "xa": 0.01,
-        "xgi": 0.13,
+        "xgi": 0.16,
         "rank": 129,
         "owner_team_name": "Eki-Tiki"
       },
@@ -673044,7 +673044,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "NEW",
@@ -678788,8 +678788,8 @@
         ],
         "form": 2.4,
         "season_xg": 0.16,
-        "season_xa": 0.09,
-        "season_xgi": 0.25,
+        "season_xa": 0.1,
+        "season_xgi": 0.26,
         "season_minutes": 358,
         "api_rank": null,
         "is_captain": false,
@@ -678823,8 +678823,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.02,
-        "xa": 0.01,
-        "xgi": 0.03,
+        "xa": 0.02,
+        "xgi": 0.04,
         "rank": 183,
         "owner_team_name": null
       },
@@ -678907,9 +678907,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 0.26,
+        "season_xg": 0.33,
         "season_xa": 0.0,
-        "season_xgi": 0.26,
+        "season_xgi": 0.33,
         "season_minutes": 107,
         "api_rank": null,
         "is_captain": false,
@@ -678942,9 +678942,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.26,
+        "xg": 0.33,
         "xa": 0.0,
-        "xgi": 0.26,
+        "xgi": 0.33,
         "rank": 184,
         "owner_team_name": null
       },
@@ -679044,7 +679044,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 0,
+        "defensive_contribution_count": 1,
         "opponents": [
           {
             "opponent": "NEW",
@@ -682867,9 +682867,9 @@
           }
         ],
         "form": 1.6,
-        "season_xg": 0.09,
+        "season_xg": 0.06,
         "season_xa": 0.02,
-        "season_xgi": 0.11,
+        "season_xgi": 0.08,
         "season_minutes": 326,
         "api_rank": null,
         "is_captain": false,
@@ -682902,9 +682902,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.03,
         "xa": 0.0,
-        "xgi": 0.06,
+        "xgi": 0.03,
         "rank": 217,
         "owner_team_name": null
       },
@@ -683107,9 +683107,9 @@
           }
         ],
         "form": 1.6,
-        "season_xg": 0.38,
+        "season_xg": 0.4,
         "season_xa": 0.01,
-        "season_xgi": 0.39,
+        "season_xgi": 0.41,
         "season_minutes": 116,
         "api_rank": null,
         "is_captain": false,
@@ -683142,9 +683142,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.08,
+        "xg": 0.1,
         "xa": 0.0,
-        "xgi": 0.08,
+        "xgi": 0.1,
         "rank": 219,
         "owner_team_name": null
       },
@@ -685507,9 +685507,9 @@
           }
         ],
         "form": 1.8,
-        "season_xg": 0.36,
+        "season_xg": 0.37,
         "season_xa": 0.08,
-        "season_xgi": 0.44,
+        "season_xgi": 0.45,
         "season_minutes": 81,
         "api_rank": null,
         "is_captain": false,
@@ -685542,9 +685542,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.08,
+        "xg": 0.09,
         "xa": 0.07,
-        "xgi": 0.15,
+        "xgi": 0.16,
         "rank": 239,
         "owner_team_name": null
       },
@@ -692707,9 +692707,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.17,
+        "season_xg": 0.18,
         "season_xa": 0.14,
-        "season_xgi": 0.31,
+        "season_xgi": 0.32,
         "season_minutes": 67,
         "api_rank": null,
         "is_captain": false,
@@ -692742,9 +692742,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.11,
+        "xg": 0.12,
         "xa": 0.0,
-        "xgi": 0.11,
+        "xgi": 0.12,
         "rank": 299,
         "owner_team_name": null
       },
@@ -695348,8 +695348,8 @@
         ],
         "form": 0.8,
         "season_xg": 0.29,
-        "season_xa": 0.54,
-        "season_xgi": 0.83,
+        "season_xa": 0.56,
+        "season_xgi": 0.85,
         "season_minutes": 239,
         "api_rank": null,
         "is_captain": false,
@@ -695383,8 +695383,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.26,
-        "xa": 0.13,
-        "xgi": 0.39,
+        "xa": 0.15,
+        "xgi": 0.41,
         "rank": 321,
         "owner_team_name": null
       },
@@ -701004,7 +701004,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "NEW",
@@ -746711,9 +746711,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 0.28,
+        "season_xg": 0.27,
         "season_xa": 0.83,
-        "season_xgi": 1.11,
+        "season_xgi": 1.1,
         "season_minutes": 539,
         "api_rank": null,
         "is_captain": false,
@@ -746746,9 +746746,9 @@
         "own_goals": 0,
         "goals_conceded": 4,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.02,
         "xa": 0.04,
-        "xgi": 0.07,
+        "xgi": 0.06,
         "rank": 9,
         "owner_team_name": "PFC"
       },
@@ -751408,7 +751408,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "NEW",
@@ -753312,8 +753312,8 @@
         ],
         "form": 2.4,
         "season_xg": 0.16,
-        "season_xa": 0.09,
-        "season_xgi": 0.25,
+        "season_xa": 0.1,
+        "season_xgi": 0.26,
         "season_minutes": 358,
         "api_rank": null,
         "is_captain": false,
@@ -753347,8 +753347,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.02,
-        "xa": 0.01,
-        "xgi": 0.03,
+        "xa": 0.02,
+        "xgi": 0.04,
         "rank": 64,
         "owner_team_name": null
       },
@@ -753448,7 +753448,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 0,
+        "defensive_contribution_count": 1,
         "opponents": [
           {
             "opponent": "NEW",
@@ -773833,9 +773833,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 1.0,
-        "season_xa": 0.59,
-        "season_xgi": 1.59,
+        "season_xg": 0.97,
+        "season_xa": 0.83,
+        "season_xgi": 1.8,
         "season_minutes": 540,
         "api_rank": null,
         "is_captain": false,
@@ -773868,9 +773868,9 @@
         "own_goals": 0,
         "goals_conceded": 4,
         "saves": 0,
-        "xg": 0.38,
-        "xa": 0.11,
-        "xgi": 0.49,
+        "xg": 0.35,
+        "xa": 0.35,
+        "xgi": 0.7,
         "rank": 18,
         "owner_team_name": "PFC"
       },
@@ -775394,8 +775394,8 @@
         ],
         "form": 3.4,
         "season_xg": 1.12,
-        "season_xa": 0.35,
-        "season_xgi": 1.47,
+        "season_xa": 0.36,
+        "season_xgi": 1.48,
         "season_minutes": 342,
         "api_rank": null,
         "is_captain": false,
@@ -775429,8 +775429,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.31,
-        "xa": 0.05,
-        "xgi": 0.36,
+        "xa": 0.06,
+        "xgi": 0.37,
         "rank": 31,
         "owner_team_name": null
       },
@@ -783673,9 +783673,9 @@
           }
         ],
         "form": 1.6,
-        "season_xg": 0.09,
+        "season_xg": 0.06,
         "season_xa": 0.02,
-        "season_xgi": 0.11,
+        "season_xgi": 0.08,
         "season_minutes": 326,
         "api_rank": null,
         "is_captain": false,
@@ -783708,9 +783708,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.03,
         "xa": 0.0,
-        "xgi": 0.06,
+        "xgi": 0.03,
         "rank": 100,
         "owner_team_name": null
       },
@@ -784993,9 +784993,9 @@
           }
         ],
         "form": 1.8,
-        "season_xg": 0.36,
+        "season_xg": 0.37,
         "season_xa": 0.08,
-        "season_xgi": 0.44,
+        "season_xgi": 0.45,
         "season_minutes": 81,
         "api_rank": null,
         "is_captain": false,
@@ -785028,9 +785028,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.08,
+        "xg": 0.09,
         "xa": 0.07,
-        "xgi": 0.15,
+        "xgi": 0.16,
         "rank": 111,
         "owner_team_name": null
       },
@@ -789914,8 +789914,8 @@
         ],
         "form": 0.8,
         "season_xg": 0.29,
-        "season_xa": 0.54,
-        "season_xgi": 0.83,
+        "season_xa": 0.56,
+        "season_xgi": 0.85,
         "season_minutes": 239,
         "api_rank": null,
         "is_captain": false,
@@ -789949,8 +789949,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.26,
-        "xa": 0.13,
-        "xgi": 0.39,
+        "xa": 0.15,
+        "xgi": 0.41,
         "rank": 152,
         "owner_team_name": null
       },
@@ -792690,7 +792690,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "NEW",
@@ -808995,9 +808995,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 2.47,
+        "season_xg": 2.5,
         "season_xa": 0.07,
-        "season_xgi": 2.54,
+        "season_xgi": 2.57,
         "season_minutes": 518,
         "api_rank": null,
         "is_captain": false,
@@ -809030,9 +809030,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.12,
+        "xg": 0.15,
         "xa": 0.01,
-        "xgi": 0.13,
+        "xgi": 0.16,
         "rank": 13,
         "owner_team_name": "Eki-Tiki"
       },
@@ -809835,9 +809835,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 0.26,
+        "season_xg": 0.33,
         "season_xa": 0.0,
-        "season_xgi": 0.26,
+        "season_xgi": 0.33,
         "season_minutes": 107,
         "api_rank": null,
         "is_captain": false,
@@ -809870,9 +809870,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.26,
+        "xg": 0.33,
         "xa": 0.0,
-        "xgi": 0.26,
+        "xgi": 0.33,
         "rank": 20,
         "owner_team_name": null
       },
@@ -810315,9 +810315,9 @@
           }
         ],
         "form": 1.6,
-        "season_xg": 0.38,
+        "season_xg": 0.4,
         "season_xa": 0.01,
-        "season_xgi": 0.39,
+        "season_xgi": 0.41,
         "season_minutes": 116,
         "api_rank": null,
         "is_captain": false,
@@ -810350,9 +810350,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.08,
+        "xg": 0.1,
         "xa": 0.0,
-        "xgi": 0.08,
+        "xgi": 0.1,
         "rank": 24,
         "owner_team_name": null
       },
@@ -811395,9 +811395,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.17,
+        "season_xg": 0.18,
         "season_xa": 0.14,
-        "season_xgi": 0.31,
+        "season_xgi": 0.32,
         "season_minutes": 67,
         "api_rank": null,
         "is_captain": false,
@@ -811430,9 +811430,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.11,
+        "xg": 0.12,
         "xa": 0.0,
-        "xgi": 0.11,
+        "xgi": 0.12,
         "rank": 33,
         "owner_team_name": null
       },
@@ -820214,9 +820214,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.12,
+          "xg": 0.15,
           "xa": 0.01,
-          "xgi": 0.13,
+          "xgi": 0.16,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -820444,7 +820444,7 @@
             "bonus": 8,
             "clean_sheets": 5,
             "ga": 47,
-            "defcon": 26
+            "defcon": 25
           },
           "form": [
             1,
@@ -823259,7 +823259,7 @@
             "bonus": 44,
             "clean_sheets": 37,
             "ga": 47,
-            "defcon": 116
+            "defcon": 117
           },
           "form": [
             2,
@@ -831757,9 +831757,9 @@
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 0,
-          "xg": 0.03,
+          "xg": 0.02,
           "xa": 0.04,
-          "xgi": 0.07,
+          "xgi": 0.06,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -832300,9 +832300,9 @@
           "own_goals": 0,
           "goals_conceded": 4,
           "saves": 0,
-          "xg": 0.38,
-          "xa": 0.11,
-          "xgi": 0.49,
+          "xg": 0.35,
+          "xa": 0.35,
+          "xgi": 0.7,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
