@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:36:56.311507+00:00",
+  "generated_at": "2026-10-17T20:54:13.475309+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19,14 +19,14 @@
       "team_name": ":)",
       "manager_name": "Charlie Spring",
       "score": 27,
-      "api_score": 0
+      "api_score": 27
     },
     "away": {
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "score": 33,
-      "api_score": 0
+      "api_score": 33
     },
     "finished": false,
     "started": true,
@@ -96601,14 +96601,14 @@
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 27,
-          "api_score": 0
+          "api_score": 27
         },
         "away": {
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
           "score": 33,
-          "api_score": 0
+          "api_score": 33
         },
         "finished": false,
         "started": true,
@@ -97378,7 +97378,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -99269,7 +99269,7 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 71,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -99279,7 +99279,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -99961,7 +99961,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -99971,7 +99971,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -100115,9 +100115,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.45,
+                "xg": 0.49,
                 "xa": 0.19,
-                "xgi": 0.64,
+                "xgi": 0.68,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 4
@@ -100229,7 +100229,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -100239,7 +100239,7 @@
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -100668,14 +100668,14 @@
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
           "score": 10,
-          "api_score": 0
+          "api_score": 10
         },
         "away": {
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 25,
-          "api_score": 0
+          "api_score": 25
         },
         "finished": false,
         "started": true,
@@ -101708,7 +101708,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -101727,7 +101727,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -101745,7 +101745,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 6,
+                "defensive_contribution_count": 5,
                 "opponents": [
                   {
                     "opponent": "LIV",
@@ -103063,7 +103063,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -103071,7 +103071,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -103089,7 +103089,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
-                "defensive_contribution_count": 14,
+                "defensive_contribution_count": 13,
                 "opponents": [
                   {
                     "opponent": "BRE",
@@ -103107,9 +103107,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 0.02,
+                "xg": 0.03,
                 "xa": 0.01,
-                "xgi": 0.03,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -103481,7 +103481,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -103629,7 +103629,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 71,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 11,
@@ -103639,7 +103639,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 0,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -104188,7 +104188,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
@@ -104198,7 +104198,7 @@
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -104610,9 +104610,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.09,
+                "xg": 0.1,
                 "xa": 0.24,
-                "xgi": 0.33,
+                "xgi": 0.34,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -104762,14 +104762,14 @@
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 21,
-          "api_score": 0
+          "api_score": 21
         },
         "away": {
           "league_entry_id": 27141,
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 14,
-          "api_score": 0
+          "api_score": 14
         },
         "finished": false,
         "started": true,
@@ -106251,9 +106251,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 0.29,
+                "xg": 0.33,
                 "xa": 0.02,
-                "xgi": 0.31,
+                "xgi": 0.35,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -108818,14 +108818,14 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 11,
-          "api_score": 0
+          "api_score": 11
         },
         "away": {
           "league_entry_id": 27140,
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
           "score": 4,
-          "api_score": 0
+          "api_score": 4
         },
         "finished": false,
         "started": true,
@@ -109471,7 +109471,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 10,
@@ -109481,7 +109481,7 @@
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -109733,7 +109733,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -109999,7 +109999,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -110014,7 +110014,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 3,
@@ -110024,7 +110024,7 @@
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -111358,7 +111358,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 9,
@@ -111368,7 +111368,7 @@
                     "is_home": true,
                     "team_score": 0,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-10-17T16:30:00Z"
                   }
@@ -111875,7 +111875,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -113910,7 +113910,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -113929,7 +113929,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -119792,7 +119792,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -121976,7 +121976,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -122244,7 +122244,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -123456,7 +123456,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -123464,7 +123464,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -123877,7 +123877,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -126217,7 +126217,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -132344,7 +132344,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -136289,7 +136289,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -136557,7 +136557,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -137790,7 +137790,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -137798,7 +137798,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -138211,7 +138211,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -142318,7 +142318,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -144607,7 +144607,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -144626,7 +144626,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -150651,7 +150651,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -150919,7 +150919,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -152806,7 +152806,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -152825,7 +152825,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -154870,7 +154870,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -156626,7 +156626,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -160290,7 +160290,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -160298,7 +160298,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -160711,7 +160711,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -166476,7 +166476,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -166484,7 +166484,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -166897,7 +166897,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -169216,7 +169216,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -170993,7 +170993,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -173156,7 +173156,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -173424,7 +173424,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -175332,7 +175332,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -175351,7 +175351,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -179304,7 +179304,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -179572,7 +179572,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -183534,7 +183534,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -189640,7 +189640,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -189659,7 +189659,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -191026,7 +191026,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -191034,7 +191034,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -191447,7 +191447,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -193498,7 +193498,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -197186,7 +197186,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -197194,7 +197194,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -197607,7 +197607,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -199679,7 +199679,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -204018,7 +204018,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -204037,7 +204037,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -206061,7 +206061,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -210012,7 +210012,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -210280,7 +210280,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -211925,7 +211925,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -216286,7 +216286,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -216305,7 +216305,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -217651,7 +217651,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -217659,7 +217659,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -218072,7 +218072,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -224368,7 +224368,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -224636,7 +224636,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -226526,7 +226526,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -228570,7 +228570,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -228589,7 +228589,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -234452,7 +234452,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -236636,7 +236636,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -236904,7 +236904,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -238116,7 +238116,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -238124,7 +238124,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -238537,7 +238537,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -240877,7 +240877,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -247004,7 +247004,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -250949,7 +250949,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -251217,7 +251217,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -252450,7 +252450,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -252458,7 +252458,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -252871,7 +252871,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -256978,7 +256978,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -259267,7 +259267,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -259286,7 +259286,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -265311,7 +265311,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -265579,7 +265579,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -267466,7 +267466,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -267485,7 +267485,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -269530,7 +269530,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -271286,7 +271286,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -274950,7 +274950,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -274958,7 +274958,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -275371,7 +275371,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -281136,7 +281136,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -281144,7 +281144,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -281557,7 +281557,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -283876,7 +283876,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -285653,7 +285653,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -287816,7 +287816,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -288084,7 +288084,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -289992,7 +289992,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -290011,7 +290011,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -293964,7 +293964,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -294232,7 +294232,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -298194,7 +298194,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -304300,7 +304300,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -304319,7 +304319,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -305686,7 +305686,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -305694,7 +305694,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -306107,7 +306107,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -308158,7 +308158,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -311846,7 +311846,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -311854,7 +311854,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -312267,7 +312267,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -314339,7 +314339,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -318678,7 +318678,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -318697,7 +318697,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -320721,7 +320721,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -324672,7 +324672,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -324940,7 +324940,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -326585,7 +326585,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -330946,7 +330946,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -330965,7 +330965,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -332311,7 +332311,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -332319,7 +332319,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -332732,7 +332732,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -339028,7 +339028,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -339296,7 +339296,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -341186,7 +341186,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -343230,7 +343230,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -343249,7 +343249,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -349112,7 +349112,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -351296,7 +351296,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -351564,7 +351564,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -352776,7 +352776,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -352784,7 +352784,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -353197,7 +353197,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -355537,7 +355537,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -361664,7 +361664,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -365609,7 +365609,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -365877,7 +365877,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -367110,7 +367110,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -367118,7 +367118,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -367531,7 +367531,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -371638,7 +371638,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -373927,7 +373927,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -373946,7 +373946,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -379971,7 +379971,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -380239,7 +380239,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -382126,7 +382126,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -382145,7 +382145,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -384190,7 +384190,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -385946,7 +385946,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -389610,7 +389610,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -389618,7 +389618,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -390031,7 +390031,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -395796,7 +395796,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -395804,7 +395804,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -396217,7 +396217,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -398536,7 +398536,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -400313,7 +400313,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -402476,7 +402476,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -402744,7 +402744,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -404652,7 +404652,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -404671,7 +404671,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -408624,7 +408624,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -408892,7 +408892,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -412854,7 +412854,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -418960,7 +418960,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -418979,7 +418979,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -420346,7 +420346,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -420354,7 +420354,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -420767,7 +420767,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -422818,7 +422818,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -426506,7 +426506,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -426514,7 +426514,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -426927,7 +426927,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -428999,7 +428999,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -433338,7 +433338,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -433357,7 +433357,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -435381,7 +435381,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -439332,7 +439332,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -439600,7 +439600,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -441245,7 +441245,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -445606,7 +445606,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -445625,7 +445625,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -446971,7 +446971,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -446979,7 +446979,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -447392,7 +447392,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -453688,7 +453688,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -453956,7 +453956,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -455846,7 +455846,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -457890,7 +457890,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -457909,7 +457909,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -463772,7 +463772,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -465956,7 +465956,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -466224,7 +466224,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -467436,7 +467436,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -467444,7 +467444,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -467857,7 +467857,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -470197,7 +470197,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -476324,7 +476324,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -480269,7 +480269,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -480537,7 +480537,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -481770,7 +481770,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -481778,7 +481778,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -482191,7 +482191,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -486298,7 +486298,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -488587,7 +488587,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -488606,7 +488606,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -494631,7 +494631,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -494899,7 +494899,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -496786,7 +496786,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -496805,7 +496805,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -498850,7 +498850,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -500606,7 +500606,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -504270,7 +504270,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -504278,7 +504278,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -504691,7 +504691,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -510456,7 +510456,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -510464,7 +510464,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -510877,7 +510877,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -513196,7 +513196,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -514973,7 +514973,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -517136,7 +517136,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -517404,7 +517404,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -519312,7 +519312,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -519331,7 +519331,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -523284,7 +523284,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -523552,7 +523552,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -527514,7 +527514,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -533620,7 +533620,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -533639,7 +533639,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -535006,7 +535006,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -535014,7 +535014,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -535427,7 +535427,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -537478,7 +537478,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -541166,7 +541166,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -541174,7 +541174,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -541587,7 +541587,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -543659,7 +543659,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -547998,7 +547998,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -548017,7 +548017,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -550041,7 +550041,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -553992,7 +553992,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -554260,7 +554260,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -555905,7 +555905,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -560266,7 +560266,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -560285,7 +560285,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -561631,7 +561631,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -561639,7 +561639,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -562052,7 +562052,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -568348,7 +568348,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -568616,7 +568616,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -570506,7 +570506,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -572550,7 +572550,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -572569,7 +572569,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -578432,7 +578432,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -580616,7 +580616,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -580884,7 +580884,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -582096,7 +582096,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -582104,7 +582104,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -582517,7 +582517,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -584857,7 +584857,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -590984,7 +590984,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -594929,7 +594929,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -595197,7 +595197,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -596430,7 +596430,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -596438,7 +596438,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -596851,7 +596851,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -600958,7 +600958,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -603247,7 +603247,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -603266,7 +603266,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -609291,7 +609291,7 @@
                   "bonus": 3,
                   "clean_sheets": 24,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   14,
@@ -609559,7 +609559,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   3,
@@ -611446,7 +611446,7 @@
                 "season_assists": 2,
                 "season_clean_sheets": 2,
                 "season_bonus": 6,
-                "season_defcon": 44,
+                "season_defcon": 43,
                 "badges": [
                   {
                     "code": "top10",
@@ -611465,7 +611465,7 @@
                   "bonus": 5,
                   "clean_sheets": 24,
                   "ga": 4,
-                  "defcon": 38
+                  "defcon": 39
                 },
                 "form": [
                   10,
@@ -613510,7 +613510,7 @@
                   "bonus": 15,
                   "clean_sheets": 105,
                   "ga": 32,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   1,
@@ -615266,7 +615266,7 @@
                   "bonus": 20,
                   "clean_sheets": 54,
                   "ga": 8,
-                  "defcon": 40
+                  "defcon": 39
                 },
                 "form": [
                   7,
@@ -618930,7 +618930,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 3,
                 "season_bonus": 3,
-                "season_defcon": 62,
+                "season_defcon": 61,
                 "badges": [],
                 "position_ranks": {
                   "goals": 28,
@@ -618938,7 +618938,7 @@
                   "bonus": 8,
                   "clean_sheets": 5,
                   "ga": 47,
-                  "defcon": 14
+                  "defcon": 16
                 },
                 "form": [
                   3,
@@ -619351,7 +619351,7 @@
                   "bonus": 63,
                   "clean_sheets": 54,
                   "ga": 99,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   2,
@@ -625788,7 +625788,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "LIV",
@@ -626128,9 +626128,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.83,
+        "season_xg": 3.87,
         "season_xa": 0.1,
-        "season_xgi": 3.93,
+        "season_xgi": 3.97,
         "season_minutes": 491,
         "api_rank": null,
         "is_captain": false,
@@ -626163,9 +626163,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.33,
         "xa": 0.02,
-        "xgi": 0.31,
+        "xgi": 0.35,
         "owner_team_name": "Clean Machine FC"
       }
     ],
@@ -626981,7 +626981,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
         "defensive_contribution_count": 12,
@@ -626991,7 +626991,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -627338,7 +627338,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -627348,7 +627348,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -627681,9 +627681,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 0.76,
+        "season_xg": 0.77,
         "season_xa": 0.33,
-        "season_xgi": 1.09,
+        "season_xgi": 1.1,
         "season_minutes": 425,
         "api_rank": null,
         "is_captain": false,
@@ -627716,9 +627716,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.19,
+        "xg": 0.2,
         "xa": 0.01,
-        "xgi": 0.2,
+        "xgi": 0.21,
         "owner_team_name": null
       },
       {
@@ -627919,9 +627919,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.83,
+        "season_xg": 3.87,
         "season_xa": 0.1,
-        "season_xgi": 3.93,
+        "season_xgi": 3.97,
         "season_minutes": 491,
         "api_rank": null,
         "is_captain": false,
@@ -627954,9 +627954,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.33,
         "xa": 0.02,
-        "xgi": 0.31,
+        "xgi": 0.35,
         "owner_team_name": "Clean Machine FC"
       }
     ],
@@ -628054,7 +628054,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -628064,7 +628064,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -628173,7 +628173,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -628183,7 +628183,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -628997,9 +628997,9 @@
             }
           ],
           "form": 2.0,
-          "season_xg": 0.58,
+          "season_xg": 0.59,
           "season_xa": 0.55,
-          "season_xgi": 1.13,
+          "season_xgi": 1.14,
           "season_minutes": 474,
           "api_rank": null,
           "is_captain": false,
@@ -633174,9 +633174,9 @@
             }
           ],
           "form": 6.2,
-          "season_xg": 3.83,
+          "season_xg": 3.87,
           "season_xa": 0.1,
-          "season_xgi": 3.93,
+          "season_xgi": 3.97,
           "season_minutes": 491,
           "api_rank": null,
           "is_captain": false,
@@ -637234,9 +637234,9 @@
             }
           ],
           "form": 3.8,
-          "season_xg": 1.46,
+          "season_xg": 1.43,
           "season_xa": 0.56,
-          "season_xgi": 2.02,
+          "season_xgi": 1.99,
           "season_minutes": 427,
           "api_rank": null,
           "is_captain": false,
@@ -637353,9 +637353,9 @@
             }
           ],
           "form": 6.2,
-          "season_xg": 3.83,
+          "season_xg": 3.87,
           "season_xa": 0.1,
-          "season_xgi": 3.93,
+          "season_xgi": 3.97,
           "season_minutes": 491,
           "api_rank": null,
           "is_captain": false,
@@ -639519,7 +639519,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 12,
@@ -639529,7 +639529,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -639876,7 +639876,7 @@
           "goals": 1,
           "assists": 0,
           "minutes": 71,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -639886,7 +639886,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -640219,9 +640219,9 @@
             }
           ],
           "form": 2.6,
-          "season_xg": 0.76,
+          "season_xg": 0.77,
           "season_xa": 0.33,
-          "season_xgi": 1.09,
+          "season_xgi": 1.1,
           "season_minutes": 425,
           "api_rank": null,
           "is_captain": false,
@@ -640254,9 +640254,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.19,
+          "xg": 0.2,
           "xa": 0.01,
-          "xgi": 0.2,
+          "xgi": 0.21,
           "owner_team_name": null
         },
         {
@@ -640457,9 +640457,9 @@
             }
           ],
           "form": 6.2,
-          "season_xg": 3.83,
+          "season_xg": 3.87,
           "season_xa": 0.1,
-          "season_xgi": 3.93,
+          "season_xgi": 3.97,
           "season_minutes": 491,
           "api_rank": null,
           "is_captain": false,
@@ -640492,9 +640492,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.29,
+          "xg": 0.33,
           "xa": 0.02,
-          "xgi": 0.31,
+          "xgi": 0.35,
           "owner_team_name": "Clean Machine FC"
         }
       ],
@@ -640592,7 +640592,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -640602,7 +640602,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -640711,7 +640711,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
@@ -640721,7 +640721,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -642406,7 +642406,7 @@
           "is_home": true,
           "team_score": 0,
           "opponent_score": 1,
-          "finished": false,
+          "finished": true,
           "difficulty": 3,
           "kickoff_time": "2026-10-17T16:30:00Z"
         }
@@ -642417,7 +642417,7 @@
           "is_home": false,
           "team_score": 1,
           "opponent_score": 0,
-          "finished": false,
+          "finished": true,
           "difficulty": 3,
           "kickoff_time": "2026-10-17T16:30:00Z"
         }
@@ -650076,7 +650076,7 @@
         "home_score": 0,
         "away_score": 1,
         "kickoff_time": "2026-10-17T16:30:00Z",
-        "finished": false,
+        "finished": true,
         "home_difficulty": 3,
         "away_difficulty": 3
       },
@@ -654216,9 +654216,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.83,
+        "season_xg": 3.87,
         "season_xa": 0.1,
-        "season_xgi": 3.93,
+        "season_xgi": 3.97,
         "season_minutes": 491,
         "api_rank": null,
         "is_captain": false,
@@ -654251,9 +654251,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.33,
         "xa": 0.02,
-        "xgi": 0.31,
+        "xgi": 0.35,
         "rank": 8,
         "owner_team_name": "Clean Machine FC"
       },
@@ -655552,7 +655552,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -655562,7 +655562,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -656634,7 +656634,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -656644,7 +656644,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -657359,7 +657359,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "LIV",
@@ -658424,9 +658424,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.83,
+        "season_xg": 3.87,
         "season_xa": 0.1,
-        "season_xgi": 3.93,
+        "season_xgi": 3.97,
         "season_minutes": 491,
         "api_rank": null,
         "is_captain": false,
@@ -658459,9 +658459,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.33,
         "xa": 0.02,
-        "xgi": 0.31,
+        "xgi": 0.35,
         "rank": 3,
         "owner_team_name": "Clean Machine FC"
       },
@@ -660228,9 +660228,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.83,
+        "season_xg": 3.87,
         "season_xa": 0.1,
-        "season_xgi": 3.93,
+        "season_xgi": 3.97,
         "season_minutes": 491,
         "api_rank": null,
         "is_captain": false,
@@ -660263,9 +660263,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.33,
         "xa": 0.02,
-        "xgi": 0.31,
+        "xgi": 0.35,
         "rank": 8,
         "owner_team_name": "Clean Machine FC"
       },
@@ -660605,7 +660605,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "LIV",
@@ -661802,7 +661802,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -661812,7 +661812,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -663122,7 +663122,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -663132,7 +663132,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -663602,7 +663602,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -663612,7 +663612,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -663965,7 +663965,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 10,
+        "defensive_contribution_count": 11,
         "opponents": [
           {
             "opponent": "LIV",
@@ -664428,9 +664428,9 @@
           }
         ],
         "form": 5.2,
-        "season_xg": 0.29,
+        "season_xg": 0.3,
         "season_xa": 0.15,
-        "season_xgi": 0.44,
+        "season_xgi": 0.45,
         "season_minutes": 592,
         "api_rank": null,
         "is_captain": false,
@@ -664445,7 +664445,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
-        "defensive_contribution_count": 14,
+        "defensive_contribution_count": 13,
         "opponents": [
           {
             "opponent": "BRE",
@@ -664463,9 +664463,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.02,
+        "xg": 0.03,
         "xa": 0.01,
-        "xgi": 0.03,
+        "xgi": 0.04,
         "rank": 43,
         "owner_team_name": "Eki-Tiki"
       },
@@ -665762,7 +665762,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 11,
@@ -665772,7 +665772,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -665882,7 +665882,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 45,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 10,
@@ -665892,7 +665892,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -667908,9 +667908,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 0.76,
+        "season_xg": 0.77,
         "season_xa": 0.33,
-        "season_xgi": 1.09,
+        "season_xgi": 1.1,
         "season_minutes": 425,
         "api_rank": null,
         "is_captain": false,
@@ -667943,9 +667943,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.19,
+        "xg": 0.2,
         "xa": 0.01,
-        "xgi": 0.2,
+        "xgi": 0.21,
         "rank": 72,
         "owner_team_name": null
       },
@@ -668162,7 +668162,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -668172,7 +668172,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -668282,7 +668282,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -668292,7 +668292,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -669122,7 +669122,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 17,
@@ -669132,7 +669132,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -669348,9 +669348,9 @@
           }
         ],
         "form": 2.0,
-        "season_xg": 0.58,
+        "season_xg": 0.59,
         "season_xa": 0.55,
-        "season_xgi": 1.13,
+        "season_xgi": 1.14,
         "season_minutes": 474,
         "api_rank": null,
         "is_captain": false,
@@ -669383,9 +669383,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.04,
         "xa": 0.04,
-        "xgi": 0.07,
+        "xgi": 0.08,
         "rank": 84,
         "owner_team_name": null
       },
@@ -669962,7 +669962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 55,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -669972,7 +669972,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -671028,9 +671028,9 @@
           }
         ],
         "form": 3.8,
-        "season_xg": 1.46,
+        "season_xg": 1.43,
         "season_xa": 0.56,
-        "season_xgi": 2.02,
+        "season_xgi": 1.99,
         "season_minutes": 427,
         "api_rank": null,
         "is_captain": false,
@@ -671063,9 +671063,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.22,
+        "xg": 0.19,
         "xa": 0.01,
-        "xgi": 0.23,
+        "xgi": 0.2,
         "rank": 98,
         "owner_team_name": null
       },
@@ -671762,7 +671762,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
         "defensive_contribution_count": 12,
@@ -671772,7 +671772,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -671882,7 +671882,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -671892,7 +671892,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -672228,9 +672228,9 @@
           }
         ],
         "form": 2.4,
-        "season_xg": 1.51,
+        "season_xg": 1.52,
         "season_xa": 1.06,
-        "season_xgi": 2.57,
+        "season_xgi": 2.58,
         "season_minutes": 471,
         "api_rank": null,
         "is_captain": false,
@@ -672263,9 +672263,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.09,
+        "xg": 0.1,
         "xa": 0.24,
-        "xgi": 0.33,
+        "xgi": 0.34,
         "rank": 108,
         "owner_team_name": "Eki-Tiki"
       },
@@ -674988,9 +674988,9 @@
           }
         ],
         "form": 2.8,
-        "season_xg": 3.65,
+        "season_xg": 3.69,
         "season_xa": 0.48,
-        "season_xgi": 4.13,
+        "season_xgi": 4.17,
         "season_minutes": 622,
         "api_rank": null,
         "is_captain": false,
@@ -675023,9 +675023,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.45,
+        "xg": 0.49,
         "xa": 0.19,
-        "xgi": 0.64,
+        "xgi": 0.68,
         "rank": 131,
         "owner_team_name": "FC Strup"
       },
@@ -675962,7 +675962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -675972,7 +675972,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -676082,7 +676082,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -676092,7 +676092,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -676442,7 +676442,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 7,
@@ -676452,7 +676452,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -678962,7 +678962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -678972,7 +678972,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -679802,7 +679802,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 12,
@@ -679812,7 +679812,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -679922,7 +679922,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -679932,7 +679932,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -680042,7 +680042,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 11,
@@ -680052,7 +680052,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -680522,7 +680522,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -680532,7 +680532,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -681108,9 +681108,9 @@
           }
         ],
         "form": 2.4,
-        "season_xg": 0.55,
+        "season_xg": 0.58,
         "season_xa": 0.85,
-        "season_xgi": 1.4,
+        "season_xgi": 1.43,
         "season_minutes": 486,
         "api_rank": null,
         "is_captain": false,
@@ -681143,9 +681143,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.18,
+        "xg": 0.21,
         "xa": 0.35,
-        "xgi": 0.53,
+        "xgi": 0.56,
         "rank": 182,
         "owner_team_name": null
       },
@@ -682922,7 +682922,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -682932,7 +682932,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -683162,7 +683162,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 76,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -683172,7 +683172,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -683762,7 +683762,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 18,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 6,
@@ -683772,7 +683772,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -687482,7 +687482,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 34,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -687492,7 +687492,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -687842,7 +687842,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -687852,7 +687852,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -687962,7 +687962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -687972,7 +687972,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -688082,7 +688082,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 45,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 5,
@@ -688092,7 +688092,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -688202,7 +688202,7 @@
         "goals": 0,
         "assists": 1,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 5,
@@ -688212,7 +688212,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -691202,7 +691202,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -691212,7 +691212,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -692402,7 +692402,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -692412,7 +692412,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -692762,7 +692762,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 55,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -692772,7 +692772,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -694442,7 +694442,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -694452,7 +694452,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -695748,9 +695748,9 @@
           }
         ],
         "form": 0.8,
-        "season_xg": 0.06,
+        "season_xg": 0.09,
         "season_xa": 0.07,
-        "season_xgi": 0.13,
+        "season_xgi": 0.16,
         "season_minutes": 120,
         "api_rank": null,
         "is_captain": false,
@@ -695765,7 +695765,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "BRE",
@@ -695783,9 +695783,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.09,
         "xa": 0.07,
-        "xgi": 0.13,
+        "xgi": 0.16,
         "rank": 304,
         "owner_team_name": null
       },
@@ -696002,7 +696002,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 34,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -696012,7 +696012,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -696962,7 +696962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 13,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -696972,7 +696972,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -697082,7 +697082,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -697092,7 +697092,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -698522,7 +698522,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -698532,7 +698532,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -698642,7 +698642,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -698652,7 +698652,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -698762,7 +698762,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -698772,7 +698772,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -699482,7 +699482,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 18,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -699492,7 +699492,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -700802,7 +700802,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -700812,7 +700812,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -702482,7 +702482,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -702492,7 +702492,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -705722,7 +705722,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -705732,7 +705732,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -705842,7 +705842,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 1,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -705852,7 +705852,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -706922,7 +706922,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -706932,7 +706932,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -707042,7 +707042,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -707052,7 +707052,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -709682,7 +709682,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 89,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 6,
@@ -709692,7 +709692,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -711242,7 +711242,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 18,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 7,
@@ -711252,7 +711252,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713162,7 +713162,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713172,7 +713172,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713282,7 +713282,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713292,7 +713292,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713402,7 +713402,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713412,7 +713412,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713522,7 +713522,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713532,7 +713532,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713642,7 +713642,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713652,7 +713652,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713762,7 +713762,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713772,7 +713772,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -713882,7 +713882,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -713892,7 +713892,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -714002,7 +714002,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -714012,7 +714012,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -730322,7 +730322,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -730332,7 +730332,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -730442,7 +730442,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -730452,7 +730452,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -730562,7 +730562,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -730572,7 +730572,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -730682,7 +730682,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -730692,7 +730692,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -730802,7 +730802,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -730812,7 +730812,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -735002,7 +735002,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -735012,7 +735012,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -735842,7 +735842,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -735852,7 +735852,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -735962,7 +735962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -735972,7 +735972,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -736082,7 +736082,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -736092,7 +736092,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -737282,7 +737282,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -737292,7 +737292,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -738482,7 +738482,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -738492,7 +738492,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -738842,7 +738842,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -738852,7 +738852,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -738962,7 +738962,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -738972,7 +738972,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -739082,7 +739082,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -739092,7 +739092,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -739202,7 +739202,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -739212,7 +739212,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -739322,7 +739322,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -739332,7 +739332,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -740404,7 +740404,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -740414,7 +740414,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -741124,7 +741124,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -741134,7 +741134,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -742204,7 +742204,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -742214,7 +742214,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -745924,7 +745924,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -745934,7 +745934,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -746044,7 +746044,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -746054,7 +746054,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -746164,7 +746164,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -746174,7 +746174,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -748084,7 +748084,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -748094,7 +748094,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -749046,7 +749046,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -749056,7 +749056,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -749752,9 +749752,9 @@
           }
         ],
         "form": 5.2,
-        "season_xg": 0.29,
+        "season_xg": 0.3,
         "season_xa": 0.15,
-        "season_xgi": 0.44,
+        "season_xgi": 0.45,
         "season_minutes": 592,
         "api_rank": null,
         "is_captain": false,
@@ -749769,7 +749769,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
-        "defensive_contribution_count": 14,
+        "defensive_contribution_count": 13,
         "opponents": [
           {
             "opponent": "BRE",
@@ -749787,9 +749787,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.02,
+        "xg": 0.03,
         "xa": 0.01,
-        "xgi": 0.03,
+        "xgi": 0.04,
         "rank": 14,
         "owner_team_name": "Eki-Tiki"
       },
@@ -751326,7 +751326,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -751336,7 +751336,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -751912,9 +751912,9 @@
           }
         ],
         "form": 2.0,
-        "season_xg": 0.58,
+        "season_xg": 0.59,
         "season_xa": 0.55,
-        "season_xgi": 1.13,
+        "season_xgi": 1.14,
         "season_minutes": 474,
         "api_rank": null,
         "is_captain": false,
@@ -751947,9 +751947,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.04,
         "xa": 0.04,
-        "xgi": 0.07,
+        "xgi": 0.08,
         "rank": 32,
         "owner_team_name": null
       },
@@ -752886,7 +752886,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
         "defensive_contribution_count": 12,
@@ -752896,7 +752896,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -754206,7 +754206,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 7,
@@ -754216,7 +754216,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -755286,7 +755286,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -755296,7 +755296,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -755526,7 +755526,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -755536,7 +755536,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -756606,7 +756606,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -756616,7 +756616,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -756726,7 +756726,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 76,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -756736,7 +756736,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -758286,7 +758286,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -758296,7 +758296,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -760326,7 +760326,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -760336,7 +760336,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -761166,7 +761166,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 13,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -761176,7 +761176,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -761766,7 +761766,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -761776,7 +761776,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -764166,7 +764166,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -764176,7 +764176,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -764286,7 +764286,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 1,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -764296,7 +764296,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -766926,7 +766926,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -766936,7 +766936,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -767046,7 +767046,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -767056,7 +767056,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -767166,7 +767166,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -767176,7 +767176,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -771246,7 +771246,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -771256,7 +771256,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -773406,7 +773406,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -773416,7 +773416,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -773526,7 +773526,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -773536,7 +773536,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -773886,7 +773886,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -773896,7 +773896,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -774126,7 +774126,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -774136,7 +774136,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -774611,7 +774611,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "LIV",
@@ -776168,7 +776168,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -776178,7 +776178,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -776408,7 +776408,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -776418,7 +776418,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -776651,7 +776651,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 10,
+        "defensive_contribution_count": 11,
         "opponents": [
           {
             "opponent": "LIV",
@@ -777368,7 +777368,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 11,
@@ -777378,7 +777378,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -777488,7 +777488,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 45,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 10,
@@ -777498,7 +777498,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -777954,9 +777954,9 @@
           }
         ],
         "form": 2.6,
-        "season_xg": 0.76,
+        "season_xg": 0.77,
         "season_xa": 0.33,
-        "season_xgi": 1.09,
+        "season_xgi": 1.1,
         "season_minutes": 425,
         "api_rank": null,
         "is_captain": false,
@@ -777989,9 +777989,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.19,
+        "xg": 0.2,
         "xa": 0.01,
-        "xgi": 0.2,
+        "xgi": 0.21,
         "rank": 32,
         "owner_team_name": null
       },
@@ -778328,7 +778328,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 17,
@@ -778338,7 +778338,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -778448,7 +778448,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 55,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -778458,7 +778458,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -779034,9 +779034,9 @@
           }
         ],
         "form": 3.8,
-        "season_xg": 1.46,
+        "season_xg": 1.43,
         "season_xa": 0.56,
-        "season_xgi": 2.02,
+        "season_xgi": 1.99,
         "season_minutes": 427,
         "api_rank": null,
         "is_captain": false,
@@ -779069,9 +779069,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.22,
+        "xg": 0.19,
         "xa": 0.01,
-        "xgi": 0.23,
+        "xgi": 0.2,
         "rank": 41,
         "owner_team_name": null
       },
@@ -779634,9 +779634,9 @@
           }
         ],
         "form": 2.4,
-        "season_xg": 1.51,
+        "season_xg": 1.52,
         "season_xa": 1.06,
-        "season_xgi": 2.57,
+        "season_xgi": 2.58,
         "season_minutes": 471,
         "api_rank": null,
         "is_captain": false,
@@ -779669,9 +779669,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.09,
+        "xg": 0.1,
         "xa": 0.24,
-        "xgi": 0.33,
+        "xgi": 0.34,
         "rank": 46,
         "owner_team_name": "Eki-Tiki"
       },
@@ -781688,7 +781688,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -781698,7 +781698,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -783728,7 +783728,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 12,
@@ -783738,7 +783738,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -783848,7 +783848,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 11,
@@ -783858,7 +783858,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -784194,9 +784194,9 @@
           }
         ],
         "form": 2.4,
-        "season_xg": 0.55,
+        "season_xg": 0.58,
         "season_xa": 0.85,
-        "season_xgi": 1.4,
+        "season_xgi": 1.43,
         "season_minutes": 486,
         "api_rank": null,
         "is_captain": false,
@@ -784229,9 +784229,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.18,
+        "xg": 0.21,
         "xa": 0.35,
-        "xgi": 0.53,
+        "xgi": 0.56,
         "rank": 84,
         "owner_team_name": null
       },
@@ -785408,7 +785408,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 18,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 6,
@@ -785418,7 +785418,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -787208,7 +787208,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 34,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -787218,7 +787218,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -787448,7 +787448,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -787458,7 +787458,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -787568,7 +787568,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 45,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 5,
@@ -787578,7 +787578,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -787688,7 +787688,7 @@
         "goals": 0,
         "assists": 1,
         "minutes": 71,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 5,
@@ -787698,7 +787698,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -789008,7 +789008,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -789018,7 +789018,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -789488,7 +789488,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -789498,7 +789498,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -791514,9 +791514,9 @@
           }
         ],
         "form": 0.8,
-        "season_xg": 0.06,
+        "season_xg": 0.09,
         "season_xa": 0.07,
-        "season_xgi": 0.13,
+        "season_xgi": 0.16,
         "season_minutes": 120,
         "api_rank": null,
         "is_captain": false,
@@ -791531,7 +791531,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "BRE",
@@ -791549,9 +791549,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.09,
         "xa": 0.07,
-        "xgi": 0.13,
+        "xgi": 0.16,
         "rank": 145,
         "owner_team_name": null
       },
@@ -792848,7 +792848,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -792858,7 +792858,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -793328,7 +793328,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 18,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -793338,7 +793338,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -793808,7 +793808,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -793818,7 +793818,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -794648,7 +794648,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -794658,7 +794658,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -796928,7 +796928,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -796938,7 +796938,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -797888,7 +797888,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 89,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 6,
@@ -797898,7 +797898,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -798728,7 +798728,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 18,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 7,
@@ -798738,7 +798738,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -799808,7 +799808,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -799818,7 +799818,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -799928,7 +799928,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -799938,7 +799938,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -800048,7 +800048,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -800058,7 +800058,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -800168,7 +800168,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -800178,7 +800178,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -808208,7 +808208,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -808218,7 +808218,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -809648,7 +809648,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809658,7 +809658,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -809768,7 +809768,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809778,7 +809778,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -809888,7 +809888,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809898,7 +809898,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -810236,9 +810236,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.83,
+        "season_xg": 3.87,
         "season_xa": 0.1,
-        "season_xgi": 3.93,
+        "season_xgi": 3.97,
         "season_minutes": 491,
         "api_rank": null,
         "is_captain": false,
@@ -810271,9 +810271,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.33,
         "xa": 0.02,
-        "xgi": 0.31,
+        "xgi": 0.35,
         "rank": 3,
         "owner_team_name": "Clean Machine FC"
       },
@@ -811210,7 +811210,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -811220,7 +811220,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -811436,9 +811436,9 @@
           }
         ],
         "form": 2.8,
-        "season_xg": 3.65,
+        "season_xg": 3.69,
         "season_xa": 0.48,
-        "season_xgi": 4.13,
+        "season_xgi": 4.17,
         "season_minutes": 622,
         "api_rank": null,
         "is_captain": false,
@@ -811471,9 +811471,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.45,
+        "xg": 0.49,
         "xa": 0.19,
-        "xgi": 0.64,
+        "xgi": 0.68,
         "rank": 13,
         "owner_team_name": "FC Strup"
       },
@@ -811570,7 +811570,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -811580,7 +811580,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -813610,7 +813610,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 55,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -813620,7 +813620,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -813850,7 +813850,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 34,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -813860,7 +813860,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -814090,7 +814090,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -814100,7 +814100,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -814330,7 +814330,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -814340,7 +814340,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -816250,7 +816250,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -816260,7 +816260,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -818890,7 +818890,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -818900,7 +818900,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -819130,7 +819130,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -819140,7 +819140,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 0,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -819370,7 +819370,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -819380,7 +819380,7 @@
             "is_home": true,
             "team_score": 0,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-10-17T16:30:00Z"
           }
@@ -820163,7 +820163,7 @@
             "bonus": 20,
             "clean_sheets": 54,
             "ga": 8,
-            "defcon": 40
+            "defcon": 39
           },
           "form": [
             7,
@@ -822054,7 +822054,7 @@
           "goals": 1,
           "assists": 0,
           "minutes": 71,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -822064,7 +822064,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -822746,7 +822746,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -822756,7 +822756,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -822900,9 +822900,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.45,
+          "xg": 0.49,
           "xa": 0.19,
-          "xgi": 0.64,
+          "xgi": 0.68,
           "subbed_out": false,
           "multiplier": 1,
           "points": 4
@@ -823014,7 +823014,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -823024,7 +823024,7 @@
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -824471,7 +824471,7 @@
           "season_assists": 2,
           "season_clean_sheets": 2,
           "season_bonus": 6,
-          "season_defcon": 44,
+          "season_defcon": 43,
           "badges": [
             {
               "code": "top10",
@@ -824490,7 +824490,7 @@
             "bonus": 5,
             "clean_sheets": 24,
             "ga": 4,
-            "defcon": 38
+            "defcon": 39
           },
           "form": [
             10,
@@ -824508,7 +824508,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 6,
+          "defensive_contribution_count": 5,
           "opponents": [
             {
               "opponent": "LIV",
@@ -825826,7 +825826,7 @@
           "season_assists": 0,
           "season_clean_sheets": 3,
           "season_bonus": 3,
-          "season_defcon": 62,
+          "season_defcon": 61,
           "badges": [],
           "position_ranks": {
             "goals": 28,
@@ -825834,7 +825834,7 @@
             "bonus": 8,
             "clean_sheets": 5,
             "ga": 47,
-            "defcon": 14
+            "defcon": 16
           },
           "form": [
             3,
@@ -825852,7 +825852,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
-          "defensive_contribution_count": 14,
+          "defensive_contribution_count": 13,
           "opponents": [
             {
               "opponent": "BRE",
@@ -825870,9 +825870,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.02,
+          "xg": 0.03,
           "xa": 0.01,
-          "xgi": 0.03,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -826244,7 +826244,7 @@
             "bonus": 63,
             "clean_sheets": 54,
             "ga": 99,
-            "defcon": 110
+            "defcon": 111
           },
           "form": [
             2,
@@ -826392,7 +826392,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 71,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 11,
@@ -826402,7 +826402,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 0,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -826951,7 +826951,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
@@ -826961,7 +826961,7 @@
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -827373,9 +827373,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.09,
+          "xg": 0.1,
           "xa": 0.24,
-          "xgi": 0.33,
+          "xgi": 0.34,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -828992,9 +828992,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.29,
+          "xg": 0.33,
           "xa": 0.02,
-          "xgi": 0.31,
+          "xgi": 0.35,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -832190,7 +832190,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
@@ -832200,7 +832200,7 @@
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -832452,7 +832452,7 @@
             "bonus": 3,
             "clean_sheets": 24,
             "ga": 2,
-            "defcon": 110
+            "defcon": 111
           },
           "form": [
             14,
@@ -832718,7 +832718,7 @@
             "bonus": 20,
             "clean_sheets": 54,
             "ga": 8,
-            "defcon": 40
+            "defcon": 39
           },
           "form": [
             3,
@@ -832733,7 +832733,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -832743,7 +832743,7 @@
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -834077,7 +834077,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
@@ -834087,7 +834087,7 @@
               "is_home": true,
               "team_score": 0,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-10-17T16:30:00Z"
             }
@@ -834594,7 +834594,7 @@
             "bonus": 15,
             "clean_sheets": 105,
             "ga": 32,
-            "defcon": 110
+            "defcon": 111
           },
           "form": [
             1,
