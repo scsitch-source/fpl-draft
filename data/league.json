@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T01:05:41.205547+00:00",
+  "generated_at": "2026-10-19T06:02:03.343472+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -97547,9 +97547,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 0.34,
+                "xg": 0.31,
                 "xa": 0.16,
-                "xgi": 0.5,
+                "xgi": 0.47,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -101486,9 +101486,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.01,
+                "xg": 0.02,
                 "xa": 0.0,
-                "xgi": 0.01,
+                "xgi": 0.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -101974,7 +101974,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -102000,7 +102000,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 4,
+                "defensive_contribution_count": 3,
                 "opponents": [
                   {
                     "opponent": "MUN",
@@ -107711,9 +107711,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 0.07,
+                "xg": 0.08,
                 "xa": 0.04,
-                "xgi": 0.11,
+                "xgi": 0.12,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -109603,9 +109603,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 0.63,
+                "xg": 0.65,
                 "xa": 0.0,
-                "xgi": 0.63,
+                "xgi": 0.65,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -114178,7 +114178,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -144868,7 +144868,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -153061,7 +153061,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -175576,7 +175576,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -189894,7 +189894,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -204234,7 +204234,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -216512,7 +216512,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -228796,7 +228796,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -259486,7 +259486,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -267679,7 +267679,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -290194,7 +290194,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -304512,7 +304512,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -318852,7 +318852,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -331130,7 +331130,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -343414,7 +343414,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -374104,7 +374104,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -382297,7 +382297,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -404812,7 +404812,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -419130,7 +419130,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -433470,7 +433470,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -445748,7 +445748,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -458032,7 +458032,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -488722,7 +488722,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -496915,7 +496915,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -519430,7 +519430,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -533748,7 +533748,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -548088,7 +548088,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -560366,7 +560366,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -572650,7 +572650,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -603340,7 +603340,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -611533,7 +611533,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 3,
                 "season_bonus": 7,
-                "season_defcon": 30,
+                "season_defcon": 29,
                 "badges": [],
                 "position_ranks": {
                   "goals": 4,
@@ -626295,9 +626295,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.94,
+        "season_xg": 3.96,
         "season_xa": 0.9,
-        "season_xgi": 4.84,
+        "season_xgi": 4.86,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -626330,9 +626330,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.63,
+        "xg": 0.65,
         "xa": 0.0,
-        "xgi": 0.63,
+        "xgi": 0.65,
         "owner_team_name": "PFC"
       },
       {
@@ -629281,9 +629281,9 @@
             }
           ],
           "form": 3.2,
-          "season_xg": 1.4,
+          "season_xg": 1.37,
           "season_xa": 0.52,
-          "season_xgi": 1.92,
+          "season_xgi": 1.89,
           "season_minutes": 627,
           "api_rank": null,
           "is_captain": false,
@@ -630715,9 +630715,9 @@
             }
           ],
           "form": 6.0,
-          "season_xg": 2.65,
+          "season_xg": 2.66,
           "season_xa": 1.5,
-          "season_xgi": 4.15,
+          "season_xgi": 4.16,
           "season_minutes": 630,
           "api_rank": null,
           "is_captain": true,
@@ -657150,9 +657150,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.94,
+        "season_xg": 3.96,
         "season_xa": 0.9,
-        "season_xgi": 4.84,
+        "season_xgi": 4.86,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -657185,9 +657185,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.63,
+        "xg": 0.65,
         "xa": 0.0,
-        "xgi": 0.63,
+        "xgi": 0.65,
         "rank": 4,
         "owner_team_name": "PFC"
       },
@@ -658609,7 +658609,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 3,
         "opponents": [
           {
             "opponent": "MUN",
@@ -660876,9 +660876,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.94,
+        "season_xg": 3.96,
         "season_xa": 0.9,
-        "season_xgi": 4.84,
+        "season_xgi": 4.86,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -660911,9 +660911,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.63,
+        "xg": 0.65,
         "xa": 0.0,
-        "xgi": 0.63,
+        "xgi": 0.65,
         "rank": 15,
         "owner_team_name": "PFC"
       },
@@ -662316,9 +662316,9 @@
           }
         ],
         "form": 6.8,
-        "season_xg": 0.82,
+        "season_xg": 0.83,
         "season_xa": 0.94,
-        "season_xgi": 1.76,
+        "season_xgi": 1.77,
         "season_minutes": 503,
         "api_rank": null,
         "is_captain": false,
@@ -662351,9 +662351,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.01,
+        "xg": 0.02,
         "xa": 0.0,
-        "xgi": 0.01,
+        "xgi": 0.02,
         "rank": 27,
         "owner_team_name": "I am chucky kirkez"
       },
@@ -663173,7 +663173,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "MUN",
@@ -663653,7 +663653,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 3,
         "opponents": [
           {
             "opponent": "MUN",
@@ -663756,9 +663756,9 @@
           }
         ],
         "form": 6.0,
-        "season_xg": 2.65,
+        "season_xg": 2.66,
         "season_xa": 1.5,
-        "season_xgi": 4.15,
+        "season_xgi": 4.16,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -663791,9 +663791,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.08,
         "xa": 0.04,
-        "xgi": 0.11,
+        "xgi": 0.12,
         "rank": 39,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -664716,9 +664716,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 1.4,
+        "season_xg": 1.37,
         "season_xa": 0.52,
-        "season_xgi": 1.92,
+        "season_xgi": 1.89,
         "season_minutes": 627,
         "api_rank": null,
         "is_captain": false,
@@ -664751,9 +664751,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.34,
+        "xg": 0.31,
         "xa": 0.16,
-        "xgi": 0.5,
+        "xgi": 0.47,
         "rank": 47,
         "owner_team_name": ":)"
       },
@@ -688236,9 +688236,9 @@
           }
         ],
         "form": 1.8,
-        "season_xg": 0.24,
+        "season_xg": 0.22,
         "season_xa": 0.18,
-        "season_xgi": 0.42,
+        "season_xgi": 0.4,
         "season_minutes": 495,
         "api_rank": null,
         "is_captain": false,
@@ -688271,9 +688271,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.01,
         "xa": 0.0,
-        "xgi": 0.03,
+        "xgi": 0.01,
         "rank": 243,
         "owner_team_name": "Eki-Tiki"
       },
@@ -702036,9 +702036,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.13,
+        "season_xg": 0.14,
         "season_xa": 0.05,
-        "season_xgi": 0.18,
+        "season_xgi": 0.19,
         "season_minutes": 148,
         "api_rank": null,
         "is_captain": false,
@@ -702071,9 +702071,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.08,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.1,
         "rank": 358,
         "owner_team_name": null
       },
@@ -706116,9 +706116,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.16,
+        "season_xg": 0.15,
         "season_xa": 0.03,
-        "season_xgi": 0.19,
+        "season_xgi": 0.18,
         "season_minutes": 26,
         "api_rank": null,
         "is_captain": false,
@@ -706151,9 +706151,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.06,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.08,
         "rank": 392,
         "owner_team_name": null
       },
@@ -749337,7 +749337,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "MUN",
@@ -758440,9 +758440,9 @@
           }
         ],
         "form": 1.8,
-        "season_xg": 0.24,
+        "season_xg": 0.22,
         "season_xa": 0.18,
-        "season_xgi": 0.42,
+        "season_xgi": 0.4,
         "season_minutes": 495,
         "api_rank": null,
         "is_captain": false,
@@ -758475,9 +758475,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.01,
         "xa": 0.0,
-        "xgi": 0.03,
+        "xgi": 0.01,
         "rank": 87,
         "owner_team_name": "Eki-Tiki"
       },
@@ -774522,9 +774522,9 @@
           }
         ],
         "form": 6.2,
-        "season_xg": 3.94,
+        "season_xg": 3.96,
         "season_xa": 0.9,
-        "season_xgi": 4.84,
+        "season_xgi": 4.86,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -774557,9 +774557,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.63,
+        "xg": 0.65,
         "xa": 0.0,
-        "xgi": 0.63,
+        "xgi": 0.65,
         "rank": 4,
         "owner_team_name": "PFC"
       },
@@ -775482,9 +775482,9 @@
           }
         ],
         "form": 6.8,
-        "season_xg": 0.82,
+        "season_xg": 0.83,
         "season_xa": 0.94,
-        "season_xgi": 1.76,
+        "season_xgi": 1.77,
         "season_minutes": 503,
         "api_rank": null,
         "is_captain": false,
@@ -775517,9 +775517,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.01,
+        "xg": 0.02,
         "xa": 0.0,
-        "xgi": 0.01,
+        "xgi": 0.02,
         "rank": 12,
         "owner_team_name": "I am chucky kirkez"
       },
@@ -776202,9 +776202,9 @@
           }
         ],
         "form": 6.0,
-        "season_xg": 2.65,
+        "season_xg": 2.66,
         "season_xa": 1.5,
-        "season_xgi": 4.15,
+        "season_xgi": 4.16,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -776237,9 +776237,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.08,
         "xa": 0.04,
-        "xgi": 0.11,
+        "xgi": 0.12,
         "rank": 18,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -776682,9 +776682,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 1.4,
+        "season_xg": 1.37,
         "season_xa": 0.52,
-        "season_xgi": 1.92,
+        "season_xgi": 1.89,
         "season_minutes": 627,
         "api_rank": null,
         "is_captain": false,
@@ -776717,9 +776717,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.34,
+        "xg": 0.31,
         "xa": 0.16,
-        "xgi": 0.5,
+        "xgi": 0.47,
         "rank": 22,
         "owner_team_name": ":)"
       },
@@ -794682,9 +794682,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.13,
+        "season_xg": 0.14,
         "season_xa": 0.05,
-        "season_xgi": 0.18,
+        "season_xgi": 0.19,
         "season_minutes": 148,
         "api_rank": null,
         "is_captain": false,
@@ -794717,9 +794717,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.08,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.1,
         "rank": 172,
         "owner_team_name": null
       },
@@ -796602,9 +796602,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.16,
+        "season_xg": 0.15,
         "season_xa": 0.03,
-        "season_xgi": 0.19,
+        "season_xgi": 0.18,
         "season_minutes": 26,
         "api_rank": null,
         "is_captain": false,
@@ -796637,9 +796637,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.06,
         "xa": 0.02,
-        "xgi": 0.09,
+        "xgi": 0.08,
         "rank": 188,
         "owner_team_name": null
       },
@@ -810661,7 +810661,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 3,
         "opponents": [
           {
             "opponent": "MUN",
@@ -820380,9 +820380,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.34,
+          "xg": 0.31,
           "xa": 0.16,
-          "xgi": 0.5,
+          "xgi": 0.47,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -824297,9 +824297,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.01,
+          "xg": 0.02,
           "xa": 0.0,
-          "xgi": 0.01,
+          "xgi": 0.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -824785,7 +824785,7 @@
           "season_assists": 1,
           "season_clean_sheets": 3,
           "season_bonus": 7,
-          "season_defcon": 30,
+          "season_defcon": 29,
           "badges": [],
           "position_ranks": {
             "goals": 4,
@@ -824811,7 +824811,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 4,
+          "defensive_contribution_count": 3,
           "opponents": [
             {
               "opponent": "MUN",
@@ -830500,9 +830500,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.07,
+          "xg": 0.08,
           "xa": 0.04,
-          "xgi": 0.11,
+          "xgi": 0.12,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -832370,9 +832370,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.63,
+          "xg": 0.65,
           "xa": 0.0,
-          "xgi": 0.63,
+          "xgi": 0.65,
           "subbed_out": false,
           "multiplier": 1,
           "points": 8
