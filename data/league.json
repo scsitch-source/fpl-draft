@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T15:41:48.713665+00:00",
+  "generated_at": "2026-10-20T19:36:39.756054+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19,6 +19,7 @@
       "team_name": ":)",
       "manager_name": "Charlie Spring",
       "score": 56,
+      "computed_score": 56,
       "api_score": 56
     },
     "away": {
@@ -26,6 +27,7 @@
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "score": 45,
+      "computed_score": 45,
       "api_score": 45
     },
     "finished": true,
@@ -96601,6 +96603,7 @@
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 56,
+          "computed_score": 56,
           "api_score": 56
         },
         "away": {
@@ -96608,6 +96611,7 @@
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
           "score": 45,
+          "computed_score": 45,
           "api_score": 45
         },
         "finished": true,
@@ -100662,6 +100666,7 @@
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
           "score": 39,
+          "computed_score": 39,
           "api_score": 39
         },
         "away": {
@@ -100669,6 +100674,7 @@
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 47,
+          "computed_score": 47,
           "api_score": 47
         },
         "finished": true,
@@ -104740,6 +104746,7 @@
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 54,
+          "computed_score": 54,
           "api_score": 54
         },
         "away": {
@@ -104747,6 +104754,7 @@
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 34,
+          "computed_score": 34,
           "api_score": 34
         },
         "finished": true,
@@ -108796,6 +108804,7 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 29,
+          "computed_score": 29,
           "api_score": 29
         },
         "away": {
@@ -108803,6 +108812,7 @@
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
           "score": 34,
+          "computed_score": 34,
           "api_score": 34
         },
         "finished": true,
