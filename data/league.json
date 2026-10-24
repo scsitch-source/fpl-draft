@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:01:47.549486+00:00",
+  "generated_at": "2026-10-24T21:31:06.803957+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19,14 +19,14 @@
       "team_name": "I am chucky kirkez",
       "manager_name": "Eamon Lye",
       "score": 16,
-      "api_score": 0
+      "api_score": 16
     },
     "away": {
       "league_entry_id": 27139,
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "score": 35,
-      "api_score": 2
+      "api_score": 34
     },
     "finished": false,
     "started": true,
@@ -112867,14 +112867,14 @@
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
           "score": 16,
-          "api_score": 0
+          "api_score": 16
         },
         "away": {
           "league_entry_id": 27139,
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
           "score": 35,
-          "api_score": 2
+          "api_score": 34
         },
         "finished": false,
         "started": true,
@@ -116939,14 +116939,14 @@
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 29,
-          "api_score": 1
+          "api_score": 28
         },
         "away": {
           "league_entry_id": 27145,
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 34,
-          "api_score": 7
+          "api_score": 34
         },
         "finished": false,
         "started": true,
@@ -121001,14 +121001,14 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 13,
-          "api_score": 3
+          "api_score": 13
         },
         "away": {
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 20,
-          "api_score": 0
+          "api_score": 20
         },
         "finished": false,
         "started": true,
@@ -125063,14 +125063,14 @@
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
           "score": 3,
-          "api_score": 2
+          "api_score": 3
         },
         "away": {
           "league_entry_id": 27141,
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 9,
-          "api_score": 0
+          "api_score": 9
         },
         "finished": false,
         "started": true,
@@ -741087,6 +741087,126 @@
         "xgi": 0.0,
         "rank": 668,
         "owner_team_name": null
+      },
+      {
+        "name": "Sharman-Lowe",
+        "position": "GKP",
+        "club": "CHE",
+        "club_id": 6,
+        "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/499857.png",
+        "shirt_color": "#034694",
+        "initials": "SL",
+        "season_points": 0,
+        "next_fixtures": [
+          {
+            "event": 9,
+            "opponent": "MUN",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 4,
+            "kickoff_time": "2026-10-31T12:30:00Z"
+          },
+          {
+            "event": 10,
+            "opponent": "SUN",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-11-08T14:00:00Z"
+          },
+          {
+            "event": 11,
+            "opponent": "LEE",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-11-21T15:00:00Z"
+          },
+          {
+            "event": 12,
+            "opponent": "NFO",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-11-27T20:00:00Z"
+          },
+          {
+            "event": 13,
+            "opponent": "CRY",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 2,
+            "kickoff_time": "2026-12-02T19:30:00Z"
+          }
+        ],
+        "recent_scores": [
+          {
+            "event": 5,
+            "points": 0,
+            "opponent_label": "bre"
+          },
+          {
+            "event": 6,
+            "points": 0,
+            "opponent_label": "BOU"
+          },
+          {
+            "event": 7,
+            "points": 0,
+            "opponent_label": "eve"
+          }
+        ],
+        "form": 0.0,
+        "season_xg": 0.0,
+        "season_xa": 0.0,
+        "season_xgi": 0.0,
+        "season_minutes": 0,
+        "api_rank": null,
+        "is_captain": false,
+        "is_vice_captain": false,
+        "subbed_in": false,
+        "subbed_out": false,
+        "base_points": 0,
+        "points": 0,
+        "goals": 0,
+        "assists": 0,
+        "minutes": 0,
+        "match_finished": true,
+        "clean_sheet": false,
+        "defensive_contribution": false,
+        "defensive_contribution_count": 0,
+        "opponents": [
+          {
+            "opponent": "TOT",
+            "is_home": true,
+            "team_score": 0,
+            "opponent_score": 2,
+            "finished": true,
+            "difficulty": 2,
+            "kickoff_time": "2026-10-24T16:30:00Z"
+          }
+        ],
+        "bonus": 0,
+        "yellow_card": false,
+        "red_card": false,
+        "own_goals": 0,
+        "goals_conceded": 0,
+        "saves": 0,
+        "xg": 0.0,
+        "xa": 0.0,
+        "xgi": 0.0,
+        "rank": 669,
+        "owner_team_name": null
       }
     ],
     "GKP": [
@@ -749848,6 +749968,126 @@
         "xa": 0.0,
         "xgi": 0.0,
         "rank": 73,
+        "owner_team_name": null
+      },
+      {
+        "name": "Sharman-Lowe",
+        "position": "GKP",
+        "club": "CHE",
+        "club_id": 6,
+        "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/499857.png",
+        "shirt_color": "#034694",
+        "initials": "SL",
+        "season_points": 0,
+        "next_fixtures": [
+          {
+            "event": 9,
+            "opponent": "MUN",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 4,
+            "kickoff_time": "2026-10-31T12:30:00Z"
+          },
+          {
+            "event": 10,
+            "opponent": "SUN",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-11-08T14:00:00Z"
+          },
+          {
+            "event": 11,
+            "opponent": "LEE",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-11-21T15:00:00Z"
+          },
+          {
+            "event": 12,
+            "opponent": "NFO",
+            "is_home": false,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 3,
+            "kickoff_time": "2026-11-27T20:00:00Z"
+          },
+          {
+            "event": 13,
+            "opponent": "CRY",
+            "is_home": true,
+            "team_score": null,
+            "opponent_score": null,
+            "finished": false,
+            "difficulty": 2,
+            "kickoff_time": "2026-12-02T19:30:00Z"
+          }
+        ],
+        "recent_scores": [
+          {
+            "event": 5,
+            "points": 0,
+            "opponent_label": "bre"
+          },
+          {
+            "event": 6,
+            "points": 0,
+            "opponent_label": "BOU"
+          },
+          {
+            "event": 7,
+            "points": 0,
+            "opponent_label": "eve"
+          }
+        ],
+        "form": 0.0,
+        "season_xg": 0.0,
+        "season_xa": 0.0,
+        "season_xgi": 0.0,
+        "season_minutes": 0,
+        "api_rank": null,
+        "is_captain": false,
+        "is_vice_captain": false,
+        "subbed_in": false,
+        "subbed_out": false,
+        "base_points": 0,
+        "points": 0,
+        "goals": 0,
+        "assists": 0,
+        "minutes": 0,
+        "match_finished": true,
+        "clean_sheet": false,
+        "defensive_contribution": false,
+        "defensive_contribution_count": 0,
+        "opponents": [
+          {
+            "opponent": "TOT",
+            "is_home": true,
+            "team_score": 0,
+            "opponent_score": 2,
+            "finished": true,
+            "difficulty": 2,
+            "kickoff_time": "2026-10-24T16:30:00Z"
+          }
+        ],
+        "bonus": 0,
+        "yellow_card": false,
+        "red_card": false,
+        "own_goals": 0,
+        "goals_conceded": 0,
+        "saves": 0,
+        "xg": 0.0,
+        "xa": 0.0,
+        "xgi": 0.0,
+        "rank": 74,
         "owner_team_name": null
       }
     ],
