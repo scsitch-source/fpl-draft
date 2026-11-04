@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T09:38:49.122582+00:00",
+  "generated_at": "2026-11-04T17:29:00.316639+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -244500,7 +244500,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -245730,7 +245730,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -247630,7 +247630,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -248729,7 +248729,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 2,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -249267,7 +249267,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 2,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -249535,7 +249535,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 2,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -251553,7 +251553,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -251994,7 +251994,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 2,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -253222,7 +253222,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 2,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -254313,7 +254313,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -255538,7 +255538,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 2,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -256252,7 +256252,7 @@
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-19T15:00:00Z"
+                    "kickoff_time": "2026-12-20T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -648473,28 +648473,6 @@
           "kickoff_time": "2026-12-19T15:00:00Z"
         }
       ],
-      "NFO": [
-        {
-          "opponent": "EVE",
-          "is_home": true,
-          "team_score": null,
-          "opponent_score": null,
-          "finished": false,
-          "difficulty": 3,
-          "kickoff_time": "2026-12-19T15:00:00Z"
-        }
-      ],
-      "EVE": [
-        {
-          "opponent": "NFO",
-          "is_home": false,
-          "team_score": null,
-          "opponent_score": null,
-          "finished": false,
-          "difficulty": 2,
-          "kickoff_time": "2026-12-19T15:00:00Z"
-        }
-      ],
       "LIV": [
         {
           "opponent": "TOT",
@@ -648536,6 +648514,28 @@
           "opponent_score": null,
           "finished": false,
           "difficulty": 4,
+          "kickoff_time": "2026-12-20T14:00:00Z"
+        }
+      ],
+      "NFO": [
+        {
+          "opponent": "EVE",
+          "is_home": true,
+          "team_score": null,
+          "opponent_score": null,
+          "finished": false,
+          "difficulty": 3,
+          "kickoff_time": "2026-12-20T14:00:00Z"
+        }
+      ],
+      "EVE": [
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "team_score": null,
+          "opponent_score": null,
+          "finished": false,
+          "difficulty": 2,
           "kickoff_time": "2026-12-20T14:00:00Z"
         }
       ],
@@ -655064,16 +655064,6 @@
         "away_difficulty": 5
       },
       {
-        "home": "NFO",
-        "away": "EVE",
-        "home_score": null,
-        "away_score": null,
-        "kickoff_time": "2026-12-19T15:00:00Z",
-        "finished": false,
-        "home_difficulty": 3,
-        "away_difficulty": 2
-      },
-      {
         "home": "LIV",
         "away": "TOT",
         "home_score": null,
@@ -655092,6 +655082,16 @@
         "finished": false,
         "home_difficulty": 2,
         "away_difficulty": 4
+      },
+      {
+        "home": "NFO",
+        "away": "EVE",
+        "home_score": null,
+        "away_score": null,
+        "kickoff_time": "2026-12-20T14:00:00Z",
+        "finished": false,
+        "home_difficulty": 3,
+        "away_difficulty": 2
       },
       {
         "home": "SUN",
