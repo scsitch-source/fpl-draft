@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T22:53:13.427040+00:00",
+  "generated_at": "2026-11-06T02:55:47.151231+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -161281,107 +161281,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -161391,13 +161379,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -161408,11 +161396,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -167413,107 +167397,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -167523,13 +167495,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "LIV",
+                    "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
+                    "difficulty": 3,
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -167540,11 +167512,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -191878,107 +191846,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -191988,13 +191944,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "BRE",
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -192005,11 +191961,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -198006,107 +197958,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -198116,12 +198056,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "NEW",
+                    "opponent": "BRE",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
+                    "difficulty": 4,
                     "kickoff_time": "2026-12-02T20:15:00Z"
                   }
                 ],
@@ -198133,11 +198073,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -218375,107 +218311,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -218485,13 +218409,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "COV",
-                    "is_home": true,
+                    "opponent": "TOT",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -218502,11 +218426,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -238782,107 +238702,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -238892,13 +238800,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "CRY",
-                    "is_home": false,
+                    "opponent": "BOU",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-13T19:00:00Z"
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-13T14:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -238909,11 +238817,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -253072,107 +252976,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -253182,12 +253074,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "ARS",
-                    "is_home": false,
+                    "opponent": "MUN",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 5,
+                    "difficulty": 3,
                     "kickoff_time": "2026-12-20T16:30:00Z"
                   }
                 ],
@@ -253199,11 +253091,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -275493,107 +275381,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -275603,13 +275479,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "NFO",
-                    "is_home": true,
+                    "opponent": "CRY",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-12-27T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-12-27T19:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -275620,11 +275496,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -281625,107 +281497,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -281735,12 +281595,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "SUN",
-                    "is_home": true,
+                    "opponent": "FUL",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
+                    "difficulty": 3,
                     "kickoff_time": "2026-12-30T19:30:00Z"
                   }
                 ],
@@ -281752,11 +281612,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -306090,107 +305946,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -306200,13 +306044,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "BHA",
-                    "is_home": false,
+                    "opponent": "IPS",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2027-01-02T12:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2027-01-02T15:00:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -306217,11 +306061,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -312218,107 +312058,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -312328,13 +312156,13 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "NEW",
+                    "opponent": "BRE",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2027-01-07T20:00:00Z"
+                    "kickoff_time": "2027-01-05T19:30:00Z"
                   }
                 ],
                 "bonus": 0,
@@ -312345,11 +312173,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -332587,107 +332411,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -332697,12 +332509,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
+                    "difficulty": 2,
                     "kickoff_time": "2027-01-16T15:00:00Z"
                   }
                 ],
@@ -332714,11 +332526,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -352994,107 +352802,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -353104,12 +352900,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "LIV",
+                    "opponent": "NEW",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
+                    "difficulty": 3,
                     "kickoff_time": "2027-01-23T15:00:00Z"
                   }
                 ],
@@ -353121,11 +352917,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -367284,107 +367076,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -367394,12 +367174,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "BRE",
+                    "opponent": "MCI",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
+                    "difficulty": 5,
                     "kickoff_time": "2027-01-30T15:00:00Z"
                   }
                 ],
@@ -367411,11 +367191,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -389705,107 +389481,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -389815,7 +389579,7 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "CHE",
+                    "opponent": "LIV",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
@@ -389832,11 +389596,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -395837,107 +395597,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -395947,12 +395695,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "BHA",
-                    "is_home": true,
+                    "opponent": "IPS",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
+                    "difficulty": 2,
                     "kickoff_time": "2027-02-10T20:00:00Z"
                   }
                 ],
@@ -395964,11 +395712,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -420302,107 +420046,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -420412,8 +420144,8 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "NFO",
-                    "is_home": false,
+                    "opponent": "FUL",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
@@ -420429,11 +420161,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -426430,107 +426158,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -426540,12 +426256,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "ARS",
-                    "is_home": true,
+                    "opponent": "MUN",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
+                    "difficulty": 3,
                     "kickoff_time": "2027-02-27T15:00:00Z"
                   }
                 ],
@@ -426557,11 +426273,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -446799,107 +446511,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -446909,12 +446609,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "SUN",
-                    "is_home": false,
+                    "opponent": "CRY",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
+                    "difficulty": 2,
                     "kickoff_time": "2027-03-03T20:00:00Z"
                   }
                 ],
@@ -446926,11 +446626,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -467206,107 +466902,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -467316,12 +467000,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "EVE",
-                    "is_home": true,
+                    "opponent": "CHE",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
+                    "difficulty": 4,
                     "kickoff_time": "2027-03-13T15:00:00Z"
                   }
                 ],
@@ -467333,11 +467017,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -481496,107 +481176,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -481606,12 +481274,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "MCI",
-                    "is_home": false,
+                    "opponent": "SUN",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 5,
+                    "difficulty": 2,
                     "kickoff_time": "2027-03-20T15:00:00Z"
                   }
                 ],
@@ -481623,11 +481291,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -503917,107 +503581,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -504027,8 +503679,8 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "HUL",
-                    "is_home": true,
+                    "opponent": "COV",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
@@ -504044,11 +503696,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -510049,107 +509697,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -510159,12 +509795,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "IPS",
-                    "is_home": false,
+                    "opponent": "AVL",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
+                    "difficulty": 3,
                     "kickoff_time": "2027-04-17T14:00:00Z"
                   }
                 ],
@@ -510176,11 +509812,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -534514,107 +534146,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -534624,12 +534244,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "CRY",
-                    "is_home": true,
+                    "opponent": "BOU",
+                    "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
+                    "difficulty": 4,
                     "kickoff_time": "2027-04-24T14:00:00Z"
                   }
                 ],
@@ -534641,11 +534261,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -540642,107 +540258,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -540752,12 +540356,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "COV",
-                    "is_home": false,
+                    "opponent": "TOT",
+                    "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
+                    "difficulty": 3,
                     "kickoff_time": "2027-05-01T14:00:00Z"
                   }
                 ],
@@ -540769,11 +540373,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -561011,107 +560611,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -561121,12 +560709,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "BOU",
+                    "opponent": "LEE",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 4,
+                    "difficulty": 3,
                     "kickoff_time": "2027-05-08T14:00:00Z"
                   }
                 ],
@@ -561138,11 +560726,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -581418,107 +581002,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -581528,7 +581100,7 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "LEE",
+                    "opponent": "NFO",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
@@ -581545,11 +581117,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -595708,107 +595276,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -595818,7 +595374,7 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "TOT",
+                    "opponent": "EVE",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
@@ -595835,11 +595391,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -618129,107 +617681,95 @@
                 "subbed_out": false
               },
               {
-                "name": "Rashford",
+                "name": "Tzolis",
                 "position": "MID",
-                "club": "MUN",
-                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/176297.png",
-                "shirt_color": "#DA291C",
-                "initials": "RA",
-                "season_points": 11,
+                "club": "ARS",
+                "club_id": 1,
+                "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/439509.png",
+                "shirt_color": "#EF0107",
+                "initials": "TZ",
+                "season_points": 19,
                 "next_fixtures": [
                   {
                     "event": 10,
-                    "opponent": "AVL",
+                    "opponent": "HUL",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-08T16:30:00Z"
+                    "difficulty": 2,
+                    "kickoff_time": "2026-11-07T15:00:00Z"
                   },
                   {
                     "event": 11,
-                    "opponent": "LIV",
-                    "is_home": false,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 4,
-                    "kickoff_time": "2026-11-22T16:30:00Z"
-                  },
-                  {
-                    "event": 12,
-                    "opponent": "BRE",
-                    "is_home": true,
-                    "team_score": null,
-                    "opponent_score": null,
-                    "finished": false,
-                    "difficulty": 3,
-                    "kickoff_time": "2026-11-28T15:00:00Z"
-                  },
-                  {
-                    "event": 13,
                     "opponent": "NEW",
                     "is_home": false,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
                     "difficulty": 3,
-                    "kickoff_time": "2026-12-02T20:15:00Z"
+                    "kickoff_time": "2026-11-21T17:30:00Z"
                   },
                   {
-                    "event": 14,
-                    "opponent": "COV",
+                    "event": 12,
+                    "opponent": "MCI",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
-                    "kickoff_time": "2026-12-05T15:00:00Z"
+                    "difficulty": 4,
+                    "kickoff_time": "2026-11-29T16:30:00Z"
+                  },
+                  {
+                    "event": 13,
+                    "opponent": "BRE",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 4,
+                    "kickoff_time": "2026-12-02T20:15:00Z"
+                  },
+                  {
+                    "event": 14,
+                    "opponent": "TOT",
+                    "is_home": false,
+                    "team_score": null,
+                    "opponent_score": null,
+                    "finished": false,
+                    "difficulty": 3,
+                    "kickoff_time": "2026-12-06T16:30:00Z"
                   }
                 ],
                 "recent_scores": [
                   {
                     "event": 7,
                     "points": 0,
-                    "opponent_label": "lee"
+                    "opponent_label": "nfo"
                   },
                   {
                     "event": 8,
                     "points": 0,
-                    "opponent_label": "BOU"
+                    "opponent_label": "EVE"
                   },
                   {
                     "event": 9,
-                    "points": 0,
-                    "opponent_label": "che"
+                    "points": 3,
+                    "opponent_label": "liv"
                   }
                 ],
-                "schema_v": 2,
-                "season_goals": 0,
-                "season_assists": 0,
-                "season_clean_sheets": 1,
-                "season_bonus": 0,
-                "season_defcon": 18,
-                "badges": [],
-                "position_ranks": {
-                  "goals": 78,
-                  "assists": 83,
-                  "bonus": 76,
-                  "clean_sheets": 82,
-                  "ga": 118,
-                  "defcon": 138
-                },
-                "form": [
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
+                "form": 1.0,
+                "season_xg": 0.22,
+                "season_xa": 0.84,
+                "season_xgi": 1.06,
+                "season_minutes": 445,
+                "api_rank": null,
                 "is_captain": false,
                 "is_vice_captain": false,
+                "subbed_in": false,
+                "subbed_out": false,
                 "base_points": 0,
+                "points": 0,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
@@ -618239,12 +617779,12 @@
                 "defensive_contribution_count": 0,
                 "opponents": [
                   {
-                    "opponent": "FUL",
+                    "opponent": "BHA",
                     "is_home": true,
                     "team_score": null,
                     "opponent_score": null,
                     "finished": false,
-                    "difficulty": 2,
+                    "difficulty": 4,
                     "kickoff_time": "2027-05-30T15:00:00Z"
                   }
                 ],
@@ -618256,11 +617796,7 @@
                 "saves": 0,
                 "xg": 0.0,
                 "xa": 0.0,
-                "xgi": 0.0,
-                "subbed_in": false,
-                "multiplier": 1,
-                "points": 0,
-                "subbed_out": false
+                "xgi": 0.0
               },
               {
                 "name": "Gu\u00e9hi",
@@ -621298,6 +620834,15 @@
       "player_in": "Kroupi.Jr",
       "player_out": "Foden",
       "kind": "Waiver"
+    },
+    {
+      "event": 10,
+      "team_name": "Eki-Tiki",
+      "manager_name": "Hugh Chalmers",
+      "league_entry_id": 27143,
+      "player_in": "Tzolis",
+      "player_out": "Rashford",
+      "kind": "Free Agent"
     }
   ],
   "best_signings": [
