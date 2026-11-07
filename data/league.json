@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T22:11:57.936382+00:00",
+  "generated_at": "2026-11-07T01:56:21.692276+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -146714,7 +146714,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 0,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -146724,7 +146724,7 @@
                     "is_home": true,
                     "team_score": 3,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 2,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -149457,7 +149457,7 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 1,
-          "api_score": 0
+          "api_score": 1
         },
         "away": {
           "league_entry_id": 31110,
@@ -150775,7 +150775,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 17,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 2,
@@ -150785,7 +150785,7 @@
                     "is_home": false,
                     "team_score": 1,
                     "opponent_score": 3,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 3,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -156436,7 +156436,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -157557,14 +157557,14 @@
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 15,
-          "api_score": 0
+          "api_score": 15
         },
         "away": {
           "league_entry_id": 27143,
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 18,
-          "api_score": 0
+          "api_score": 18
         },
         "finished": false,
         "started": true,
@@ -157678,7 +157678,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 0,
@@ -157688,7 +157688,7 @@
                     "is_home": true,
                     "team_score": 3,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 2,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -158077,7 +158077,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 88,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": true,
                 "defensive_contribution_count": 11,
@@ -158087,7 +158087,7 @@
                     "is_home": true,
                     "team_score": 3,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 2,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -158615,7 +158615,7 @@
                 "goals": 1,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 9,
@@ -158625,7 +158625,7 @@
                     "is_home": true,
                     "team_score": 3,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 2,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -158636,9 +158636,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 0.25,
-                "xa": 0.1,
-                "xgi": 0.35,
+                "xg": 0.18,
+                "xa": 0.11,
+                "xgi": 0.29,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 9
@@ -159965,7 +159965,7 @@
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
@@ -159975,7 +159975,7 @@
                     "is_home": true,
                     "team_score": 3,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 2,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -160913,7 +160913,7 @@
                 "goals": 2,
                 "assists": 1,
                 "minutes": 90,
-                "match_finished": false,
+                "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
                 "defensive_contribution_count": 4,
@@ -160923,7 +160923,7 @@
                     "is_home": true,
                     "team_score": 3,
                     "opponent_score": 1,
-                    "finished": false,
+                    "finished": true,
                     "difficulty": 2,
                     "kickoff_time": "2026-11-06T20:00:00Z"
                   }
@@ -160934,9 +160934,9 @@
                 "own_goals": 0,
                 "goals_conceded": 1,
                 "saves": 0,
-                "xg": 1.66,
-                "xa": 0.09,
-                "xgi": 1.75,
+                "xg": 0.92,
+                "xa": 0.1,
+                "xgi": 1.02,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 16
@@ -170760,7 +170760,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -193255,7 +193255,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -199425,7 +199425,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -211682,7 +211682,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -234193,7 +234193,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -256726,7 +256726,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -271022,7 +271022,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -285385,7 +285385,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -307880,7 +307880,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -314050,7 +314050,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -326307,7 +326307,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -348818,7 +348818,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -371351,7 +371351,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -385647,7 +385647,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -400010,7 +400010,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -422505,7 +422505,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -428675,7 +428675,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -440932,7 +440932,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -463443,7 +463443,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -485976,7 +485976,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -500272,7 +500272,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -514635,7 +514635,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -537130,7 +537130,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -543300,7 +543300,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -555557,7 +555557,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -578068,7 +578068,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -600601,7 +600601,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -614897,7 +614897,7 @@
                   "bonus": 77,
                   "clean_sheets": 82,
                   "ga": 119,
-                  "defcon": 165
+                  "defcon": 166
                 },
                 "form": [
                   1,
@@ -626158,7 +626158,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -626168,7 +626168,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -626739,9 +626739,9 @@
           }
         ],
         "form": 5.0,
-        "season_xg": 8.03,
-        "season_xa": 0.47,
-        "season_xgi": 8.5,
+        "season_xg": 7.29,
+        "season_xa": 0.48,
+        "season_xgi": 7.77,
         "season_minutes": 851,
         "api_rank": null,
         "is_captain": false,
@@ -626753,7 +626753,7 @@
         "goals": 2,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -626763,7 +626763,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -626774,9 +626774,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 1.66,
-        "xa": 0.09,
-        "xgi": 1.75,
+        "xg": 0.92,
+        "xa": 0.1,
+        "xgi": 1.02,
         "owner_team_name": "Eki-Tiki"
       },
       {
@@ -627217,9 +627217,9 @@
           }
         ],
         "form": 4.8,
-        "season_xg": 1.85,
-        "season_xa": 1.38,
-        "season_xgi": 3.23,
+        "season_xg": 1.78,
+        "season_xa": 1.39,
+        "season_xgi": 3.17,
         "season_minutes": 895,
         "api_rank": null,
         "is_captain": false,
@@ -627231,7 +627231,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -627241,7 +627241,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -627252,9 +627252,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.25,
-        "xa": 0.1,
-        "xgi": 0.35,
+        "xg": 0.18,
+        "xa": 0.11,
+        "xgi": 0.29,
         "owner_team_name": "Hakuna Mateta"
       },
       {
@@ -627473,7 +627473,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -627483,7 +627483,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -627579,8 +627579,8 @@
         ],
         "form": 2.4,
         "season_xg": 0.18,
-        "season_xa": 0.65,
-        "season_xgi": 0.83,
+        "season_xa": 0.61,
+        "season_xgi": 0.79,
         "season_minutes": 793,
         "api_rank": null,
         "is_captain": false,
@@ -627592,7 +627592,7 @@
         "goals": 0,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 11,
@@ -627602,7 +627602,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -627614,8 +627614,8 @@
         "goals_conceded": 1,
         "saves": 0,
         "xg": 0.14,
-        "xa": 0.23,
-        "xgi": 0.37,
+        "xa": 0.19,
+        "xgi": 0.33,
         "owner_team_name": null
       },
       {
@@ -627711,7 +627711,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -627721,7 +627721,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -627830,7 +627830,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 88,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 11,
@@ -627840,7 +627840,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -627935,9 +627935,9 @@
           }
         ],
         "form": 4.8,
-        "season_xg": 1.85,
-        "season_xa": 1.38,
-        "season_xgi": 3.23,
+        "season_xg": 1.78,
+        "season_xa": 1.39,
+        "season_xgi": 3.17,
         "season_minutes": 895,
         "api_rank": null,
         "is_captain": false,
@@ -627949,7 +627949,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -627959,7 +627959,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -627970,9 +627970,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.25,
-        "xa": 0.1,
-        "xgi": 0.35,
+        "xg": 0.18,
+        "xa": 0.11,
+        "xgi": 0.29,
         "owner_team_name": "Hakuna Mateta"
       },
       {
@@ -628054,9 +628054,9 @@
           }
         ],
         "form": 0.4,
-        "season_xg": 0.24,
+        "season_xg": 0.25,
         "season_xa": 0.06,
-        "season_xgi": 0.3,
+        "season_xgi": 0.31,
         "season_minutes": 143,
         "api_rank": null,
         "is_captain": false,
@@ -628068,7 +628068,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -628078,7 +628078,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628089,9 +628089,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.19,
+        "xg": 0.2,
         "xa": 0.05,
-        "xgi": 0.24,
+        "xgi": 0.25,
         "owner_team_name": null
       },
       {
@@ -628173,9 +628173,9 @@
           }
         ],
         "form": 1.0,
-        "season_xg": 0.24,
+        "season_xg": 0.23,
         "season_xa": 0.33,
-        "season_xgi": 0.57,
+        "season_xgi": 0.56,
         "season_minutes": 227,
         "api_rank": null,
         "is_captain": false,
@@ -628187,7 +628187,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 85,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 13,
@@ -628197,7 +628197,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628208,9 +628208,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.2,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.24,
         "owner_team_name": null
       },
       {
@@ -628292,9 +628292,9 @@
           }
         ],
         "form": 5.8,
-        "season_xg": 2.26,
-        "season_xa": 1.84,
-        "season_xgi": 4.1,
+        "season_xg": 2.23,
+        "season_xa": 1.68,
+        "season_xgi": 3.91,
         "season_minutes": 730,
         "api_rank": null,
         "is_captain": false,
@@ -628306,7 +628306,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 85,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -628316,7 +628316,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628327,9 +628327,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.15,
-        "xa": 0.42,
-        "xgi": 0.57,
+        "xg": 0.12,
+        "xa": 0.26,
+        "xgi": 0.38,
         "owner_team_name": null
       },
       {
@@ -628411,9 +628411,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 0.55,
+        "season_xg": 0.54,
         "season_xa": 0.09,
-        "season_xgi": 0.64,
+        "season_xgi": 0.63,
         "season_minutes": 398,
         "api_rank": null,
         "is_captain": false,
@@ -628425,17 +628425,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 86,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 8,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "EVE",
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628446,9 +628446,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.26,
+        "xg": 0.25,
         "xa": 0.03,
-        "xgi": 0.29,
+        "xgi": 0.28,
         "owner_team_name": null
       },
       {
@@ -628530,9 +628530,9 @@
           }
         ],
         "form": 5.0,
-        "season_xg": 8.03,
-        "season_xa": 0.47,
-        "season_xgi": 8.5,
+        "season_xg": 7.29,
+        "season_xa": 0.48,
+        "season_xgi": 7.77,
         "season_minutes": 851,
         "api_rank": null,
         "is_captain": true,
@@ -628544,7 +628544,7 @@
         "goals": 2,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -628554,7 +628554,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628565,9 +628565,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 1.66,
-        "xa": 0.09,
-        "xgi": 1.75,
+        "xg": 0.92,
+        "xa": 0.1,
+        "xgi": 1.02,
         "owner_team_name": "Eki-Tiki"
       },
       {
@@ -628649,9 +628649,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 2.03,
+        "season_xg": 1.94,
         "season_xa": 0.05,
-        "season_xgi": 2.08,
+        "season_xgi": 1.99,
         "season_minutes": 442,
         "api_rank": null,
         "is_captain": false,
@@ -628663,17 +628663,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 86,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "EVE",
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628684,9 +628684,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.27,
+        "xg": 0.18,
         "xa": 0.01,
-        "xgi": 0.28,
+        "xgi": 0.19,
         "owner_team_name": null
       }
     ],
@@ -628784,7 +628784,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -628794,7 +628794,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -628903,7 +628903,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -628913,7 +628913,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -629022,7 +629022,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -629032,7 +629032,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -629141,7 +629141,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -629151,7 +629151,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -630919,9 +630919,9 @@
             }
           ],
           "form": 5.0,
-          "season_xg": 8.03,
-          "season_xa": 0.47,
-          "season_xgi": 8.5,
+          "season_xg": 7.29,
+          "season_xa": 0.48,
+          "season_xgi": 7.77,
           "season_minutes": 851,
           "api_rank": null,
           "is_captain": false,
@@ -635220,8 +635220,8 @@
           ],
           "form": 2.4,
           "season_xg": 0.18,
-          "season_xa": 0.65,
-          "season_xgi": 0.83,
+          "season_xa": 0.61,
+          "season_xgi": 0.79,
           "season_minutes": 793,
           "api_rank": null,
           "is_captain": false,
@@ -638801,9 +638801,9 @@
             }
           ],
           "form": 4.8,
-          "season_xg": 1.85,
-          "season_xa": 1.38,
-          "season_xgi": 3.23,
+          "season_xg": 1.78,
+          "season_xa": 1.39,
+          "season_xgi": 3.17,
           "season_minutes": 895,
           "api_rank": null,
           "is_captain": false,
@@ -644412,9 +644412,9 @@
             }
           ],
           "form": 5.8,
-          "season_xg": 2.26,
-          "season_xa": 1.84,
-          "season_xgi": 4.1,
+          "season_xg": 2.23,
+          "season_xa": 1.68,
+          "season_xgi": 3.91,
           "season_minutes": 730,
           "api_rank": null,
           "is_captain": false,
@@ -645384,7 +645384,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -645394,7 +645394,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -645490,8 +645490,8 @@
           ],
           "form": 2.4,
           "season_xg": 0.18,
-          "season_xa": 0.65,
-          "season_xgi": 0.83,
+          "season_xa": 0.61,
+          "season_xgi": 0.79,
           "season_minutes": 793,
           "api_rank": null,
           "is_captain": false,
@@ -645503,7 +645503,7 @@
           "goals": 0,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 11,
@@ -645513,7 +645513,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -645525,8 +645525,8 @@
           "goals_conceded": 1,
           "saves": 0,
           "xg": 0.14,
-          "xa": 0.23,
-          "xgi": 0.37,
+          "xa": 0.19,
+          "xgi": 0.33,
           "owner_team_name": null
         },
         {
@@ -645622,7 +645622,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 10,
@@ -645632,7 +645632,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -645741,7 +645741,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 88,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 11,
@@ -645751,7 +645751,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -645846,9 +645846,9 @@
             }
           ],
           "form": 4.8,
-          "season_xg": 1.85,
-          "season_xa": 1.38,
-          "season_xgi": 3.23,
+          "season_xg": 1.78,
+          "season_xa": 1.39,
+          "season_xgi": 3.17,
           "season_minutes": 895,
           "api_rank": null,
           "is_captain": false,
@@ -645860,7 +645860,7 @@
           "goals": 1,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
@@ -645870,7 +645870,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -645881,9 +645881,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.25,
-          "xa": 0.1,
-          "xgi": 0.35,
+          "xg": 0.18,
+          "xa": 0.11,
+          "xgi": 0.29,
           "owner_team_name": "Hakuna Mateta"
         },
         {
@@ -645965,9 +645965,9 @@
             }
           ],
           "form": 0.4,
-          "season_xg": 0.24,
+          "season_xg": 0.25,
           "season_xa": 0.06,
-          "season_xgi": 0.3,
+          "season_xgi": 0.31,
           "season_minutes": 143,
           "api_rank": null,
           "is_captain": false,
@@ -645979,7 +645979,7 @@
           "goals": 1,
           "assists": 0,
           "minutes": 72,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 3,
@@ -645989,7 +645989,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646000,9 +646000,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.19,
+          "xg": 0.2,
           "xa": 0.05,
-          "xgi": 0.24,
+          "xgi": 0.25,
           "owner_team_name": null
         },
         {
@@ -646084,9 +646084,9 @@
             }
           ],
           "form": 1.0,
-          "season_xg": 0.24,
+          "season_xg": 0.23,
           "season_xa": 0.33,
-          "season_xgi": 0.57,
+          "season_xgi": 0.56,
           "season_minutes": 227,
           "api_rank": null,
           "is_captain": false,
@@ -646098,7 +646098,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 85,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 13,
@@ -646108,7 +646108,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646119,9 +646119,9 @@
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
-          "xg": 0.21,
+          "xg": 0.2,
           "xa": 0.04,
-          "xgi": 0.25,
+          "xgi": 0.24,
           "owner_team_name": null
         },
         {
@@ -646203,9 +646203,9 @@
             }
           ],
           "form": 5.8,
-          "season_xg": 2.26,
-          "season_xa": 1.84,
-          "season_xgi": 4.1,
+          "season_xg": 2.23,
+          "season_xa": 1.68,
+          "season_xgi": 3.91,
           "season_minutes": 730,
           "api_rank": null,
           "is_captain": false,
@@ -646217,7 +646217,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 85,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
@@ -646227,7 +646227,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646238,9 +646238,9 @@
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
-          "xg": 0.15,
-          "xa": 0.42,
-          "xgi": 0.57,
+          "xg": 0.12,
+          "xa": 0.26,
+          "xgi": 0.38,
           "owner_team_name": null
         },
         {
@@ -646322,9 +646322,9 @@
             }
           ],
           "form": 2.2,
-          "season_xg": 0.55,
+          "season_xg": 0.54,
           "season_xa": 0.09,
-          "season_xgi": 0.64,
+          "season_xgi": 0.63,
           "season_minutes": 398,
           "api_rank": null,
           "is_captain": false,
@@ -646336,17 +646336,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 86,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 8,
+          "defensive_contribution_count": 9,
           "opponents": [
             {
               "opponent": "EVE",
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646357,9 +646357,9 @@
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
-          "xg": 0.26,
+          "xg": 0.25,
           "xa": 0.03,
-          "xgi": 0.29,
+          "xgi": 0.28,
           "owner_team_name": null
         },
         {
@@ -646441,9 +646441,9 @@
             }
           ],
           "form": 5.0,
-          "season_xg": 8.03,
-          "season_xa": 0.47,
-          "season_xgi": 8.5,
+          "season_xg": 7.29,
+          "season_xa": 0.48,
+          "season_xgi": 7.77,
           "season_minutes": 851,
           "api_rank": null,
           "is_captain": true,
@@ -646455,7 +646455,7 @@
           "goals": 2,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
@@ -646465,7 +646465,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646476,9 +646476,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 1.66,
-          "xa": 0.09,
-          "xgi": 1.75,
+          "xg": 0.92,
+          "xa": 0.1,
+          "xgi": 1.02,
           "owner_team_name": "Eki-Tiki"
         },
         {
@@ -646560,9 +646560,9 @@
             }
           ],
           "form": 2.2,
-          "season_xg": 2.03,
+          "season_xg": 1.94,
           "season_xa": 0.05,
-          "season_xgi": 2.08,
+          "season_xgi": 1.99,
           "season_minutes": 442,
           "api_rank": null,
           "is_captain": false,
@@ -646574,17 +646574,17 @@
           "goals": 0,
           "assists": 0,
           "minutes": 86,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 5,
+          "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "EVE",
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646595,9 +646595,9 @@
           "own_goals": 0,
           "goals_conceded": 3,
           "saves": 0,
-          "xg": 0.27,
+          "xg": 0.18,
           "xa": 0.01,
-          "xgi": 0.28,
+          "xgi": 0.19,
           "owner_team_name": null
         }
       ],
@@ -646695,7 +646695,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -646705,7 +646705,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646814,7 +646814,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
@@ -646824,7 +646824,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -646933,7 +646933,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 8,
@@ -646943,7 +646943,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -647052,7 +647052,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 17,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
@@ -647062,7 +647062,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -649087,7 +649087,7 @@
           "is_home": true,
           "team_score": 3,
           "opponent_score": 1,
-          "finished": false,
+          "finished": true,
           "difficulty": 2,
           "kickoff_time": "2026-11-06T20:00:00Z"
         }
@@ -649098,7 +649098,7 @@
           "is_home": false,
           "team_score": 1,
           "opponent_score": 3,
-          "finished": false,
+          "finished": true,
           "difficulty": 3,
           "kickoff_time": "2026-11-06T20:00:00Z"
         }
@@ -656445,7 +656445,7 @@
         "home_score": 3,
         "away_score": 1,
         "kickoff_time": "2026-11-06T20:00:00Z",
-        "finished": false,
+        "finished": true,
         "home_difficulty": 2,
         "away_difficulty": 3
       },
@@ -660093,7 +660093,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -660103,7 +660103,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -660319,9 +660319,9 @@
           }
         ],
         "form": 5.0,
-        "season_xg": 8.03,
-        "season_xa": 0.47,
-        "season_xgi": 8.5,
+        "season_xg": 7.29,
+        "season_xa": 0.48,
+        "season_xgi": 7.77,
         "season_minutes": 851,
         "api_rank": null,
         "is_captain": false,
@@ -660333,7 +660333,7 @@
         "goals": 2,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -660343,7 +660343,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -660354,9 +660354,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 1.66,
-        "xa": 0.09,
-        "xgi": 1.75,
+        "xg": 0.92,
+        "xa": 0.1,
+        "xgi": 1.02,
         "rank": 8,
         "owner_team_name": "Eki-Tiki"
       },
@@ -661175,7 +661175,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -661185,7 +661185,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -662257,7 +662257,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -662267,7 +662267,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -663445,9 +663445,9 @@
           }
         ],
         "form": 4.8,
-        "season_xg": 1.85,
-        "season_xa": 1.38,
-        "season_xgi": 3.23,
+        "season_xg": 1.78,
+        "season_xa": 1.39,
+        "season_xgi": 3.17,
         "season_minutes": 895,
         "api_rank": null,
         "is_captain": false,
@@ -663459,7 +663459,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -663469,7 +663469,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -663480,9 +663480,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.25,
-        "xa": 0.1,
-        "xgi": 0.35,
+        "xg": 0.18,
+        "xa": 0.11,
+        "xgi": 0.29,
         "rank": 4,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -664407,9 +664407,9 @@
           }
         ],
         "form": 5.0,
-        "season_xg": 8.03,
-        "season_xa": 0.47,
-        "season_xgi": 8.5,
+        "season_xg": 7.29,
+        "season_xa": 0.48,
+        "season_xgi": 7.77,
         "season_minutes": 851,
         "api_rank": null,
         "is_captain": false,
@@ -664421,7 +664421,7 @@
         "goals": 2,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -664431,7 +664431,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -664442,9 +664442,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 1.66,
-        "xa": 0.09,
-        "xgi": 1.75,
+        "xg": 0.92,
+        "xa": 0.1,
+        "xgi": 1.02,
         "rank": 2,
         "owner_team_name": "Eki-Tiki"
       },
@@ -666105,7 +666105,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -666115,7 +666115,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -666331,9 +666331,9 @@
           }
         ],
         "form": 5.0,
-        "season_xg": 8.03,
-        "season_xa": 0.47,
-        "season_xgi": 8.5,
+        "season_xg": 7.29,
+        "season_xa": 0.48,
+        "season_xgi": 7.77,
         "season_minutes": 851,
         "api_rank": null,
         "is_captain": false,
@@ -666345,7 +666345,7 @@
         "goals": 2,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -666355,7 +666355,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -666366,9 +666366,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 1.66,
-        "xa": 0.09,
-        "xgi": 1.75,
+        "xg": 0.92,
+        "xa": 0.1,
+        "xgi": 1.02,
         "rank": 8,
         "owner_team_name": "Eki-Tiki"
       },
@@ -667411,9 +667411,9 @@
           }
         ],
         "form": 4.8,
-        "season_xg": 1.85,
-        "season_xa": 1.38,
-        "season_xgi": 3.23,
+        "season_xg": 1.78,
+        "season_xa": 1.39,
+        "season_xgi": 3.17,
         "season_minutes": 895,
         "api_rank": null,
         "is_captain": false,
@@ -667425,7 +667425,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -667435,7 +667435,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -667446,9 +667446,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.25,
-        "xa": 0.1,
-        "xgi": 0.35,
+        "xg": 0.18,
+        "xa": 0.11,
+        "xgi": 0.29,
         "rank": 17,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -669225,7 +669225,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 88,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 11,
@@ -669235,7 +669235,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -669692,8 +669692,8 @@
         ],
         "form": 2.4,
         "season_xg": 0.18,
-        "season_xa": 0.65,
-        "season_xgi": 0.83,
+        "season_xa": 0.61,
+        "season_xgi": 0.79,
         "season_minutes": 793,
         "api_rank": null,
         "is_captain": false,
@@ -669705,7 +669705,7 @@
         "goals": 0,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 11,
@@ -669715,7 +669715,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -669727,8 +669727,8 @@
         "goals_conceded": 1,
         "saves": 0,
         "xg": 0.14,
-        "xa": 0.23,
-        "xgi": 0.37,
+        "xa": 0.19,
+        "xgi": 0.33,
         "rank": 36,
         "owner_team_name": null
       },
@@ -670891,9 +670891,9 @@
           }
         ],
         "form": 5.8,
-        "season_xg": 2.26,
-        "season_xa": 1.84,
-        "season_xgi": 4.1,
+        "season_xg": 2.23,
+        "season_xa": 1.68,
+        "season_xgi": 3.91,
         "season_minutes": 730,
         "api_rank": null,
         "is_captain": false,
@@ -670905,7 +670905,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 85,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -670915,7 +670915,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -670926,9 +670926,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.15,
-        "xa": 0.42,
-        "xgi": 0.57,
+        "xg": 0.12,
+        "xa": 0.26,
+        "xgi": 0.38,
         "rank": 46,
         "owner_team_name": null
       },
@@ -671025,7 +671025,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -671035,7 +671035,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -675825,7 +675825,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -675835,7 +675835,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -677385,7 +677385,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -677395,7 +677395,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -677491,9 +677491,9 @@
           }
         ],
         "form": 2.0,
-        "season_xg": 0.58,
-        "season_xa": 1.12,
-        "season_xgi": 1.7,
+        "season_xg": 0.57,
+        "season_xa": 1.19,
+        "season_xgi": 1.76,
         "season_minutes": 637,
         "api_rank": null,
         "is_captain": false,
@@ -677505,7 +677505,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 89,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -677515,7 +677515,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -677526,9 +677526,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.08,
-        "xa": 0.44,
-        "xgi": 0.52,
+        "xg": 0.07,
+        "xa": 0.51,
+        "xgi": 0.58,
         "rank": 101,
         "owner_team_name": null
       },
@@ -679065,7 +679065,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -679075,7 +679075,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -679185,17 +679185,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 9,
+        "defensive_contribution_count": 10,
         "opponents": [
           {
             "opponent": "COV",
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -680625,7 +680625,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -680635,7 +680635,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -681465,7 +681465,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -681475,7 +681475,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -681945,7 +681945,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 10,
@@ -681955,7 +681955,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -683265,7 +683265,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -683275,7 +683275,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -687105,7 +687105,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -687115,7 +687115,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -688545,7 +688545,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 4,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -688555,7 +688555,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -689025,7 +689025,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 11,
@@ -689035,7 +689035,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -689145,7 +689145,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 6,
@@ -689155,7 +689155,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -690105,7 +690105,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 3,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -690115,7 +690115,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -691411,9 +691411,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 2.03,
+        "season_xg": 1.94,
         "season_xa": 0.05,
-        "season_xgi": 2.08,
+        "season_xgi": 1.99,
         "season_minutes": 442,
         "api_rank": null,
         "is_captain": false,
@@ -691425,17 +691425,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 86,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "EVE",
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -691446,9 +691446,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.27,
+        "xg": 0.18,
         "xa": 0.01,
-        "xgi": 0.28,
+        "xgi": 0.19,
         "rank": 217,
         "owner_team_name": null
       },
@@ -692265,7 +692265,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -692275,7 +692275,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -692385,17 +692385,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 10,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "COV",
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -693331,9 +693331,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 0.55,
+        "season_xg": 0.54,
         "season_xa": 0.09,
-        "season_xgi": 0.64,
+        "season_xgi": 0.63,
         "season_minutes": 398,
         "api_rank": null,
         "is_captain": false,
@@ -693345,17 +693345,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 86,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 8,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "EVE",
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -693366,9 +693366,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.26,
+        "xg": 0.25,
         "xa": 0.03,
-        "xgi": 0.29,
+        "xgi": 0.28,
         "rank": 233,
         "owner_team_name": null
       },
@@ -693451,9 +693451,9 @@
           }
         ],
         "form": 0.8,
-        "season_xg": 0.14,
+        "season_xg": 0.12,
         "season_xa": 0.17,
-        "season_xgi": 0.31,
+        "season_xgi": 0.29,
         "season_minutes": 183,
         "api_rank": null,
         "is_captain": false,
@@ -693465,7 +693465,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -693475,7 +693475,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -693486,9 +693486,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.05,
         "xa": 0.0,
-        "xgi": 0.07,
+        "xgi": 0.05,
         "rank": 234,
         "owner_team_name": null
       },
@@ -695025,7 +695025,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -695035,7 +695035,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -695865,7 +695865,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -695875,7 +695875,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -695971,9 +695971,9 @@
           }
         ],
         "form": 1.0,
-        "season_xg": 0.24,
+        "season_xg": 0.23,
         "season_xa": 0.33,
-        "season_xgi": 0.57,
+        "season_xgi": 0.56,
         "season_minutes": 227,
         "api_rank": null,
         "is_captain": false,
@@ -695985,7 +695985,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 85,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 13,
@@ -695995,7 +695995,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -696006,9 +696006,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.2,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.24,
         "rank": 255,
         "owner_team_name": null
       },
@@ -699105,7 +699105,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -699115,7 +699115,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -699225,7 +699225,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -699235,7 +699235,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -699345,7 +699345,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -699355,7 +699355,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -700171,9 +700171,9 @@
           }
         ],
         "form": 0.4,
-        "season_xg": 0.24,
+        "season_xg": 0.25,
         "season_xa": 0.06,
-        "season_xgi": 0.3,
+        "season_xgi": 0.31,
         "season_minutes": 143,
         "api_rank": null,
         "is_captain": false,
@@ -700185,7 +700185,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -700195,7 +700195,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -700206,9 +700206,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.19,
+        "xg": 0.2,
         "xa": 0.05,
-        "xgi": 0.24,
+        "xgi": 0.25,
         "rank": 290,
         "owner_team_name": null
       },
@@ -705331,9 +705331,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.44,
+        "season_xg": 0.39,
         "season_xa": 0.18,
-        "season_xgi": 0.62,
+        "season_xgi": 0.57,
         "season_minutes": 215,
         "api_rank": null,
         "is_captain": false,
@@ -705345,7 +705345,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 4,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -705355,7 +705355,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -705366,9 +705366,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.16,
         "xa": 0.0,
-        "xgi": 0.21,
+        "xgi": 0.16,
         "rank": 333,
         "owner_team_name": null
       },
@@ -706665,7 +706665,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 4,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -706675,7 +706675,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -707252,8 +707252,8 @@
         ],
         "form": 0.6,
         "season_xg": 0.21,
-        "season_xa": 0.44,
-        "season_xgi": 0.65,
+        "season_xa": 0.58,
+        "season_xgi": 0.79,
         "season_minutes": 118,
         "api_rank": null,
         "is_captain": false,
@@ -707265,17 +707265,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "COV",
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -707287,8 +707287,8 @@
         "goals_conceded": 1,
         "saves": 0,
         "xg": 0.04,
-        "xa": 0.14,
-        "xgi": 0.18,
+        "xa": 0.28,
+        "xgi": 0.32,
         "rank": 349,
         "owner_team_name": null
       },
@@ -709305,7 +709305,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -709315,7 +709315,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -709545,7 +709545,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 1,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -709555,7 +709555,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -711705,7 +711705,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 1,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -711715,7 +711715,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -714705,7 +714705,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -714715,7 +714715,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -716745,7 +716745,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -716755,7 +716755,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -716865,7 +716865,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -716875,7 +716875,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -719985,7 +719985,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -719995,7 +719995,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725145,7 +725145,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725155,7 +725155,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725265,7 +725265,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725275,7 +725275,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725385,7 +725385,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725395,7 +725395,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725505,7 +725505,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725515,7 +725515,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725625,7 +725625,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725635,7 +725635,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725745,7 +725745,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725755,7 +725755,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725865,7 +725865,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725875,7 +725875,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -725985,7 +725985,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -725995,7 +725995,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -726105,7 +726105,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -726115,7 +726115,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -726225,7 +726225,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -726235,7 +726235,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -726345,7 +726345,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -726355,7 +726355,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -726465,7 +726465,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -726475,7 +726475,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -726585,7 +726585,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -726595,7 +726595,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -727785,7 +727785,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -727795,7 +727795,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -727905,7 +727905,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -727915,7 +727915,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -728025,7 +728025,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -728035,7 +728035,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -728145,7 +728145,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -728155,7 +728155,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -743025,7 +743025,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -743035,7 +743035,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -744345,7 +744345,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -744355,7 +744355,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -746387,7 +746387,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -746397,7 +746397,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -747467,7 +747467,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -747477,7 +747477,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -749747,7 +749747,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -749757,7 +749757,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -749867,7 +749867,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -749877,7 +749877,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -749987,7 +749987,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -749997,7 +749997,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -750107,7 +750107,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -750117,7 +750117,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -754067,7 +754067,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -754077,7 +754077,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -755149,7 +755149,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -755159,7 +755159,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -755989,7 +755989,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 88,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 11,
@@ -755999,7 +755999,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -756216,8 +756216,8 @@
         ],
         "form": 2.4,
         "season_xg": 0.18,
-        "season_xa": 0.65,
-        "season_xgi": 0.83,
+        "season_xa": 0.61,
+        "season_xgi": 0.79,
         "season_minutes": 793,
         "api_rank": null,
         "is_captain": false,
@@ -756229,7 +756229,7 @@
         "goals": 0,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 11,
@@ -756239,7 +756239,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -756251,8 +756251,8 @@
         "goals_conceded": 1,
         "saves": 0,
         "xg": 0.14,
-        "xa": 0.23,
-        "xgi": 0.37,
+        "xa": 0.19,
+        "xgi": 0.33,
         "rank": 13,
         "owner_team_name": null
       },
@@ -758389,7 +758389,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -758399,7 +758399,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -759109,7 +759109,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -759119,7 +759119,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -759949,7 +759949,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 10,
@@ -759959,7 +759959,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -760789,7 +760789,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -760799,7 +760799,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -762469,7 +762469,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -762479,7 +762479,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -763069,7 +763069,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 6,
@@ -763079,7 +763079,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -765349,7 +765349,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -765359,7 +765359,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -769549,7 +769549,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -769559,7 +769559,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -770629,7 +770629,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 1,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -770639,7 +770639,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -772309,7 +772309,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -772319,7 +772319,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -772429,7 +772429,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -772439,7 +772439,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -775189,7 +775189,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -775199,7 +775199,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -775309,7 +775309,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -775319,7 +775319,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -775429,7 +775429,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -775439,7 +775439,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -775549,7 +775549,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -775559,7 +775559,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -775909,7 +775909,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -775919,7 +775919,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -776029,7 +776029,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -776039,7 +776039,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -781297,9 +781297,9 @@
           }
         ],
         "form": 4.8,
-        "season_xg": 1.85,
-        "season_xa": 1.38,
-        "season_xgi": 3.23,
+        "season_xg": 1.78,
+        "season_xa": 1.39,
+        "season_xgi": 3.17,
         "season_minutes": 895,
         "api_rank": null,
         "is_captain": false,
@@ -781311,7 +781311,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 9,
@@ -781321,7 +781321,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -781332,9 +781332,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.25,
-        "xa": 0.1,
-        "xgi": 0.35,
+        "xg": 0.18,
+        "xa": 0.11,
+        "xgi": 0.29,
         "rank": 4,
         "owner_team_name": "Hakuna Mateta"
       },
@@ -782857,9 +782857,9 @@
           }
         ],
         "form": 5.8,
-        "season_xg": 2.26,
-        "season_xa": 1.84,
-        "season_xgi": 4.1,
+        "season_xg": 2.23,
+        "season_xa": 1.68,
+        "season_xgi": 3.91,
         "season_minutes": 730,
         "api_rank": null,
         "is_captain": false,
@@ -782871,7 +782871,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 85,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -782881,7 +782881,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -782892,9 +782892,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.15,
-        "xa": 0.42,
-        "xgi": 0.57,
+        "xg": 0.12,
+        "xa": 0.26,
+        "xgi": 0.38,
         "rank": 17,
         "owner_team_name": null
       },
@@ -785737,9 +785737,9 @@
           }
         ],
         "form": 2.0,
-        "season_xg": 0.58,
-        "season_xa": 1.12,
-        "season_xgi": 1.7,
+        "season_xg": 0.57,
+        "season_xa": 1.19,
+        "season_xgi": 1.76,
         "season_minutes": 637,
         "api_rank": null,
         "is_captain": false,
@@ -785751,7 +785751,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 89,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 8,
@@ -785761,7 +785761,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -785772,9 +785772,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 0.08,
-        "xa": 0.44,
-        "xgi": 0.52,
+        "xg": 0.07,
+        "xa": 0.51,
+        "xgi": 0.58,
         "rank": 41,
         "owner_team_name": null
       },
@@ -786471,17 +786471,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 9,
+        "defensive_contribution_count": 10,
         "opponents": [
           {
             "opponent": "COV",
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -787911,7 +787911,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 10,
@@ -787921,7 +787921,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -791271,7 +791271,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 4,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 1,
@@ -791281,7 +791281,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -791751,7 +791751,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 11,
@@ -791761,7 +791761,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -792831,7 +792831,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -792841,7 +792841,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -792951,17 +792951,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 10,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "COV",
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -793777,9 +793777,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 0.55,
+        "season_xg": 0.54,
         "season_xa": 0.09,
-        "season_xgi": 0.64,
+        "season_xgi": 0.63,
         "season_minutes": 398,
         "api_rank": null,
         "is_captain": false,
@@ -793791,17 +793791,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 86,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 8,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "EVE",
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -793812,9 +793812,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.26,
+        "xg": 0.25,
         "xa": 0.03,
-        "xgi": 0.29,
+        "xgi": 0.28,
         "rank": 108,
         "owner_team_name": null
       },
@@ -793897,9 +793897,9 @@
           }
         ],
         "form": 0.8,
-        "season_xg": 0.14,
+        "season_xg": 0.12,
         "season_xa": 0.17,
-        "season_xgi": 0.31,
+        "season_xgi": 0.29,
         "season_minutes": 183,
         "api_rank": null,
         "is_captain": false,
@@ -793911,7 +793911,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -793921,7 +793921,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -793932,9 +793932,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.07,
+        "xg": 0.05,
         "xa": 0.0,
-        "xgi": 0.07,
+        "xgi": 0.05,
         "rank": 109,
         "owner_team_name": null
       },
@@ -794991,7 +794991,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -795001,7 +795001,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -795097,9 +795097,9 @@
           }
         ],
         "form": 1.0,
-        "season_xg": 0.24,
+        "season_xg": 0.23,
         "season_xa": 0.33,
-        "season_xgi": 0.57,
+        "season_xgi": 0.56,
         "season_minutes": 227,
         "api_rank": null,
         "is_captain": false,
@@ -795111,7 +795111,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 85,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
         "defensive_contribution_count": 13,
@@ -795121,7 +795121,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -795132,9 +795132,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.2,
         "xa": 0.04,
-        "xgi": 0.25,
+        "xgi": 0.24,
         "rank": 119,
         "owner_team_name": null
       },
@@ -796791,7 +796791,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -796801,7 +796801,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -796911,7 +796911,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -796921,7 +796921,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -797377,9 +797377,9 @@
           }
         ],
         "form": 0.4,
-        "season_xg": 0.24,
+        "season_xg": 0.25,
         "season_xa": 0.06,
-        "season_xgi": 0.3,
+        "season_xgi": 0.31,
         "season_minutes": 143,
         "api_rank": null,
         "is_captain": false,
@@ -797391,7 +797391,7 @@
         "goals": 1,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 3,
@@ -797401,7 +797401,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -797412,9 +797412,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.19,
+        "xg": 0.2,
         "xa": 0.05,
-        "xgi": 0.24,
+        "xgi": 0.25,
         "rank": 138,
         "owner_team_name": null
       },
@@ -799777,9 +799777,9 @@
           }
         ],
         "form": 0.2,
-        "season_xg": 0.44,
+        "season_xg": 0.39,
         "season_xa": 0.18,
-        "season_xgi": 0.62,
+        "season_xgi": 0.57,
         "season_minutes": 215,
         "api_rank": null,
         "is_captain": false,
@@ -799791,7 +799791,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 4,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -799801,7 +799801,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -799812,9 +799812,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.16,
         "xa": 0.0,
-        "xgi": 0.21,
+        "xgi": 0.16,
         "rank": 158,
         "owner_team_name": null
       },
@@ -800871,7 +800871,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 4,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -800881,7 +800881,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -801098,8 +801098,8 @@
         ],
         "form": 0.6,
         "season_xg": 0.21,
-        "season_xa": 0.44,
-        "season_xgi": 0.65,
+        "season_xa": 0.58,
+        "season_xgi": 0.79,
         "season_minutes": 118,
         "api_rank": null,
         "is_captain": false,
@@ -801111,17 +801111,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 72,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "COV",
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -801133,8 +801133,8 @@
         "goals_conceded": 1,
         "saves": 0,
         "xg": 0.04,
-        "xa": 0.14,
-        "xgi": 0.18,
+        "xa": 0.28,
+        "xgi": 0.32,
         "rank": 169,
         "owner_team_name": null
       },
@@ -802431,7 +802431,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 1,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -802441,7 +802441,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -806991,7 +806991,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -807001,7 +807001,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -809151,7 +809151,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809161,7 +809161,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -809271,7 +809271,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809281,7 +809281,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -809391,7 +809391,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809401,7 +809401,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -809511,7 +809511,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -809521,7 +809521,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -816111,7 +816111,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -816121,7 +816121,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -816939,9 +816939,9 @@
           }
         ],
         "form": 5.0,
-        "season_xg": 8.03,
-        "season_xa": 0.47,
-        "season_xgi": 8.5,
+        "season_xg": 7.29,
+        "season_xa": 0.48,
+        "season_xgi": 7.77,
         "season_minutes": 851,
         "api_rank": null,
         "is_captain": false,
@@ -816953,7 +816953,7 @@
         "goals": 2,
         "assists": 1,
         "minutes": 90,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 4,
@@ -816963,7 +816963,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -816974,9 +816974,9 @@
         "own_goals": 0,
         "goals_conceded": 1,
         "saves": 0,
-        "xg": 1.66,
-        "xa": 0.09,
-        "xgi": 1.75,
+        "xg": 0.92,
+        "xa": 0.1,
+        "xgi": 1.02,
         "rank": 2,
         "owner_team_name": "Eki-Tiki"
       },
@@ -818393,7 +818393,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 17,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 2,
@@ -818403,7 +818403,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -819233,7 +819233,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 3,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -819243,7 +819243,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -819579,9 +819579,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 2.03,
+        "season_xg": 1.94,
         "season_xa": 0.05,
-        "season_xgi": 2.08,
+        "season_xgi": 1.99,
         "season_minutes": 442,
         "api_rank": null,
         "is_captain": false,
@@ -819593,17 +819593,17 @@
         "goals": 0,
         "assists": 0,
         "minutes": 86,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "EVE",
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -819614,9 +819614,9 @@
         "own_goals": 0,
         "goals_conceded": 3,
         "saves": 0,
-        "xg": 0.27,
+        "xg": 0.18,
         "xa": 0.01,
-        "xgi": 0.28,
+        "xgi": 0.19,
         "rank": 24,
         "owner_team_name": null
       },
@@ -820553,7 +820553,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -820563,7 +820563,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -822353,7 +822353,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -822363,7 +822363,7 @@
             "is_home": true,
             "team_score": 3,
             "opponent_score": 1,
-            "finished": false,
+            "finished": true,
             "difficulty": 2,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -824033,7 +824033,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -824043,7 +824043,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -824153,7 +824153,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -824163,7 +824163,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -824273,7 +824273,7 @@
         "goals": 0,
         "assists": 0,
         "minutes": 0,
-        "match_finished": false,
+        "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
         "defensive_contribution_count": 0,
@@ -824283,7 +824283,7 @@
             "is_home": false,
             "team_score": 1,
             "opponent_score": 3,
-            "finished": false,
+            "finished": true,
             "difficulty": 3,
             "kickoff_time": "2026-11-06T20:00:00Z"
           }
@@ -827544,7 +827544,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 0,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -827554,7 +827554,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -831583,7 +831583,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 17,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 2,
@@ -831593,7 +831593,7 @@
               "is_home": false,
               "team_score": 1,
               "opponent_score": 3,
-              "finished": false,
+              "finished": true,
               "difficulty": 3,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -837222,7 +837222,7 @@
             "bonus": 77,
             "clean_sheets": 82,
             "ga": 119,
-            "defcon": 165
+            "defcon": 166
           },
           "form": [
             1,
@@ -838442,7 +838442,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 0,
@@ -838452,7 +838452,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -838841,7 +838841,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 88,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": true,
           "defensive_contribution_count": 11,
@@ -838851,7 +838851,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -839379,7 +839379,7 @@
           "goals": 1,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 9,
@@ -839389,7 +839389,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -839400,9 +839400,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 0.25,
-          "xa": 0.1,
-          "xgi": 0.35,
+          "xg": 0.18,
+          "xa": 0.11,
+          "xgi": 0.29,
           "subbed_out": false,
           "multiplier": 1,
           "points": 9
@@ -840729,7 +840729,7 @@
           "goals": 0,
           "assists": 0,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
@@ -840739,7 +840739,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -841677,7 +841677,7 @@
           "goals": 2,
           "assists": 1,
           "minutes": 90,
-          "match_finished": false,
+          "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
           "defensive_contribution_count": 4,
@@ -841687,7 +841687,7 @@
               "is_home": true,
               "team_score": 3,
               "opponent_score": 1,
-              "finished": false,
+              "finished": true,
               "difficulty": 2,
               "kickoff_time": "2026-11-06T20:00:00Z"
             }
@@ -841698,9 +841698,9 @@
           "own_goals": 0,
           "goals_conceded": 1,
           "saves": 0,
-          "xg": 1.66,
-          "xa": 0.09,
-          "xgi": 1.75,
+          "xg": 0.92,
+          "xa": 0.1,
+          "xgi": 1.02,
           "subbed_out": false,
           "multiplier": 1,
           "points": 16
