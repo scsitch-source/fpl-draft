@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T10:15:18.536194+00:00",
+  "generated_at": "2026-11-09T20:44:24.658500+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19,6 +19,7 @@
       "team_name": "Clean Machine FC",
       "manager_name": "Nick Poole",
       "score": 46,
+      "computed_score": 46,
       "api_score": 46
     },
     "away": {
@@ -26,6 +27,7 @@
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "score": 50,
+      "computed_score": 50,
       "api_score": 50
     },
     "finished": true,
@@ -145379,6 +145381,7 @@
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 46,
+          "computed_score": 46,
           "api_score": 46
         },
         "away": {
@@ -145386,6 +145389,7 @@
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
           "score": 50,
+          "computed_score": 50,
           "api_score": 50
         },
         "finished": true,
@@ -149451,6 +149455,7 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 43,
+          "computed_score": 43,
           "api_score": 43
         },
         "away": {
@@ -149458,6 +149463,7 @@
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
           "score": 44,
+          "computed_score": 44,
           "api_score": 44
         },
         "finished": true,
@@ -153496,6 +153502,7 @@
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
           "score": 42,
+          "computed_score": 42,
           "api_score": 42
         },
         "away": {
@@ -153503,6 +153510,7 @@
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 31,
+          "computed_score": 31,
           "api_score": 31
         },
         "finished": true,
@@ -157568,6 +157576,7 @@
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 56,
+          "computed_score": 56,
           "api_score": 56
         },
         "away": {
@@ -157575,6 +157584,7 @@
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 60,
+          "computed_score": 60,
           "api_score": 60
         },
         "finished": true,
