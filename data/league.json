@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T00:49:14.592157+00:00",
+  "generated_at": "2026-11-22T07:31:16.399235+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -98,7 +98,7 @@
       "points_against": 428,
       "total": 16,
       "event_total": 0,
-      "current_gw_score": 10,
+      "current_gw_score": 12,
       "form": [
         "D",
         "W",
@@ -163487,7 +163487,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -168134,9 +168134,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.33,
+                "xg": 0.29,
                 "xa": 0.0,
-                "xgi": 0.33,
+                "xgi": 0.28,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 7
@@ -168907,7 +168907,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -169209,9 +169209,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.03,
+                "xg": 0.02,
                 "xa": 0.0,
-                "xgi": 0.03,
+                "xgi": 0.02,
                 "subbed_in": true,
                 "multiplier": 1,
                 "points": 0
@@ -172558,7 +172558,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -172683,7 +172683,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -172709,7 +172709,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 3,
+                "defensive_contribution_count": 4,
                 "opponents": [
                   {
                     "opponent": "NEW",
@@ -172728,8 +172728,8 @@
                 "goals_conceded": 2,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.41,
-                "xgi": 0.41,
+                "xa": 0.43,
+                "xgi": 0.43,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 5
@@ -172860,9 +172860,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.29,
+                "xg": 0.28,
                 "xa": 0.11,
-                "xgi": 0.4,
+                "xgi": 0.39,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 7
@@ -172957,7 +172957,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -173818,7 +173818,7 @@
           "league_entry_id": 183812,
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
-          "score": 10,
+          "score": 12,
           "api_score": 10
         },
         "finished": false,
@@ -176334,7 +176334,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -176342,7 +176342,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -176360,7 +176360,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 6,
+                "defensive_contribution_count": 7,
                 "opponents": [
                   {
                     "opponent": "NEW",
@@ -176664,7 +176664,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -176739,7 +176739,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -176747,7 +176747,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -176758,14 +176758,14 @@
                 ],
                 "is_captain": false,
                 "is_vice_captain": false,
-                "base_points": 1,
+                "base_points": 3,
                 "goals": 0,
                 "assists": 0,
                 "minutes": 90,
                 "match_finished": true,
                 "clean_sheet": false,
-                "defensive_contribution": false,
-                "defensive_contribution_count": 11,
+                "defensive_contribution": true,
+                "defensive_contribution_count": 12,
                 "opponents": [
                   {
                     "opponent": "NEW",
@@ -176788,7 +176788,7 @@
                 "xgi": 0.46,
                 "subbed_out": false,
                 "multiplier": 1,
-                "points": 1
+                "points": 3
               },
               {
                 "name": "M.Sangar\u00e9",
@@ -178661,7 +178661,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -178787,7 +178787,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -179063,7 +179063,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -181769,7 +181769,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -183158,7 +183158,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -184509,7 +184509,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -184517,7 +184517,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -184842,7 +184842,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -184917,7 +184917,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -184925,7 +184925,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -196120,7 +196120,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -205669,7 +205669,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -207041,7 +207041,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -207049,7 +207049,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -207374,7 +207374,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -207449,7 +207449,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -207457,7 +207457,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -209358,7 +209358,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -209484,7 +209484,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -209760,7 +209760,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -214529,7 +214529,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -219325,7 +219325,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -219333,7 +219333,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -219658,7 +219658,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -219733,7 +219733,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -219741,7 +219741,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -223687,7 +223687,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -223813,7 +223813,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -224089,7 +224089,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -226129,7 +226129,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -230887,7 +230887,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -231587,7 +231587,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -231595,7 +231595,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -231920,7 +231920,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -231995,7 +231995,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -232003,7 +232003,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -235965,7 +235965,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -236091,7 +236091,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -236367,7 +236367,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -240474,7 +240474,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -245227,7 +245227,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -246595,7 +246595,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -250256,7 +250256,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -250382,7 +250382,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -250658,7 +250658,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -254076,7 +254076,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -254084,7 +254084,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -254409,7 +254409,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -254484,7 +254484,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -254492,7 +254492,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -260241,7 +260241,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -260249,7 +260249,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -260574,7 +260574,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -260649,7 +260649,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -260657,7 +260657,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -263648,7 +263648,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -264613,7 +264613,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -264739,7 +264739,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -265015,7 +265015,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -269105,7 +269105,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -277965,7 +277965,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -283424,7 +283424,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -287101,7 +287101,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -287227,7 +287227,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -287503,7 +287503,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -290904,7 +290904,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -290912,7 +290912,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -291237,7 +291237,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -291312,7 +291312,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -291320,7 +291320,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -293244,7 +293244,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -293370,7 +293370,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -293646,7 +293646,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -296352,7 +296352,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -297741,7 +297741,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -299092,7 +299092,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -299100,7 +299100,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -299425,7 +299425,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -299500,7 +299500,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -299508,7 +299508,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -310703,7 +310703,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -320252,7 +320252,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -321624,7 +321624,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -321632,7 +321632,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -321957,7 +321957,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -322032,7 +322032,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -322040,7 +322040,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -323941,7 +323941,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -324067,7 +324067,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -324343,7 +324343,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -329112,7 +329112,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -333908,7 +333908,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -333916,7 +333916,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -334241,7 +334241,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -334316,7 +334316,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -334324,7 +334324,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -338270,7 +338270,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -338396,7 +338396,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -338672,7 +338672,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -340712,7 +340712,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -345470,7 +345470,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -346170,7 +346170,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -346178,7 +346178,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -346503,7 +346503,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -346578,7 +346578,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -346586,7 +346586,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -350548,7 +350548,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -350674,7 +350674,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -350950,7 +350950,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -355057,7 +355057,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -359810,7 +359810,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -361178,7 +361178,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -364839,7 +364839,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -364965,7 +364965,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -365241,7 +365241,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -368659,7 +368659,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -368667,7 +368667,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -368992,7 +368992,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -369067,7 +369067,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -369075,7 +369075,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -374824,7 +374824,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -374832,7 +374832,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -375157,7 +375157,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -375232,7 +375232,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -375240,7 +375240,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -378231,7 +378231,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -379196,7 +379196,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -379322,7 +379322,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -379598,7 +379598,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -383688,7 +383688,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -392548,7 +392548,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -398007,7 +398007,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -401684,7 +401684,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -401810,7 +401810,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -402086,7 +402086,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -405487,7 +405487,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -405495,7 +405495,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -405820,7 +405820,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -405895,7 +405895,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -405903,7 +405903,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -407827,7 +407827,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -407953,7 +407953,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -408229,7 +408229,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -410935,7 +410935,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -412324,7 +412324,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -413675,7 +413675,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -413683,7 +413683,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -414008,7 +414008,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -414083,7 +414083,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -414091,7 +414091,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -425286,7 +425286,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -434835,7 +434835,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -436207,7 +436207,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -436215,7 +436215,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -436540,7 +436540,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -436615,7 +436615,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -436623,7 +436623,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -438524,7 +438524,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -438650,7 +438650,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -438926,7 +438926,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -443695,7 +443695,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -448491,7 +448491,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -448499,7 +448499,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -448824,7 +448824,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -448899,7 +448899,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -448907,7 +448907,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -452853,7 +452853,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -452979,7 +452979,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -453255,7 +453255,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -455295,7 +455295,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -460053,7 +460053,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -460753,7 +460753,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -460761,7 +460761,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -461086,7 +461086,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -461161,7 +461161,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -461169,7 +461169,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -465131,7 +465131,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -465257,7 +465257,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -465533,7 +465533,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -469640,7 +469640,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -474393,7 +474393,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -475761,7 +475761,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -479422,7 +479422,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -479548,7 +479548,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -479824,7 +479824,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -483242,7 +483242,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -483250,7 +483250,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -483575,7 +483575,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -483650,7 +483650,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -483658,7 +483658,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -489407,7 +489407,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -489415,7 +489415,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -489740,7 +489740,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -489815,7 +489815,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -489823,7 +489823,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -492814,7 +492814,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -493779,7 +493779,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -493905,7 +493905,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -494181,7 +494181,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -498271,7 +498271,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -507131,7 +507131,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -512590,7 +512590,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -516267,7 +516267,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -516393,7 +516393,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -516669,7 +516669,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -520070,7 +520070,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -520078,7 +520078,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -520403,7 +520403,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -520478,7 +520478,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -520486,7 +520486,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -522410,7 +522410,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -522536,7 +522536,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -522812,7 +522812,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -525518,7 +525518,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -526907,7 +526907,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -528258,7 +528258,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -528266,7 +528266,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -528591,7 +528591,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -528666,7 +528666,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -528674,7 +528674,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -539869,7 +539869,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -549418,7 +549418,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -550790,7 +550790,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -550798,7 +550798,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -551123,7 +551123,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -551198,7 +551198,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -551206,7 +551206,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -553107,7 +553107,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -553233,7 +553233,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -553509,7 +553509,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -558278,7 +558278,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -563074,7 +563074,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -563082,7 +563082,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -563407,7 +563407,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -563482,7 +563482,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -563490,7 +563490,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -567436,7 +567436,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -567562,7 +567562,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -567838,7 +567838,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -569878,7 +569878,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -574636,7 +574636,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -575336,7 +575336,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -575344,7 +575344,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -575669,7 +575669,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -575744,7 +575744,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -575752,7 +575752,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -579714,7 +579714,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -579840,7 +579840,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -580116,7 +580116,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -584223,7 +584223,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -588976,7 +588976,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -590344,7 +590344,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -594005,7 +594005,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -594131,7 +594131,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -594407,7 +594407,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -597825,7 +597825,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -597833,7 +597833,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -598158,7 +598158,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -598233,7 +598233,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -598241,7 +598241,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -603990,7 +603990,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 5,
                 "season_bonus": 7,
-                "season_defcon": 72,
+                "season_defcon": 73,
                 "badges": [],
                 "position_ranks": {
                   "goals": 6,
@@ -603998,7 +603998,7 @@
                   "bonus": 2,
                   "clean_sheets": 7,
                   "ga": 22,
-                  "defcon": 35
+                  "defcon": 34
                 },
                 "form": [
                   4,
@@ -604323,7 +604323,7 @@
                 "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
                 "shirt_color": "#EF0107",
                 "initials": "RI",
-                "season_points": 51,
+                "season_points": 53,
                 "next_fixtures": [
                   {
                     "event": 12,
@@ -604398,7 +604398,7 @@
                 "season_assists": 5,
                 "season_clean_sheets": 7,
                 "season_bonus": 7,
-                "season_defcon": 90,
+                "season_defcon": 91,
                 "badges": [],
                 "position_ranks": {
                   "goals": 89,
@@ -604406,7 +604406,7 @@
                   "bonus": 6,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 15
+                  "defcon": 14
                 },
                 "form": [
                   7,
@@ -607397,7 +607397,7 @@
                   "bonus": 44,
                   "clean_sheets": 46,
                   "ga": 61,
-                  "defcon": 35
+                  "defcon": 36
                 },
                 "form": [
                   3,
@@ -608362,7 +608362,7 @@
                   "bonus": 3,
                   "clean_sheets": 53,
                   "ga": 2,
-                  "defcon": 110
+                  "defcon": 111
                 },
                 "form": [
                   10,
@@ -608488,7 +608488,7 @@
                 "season_assists": 1,
                 "season_clean_sheets": 7,
                 "season_bonus": 9,
-                "season_defcon": 47,
+                "season_defcon": 48,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -608764,7 +608764,7 @@
                   "bonus": 13,
                   "clean_sheets": 11,
                   "ga": 20,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   0,
@@ -612854,7 +612854,7 @@
                   "bonus": 89,
                   "clean_sheets": 53,
                   "ga": 128,
-                  "defcon": 72
+                  "defcon": 73
                 },
                 "form": [
                   2,
@@ -620532,7 +620532,7 @@
       "player_name": "Rice",
       "position": "MID",
       "club": "ARS",
-      "season_points": 51
+      "season_points": 53
     },
     {
       "round": 2,
@@ -627306,8 +627306,8 @@
         ],
         "form": 4.2,
         "season_xg": 2.4,
-        "season_xa": 2.89,
-        "season_xgi": 5.29,
+        "season_xa": 2.91,
+        "season_xgi": 5.31,
         "season_minutes": 913,
         "api_rank": null,
         "is_captain": false,
@@ -627322,7 +627322,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "NEW",
@@ -627341,8 +627341,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.41,
-        "xgi": 0.41,
+        "xa": 0.43,
+        "xgi": 0.43,
         "owner_team_name": "PFC"
       },
       {
@@ -633397,9 +633397,9 @@
             }
           ],
           "form": 3.2,
-          "season_xg": 2.49,
+          "season_xg": 2.48,
           "season_xa": 1.07,
-          "season_xgi": 3.56,
+          "season_xgi": 3.55,
           "season_minutes": 976,
           "api_rank": null,
           "is_captain": false,
@@ -633755,8 +633755,8 @@
           ],
           "form": 4.2,
           "season_xg": 2.4,
-          "season_xa": 2.89,
-          "season_xgi": 5.29,
+          "season_xa": 2.91,
+          "season_xgi": 5.31,
           "season_minutes": 913,
           "api_rank": null,
           "is_captain": false,
@@ -645145,7 +645145,7 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
           "shirt_color": "#EF0107",
           "initials": "RI",
-          "season_points": 51,
+          "season_points": 53,
           "next_fixtures": [
             {
               "event": 12,
@@ -647127,8 +647127,8 @@
           ],
           "form": 4.2,
           "season_xg": 2.4,
-          "season_xa": 2.89,
-          "season_xgi": 5.29,
+          "season_xa": 2.91,
+          "season_xgi": 5.31,
           "season_minutes": 913,
           "api_rank": null,
           "is_captain": false,
@@ -664499,7 +664499,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "NEW",
@@ -665325,8 +665325,8 @@
         ],
         "form": 4.2,
         "season_xg": 2.4,
-        "season_xa": 2.89,
-        "season_xgi": 5.29,
+        "season_xa": 2.91,
+        "season_xgi": 5.31,
         "season_minutes": 913,
         "api_rank": null,
         "is_captain": false,
@@ -665341,7 +665341,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "NEW",
@@ -665360,8 +665360,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.41,
-        "xgi": 0.41,
+        "xa": 0.43,
+        "xgi": 0.43,
         "rank": 4,
         "owner_team_name": "PFC"
       },
@@ -665493,7 +665493,7 @@
         "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
         "shirt_color": "#EF0107",
         "initials": "RI",
-        "season_points": 51,
+        "season_points": 53,
         "next_fixtures": [
           {
             "event": 12,
@@ -665573,15 +665573,15 @@
         "is_vice_captain": false,
         "subbed_in": false,
         "subbed_out": false,
-        "base_points": 1,
-        "points": 1,
+        "base_points": 3,
+        "points": 3,
         "goals": 0,
         "assists": 0,
         "minutes": 90,
         "match_finished": true,
         "clean_sheet": false,
-        "defensive_contribution": false,
-        "defensive_contribution_count": 11,
+        "defensive_contribution": true,
+        "defensive_contribution_count": 12,
         "opponents": [
           {
             "opponent": "NEW",
@@ -665804,9 +665804,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 2.49,
+        "season_xg": 2.48,
         "season_xa": 1.07,
-        "season_xgi": 3.56,
+        "season_xgi": 3.55,
         "season_minutes": 976,
         "api_rank": null,
         "is_captain": false,
@@ -665839,9 +665839,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.28,
         "xa": 0.11,
-        "xgi": 0.4,
+        "xgi": 0.39,
         "rank": 8,
         "owner_team_name": "PFC"
       },
@@ -668827,7 +668827,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "NEW",
@@ -669771,8 +669771,8 @@
         ],
         "form": 4.2,
         "season_xg": 2.4,
-        "season_xa": 2.89,
-        "season_xgi": 5.29,
+        "season_xa": 2.91,
+        "season_xgi": 5.31,
         "season_minutes": 913,
         "api_rank": null,
         "is_captain": false,
@@ -669787,7 +669787,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "NEW",
@@ -669806,8 +669806,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.41,
-        "xgi": 0.41,
+        "xa": 0.43,
+        "xgi": 0.43,
         "rank": 21,
         "owner_team_name": "PFC"
       },
@@ -670179,7 +670179,7 @@
         "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
         "shirt_color": "#EF0107",
         "initials": "RI",
-        "season_points": 51,
+        "season_points": 53,
         "next_fixtures": [
           {
             "event": 12,
@@ -670259,15 +670259,15 @@
         "is_vice_captain": false,
         "subbed_in": false,
         "subbed_out": false,
-        "base_points": 1,
-        "points": 1,
+        "base_points": 3,
+        "points": 3,
         "goals": 0,
         "assists": 0,
         "minutes": 90,
         "match_finished": true,
         "clean_sheet": false,
-        "defensive_contribution": false,
-        "defensive_contribution_count": 11,
+        "defensive_contribution": true,
+        "defensive_contribution_count": 12,
         "opponents": [
           {
             "opponent": "NEW",
@@ -670490,9 +670490,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 2.49,
+        "season_xg": 2.48,
         "season_xa": 1.07,
-        "season_xgi": 3.56,
+        "season_xgi": 3.55,
         "season_minutes": 976,
         "api_rank": null,
         "is_captain": false,
@@ -670525,9 +670525,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.28,
         "xa": 0.11,
-        "xgi": 0.4,
+        "xgi": 0.39,
         "rank": 27,
         "owner_team_name": "PFC"
       },
@@ -679010,9 +679010,9 @@
           }
         ],
         "form": 1.6,
-        "season_xg": 2.15,
+        "season_xg": 2.18,
         "season_xa": 0.41,
-        "season_xgi": 2.56,
+        "season_xgi": 2.59,
         "season_minutes": 647,
         "api_rank": null,
         "is_captain": false,
@@ -679045,9 +679045,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.84,
+        "xg": 0.87,
         "xa": 0.02,
-        "xgi": 0.86,
+        "xgi": 0.89,
         "rank": 98,
         "owner_team_name": null
       },
@@ -682010,9 +682010,9 @@
           }
         ],
         "form": 4.0,
-        "season_xg": 1.28,
+        "season_xg": 1.29,
         "season_xa": 1.61,
-        "season_xgi": 2.89,
+        "season_xgi": 2.9,
         "season_minutes": 518,
         "api_rank": null,
         "is_captain": false,
@@ -682027,7 +682027,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 7,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "NEW",
@@ -682045,9 +682045,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.38,
+        "xg": 0.39,
         "xa": 0.07,
-        "xgi": 0.45,
+        "xgi": 0.46,
         "rank": 123,
         "owner_team_name": null
       },
@@ -688610,9 +688610,9 @@
           }
         ],
         "form": 0.8,
-        "season_xg": 0.33,
+        "season_xg": 0.29,
         "season_xa": 0.16,
-        "season_xgi": 0.49,
+        "season_xgi": 0.44,
         "season_minutes": 805,
         "api_rank": null,
         "is_captain": false,
@@ -688645,9 +688645,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.33,
+        "xg": 0.29,
         "xa": 0.0,
-        "xgi": 0.33,
+        "xgi": 0.28,
         "rank": 178,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -701930,9 +701930,9 @@
           }
         ],
         "form": 1.8,
-        "season_xg": 0.14,
+        "season_xg": 0.13,
         "season_xa": 0.49,
-        "season_xgi": 0.63,
+        "season_xgi": 0.62,
         "season_minutes": 181,
         "api_rank": null,
         "is_captain": false,
@@ -701965,9 +701965,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.02,
         "xa": 0.0,
-        "xgi": 0.03,
+        "xgi": 0.02,
         "rank": 289,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -758111,7 +758111,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "NEW",
@@ -765294,9 +765294,9 @@
           }
         ],
         "form": 0.8,
-        "season_xg": 0.33,
+        "season_xg": 0.29,
         "season_xa": 0.16,
-        "season_xgi": 0.49,
+        "season_xgi": 0.44,
         "season_minutes": 805,
         "api_rank": null,
         "is_captain": false,
@@ -765329,9 +765329,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.33,
+        "xg": 0.29,
         "xa": 0.0,
-        "xgi": 0.33,
+        "xgi": 0.28,
         "rank": 67,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -784017,8 +784017,8 @@
         ],
         "form": 4.2,
         "season_xg": 2.4,
-        "season_xa": 2.89,
-        "season_xgi": 5.29,
+        "season_xa": 2.91,
+        "season_xgi": 5.31,
         "season_minutes": 913,
         "api_rank": null,
         "is_captain": false,
@@ -784033,7 +784033,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "NEW",
@@ -784052,8 +784052,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.41,
-        "xgi": 0.41,
+        "xa": 0.43,
+        "xgi": 0.43,
         "rank": 4,
         "owner_team_name": "PFC"
       },
@@ -784185,7 +784185,7 @@
         "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
         "shirt_color": "#EF0107",
         "initials": "RI",
-        "season_points": 51,
+        "season_points": 53,
         "next_fixtures": [
           {
             "event": 12,
@@ -784265,15 +784265,15 @@
         "is_vice_captain": false,
         "subbed_in": false,
         "subbed_out": false,
-        "base_points": 1,
-        "points": 1,
+        "base_points": 3,
+        "points": 3,
         "goals": 0,
         "assists": 0,
         "minutes": 90,
         "match_finished": true,
         "clean_sheet": false,
-        "defensive_contribution": false,
-        "defensive_contribution_count": 11,
+        "defensive_contribution": true,
+        "defensive_contribution_count": 12,
         "opponents": [
           {
             "opponent": "NEW",
@@ -784496,9 +784496,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 2.49,
+        "season_xg": 2.48,
         "season_xa": 1.07,
-        "season_xgi": 3.56,
+        "season_xgi": 3.55,
         "season_minutes": 976,
         "api_rank": null,
         "is_captain": false,
@@ -784531,9 +784531,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.29,
+        "xg": 0.28,
         "xa": 0.11,
-        "xgi": 0.4,
+        "xgi": 0.39,
         "rank": 8,
         "owner_team_name": "PFC"
       },
@@ -788456,9 +788456,9 @@
           }
         ],
         "form": 1.6,
-        "season_xg": 2.15,
+        "season_xg": 2.18,
         "season_xa": 0.41,
-        "season_xgi": 2.56,
+        "season_xgi": 2.59,
         "season_minutes": 647,
         "api_rank": null,
         "is_captain": false,
@@ -788491,9 +788491,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.84,
+        "xg": 0.87,
         "xa": 0.02,
-        "xgi": 0.86,
+        "xgi": 0.89,
         "rank": 41,
         "owner_team_name": null
       },
@@ -789656,9 +789656,9 @@
           }
         ],
         "form": 4.0,
-        "season_xg": 1.28,
+        "season_xg": 1.29,
         "season_xa": 1.61,
-        "season_xgi": 2.89,
+        "season_xgi": 2.9,
         "season_minutes": 518,
         "api_rank": null,
         "is_captain": false,
@@ -789673,7 +789673,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 7,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "NEW",
@@ -789691,9 +789691,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.38,
+        "xg": 0.39,
         "xa": 0.07,
-        "xgi": 0.45,
+        "xgi": 0.46,
         "rank": 51,
         "owner_team_name": null
       },
@@ -823378,9 +823378,9 @@
           }
         ],
         "form": 1.8,
-        "season_xg": 0.14,
+        "season_xg": 0.13,
         "season_xa": 0.49,
-        "season_xgi": 0.63,
+        "season_xgi": 0.62,
         "season_minutes": 181,
         "api_rank": null,
         "is_captain": false,
@@ -823413,9 +823413,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.02,
         "xa": 0.0,
-        "xgi": 0.03,
+        "xgi": 0.02,
         "rank": 32,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -830901,7 +830901,7 @@
             "bonus": 44,
             "clean_sheets": 46,
             "ga": 61,
-            "defcon": 35
+            "defcon": 36
           },
           "form": [
             3,
@@ -835526,9 +835526,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.33,
+          "xg": 0.29,
           "xa": 0.0,
-          "xgi": 0.33,
+          "xgi": 0.28,
           "subbed_out": false,
           "multiplier": 1,
           "points": 7
@@ -836299,7 +836299,7 @@
             "bonus": 89,
             "clean_sheets": 53,
             "ga": 128,
-            "defcon": 72
+            "defcon": 73
           },
           "form": [
             2,
@@ -836601,9 +836601,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.03,
+          "xg": 0.02,
           "xa": 0.0,
-          "xgi": 0.03,
+          "xgi": 0.02,
           "subbed_in": true,
           "multiplier": 1,
           "points": 0
@@ -839928,7 +839928,7 @@
             "bonus": 3,
             "clean_sheets": 53,
             "ga": 2,
-            "defcon": 110
+            "defcon": 111
           },
           "form": [
             10,
@@ -840053,7 +840053,7 @@
           "season_assists": 1,
           "season_clean_sheets": 7,
           "season_bonus": 9,
-          "season_defcon": 47,
+          "season_defcon": 48,
           "badges": [],
           "position_ranks": {
             "goals": 8,
@@ -840079,7 +840079,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 3,
+          "defensive_contribution_count": 4,
           "opponents": [
             {
               "opponent": "NEW",
@@ -840098,8 +840098,8 @@
           "goals_conceded": 2,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.41,
-          "xgi": 0.41,
+          "xa": 0.43,
+          "xgi": 0.43,
           "subbed_out": false,
           "multiplier": 1,
           "points": 5
@@ -840230,9 +840230,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.29,
+          "xg": 0.28,
           "xa": 0.11,
-          "xgi": 0.4,
+          "xgi": 0.39,
           "subbed_out": false,
           "multiplier": 1,
           "points": 7
@@ -840327,7 +840327,7 @@
             "bonus": 13,
             "clean_sheets": 11,
             "ga": 20,
-            "defcon": 72
+            "defcon": 73
           },
           "form": [
             0,
@@ -843682,7 +843682,7 @@
           "season_assists": 0,
           "season_clean_sheets": 5,
           "season_bonus": 7,
-          "season_defcon": 72,
+          "season_defcon": 73,
           "badges": [],
           "position_ranks": {
             "goals": 6,
@@ -843690,7 +843690,7 @@
             "bonus": 2,
             "clean_sheets": 7,
             "ga": 22,
-            "defcon": 35
+            "defcon": 34
           },
           "form": [
             4,
@@ -843708,7 +843708,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 6,
+          "defensive_contribution_count": 7,
           "opponents": [
             {
               "opponent": "NEW",
@@ -844012,7 +844012,7 @@
           "photo_url": "https://resources.premierleague.com/premierleague25/photos/players/110x140/204480.png",
           "shirt_color": "#EF0107",
           "initials": "RI",
-          "season_points": 51,
+          "season_points": 53,
           "next_fixtures": [
             {
               "event": 12,
@@ -844087,7 +844087,7 @@
           "season_assists": 5,
           "season_clean_sheets": 7,
           "season_bonus": 7,
-          "season_defcon": 90,
+          "season_defcon": 91,
           "badges": [],
           "position_ranks": {
             "goals": 89,
@@ -844095,7 +844095,7 @@
             "bonus": 6,
             "clean_sheets": 1,
             "ga": 11,
-            "defcon": 15
+            "defcon": 14
           },
           "form": [
             7,
@@ -844106,14 +844106,14 @@
           ],
           "is_captain": false,
           "is_vice_captain": false,
-          "base_points": 1,
+          "base_points": 3,
           "goals": 0,
           "assists": 0,
           "minutes": 90,
           "match_finished": true,
           "clean_sheet": false,
-          "defensive_contribution": false,
-          "defensive_contribution_count": 11,
+          "defensive_contribution": true,
+          "defensive_contribution_count": 12,
           "opponents": [
             {
               "opponent": "NEW",
@@ -844136,7 +844136,7 @@
           "xgi": 0.46,
           "subbed_out": false,
           "multiplier": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "M.Sangar\u00e9",
