@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T20:56:56.474602+00:00",
+  "generated_at": "2026-11-22T00:49:14.592157+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -162131,7 +162131,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -162139,7 +162139,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -162157,7 +162157,7 @@
                 "match_finished": true,
                 "clean_sheet": true,
                 "defensive_contribution": true,
-                "defensive_contribution_count": 17,
+                "defensive_contribution_count": 16,
                 "opponents": [
                   {
                     "opponent": "NFO",
@@ -162441,9 +162441,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.06,
+                "xg": 0.14,
                 "xa": 0.03,
-                "xgi": 0.09,
+                "xgi": 0.17,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -162574,9 +162574,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.15,
-                "xa": 0.27,
-                "xgi": 0.42,
+                "xg": 0.23,
+                "xa": 0.25,
+                "xgi": 0.48,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -162989,9 +162989,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.15,
+                "xg": 0.1,
                 "xa": 0.23,
-                "xgi": 0.38,
+                "xgi": 0.33,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -166763,9 +166763,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.71,
-                "xa": 0.05,
-                "xgi": 0.76,
+                "xg": 0.63,
+                "xa": 0.22,
+                "xgi": 0.85,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -167858,8 +167858,8 @@
                 "goals_conceded": 2,
                 "saves": 5,
                 "xg": 0.0,
-                "xa": 0.02,
-                "xgi": 0.02,
+                "xa": 0.04,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 2
@@ -168811,8 +168811,8 @@
                 "goals_conceded": 0,
                 "saves": 0,
                 "xg": 0.06,
-                "xa": 0.92,
-                "xgi": 0.98,
+                "xa": 0.91,
+                "xgi": 0.97,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 8
@@ -169743,9 +169743,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.73,
-                "xa": 0.03,
-                "xgi": 0.76,
+                "xg": 0.62,
+                "xa": 0.02,
+                "xgi": 0.64,
                 "subbed_in": false,
                 "multiplier": 1,
                 "points": 1
@@ -170315,8 +170315,8 @@
                 "goals_conceded": 2,
                 "saves": 0,
                 "xg": 0.0,
-                "xa": 0.06,
-                "xgi": 0.06,
+                "xa": 0.05,
+                "xgi": 0.05,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -171076,7 +171076,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -171256,9 +171256,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 1.01,
-                "xa": 0.03,
-                "xgi": 1.04,
+                "xg": 1.12,
+                "xa": 0.02,
+                "xgi": 1.14,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 6
@@ -171488,7 +171488,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -173082,7 +173082,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -173108,7 +173108,7 @@
                 "match_finished": true,
                 "clean_sheet": false,
                 "defensive_contribution": false,
-                "defensive_contribution_count": 0,
+                "defensive_contribution_count": 1,
                 "opponents": [
                   {
                     "opponent": "BOU",
@@ -173126,9 +173126,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.13,
+                "xg": 0.05,
                 "xa": 0.24,
-                "xgi": 0.37,
+                "xgi": 0.29,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 1
@@ -174763,9 +174763,9 @@
                 "own_goals": 0,
                 "goals_conceded": 0,
                 "saves": 0,
-                "xg": 0.11,
+                "xg": 0.09,
                 "xa": 0.08,
-                "xgi": 0.19,
+                "xgi": 0.17,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 3
@@ -176245,9 +176245,9 @@
                 "own_goals": 0,
                 "goals_conceded": 2,
                 "saves": 0,
-                "xg": 0.02,
+                "xg": 0.03,
                 "xa": 0.01,
-                "xgi": 0.03,
+                "xgi": 0.04,
                 "subbed_out": false,
                 "multiplier": 1,
                 "points": 0
@@ -179189,7 +179189,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -180403,7 +180403,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -180411,7 +180411,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -193514,7 +193514,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -193929,7 +193929,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -194754,7 +194754,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -194762,7 +194762,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -199678,7 +199678,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -200093,7 +200093,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -209886,7 +209886,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -211946,7 +211946,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -212361,7 +212361,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -213163,7 +213163,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -213171,7 +213171,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -224215,7 +224215,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -229521,7 +229521,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -229529,7 +229529,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -234451,7 +234451,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -234866,7 +234866,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -236493,7 +236493,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -243861,7 +243861,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -243869,7 +243869,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -250784,7 +250784,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -256961,7 +256961,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -257376,7 +257376,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -262282,7 +262282,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -262290,7 +262290,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -265141,7 +265141,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -271268,7 +271268,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -271683,7 +271683,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -276599,7 +276599,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -276607,7 +276607,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -285608,7 +285608,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -286023,7 +286023,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -287629,7 +287629,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -293772,7 +293772,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -294986,7 +294986,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -294994,7 +294994,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -308097,7 +308097,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -308512,7 +308512,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -309337,7 +309337,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -309345,7 +309345,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -314261,7 +314261,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -314676,7 +314676,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -324469,7 +324469,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -326529,7 +326529,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -326944,7 +326944,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -327746,7 +327746,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -327754,7 +327754,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -338798,7 +338798,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -344104,7 +344104,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -344112,7 +344112,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -349034,7 +349034,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -349449,7 +349449,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -351076,7 +351076,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -358444,7 +358444,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -358452,7 +358452,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -365367,7 +365367,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -371544,7 +371544,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -371959,7 +371959,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -376865,7 +376865,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -376873,7 +376873,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -379724,7 +379724,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -385851,7 +385851,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -386266,7 +386266,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -391182,7 +391182,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -391190,7 +391190,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -400191,7 +400191,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -400606,7 +400606,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -402212,7 +402212,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -408355,7 +408355,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -409569,7 +409569,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -409577,7 +409577,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -422680,7 +422680,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -423095,7 +423095,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -423920,7 +423920,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -423928,7 +423928,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -428844,7 +428844,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -429259,7 +429259,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -439052,7 +439052,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -441112,7 +441112,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -441527,7 +441527,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -442329,7 +442329,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -442337,7 +442337,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -453381,7 +453381,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -458687,7 +458687,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -458695,7 +458695,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -463617,7 +463617,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -464032,7 +464032,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -465659,7 +465659,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -473027,7 +473027,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -473035,7 +473035,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -479950,7 +479950,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -486127,7 +486127,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -486542,7 +486542,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -491448,7 +491448,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -491456,7 +491456,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -494307,7 +494307,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -500434,7 +500434,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -500849,7 +500849,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -505765,7 +505765,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -505773,7 +505773,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -514774,7 +514774,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -515189,7 +515189,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -516795,7 +516795,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -522938,7 +522938,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -524152,7 +524152,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -524160,7 +524160,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -537263,7 +537263,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -537678,7 +537678,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -538503,7 +538503,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -538511,7 +538511,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -543427,7 +543427,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -543842,7 +543842,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -553635,7 +553635,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -555695,7 +555695,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -556110,7 +556110,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -556912,7 +556912,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -556920,7 +556920,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -567964,7 +567964,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -573270,7 +573270,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -573278,7 +573278,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -578200,7 +578200,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -578615,7 +578615,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -580242,7 +580242,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -587610,7 +587610,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -587618,7 +587618,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -594533,7 +594533,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -600710,7 +600710,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -601125,7 +601125,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -606031,7 +606031,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 4,
                 "season_bonus": 3,
-                "season_defcon": 123,
+                "season_defcon": 122,
                 "badges": [],
                 "position_ranks": {
                   "goals": 34,
@@ -606039,7 +606039,7 @@
                   "bonus": 18,
                   "clean_sheets": 12,
                   "ga": 61,
-                  "defcon": 2
+                  "defcon": 3
                 },
                 "form": [
                   0,
@@ -608890,7 +608890,7 @@
                 "season_assists": 0,
                 "season_clean_sheets": 1,
                 "season_bonus": 3,
-                "season_defcon": 30,
+                "season_defcon": 31,
                 "badges": [],
                 "position_ranks": {
                   "goals": 8,
@@ -615017,7 +615017,7 @@
                   "bonus": 10,
                   "clean_sheets": 1,
                   "ga": 11,
-                  "defcon": 12
+                  "defcon": 13
                 },
                 "form": [
                   2,
@@ -615432,7 +615432,7 @@
                   "bonus": 30,
                   "clean_sheets": 33,
                   "ga": 76,
-                  "defcon": 30
+                  "defcon": 29
                 },
                 "form": [
                   2,
@@ -626590,8 +626590,8 @@
         ],
         "form": 5.4,
         "season_xg": 4.27,
-        "season_xa": 2.37,
-        "season_xgi": 6.64,
+        "season_xa": 2.36,
+        "season_xgi": 6.63,
         "season_minutes": 930,
         "api_rank": null,
         "is_captain": false,
@@ -626625,8 +626625,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.92,
-        "xgi": 0.98,
+        "xa": 0.91,
+        "xgi": 0.97,
         "owner_team_name": "H\u00f6chengladbach"
       },
       {
@@ -626827,9 +626827,9 @@
           }
         ],
         "form": 8.6,
-        "season_xg": 5.46,
-        "season_xa": 1.08,
-        "season_xgi": 6.54,
+        "season_xg": 5.57,
+        "season_xa": 1.07,
+        "season_xgi": 6.64,
         "season_minutes": 927,
         "api_rank": null,
         "is_captain": false,
@@ -626862,9 +626862,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 1.01,
-        "xa": 0.03,
-        "xgi": 1.04,
+        "xg": 1.12,
+        "xa": 0.02,
+        "xgi": 1.14,
         "owner_team_name": ":)"
       },
       {
@@ -627921,7 +627921,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
-        "defensive_contribution_count": 17,
+        "defensive_contribution_count": 16,
         "opponents": [
           {
             "opponent": "NFO",
@@ -632082,9 +632082,9 @@
             }
           ],
           "form": 2.2,
-          "season_xg": 2.69,
-          "season_xa": 2.63,
-          "season_xgi": 5.32,
+          "season_xg": 2.77,
+          "season_xa": 2.61,
+          "season_xgi": 5.38,
           "season_minutes": 900,
           "api_rank": null,
           "is_captain": false,
@@ -633874,8 +633874,8 @@
           ],
           "form": 5.4,
           "season_xg": 4.27,
-          "season_xa": 2.37,
-          "season_xgi": 6.64,
+          "season_xa": 2.36,
+          "season_xgi": 6.63,
           "season_minutes": 930,
           "api_rank": null,
           "is_captain": false,
@@ -637336,9 +637336,9 @@
             }
           ],
           "form": 5.2,
-          "season_xg": 1.73,
+          "season_xg": 1.81,
           "season_xa": 0.9,
-          "season_xgi": 2.63,
+          "season_xgi": 2.71,
           "season_minutes": 520,
           "api_rank": null,
           "is_captain": false,
@@ -637456,8 +637456,8 @@
           ],
           "form": 1.6,
           "season_xg": 1.79,
-          "season_xa": 0.61,
-          "season_xgi": 2.4,
+          "season_xa": 0.65,
+          "season_xgi": 2.44,
           "season_minutes": 642,
           "api_rank": null,
           "is_captain": false,
@@ -639127,9 +639127,9 @@
             }
           ],
           "form": 5.4,
-          "season_xg": 3.29,
-          "season_xa": 0.94,
-          "season_xgi": 4.23,
+          "season_xg": 3.32,
+          "season_xa": 0.99,
+          "season_xgi": 4.31,
           "season_minutes": 820,
           "api_rank": null,
           "is_captain": false,
@@ -639962,9 +639962,9 @@
             }
           ],
           "form": 8.8,
-          "season_xg": 3.61,
+          "season_xg": 3.56,
           "season_xa": 1.13,
-          "season_xgi": 4.74,
+          "season_xgi": 4.69,
           "season_minutes": 794,
           "api_rank": null,
           "is_captain": false,
@@ -640799,9 +640799,9 @@
             }
           ],
           "form": 5.2,
-          "season_xg": 1.73,
+          "season_xg": 1.81,
           "season_xa": 0.9,
-          "season_xgi": 2.63,
+          "season_xgi": 2.71,
           "season_minutes": 520,
           "api_rank": null,
           "is_captain": false,
@@ -641156,9 +641156,9 @@
             }
           ],
           "form": 8.6,
-          "season_xg": 5.46,
-          "season_xa": 1.08,
-          "season_xgi": 6.54,
+          "season_xg": 5.57,
+          "season_xa": 1.07,
+          "season_xgi": 6.64,
           "season_minutes": 927,
           "api_rank": null,
           "is_captain": false,
@@ -641754,8 +641754,8 @@
           ],
           "form": 5.4,
           "season_xg": 4.27,
-          "season_xa": 2.37,
-          "season_xgi": 6.64,
+          "season_xa": 2.36,
+          "season_xgi": 6.63,
           "season_minutes": 930,
           "api_rank": null,
           "is_captain": false,
@@ -642709,9 +642709,9 @@
             }
           ],
           "form": 4.0,
-          "season_xg": 3.22,
-          "season_xa": 0.74,
-          "season_xgi": 3.96,
+          "season_xg": 3.14,
+          "season_xa": 0.91,
+          "season_xgi": 4.05,
           "season_minutes": 963,
           "api_rank": null,
           "is_captain": false,
@@ -642829,8 +642829,8 @@
           ],
           "form": 5.4,
           "season_xg": 4.27,
-          "season_xa": 2.37,
-          "season_xgi": 6.64,
+          "season_xa": 2.36,
+          "season_xgi": 6.63,
           "season_minutes": 930,
           "api_rank": null,
           "is_captain": false,
@@ -643066,9 +643066,9 @@
             }
           ],
           "form": 8.8,
-          "season_xg": 3.61,
+          "season_xg": 3.56,
           "season_xa": 1.13,
-          "season_xgi": 4.74,
+          "season_xgi": 4.69,
           "season_minutes": 794,
           "api_rank": null,
           "is_captain": false,
@@ -644857,9 +644857,9 @@
             }
           ],
           "form": 8.6,
-          "season_xg": 5.46,
-          "season_xa": 1.08,
-          "season_xgi": 6.54,
+          "season_xg": 5.57,
+          "season_xa": 1.07,
+          "season_xgi": 6.64,
           "season_minutes": 927,
           "api_rank": null,
           "is_captain": false,
@@ -646291,9 +646291,9 @@
             }
           ],
           "form": 5.6,
-          "season_xg": 3.94,
+          "season_xg": 3.92,
           "season_xa": 1.94,
-          "season_xgi": 5.88,
+          "season_xgi": 5.86,
           "season_minutes": 953,
           "api_rank": null,
           "is_captain": false,
@@ -646529,9 +646529,9 @@
             }
           ],
           "form": 4.2,
-          "season_xg": 3.08,
+          "season_xg": 3.0,
           "season_xa": 0.75,
-          "season_xgi": 3.83,
+          "season_xgi": 3.75,
           "season_minutes": 768,
           "api_rank": null,
           "is_captain": false,
@@ -646648,9 +646648,9 @@
             }
           ],
           "form": 8.8,
-          "season_xg": 3.61,
+          "season_xg": 3.56,
           "season_xa": 1.13,
-          "season_xgi": 4.74,
+          "season_xgi": 4.69,
           "season_minutes": 794,
           "api_rank": null,
           "is_captain": false,
@@ -647623,7 +647623,7 @@
           "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
-          "defensive_contribution_count": 17,
+          "defensive_contribution_count": 16,
           "opponents": [
             {
               "opponent": "NFO",
@@ -661958,9 +661958,9 @@
           }
         ],
         "form": 8.6,
-        "season_xg": 5.46,
-        "season_xa": 1.08,
-        "season_xgi": 6.54,
+        "season_xg": 5.57,
+        "season_xa": 1.07,
+        "season_xgi": 6.64,
         "season_minutes": 927,
         "api_rank": null,
         "is_captain": false,
@@ -661993,9 +661993,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 1.01,
-        "xa": 0.03,
-        "xgi": 1.04,
+        "xg": 1.12,
+        "xa": 0.02,
+        "xgi": 1.14,
         "rank": 6,
         "owner_team_name": ":)"
       },
@@ -662079,8 +662079,8 @@
         ],
         "form": 5.4,
         "season_xg": 4.27,
-        "season_xa": 2.37,
-        "season_xgi": 6.64,
+        "season_xa": 2.36,
+        "season_xgi": 6.63,
         "season_minutes": 930,
         "api_rank": null,
         "is_captain": false,
@@ -662114,8 +662114,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.92,
-        "xgi": 0.98,
+        "xa": 0.91,
+        "xgi": 0.97,
         "rank": 7,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -665085,8 +665085,8 @@
         ],
         "form": 5.4,
         "season_xg": 4.27,
-        "season_xa": 2.37,
-        "season_xgi": 6.64,
+        "season_xa": 2.36,
+        "season_xgi": 6.63,
         "season_minutes": 930,
         "api_rank": null,
         "is_captain": false,
@@ -665120,8 +665120,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.92,
-        "xgi": 0.98,
+        "xa": 0.91,
+        "xgi": 0.97,
         "rank": 2,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -666286,9 +666286,9 @@
           }
         ],
         "form": 8.6,
-        "season_xg": 5.46,
-        "season_xa": 1.08,
-        "season_xgi": 6.54,
+        "season_xg": 5.57,
+        "season_xa": 1.07,
+        "season_xgi": 6.64,
         "season_minutes": 927,
         "api_rank": null,
         "is_captain": false,
@@ -666321,9 +666321,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 1.01,
-        "xa": 0.03,
-        "xgi": 1.04,
+        "xg": 1.12,
+        "xa": 0.02,
+        "xgi": 1.14,
         "rank": 2,
         "owner_team_name": ":)"
       },
@@ -666526,9 +666526,9 @@
           }
         ],
         "form": 8.8,
-        "season_xg": 3.61,
+        "season_xg": 3.56,
         "season_xa": 1.13,
-        "season_xgi": 4.74,
+        "season_xgi": 4.69,
         "season_minutes": 794,
         "api_rank": null,
         "is_captain": false,
@@ -666561,9 +666561,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.15,
+        "xg": 0.1,
         "xa": 0.23,
-        "xgi": 0.38,
+        "xgi": 0.33,
         "rank": 4,
         "owner_team_name": "FC Strup"
       },
@@ -667970,9 +667970,9 @@
           }
         ],
         "form": 8.6,
-        "season_xg": 5.46,
-        "season_xa": 1.08,
-        "season_xgi": 6.54,
+        "season_xg": 5.57,
+        "season_xa": 1.07,
+        "season_xgi": 6.64,
         "season_minutes": 927,
         "api_rank": null,
         "is_captain": false,
@@ -668005,9 +668005,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 1.01,
-        "xa": 0.03,
-        "xgi": 1.04,
+        "xg": 1.12,
+        "xa": 0.02,
+        "xgi": 1.14,
         "rank": 6,
         "owner_team_name": ":)"
       },
@@ -668091,8 +668091,8 @@
         ],
         "form": 5.4,
         "season_xg": 4.27,
-        "season_xa": 2.37,
-        "season_xgi": 6.64,
+        "season_xa": 2.36,
+        "season_xgi": 6.63,
         "season_minutes": 930,
         "api_rank": null,
         "is_captain": false,
@@ -668126,8 +668126,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.92,
-        "xgi": 0.98,
+        "xa": 0.91,
+        "xgi": 0.97,
         "rank": 7,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -669410,9 +669410,9 @@
           }
         ],
         "form": 8.8,
-        "season_xg": 3.61,
+        "season_xg": 3.56,
         "season_xa": 1.13,
-        "season_xgi": 4.74,
+        "season_xgi": 4.69,
         "season_minutes": 794,
         "api_rank": null,
         "is_captain": false,
@@ -669445,9 +669445,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.15,
+        "xg": 0.1,
         "xa": 0.23,
-        "xgi": 0.38,
+        "xgi": 0.33,
         "rank": 18,
         "owner_team_name": "FC Strup"
       },
@@ -670970,9 +670970,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 3.94,
+        "season_xg": 3.92,
         "season_xa": 1.94,
-        "season_xgi": 5.88,
+        "season_xgi": 5.86,
         "season_minutes": 953,
         "api_rank": null,
         "is_captain": false,
@@ -671005,9 +671005,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.11,
+        "xg": 0.09,
         "xa": 0.08,
-        "xgi": 0.19,
+        "xgi": 0.17,
         "rank": 31,
         "owner_team_name": "I am chucky kirkez"
       },
@@ -671467,7 +671467,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
-        "defensive_contribution_count": 17,
+        "defensive_contribution_count": 16,
         "opponents": [
           {
             "opponent": "NFO",
@@ -672530,9 +672530,9 @@
           }
         ],
         "form": 5.4,
-        "season_xg": 3.29,
-        "season_xa": 0.94,
-        "season_xgi": 4.23,
+        "season_xg": 3.32,
+        "season_xa": 0.99,
+        "season_xgi": 4.31,
         "season_minutes": 820,
         "api_rank": null,
         "is_captain": false,
@@ -672565,9 +672565,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.07,
-        "xa": 0.12,
-        "xgi": 0.19,
+        "xg": 0.1,
+        "xa": 0.17,
+        "xgi": 0.27,
         "rank": 44,
         "owner_team_name": null
       },
@@ -674690,9 +674690,9 @@
           }
         ],
         "form": 5.2,
-        "season_xg": 1.73,
+        "season_xg": 1.81,
         "season_xa": 0.9,
-        "season_xgi": 2.63,
+        "season_xgi": 2.71,
         "season_minutes": 520,
         "api_rank": null,
         "is_captain": false,
@@ -674725,9 +674725,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.14,
         "xa": 0.03,
-        "xgi": 0.09,
+        "xgi": 0.17,
         "rank": 62,
         "owner_team_name": "FC Strup"
       },
@@ -675410,9 +675410,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 2.69,
-        "season_xa": 2.63,
-        "season_xgi": 5.32,
+        "season_xg": 2.77,
+        "season_xa": 2.61,
+        "season_xgi": 5.38,
         "season_minutes": 900,
         "api_rank": null,
         "is_captain": false,
@@ -675445,9 +675445,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.15,
-        "xa": 0.27,
-        "xgi": 0.42,
+        "xg": 0.23,
+        "xa": 0.25,
+        "xgi": 0.48,
         "rank": 68,
         "owner_team_name": "FC Strup"
       },
@@ -675650,9 +675650,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 2.29,
+        "season_xg": 2.27,
         "season_xa": 0.54,
-        "season_xgi": 2.83,
+        "season_xgi": 2.81,
         "season_minutes": 586,
         "api_rank": null,
         "is_captain": false,
@@ -675685,9 +675685,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.86,
+        "xg": 0.84,
         "xa": 0.25,
-        "xgi": 1.11,
+        "xgi": 1.09,
         "rank": 70,
         "owner_team_name": null
       },
@@ -679130,9 +679130,9 @@
           }
         ],
         "form": 3.0,
-        "season_xg": 1.0,
+        "season_xg": 1.02,
         "season_xa": 1.17,
-        "season_xgi": 2.17,
+        "season_xgi": 2.19,
         "season_minutes": 964,
         "api_rank": null,
         "is_captain": false,
@@ -679165,9 +679165,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.04,
+        "xg": 0.06,
         "xa": 0.01,
-        "xgi": 0.05,
+        "xgi": 0.07,
         "rank": 99,
         "owner_team_name": null
       },
@@ -679250,9 +679250,9 @@
           }
         ],
         "form": 2.4,
-        "season_xg": 1.27,
+        "season_xg": 1.28,
         "season_xa": 0.67,
-        "season_xgi": 1.94,
+        "season_xgi": 1.95,
         "season_minutes": 989,
         "api_rank": null,
         "is_captain": false,
@@ -679285,9 +679285,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.02,
+        "xg": 0.03,
         "xa": 0.01,
-        "xgi": 0.03,
+        "xgi": 0.04,
         "rank": 100,
         "owner_team_name": "Clean Machine FC"
       },
@@ -679970,9 +679970,9 @@
           }
         ],
         "form": 4.0,
-        "season_xg": 3.22,
-        "season_xa": 0.74,
-        "season_xgi": 3.96,
+        "season_xg": 3.14,
+        "season_xa": 0.91,
+        "season_xgi": 4.05,
         "season_minutes": 963,
         "api_rank": null,
         "is_captain": false,
@@ -680005,9 +680005,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.71,
-        "xa": 0.05,
-        "xgi": 0.76,
+        "xg": 0.63,
+        "xa": 0.22,
+        "xgi": 0.85,
         "rank": 106,
         "owner_team_name": "Eki-Tiki"
       },
@@ -680450,9 +680450,9 @@
           }
         ],
         "form": 3.4,
-        "season_xg": 0.56,
+        "season_xg": 0.57,
         "season_xa": 0.36,
-        "season_xgi": 0.92,
+        "season_xgi": 0.93,
         "season_minutes": 730,
         "api_rank": null,
         "is_captain": false,
@@ -680485,9 +680485,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.04,
         "xa": 0.0,
-        "xgi": 0.03,
+        "xgi": 0.04,
         "rank": 110,
         "owner_team_name": null
       },
@@ -681290,9 +681290,9 @@
           }
         ],
         "form": 4.2,
-        "season_xg": 3.08,
+        "season_xg": 3.0,
         "season_xa": 0.75,
-        "season_xgi": 3.83,
+        "season_xgi": 3.75,
         "season_minutes": 768,
         "api_rank": null,
         "is_captain": false,
@@ -681307,7 +681307,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 0,
+        "defensive_contribution_count": 1,
         "opponents": [
           {
             "opponent": "BOU",
@@ -681325,9 +681325,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.13,
+        "xg": 0.05,
         "xa": 0.24,
-        "xgi": 0.37,
+        "xgi": 0.29,
         "rank": 117,
         "owner_team_name": "PFC"
       },
@@ -681650,9 +681650,9 @@
           }
         ],
         "form": 3.0,
-        "season_xg": 1.3,
+        "season_xg": 1.28,
         "season_xa": 1.77,
-        "season_xgi": 3.07,
+        "season_xgi": 3.05,
         "season_minutes": 905,
         "api_rank": null,
         "is_captain": false,
@@ -681667,7 +681667,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
-        "defensive_contribution_count": 14,
+        "defensive_contribution_count": 13,
         "opponents": [
           {
             "opponent": "BOU",
@@ -681685,9 +681685,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.38,
+        "xg": 0.36,
         "xa": 0.18,
-        "xgi": 0.56,
+        "xgi": 0.54,
         "rank": 120,
         "owner_team_name": null
       },
@@ -682131,8 +682131,8 @@
         ],
         "form": 1.6,
         "season_xg": 1.79,
-        "season_xa": 0.61,
-        "season_xgi": 2.4,
+        "season_xa": 0.65,
+        "season_xgi": 2.44,
         "season_minutes": 642,
         "api_rank": null,
         "is_captain": false,
@@ -682166,8 +682166,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.2,
-        "xa": 0.14,
-        "xgi": 0.34,
+        "xa": 0.18,
+        "xgi": 0.38,
         "rank": 124,
         "owner_team_name": null
       },
@@ -683330,9 +683330,9 @@
           }
         ],
         "form": 2.8,
-        "season_xg": 2.34,
+        "season_xg": 2.36,
         "season_xa": 1.36,
-        "season_xgi": 3.7,
+        "season_xgi": 3.72,
         "season_minutes": 661,
         "api_rank": null,
         "is_captain": false,
@@ -683365,9 +683365,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.01,
+        "xg": 0.03,
         "xa": 0.0,
-        "xgi": 0.01,
+        "xgi": 0.03,
         "rank": 134,
         "owner_team_name": null
       },
@@ -683947,7 +683947,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 9,
+        "defensive_contribution_count": 11,
         "opponents": [
           {
             "opponent": "NFO",
@@ -685747,7 +685747,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "AVL",
@@ -685867,7 +685867,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 9,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "AVL",
@@ -686947,7 +686947,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "AVL",
@@ -688731,8 +688731,8 @@
         ],
         "form": 1.8,
         "season_xg": 0.0,
-        "season_xa": 0.04,
-        "season_xgi": 0.04,
+        "season_xa": 0.06,
+        "season_xgi": 0.06,
         "season_minutes": 990,
         "api_rank": null,
         "is_captain": false,
@@ -688766,8 +688766,8 @@
         "goals_conceded": 2,
         "saves": 5,
         "xg": 0.0,
-        "xa": 0.02,
-        "xgi": 0.02,
+        "xa": 0.04,
+        "xgi": 0.04,
         "rank": 179,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -692827,7 +692827,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "AVL",
@@ -693067,7 +693067,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 8,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "SUN",
@@ -695091,8 +695091,8 @@
         ],
         "form": 0.8,
         "season_xg": 0.46,
-        "season_xa": 0.59,
-        "season_xgi": 1.05,
+        "season_xa": 0.56,
+        "season_xgi": 1.02,
         "season_minutes": 695,
         "api_rank": null,
         "is_captain": false,
@@ -695126,8 +695126,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.08,
-        "xgi": 0.14,
+        "xa": 0.05,
+        "xgi": 0.11,
         "rank": 232,
         "owner_team_name": null
       },
@@ -695707,7 +695707,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "SUN",
@@ -695811,8 +695811,8 @@
         ],
         "form": 2.4,
         "season_xg": 1.1,
-        "season_xa": 0.74,
-        "season_xgi": 1.84,
+        "season_xa": 0.73,
+        "season_xgi": 1.83,
         "season_minutes": 717,
         "api_rank": null,
         "is_captain": false,
@@ -695846,8 +695846,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.06,
-        "xgi": 0.06,
+        "xa": 0.05,
+        "xgi": 0.05,
         "rank": 238,
         "owner_team_name": ":)"
       },
@@ -698091,8 +698091,8 @@
         ],
         "form": 0.4,
         "season_xg": 0.21,
-        "season_xa": 0.13,
-        "season_xgi": 0.34,
+        "season_xa": 0.14,
+        "season_xgi": 0.35,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -698126,8 +698126,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.02,
-        "xgi": 0.02,
+        "xa": 0.03,
+        "xgi": 0.03,
         "rank": 257,
         "owner_team_name": null
       },
@@ -700370,9 +700370,9 @@
           }
         ],
         "form": 0.0,
-        "season_xg": 1.98,
-        "season_xa": 0.11,
-        "season_xgi": 2.09,
+        "season_xg": 1.87,
+        "season_xa": 0.1,
+        "season_xgi": 1.97,
         "season_minutes": 305,
         "api_rank": null,
         "is_captain": false,
@@ -700405,9 +700405,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.73,
-        "xa": 0.03,
-        "xgi": 0.76,
+        "xg": 0.62,
+        "xa": 0.02,
+        "xgi": 0.64,
         "rank": 276,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -703011,8 +703011,8 @@
         ],
         "form": 1.6,
         "season_xg": 0.37,
-        "season_xa": 0.43,
-        "season_xgi": 0.8,
+        "season_xa": 0.44,
+        "season_xgi": 0.81,
         "season_minutes": 174,
         "api_rank": null,
         "is_captain": false,
@@ -703046,8 +703046,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.02,
-        "xa": 0.05,
-        "xgi": 0.07,
+        "xa": 0.06,
+        "xgi": 0.08,
         "rank": 298,
         "owner_team_name": null
       },
@@ -709267,7 +709267,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "SUN",
@@ -713811,8 +713811,8 @@
         ],
         "form": 0.6,
         "season_xg": 0.3,
-        "season_xa": 0.03,
-        "season_xgi": 0.33,
+        "season_xa": 0.02,
+        "season_xgi": 0.32,
         "season_minutes": 168,
         "api_rank": null,
         "is_captain": false,
@@ -713827,7 +713827,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "BOU",
@@ -713846,8 +713846,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.02,
-        "xgi": 0.02,
+        "xa": 0.01,
+        "xgi": 0.01,
         "rank": 388,
         "owner_team_name": null
       },
@@ -750053,8 +750053,8 @@
         ],
         "form": 1.8,
         "season_xg": 0.0,
-        "season_xa": 0.04,
-        "season_xgi": 0.04,
+        "season_xa": 0.06,
+        "season_xgi": 0.06,
         "season_minutes": 990,
         "api_rank": null,
         "is_captain": false,
@@ -750088,8 +750088,8 @@
         "goals_conceded": 2,
         "saves": 5,
         "xg": 0.0,
-        "xa": 0.02,
-        "xgi": 0.02,
+        "xa": 0.04,
+        "xgi": 0.04,
         "rank": 16,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -758711,7 +758711,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": true,
-        "defensive_contribution_count": 17,
+        "defensive_contribution_count": 16,
         "opponents": [
           {
             "opponent": "NFO",
@@ -761334,9 +761334,9 @@
           }
         ],
         "form": 3.0,
-        "season_xg": 1.0,
+        "season_xg": 1.02,
         "season_xa": 1.17,
-        "season_xgi": 2.17,
+        "season_xgi": 2.19,
         "season_minutes": 964,
         "api_rank": null,
         "is_captain": false,
@@ -761369,9 +761369,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.04,
+        "xg": 0.06,
         "xa": 0.01,
-        "xgi": 0.05,
+        "xgi": 0.07,
         "rank": 34,
         "owner_team_name": null
       },
@@ -761454,9 +761454,9 @@
           }
         ],
         "form": 2.4,
-        "season_xg": 1.27,
+        "season_xg": 1.28,
         "season_xa": 0.67,
-        "season_xgi": 1.94,
+        "season_xgi": 1.95,
         "season_minutes": 989,
         "api_rank": null,
         "is_captain": false,
@@ -761489,9 +761489,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.02,
+        "xg": 0.03,
         "xa": 0.01,
-        "xgi": 0.03,
+        "xgi": 0.04,
         "rank": 35,
         "owner_team_name": "Clean Machine FC"
       },
@@ -762054,9 +762054,9 @@
           }
         ],
         "form": 3.4,
-        "season_xg": 0.56,
+        "season_xg": 0.57,
         "season_xa": 0.36,
-        "season_xgi": 0.92,
+        "season_xgi": 0.93,
         "season_minutes": 730,
         "api_rank": null,
         "is_captain": false,
@@ -762089,9 +762089,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.03,
+        "xg": 0.04,
         "xa": 0.0,
-        "xgi": 0.03,
+        "xgi": 0.04,
         "rank": 40,
         "owner_team_name": null
       },
@@ -763991,7 +763991,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 6,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "AVL",
@@ -764231,7 +764231,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 3,
+        "defensive_contribution_count": 4,
         "opponents": [
           {
             "opponent": "AVL",
@@ -766511,7 +766511,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 8,
+        "defensive_contribution_count": 9,
         "opponents": [
           {
             "opponent": "SUN",
@@ -767215,8 +767215,8 @@
         ],
         "form": 0.8,
         "season_xg": 0.46,
-        "season_xa": 0.59,
-        "season_xgi": 1.05,
+        "season_xa": 0.56,
+        "season_xgi": 1.02,
         "season_minutes": 695,
         "api_rank": null,
         "is_captain": false,
@@ -767250,8 +767250,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.08,
-        "xgi": 0.14,
+        "xa": 0.05,
+        "xgi": 0.11,
         "rank": 83,
         "owner_team_name": null
       },
@@ -767351,7 +767351,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "SUN",
@@ -767455,8 +767455,8 @@
         ],
         "form": 2.4,
         "season_xg": 1.1,
-        "season_xa": 0.74,
-        "season_xgi": 1.84,
+        "season_xa": 0.73,
+        "season_xgi": 1.83,
         "season_minutes": 717,
         "api_rank": null,
         "is_captain": false,
@@ -767490,8 +767490,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.06,
-        "xgi": 0.06,
+        "xa": 0.05,
+        "xgi": 0.05,
         "rank": 85,
         "owner_team_name": ":)"
       },
@@ -768415,8 +768415,8 @@
         ],
         "form": 0.4,
         "season_xg": 0.21,
-        "season_xa": 0.13,
-        "season_xgi": 0.34,
+        "season_xa": 0.14,
+        "season_xgi": 0.35,
         "season_minutes": 630,
         "api_rank": null,
         "is_captain": false,
@@ -768450,8 +768450,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.02,
-        "xgi": 0.02,
+        "xa": 0.03,
+        "xgi": 0.03,
         "rank": 93,
         "owner_team_name": null
       },
@@ -771671,7 +771671,7 @@
         "match_finished": true,
         "clean_sheet": true,
         "defensive_contribution": false,
-        "defensive_contribution_count": 4,
+        "defensive_contribution_count": 5,
         "opponents": [
           {
             "opponent": "SUN",
@@ -783777,8 +783777,8 @@
         ],
         "form": 5.4,
         "season_xg": 4.27,
-        "season_xa": 2.37,
-        "season_xgi": 6.64,
+        "season_xa": 2.36,
+        "season_xgi": 6.63,
         "season_minutes": 930,
         "api_rank": null,
         "is_captain": false,
@@ -783812,8 +783812,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.06,
-        "xa": 0.92,
-        "xgi": 0.98,
+        "xa": 0.91,
+        "xgi": 0.97,
         "rank": 2,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -784976,9 +784976,9 @@
           }
         ],
         "form": 5.6,
-        "season_xg": 3.94,
+        "season_xg": 3.92,
         "season_xa": 1.94,
-        "season_xgi": 5.88,
+        "season_xgi": 5.86,
         "season_minutes": 953,
         "api_rank": null,
         "is_captain": false,
@@ -785011,9 +785011,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.11,
+        "xg": 0.09,
         "xa": 0.08,
-        "xgi": 0.19,
+        "xgi": 0.17,
         "rank": 12,
         "owner_team_name": "I am chucky kirkez"
       },
@@ -785696,9 +785696,9 @@
           }
         ],
         "form": 5.4,
-        "season_xg": 3.29,
-        "season_xa": 0.94,
-        "season_xgi": 4.23,
+        "season_xg": 3.32,
+        "season_xa": 0.99,
+        "season_xgi": 4.31,
         "season_minutes": 820,
         "api_rank": null,
         "is_captain": false,
@@ -785731,9 +785731,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.07,
-        "xa": 0.12,
-        "xgi": 0.19,
+        "xg": 0.1,
+        "xa": 0.17,
+        "xgi": 0.27,
         "rank": 18,
         "owner_team_name": null
       },
@@ -786296,9 +786296,9 @@
           }
         ],
         "form": 5.2,
-        "season_xg": 1.73,
+        "season_xg": 1.81,
         "season_xa": 0.9,
-        "season_xgi": 2.63,
+        "season_xgi": 2.71,
         "season_minutes": 520,
         "api_rank": null,
         "is_captain": false,
@@ -786331,9 +786331,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.14,
         "xa": 0.03,
-        "xgi": 0.09,
+        "xgi": 0.17,
         "rank": 23,
         "owner_team_name": "FC Strup"
       },
@@ -786776,9 +786776,9 @@
           }
         ],
         "form": 2.2,
-        "season_xg": 2.69,
-        "season_xa": 2.63,
-        "season_xgi": 5.32,
+        "season_xg": 2.77,
+        "season_xa": 2.61,
+        "season_xgi": 5.38,
         "season_minutes": 900,
         "api_rank": null,
         "is_captain": false,
@@ -786811,9 +786811,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.15,
-        "xa": 0.27,
-        "xgi": 0.42,
+        "xg": 0.23,
+        "xa": 0.25,
+        "xgi": 0.48,
         "rank": 27,
         "owner_team_name": "FC Strup"
       },
@@ -786896,9 +786896,9 @@
           }
         ],
         "form": 3.2,
-        "season_xg": 2.29,
+        "season_xg": 2.27,
         "season_xa": 0.54,
-        "season_xgi": 2.83,
+        "season_xgi": 2.81,
         "season_minutes": 586,
         "api_rank": null,
         "is_captain": false,
@@ -786931,9 +786931,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.86,
+        "xg": 0.84,
         "xa": 0.25,
-        "xgi": 1.11,
+        "xgi": 1.09,
         "rank": 28,
         "owner_team_name": null
       },
@@ -788816,9 +788816,9 @@
           }
         ],
         "form": 4.0,
-        "season_xg": 3.22,
-        "season_xa": 0.74,
-        "season_xgi": 3.96,
+        "season_xg": 3.14,
+        "season_xa": 0.91,
+        "season_xgi": 4.05,
         "season_minutes": 963,
         "api_rank": null,
         "is_captain": false,
@@ -788851,9 +788851,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.71,
-        "xa": 0.05,
-        "xgi": 0.76,
+        "xg": 0.63,
+        "xa": 0.22,
+        "xgi": 0.85,
         "rank": 44,
         "owner_team_name": "Eki-Tiki"
       },
@@ -789536,9 +789536,9 @@
           }
         ],
         "form": 3.0,
-        "season_xg": 1.3,
+        "season_xg": 1.28,
         "season_xa": 1.77,
-        "season_xgi": 3.07,
+        "season_xgi": 3.05,
         "season_minutes": 905,
         "api_rank": null,
         "is_captain": false,
@@ -789553,7 +789553,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": true,
-        "defensive_contribution_count": 14,
+        "defensive_contribution_count": 13,
         "opponents": [
           {
             "opponent": "BOU",
@@ -789571,9 +789571,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.38,
+        "xg": 0.36,
         "xa": 0.18,
-        "xgi": 0.56,
+        "xgi": 0.54,
         "rank": 50,
         "owner_team_name": null
       },
@@ -789777,8 +789777,8 @@
         ],
         "form": 1.6,
         "season_xg": 1.79,
-        "season_xa": 0.61,
-        "season_xgi": 2.4,
+        "season_xa": 0.65,
+        "season_xgi": 2.44,
         "season_minutes": 642,
         "api_rank": null,
         "is_captain": false,
@@ -789812,8 +789812,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.2,
-        "xa": 0.14,
-        "xgi": 0.34,
+        "xa": 0.18,
+        "xgi": 0.38,
         "rank": 52,
         "owner_team_name": null
       },
@@ -790496,9 +790496,9 @@
           }
         ],
         "form": 2.8,
-        "season_xg": 2.34,
+        "season_xg": 2.36,
         "season_xa": 1.36,
-        "season_xgi": 3.7,
+        "season_xgi": 3.72,
         "season_minutes": 661,
         "api_rank": null,
         "is_captain": false,
@@ -790531,9 +790531,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.01,
+        "xg": 0.03,
         "xa": 0.0,
-        "xgi": 0.01,
+        "xgi": 0.03,
         "rank": 58,
         "owner_team_name": null
       },
@@ -790873,7 +790873,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 9,
+        "defensive_contribution_count": 11,
         "opponents": [
           {
             "opponent": "NFO",
@@ -791713,7 +791713,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 9,
+        "defensive_contribution_count": 7,
         "opponents": [
           {
             "opponent": "AVL",
@@ -800337,8 +800337,8 @@
         ],
         "form": 1.6,
         "season_xg": 0.37,
-        "season_xa": 0.43,
-        "season_xgi": 0.8,
+        "season_xa": 0.44,
+        "season_xgi": 0.81,
         "season_minutes": 174,
         "api_rank": null,
         "is_captain": false,
@@ -800372,8 +800372,8 @@
         "goals_conceded": 0,
         "saves": 0,
         "xg": 0.02,
-        "xa": 0.05,
-        "xgi": 0.07,
+        "xa": 0.06,
+        "xgi": 0.08,
         "rank": 140,
         "owner_team_name": null
       },
@@ -806217,8 +806217,8 @@
         ],
         "form": 0.6,
         "season_xg": 0.3,
-        "season_xa": 0.03,
-        "season_xgi": 0.33,
+        "season_xa": 0.02,
+        "season_xgi": 0.32,
         "season_minutes": 168,
         "api_rank": null,
         "is_captain": false,
@@ -806233,7 +806233,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "BOU",
@@ -806252,8 +806252,8 @@
         "goals_conceded": 2,
         "saves": 0,
         "xg": 0.0,
-        "xa": 0.02,
-        "xgi": 0.02,
+        "xa": 0.01,
+        "xgi": 0.01,
         "rank": 189,
         "owner_team_name": null
       },
@@ -819778,9 +819778,9 @@
           }
         ],
         "form": 8.6,
-        "season_xg": 5.46,
-        "season_xa": 1.08,
-        "season_xgi": 6.54,
+        "season_xg": 5.57,
+        "season_xa": 1.07,
+        "season_xgi": 6.64,
         "season_minutes": 927,
         "api_rank": null,
         "is_captain": false,
@@ -819813,9 +819813,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 1.01,
-        "xa": 0.03,
-        "xgi": 1.04,
+        "xg": 1.12,
+        "xa": 0.02,
+        "xgi": 1.14,
         "rank": 2,
         "owner_team_name": ":)"
       },
@@ -820018,9 +820018,9 @@
           }
         ],
         "form": 8.8,
-        "season_xg": 3.61,
+        "season_xg": 3.56,
         "season_xa": 1.13,
-        "season_xgi": 4.74,
+        "season_xgi": 4.69,
         "season_minutes": 794,
         "api_rank": null,
         "is_captain": false,
@@ -820053,9 +820053,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.15,
+        "xg": 0.1,
         "xa": 0.23,
-        "xgi": 0.38,
+        "xgi": 0.33,
         "rank": 4,
         "owner_team_name": "FC Strup"
       },
@@ -821218,9 +821218,9 @@
           }
         ],
         "form": 4.2,
-        "season_xg": 3.08,
+        "season_xg": 3.0,
         "season_xa": 0.75,
-        "season_xgi": 3.83,
+        "season_xgi": 3.75,
         "season_minutes": 768,
         "api_rank": null,
         "is_captain": false,
@@ -821235,7 +821235,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 0,
+        "defensive_contribution_count": 1,
         "opponents": [
           {
             "opponent": "BOU",
@@ -821253,9 +821253,9 @@
         "own_goals": 0,
         "goals_conceded": 2,
         "saves": 0,
-        "xg": 0.13,
+        "xg": 0.05,
         "xa": 0.24,
-        "xgi": 0.37,
+        "xgi": 0.29,
         "rank": 14,
         "owner_team_name": "PFC"
       },
@@ -822435,7 +822435,7 @@
         "match_finished": true,
         "clean_sheet": false,
         "defensive_contribution": false,
-        "defensive_contribution_count": 5,
+        "defensive_contribution_count": 6,
         "opponents": [
           {
             "opponent": "AVL",
@@ -823138,9 +823138,9 @@
           }
         ],
         "form": 0.0,
-        "season_xg": 1.98,
-        "season_xa": 0.11,
-        "season_xgi": 2.09,
+        "season_xg": 1.87,
+        "season_xa": 0.1,
+        "season_xgi": 1.97,
         "season_minutes": 305,
         "api_rank": null,
         "is_captain": false,
@@ -823173,9 +823173,9 @@
         "own_goals": 0,
         "goals_conceded": 0,
         "saves": 0,
-        "xg": 0.73,
-        "xa": 0.03,
-        "xgi": 0.76,
+        "xg": 0.62,
+        "xa": 0.02,
+        "xgi": 0.64,
         "rank": 30,
         "owner_team_name": "H\u00f6chengladbach"
       },
@@ -829545,7 +829545,7 @@
           "season_assists": 0,
           "season_clean_sheets": 4,
           "season_bonus": 3,
-          "season_defcon": 123,
+          "season_defcon": 122,
           "badges": [],
           "position_ranks": {
             "goals": 34,
@@ -829553,7 +829553,7 @@
             "bonus": 18,
             "clean_sheets": 12,
             "ga": 61,
-            "defcon": 2
+            "defcon": 3
           },
           "form": [
             0,
@@ -829571,7 +829571,7 @@
           "match_finished": true,
           "clean_sheet": true,
           "defensive_contribution": true,
-          "defensive_contribution_count": 17,
+          "defensive_contribution_count": 16,
           "opponents": [
             {
               "opponent": "NFO",
@@ -829855,9 +829855,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.06,
+          "xg": 0.14,
           "xa": 0.03,
-          "xgi": 0.09,
+          "xgi": 0.17,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -829988,9 +829988,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.15,
-          "xa": 0.27,
-          "xgi": 0.42,
+          "xg": 0.23,
+          "xa": 0.25,
+          "xgi": 0.48,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -830403,9 +830403,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.15,
+          "xg": 0.1,
           "xa": 0.23,
-          "xgi": 0.38,
+          "xgi": 0.33,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -834155,9 +834155,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.71,
-          "xa": 0.05,
-          "xgi": 0.76,
+          "xg": 0.63,
+          "xa": 0.22,
+          "xgi": 0.85,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -835250,8 +835250,8 @@
           "goals_conceded": 2,
           "saves": 5,
           "xg": 0.0,
-          "xa": 0.02,
-          "xgi": 0.02,
+          "xa": 0.04,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 2
@@ -836203,8 +836203,8 @@
           "goals_conceded": 0,
           "saves": 0,
           "xg": 0.06,
-          "xa": 0.92,
-          "xgi": 0.98,
+          "xa": 0.91,
+          "xgi": 0.97,
           "subbed_out": false,
           "multiplier": 1,
           "points": 8
@@ -837135,9 +837135,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.73,
-          "xa": 0.03,
-          "xgi": 0.76,
+          "xg": 0.62,
+          "xa": 0.02,
+          "xgi": 0.64,
           "subbed_in": false,
           "multiplier": 1,
           "points": 1
@@ -837685,8 +837685,8 @@
           "goals_conceded": 2,
           "saves": 0,
           "xg": 0.0,
-          "xa": 0.06,
-          "xgi": 0.06,
+          "xa": 0.05,
+          "xgi": 0.05,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
@@ -838446,7 +838446,7 @@
             "bonus": 10,
             "clean_sheets": 1,
             "ga": 11,
-            "defcon": 12
+            "defcon": 13
           },
           "form": [
             2,
@@ -838626,9 +838626,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 1.01,
-          "xa": 0.03,
-          "xgi": 1.04,
+          "xg": 1.12,
+          "xa": 0.02,
+          "xgi": 1.14,
           "subbed_out": false,
           "multiplier": 1,
           "points": 6
@@ -838858,7 +838858,7 @@
             "bonus": 30,
             "clean_sheets": 33,
             "ga": 76,
-            "defcon": 30
+            "defcon": 29
           },
           "form": [
             2,
@@ -840452,7 +840452,7 @@
           "season_assists": 0,
           "season_clean_sheets": 1,
           "season_bonus": 3,
-          "season_defcon": 30,
+          "season_defcon": 31,
           "badges": [],
           "position_ranks": {
             "goals": 8,
@@ -840478,7 +840478,7 @@
           "match_finished": true,
           "clean_sheet": false,
           "defensive_contribution": false,
-          "defensive_contribution_count": 0,
+          "defensive_contribution_count": 1,
           "opponents": [
             {
               "opponent": "BOU",
@@ -840496,9 +840496,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.13,
+          "xg": 0.05,
           "xa": 0.24,
-          "xgi": 0.37,
+          "xgi": 0.29,
           "subbed_out": false,
           "multiplier": 1,
           "points": 1
@@ -842111,9 +842111,9 @@
           "own_goals": 0,
           "goals_conceded": 0,
           "saves": 0,
-          "xg": 0.11,
+          "xg": 0.09,
           "xa": 0.08,
-          "xgi": 0.19,
+          "xgi": 0.17,
           "subbed_out": false,
           "multiplier": 1,
           "points": 3
@@ -843593,9 +843593,9 @@
           "own_goals": 0,
           "goals_conceded": 2,
           "saves": 0,
-          "xg": 0.02,
+          "xg": 0.03,
           "xa": 0.01,
-          "xgi": 0.03,
+          "xgi": 0.04,
           "subbed_out": false,
           "multiplier": 1,
           "points": 0
