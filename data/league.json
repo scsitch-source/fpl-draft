@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T16:16:41.111828+00:00",
+  "generated_at": "2026-11-25T00:46:48.305333+00:00",
   "league": {
     "id": 6038,
     "name": "FPL Draft 26/7",
@@ -19,6 +19,7 @@
       "team_name": "FC Strup",
       "manager_name": "Sam Sitch",
       "score": 31,
+      "computed_score": 31,
       "api_score": 31
     },
     "away": {
@@ -26,6 +27,7 @@
       "team_name": "Hakuna Mateta",
       "manager_name": "Ben Scotti",
       "score": 36,
+      "computed_score": 36,
       "api_score": 36
     },
     "finished": true,
@@ -161634,6 +161636,7 @@
           "team_name": "FC Strup",
           "manager_name": "Sam Sitch",
           "score": 31,
+          "computed_score": 31,
           "api_score": 31
         },
         "away": {
@@ -161641,6 +161644,7 @@
           "team_name": "Hakuna Mateta",
           "manager_name": "Ben Scotti",
           "score": 36,
+          "computed_score": 36,
           "api_score": 36
         },
         "finished": true,
@@ -165695,6 +165699,7 @@
           "team_name": "Eki-Tiki",
           "manager_name": "Hugh Chalmers",
           "score": 40,
+          "computed_score": 40,
           "api_score": 40
         },
         "away": {
@@ -165702,6 +165707,7 @@
           "team_name": "H\u00f6chengladbach",
           "manager_name": "Will Hocking",
           "score": 33,
+          "computed_score": 33,
           "api_score": 33
         },
         "finished": true,
@@ -169767,6 +169773,7 @@
           "team_name": ":)",
           "manager_name": "Charlie Spring",
           "score": 46,
+          "computed_score": 46,
           "api_score": 46
         },
         "away": {
@@ -169774,6 +169781,7 @@
           "team_name": "PFC",
           "manager_name": "Archie Ross",
           "score": 36,
+          "computed_score": 36,
           "api_score": 36
         },
         "finished": true,
@@ -173823,6 +173831,7 @@
           "team_name": "I am chucky kirkez",
           "manager_name": "Eamon Lye",
           "score": 55,
+          "computed_score": 55,
           "api_score": 55
         },
         "away": {
@@ -173830,6 +173839,7 @@
           "team_name": "Clean Machine FC",
           "manager_name": "Nick Poole",
           "score": 30,
+          "computed_score": 30,
           "api_score": 30
         },
         "finished": true,
